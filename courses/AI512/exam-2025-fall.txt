@@ -196,7 +196,7 @@ $v_1$: 30 samples (20+, 10−). $v_2$: 30 samples (10+, 20−). $v_3$: 40 sample
 ## Question 8: PyTorch Logistic Regression  (5 questions)
 --------------------------------------------------
 
-Model: $\texttt{nn.Linear(5, 1)} — 5$ weights + 1 bias. Training loop: 20 epochs over \texttt{train\_dl}.
+Model: $\texttt{nn.Linear(5, 1)} — 5$ weights + 1 bias. Training loop: 20 epochs over $\texttt{train\_dl}$.
 
 1. The model contains exactly 6 learnable parameters.?
    1) [CORRECT] True
@@ -228,11 +228,11 @@ Code implements a Quadratic Discriminant Analysis (QDA)-like classifier with per
    1) [CORRECT] True
    2) [WRONG]   False
 
-2. \texttt{log\_gaussian} will work correctly when $D=10$ but a class has only 5 training samples.?
+2. $\texttt{log\_gaussian}$ will work correctly when $D=10$ but a class has only 5 training samples.?
    1) [CORRECT] False
    2) [WRONG]   True
 
-3. \texttt{log\_gaussian} does not return the mathematically exact log-density of a multivariate Gaussian.?
+3. $\texttt{log\_gaussian}$ does not return the mathematically exact log-density of a multivariate Gaussian.?
    1) [CORRECT] True
    2) [WRONG]   False
 
@@ -240,7 +240,7 @@ Code implements a Quadratic Discriminant Analysis (QDA)-like classifier with per
    1) [CORRECT] False
    2) [WRONG]   True
 
-5. If \texttt{learn()} used a shared covariance for all classes, the decision boundaries would be non-linear.?
+5. If $\texttt{learn()}$ used a shared covariance for all classes, the decision boundaries would be non-linear.?
    1) [CORRECT] False
    2) [WRONG]   True
 
