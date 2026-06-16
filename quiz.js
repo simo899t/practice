@@ -18,7 +18,6 @@ function parseTxt(text) {
   let opt = null;
   let currentContext = '';  // context lines between ## header and first numbered question
   let currentSection = '';
-  let inCodeBlock = false;  // true once a "Code:" marker is seen, until reset
 
   const flushOpt = () => {
     if (opt && q) q.options.push(opt);
@@ -40,7 +39,6 @@ function parseTxt(text) {
     if (/^##/.test(line)) {
       flushQ();
       currentContext = '';
-      inCodeBlock = false;
       currentSection = line.replace(/^#+\s*/, '').replace(/\s*\(\d+\s*questions?\)\s*$/i, '').trim();
       continue;
     }
@@ -50,7 +48,6 @@ function parseTxt(text) {
     if (qMatch) {
       flushQ();
       q = { text: qMatch[2].trim(), context: currentContext.trim(), section: currentSection, options: [] };
-      inCodeBlock = false;
       continue;
     }
 
@@ -70,17 +67,11 @@ function parseTxt(text) {
     }
 
     // Context line — accumulate between section header and first question.
-    // Lines from "Code:" onward keep their original indentation/newlines so
-    // code listings stay intact instead of being smashed into one line.
+    // Each source line is kept as its own line (instead of being joined with
+    // spaces into one run-on line) so tables, code listings, etc. keep their
+    // original layout.
     if (!q && line.trim() && !/^Format|^Total|^AI[0-9]/.test(line)) {
-      if (inCodeBlock) {
-        currentContext += '\n' + raw.trimEnd();
-      } else if (/Code(\s*\([^)]*\))?:\s*$/.test(line.trim())) {
-        inCodeBlock = true;
-        currentContext += (currentContext ? ' ' : '') + line.trim();
-      } else {
-        currentContext += (currentContext ? ' ' : '') + line.trim();
-      }
+      currentContext += (currentContext ? '\n' : '') + line;
     }
   }
 
