@@ -236,7 +236,7 @@
   {
     "type": "group",
     "section": "Question 7: ReLU Predictor",
-    "context": "Setup: \n $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\nmax applied element-wise.",
+    "context": "Setup: \n $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\n max applied element-wise.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -275,7 +275,7 @@
   {
     "type": "group",
     "section": "Question 8: Bernoulli Data Set",
-    "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \\overset{\\mathrm{iid}}{\\sim} \\mathrm{Bernoulli}(\\pi)$.",    
+    "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i  \\mathrm{Bernoulli}(\\pi)$.",    
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
