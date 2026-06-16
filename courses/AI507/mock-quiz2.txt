@@ -9,1018 +9,1004 @@ Format per question:
   - Each option has a short note: why it's right, or what it actually is
 ==================================================
 
-## Intelligence & Cognition  (11 questions)
+## Foundations: Cognition & Intelligence  (12 questions)
 --------------------------------------------------
 
-1. A pigeon gets food whenever it happens to peck a lever, and pecking then increases. This is…
-   1) [CORRECT] operant conditioning
-   2) [WRONG]   classical conditioning
-   3) [WRONG]   configural learning
-   4) [WRONG]   temporal contiguity
+1. Which philosophical position frames thinking as a distinct phenomenon separate from physical biology, historical serving as the starting point for whether a machine could think?
+   1) [CORRECT] Mind-body dualism                   # Correct. It defines the mind and physical body as two distinct kinds of things, framing thinking outside biology.
+   2) [WRONG] Empiricism                            # Wrong. Empiricism focuses on knowledge entering purely through sensory experiences.
+   3) [WRONG] Behaviourism                          # Wrong. Behaviourism completely rejects looking inside the mind or separate mental substances.
+   4) [WRONG] Connectionism                         # Wrong. Connectionism is a modern cognitive architecture based on distributed neural networks.
 
-2. A tone repeatedly sounds just before food, until the tone alone triggers salivation. This is…
-   1) [CORRECT] classical conditioning
-   2) [WRONG]   operant conditioning
-   3) [WRONG]   extinction
-   4) [WRONG]   generalization
+2. An exam question mentions 'knowledge structures built purely from sensory input without pre-wired architecture'. Which school of thought is this pointing at?
+   1) [CORRECT] Empiricism                          # Correct. Empiricism states the mind starts blank and all knowledge enters through the senses.
+   2) [WRONG] Nativism                              # Wrong. Nativism argues we are born with innate knowledge structures like pre-wired language facilities.
+   3) [WRONG] Mind-body dualism                     # Wrong. This treats mind and body as separate substances, not about data vs innate traits.
+   4) [WRONG] Symbolic modelling                    # Wrong. Symbolic modelling uses explicit rules and logic rather than pure sensory accumulation.
 
-3. Describing the mind as distributed units spread across layers, rather than a manipulator of explicit symbols, is the…
-   1) [CORRECT] connectionist model
-   2) [WRONG]   symbolic model
-   3) [WRONG]   behaviourist model
-   4) [WRONG]   nativist model
+3. An AI researcher argues that a machine must be born with pre-wired core structures rather than learning everything from raw data. This parallels which psychological debate?
+   1) [CORRECT] Nativism                            # Correct. Nativism emphasizes innate, pre-wired knowledge structures that sensory experience alone cannot explain.
+   2) [WRONG] Empiricism                            # Wrong. Empiricism posits that the mind starts completely blank and builds entirely from sensory input.
+   3) [WRONG] Classical conditioning                # Wrong. This is a mechanism of learning by association, not an innate structure debate.
+   4) [WRONG] Symbolic logic                        # Wrong. This is a model of cognitive architecture, not the source of foundational knowledge.
 
-4. Doing well on one cognitive test predicts doing well on others. This shared factor is…
-   1) [CORRECT] g (general intelligence)
-   2) [WRONG]   fluid intelligence
-   3) [WRONG]   crystallized intelligence
-   4) [WRONG]   working memory
+4. A school of psychology holds that behavior is entirely explained by external stimuli triggering responses, without needing to examine the internal states of the mind. This is known as:
+   1) [CORRECT] Behaviourism                        # Correct. It uses a Stimulus-Response framework and states behavior can be trained without looking inside the mind.
+   2) [WRONG] Dual-process theory                   # Wrong. Dual-process theory explicitly looks inside the mind to see System 1 and System 2 modes.
+   3) [WRONG] Connectionism                         # Wrong. Connectionism models internal neural layers and distributed emerging units.
+   4) [WRONG] Schema theory                         # Wrong. Schema theory relies on internal organized categorical structures built from past experience.
 
-5. Accumulated vocabulary, facts and problem-solving experience make up which kind of intelligence?
-   1) [CORRECT] crystallized
-   2) [WRONG]   fluid
-   3) [WRONG]   general (g)
-   4) [WRONG]   emotional
+5. A neutral stimulus like a bell is repeatedly paired with food until the bell alone triggers salivation. What type of learning is this?
+   1) [CORRECT] Classical conditioning              # Correct. This is pure stimulus-pairing learning by association with no reward/punishment needed.
+   2) [WRONG] Operant conditioning                  # Wrong. Operant conditioning explicitly requires consequences like rewards or punishments to shape behavior.
+   3) [WRONG] Reinforcement learning                # Wrong. Reinforcement learning is the AI/psychological equivalent of operant conditioning via rewards.
+   4) [WRONG] Configural learning                   # Wrong. Configural learning involves learning things as wholes/bundles instead of single stimulus pairs.
 
-6. The raw speed of information processing, which tends to decline with age, is…
-   1) [CORRECT] fluid intelligence
-   2) [WRONG]   crystallized intelligence
-   3) [WRONG]   the g factor
-   4) [WRONG]   self-efficacy
+6. An AI model updates its weights based on a scalar reward signal received after performing a sequence of actions. Which psychological ancestor directly mirrors this design?
+   1) [CORRECT] Operant conditioning                # Correct. Operant conditioning shapes behavior through rewards and punishments over time.
+   2) [WRONG] Classical conditioning                # Wrong. Classical conditioning is pure neutral stimulus-pairing without rewards.
+   3) [WRONG] Empiricism                            # Wrong. Empiricism is an epistemological philosophy about sensory origins, not a conditioning method.
+   4) [WRONG] Nativism                              # Wrong. Nativism treats knowledge as innate rather than shaped by reward consequences.
 
-7. Carefully working line-by-line through a tax form draws mainly on…
-   1) [CORRECT] System II — slow, effortful, deliberate
-   2) [WRONG]   System I — fast, automatic, intuitive
-   3) [WRONG]   priming — spreading activation
-   4) [WRONG]   crystallized intelligence
+7. The core cognitive-revolution idea that the brain processes information like a digital processor and that computers can imitate minds is called the:
+   1) [CORRECT] Mind-as-computer/computer-as-mind metaphor # Correct. This two-way metaphor underpins the whole project of modern artificial intelligence.
+   2) [WRONG] Connectionist architecture            # Wrong. Connectionism specifically mimics biological networks, not general digital computer rules.
+   3) [WRONG] Symbolic processing paradigm          # Wrong. While related, the metaphor itself is the broader concept linking minds and computers bi-directionally.
+   4) [WRONG] Dual-process paradigm                 # Wrong. Dual-process refers to System 1 and System 2 splits, not the computer analogy.
 
-8. In the broad cognitive-science sense, 'cognition' is best captured as…
-   1) [CORRECT] all processing of input, even imagined input with no stimulus present
-   2) [WRONG]   conscious reasoning, as opposed to automatic habit
-   3) [WRONG]   the emotional appraisal that makes events feel significant
-   4) [WRONG]   the accurate storage and retrieval of past experience
+8. Which cognitive architecture models the mind as manipulating explicit symbols and rule-based logic?
+   1) [CORRECT] Symbolic models                     # Correct. These explicitly state 'the mind is a computer' operating on explicit symbols and rules.
+   2) [WRONG] Connectionist models                  # Wrong. Connectionist models see cognition emerging from distributed networks across units/layers.
+   3) [WRONG] Behaviourism                          # Wrong. Behaviourism rejects internal mental models or symbolic rules entirely.
+   4) [WRONG] Schema models                         # Wrong. Schema models are structures for story and experiential gist, not the raw symbolic architecture.
 
-9. The lecture contrasts humans as 'epistemic agents' with current LLMs framed as…
-   1) [CORRECT] 'stochastic parrots' producing plausible continuations
-   2) [WRONG]   'symbolic reasoners' applying logical rules
-   3) [WRONG]   'connectionist minds' with genuine understanding
-   4) [WRONG]   'behaviourist learners' driven by reward
+9. Modern deep learning networks are algorithmic implementations of which cognitive architecture paradigm?
+   1) [CORRECT] Connectionist models                # Correct. They model cognition as emerging from distributed networks of simple units across layers.
+   2) [WRONG] Symbolic models                       # Wrong. Symbolic models use explicit logic, rules, and symbol manipulation without deep network layers.
+   3) [WRONG] Dual-factor architecture              # Wrong. This refers to fluid vs crystallized intelligence components, not architecture.
+   4) [WRONG] Mind-body dualism                     # Wrong. This is a philosophical theory about substance separation, not a neural model.
 
-10. Across a population, IQ scores are distributed…
-   1) [CORRECT] normally, with most people near the middle
-   2) [WRONG]   uniformly, with every score equally common
-   3) [WRONG]   bimodally, clustering at two extremes
-   4) [WRONG]   skewed, with most people scoring high
+10. Spearman's 'g' factor refers to which psychological finding that heavily inspires the dream of Artificial General Intelligence (AGI)?
+   1) [CORRECT] General intelligence                # Correct. The finding that people who do well on one cognitive test tend to do well on others, implying a single mental capability.
+   2) [WRONG] Fluid intelligence                    # Wrong. Fluid intelligence is specifically the raw speed of processing novel problems, only one part of modern frameworks.
+   3) [WRONG] Crystallised intelligence             # Wrong. Crystallised intelligence is accumulated experience and vocabulary, not the general 'g' factor metric.
+   4) [WRONG] The Flynn effect                      # Wrong. The Flynn effect tracks the generational rise of test scores over decades.
 
-11. Behaviour is generally most resistant to extinction when reinforcement is…
-   1) [CORRECT] occasional and unpredictable
-   2) [WRONG]   present on every single trial
-   3) [WRONG]   given only on the very first trial
-   4) [WRONG]   tied to a fixed daily clock
+11. A system is required to solve an entirely novel abstract reasoning puzzle under time constraints without relying on accumulated cultural facts. This exercises what component of intelligence?
+   1) [CORRECT] Fluid intelligence                  # Correct. Fluid intelligence refers to the raw speed of information processing and reasoning with novel problems.
+   2) [WRONG] Crystallised intelligence             # Wrong. Crystallised intelligence represents accumulated knowledge, language, and schooling experience.
+   3) [WRONG] Spearman's 'g' factor                 # Wrong. Spearman's 'g' is the overarching statistical construct combining both components.
+   4) [WRONG] The Flynn effect                      # Wrong. This is the historical rise of average intelligence scores across generations.
 
+12. The observation that average IQ scores have risen significantly across generations and countries is known as:
+   1) [CORRECT] The Flynn effect                    # Correct. It serves as evidence that intelligence test performance is shaped by environment and education, not just genes.
+   2) [WRONG] Crystallised accumulation             # Wrong. This is a descriptive term for lifespan knowledge growth, not generational gains.
+   3) [WRONG] General intelligence drift            # Wrong. There is no such term in the provided literature; the correct name is the Flynn effect.
+   4) [WRONG] Cognitive amplification               # Wrong. This is a fictional term; the text designates this phenomenon as the Flynn effect.
 
-## Learning & Memory  (13 questions)
+## Perception & Learning  (12 questions)
 --------------------------------------------------
 
-1. The standard model divides memory into three stages:
-   1) [CORRECT] encoding, storage, retrieval
-   2) [WRONG]   input, processing, output
-   3) [WRONG]   perception, attention, recall
-   4) [WRONG]   sensing, encoding, forgetting
+13. The fact that the brain actively builds our visual experience and fills in missing parts (like the blind spot) shows that perception is:
+   1) [CORRECT] A construction                      # Correct. Perception is not a passive recording of reality; it is active and inherently error-prone.
+   2) [WRONG] Purely empiric                        # Wrong. Empiricism is about sensory data input, but construction highlights the active distortion/filling-in by the brain.
+   3) [WRONG] A template match                      # Wrong. Template matching implies passive direct replication, which contradicts the concept.
+   4) [WRONG] System 2 processing                   # Wrong. Basic perceptual filling-in happens automatically via fast System 1 mechanics.
 
-2. The classic 'magical number' for short-term memory capacity is about…
-   1) [CORRECT] seven items, give or take two
-   2) [WRONG]   twenty items, give or take five
-   3) [WRONG]   around fifty items
-   4) [WRONG]   effectively unlimited
+14. When highly salient or unexpected stimuli automatically grab a person's attention, it is called:
+   1) [CORRECT] Attentional capture                 # Correct. This occurs when salient external stimuli automatically seize limited cognitive attention.
+   2) [WRONG] Inattentional blindness               # Wrong. Inattentional blindness is the failure to notice obvious things because focus is placed elsewhere.
+   3) [WRONG] Stroop interference                   # Wrong. The Stroop effect shows automatic reading interfering with a naming task, not general capture.
+   4) [WRONG] Peripheral processing                 # Wrong. This is a route of persuasion in dual-process models, not a sensory capture concept.
 
-3. A memory 'schema' is best described as…
-   1) [CORRECT] an organised structure of prior experience that guides recall
-   2) [WRONG]   a verbatim recording of a single event
-   3) [WRONG]   a temporary buffer holding a few items
-   4) [WRONG]   an automatic stimulus–response reflex
+15. You are focused intently on counting basketball passes and completely fail to notice a person in a gorilla suit walking across the court. This is a classic example of:
+   1) [CORRECT] Inattentional blindness             # Correct. This is the phenomenon of looking without seeing due to highly selective attentional focus.
+   2) [WRONG] Attentional capture                   # Wrong. Attentional capture is the opposite: when the gorilla would automatically force your focus away.
+   3) [WRONG] Semiotics                             # Wrong. Semiotics is the study of signs and meaning making, not attentional failure.
+   4) [WRONG] Picture superiority                   # Wrong. Picture superiority means images are processed faster than words.
 
-4. If a cue already reliably predicts an outcome, the brain often ignores a redundant new cue. This is…
-   1) [CORRECT] competition among predictors
-   2) [WRONG]   configural learning
-   3) [WRONG]   generalization
-   4) [WRONG]   temporal contiguity
+16. Semiotics is defined as the study of:
+   1) [CORRECT] How signs carry meaning             # Correct. It posits that nothing has intrinsic meaning until interpreted; humans are meaning-makers.
+   2) [WRONG] Neural network weights                # Wrong. That is connectionist cognitive modeling or deep learning.
+   3) [WRONG] Eye movement capture                  # Wrong. That relates to attentional capture and visual perception tracking.
+   4) [WRONG] Generative text tokenization          # Wrong. Tokenization is an engineering step in transformers, not semiotics.
 
-5. Recognising a face as a single 'bundle' rather than learning hair and eyes separately illustrates…
-   1) [CORRECT] configural learning
-   2) [WRONG]   competition among predictors
-   3) [WRONG]   extinction
-   4) [WRONG]   temporal contiguity
+17. In semiotics, what term describes the rules and structures dictating how signs relate to each other?
+   1) [CORRECT] Syntactics                          # Correct. Syntactics is explicitly defined as how signs relate to each other structurally.
+   2) [WRONG] Semantics                             # Wrong. Semantics refers to the actual meaning of the signs.
+   3) [WRONG] Pragmatics                            # Wrong. Pragmatics refers to how signs are used in specific contexts.
+   4) [WRONG] Reference                             # Wrong. Referential meaning points to the physical object or entity in the real world.
 
-6. Two events activated close together in time become associated (the principle behind priming and Word2Vec). This is…
-   1) [CORRECT] temporal contiguity
-   2) [WRONG]   competition among predictors
-   3) [WRONG]   generalization
-   4) [WRONG]   unlearning
+18. If a sign has a 'sense' of what it intends to convey versus what it actually points to in the physical world, these two components are:
+   1) [CORRECT] Conceptual vs. referential meaning  # Correct. Conceptual is the 'sense' or intent, while referential is the 'reference' in the world.
+   2) [WRONG] Semantic vs. pragmatic meaning        # Wrong. Semantics is general meaning, pragmatics is contextual usage rules.
+   3) [WRONG] Injunctive vs. descriptive meaning    # Wrong. These are types of norms under focus theory, not semiotics.
+   4) [WRONG] Symbolic vs. connectionist meaning    # Wrong. These are types of cognitive architectures.
 
-7. Applying knowledge to a new situation, more easily the more alike the two are, is…
-   1) [CORRECT] generalization
-   2) [WRONG]   extinction
-   3) [WRONG]   configural learning
-   4) [WRONG]   encoding
+19. Which effect explains why images are processed faster than words, can trigger survival responses before elaboration, and are remembered better?
+   1) [CORRECT] Picture-superiority effect / dual-coding # Correct. Images get both a visual and verbal trace, winning out if image and text conflict.
+   2) [WRONG] Illusory truth effect                 # Wrong. Illusory truth states repetition makes statements feel truer.
+   3) [WRONG] Proteus effect                        # Wrong. The Proteus effect describes users conforming to the traits of their digital avatars.
+   4) [WRONG] Flynn effect                          # Wrong. The Flynn effect is the generational rise in average IQ scores.
 
-8. A cue repeatedly presented without its usual consequence gradually loses its effect. This is…
-   1) [CORRECT] extinction
-   2) [WRONG]   configural learning
-   3) [WRONG]   generalization
-   4) [WRONG]   encoding
+20. When media reduces the complexity of the world by selecting and highlighting specific aspects to create a central organizing idea, it is practicing:
+   1) [CORRECT] Visual framing                      # Correct. Images frame reality holistically and are highly open to cultural interpretation.
+   2) [WRONG] Collaborative filtering               # Wrong. This is an algorithmic technique for recommenders based on similar user habits.
+   3) [WRONG] Narrative conditioning                # Wrong. This is a hybrid term; the text calls this organizing process visual framing.
+   4) [WRONG] Inattentional selection               # Wrong. This confuses inattentional blindness with media framing terms.
 
-9. The brain 'filling in' the retinal blind spot is used to argue that perception is best described as…
-   1) [CORRECT] construction — the brain builds and completes the input
-   2) [WRONG]   transmission — the eye relays an exact image
-   3) [WRONG]   selection — only colour information is kept
-   4) [WRONG]   reflection — the world is mirrored unchanged
+21. Which human learning principle states that events activated together or in close succession become linked, paralleling how word embeddings learn word co-occurrences in AI?
+   1) [CORRECT] Temporal contiguity (priming)       # Correct. Activation spreads from one linked element to another based on concurrent timing.
+   2) [WRONG] Competition among predictors          # Wrong. Competition pits stimuli against each other, acting like step-wise regression.
+   3) [WRONG] Configural learning                   # Wrong. Configural learning groups features into wholes or schemas rather than tracking pure pairing sequences.
+   4) [WRONG] Extinction                            # Wrong. Extinction is the fading of a pairing when the stimulus stops being followed by its response.
 
-10. Viewers counting passes fail to notice a person in a gorilla suit walk through. This is…
-   1) [CORRECT] inattentional blindness
-   2) [WRONG]   the retinal blind spot
-   3) [WRONG]   the Stroop effect
-   4) [WRONG]   the magic number
+22. To save energy, the brain pits stimuli against each other so that if a relevant predictor already exists, new ones are blocked. This mirrors which AI parallel?
+   1) [CORRECT] Step-wise regression                # Correct. This matches the mechanism of 'competition among predictors' where only unique new information is learned.
+   2) [WRONG] Word embeddings                       # Wrong. Word embeddings parallel temporal contiguity and co-occurrence tracking.
+   3) [WRONG] Reinforcement learning                # Wrong. Reinforcement learning scales with external rewards, mirroring operant conditioning.
+   4) [WRONG] Neural auto-encoders                  # Wrong. Auto-encoders are used in hybrid recommenders, not as direct equivalents to predictor competition.
 
-11. Looking facts up online tends to make people…
-   1) [CORRECT] overrate their own knowledge and memory
-   2) [WRONG]   accurately gauge what they truly know
-   3) [WRONG]   underrate their own abilities
-   4) [WRONG]   forget how to search effectively
+23. According to Piaget, when new information does not fit into an existing schema, the unpleasant mismatch drives schema change. This process is called:
+   1) [CORRECT] Accommodation                       # Correct. Accommodation is the modification of internal structures when new info doesn't fit.
+   2) [WRONG] Assimilation                          # Wrong. Assimilation is when new information is easily absorbed into an already existing schema structure.
+   3) [WRONG] Configural processing                 # Wrong. This refers to bundle learning rather than the development balance of schemas.
+   4) [WRONG] Extinction resetting                  # Wrong. Extinction refers to the fading of trained responses when rewards cease.
 
-12. In the essay-writing study, heavier reliance on an LLM was linked with…
-   1) [CORRECT] lower ownership and weaker memory of the text
-   2) [WRONG]   higher ownership and stronger recall
-   3) [WRONG]   better grades with greater effort
-   4) [WRONG]   no change on any measure
+24. What happens during the 'unlearning/extinction' mechanism if a stimulus stops being followed by its expected response?
+   1) [CORRECT] The pairing fades but re-pairing restores it instantly and stronger # Correct. Deeply encoded associations may never fully disappear from the brain.
+   2) [WRONG] The memory is completely erased from the neural infrastructure # Wrong. The text notes that re-pairing restores it instantly, proving it is not erased.
+   3) [WRONG] The schema immediately triggers an accommodation cycle # Wrong. Accommodation is driven by development mismatch, not simple classical fading.
+   4) [WRONG] The brain shifts entirely to System 2 processing to repair it # Wrong. Extinction is an automatic associative process, not a deliberate conscious shift.
 
-13. Information processed 'deeply' by meaning, rather than 'superficially' by surface form, is later…
-   1) [CORRECT] recalled better
-   2) [WRONG]   recalled worse
-   3) [WRONG]   recalled only with strong cues
-   4) [WRONG]   recalled identically
-
-
-## Social Cognition  (14 questions)
+## Social Cognition: Self, Others & Groups  (12 questions)
 --------------------------------------------------
 
-1. Neuroscience suggests the brain's 'default' activity is closest to…
-   1) [CORRECT] thinking about other people
-   2) [WRONG]   perceiving inanimate objects
-   3) [WRONG]   solving mathematical problems
-   4) [WRONG]   resting with no thought at all
+25. What is considered the brain's 'default mode' of processing reality?
+   1) [CORRECT] Social cognition                    # Correct. Thinking about people is the default; perceiving objects actually switches these default brain regions off.
+   2) [WRONG] Symbolic logic processing             # Wrong. This requires deliberate, conscious, effortful System 2 intervention.
+   3) [WRONG] Inattentional evaluation              # Wrong. This is a failure of attention, not the baseline neuro-cognitive default.
+   4) [WRONG] Epistemological dualism               # Wrong. This is a philosophical concept regarding mind and body, not a neural state.
 
-2. The aspect of the self that is active in a specific situation (e.g., at work vs at home) is the…
-   1) [CORRECT] working self-concept
-   2) [WRONG]   relational self-concept
-   3) [WRONG]   feared self
-   4) [WRONG]   ideal self
+26. Which part of our self-concept is active dynamically depending on the specific situation we are currently in?
+   1) [CORRECT] Working self-concept                # Correct. It is the situated part of the self-concept active in a given situation.
+   2) [WRONG] Relational self-concept               # Wrong. Relational self-concept comes specifically from relationships with significant others.
+   3) [WRONG] Personal self-concept                 # Wrong. Personal self-concept is derived specifically from direct comparisons with other people.
+   4) [WRONG] Feared self-concept                   # Wrong. Feared self is who we do not want to become, part of future self-schemas.
 
-3. The part of the self emerging from close relationships (parents, partner, friends) is the…
-   1) [CORRECT] relational self-concept
-   2) [WRONG]   working self-concept
-   3) [WRONG]   possible self
-   4) [WRONG]   ought self
+27. According to self-discrepancy theory, a gap between your actual self and your ideal self triggers which focus?
+   1) [CORRECT] Promotion focus                     # Correct. This gap is activating and motivates eager approach and self-improvement.
+   2) [WRONG] Prevention focus                      # Wrong. Prevention focus is triggered by an actual-ought gap, inducing anxiety and avoidance of failure.
+   3) [WRONG] Accuracy focus                        # Wrong. Accuracy is a general self-regulation need, not a specific discrepancy route.
+   4) [WRONG] Sycophantic focus                     # Wrong. Sycophancy is an AI failure pattern of seeking single-minded human approval.
 
-4. 'What you could become but hope to avoid' is your…
-   1) [CORRECT] feared self
-   2) [WRONG]   possible self
-   3) [WRONG]   ideal self
-   4) [WRONG]   ought self
+28. A student experiences high anxiety and works primarily to avoid failure because they feel they are missing their duties. This signals an actual-ought gap and a:
+   1) [CORRECT] Prevention focus                    # Correct. An actual-ought discrepancy is inhibiting and produces anxiety and failure avoidance.
+   2) [WRONG] Promotion focus                       # Wrong. Promotion focus is driven by actual-ideal gaps and centers on hopes and advancement.
+   3) [WRONG] Self-enhancement focus                # Wrong. Self-enhancement is the baseline need to feel good about ourselves by distorting memories.
+   4) [WRONG] Dunning-Kruger focus                  # Wrong. This refers to incompetent individuals overestimating their own skill level.
 
-5. A gap between the actual self and the ideal self produces which motivational focus?
-   1) [CORRECT] promotion focus (pursuing gains)
-   2) [WRONG]   prevention focus (avoiding losses)
-   3) [WRONG]   accuracy focus
-   4) [WRONG]   consistency focus
+29. Beliefs about our own ability to carry out a behavior and that the behavior will be effective are known as:
+   1) [CORRECT] Self-efficacy                       # Correct. High self-efficacy brings mastery and planning; low self-efficacy feels threatening.
+   2) [WRONG] Self-esteem                           # Wrong. Self-esteem is how we value our general qualities, not specific execution beliefs.
+   3) [WRONG] Naïve realism                         # Wrong. Naïve realism is believing you see the objective world exactly as it is.
+   4) [WRONG] Common ground                         # Wrong. Common ground refers to shared background beliefs in communication.
 
-6. A gap between the actual self and the ought self produces which motivational focus?
-   1) [CORRECT] prevention focus (avoiding failure)
-   2) [WRONG]   promotion focus (pursuing ideals)
-   3) [WRONG]   self-enhancement focus
-   4) [WRONG]   relational focus
+30. Which core self-related need leads humans to remember their good deeds better than their faults?
+   1) [CORRECT] Self-enhancement                    # Correct. This is the drive to feel good about ourselves, acting as the source of many ego-biases.
+   2) [WRONG] Accuracy                              # Wrong. The need for accuracy drives a realistic, objective read of our abilities.
+   3) [WRONG] Consistency                           # Wrong. The need for consistency drives us to seek stable situations that confirm current self-concepts.
+   4) [WRONG] Self-categorization                   # Wrong. This is a theory about sorting oneself into salient social ingroups.
 
-7. The belief that you can perform a behaviour and that it will actually work is…
-   1) [CORRECT] self-efficacy
-   2) [WRONG]   self-esteem
-   3) [WRONG]   self-enhancement
-   4) [WRONG]   self-discrepancy
+31. The tendency to over-attribute other people's negative behavior to stable internal dispositions rather than their external situation is called the:
+   1) [CORRECT] Fundamental attribution error       # Correct. We assume character dictates their actions, while ignoring situational constraints.
+   2) [WRONG] Actor-observer effect                 # Wrong. The actor-observer effect combines this by adding that we excuse *our own* actions via the situation.
+   3) [WRONG] False consensus effect                # Wrong. False consensus is overestimating how many others share our personal views.
+   4) [WRONG] Illusion of objectivity               # Wrong. This is the belief that our own internal processing is completely unbiased.
 
-8. Recalling our successes more than our failures, and judging ourselves as less biased than others, serves the need for…
-   1) [CORRECT] self-enhancement
-   2) [WRONG]   accuracy
-   3) [WRONG]   consistency
-   4) [WRONG]   continuity
+32. You explain your own sports failure by saying 'the floor was slippery' but explain a teammate's failure by saying 'they are clumsy'. This exemplifies the:
+   1) [CORRECT] Actor-observer effect               # Correct. This describes explaining our failures situationally, but others' failures dispositionally.
+   2) [WRONG] Dunning-Kruger effect                 # Wrong. This is low-ability individuals being blind to their own incompetence.
+   3) [WRONG] Flynn effect                          # Wrong. This is the generational rise of average IQ scores over time.
+   4) [WRONG] Stroop effect                         # Wrong. This is reading automaticity interfering with naming colors.
 
-9. Seeking situations that confirm how we already see ourselves reflects the need for…
-   1) [CORRECT] consistency
-   2) [WRONG]   accuracy
-   3) [WRONG]   self-enhancement
-   4) [WRONG]   affiliation
+33. The belief that 'I see the world as it really is, so reasonable people should agree with me' is the core definition of:
+   1) [CORRECT] Naïve realism                       # Correct. It leads people to conclude that those who disagree are uninformed or biased.
+   2) [WRONG] False consensus effect                # Wrong. False consensus is specifically overestimating the statistical percentage of people who share your views.
+   3) [WRONG] Illusion of objectivity               # Wrong. This is the distinct baseline belief that one's own cognitive processing contains no bias.
+   4) [WRONG] Sycophancy                            # Wrong. Sycophancy is an AI model adapting its answers to flatter human evaluators.
 
-10. Explaining a stranger's stumble by their character rather than the icy pavement is the…
-   1) [CORRECT] fundamental attribution error
-   2) [WRONG]   self-serving bias
-   3) [WRONG]   spiral of silence
-   4) [WRONG]   stereotype content model
+34. An AI pattern where a model single-mindedly pursues human approval by giving overly flattering, agreeable answers rather than correct ones is called:
+   1) [CORRECT] Sycophancy                          # Correct. Strikingly, the text notes that larger models tend to be more sycophantic.
+   2) [WRONG] The male gaze                         # Wrong. This relates to the Silicon Gaze concept of representing partial geographic data.
+   3) [WRONG] Algorithmic appreciation              # Wrong. This is humans trusting algorithms over other humans, not AI acting overly agreeable.
+   4) [WRONG] The Proteus effect                    # Wrong. This is humans adapting their behaviors to match their digital avatar traits.
 
-11. The Stereotype Content Model places groups on two dimensions:
-   1) [CORRECT] warmth and competence
-   2) [WRONG]   status and power
-   3) [WRONG]   age and gender
-   4) [WRONG]   trust and fear
+35. According to Social Identity Theory, why do humans show strong ingroup favoritism?
+   1) [CORRECT] We need to see our ingroup as positively distinct from outgroups # Correct. This fulfills our personal and group identity self-esteem needs.
+   2) [WRONG] We possess an innate nativist hatred for all external entities # Wrong. The text explicitly notes discrimination is driven more by ingroup love than outgroup hate.
+   3) [WRONG] Our System 2 processing forces us to maximize mathematical resource allocation # Wrong. Ingroup favoritism is often a fast, automatic System 1 reaction under threat.
+   4) [WRONG] Algorithmic microtargeting creates artificial social groupings # Wrong. Ingroup biases are fundamental human cognitive traits existing long before digital targeting.
 
-12. Which is a classic condition for intergroup contact to reduce prejudice?
-   1) [CORRECT] the groups must cooperate toward shared goals
-   2) [WRONG]   the groups must stay anonymous to each other
-   3) [WRONG]   one group must clearly outrank the other
-   4) [WRONG]   contact must be brief and one-off
+36. The Stereotype Content Model states that all groups (including AI systems) are evaluated along which two universal dimensions?
+   1) [CORRECT] Warmth and competence               # Correct. Warmth gauges friend-or-foe intent, and competence measures capability.
+   2) [WRONG] Usefulness and ease of use            # Wrong. These are the core elements of the Technology Acceptance Model (TAM).
+   3) [WRONG] Agency and behavioral realism         # Wrong. These are the axes of the Threshold Model of Social Influence (TMSI).
+   4) [WRONG] Autonomy and relatedness              # Wrong. These are core intrinsic needs within Self-Determination Theory.
 
-13. Categorising yourself as a group member, which then shapes in- and out-group perception, is the core of…
-   1) [CORRECT] social identity / self-categorization theory
-   2) [WRONG]   self-discrepancy theory
-   3) [WRONG]   the media equation
-   4) [WRONG]   uses and gratifications
-
-14. The human tendency toward self-confirming views is echoed in AI by…
-   1) [CORRECT] sycophancy — agreeing with and flattering the user
-   2) [WRONG]   the uncanny valley — eeriness near human likeness
-   3) [WRONG]   the cold-start problem — too little user data
-   4) [WRONG]   the spiral of silence — minorities staying quiet
-
-
-## Communication  (17 questions)
+## Communication  (12 questions)
 --------------------------------------------------
 
-1. 'One cannot not communicate' captures which property of communication?
-   1) [CORRECT] it is inevitable
-   2) [WRONG]   it is episodic
-   3) [WRONG]   it is constructed
-   4) [WRONG]   it is contextual
+37. Which axiom of communication is associated with Paul Watzlawick?
+   1) [CORRECT] One cannot not communicate          # Correct. Communication is completely inevitable in social presence.
+   2) [WRONG] Who says what, in which channel, to whom? # Wrong. This is the Lasswell formula, not Watzlawick's axiom.
+   3) [WRONG] Speak only when your message is parsimonious # Wrong. This is a Gricean maxim under the cooperative principle.
+   4) [WRONG] Rich media must always be matched to ambiguous tasks # Wrong. This is the core thesis of Media Richness Theory.
 
-2. Calling the start of a conversation an 'arbitrary cut' (like photographing dance) reflects that communication is…
-   1) [CORRECT] episodic
-   2) [WRONG]   inevitable
-   3) [WRONG]   constructed
-   4) [WRONG]   mediated
+38. The Lasswell formula structures the communication process by asking which sequence of questions?
+   1) [CORRECT] Who says what, in which channel, to whom, with what effect? # Correct. This is a foundational linear process model of communication.
+   2) [WRONG] Is it semantic, is it pragmatic, is it syntactic? # Wrong. These are the three elements of semiotics.
+   3) [WRONG] Is it injunctive, or is it descriptive? # Wrong. These are the two types of social norms in focus theory.
+   4) [WRONG] Is it encoding, is it storage, or is it retrieval? # Wrong. This is the basic stage breakdown of memory and information processing.
 
-3. Meaning arising from the symbols both sender and receiver assign reflects that communication is…
-   1) [CORRECT] constructed
-   2) [WRONG]   inevitable
-   3) [WRONG]   episodic
-   4) [WRONG]   contextual
+39. Communication that takes place entirely inside an individual's own head is categorized at what level?
+   1) [CORRECT] Intrapersonal communication         # Correct. This is the baseline internal thinking level of communication.
+   2) [WRONG] Interpersonal communication           # Wrong. Interpersonal communication occurs one-to-one between distinct people.
+   3) [WRONG] Group communication                   # Wrong. Group communication occurs many-to-many among a set of actors.
+   4) [WRONG] Mass communication                    # Wrong. Mass communication operates one-to-many via centralized media systems.
 
-4. The classic communication formula is: who / says what / in which channel / to whom / with…
-   1) [CORRECT] what effect
-   2) [WRONG]   what intention
-   3) [WRONG]   what budget
-   4) [WRONG]   what emotion
+40. What percentage of human speech is estimated to be formulaic expressions used to conserve cognitive energy?
+   1) [CORRECT] Approximately 70%                   # Correct. Speaking is highly effortful (System 2), so ~70% relies on formulas to save energy.
+   2) [WRONG] Exactly 10%                           # Wrong. 10% is far too low; human speech relies overwhelmingly on formulaic chunks.
+   3) [WRONG] Roughly 25%                           # Wrong. 25% does not capture the high cognitive energy-saving shortcut rate of 70%.
+   4) [WRONG] Nearly 99%                            # Wrong. 99% would leave no room for intentional creative conceptualization.
 
-5. A single person talking themselves through a problem is which level of communication?
-   1) [CORRECT] intrapersonal
-   2) [WRONG]   interpersonal
-   3) [WRONG]   group
-   4) [WRONG]   mass
+41. Successful communication requires shared beliefs, assumptions, and knowledge between participants. This is called:
+   1) [CORRECT] Common ground                       # Correct. It is divided into communal (shared culture) and personal (shared experience) types.
+   2) [WRONG] Affordance matching                   # Wrong. Affordances are action possibilities offered by a technology.
+   3) [WRONG] Media richness                        # Wrong. Richness is the cue capacity of a channel, not the shared cognitive background.
+   4) [WRONG] Hyperpersonal synchronization         # Wrong. This confuses the hyperpersonal model of CMC with general baseline common ground.
 
-6. One sender reaching a large, dispersed audience at once is…
-   1) [CORRECT] mass communication
-   2) [WRONG]   interpersonal communication
-   3) [WRONG]   intrapersonal communication
-   4) [WRONG]   group communication
+42. The Gricean maxims (Quantity, Quality, Relation, Manner) collectively define which foundational communication concept?
+   1) [CORRECT] The Cooperative principle           # Correct. It states verbal interaction is goal-directed and assumes truthful, clear, relevant inputs.
+   2) [WRONG] Communication accommodation theory    # Wrong. CAT explains how we adjust our style (convergence/divergence) toward partners.
+   3) [WRONG] The hyperpersonal model               # Wrong. The hyperpersonal model deals with selective online self-presentation layout.
+   4) [WRONG] Uncertainty reduction theory          # Wrong. This is the process of gathering bio data to safely predict a stranger's habits.
 
-7. In speech production, settling the abstract message before any words are chosen is the…
-   1) [CORRECT] conceptualization stage
-   2) [WRONG]   formulation stage
-   3) [WRONG]   phonological encoding stage
-   4) [WRONG]   articulation stage
+43. What specific mechanism allows the Transformer neural network architecture to replace recurrent/convolutional layers in generative AI models?
+   1) [CORRECT] Multi-headed self-attention         # Correct. It weights every word in a sentence relative to all others to map algorithmic context.
+   2) [WRONG] Human attentional capture             # Wrong. Human attentional capture is an automatic involuntary biological reaction to salient items.
+   3) [WRONG] Recurrent feedback loop synthesis     # Wrong. Transformers specifically abandoned recurrent layers to achieve parallel self-attention computation.
+   4) [WRONG] Collaborative filtering matrix factorization # Wrong. Matrix factorization belongs to classic recommendation algorithms, not transformer text generation.
 
-8. In speech production, activating the muscles to actually produce sound is the…
-   1) [CORRECT] articulation stage
-   2) [WRONG]   conceptualization stage
-   3) [WRONG]   formulation stage
-   4) [WRONG]   comprehension stage
+44. The Stroop effect—where naming the ink color of a printed word is slowed down if the text spells a conflicting color—demonstrates that:
+   1) [CORRECT] Automatic reading processes interfere with controlled naming tasks # Correct. Attention is selective and reading is an overlearned, automatic process out of full control.
+   2) [WRONG] Images are always processed significantly slower than written alphabetical text # Wrong. The picture-superiority effect states the exact opposite: images are processed faster.
+   3) [WRONG] Human memory is strictly limited to exactly 4 items at any given moment # Wrong. The magic number 7 describes short-term memory capacity boundaries, not Stroop interference.
+   4) [WRONG] People prefer reading text over looking at complex multi-modal visuals # Wrong. This is irrelevant to the cognitive interference tracked by the Stroop task.
 
-9. In conversation, 'common ground' refers to…
-   1) [CORRECT] the shared beliefs and knowledge participants assume
-   2) [WRONG]   the richness of the chosen medium
-   3) [WRONG]   the speaker's deliberate self-presentation
-   4) [WRONG]   the norms of an anonymous group
+45. Which model explains text comprehension as an iterative process of building a mental model by spreading activation through a concept network and keeping only relevant aspects?
+   1) [CORRECT] Construction–integration model      # Correct. It explains how readers continuously activate relevant background knowledge to comprehend text.
+   2) [WRONG] Limited Capacity Model (LC4MP)        # Wrong. LC4MP tracks media resource allocation across encoding, storage, and retrieval.
+   3) [WRONG] Media richness model                  # Wrong. Media richness matches channel cue capacity to the complexity of a management task.
+   4) [WRONG] Hyperpersonal communication model     # Wrong. This deals with the intimacy of online text relationships vs face-to-face ones.
 
-10. Common ground built specifically from two people's shared history is…
-   1) [CORRECT] personal common ground
-   2) [WRONG]   communal common ground
-   3) [WRONG]   an injunctive norm
-   4) [WRONG]   a descriptive norm
+46. According to the LC4MP framework, what happens when the cognitive resources required by a media message exceed the resources a user has available?
+   1) [CORRECT] Cognitive processing breaks down completely # Correct. This leads to an overloaded 'studying-while-distracted' state where encoding fails.
+   2) [WRONG] The user automatically switches to systemic System 2 elaboration # Wrong. Overload prevents the slow, effortful deployment of systematic System 2 reasoning.
+   3) [WRONG] The mind executes an immediate accommodation sequence on all schemas # Wrong. Accommodation requires free cognitive resources to notice and adjust to structural mismatches.
+   4) [WRONG] The medium becomes richer through immediate algorithmic adaptation # Wrong. The richness of a medium is a structural attribute, it cannot change because a human is overloaded.
 
-11. In a transformer, 'self-attention' computes…
-   1) [CORRECT] weights for each word relative to the other words (context)
-   2) [WRONG]   a single point of conscious focus
-   3) [WRONG]   the emotional tone of a sentence
-   4) [WRONG]   the grammatical mood of a clause
+47. When you adjust your speech rate, style, and vocabulary to match your communication partner in order to reduce social distance, you are practicing:
+   1) [CORRECT] Convergence                         # Correct. This is a strategy within Communication Accommodation Theory (CAT) to signal closeness.
+   2) [WRONG] Divergence                            # Wrong. Divergence is accentuating style differences to maximize distance, often with outgroups.
+   3) [WRONG] Over-accommodation                    # Wrong. Over-accommodation is patronizing or talking down to someone by adjusting excessively.
+   4) [WRONG] Sycophancy                            # Wrong. Sycophancy is an algorithmic alignment failure, not a standard interpersonal linguistic strategy.
 
-12. The lecture distinguishes human attention as ___ and algorithmic attention as ___.
-   1) [CORRECT] focus ; context
-   2) [WRONG]   context ; focus
-   3) [WRONG]   memory ; perception
-   4) [WRONG]   input ; output
+48. Media Richness Theory states that highly ambiguous or sensitive tasks (such as firing an employee) should be executed using:
+   1) [CORRECT] Rich media                          # Correct. Rich media like face-to-face contact offer immediate feedback, multiple cues, and personal focus.
+   2) [WRONG] Lean media                            # Wrong. Lean media like a flyer or text message lack immediate feedback and suit simple tasks.
+   3) [WRONG] An anonymous agent channel            # Wrong. Anonymity filters out required non-verbal cues, making ambiguous situations worse.
+   4) [WRONG] A hybrid content recommender          # Wrong. Recommenders sort items for consumers; they are not communication channels for sensitive employee management.
 
-13. Media Richness Theory ranks channels by how many cues they carry and…
-   1) [CORRECT] how quickly feedback is possible
-   2) [WRONG]   how many people they reach
-   3) [WRONG]   how permanent the record is
-   4) [WRONG]   how anonymous users stay
-
-14. The SIDE model predicts that in anonymous online groups, behaviour follows…
-   1) [CORRECT] the salient norms of that group
-   2) [WRONG]   the richness of the medium
-   3) [WRONG]   each user's stable traits
-   4) [WRONG]   the speaker's working memory
-
-15. Compared with face-to-face, the hyperpersonal model predicts online self-presentation is…
-   1) [CORRECT] more controlled and idealised
-   2) [WRONG]   more spontaneous and unfiltered
-   3) [WRONG]   more anonymous but less deliberate
-   4) [WRONG]   more cue-rich but less personal
-
-16. Shifting your accent or vocabulary to match your conversation partner is…
-   1) [CORRECT] convergence
-   2) [WRONG]   divergence
-   3) [WRONG]   over-accommodation
-   4) [WRONG]   under-accommodation
-
-17. Deliberately stressing your own distinct speech style to signal group identity is…
-   1) [CORRECT] divergence
-   2) [WRONG]   convergence
-   3) [WRONG]   common ground
-   4) [WRONG]   priming
-
-
-## Innovation  (12 questions)
+## Innovation & Technology Adoption  (12 questions)
 --------------------------------------------------
 
-1. 'Creative destruction' describes how innovation…
-   1) [CORRECT] upsets the existing economic equilibrium
-   2) [WRONG]   locks in the existing equilibrium
-   3) [WRONG]   leaves the equilibrium untouched
-   4) [WRONG]   restores a previously lost equilibrium
+49. Joseph Schumpeter's economic concept that inventions constantly disrupt the existing equilibrium, making change the normal state of societies, is called:
+   1) [CORRECT] Creative destruction                # Correct. It states that innovations displace old industries and structures to build new economic models.
+   2) [WRONG] Social innovation                     # Wrong. Social innovation focuses on deploying effective solutions to systemic social/environmental problems.
+   3) [WRONG] Technological diffusion               # Wrong. Diffusion is the timeline communication process of an innovation spreading through a social system.
+   4) [WRONG] Algorithmic appreciation              # Wrong. This is a psychological orientation where humans trust algorithms over human advice.
 
-2. Which is one of the 'three big No's' of social innovation?
-   1) [CORRECT] causing negative social outcomes
-   2) [WRONG]   generating a financial profit
-   3) [WRONG]   scaling to many users
-   4) [WRONG]   relying on new technology
+50. Which of the following represents one of the three big 'no's' when evaluating a Social Innovation?
+   1) [CORRECT] Proven negative outcomes            # Correct. The three big no's are ineffective failure, proven negative outcomes, and unethical means.
+   2) [WRONG] Commercial monetization               # Wrong. Monopolization or profit doesn't automatically violate the core definition if it serves social progress.
+   3) [WRONG] Collaborative execution               # Wrong. Collaboration across sectors is actively required for healthy social innovations.
+   4) [WRONG] Rapid scalability                     # Wrong. Scalability is a positive metric tracked on the social impact compass framework.
 
-3. A frequent reason a social innovation has 'no impact' is that…
-   1) [CORRECT] the real user and use-case were never studied
-   2) [WRONG]   it was launched too cautiously
-   3) [WRONG]   it relied too little on technology
-   4) [WRONG]   it was evaluated too thoroughly
+51. The Social Impact Compass is a framework designed to:
+   1) [CORRECT] Judge a social innovation across dimensions like outcome certainty and scalability # Correct. It evaluates societal value, completeness for beneficiaries, and ESG responsibility.
+   2) [WRONG] Trace whether an AI model is utilizing a connectionist or symbolic architecture # Wrong. This is a cognitive science technical paradigm distinction, not an impact metric.
+   3) [WRONG] Pinpoint where an individual sits on the Dunning-Kruger skill continuum # Wrong. The Dunning-Kruger effect measures self-competence overestimation, not social value.
+   4) [WRONG] Map whether an user is operating under an intuitive System 1 or deliberate System 2 mindset # Wrong. This refers to general dual-process theory, not the social innovation framework.
 
-4. 'Diffusion of innovations' refers to how an innovation…
-   1) [CORRECT] spreads through a social system over time
-   2) [WRONG]   is invented and prototyped
-   3) [WRONG]   is patented and licensed
-   4) [WRONG]   is withdrawn from a market
+52. According to the Theory of Planned Behaviour (TPB), behavioral intentions are shaped by which three factors?
+   1) [CORRECT] Attitudes, perceived social norms, and perceived behavioural control # Correct. These three combine to govern whether a human forms an intention to act.
+   2) [WRONG] Perceived usefulness, ease of use, and facilitating conditions # Wrong. These belong to TAM and UTAUT, which are technology-specific adaptations of TPB.
+   3) [WRONG] Competence, benevolence, and reputation traits # Wrong. These are the traits that signal trustworthiness, mirroring the stereotype content model.
+   4) [WRONG] Warmth, capability, and systemic algorithmic transparency metrics # Wrong. This mixes the stereotype content model with the AI IMPACT wellbeing framework.
 
-5. The Technology Acceptance Model centres on perceived usefulness and perceived…
-   1) [CORRECT] ease of use
-   2) [WRONG]   cost of ownership
-   3) [WRONG]   social prestige
-   4) [WRONG]   environmental impact
+53. The Technology Acceptance Model (TAM) asserts that the two primary drivers of technology adoption are:
+   1) [CORRECT] Perceived usefulness and perceived ease of use # Correct. This heavily confirmed model simplifies TPB for digital systems.
+   2) [WRONG] Social influence and facilitating conditions # Wrong. These are additional variables added later by the extended UTAUT model.
+   3) [WRONG] Performance expectancy and effort expectancy # Wrong. These are the specific renamed constructs used in the UTAUT framework.
+   4) [WRONG] Intrinsic motivation and eudaimonic appreciation # Wrong. These terms stem from self-determination and entertainment theories.
 
-6. In the theory of planned behaviour, intentions stem from attitudes ('want'), control ('can'), and…
-   1) [CORRECT] perceived norms ('should')
-   2) [WRONG]   perceived cost ('afford')
-   3) [WRONG]   perceived risk ('fear')
-   4) [WRONG]   perceived novelty ('new')
+54. Which framework extends TAM by looking at performance expectancy, effort expectancy, social influence, and facilitating conditions?
+   1) [CORRECT] Unified Theory of Acceptance and Use of Technology (UTAUT) # Correct. This is a comprehensive integration of major technology adoption models.
+   2) [WRONG] Theory of Planned Behaviour (TPB)     # Wrong. TPB is the broader psychological ancestor before technology-specific fields split.
+   3) [WRONG] The IMPACT Framework                  # Wrong. IMPACT is used specifically to gauge AI's multi-dimensional effects on human health and wellbeing.
+   4) [WRONG] The Social Identity Deindividuation model (SIDE) # Wrong. SIDE models anonymous digital group dynamics and norms adherence.
 
-7. In the theory of planned behaviour, 'perceived behavioural control' maps to which everyday word?
-   1) [CORRECT] can
-   2) [WRONG]   want
-   3) [WRONG]   should
-   4) [WRONG]   must
+55. Psychologically, trust is defined as a risky action in which a trustor:
+   1) [CORRECT] Accepts vulnerability to something they cannot fully control # Correct. If full control exists, trust is completely unnecessary.
+   2) [WRONG] Applies strict symbolic rules to guarantee an error-free transaction # Wrong. Rules attempt to achieve total control, which replaces the need for genuine trust.
+   3) [WRONG] Processes a partner's data exclusively through System 2 deliberation # Wrong. Trust is often driven by fast, heuristic System 1 cues or social reputations.
+   4) [WRONG] Minimizes their behavioral realism to protect their own personal privacy # Wrong. This nonsensically blends the TMSI robot model with privacy concepts.
 
-8. UTAUT frames acceptance as weighing expected performance against expected…
-   1) [CORRECT] effort
-   2) [WRONG]   cost
-   3) [WRONG]   risk
-   4) [WRONG]   delay
+56. When a new technology is introduced, what design approach maximizes its likelihood of being encoded as useful and adopted?
+   1) [CORRECT] Making it look similar to familiar technologies or linking it to positive concepts # Correct. Adoption is a cognitive process; building on existing work works better than pure disruption.
+   2) [WRONG] Ensuring it creates total 'creative destruction' by breaking all links to the past # Wrong. Total disruption increases cognitive uncertainty, which feels threatening and slows adoption.
+   3) [WRONG] Forcing users to deploy complex System 2 processing to figure out its interface # Wrong. Forcing System 2 usage violates the 'perceived ease of use' core adoption criterion.
+   4) [WRONG] Stripping all minimal social cues to prevent any instance of sycophancy # Wrong. Minimal social cues help users encode tech positively via biological social default systems.
 
-9. What is a strength of AI for fact-checking?
-   1) [CORRECT] media monitoring
-   2) [WRONG]   avoiding copyright issues
-   3) [WRONG]   a lack of political bias
-   4) [WRONG]   identifying the true sources of a statement
+57. The process by which an innovation is communicated through channels over time among members of a social system is the definition of:
+   1) [CORRECT] Diffusion of innovations            # Correct. This field studies how user perceptions of innovation drive long-term societal adoption.
+   2) [WRONG] Surveillance capitalism               # Wrong. Surveillance capitalism is a critique of profit models extracting behavioral data.
+   3) [WRONG] Algorithmic management                # Wrong. Algorithmic management refers to using software to track and coordinate active workers.
+   4) [WRONG] Hyperpersonal processing              # Wrong. This refers to online relationship intimacy acceleration.
 
-10. A core technical reason fact-checking resists full automation is that models tend to…
-   1) [CORRECT] hallucinate and cite the wrong sources
-   2) [WRONG]   refuse to answer any questions
-   3) [WRONG]   translate every text inaccurately
-   4) [WRONG]   crash under heavy load
+58. Which of the following three signals directly communicate trustworthiness, echoing the dimensions of the Stereotype Content Model?
+   1) [CORRECT] Competence, benevolence, and reputation # Correct. These traits signal whether an entity is safe to trust, mimicking warmth and competence axes.
+   2) [WRONG] Efficiency, lock-in, and novelty traits # Wrong. These are the value sources driving digital business model innovation.
+   3) [WRONG] Model, machine, and mechanization levers # Wrong. These are elements of the '4 Ms' framework for sustainable AI emission cuts.
+   4) [WRONG] Comprehensibility, manageability, and meaningfulness # Wrong. These form the 'Sense of Coherence' scale under salutogenesis theory.
 
-11. Which task belongs to fact-checking?
-   1) [CORRECT] gathering evidence to verify a claim
-   2) [WRONG]   maximising a post's engagement
-   3) [WRONG]   personalising a user's news feed
-   4) [WRONG]   optimising ad placement
+59. If an innovation is ineffective, results in proven negative outcomes, or relies on unethical means, it violates the boundaries of:
+   1) [CORRECT] Social innovation                   # Correct. These are designated as the three big 'no's' of social innovation frameworks.
+   2) [WRONG] Creative destruction                  # Wrong. Creative destruction accepts negative industry displacement as a normal side effect of progress.
+   3) [WRONG] Collaborative filtering               # Wrong. This is a technical recommendation technique, not a social progress philosophy.
+   4) [WRONG] Connectionist architecture            # Wrong. Connectionism refers to artificial neural network layer design.
 
-12. The lecture links trust in a technology partly to perceived…
-   1) [CORRECT] cognitive similarity to the user
-   2) [WRONG]   physical size of the device
-   3) [WRONG]   price of the subscription
-   4) [WRONG]   age of the technology
+60. Why is 'full control' over an automated machine's operation the conceptual opposite of 'trust'?
+   1) [CORRECT] With full control, accepting vulnerability is unnecessary, so trust is redundant # Correct. Trust specifically requires a leap of faith across unmonitored risk gaps.
+   2) [WRONG] Control forces the machine to operate under a connectionist architecture # Wrong. Control can be applied to rule-based symbolic or connectionist models alike.
+   3) [WRONG] Full control shifts the human user completely into an inattentional blindness state # Wrong. Maintaining full control requires high, continuous, selective tactical focus.
+   4) [WRONG] Control automatically triggers the uncanny valley effect in the user # Wrong. Eeriness is triggered by human-like appearance flaws, not operational control models.
 
-
-## Robots & HRI  (12 questions)
+## Human–Machine Interaction: Robots & Chatbots  (12 questions)
 --------------------------------------------------
 
-1. When a machine only supplies the energy while a human still performs the task, this is…
-   1) [CORRECT] mechanization
-   2) [WRONG]   machinization
-   3) [WRONG]   autonomous control
-   4) [WRONG]   algorithmisation
+61. When a machine takes over not just energy supply, but also the control and regulation of a process via automated feedback loops, it has transitioned from mechanization to:
+   1) [CORRECT] Machinization                       # Correct. This marks the rise of modern machine autonomy over technical processes.
+   2) [WRONG] Symbolic encapsulation                # Wrong. This is an invented phrase; the text terms this transition machinization.
+   3) [WRONG] Affordance visibility                 # Wrong. Affordances are the structural action possibilities of a design, not feedback automation.
+   4) [WRONG] Hyperpersonal mediation               # Wrong. This relates to computer-mediated relationship intimacy, not manufacturing loops.
 
-2. When a machine (partly) takes over the process itself, this is…
-   1) [CORRECT] machinization
-   2) [WRONG]   mechanization
-   3) [WRONG]   avatar control
-   4) [WRONG]   embodiment
+62. An artificial software entity acts completely on its own to replace a human role. In HMI terms, this entity is classified as an:
+   1) [CORRECT] Agent                               # Correct. An agent acts autonomously (replacement), whereas an avatar is controlled directly by a human (augmentation).
+   2) [WRONG] Avatar                                # Wrong. An avatar is an extension directly manipulated by a human operator for personal augmentation.
+   3) [WRONG] ELIZA module                          # Wrong. ELIZA is a historical rule-based chatbot program, not a generalized systemic classification.
+   4) [WRONG] Social bot framework                  # Wrong. Social bot is a specific communication platform umbrella term, not the core agent/avatar axis.
 
-3. A digital figure directly controlled by a human is best called an…
-   1) [CORRECT] avatar
-   2) [WRONG]   agent
-   3) [WRONG]   embodied robot
-   4) [WRONG]   interface
+63. What do the classic experiments by Heider & Simmel (attribution of intention to moving objects) demonstrate about human psychology?
+   1) [CORRECT] Humans spontaneously attribute intentions, goals, and minds even to simple geometric shapes # Correct. Social perception is our cognitive default mode, extending easily to automated machines.
+   2) [WRONG] Human memory fails completely when tracking more than two items simultaneously # Wrong. This misinterprets short-term memory limits out of visual context.
+   3) [WRONG] People are completely incapable of feeling empathy for non-biological entities # Wrong. Humans easily attribute minds and feel deep empathy for objects or robots in distress.
+   4) [WRONG] Visual storytelling must utilize a literal beginning, middle, and end layout to be decoded # Wrong. Simple shape movements can imply a plot without rigid sequential comic panels.
 
-4. A system that acts autonomously, without a human steering each action, is an…
-   1) [CORRECT] agent
-   2) [WRONG]   avatar
-   3) [WRONG]   embodiment
-   4) [WRONG]   algorithm
+64. The Computers-As-Social-Actors (CASA) paradigm / Media Equation proves that:
+   1) [CORRECT] People treat computers like real social actors—being polite and applying social rules—even while knowing they are machines # Correct. This is triggered automatically by our default social cognition networks.
+   2) [WRONG] Humans trust algorithms less than human recommendations across all tasks # Wrong. Algorithm appreciation shows humans often trust algorithms *more* than human experts.
+   3) [WRONG] Text-based chatbots can never build deep relationships or intimacy with users # Wrong. The Intimacy Process Model shows chatbots can build 'intimacy by design' through self-disclosure.
+   4) [WRONG] Robots become universally creepy whenever they display high behavioral realism # Wrong. The Threshold Model of Social Influence shows realism generally increases positive influence.
 
-5. People watching two triangles move and saying one 'bullies' the other shows we…
-   1) [CORRECT] attribute intentions to moving shapes
-   2) [WRONG]   ignore objects that move
-   3) [WRONG]   perceive motion only when trained
-   4) [WRONG]   reserve intention for living things
+65. According to the Ethopoeia approach, what is required to trigger social responses from a human user interacting with a machine?
+   1) [CORRECT] Minimal social cues, like a machine smiling back # Correct. We do not need to consciously believe the machine is human to react socially to it.
+   2) [WRONG] A fully certified pass of the classic text-based Turing Test # Wrong. Simple visual or vocal cues trigger responses without rigorous textual logic deception tests.
+   3) [WRONG] A complete symbolic architecture containing rule-based Gricean maxims # Wrong. Ethopoeia is a fast, automatic heuristic reaction, not a rule-based logic computation alignment.
+   4) [WRONG] Total immersive presence inside a 3D virtual reality environment # Wrong. Basic desktop computers or simple screen shapes are enough to trigger ethopoeia.
 
-6. The 'Computers Are Social Actors' (CASA) paradigm shows that people…
-   1) [CORRECT] behave politely toward computers, as toward people
-   2) [WRONG]   behave more rudely toward computers than people
-   3) [WRONG]   show no social response to computers at all
-   4) [WRONG]   respond socially only to embodied robots
+66. The Threshold Model of Social Influence (TMSI) states that if a virtual entity's perceived agency is low (it is known to be a human-controlled avatar), its social influence depends heavily on its:
+   1) [CORRECT] Behavioural realism                 # Correct. If agency is low (avatar), high behavioral realism is critical to exert social influence.
+   2) [WRONG] Collaborative filtering capacity      # Wrong. Filtering capacity belongs to back-end recommender systems, not avatar behavioral mechanics.
+   3) [WRONG] Energy-efficient Mapping score        # Wrong. Mapping is a geographic lever of the '4 Ms' of sustainable AI infrastructure.
+   4) [WRONG] Inattentional blindness index         # Wrong. This is a cognitive limitation metric, not an avatar design attribute.
 
-7. The 'ethopoeia' approach holds that social responses to machines require…
-   1) [CORRECT] only minimal social cues
-   2) [WRONG]   a fully human-like body
-   3) [WRONG]   proof the machine is conscious
-   4) [WRONG]   a long prior relationship
+67. What visual phenomenon occurs when a robot's appearance approaches near-perfect human likeness, causing human comfort to drop sharply into eeriness?
+   1) [CORRECT] The uncanny valley effect           # Correct. Comfort drops at a near-but-not-quite-human point before recovering for a perfect match.
+   2) [WRONG] The Silicon Gaze distortion           # Wrong. The Silicon Gaze refers to LLMs reproducing partial wealthy geographical perspectives.
+   3) [WRONG] Perceptual construction mismatch      # Wrong. This mixes general construction terms with the specific robot eeriness valley.
+   4) [WRONG] The Stroop color interference drop    # Wrong. The Stroop effect tracks color naming speed delays caused by text processing.
 
-8. In the Threshold Model of Social Influence, when perceived agency is high (an agent), behavioural realism…
-   1) [CORRECT] matters less
-   2) [WRONG]   matters more
-   3) [WRONG]   becomes the only factor
-   4) [WRONG]   reverses the effect of agency
+68. According to research findings covered in the text, how can designers soften the eerie discomfort of the uncanny valley effect?
+   1) [CORRECT] Depicting the robot in harmful situations to evoke empathy # Correct. Showing a robot under distress triggers human empathy, lessening the uncanny dip.
+   2) [WRONG] Forcing the robot to use highly formulaic rule-based ELIZA scripts # Wrong. Simple keyword scripts do not change the physical visual eeriness profile of a robot body.
+   3) [WRONG] Stripping all instances of multi-headed self-attention from its software pipeline # Wrong. Self-attention is a transformer text concept, unrelated to visual robot embodiment reactions.
+   4) [WRONG] Transitioning its software completely from an agent model to a human-steered avatar model # Wrong. The physical uncanny valley occurs based on appearance, regardless of back-end human steering models.
 
-9. The uncanny valley predicts that likability…
-   1) [CORRECT] drops near the almost-human range
-   2) [WRONG]   climbs straight up with human-likeness
-   3) [WRONG]   peaks for clearly mechanical robots
-   4) [WRONG]   stays flat across all designs
+69. The classic Turing Test is a behavioral evaluation criteria of machine intelligence where deception sits at the absolute heart of its optimization. How does a machine pass it?
+   1) [CORRECT] By fooling a human interrogator as often as a deceptive human would # Correct. The exchange is conducted entirely via text channels to eliminate visual presence cues.
+   2) [WRONG] By generating group consensus statements that maximize public sphere approval # Wrong. This is the goal of the Habermas Machine, not the individual deception-based Turing Test.
+   3) [WRONG] By proving its internal weights are organized along a connectionist neural layer system # Wrong. The Turing Test is purely behavioral; it does not check internal software design at all.
+   4) [WRONG] By successfully computing a perfect balance of fluid and crystallized intelligence factors # Wrong. This describes psychological testing models of human intelligence, not the Turing Test setup.
 
-10. One experimental way to improve evaluations of an advanced robot was to show it…
-   1) [CORRECT] in a harmful situation, eliciting empathy
-   2) [WRONG]   performing flawless calculations
-   3) [WRONG]   in a brightly lit studio
-   4) [WRONG]   beside a much larger robot
+70. Joseph Weizenbaum's 1966 ELIZA program is a famous foundational example of:
+   1) [CORRECT] Symbolic (rule-based) AI            # Correct. It scanned text for keywords and replied with fixed scripts, utilizing explicit rules with zero learning.
+   2) [WRONG] Connectionist generative AI           # Wrong. Connectionist AI utilizes deep neural networks that learn from massive datasets over layers.
+   3) [WRONG] Coordinated inauthentic behaviour     # Wrong. This refers to networks of fake accounts secretly manipulating online news distribution.
+   4) [WRONG] A Habermas Machine instance           # Wrong. A Habermas Machine blends individual opinions into a single group text; ELIZA was a 1-on-1 mock therapist.
 
-11. A robot that expressed sadness (vs neutral or happy) was rated as…
-   1) [CORRECT] less intelligent and less credible
-   2) [WRONG]   more intelligent and more credible
-   3) [WRONG]   more human but less likeable
-   4) [WRONG]   equally credible across conditions
+71. Networks of online accounts that secretly coordinate to share and amplify content (such as fake news) faster than trustworthy sources are executing:
+   1) [CORRECT] Coordinated inauthentic behaviour   # Correct. The useful question to analyze here is the behavioral pattern, not just 'bot or not'.
+   2) [WRONG] Hyperpersonal communication models    # Wrong. The hyperpersonal model explains positive intimacy development in online text environments.
+   3) [WRONG] Collaborative filtering optimization  # Wrong. Collaborative filtering is a standard product recommendation system methodology.
+   4) [WRONG] Diffusion of social innovation        # Wrong. Social innovation focuses on systemic progress solutions, not secret disinformation amplification.
 
-12. Invoking old myths like the Golem and the 'three laws of robotics' mainly shows that…
-   1) [CORRECT] the idea of the artificial other is very old
-   2) [WRONG]   robots today follow three hard-coded laws
-   3) [WRONG]   robots are physically unable to harm people
-   4) [WRONG]   robotics is purely a 21st-century field
+72. How can chatbots accelerate perceived closeness with human users according to the Intimacy Process Model?
+   1) [CORRECT] Through 'intimacy by design' and deliberate over-disclosure # Correct. This triggers the human social cycle of self-disclosure and responsiveness expectations.
+   2) [WRONG] By strictly limiting their language capability to lean media channels # Wrong. Richer, responsive interactions foster intimacy; lean channels minimize social cues.
+   3) [WRONG] By ensuring their underlying architecture runs entirely on non-learning symbolic rules # Wrong. Symbolic programs like ELIZA are rigid, while responsive learning networks mimic true partner responsiveness better.
+   4) [WRONG] By forcing the user into a high uncertainty reduction verification routine # Wrong. High algorithmic verification cycles create friction, disrupting natural intimacy formation loop comfort.
 
-
-## Recommender Systems  (10 questions)
+## Algorithms, Recommenders & Microtargeting  (11 questions)
 --------------------------------------------------
 
-1. A system that recommends items because 'users like you also liked them' uses…
-   1) [CORRECT] collaborative filtering
-   2) [WRONG]   content-based filtering
-   3) [WRONG]   a hybrid approach
-   4) [WRONG]   random sampling
+73. A system recommends a movie to you based entirely on the viewing behavior of similar users and your social graph. This technique is called:
+   1) [CORRECT] Collaborative filtering             # Correct. It uses 'people like you liked...' logic, but suffers from the cold-start problem and privacy concerns.
+   2) [WRONG] Content-based filtering               # Wrong. Content-based filtering matches discrete features within the items themselves (genres, keywords) to your past history.
+   3) [WRONG] Hybrid multi-modal estimation         # Wrong. Hybrid approaches explicitly combine both collaborative and content methods simultaneously.
+   4) [WRONG] Microtargeting segmentation           # Wrong. Microtargeting is the tailoring of political ads based on traits, not baseline product recommendation engines.
 
-2. A system that recommends items sharing genres or keywords with what you watched uses…
-   1) [CORRECT] content-based filtering
-   2) [WRONG]   collaborative filtering
-   3) [WRONG]   a chronological feed
-   4) [WRONG]   a hybrid approach
+74. What is a major known limitation of classic Collaborative Filtering recommender systems?
+   1) [CORRECT] The cold-start problem for new items or users # Correct. Without initial behavior data, the system cannot map similarities, causing sparsity issues.
+   2) [WRONG] It tends toward highly obvious, homogeneous recommendations for long-time users # Wrong. Content-based filtering suffers from this limitation because it only recommends variants of what was already liked.
+   3) [WRONG] It is entirely incapable of processing explicit symbol rules # Wrong. Recommenders do not care about cognitive architectures; this is a mismatch of fields.
+   4) [WRONG] It automatically triggers the uncanny valley effect during data ingestion # Wrong. The uncanny valley applies exclusively to human-like physical/visual robotic appearances.
 
-3. A recommender struggling because a brand-new user has no history faces the…
-   1) [CORRECT] cold-start problem
-   2) [WRONG]   over-smoothing problem
-   3) [WRONG]   uncanny-valley problem
-   4) [WRONG]   spiral-of-silence problem
+75. A system recommends items to you by matching patterns in the items themselves—such as topics, genres, or keywords—to your past explicit history. This is called:
+   1) [CORRECT] Content-based filtering             # Correct. It handles new items well because it extracts features immediately, but it can lead to overly homogenous outputs.
+   2) [WRONG] Collaborative filtering               # Wrong. Collaborative filtering ignores item attributes and focuses exclusively on tracking overlapping user behavior graphs.
+   3) [WRONG] Deep-learning multi-modal synthesis   # Wrong. Multi-modal systems process text, image, and video layers simultaneously; simple feature matching is basic content filtering.
+   4) [WRONG] Algorithm appreciation profiling      # Wrong. This is a term for human cognitive trust in math, not a technical filtering strategy.
 
-4. Besides cold start, a frequent criticism of collaborative filtering is that it…
-   1) [CORRECT] needs behavioural data that can intrude on privacy
-   2) [WRONG]   recommends only items the user already knows
-   3) [WRONG]   works only for brand-new items
-   4) [WRONG]   ignores other users entirely
+76. The psychological phenomenon where humans display a tendency to trust algorithmic recommendations *more* than identical advice delivered by human experts is called:
+   1) [CORRECT] Algorithm appreciation              # Correct. People often maintain this trust even after being informed that the algorithm makes errors.
+   2) [WRONG] Illusion of objectivity               # Wrong. The illusion of objectivity is the belief that *one's own* personal processing is free from bias.
+   3) [WRONG] Naïve realism                         # Wrong. Naïve realism is the assumption that you see the objective physical world exactly as it truly is.
+   4) [WRONG] Sycophancy response                   # Wrong. Sycophancy is an AI model trying to flatter humans, not humans over-trusting software outputs.
 
-5. A typical weakness of content-based filtering is that it…
-   1) [CORRECT] recommends overly similar, predictable items
-   2) [WRONG]   depends heavily on other users' behaviour
-   3) [WRONG]   handles new users better than new items
-   4) [WRONG]   needs no information about the items
+77. What does a comprehensive state of 'Algorithmic Literacy' empower a citizen to do?
+   1) [CORRECT] Aware algorithms are present, know how they work, critically evaluate them, and use them strategically # Correct. In practice, studies show that human algorithmic literacy remains highly patchy across society.
+   2) [WRONG] Program complex Transformer architectures utilizing multi-headed self-attention manually # Wrong. Literacy represents critical user awareness and navigation capacity, not professional computer science engineering skill.
+   3) [WRONG] Eliminate the occurrence of creative destruction within their national local economy # Wrong. Creative destruction is an macroeconomic structural force completely out of individual user literacy control.
+   4) [WRONG] Shift their cognitive state permanently from System 1 heuristics into pure System 2 calculation # Wrong. No amount of literacy can alter the fundamental evolutionary biological structure of human dual-process brains.
 
-6. Experiments on 'algorithm appreciation' found that people often…
-   1) [CORRECT] lean toward algorithmic over human advice
-   2) [WRONG]   reject algorithmic advice on principle
-   3) [WRONG]   weigh both sources exactly equally
-   4) [WRONG]   prefer whichever advice is cheaper
+78. Under the normative model for 'recommenders for society', what is a key value these systems must actively support?
+   1) [CORRECT] Human values, agency, wellbeing, public discourse diversity, and safety # Correct. They must align with human rights, privacy, fairness, and transparency rather than simple engagement metrics.
+   2) [WRONG] Maximum commercial surveillance monetization to drive rapid economic destruction # Wrong. This describes the critique of surveillance capitalism, the exact opposite of the pro-society normative model.
+   3) [WRONG] The selective exclusion of minoritized groups to optimize baseline sample risks # Wrong. This violates fundamental fairness tenets and promotes discrimination in algorithmic design.
+   4) [WRONG] Total user deindividuation to ensure adherence to platform injunctive norms # Wrong. Deindividuation causes personal identity to fade, which harms human agency and personal autonomy values.
 
-7. 'Algorithmic literacy' is best described as…
-   1) [CORRECT] awareness of, and ability to critically evaluate, algorithms
-   2) [WRONG]   the skill of writing recommender code
-   3) [WRONG]   trust in an algorithm's neutrality
-   4) [WRONG]   memorising a platform's terms of service
+79. Tailoring political messages to highly narrow audience segments based on their extracted digital trace data or personality traits is called:
+   1) [CORRECT] Microtargeting                      # Correct. Made cheap by digital platforms, its persuasive effects are generally small and work mostly in reinforcing ways.
+   2) [WRONG] Collaborative filtering               # Wrong. Filtering is an automated product catalog recommendation method, not data-driven political message tailoring.
+   3) [WRONG] Visual framing optimization           # Wrong. Visual framing is a broad media reduction technique, not data-segmented personalized messaging.
+   4) [WRONG] Inoculation strategy                  # Wrong. Inoculation is forewarning people about manipulation to build psychological resistance to it.
 
-8. A recommender built 'around human values' would prioritise…
-   1) [CORRECT] supporting well-being and public discourse
-   2) [WRONG]   maximising time spent on the platform
-   3) [WRONG]   minimising the platform's serving costs
-   4) [WRONG]   surfacing the most controversial posts
+80. According to empirical research, what is the primary real-world impact of digital political microtargeting ads on voters?
+   1) [CORRECT] The effects are small and mostly confirmatory, reinforcing existing views # Correct. It rarely converts political opponents; it primarily 'preaches to the converted' via reinforcement.
+   2) [WRONG] It completely converts massive blocks of opposition party voters overnight # Wrong. Popular media discourse often overstates the conversion power of these targeted advertisements.
+   3) [WRONG] It causes a sudden generational surge in fluid intelligence test performance # Wrong. Ad exposure has zero effect on biological fluid information processing speeds.
+   4) [WRONG] It forces voters to systematically execute effortful System 2 cognitive processing # Wrong. Most political microtargeting uses fast peripheral visual cues to exploit heuristic System 1 shortcuts.
 
-9. When tested against personalised feeds, purely chronological feeds tended to produce…
-   1) [CORRECT] lower engagement
-   2) [WRONG]   higher engagement
-   3) [WRONG]   identical engagement
-   4) [WRONG]   no measurable activity
+81. Which psychological mechanism explains why repeated exposure to a specific political advertisement can build familiarity and positive favorability over time?
+   1) [CORRECT] Mere-exposure effect                # Correct. Repeated exposure to any stimulus automatically increases familiarity and cognitive liking gradients.
+   2) [WRONG] Dunning-Kruger effect                 # Wrong. This is the inability of low-skilled individuals to see their own performance errors.
+   3) [WRONG] The Flynn effect                      # Wrong. The Flynn effect tracks generational rises in IQ scores, unrelated to ad familiarity loops.
+   4) [WRONG] The Werther effect                    # Wrong. The Werther effect is media-induced copycat behavior or distress imitation patterns.
 
-10. A standing challenge for multimodal (video) recommenders is that…
-   1) [CORRECT] each modality is processed then fused, which is hard
-   2) [WRONG]   audio is the easiest, best-studied modality
-   3) [WRONG]   text and images cannot be combined
-   4) [WRONG]   they require no labelled data
+82. The baseline cognitive drive where humans actively prefer and more readily believe information that confirms their existing worldview is called:
+   1) [CORRECT] Confirmation bias & motivated cognition # Correct. This is the primary reason why personalized targeting works best by reinforcing current values.
+   2) [WRONG] Attentional capture                   # Wrong. Attentional capture is when an intense physical stimulus automatically grabs visual attention.
+   3) [WRONG] Pragmatic semiotic decoding           # Wrong. Pragmatics is the study of how signs are used in specific social contexts.
+   4) [WRONG] Accommodation                         # Wrong. Accommodation is the painful restructuring of a schema when new data completely contradicts it.
 
+83. Match the correct labels to their definitions: (A) algorithms narrowing what we see based on presumed preferences, versus (B) social environments where we primarily hear our own views reflected.
+   1) [CORRECT] A = Filter bubbles; B = Echo chambers # Correct. Filter bubbles are algorithmically driven; echo chambers are social/environmental structures.
+   2) [WRONG] A = Echo chambers; B = Filter bubbles # Wrong. This swaps the algorithmic driver with the social group environment driver.
+   3) [WRONG] A = Selective exposure; B = Microtargeting # Wrong. Selective exposure is the active *human choice* to view consistent content; microtargeting is message tailoring.
+   4) [WRONG] A = Inauthentic coordination; B = Sycophancy networks # Wrong. These refer to fake account operations and AI flattery models, not viewing environments.
 
-## Chatbots & Bots  (11 questions)
+## Digital Environments, IoT & Privacy  (11 questions)
 --------------------------------------------------
 
-1. The Turing Test deems a machine 'intelligent' when an interrogator…
-   1) [CORRECT] is fooled by it about as often as by a deceiving human
-   2) [WRONG]   can list every fact the machine knows
-   3) [WRONG]   watches it solve a maths problem
-   4) [WRONG]   confirms it has a physical body
+84. Everyday physical objects embedded with sensors, internet networking connectivity, and the capacity for autonomous decision-making are collectively known as:
+   1) [CORRECT] The Internet of Things (IoT) / Smartification # Correct. It brings together sensors, physical automation, and algorithmic choice layers into everyday objects.
+   2) [WRONG] Rule-based symbolic ELIZA systems     # Wrong. IoT relies heavily on distributed modern algorithms and sensor arrays, not legacy text scripts.
+   3) [WRONG] Hyperpersonal avatars                 # Wrong. Avatars are human-steered digital extensions, whereas IoT objects are physical and increasingly autonomous agents.
+   4) [WRONG] Collaborative content filters         # Wrong. Recommenders are digital software sort layers, not hardware networks embedded in physical spaces.
 
-2. ELIZA generated replies by…
-   1) [CORRECT] matching keywords to fixed scripts
-   2) [WRONG]   predicting the next word with a transformer
-   3) [WRONG]   reasoning about the user's goals
-   4) [WRONG]   retrieving facts from a database
+85. When a person uses a wearable tracking device and treats their physical body as a 'laboratory of the self' by turning biological metrics into structured data, they engage in:
+   1) [CORRECT] Objectification (me as my data) and Subjectivation (understanding myself through reactions) # Correct. This sits on a spectrum from self-discovery to self-improvement, linked to the situated working self-concept.
+   2) [WRONG] Structural assimilation and schema accommodation dynamics # Wrong. These are Piaget's general developmental learning terms, not the specific self-tracking metrics axis.
+   3) [WRONG] Fundamental attribution error compensation # Wrong. Tracking your own metrics does not alter your attribution error patterns regarding other people's faults.
+   4) [WRONG] Ingroup favoritism and outgroup homogeneity reduction # Wrong. Self-tracking is an individual identity data mechanism, not an intergroup relations strategy.
 
-3. ELIZA is an example of which kind of AI?
-   1) [CORRECT] symbolic, rule-based
-   2) [WRONG]   connectionist, deep-learning
-   3) [WRONG]   reinforcement-learning
-   4) [WRONG]   generative pre-trained
+86. The hypothesis that as technology and media spread throughout a society, higher-socioeconomic-status individuals benefit faster and more deeply, widening societal gaps, is the:
+   1) [CORRECT] Knowledge-gap hypothesis / Digital divide # Correct. The IoT creates new divides because lower-income individuals have fewer devices, less positive attitudes, and lower understanding.
+   2) [WRONG] The Flynn generational effect         # Wrong. The Flynn effect is a general rise in average scores across a whole population over time, not a widening divide gap.
+   3) [WRONG] Dual-process structural divergence model # Wrong. This is a fictional combination of words; dual-process theory tracks System 1 and System 2 splits.
+   4) [WRONG] The Silicon Gaze disparity index      # Wrong. The Silicon Gaze is the geographic bias inside LLM training text data, not a general access divide.
 
-4. A 'social bot' is best defined as…
-   1) [CORRECT] a (semi-)automated agent communicating in online media
-   2) [WRONG]   any human who simply posts a great deal
-   3) [WRONG]   a robot used for factory automation
-   4) [WRONG]   a platform's content-moderation policy
+87. How is 'Privacy' legally treated within the European Union framework according to the text?
+   1) [CORRECT] As a fundamental right, but not absolute—it must be balanced against other societal functions # Correct. It represents the ability to control access to info about one's life, balanced contextually against other rights.
+   2) [WRONG] As an absolute, unchallengeable barrier that completely outlaws any form of data collection # Wrong. It is explicitly not absolute and must be legally balanced against essential societal functions and security.
+   3) [WRONG] As a purely transactional digital commodity with no ethical or human rights status # Wrong. The text notes it is treated as a fundamental right in the EU, opposing pure commoditization models.
+   4) [WRONG] As a legacy construct that was completely eliminated by the advent of smartification # Wrong. Smartification undermines privacy boundaries, but the legal right remains an active, critical standard.
 
-5. Analyses of real social bots before the GPT era found most performed…
-   1) [CORRECT] simple amplification, like fake followers and shares
-   2) [WRONG]   sophisticated human-like conversation
-   3) [WRONG]   advanced multimodal reasoning
-   4) [WRONG]   autonomous investigative journalism
+88. According to the Social Media Privacy Model, what calculation do users perform before deciding to engage in self-disclosure?
+   1) [CORRECT] Individual assessment of others' access levels, available control mechanisms, and interaction trust/norms # Correct. The calculation yields whether and how much personal information they choose to share.
+   2) [WRONG] A mathematical check of whether the medium's bandwidth fits the precise requirements of Media Richness Theory # Wrong. Richness theory handles organizational task efficiency, not an individual's personal privacy calculus.
+   3) [WRONG] An evaluation of whether the text inputs align perfectly with Gricean maxims of quantity # Wrong. Gricean maxims govern verbal conversational cooperation, not online privacy boundary management.
+   4) [WRONG] A step-wise regression to optimize their personal position on the national digital divide map # Wrong. This nonsensically combines a statistical tool with socioeconomic stratification terms.
 
-6. Most untrustworthy election content tends to come from…
-   1) [CORRECT] a small number of coordinated, hyperactive accounts
-   2) [WRONG]   the average user, spread evenly
-   3) [WRONG]   verified news organisations
-   4) [WRONG]   accounts that post very rarely
+89. Why does the proliferation of the Internet of Things (IoT) severely undermine traditional human privacy models?
+   1) [CORRECT] Consent is often not requested, it invades private physical spaces, and it simultaneously affects multiple people # Correct. IoT sensors constantly collect data passively without explicit user-initiated clicks or active screen choice.
+   2) [WRONG] It forces all connected appliances to communicate using highly complex symbolic rule logic # Wrong. IoT objects use various algorithmic infrastructures, and rule complexity does not inherently dictate privacy invasion mechanics.
+   3) [WRONG] It completely eliminates a user's ability to develop high fluid intelligence speeds # Wrong. Hardware connectivity has zero impact on a human's biological fluid information processing capabilities.
+   4) [WRONG] It shifts the platform's features entirely into lean media channels that lack feedback loops # Wrong. IoT devices are highly autonomous agents with real-time feedback loops, making them rich, active networks.
 
-7. The spiral of silence predicts that people who feel in the minority will…
-   1) [CORRECT] stay quiet for fear of isolation
-   2) [WRONG]   speak up more to win others over
-   3) [WRONG]   seek out only like-minded media
-   4) [WRONG]   switch to non-political topics
+90. The action possibilities that a technology design explicitly offers its users (such as editability, anonymity, visibility, or persistence) are called:
+   1) [CORRECT] Affordances                         # Correct. Affordances shape—but do not fully determine—human behavior, providing a baseline to compare platforms.
+   2) [WRONG] Schemata                              # Wrong. Schemata are internal cognitive structures in human memory, not external technical design possibilities.
+   3) [WRONG] Pragmatics                            # Wrong. Pragmatics is the study of how signs are contextually deployed by meaning-makers in semiotics.
+   4) [WRONG] Modalities                            # Wrong. Modality is a single structural dimension of AI use, not the general term for design action possibilities.
 
-8. A documented limit of the spiral of silence is that…
-   1) [CORRECT] the morally convinced often speak up anyway
-   2) [WRONG]   it applies identically to everyone
-   3) [WRONG]   it grows stronger in fragmented media
-   4) [WRONG]   it has never been observed
+91. Web-based services that allow users to construct a profile, connect with a network of users, view connections, and engage in opportunistic, selective self-presentation define:
+   1) [CORRECT] Social media / Digital platforms    # Correct. This serves as an umbrella term over many distinct genres like blogs, forums, networks, and messengers.
+   2) [WRONG] Automated algorithmic management networks # Wrong. Algorithmic management is software used by employers to track and optimize workforce tasks.
+   3) [WRONG] Recurrent hybrid multi-modal recommenders # Wrong. This describes an advanced back-end recommender algorithm system catalog, not a user profile social platform.
+   4) [WRONG] Closed internet-of-things physical sensor loops # Wrong. IoT focuses on physical objects interacting, not human profiles managing selective social presentation.
 
-9. The 'Habermas Machine' experiment showed an LLM could…
-   1) [CORRECT] write group statements people preferred to human-written ones
-   2) [WRONG]   detect every bot in a network
-   3) [WRONG]   run an election from start to finish
-   4) [WRONG]   replace all human moderators
+92. What does psychological research state regarding the correlation between active versus passive social media use and human wellbeing?
+   1) [CORRECT] Active use is slightly linked to positive wellbeing; passive scrolling is linked to negative outcomes # Correct. Overall mental health associations are small, with specific sensitive windows existing for some adolescents.
+   2) [WRONG] Passive scrolling dramatically boosts fluid intelligence through continuous incidental exposure # Wrong. Scrolling ('news snacking') lowers actual political knowledge and has zero effect on fluid intelligence.
+   3) [WRONG] Active use triggers an immediate shift into the uncanny valley effect for all friends # Wrong. The uncanny valley applies to human-like robots, not interacting with real human profiles online.
+   4) [WRONG] Both usage patterns display huge, absolute correlations that completely dominate adult mental health # Wrong. The text notes that overall associations with general mental health are actually quite small.
 
-10. In one study, a bot replied to hateful comments by…
-   1) [CORRECT] reminding users of civic norms or calling for empathy
-   2) [WRONG]   deleting the offending accounts
-   3) [WRONG]   publicly ranking the worst users
-   4) [WRONG]   rewarding hateful posts with reach
+93. A heavy social media user believes that important civic information will automatically reach them via their feed without any active searching. This cognitive orientation is the:
+   1) [CORRECT] 'News-will-find-me' perception      # Correct. This predicts positive attitudes to algorithmic news but results in lower actual political knowledge and lower voting intention.
+   2) [WRONG] Virtuous circle loop                  # Wrong. The virtuous circle hypothesis states that media use and civic engagement positively reinforce each other over time.
+   3) [WRONG] False consensus effect                # Wrong. False consensus is assuming that the vast majority of people already share your specific ideological opinions.
+   4) [WRONG] Inattentional capture framework       # Wrong. This is a fictional phrase blending inattentional blindness with automatic capture terms.
 
-11. A flagged risk of companion chatbots is that they are designed for…
-   1) [CORRECT] intimacy and over-disclosure by users
-   2) [WRONG]   maximal factual accuracy
-   3) [WRONG]   minimal user engagement
-   4) [WRONG]   strict emotional distance
+94. What is the phenomenon of 'news snacking' or incidental news exposure on digital platforms known to do?
+   1) [CORRECT] It makes users feel highly informed while lowering their actual factual political knowledge # Correct. It creates a subjective illusion of competence while degrading deep contextual understanding.
+   2) [WRONG] It rapidly accelerates a user's mathematical capability to critically evaluate algorithms # Wrong. Snacking decreases overall cognitive engagement, harming critical algorithmic literacy.
+   3) [WRONG] It forces the human brain to completely bypass System 1 heuristic processing paths # Wrong. Incidental snacking relies almost entirely on fast, visual System 1 heuristic processing shortcuts.
+   4) [WRONG] It resolves the cold-start problem for new users entering a digital platform # Wrong. The cold-start problem is a back-end database filtering issue, completely unrelated to human snacking habits.
 
-
-## Smart Things & IoT  (10 questions)
+## Politics, Persuasion & Misinformation  (11 questions)
 --------------------------------------------------
 
-1. An IoT 'smart' object combines sensors, networking, and…
-   1) [CORRECT] autonomous decision-making
-   2) [WRONG]   a human operator per task
-   3) [WRONG]   purely mechanical gears
-   4) [WRONG]   a permanent wired connection
+95. The transmission of structured information among political actors, the news media, and the general public is defined as a system of:
+   1) [CORRECT] Political communication             # Correct. It operates across top-down, vertical, and bottom-up/upward informational flows.
+   2) [WRONG] Strategic propaganda                  # Wrong. Propaganda is a specific manipulative subset, not the overarching systemic communication definition.
+   3) [WRONG] Algorithmic microtargeting            # Wrong. Microtargeting is a modern digital data-driven methodology, not the general political communication system.
+   4) [WRONG] Public sphere deliberative democracy  # Wrong. Deliberative democracy is a highly demanding normative standard, not a descriptive systemic communication definition.
 
-2. Which area was NOT presented as being 'smartified'?
-   1) [CORRECT] mandatory crisis preparation for citizens
-   2) [WRONG]   clothing
-   3) [WRONG]   heating
-   4) [WRONG]   harvesting
+96. When a politician chooses to execute a negative campaigning strategy because they calculate that the structural benefits outweigh the risks, they are demonstrating:
+   1) [CORRECT] Strategic communication rationality # Correct. Communication choice is partly rational and driven by risk-benefit calculations and behavioral opportunities.
+   2) [WRONG] A generalized conspiracy mentality    # Wrong. Conspiracy mentality is an ideological disposition to suspect secret powerful groups, not rational campaign planning.
+   3) [WRONG] Heuristic peripheral processing shortcuts # Wrong. Running deliberate campaign risk-benefit calculations is an intentional, analytical System 2 planning process.
+   4) [WRONG] Sycophantic algorithmic alignment     # Wrong. Sycophancy applies to AI models altering answers to secure human evaluator approval.
 
-3. What makes the privacy risks of the Internet of Things distinctive?
-   1) [CORRECT] it reaches into private spaces and often affects several people at once
-   2) [WRONG]   distributed denial-of-service attacks
-   3) [WRONG]   none — the risks are the same as for any digital tech
-   4) [WRONG]   a general lack of awareness among users
+97. Which normative model of democracy is the least demanding, requiring nothing more than the preservation of basic human rights and free competitive elections?
+   1) [CORRECT] Procedural democracy                # Correct. It has the lowest systemic requirements compared to competitive, participatory, or deliberative models.
+   2) [WRONG] Competitive democracy                 # Wrong. Competitive models demand that voters have access to genuine, accurate information to choose between elites.
+   3) [WRONG] Participatory democracy               # Wrong. Participatory models require broad, active inclusion and continuous grassroots civic engagement.
+   4) [WRONG] Deliberative / public-sphere democracy # Wrong. This model is highly demanding, requiring that decisions emerge from open, reasoned public debate.
 
-4. Combining many mundane smart-device signals to infer something sensitive (e.g., depression) is the risk of…
-   1) [CORRECT] aggregating multiple data streams
-   2) [WRONG]   a single device failing
-   3) [WRONG]   the cold-start problem
-   4) [WRONG]   creative destruction
+98. Match the correct terms to these definitions: (A) claims at odds with the best available evidence spread *without* intent to deceive, versus (B) claims spread *with* explicit intent to deceive.
+   1) [CORRECT] A = Misinformation; B = Disinformation # Correct. Intent to deceive is the critical defining boundary separating disinformation from misinformation.
+   2) [WRONG] A = Disinformation; B = Misinformation # Wrong. This completely reverses the core definitions of intent tracked within information disorder.
+   3) [WRONG] A = Mal-information; B = Satire       # Wrong. Mal-information uses real facts maliciously; satire is humorous fiction with blurry boundaries.
+   4) [WRONG] A = Bullshit; B = Bunking             # Wrong. Bullshit is disregard for truth; bunking is persuading someone *into* an unjustified belief scheme.
 
-5. The Mirai botnet showed insecure smart devices could be…
-   1) [CORRECT] hijacked into a botnet for large DDoS attacks
-   2) [WRONG]   patched automatically over the air
-   3) [WRONG]   used only for energy savings
-   4) [WRONG]   isolated from the internet by default
+99. A citizen possesses a highly stable, generalized psychological disposition to suspect that secret, malicious groups are behind major global events. This person has a high:
+   1) [CORRECT] Conspiracy mentality                # Correct. It represents a fundamental ideological mistrust of the powerful, slightly stronger on the political right.
+   2) [WRONG] Conspiracy theory                     # Wrong. A conspiracy theory is an explanation of a *specific* single event, whereas a mentality is a stable trait disposition.
+   3) [WRONG] Illusion of objectivity               # Wrong. This is the general cognitive belief that your own internal processing contains no bias.
+   4) [WRONG] Algorithmic appreciation score        # Wrong. This refers to over-trusting computer advice over human advice, unrelated to tracking secret plots.
 
-6. AirTags became a stalking tool because they…
-   1) [CORRECT] broadcast a Bluetooth signal other devices can detect
-   2) [WRONG]   connect directly to the open internet
-   3) [WRONG]   store the owner's medical records
-   4) [WRONG]   contain a hidden microphone
+100. The Elaboration Likelihood Model (ELM) and Heuristic-Systematic Model (HSM) are two-process persuasion frameworks. What recognition cue separates them?
+   1) [CORRECT] ELM uses 'central vs. peripheral' routes; HSM uses 'systematic vs. heuristic' processing # Correct. Both map onto basic System 1/2 cognitive splits but utilize distinct historical terminology labels.
+   2) [WRONG] ELM requires a connectionist architecture; HSM requires explicit rule-based symbolic structures # Wrong. Both are psychological models of human cognition, completely independent of AI back-end coding paradigms.
+   3) [WRONG] ELM tracks human health salutogenesis; HSM tracks macroeconomic creative destruction cycles # Wrong. These mix completely unrelated medical sociology and Schumpeterian economics terms.
+   4) [WRONG] ELM is triggered exclusively by images; HSM is triggered exclusively by lean text media flyers # Wrong. Both processing routes can be activated by text or visual media formats depending on motivation levels.
 
-7. One privacy model says self-disclosure follows a personal weighing of access, control, and…
-   1) [CORRECT] trust and norms
-   2) [WRONG]   battery and storage
-   3) [WRONG]   follower count
-   4) [WRONG]   screen size
+101. Which cognitive profile trait correlates with an increased likelihood of believing and spreading online misinformation?
+   1) [CORRECT] Heuristic processing style, higher bullshit receptivity, and low need for cognition # Correct. Lower cognitive performance and relying entirely on System 1 shortcuts predict higher belief in false claims.
+   2) [WRONG] Systematic System 2 elaboration and an intense drive for self-regulation accuracy # Wrong. Detailed analytical elaboration increases critical screening, helping to identify and reject false data.
+   3) [WRONG] High algorithmic literacy and deep expertise in matrix collaborative filtering # Wrong. Structural literacy builds active cognitive resistance and critical evaluation capacities against manipulation.
+   4) [WRONG] A promotion focus driven exclusively by an actual-ideal self-schema gap # Wrong. Self-discrepancy focuses regulate personal motivation, not baseline truth evaluation verification speeds.
 
-8. The lecture notes children tend to be…
-   1) [CORRECT] better at interpersonal than commercial privacy
-   2) [WRONG]   better at commercial than interpersonal privacy
-   3) [WRONG]   unable to evade any monitoring
-   4) [WRONG]   the main drivers of 'sharenting'
+102. The psychological finding that simply repeating a false claim multiple times increases its perceived truth and credibility is called the:
+   1) [CORRECT] Illusory truth effect               # Correct. Repetition makes claims feel fluent and credible, blocking the cognitive retrieval of correct information.
+   2) [WRONG] Mere-exposure alignment               # Wrong. Mere-exposure refers to growing to *like* a familiar stimulus, while illusory truth refers to believing it is *true*.
+   3) [WRONG] Flynn effect                          # Wrong. The Flynn effect is the generational rise of average intelligence test performance metrics.
+   4) [WRONG] Proteus effect                        # Wrong. The Proteus effect describes humans conforming their behavior to match their digital avatar characteristics.
 
-9. Wearable self-tracking is framed as a 'laboratory of the self' because it…
-   1) [CORRECT] offers new answers to 'who am I' through one's own data
-   2) [WRONG]   eliminates the need for any privacy
-   3) [WRONG]   replaces medical diagnosis entirely
-   4) [WRONG]   works only for elite athletes
+103. Why do individuals who perceive that their political opinion is in the minority choose to remain silent according to the 'Spiral of Silence' theory?
+   1) [CORRECT] Because humans possess a deep, evolutionary fear of social isolation # Correct. They use a 'quasi-statistical sense' to gauge public opinion, making minority views seem even smaller.
+   2) [WRONG] Because their fluid intelligence speeds drop automatically when they face opposition # Wrong. Social disagreement does not impair baseline biological information processing speeds.
+   3) [WRONG] Because they are performing a complex, rational risk-benefit macro-economic calculation # Wrong. The spiral of silence is driven by automatic, emotional fear of isolation, not pure fiscal optimization.
+   4) [WRONG] Because their underlying cognitive architecture switches entirely into a connectionist layer mode # Wrong. This incorrectly mixes an AI engineering structure term into a human social communication dynamic.
 
-10. A fitness tracker sending data to a phone app that then forwards it to a server is which IoT mode?
-   1) [CORRECT] device-to-gateway-to-cloud
-   2) [WRONG]   device-to-device
-   3) [WRONG]   device-to-cloud
-   4) [WRONG]   back-end data sharing
+104. What do empirical studies reveal about the capability of Large Language Models (LLMs) to persuade people regarding conspiracy beliefs?
+   1) [CORRECT] LLMs can persuade people both out of beliefs ('debunking') and into them ('bunking') with similar effect sizes # Correct. Induced shifts can persist over time, though a corrective debriefing can successfully reverse them.
+   2) [WRONG] LLMs are entirely incapable of changing human minds due to systemic algorithm aversion # Wrong. Algorithm appreciation and responsive text dialog make LLMs surprisingly persuasive change agents.
+   3) [WRONG] Jailbroken models without safety guardrails are ten times more persuasive than standard models # Wrong. The text notes jailbroken models are *about as effective* as standard ones at instilling false beliefs.
+   4) [WRONG] LLMs can only convince users who possess a highly analytical, systemic System 2 cognitive style # Wrong. They easily exploit heuristic System 1 biases or motivated reasoning patterns across diverse users.
 
+105. Modern disinformation campaigns frequently use a strategy called 'flooding the zone'. What is the primary objective of this technique?
+   1) [CORRECT] To achieve disorientation by overwhelming the public with bullshit and troll armies rather than convincing them # Correct. It aims to destroy the baseline capacity for open public debate by polluting the information ecosystem.
+   2) [WRONG] To carefully educate citizens using highly parsimonious Gricean communication maxims # Wrong. Flooding is the deliberate violation of clarity and quantity maxims to sow confusion and doubt.
+   3) [WRONG] To optimize the energy efficiency of national cloud computing infrastructure arrays # Wrong. This confuses systemic political deception with the '4 Ms' of technical AI sustainability models.
+   4) [WRONG] To shift the entire population into a high-accuracy eudaimonic media processing focus # Wrong. Flooding destroys accuracy needs and forces users into defensive, heuristic cognitive states.
 
-## Social Media & Hate Speech  (9 questions)
+## Organisations & Work  (11 questions)
 --------------------------------------------------
 
-1. Overt slurs or direct threats of violence are…
-   1) [CORRECT] explicit hate speech
-   2) [WRONG]   implicit hate speech
-   3) [WRONG]   a platform affordance
-   4) [WRONG]   counter-speech
+106. The socio-economic critique that modern technology is driven by profit, using AI to turn human experiences and behavioral data into resources for prediction and market monopolies, is called:
+   1) [CORRECT] Surveillance capitalism             # Correct. It uses extensive tracking to cut labor costs, increase corporate control, and manage workforces.
+   2) [WRONG] Algorithmic management efficiency     # Wrong. This is a narrow functional descriptive term for software management, not the overarching structural critique.
+   3) [WRONG] Creative destruction equilibrium      # Wrong. Creative destruction is Schumpeter's neutral model of industrial displacement, not the behavioral data extraction critique.
+   4) [WRONG] Sustainable socio-ecological design   # Wrong. This is an ethical framework calling for green AI, the opposite of unbridled data profit critique.
 
-2. Negative stereotyping, or hate framed as a joke, is…
-   1) [CORRECT] implicit hate speech
-   2) [WRONG]   explicit hate speech
-   3) [WRONG]   a platform feature
-   4) [WRONG]   a content modality
+107. According to the non-linear model covered in the text, how does the introduction of AI affect macroeconomic unemployment?
+   1) [CORRECT] It may initially raise unemployment, which then shrinks over time as economic conditions normalize # Correct. Crucially, unlike older innovations, AI heavily affects skilled cognitive work alongside entry-level roles.
+   2) [WRONG] It instantly eliminates every form of structural unemployment permanently # Wrong. No technology can instantly cure structural unemployment; short-term dislocation always occurs.
+   3) [WRONG] It exclusively harms low-skilled manual labor while leaving high-skilled work untouched # Wrong. The text explicitly notes that AI departs from past automation by directly impacting highly skilled cognitive roles.
+   4) [WRONG] It has a completely flat linear relationship that shows zero historical variations # Wrong. The text explicitly defines the AI-jobs relationship trend as non-linear.
 
-3. On a platform, the retweet button itself is a ___, while the visibility it enables is an ___.
-   1) [CORRECT] feature ; affordance
-   2) [WRONG]   affordance ; feature
-   3) [WRONG]   modality ; feature
-   4) [WRONG]   norm ; modality
+108. An organization uses software tracking systems to automatically hire, schedule shifts, optimize workflows, evaluate performance, and monitor workers. This is:
+   1) [CORRECT] Algorithmic management              # Correct. Risks include intense surveillance, power imbalances, built-in bias, and highly unclear accountability lines.
+   2) [WRONG] Hyperpersonal mediation               # Wrong. This is a model for computer-mediated romantic or social intimacy, not workplace management software.
+   3) [WRONG] Human-machine augmentation loops      # Wrong. Augmentation uses human-steered avatars; algorithmic management acts as an autonomous control layer over humans.
+   4) [WRONG] Matrix collaborative filtering        # Wrong. Collaborative filtering matches product recommendations; it does not evaluate or schedule physical employees.
 
-4. Which of these is an 'affordance' rather than a 'feature'?
-   1) [CORRECT] anonymity
-   2) [WRONG]   the like button
-   3) [WRONG]   the comment box
-   4) [WRONG]   the share button
+109. The 'hidden workforce' or 'ghost work' that modern artificial intelligence fundamentally depends upon includes which group?
+   1) [CORRECT] Low-paid crowd workers in the Global South doing tedious data-labelling for ~$1–2/hour # Correct. Models do not train themselves error-free; they rely on invisible human annotation and content moderation.
+   2) [WRONG] Highly autonomous mechanical robotic agents operating entirely under Asimov's laws # Wrong. Ghost work refers to underpaid, invisible *human* labor, not fictional mechanical robots.
+   3) [WRONG] Elite software engineers who manage the macroeconomic creative destruction cycles # Wrong. Highly visible, ultra-wealthy tech executives are not the exploited 'ghost workforce' tracked by this critique.
+   4) [WRONG] Automated transformer networks executing multi-headed self-attention parameters # Wrong. Attention heads are mathematical software calculations, not the human workforce executing data labeling.
 
-5. Anonymity is thought to ease hate speech mainly through…
-   1) [CORRECT] the online disinhibition effect
-   2) [WRONG]   media richness
-   3) [WRONG]   the cold-start problem
-   4) [WRONG]   the uncanny valley
+110. Digital business models create value through four primary innovation sources. Efficiency, novelty, and complementarities are three; what is the fourth?
+   1) [CORRECT] Lock-in                             # Correct. Lock-in keeps users tightly bound inside a specific platform ecosystem to prevent churn.
+   2) [WRONG] Sycophancy                            # Wrong. Sycophancy is an algorithmic alignment failure pattern, not a positive source of business value creation.
+   3) [WRONG] Inoculation                           # Wrong. Inoculation is a psychological persuasion resistance strategy used to warn citizens about targeting ads.
+   4) [WRONG] Salutogenesis                         # Wrong. Salutogenesis is a medical sociology paradigm focusing on what keeps human bodies healthy.
 
-6. Via sharing mechanisms, hateful content tends to gain…
-   1) [CORRECT] more visibility than non-hateful content
-   2) [WRONG]   less visibility than non-hateful content
-   3) [WRONG]   the same visibility as any content
-   4) [WRONG]   visibility only on alternative platforms
+111. What does the text conclude regarding the real-world productivity gains achieved by corporate AI adoptions so far?
+   1) [CORRECT] Gains are often modest, plagued by failed adoptions and extra work caused by AI errors # Correct. Popular hype frequently outstrips reality, as cleaning up model hallucinations requires manual human labor.
+   2) [WRONG] Real gains are universally massive, completely eliminating all corporate transaction costs # Wrong. Corporate integration is highly complex, and errors frequently create substantial operational friction.
+   3) [WRONG] Gains occur exclusively within organizations that use rule-based ELIZA scripts # Wrong. ELIZA is an obsolete 1966 chatbot; modern business gains are attempted via deep learning systems.
+   4) [WRONG] AI gains are mathematically restricted to platforms operating under lean media channels # Wrong. Business models exploit highly rich, interactive multi-modal platforms across diverse consumer channels.
 
-7. A captioned meme (image plus embedded text) is an example of…
-   1) [CORRECT] multimodal content
-   2) [WRONG]   a single platform feature
-   3) [WRONG]   an affordance
-   4) [WRONG]   a recommender algorithm
+112. The '4 Ms' framework for Sustainable AI identifies four specific levers to cut algorithmic carbon emissions. Model, Machine, and Mechanization are three; what is the fourth?
+   1) [CORRECT] Map                                 # Correct. Map refers to physically locating heavy compute operations in geographic regions where energy grids are cleanest.
+   2) [WRONG] Mode                                  # Wrong. Mode is an incorrect label; the correct designation for the spatial lever is Map.
+   3) [WRONG] Matrix                                # Wrong. Matrix refers to data recommendation structures, not the sustainable carbon reduction computing layout.
+   4) [WRONG] Maxim                                 # Wrong. Maxims are Gricean guidelines for cooperative conversation, completely unrelated to green data centers.
 
-8. Online hate speech threatens democratic participation because…
-   1) [CORRECT] targets withdraw from public debate
-   2) [WRONG]   it improves the quality of debate
-   3) [WRONG]   it affects only offline crime
-   4) [WRONG]   it raises platform revenue
+113. Evaluating the sustainability of artificial intelligence not just via technical processor efficiency, but across social, technical, and ecological dimensions simultaneously is called the:
+   1) [CORRECT] Socio-techno-ecological perspective # Correct. It forces organizations to account for water consumption, rare earth mineral supply chains, and societal impacts.
+   2) [WRONG] Surveillance capitalism critique      # Wrong. Surveillance capitalism focuses on data monetization and profit loops, not general environmental ecological frameworks.
+   3) [WRONG] Norman social impact compass          # Wrong. The social impact compass evaluates social innovations, it is not a dedicated technical AI green grid metric.
+   4) [WRONG] Limited capacity model (LC4MP)        # Wrong. LC4MP tracks human cognitive limitations during media processing, not data center energy consumption.
 
-9. Because users spread across many platforms, the lecture stresses that…
-   1) [CORRECT] each platform's design creates its own opportunity structures
-   2) [WRONG]   all platforms now behave identically
-   3) [WRONG]   moderation has become impossible
-   4) [WRONG]   anonymity has disappeared everywhere
+114. Under the '4 Ms' framework, optimizing a system by utilizing specialized ML-processors like Google TPUs or recent advanced GPUs targets which lever?
+   1) [CORRECT] Machine                             # Correct. The Machine lever focuses on deploying highly specialized hardware processors optimized for machine learning algorithms.
+   2) [WRONG] Model                                 # Wrong. The Model lever involves developing energy-efficient algorithmic architectures requiring fewer active parameters.
+   3) [WRONG] Mechanization                         # Wrong. Mechanization deals with structural efficiency choices, such as cloud-based computing architectures vs on-premise arrays.
+   4) [WRONG] Map                                   # Wrong. Map tracks the physical geographic location of data centers relative to clean energy grids.
 
+115. Why does the presence of algorithmic errors and model hallucinations frequently create 'extra work' for human employees?
+   1) [CORRECT] Because humans must meticulously audit, verify, and correct automated outputs manually # Correct. AI does not train or correct itself error-free; automated mistakes shift auditing burdens onto human staff.
+   2) [WRONG] Because errors automatically trigger a permanent accommodation shift in human fluid intelligence # Wrong. Operational errors do not alter a human's biological fluid information processing speed capabilities.
+   3) [WRONG] Because human workers are forced to communicate exclusively using lean print media flyers # Wrong. Workers use standard enterprise digital channels; checking errors simply consumes productive time blocks.
+   4) [WRONG] Because hallucinations automatically activate Asimov's primary robotic safety shutdown protocols # Wrong. Fictional laws of robotics do not govern real-world corporate enterprise enterprise software errors.
 
-## AI in Politics & Misinformation  (10 questions)
+116. A digital business model combines real-time streaming data analytics with certified Ethical AI transparency tools. According to innovation frameworks, this creates value via:
+   1) [CORRECT] Complementarities                   # Correct. Complementarities occur when an organization bundles distinct offerings together to amplify value creation.
+   2) [WRONG] Lock-in                               # Wrong. Lock-in focuses on erecting high switching costs to trap users inside an ecosystem.
+   3) [WRONG] Novelty                               # Wrong. Novelty is the introduction of completely unprecedented products or personalized feature tracks.
+   4) [WRONG] Efficiency                            # Wrong. Efficiency is strictly the reduction of operational costs or transaction tracking speeds.
+
+## Health & Wellbeing  (11 questions)
 --------------------------------------------------
 
-1. A cited benefit of AI in public administration is to…
-   1) [CORRECT] automate repetitive tasks, freeing staff for complex work
-   2) [WRONG]   replace elected decision-making
-   3) [WRONG]   remove the need for any records
-   4) [WRONG]   guarantee bias-free outcomes
+117. The official WHO definition of health establishes that it is:
+   1) [CORRECT] A state of complete physical, mental, and social wellbeing, not merely the absence of disease # Correct. This establishes a broad, positive framework that moves beyond basic pathology models.
+   2) [WRONG] The statistical average of human fluid and crystallized intelligence test performance scores # Wrong. This nonsensically blends intelligence test metrics into a definition of biological and social health.
+   3) [WRONG] A state where an individual's actual self perfectly matches their ideal self-schema requirements # Wrong. This describes a state of zero discrepancy under motivational theory, not the WHO health standard.
+   4) [WRONG] The total elimination of any form of algorithmic surveillance within national workplace boundaries # Wrong. This incorporates a workplace capitalism critique into the baseline definition of physical medicine.
 
-2. Communication flowing from public opinion up to politicians is…
-   1) [CORRECT] upward
-   2) [WRONG]   top-down
-   3) [WRONG]   vertical
-   4) [WRONG]   horizontal
+118. Contrast these two health paradigms: (A) asking what specific pathogens or stressors make people sick, versus (B) asking what factors keep people healthy despite severe adversity.
+   1) [CORRECT] A = Pathogenesis; B = Salutogenesis # Correct. Pathogenesis tracks the origin of sickness; salutogenesis tracks the origin of health and resilience.
+   2) [WRONG] A = Salutogenesis; B = Pathogenesis   # Wrong. This completely inverts the two core analytical directions of medical sociology.
+   3) [WRONG] A = Hedonic health; B = Eudaimonic health # Wrong. These are classifications of psychological wellbeing, not systemic biological health paradigms.
+   4) [WRONG] A = Assimilation; B = Accommodation   # Wrong. These are Piaget's structural cognitive development concepts tracking schema changes.
 
-3. The lecture defines misinformation as claims that are…
-   1) [CORRECT] contrary to the currently best available evidence
-   2) [WRONG]   intended to deceive a specific audience
-   3) [WRONG]   already known by everyone to be false
-   4) [WRONG]   impossible to check even in principle
+119. The central psychological resource in salutogenesis—defined as a durable confidence that life is comprehensible, manageable, and meaningful—is the:
+   1) [CORRECT] Sense of coherence                  # Correct. It operates effectively at individual, organizational, and national levels alike to preserve health.
+   2) [WRONG] Self-efficacy index                   # Wrong. Self-efficacy is specifically the belief in one's ability to execute a single task, not an overarching worldview scale.
+   3) [WRONG] Algorithmic appreciation alignment    # Wrong. Algorithm appreciation is over-trusting mathematical models over human experts, unrelated to life meaning.
+   4) [WRONG] Psychological richness construct      # Wrong. Richness means leading an interesting, highly varied life; it is distinct from the coherence scale.
 
-4. Disinformation differs from misinformation by its…
-   1) [CORRECT] intent to deceive
-   2) [WRONG]   length of message
-   3) [WRONG]   visual format
-   4) [WRONG]   choice of platform
+120. A citizen leads an interesting, highly varied life full of novel, perspective-shifting experiences. According to modern frameworks, their wellbeing is:
+   1) [CORRECT] Psychologically rich                # Correct. This complements hedonic (pleasure) and eudaimonic (meaningful) conceptions of a good life.
+   2) [WRONG] Hedonic                               # Wrong. Hedonic wellbeing focuses strictly on achieving a positive balance of affect and high immediate life satisfaction.
+   3) [WRONG] Eudaimonic                            # Wrong. Eudaimonic wellbeing centers specifically on leading a deeply purposeful, value-driven, and meaningful life.
+   4) [WRONG] Salutogenic                           # Wrong. Salutogenesis is the broad structural field study of health tracking, not this single experiential lifestyle category.
 
-5. A conspiracy theory explains events through…
-   1) [CORRECT] the secret, malicious acts of a powerful group
-   2) [WRONG]   the best available scientific evidence
-   3) [WRONG]   pure random coincidence
-   4) [WRONG]   officially confirmed records
+121. Self-Determination Theory asserts that human wellbeing is driven by the satisfaction of which three intrinsic psychological needs?
+   1) [CORRECT] Autonomy, competence, and relatedness/affiliation # Correct. Satisfying these three baseline needs fuels healthy intrinsic human motivation.
+   2) [WRONG] Perceived usefulness, ease of use, and facilitating conditions # Wrong. These are the core technology adoption factors tracked within TAM and UTAUT metrics.
+   3) [WRONG] Comprehensibility, manageability, and meaningfulness # Wrong. These form the three component prongs of the 'Sense of Coherence' scale under salutogenesis.
+   4) [WRONG] Warmth, capability, and corporate algorithmic transparency # Wrong. This mixes the stereotype content model dimensions with general technical auditing terms.
 
-6. In dual-process persuasion models (ELM/HSM), durable attitude change comes via the…
-   1) [CORRECT] central / systematic route
-   2) [WRONG]   peripheral / heuristic route
-   3) [WRONG]   spiral of silence
-   4) [WRONG]   diffusion process
+122. Which framework breaks down the multi-dimensional impacts of AI on human wellbeing into Modality, Person, Area of use, Culture, and Transparency?
+   1) [CORRECT] The IMPACT framework                # Correct. This framework models how AI impacts wellbeing, mediated by a user's overarching attitudes toward tech.
+   2) [WRONG] The Social Media Privacy Model        # Wrong. This model calculates user self-disclosure choices based on trust and access control options.
+   3) [WRONG] The LC4MP framework                   # Wrong. LC4MP evaluates how limited human cognitive resources process mediated messages before breaking down.
+   4) [WRONG] The Threshold Model of Social Influence (TMSI) # Wrong. TMSI maps the social influence of virtual entities based on agency and behavioral realism variables.
 
-7. Inferring profound meaning from impressive but empty phrases ('bullshit receptivity') predicts…
-   1) [CORRECT] more belief in misinformation
-   2) [WRONG]   less belief in misinformation
-   3) [WRONG]   immunity to persuasion
-   4) [WRONG]   a higher need for cognition
+123. The 'Werther effect' refers to media-induced imitation of distress or suicide. How is this concept applied in the course regarding AI?
+   1) [CORRECT] To argue that 'AI psychosis' is not entirely new; media-shaped delusions have long existed # Correct. Historically, human delusions have always adapted to mirror dominant contemporary media technologies.
+   2) [WRONG] To prove that exposure to text-based chatbots instantly increases human fluid intelligence # Wrong. Chatbot messaging does not structurally accelerate biological fluid processing speeds.
+   3) [WRONG] To demonstrate that algorithms are entirely immune to structural availability biases # Wrong. Algorithms are highly vulnerable to availability bias based on the text data they ingest.
+   4) [WRONG] To establish that eudaimonic media formatting always prevents copycat copy behaviors # Wrong. The text notes that distress depictions can trigger copycats, regardless of high artistic value formatting.
 
-8. 'Motivated cognition' means people prefer information that…
-   1) [CORRECT] flatters their own group or party
-   2) [WRONG]   contradicts their existing beliefs
-   3) [WRONG]   is the hardest to understand
-   4) [WRONG]   comes only from opponents
+124. When sycophantic Large Language Models collude with a user's clinical delusions or enable self-harm ideation, they violate which medical AI best practice?
+   1) [CORRECT] Good clinical practice must not collude with delusions or enable harmful ideation # Correct. Sycophantic AI models single-mindedly pursue immediate user approval, creating severe health risks.
+   2) [WRONG] Algorithms must always transition completely into an anonymous avatar channel state # Wrong. Shifting into an avatar means human-steering, which doesn't automatically fix back-end language collusion risks.
+   3) [WRONG] Models must process medical inputs using a strictly symbolic rule-based ELIZA script # Wrong. Modern medical support uses advanced neural layers; it simply requires strict safety guardrails against flattery.
+   4) [WRONG] Clinical systems must maximize their proxy bias parameters to protect patient charts # Wrong. Proxy bias is a dangerous flaw that introduces hidden discrimination, it must be minimized, not maximized.
 
-9. 'Conspiracy mentality' is best described as a…
-   1) [CORRECT] general disposition to suspect conspiracies
-   2) [WRONG]   one-off belief in a single rumour
-   3) [WRONG]   temporary mood after bad news
-   4) [WRONG]   skill for detecting real plots
+125. Achieving true 'Fairness' in automated medical risk-score algorithms requires that:
+   1) [CORRECT] The real-world outcome of the classification must be fair, accounting for baseline group risks # Correct. It cannot just mean equal mathematical classification accuracy; small sample sizes must remain stable to prevent early treatment disparities.
+   2) [WRONG] The algorithm ignores distinct baseline risks to ensure identical mathematical scoring grids # Wrong. Ignoring real biological baseline differences across demographic groups directly causes severe downstream healthcare disparities.
+   3) [WRONG] Every demographic group is compressed into a perfectly flat, blended averaging bias score # Wrong. Averaging bias is a harmful flaw that erases critical medical distinctiveness and clinical variance.
+   4) [WRONG] The system operates completely without human-in-the-loop clinical supervision layers # Wrong. Operating completely without human auditing maximizes the risk of algorithmic hallucinations harming patients.
 
-10. The lecture's measured conclusion on misinformation's political effects is that it…
-   1) [CORRECT] rarely shifts voting at scale but can cause misperceptions
-   2) [WRONG]   single-handedly decides most elections
-   3) [WRONG]   has no effect of any kind
-   4) [WRONG]   only changes offline behaviour
+126. The core guiding principle for deploying artificial intelligence systems within psychotherapy and clinical medicine is:
+   1) [CORRECT] Enhancement, not replacement        # Correct. AI should augment clinicians (faster diagnostics, image analysis) rather than replace them due to hallucination risks.
+   2) [WRONG] Total substitution and autonomy       # Wrong. Full automation removes critical human-in-the-loop accountability, threatening patient safety.
+   3) [WRONG] Rigid symbolic keyword script manipulation # Wrong. Simple keyword scripts like ELIZA lack the required clinical text comprehension capacity.
+   4) [WRONG] Maximizing user hedonic entertainment levels # Wrong. Clinical medicine focuses on objective health outcomes and salutogenesis, not short-term amusement.
 
+127. Under Self-Determination Theory, what is the critical distinction between intrinsic and extrinsic motivation?
+   1) [CORRECT] Intrinsic is doing things you want to do; extrinsic is doing things you feel you must do # Correct. Satisfying core psychological needs builds authentic, healthy intrinsic motivation pathways.
+   2) [WRONG] Intrinsic occurs via rich media channels; extrinsic occurs via lean print flyers # Wrong. Motivation is an internal human psychological state, independent of technical media channel bandwidth grids.
+   3) [WRONG] Intrinsic requires a connectionist architecture; extrinsic requires symbolic rules # Wrong. These are AI technical coding paradigms, completely distinct from human motivational structures.
+   4) [WRONG] Intrinsic maps onto System 1 shortcuts; extrinsic maps onto System 2 deliberation # Wrong. Both motivational states can engage fast heuristic or slow analytical processing depending on context.
 
-## AI, Work & Sustainability  (10 questions)
+## Entertainment, Games & Virtual Reality  (11 questions)
 --------------------------------------------------
 
-1. The 'hidden workforce' behind AI mainly refers to…
-   1) [CORRECT] low-paid crowd-workers labelling data
-   2) [WRONG]   fully self-training models
-   3) [WRONG]   senior executives only
-   4) [WRONG]   factory robots
+128. Which historical communication paradigm focuses on the active user, asking why people choose specific media to satisfy social or psychological needs?
+   1) [CORRECT] Uses & gratifications               # Correct. It contrasts gratifications sought (expected) with gratifications obtained (received) without making normative content judgments.
+   2) [WRONG] Agenda-setting framing theory         # Wrong. Agenda-setting tracks how media forces topics onto the public, not individual psychological need fulfillment.
+   3) [WRONG] Linear process information tracking   # Wrong. Linear models treat the receiver as a passive target, ignoring active psychological choice motivations.
+   4) [WRONG] Hyperpersonal media richness theory   # Wrong. This invented phrase mixes up organizational channel selection with entertainment choice models.
 
-2. Handing manager tasks (scheduling, evaluation, monitoring) to AI is warned to risk…
-   1) [CORRECT] surveillance, power imbalance and unclear accountability
-   2) [WRONG]   excessive worker autonomy
-   3) [WRONG]   the removal of all bias
-   4) [WRONG]   total transparency for staff
+129. Factor-analytic work identifies several core gaming motives. Progress/achievement, immersion, and discovery are three; what is a primary social motive?
+   1) [CORRECT] Teamwork, relationships, and socialising # Correct. While goal-orientation promotes healthy play, escapist and social motives carry higher addiction correlations.
+   2) [WRONG] Radical macro-economic creative destruction # Wrong. This is Schumpeter's market disruption theory, not a psychological player motive for gaming.
+   3) [WRONG] Fundamental attribution error minimization # Wrong. Gaming does not alter or minimize human cognitive attribution error biases.
+   4) [WRONG] Matrix collaborative filtering accuracy # Wrong. This is a back-end recommendation calculation, not a human player's gaming motivation.
 
-3. As AI reshapes entry-level work, value shifts toward workers who can…
-   1) [CORRECT] monitor, evaluate and translate AI output
-   2) [WRONG]   avoid AI tools entirely
-   3) [WRONG]   do only the tasks AI already does
-   4) [WRONG]   work without any statistical skills
+130. The explicit application of game design elements (such as badges, leaderboards, and performance graphics) inside non-game contexts is called:
+   1) [CORRECT] Gamification                        # Correct. It is widely deployed to systematically satisfy human psychological needs for personal mastery.
+   2) [WRONG] Algorithmic management                # Wrong. Algorithmic management uses tracking software to enforce work control, which can cause intense workplace stress.
+   3) [WRONG] Smartification                        # Wrong. Smartification is embedding internet sensors and autonomous choice loops into physical everyday objects.
+   4) [WRONG] Hyperpersonal customization           # Wrong. This mixes up online communication intimacy terms with game mechanic design applications.
 
-4. Which factor has the lowest effect on an AI model's CO₂ consumption?
-   1) [CORRECT] saying thank you to the model
-   2) [WRONG]   the size of the training data
-   3) [WRONG]   the location and power source of the servers
-   4) [WRONG]   whether the model runs in the cloud
+131. Mood Management Theory asserts that humans actively select media entertainment content to:
+   1) [CORRECT] Regulate emotional states, maintaining good moods or repairing bad ones # Correct. This is the foundational driving mechanism behind short-term hedonic entertainment consumption.
+   2) [WRONG] Maximize their personal scores on national algorithmic literacy evaluations # Wrong. Media choice is driven by immediate affective regulation, not a desire to pass software literacy tests.
+   3) [WRONG] Systematically execute painful schema accommodation developments # Wrong. Humans actively avoid unpleasant cognitive mismatches when seeking immediate mood relaxation channels.
+   4) [WRONG] Overcome the digital divide knowledge gaps inside their household # Wrong. Selecting media for mood repair has no direct structural impact on socioeconomic access divides.
 
-5. On AI and climate, the lecture stresses that training and running large models…
-   1) [CORRECT] can emit substantial CO₂
-   2) [WRONG]   have no measurable footprint
-   3) [WRONG]   always reduce net emissions
-   4) [WRONG]   matter only for hardware shipping
+132. Contrast these two entertainment categories: (A) content providing fun, pleasure, and suspense, versus (B) content providing meaningful, value-laden, and self-transcending appreciation.
+   1) [CORRECT] A = Hedonic entertainment; B = Eudaimonic entertainment # Correct. This maps onto human Dual-Process cognitive theory splits (System 1 vs System 2 processing).
+   2) [WRONG] A = Eudaimonic entertainment; B = Hedonic entertainment # Wrong. This completely reverses the definitions of pleasure-driven vs meaning-driven media consumption.
+   3) [WRONG] A = Active media use; B = Passive scrolling use # Wrong. These describe human physical interaction habits with feeds, not text/narrative thematic genres.
+   4) [WRONG] A = Assimilation media; B = Accommodation scripts # Wrong. These are Piaget's general child development terms, completely out of context here.
 
-6. Among the four 'levers' for greener AI, choosing the data-centre with the cleanest energy is the…
-   1) [CORRECT] 'Map' lever
-   2) [WRONG]   'Model' lever
-   3) [WRONG]   'Machine' lever
-   4) [WRONG]   'Mechanization' lever
+133. Match the correct labels to these immersive user states: (A) a gradual sense of being absorbed in a virtual space, (B) the psychological feeling of 'being there', and (C) total involvement where self and environment merge.
+   1) [CORRECT] A = Immersion; B = Presence; C = Flow # Correct. These three concepts define the cognitive spectrum of user engagement inside virtual spaces.
+   2) [WRONG] A = Presence; B = Flow; C = Immersion # Wrong. This swaps the spatial feeling of presence with the continuous action logic state of flow.
+   3) [WRONG] A = Flow; B = Immersion; C = Presence # Wrong. This incorrectly assigns flow to spatial absorption and presence to action merger loops.
+   4) [WRONG] A = Transportation; B = Identification; C = Embodiment # Wrong. These are narrative persuasion and avatar identity terms, not the core immersion axes.
 
-7. Among the four 'levers' for greener AI, designing a more energy-efficient model is the…
-   1) [CORRECT] 'Model' lever
-   2) [WRONG]   'Machine' lever
-   3) [WRONG]   'Map' lever
-   4) [WRONG]   'Mechanization' lever
+134. Using intense media immersion specifically to distract oneself from painful real-world problems describes Escapism. What are its psychological correlates?
+   1) [CORRECT] Positive correlates like joy, but stronger negative correlates like depression, loneliness, and addiction # Correct. Negative associations are highly pronounced, particularly within Western cultural contexts.
+   2) [WRONG] A massive permanent acceleration in a player's baseline fluid information processing speed # Wrong. Escapism alters immediate emotional states; it does not change biological fluid intelligence metrics.
+   3) [WRONG] The total eradication of confirmation bias and motivated reasoning tendencies # Wrong. Immersive escapism can enhance motivated reasoning by letting users select comforting fantasy worlds.
+   4) [WRONG] An immediate shift into high-accuracy systemic System 2 cognitive processing # Wrong. Escapism typically targets easy, absorbing, or heuristic processing to evade effortful real-world problems.
 
-8. The lecture's realistic note on AI in business is that actual gains are so far…
-   1) [CORRECT] modest, with adoption often failing
-   2) [WRONG]   enormous and guaranteed for all
-   3) [WRONG]   entirely absent in every firm
-   4) [WRONG]   limited to manufacturing only
+135. When choosing a digital gaming avatar, players display a strong tendency to select characteristics that represent their:
+   1) [CORRECT] Ideal self (who they would like to be) # Correct. This links directly to self-discrepancy theory, allowing deep exploration of possible selves.
+   2) [WRONG] Ought self (who they feel they must be) # Wrong. The ought self reflects external duties and obligations, which players rarely select for leisure play.
+   3) [WRONG] Feared self (who they are terrified of becoming) # Wrong. Players actively avoid embodying their feared self-schema unless forced by specific narrative structures.
+   4) [WRONG] Actual self (exactly how they are in physical reality) # Wrong. The text notes avatars frequently reflect the idealized self rather than a literal depiction of reality.
 
-9. A review of leadership 'in the era of AI' found the key competencies are mostly…
-   1) [CORRECT] human and psycho-social, plus understanding AI
-   2) [WRONG]   pure programming ability
-   3) [WRONG]   cost-cutting techniques
-   4) [WRONG]   hardware engineering
+136. What is the technical definition separating Augmented Reality (AR) from Virtual Reality (VR)?
+   1) [CORRECT] AR extends the real environment with digital info; VR aims to completely replace it # Correct. VR replaces the physical world with a fully responsive, synthetic sensory world offering higher immersion.
+   2) [WRONG] AR relies entirely on connectionist layers; VR uses explicit symbolic rules # Wrong. Both AR and VR are interface display technologies, completely independent of back-end coding paradigms.
+   3) [WRONG] AR is classified as a rich medium; VR is classified as a completely lean flyer channel # Wrong. Both are highly advanced, interactive digital environments, representing the rich end of cue spectrums.
+   4) [WRONG] AR activates promotion focus; VR exclusively activates a defensive prevention focus # Wrong. Interface display types do not map directly onto a user's self-discrepancy motivational focus.
 
-10. Which is a named source of digital business value in the lecture?
-   1) [CORRECT] efficiency (lower costs, better coordination)
-   2) [WRONG]   nostalgia (reviving old products)
-   3) [WRONG]   secrecy (hiding the algorithm)
-   4) [WRONG]   scarcity (limiting supply)
+137. According to Transportation Theory, what are the two core mechanisms by which narrative stories can alter human attitudes?
+   1) [CORRECT] Transportation (getting 'lost' in the text) and Identification (adopting a character's perspective) # Correct. Virtual Reality significantly amplifies both mechanisms by allowing users to act physically inside the space.
+   2) [WRONG] Cultivation framing and step-wise regression matching # Wrong. Step-wise regression is a statistical tool; it has nothing to do with narrative emotional persuasion.
+   3) [WRONG] Source seeding and coordinated inauthentic behavior tracking # Wrong. These are malicious disinformation campaign manipulation tactics, not story persuasion paths.
+   4) [WRONG] Mood management loops and mathematical collaborative filtering # Wrong. Filtering is an automated catalog sorting method, not an internal psychological narrative journey.
 
+138. What does empirical evidence show regarding the claim that Virtual Reality operates as a highly potent 'empathy machine'?
+   1) [CORRECT] It boosts short-term empathy and behavior, but the effect fades over time and fails to shift long-term attitudes # Correct. Immersive perspective-taking yields an immediate empathy spike, but longitudinal attitude changes remain highly qualified.
+   2) [WRONG] It permanently eradicates every trace of implicit racial bias inside a user's brain after one session # Wrong. No media technology can permanently delete complex, deep-seated implicit biases in a single exposure.
+   3) [WRONG] It is entirely ineffective because head-mounted displays instantly trigger the uncanny valley effect # Wrong. The uncanny valley applies to human-looking robots, not the virtual environment layouts viewed in headsets.
+   4) [WRONG] It works exclusively on users who maintain a highly defensive, anxious prevention focus # Wrong. VR narrative transportation impacts users across all self-discrepancy motivational profiles.
 
-## AI in Health & Medicine  (14 questions)
+## Bias in AI (cross-cutting)  (11 questions)
 --------------------------------------------------
 
-1. The WHO defines health as…
-   1) [CORRECT] complete physical, mental and social well-being
-   2) [WRONG]   the absence of any diagnosed disease
-   3) [WRONG]   maximal physical fitness
-   4) [WRONG]   freedom from all chronic conditions
+139. The concept of 'The Silicon Gaze' highlights that modern Large Language Models:
+   1) [CORRECT] Reproduce and amplify a partial worldview that heavily over-represents wealthy, English-speaking, metropolitan places # Correct. Named by analogy to the 'male gaze', it skews toward dominant institutions and places while marginalizing others.
+   2) [WRONG] Utilize a physical camera eye that automatically triggers the uncanny valley during human interactions # Wrong. The Silicon Gaze is a metaphorical concept tracking dataset geographic bias, not a physical camera sensor.
+   3) [WRONG] Operate completely under explicit symbolic rules that prevent any form of deep neural learning # Wrong. LLMs are advanced connectionist networks that learn from massive data arrays, not legacy rule systems.
+   4) [WRONG] Maximize eudaimonic appreciation by executing automatic step-wise regression metrics # Wrong. This nonsensically mashes up an entertainment appreciation concept with a legacy statistical calculation tool.
 
-2. Salutogenesis reframes the central question as…
-   1) [CORRECT] what keeps people healthy?
-   2) [WRONG]   which pathogens cause disease?
-   3) [WRONG]   how is each illness treated?
-   4) [WRONG]   who is to blame for illness?
+140. Under the five-part typology of bias, an LLM defaults to dominant statistical associations and patterns, flattening cultural diversity. This is:
+   1) [CORRECT] Pattern bias                        # Correct. Pattern bias actively flattens diversity by defaulting to dominant corporate or statistical data trends.
+   2) [WRONG] Availability bias                     # Wrong. Availability bias is over-representing topics or languages simply because they are abundant in the training data.
+   3) [WRONG] Averaging bias                        # Wrong. Averaging bias collapses distinct variety into a bland, generic 'average' representation that erases uniqueness.
+   4) [WRONG] Trope bias                            # Wrong. Trope bias is the explicit reproduction of historical clichés and harmful stereotyped tropes.
 
-3. A 'sense of coherence' comprises comprehensibility, manageability, and…
-   1) [CORRECT] meaningfulness
-   2) [WRONG]   happiness
-   3) [WRONG]   prosperity
-   4) [WRONG]   conformity
+141. An AI model over-represents certain topics or well-documented geographic nations purely because that data is highly abundant in its training set. This is:
+   1) [CORRECT] Availability bias                   # Correct. This leaves under-served or poorly documented areas severely under-represented in model outputs.
+   2) [WRONG] Proxy bias                            # Wrong. Proxy bias occurs when an algorithm uses correlated stand-in variables that secretly smuggle in bias.
+   3) [WRONG] Trope bias                            # Wrong. Trope bias is the explicit re-generation of clichés and outdated cultural stereotypes.
+   4) [WRONG] Averaging bias                        # Wrong. Averaging bias is the blending of distinct variations into a generic, featureless middle ground.
 
-4. Feeling that your environment is predictable corresponds to which part of coherence?
-   1) [CORRECT] comprehensibility
-   2) [WRONG]   manageability
-   3) [WRONG]   meaningfulness
-   4) [WRONG]   sociability
+142. When an algorithm collapses cultural variety and distinctiveness into a bland, generic representation, it is demonstrating:
+   1) [CORRECT] Averaging bias                      # Correct. It erases the rich distinctiveness of peripheral cultures by seeking a featureless statistical center.
+   2) [WRONG] Proxy bias                            # Wrong. Proxy bias is utilizing indirect markers or correlated stand-in variables to smuggle in discrimination.
+   3) [WRONG] Availability bias                     # Wrong. Availability bias is driven by data abundance, not the active centering/blanding of existing variety.
+   4) [WRONG] Pattern bias                          # Wrong. Pattern bias is strictly defaulting to dominant statistical associations rather than creating a blended average.
 
-5. A 'eudaimonic' view of well-being emphasises…
-   1) [CORRECT] a meaningful life
-   2) [WRONG]   a pleasant emotional balance
-   3) [WRONG]   an interesting, varied life
-   4) [WRONG]   a high income
+143. An AI hiring model infers a candidate's personal traits or race by analyzing indirect, highly correlated stand-in variables like zip codes. This is:
+   1) [CORRECT] Proxy bias                          # Correct. Proxy variables act as stand-ins that secretly smuggle in historical societal bias and discrimination.
+   2) [WRONG] Trope bias                            # Wrong. Trope bias is the explicit use of narrative clichés and descriptive cultural stereotypes in text outputs.
+   3) [WRONG] Availability bias                     # Wrong. Availability bias is a distortion caused purely by the volume and abundance of text data in the training set.
+   4) [WRONG] Averaging bias                        # Wrong. Averaging bias is the blending of diverse characteristics into a single featureless median representation.
 
-6. A 'hedonic' view of well-being emphasises…
-   1) [CORRECT] a positive balance of pleasant over unpleasant feelings
-   2) [WRONG]   a deeply meaningful life
-   3) [WRONG]   a novel and varied life
-   4) [WRONG]   a financially secure life
+144. An LLM outputs an answer filled with outdated narrative clichés and cultural stereotypes regarding a minoritized group. This is:
+   1) [CORRECT] Trope bias                          # Correct. Trope bias is the direct reproduction of historical clichés and stereotyped narrative tropes.
+   2) [WRONG] Proxy bias                            # Wrong. Proxy bias relies on correlated structural variables to smuggle in discrimination covertly.
+   3) [WRONG] Availability bias                     # Wrong. Availability bias is a volume distortion based on raw text data abundance metrics.
+   4) [WRONG] Averaging bias                        # Wrong. Averaging bias blends distinct traits into a bland, featureless middle representation.
 
-7. A 'psychologically rich' life is one that is…
-   1) [CORRECT] interesting and varied
-   2) [WRONG]   pleasant and comfortable
-   3) [WRONG]   meaningful and purposeful
-   4) [WRONG]   stable and predictable
+145. According to the textbook pipeline analysis, at what stages can bias actively enter an artificial intelligence system?
+   1) [CORRECT] At every single stage: from literature search, training data, models, humans in the loop, deployment, to interpretation # Correct. Bias is cross-cutting and can pollute the system pipeline at any operational juncture.
+   2) [WRONG] Exclusively during the back-end connectionist neural network layer optimization step # Wrong. Bias can easily enter long before training via partial literature searches or long after via human interpretation.
+   3) [WRONG] Only when a system relies entirely on legacy rule-based symbolic ELIZA scripts # Wrong. Deep learning connectionist networks are highly vulnerable to amplifying historical data biases.
+   4) [WRONG] Strictly during the execution of multi-headed self-attention context weighting # Wrong. Attention heads map context mathematically, but data selection and human deployment choices introduce the core bias.
 
-8. Unlike good therapy, general LLMs tend to…
-   1) [CORRECT] validate the user and default to agreement
-   2) [WRONG]   confront and challenge harmful beliefs
-   3) [WRONG]   refuse all emotional topics
-   4) [WRONG]   follow clinical guidelines exactly
+146. What is a major real-world limitation of deploying technical 'debiasing strategies' on automated AI models?
+   1) [CORRECT] They often prove highly limited in practice, particularly for under-represented groups # Correct. Reversing structural bias parallels the immense cognitive challenges of debiasing human prejudices.
+   2) [WRONG] They automatically cause the entire model architecture to revert into a symbolic rule framework # Wrong. Technical debiasing attempts adjust weights or filters within connectionist models; they do not change the architecture.
+   3) [WRONG] They instantly delete all historical crystallized intelligence data from the corporate server # Wrong. Debiasing tools do not erase basic knowledge data catalogs; they attempt to balance classification outputs.
+   4) [WRONG] They force the machine to operate entirely inside a low-status anonymous avatar channel # Wrong. Debiasing is a software weight or algorithmic calibration, completely separate from avatar interface steering.
 
-9. Heavy LLM use for emotional support was most associated with delusion-like experiences among…
-   1) [CORRECT] people already at higher psychosis risk
-   2) [WRONG]   people who used AI only for studying
-   3) [WRONG]   people who never used chatbots
-   4) [WRONG]   all users equally
+147. Why does the textbook assert that 'Algorithmic Fairness' cannot be achieved by simply ensuring equal classification accuracy across groups?
+   1) [CORRECT] Because fairness must explicitly evaluate real-world outcomes and address group baseline differences # Correct. Equal accuracy can lock in severe real-world disparities if baseline risks or sample sizes are highly unequal.
+   2) [WRONG] Because accuracy metrics force the model to deploy slow System 2 human elaboration # Wrong. Accuracy scores are cold mathematical metrics evaluated by engineers, not modes of human cognition.
+   3) [WRONG] Because equal accuracy automatically triggers an immediate uncanny valley discomfort response # Wrong. The uncanny valley is a physical visual robot appearance phenomenon, unrelated to classification data statistics.
+   4) [WRONG] Because it completely eliminates an organization's capability to secure commercial lock-in value # Wrong. Fairness metrics shape ethical alignment; they do not structurally prevent creating corporate ecosystem lock-in.
 
-10. The depression risk-score case argued that fairness must consider not only classification accuracy but also…
-   1) [CORRECT] treatment outcomes and group baseline risks
-   2) [WRONG]   the model's processing speed
-   3) [WRONG]   the interface's visual design
-   4) [WRONG]   the number of input features
+148. Debiasing human beings (via intergroup contact or counter-exemplars) and debiasing AI models face parallel challenges because:
+   1) [CORRECT] Deeply encoded associations and dominant statistical patterns are highly resistant to permanent change # Correct. Isolated exceptions are easily sub-typed by humans, just as localized tuning often fails to shift core model bias scales.
+   2) [WRONG] Both processes rely entirely on the execution of macro-economic creative destruction # Wrong. Mind and model debiasing are psychological and algorithmic corrective fields, not Schumpeterian market disruptions.
+   3) [WRONG] Human brains and AI networks completely lose their short-term working memory capacity during tuning # Wrong. Working memory limits remain structurally constant; tuning does not delete short-term processing registers.
+   4) [WRONG] They require the complete elimination of rich media channels across social platforms # Wrong. Debiasing can be practiced across rich interactive or lean text channels alike.
 
-11. To protect sensitive medical data, one proposed method is to use GANs to…
-   1) [CORRECT] generate synthetic data that mimics the real set
-   2) [WRONG]   publish all raw records openly
-   3) [WRONG]   delete the original dataset
-   4) [WRONG]   skip data collection entirely
+149. The five bias types tracked in the cross-cutting typology are:
+   1) [CORRECT] Availability, pattern, averaging, trope, and proxy # Correct. These five define the specific ways bias manifests in modern language model outputs.
+   2) [WRONG] Efficiency, lock-in, novelty, compatibility, and mapping # Wrong. This mixes digital business model innovation sources with a sustainable AI green computing lever.
+   3) [WRONG] Intrapersonal, interpersonal, group, public, and mass levels # Wrong. These are the five nested levels of communication tracked within media systems theory.
+   4) [WRONG] Procedural, competitive, participatory, deliberative, and public-sphere # Wrong. These are the normative models of democracy used to evaluate civic communication health.
 
-12. AI for personalised medicine is promising but ethically challenging. What can help?
-   1) [CORRECT] fair data
-   2) [WRONG]   imputed data
-   3) [WRONG]   historical data
-   4) [WRONG]   transparent data
-
-13. On tasks like mammography, AI image analysis can…
-   1) [CORRECT] match or slightly exceed human readers
-   2) [WRONG]   never approach human accuracy
-   3) [WRONG]   fully replace radiologists already
-   4) [WRONG]   work without any approval process
-
-14. A core unresolved challenge for AI in medicine — 'whom do you sue?' — is…
-   1) [CORRECT] accountability and responsibility
-   2) [WRONG]   battery life
-   3) [WRONG]   font choice
-   4) [WRONG]   marketing budget
-
-
-## Entertainment & Games  (7 questions)
+## Synthesis & Methodological Metaphors  (11 questions)
 --------------------------------------------------
 
-1. The Uses & Gratifications approach focuses on…
-   1) [CORRECT] why users actively choose media to meet needs
-   2) [WRONG]   how media brainwash a passive audience
-   3) [WRONG]   which media are objectively best
-   4) [WRONG]   how to regulate harmful media
+150. The core thesis that runs throughout the course comparing human memory schemas to AI ensembles or mixtures of experts is a parallel of:
+   1) [CORRECT] Cognitive architecture metaphors    # Correct. The mind-as-computer and computer-as-mind concepts serve as the foundational two-way metaphor of AI.
+   2) [WRONG] Pure behaviorist stimulus-response reinforcement tracking # Wrong. Behaviorism completely rejects mapping internal schemas or complex expert-mixture mental constructs.
+   3) [WRONG] Lean media channel communication constraints # Wrong. Internal memory architectures represent structural processing frameworks, not external media distribution bandwidth limits.
+   4) [WRONG] Economic creative destruction shocks  # Wrong. This is Schumpeter's market displacement theory, not an internal cognitive or computational synthesis model.
 
-2. A factor analysis of online-game players identified three motives:
-   1) [CORRECT] achievement, social affairs, immersion
-   2) [WRONG]   money, fame, power
-   3) [WRONG]   speed, accuracy, luck
-   4) [WRONG]   fear, anger, joy
+151. An exam question asks you to match an AI algorithm running step-wise regression to prune variables with a biological mechanism. Which human learning principle fits?
+   1) [CORRECT] Competition among predictors        # Correct. The human brain pits stimuli against each other so that only cues providing unique new info are learned, blocking redundant ones.
+   2) [WRONG] Temporal contiguity priming loops     # Wrong. Temporal contiguity tracks sequential timing co-occurrences, mirroring word embeddings rather than step-wise regression.
+   3) [WRONG] Configural whole learning structures  # Wrong. Configural learning groups features into a single unified whole or script pattern layout.
+   4) [WRONG] Extinction association resetting      # Wrong. Extinction is the fading of a trained response when reinforcement rewards are completely withdrawn.
 
-3. 'Gamification' means…
-   1) [CORRECT] adding game elements (badges, leaderboards) to non-game settings
-   2) [WRONG]   turning leisure games into paid work
-   3) [WRONG]   removing rewards to raise difficulty
-   4) [WRONG]   playing games at a professional level
+152. When human social processing regions switch off entirely because a person is looking at a physical machine rather than a human, yet the person still treats the machine politely, this demonstrates the collision between:
+   1) [CORRECT] Social cognition as a baseline default versus the CASA/Media Equation response # Correct. Social perception is so deeply hardwired that minimal cues trigger polite social rules even when objects register as non-biological.
+   2) [WRONG] Mind-body dualism versus empirical nativist structures # Wrong. This is a historical philosophical debate about knowledge origins, not an active behavioral interaction paradox.
+   3) [WRONG] Eudaimonic appreciation vs short-term mood management mechanics # Wrong. This tracks entertainment appreciation preferences, not automatic politeness responses to desktop computers.
+   4) [WRONG] The knowledge-gap hypothesis versus digital divide access divides # Wrong. This tracks socioeconomic stratification gaps, not automatic biological human-machine interaction loops.
 
-4. Game addiction is more strongly tied to which motives?
-   1) [CORRECT] escapist and social
-   2) [WRONG]   achievement and mastery
-   3) [WRONG]   competitive and financial
-   4) [WRONG]   educational and creative
+153. Why does a user operating under a fast, automatic System 1 cognitive style display a significantly higher receptivity to online disinformation?
+   1) [CORRECT] Because they rely on simple peripheral heuristic cues without engaging critical cognitive verification # Correct. System 1 prioritizes rapid, effortless processing, making it highly vulnerable to repeated fluency or visual frames.
+   2) [WRONG] Because their short-term working memory capacity automatically expands to 9 items # Wrong. Working memory limits remain structurally fixed and do not expand during heuristic processing loops.
+   3) [WRONG] Because they are consciously attempting to optimize an actual-ought self-discrepancy gap # Wrong. Optimizing duties activates a defensive prevention focus, which typically increases caution rather than uncritical openness.
+   4) [WRONG] Because connectionist neural layers force human brains to execute parallel multi-headed self-attention # Wrong. Self-attention is an engineering calculation inside a digital transformer model, not a biological human brain function.
 
-5. Players' avatars tend to embody…
-   1) [CORRECT] the ideal self ('how I'd like to be')
-   2) [WRONG]   the actual self ('how I am')
-   3) [WRONG]   the feared self ('what I avoid')
-   4) [WRONG]   the relational self
+154. The observation that 'word embeddings in AI model language by tracking which tokens frequently co-occur in close proximity' serves as an exact algorithmic execution of:
+   1) [CORRECT] Temporal contiguity (priming)       # Correct. This human learning mechanism links items that are activated concurrently or in rapid succession.
+   2) [WRONG] Competition among predictors          # Wrong. Competition acts like step-wise regression to block redundant predictors, rather than building co-occurrence maps.
+   3) [WRONG] Schema accommodation cycles           # Wrong. Accommodation is structural developmental readjustment driven by data mismatch discomfort.
+   4) [WRONG] The algorithmic hyperpersonal communication model # Wrong. Hyperpersonal communication describes online relationship intimacy enhancement, not token embedding math.
 
-6. The lecture notes the games industry is…
-   1) [CORRECT] the largest entertainment sector, above film and music combined
-   2) [WRONG]   a small niche compared with film
-   3) [WRONG]   shrinking year on year
-   4) [WRONG]   unrelated to AI development
+155. If an AI model is designed to optimize its output text strictly to match the specific cultural assumptions and shared background beliefs of an audience, it is trying to construct:
+   1) [CORRECT] Communal common ground              # Correct. Communal common ground stems from shared community, institutional culture, or shared language facilities.
+   2) [WRONG] Personal common ground                # Wrong. Personal common ground requires a shared individual history of unique interaction experiences between two specific actors.
+   3) [WRONG] High behavioral realism affordances   # Wrong. Affordances are design possibilities, and behavioral realism tracks robot realism, not textual background context.
+   4) [WRONG] An injunctive normative focus path    # Wrong. Injunctive norms specify what a person *should* do ethically, not a shared linguistic background database.
 
-7. On social play, the lecture concludes that gaming…
-   1) [CORRECT] can foster real, lasting friendships
-   2) [WRONG]   always isolates heavy players
-   3) [WRONG]   never leads to offline meetups
-   4) [WRONG]   only benefits extroverts
+156. A manager uses an automated algorithmic management system to monitor employees. According to workplace critiques, what major systemic risk does this introduce?
+   1) [CORRECT] Severe power imbalances, intense surveillance stress, and completely obscured lines of accountability # Correct. Algorithmic management strips out human flexibility, creating toxic workplace environments and bias amplification.
+   2) [WRONG] A massive generational collapse in the crystallized intelligence scores of the workforce # Wrong. Monitoring software cannot erase an adult worker's accumulated vocabulary or lifetime knowledge structures.
+   3) [WRONG] The automatic conversion of the entire corporate infrastructure into a green Map lever format # Wrong. Mapping is a geographical energy choices framework; it is completely unrelated to worker surveillance tracking software.
+   4) [WRONG] A sudden onset of the uncanny valley effect during interpersonal team alignment meetings # Wrong. The uncanny valley is a physical appearance eeriness reaction to human-like robots, not a monitoring software issue.
 
+157. When an online platform layout makes a user's text posts completely permanent, highly visible, and totally anonymous, it is manipulating the platform's:
+   1) [CORRECT] Affordances                         # Correct. Affordances are the structural action possibilities designed into a technology that shape user behavior shapes.
+   2) [WRONG] Schemas                               # Wrong. Schemas are the internal categorical knowledge structures built inside human memory networks over time.
+   3) [WRONG] Syntactics                            # Wrong. Syntactics is the semiotic study of how structural signs relate to each other, not software interface features.
+   4) [WRONG] Modalities                            # Wrong. Modalities represent the interactive presentation format channel under specialized wellbeing evaluation metrics.
+
+158. Under Dual-Process Theory, why does a highly creative, value-laden eudaimonic drama movie require distinct cognitive processing compared to a generic hedonic comedy?
+   1) [CORRECT] Eudaimonic entertainment drives slow System 2 reflective elaboration; hedonic content relies on fast System 1 mood management # Correct. Meaningful content evokes complex self-transcending emotions, requiring effortful cognitive processing modes.
+   2) [WRONG] Eudaimonic content completely eliminates the user's short-term working memory capacity limits # Wrong. Working memory boundaries are fixed biological bottlenecks that never disappear during media exposure.
+   3) [WRONG] Hedonic comedies operate exclusively via a rule-based symbolic cognitive architecture layer # Wrong. Film formats are external cultural inputs; they do not dictate the internal mechanical architecture of human brains.
+   4) [WRONG] Eudaimonic dramas force the human viewer to experience a permanent actual-ought self-discrepancy gap # Wrong. Gaps reflect ethical duties self-assessments; a movie can explore themes without rewriting a viewer's self-schema permanently.
+
+159. The cross-cutting analysis of AI bias reveals that technical 'debiasing' adjustments applied to algorithms frequently fail because:
+   1) [CORRECT] Data training sets contain deep, historical structural inequalities that simple code filters cannot fully dismantle # Correct. Skewed training data reflects systemic societal disparities, making code-level fixes limited in practice.
+   2) [WRONG] Debiasing code forces the model processor to consume Clean Energy Mapping grid resources exclusively # Wrong. Mapping is a geographic data center location choice, entirely independent of a model's fairness calibration parameters.
+   3) [WRONG] Human operators automatically suffer from severe inattentional blindness whenever a model is balanced # Wrong. Operators do not lose sight of obvious physical stimuli simply because software weights have been audited.
+   4) [WRONG] It requires the total conversion of the AI software pipeline into a 1966 rule-based ELIZA script # Wrong. Modern debiasing occurs within complex neural layers, requiring zero reversion to historical keyword scripts.
+
+160. The overarching goal of compiling this comprehensive 'Theories & Models Reader' for students facing the multiple-choice exam is to:
+   1) [CORRECT] Provide short, plain explanations and recognition cues to spot which theory an exam question points at # Correct. Omitting authors and dates mirrors exact exam formats, focusing cleanly on conceptual definitions and core themes.
+   2) [WRONG] Program an automated Habermas Machine capable of writing the multiple-choice test questions autonomously # Wrong. The reader is an educational text summary guide for human student review, not an active LLM consensus application script.
+   3) [WRONG] Force students to operate exclusively under an involuntary behaviorist classical conditioning loop # Wrong. The text provides structural concepts for intentional study, not raw unrewarded reflex bell-and-food training.
+   4) [WRONG] Erase the distinction between fluid and crystallized intelligence factors across generations # Wrong. This is a psychological components reality, completely beyond the scope of a textbook summary guide.
