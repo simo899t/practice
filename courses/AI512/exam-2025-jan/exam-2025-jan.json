@@ -119,7 +119,7 @@
   {
     "type": "group",
     "section": "Question 4: Bias-Variance Curve (Model Capacity)",
-    "context": "Setup: \n [image: assets/your-pic.png] \n Evaluate the following statements about the figure above.",
+    "context": "Setup: \n [image: assets/BV-Curve.png] \n Evaluate the following statements about the figure above.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
