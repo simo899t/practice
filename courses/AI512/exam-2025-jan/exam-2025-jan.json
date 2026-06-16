@@ -79,7 +79,7 @@
   },
   {
     "type": "group",
-    "section": "Question 3: Coin with Heads Probability 2/3, Three Tosses",
+    "section": "Question 3: Coins",
     "context": "Setup: \n $C$ = number of heads in three tosses of a coin with heads probability 2/3.",
     "positiveLabel": "True",
     "negativeLabel": "False",
@@ -118,7 +118,7 @@
   },
   {
     "type": "group",
-    "section": "Question 4: Bias-Variance Curve",
+    "section": "Question 4: Bias-Variance Curve (Model Capacity)",
     "context": "Setup: \n [image: assets/BV-Curve.png] \n Evaluate the following statements about the figure above.",
     "positiveLabel": "True",
     "negativeLabel": "False",
@@ -235,8 +235,8 @@
   },
   {
     "type": "group",
-    "section": "Question 7: ReLU Predictor",
-    "context": "Setup: \n $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\n max applied element-wise.",
+    "section": "Question 7: ReLU Predictor f(x) = W2^T max(W1^T x, 0)",
+    "context": "Setup: \n $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\nmax applied element-wise.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -275,7 +275,7 @@
   {
     "type": "group",
     "section": "Question 8: Bernoulli Data Set",
-    "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i  \\mathrm{Bernoulli}(\\pi)$.",    
+    "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \\sim^{\\text{iid}} $Bernoulli($\\pi$).",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
