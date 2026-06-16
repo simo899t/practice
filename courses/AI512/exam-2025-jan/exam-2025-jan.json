@@ -20,7 +20,7 @@
       },
       {
         "text": "The overfitting risk of the model reduces as $\\alpha$ increases.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -32,7 +32,7 @@
       },
       {
         "text": "The underfitting risk of the model reduces as $\\alpha$ decreases.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       }
@@ -53,19 +53,19 @@
       },
       {
         "text": "The precision for Class B is equal to the recall of Class B.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The precision for Class C is greater than the recall of Class C.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The recall for Class A is greater than the recall for Class B.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -98,19 +98,19 @@
       },
       {
         "text": "$\\mathbb{E}[C^2] > \\mathbb{E}[C]^2$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "$P(C=0) < P(C=3)$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "$\\mathbb{E}[C^2] > \\text{Var}[C]$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       }
@@ -119,19 +119,19 @@
   {
     "type": "group",
     "section": "Question 4: Bias-Variance Curve (Model Capacity)",
-    "context": "Setup: \n [image: assets/BV-Curve.png] \n Evaluate the following statements about the figure above.",
+    "context": "Setup: A hand-drawn plot shows error vs. model capacity: a dashed blue curve, a solid red curve, and\na solid vertical green line marking a particular capacity value.\n[image: assets/BV-Curve.png]",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
         "text": "The solid red line shows the model prediction error on the test split.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The dashed blue line shows the model prediction error on the training split.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -143,7 +143,7 @@
       },
       {
         "text": "The optimal model capacity is marked by the green line.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -164,13 +164,13 @@
     "statements": [
       {
         "text": "If A and B are disjoint, they cannot be independent.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "If A and B are independent, they cannot be disjoint.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -188,7 +188,7 @@
       },
       {
         "text": "There exists A and B that satisfy $P(A \\cup B) = 1$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       }
@@ -221,13 +221,13 @@
       },
       {
         "text": "The algorithm assigns each data point to a single cluster.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The algorithm cannot output spiral-shaped clusters when k > 1 and the algorithm is run until convergence starting from a random initialization.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       }
@@ -248,13 +248,13 @@
       },
       {
         "text": "The predictor corresponds to a neural network with a single hidden layer of size $h$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The predictor corresponds to a neural network that uses a rectified linear unit as its activation function.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -281,13 +281,13 @@
     "statements": [
       {
         "text": "The maximum likelihood estimate for $\\pi$ is $\\frac{1}{n}\\sum_{i=1}^n X_i$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "$\\mathbb{E}[X_i] = \\mathbb{E}[X_j]$ for all $i \\neq j$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -299,7 +299,7 @@
       },
       {
         "text": "If $D = \\{0,1,1,0,1\\}$, then the likelihood of $\\pi$ is $\\pi^3(1-\\pi)^2$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -320,7 +320,7 @@
     "statements": [
       {
         "text": "Observing that the train is late increases the probability that it took the northern route.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -332,7 +332,7 @@
       },
       {
         "text": "If the train chose the northern and southern route with equal percentages, then $P(\\text{northern}|\\text{late}) > P(\\text{southern}|\\text{late})$.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -371,13 +371,13 @@
       },
       {
         "text": "The model has higher overfitting risk if training set size shrinks.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The underfitting risk of the model increases if $k$ grows.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -398,13 +398,13 @@
     "statements": [
       {
         "text": "The code is usable for the training stage of a regression task.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The input dimensionality is five.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
@@ -422,7 +422,7 @@
       },
       {
         "text": "The code uses each data point within the set train_dl exactly 20 times for training.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       }
@@ -443,13 +443,13 @@
       },
       {
         "text": "The model assumes that the input data points have 100 features.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
         "text": "The model is designed to solve a classification task with 5 classes.?",
-        "answerIsPositive": false,
+        "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
