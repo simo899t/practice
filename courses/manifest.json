@@ -5,7 +5,8 @@
     "description": "4th semester AI",
     "tests": [
       { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507/ai-mock-quiz1.txt" },
-      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507/ai-mock-quiz2.txt" }
+      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507/ai-mock-quiz2.txt" },
+      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507/ai-mock-quiz3.txt" }
     ]
   },
   {

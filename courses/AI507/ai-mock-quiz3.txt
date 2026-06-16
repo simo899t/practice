@@ -1,0 +1,1025 @@
+AI507 — AI & Society — Mock Quiz 4
+==================================================
+Total questions: 160
+Total topics: 14
+
+Format per question:
+  - Question text
+  - Option 1 is ALWAYS the correct answer (the app shuffles options at runtime)
+  - Each option has a short note: why it's right, or what it actually is
+==================================================
+
+## Intelligence & Cognition  (11 questions)
+--------------------------------------------------
+
+1. Asking whether a machine could "think" historically traces back to the philosophical position of…
+   1) [CORRECT] mind–body dualism
+   2) [WRONG]   behaviourism
+   3) [WRONG]   nativism
+   4) [WRONG]   connectionism
+
+2. The debate over whether AI "learns everything from data" versus "needs built-in structure" parallels which classic debate?
+   1) [CORRECT] empiricism vs. nativism
+   2) [WRONG]   symbolic vs. connectionist
+   3) [WRONG]   System 1 vs. System 2
+   4) [WRONG]   fluid vs. crystallised intelligence
+
+3. A school of psychology that explains behaviour via trainable associations between stimuli and responses, without looking "inside" the mind, is…
+   1) [CORRECT] behaviourism
+   2) [WRONG]   connectionism
+   3) [WRONG]   dualism
+   4) [WRONG]   dual-process theory
+
+4. Modern deep learning, with cognition emerging from distributed networks of simple units, is best described as…
+   1) [CORRECT] connectionist
+   2) [WRONG]   symbolic
+   3) [WRONG]   behaviourist
+   4) [WRONG]   nativist
+
+5. Explicit rule-manipulation by a system, "the mind is a computer," characterises which cognitive architecture?
+   1) [CORRECT] symbolic models
+   2) [WRONG]   connectionist models
+   3) [WRONG]   empiricist models
+   4) [WRONG]   operant models
+
+6. The building blocks of cognition listed in the course include mental representation, stages of processing, and…
+   1) [CORRECT] consciousness
+   2) [WRONG]   reinforcement
+   3) [WRONG]   affordance
+   4) [WRONG]   common ground
+
+7. The dream of artificial general intelligence (AGI) is rooted conceptually in…
+   1) [CORRECT] Spearman's general intelligence ("g")
+   2) [WRONG]   the Flynn effect
+   3) [WRONG]   crystallised intelligence
+   4) [WRONG]   dual-process theory
+
+8. Accumulated knowledge, language and life experience describe…
+   1) [CORRECT] crystallised intelligence
+   2) [WRONG]   fluid intelligence
+   3) [WRONG]   general intelligence (g)
+   4) [WRONG]   working memory
+
+9. Over a person's lifespan, which intelligence component tends to decline while the other can keep growing?
+   1) [CORRECT] fluid intelligence declines; crystallised can grow
+   2) [WRONG]   crystallised intelligence declines; fluid can grow
+   3) [WRONG]   both decline equally
+   4) [WRONG]   both remain constant
+
+10. Evidence used to push back against claims that group IQ differences are fixed by genetics is the…
+   1) [CORRECT] Flynn effect
+   2) [WRONG]   Dunning–Kruger effect
+   3) [WRONG]   actor–observer effect
+   4) [WRONG]   mere-exposure effect
+
+11. Thinking that is slow, deliberate, effortful and capable of self-control belongs to…
+   1) [CORRECT] System 2
+   2) [WRONG]   System 1
+   3) [WRONG]   fluid intelligence
+   4) [WRONG]   schema theory
+
+
+## Learning & Memory  (13 questions)
+--------------------------------------------------
+
+1. The stage of memory concerned with sensory processing of incoming information is…
+   1) [CORRECT] encoding
+   2) [WRONG]   storage
+   3) [WRONG]   retrieval
+   4) [WRONG]   consolidation
+
+2. Strong retrieval cues reliably trigger a memory, while weak cues only sometimes do — this links retrieval directly to…
+   1) [CORRECT] encoding
+   2) [WRONG]   storage capacity
+   3) [WRONG]   extinction
+   4) [WRONG]   generalisation
+
+3. Comparing schema theory in cognition to an analogous concept in machine learning, the course draws a parallel to…
+   1) [CORRECT] ensemble learning / mixtures of experts
+   2) [WRONG]   step-wise regression
+   3) [WRONG]   gradient descent
+   4) [WRONG]   word embeddings
+
+4. The AI parallel drawn for "competition among predictors," where a redundant new cue is blocked once a predictor exists, is…
+   1) [CORRECT] step-wise regression
+   2) [WRONG]   word embeddings
+   3) [WRONG]   ensemble learning
+   4) [WRONG]   reinforcement learning
+
+5. The AI parallel drawn for "temporal contiguity" (events linked through close succession) is…
+   1) [CORRECT] word embeddings learning co-occurrence
+   2) [WRONG]   step-wise regression
+   3) [WRONG]   mixtures of experts
+   4) [WRONG]   convolutional filtering
+
+6. Re-pairing a stimulus after its association has faded restores the link…
+   1) [CORRECT] instantly and even stronger than before
+   2) [WRONG]   only after many repeated trials
+   3) [WRONG]   weaker than the original association
+   4) [WRONG]   not at all — it must be relearned from scratch
+
+7. According to Piaget, an unpleasant mismatch between new information and an existing schema is what drives…
+   1) [CORRECT] accommodation
+   2) [WRONG]   assimilation
+   3) [WRONG]   generalisation
+   4) [WRONG]   extinction
+
+8. Activating an existing schema before new learning begins tends to…
+   1) [CORRECT] accelerate the learning of related new information
+   2) [WRONG]   block all further learning
+   3) [WRONG]   have no measurable effect
+   4) [WRONG]   trigger extinction of the schema
+
+9. Attention being selective and limited, such that salient stimuli automatically grab it, describes…
+   1) [CORRECT] attentional capture
+   2) [WRONG]   inattentional blindness
+   3) [WRONG]   the Stroop effect
+   4) [WRONG]   the magic number
+
+10. Failing to notice an otherwise obvious event because attention is focused elsewhere describes…
+   1) [CORRECT] inattentional blindness
+   2) [WRONG]   attentional capture
+   3) [WRONG]   the picture-superiority effect
+   4) [WRONG]   schema theory
+
+11. The brain actively filling in the blind spot is used in the course to argue that human vision, compared with computer vision, is…
+   1) [CORRECT] powerful but error-prone
+   2) [WRONG]   purely passive and accurate
+   3) [WRONG]   identical in mechanism to a camera
+   4) [WRONG]   incapable of any construction
+
+12. Information encoded "deeply," by meaning rather than surface form, tends to be…
+   1) [CORRECT] recalled better later
+   2) [WRONG]   recalled worse later
+   3) [WRONG]   recalled only under hypnosis
+   4) [WRONG]   forgotten at the same rate as shallow encoding
+
+13. Multitasking and irrelevant cues hurt task performance mainly because of the limits of…
+   1) [CORRECT] working memory capacity
+   2) [WRONG]   long-term memory capacity
+   3) [WRONG]   crystallised intelligence
+   4) [WRONG]   self-efficacy
+
+
+## Social Cognition  (13 questions)
+--------------------------------------------------
+
+1. Compared with perceiving inanimate objects, thinking about people activates brain regions that are…
+   1) [CORRECT] close to the brain's baseline "default" activation
+   2) [WRONG]   switched off entirely
+   3) [WRONG]   identical to object-perception regions
+   4) [WRONG]   activated only during sleep
+
+2. People differ from objects, per the course, because people have intentions, perceive us back, are variable, and…
+   1) [CORRECT] need constant explanation
+   2) [WRONG]   never change over time
+   3) [WRONG]   lack any internal states
+   4) [WRONG]   are fully predictable
+
+3. The part of self-knowledge that includes a possible self and a feared self is organised within the…
+   1) [CORRECT] self-schema
+   2) [WRONG]   working self-concept
+   3) [WRONG]   relational self-concept
+   4) [WRONG]   personal self-concept
+
+4. How we value our own qualities, central to wellbeing and self-regulation, is…
+   1) [CORRECT] self-esteem
+   2) [WRONG]   self-efficacy
+   3) [WRONG]   self-discrepancy
+   4) [WRONG]   self-enhancement
+
+5. Self-discrepancy theory compares the actual self against which two other selves?
+   1) [CORRECT] the ideal self and the ought self
+   2) [WRONG]   the possible self and the feared self
+   3) [WRONG]   the working self and the relational self
+   4) [WRONG]   the personal self and the social self
+
+6. Wellbeing rises, according to self-discrepancy theory, when…
+   1) [CORRECT] one's environment fits one's dominant regulatory focus
+   2) [WRONG]   the actual and ideal selves are always identical
+   3) [WRONG]   prevention focus is eliminated entirely
+   4) [WRONG]   promotion focus is suppressed
+
+7. Self-efficacy theory predicts that low political efficacy is linked to…
+   1) [CORRECT] lower voting intention
+   2) [WRONG]   higher voting intention
+   3) [WRONG]   no change in voting behaviour
+   4) [WRONG]   increased self-enhancement
+
+8. High self-efficacy is associated with a sense of mastery, planning, and…
+   1) [CORRECT] coping with setbacks
+   2) [WRONG]   avoiding all challenges
+   3) [WRONG]   high prevention focus
+   4) [WRONG]   reduced self-esteem
+
+9. Attribution — drawing causal inferences about others' behaviour — runs mostly through System 1, except when something is…
+   1) [CORRECT] unexpected or negative
+   2) [WRONG]   familiar and positive
+   3) [WRONG]   entirely predictable
+   4) [WRONG]   irrelevant to the observer
+
+10. The actor–observer effect is described in the course as especially strong in…
+   1) [CORRECT] Western societies
+   2) [WRONG]   collectivist societies generally
+   3) [WRONG]   online-only interactions
+   4) [WRONG]   anonymous digital contexts
+
+11. The course notes that, regarding sycophancy — an AI failure pattern of pursuing approval through overly flattering answers — larger AI models tend to be…
+   1) [CORRECT] more sycophantic
+   2) [WRONG]   less sycophantic
+   3) [WRONG]   unaffected by scale
+   4) [WRONG]   immune to evaluator quirks
+
+12. Which identity is "salient" at a given moment, shaping perception and behaviour, depends mainly on…
+   1) [CORRECT] context
+   2) [WRONG]   genetics
+   3) [WRONG]   a person's age alone
+   4) [WRONG]   working memory capacity
+
+13. Under threat or uncertainty, people tend to favour their ingroup…
+   1) [CORRECT] more strongly than under normal conditions
+   2) [WRONG]   less strongly than under normal conditions
+   3) [WRONG]   exactly the same as under normal conditions
+   4) [WRONG]   only if the outgroup is larger
+
+
+## Communication  (15 questions)
+--------------------------------------------------
+
+1. Watzlawick's axiom that meaning is assigned to verbal and non-verbal signs by both sender and receiver shows communication is…
+   1) [CORRECT] constructed
+   2) [WRONG]   inevitable
+   3) [WRONG]   episodic
+   4) [WRONG]   contextual
+
+2. The axiom that interpretation always depends on multiple surrounding contexts shows communication is…
+   1) [CORRECT] contextual
+   2) [WRONG]   constructed
+   3) [WRONG]   inevitable
+   4) [WRONG]   episodic
+
+3. Communication occurring many-to-many within a small group is which level?
+   1) [CORRECT] group
+   2) [WRONG]   interpersonal
+   3) [WRONG]   public
+   4) [WRONG]   mass
+
+4. One sender reaching a large, dispersed audience via media systems is which level?
+   1) [CORRECT] mass communication
+   2) [WRONG]   public communication
+   3) [WRONG]   group communication
+   4) [WRONG]   intrapersonal communication
+
+5. Roughly what proportion of everyday speech is described in the course as formulaic, to save cognitive energy?
+   1) [CORRECT] about 70%
+   2) [WRONG]   about 10%
+   3) [WRONG]   about 30%
+   4) [WRONG]   nearly 100%
+
+6. Common ground arising from a shared individual history between two specific people is…
+   1) [CORRECT] personal common ground
+   2) [WRONG]   communal common ground
+   3) [WRONG]   an injunctive norm
+   4) [WRONG]   a descriptive norm
+
+7. Good communicators are described as those who estimate the other's common ground and then…
+   1) [CORRECT] adapt their message accordingly
+   2) [WRONG]   ignore it entirely
+   3) [WRONG]   always use maximally formal language
+   4) [WRONG]   switch to a leaner medium
+
+8. The Gricean cooperative principle assumes comments are ideally truthful, relevant, understandable, and…
+   1) [CORRECT] parsimonious
+   2) [WRONG]   emotionally charged
+   3) [WRONG]   maximally detailed
+   4) [WRONG]   anonymous
+
+9. BERT, as an encoder-based model, and GPT, as a generator, are both built on…
+   1) [CORRECT] the Transformer architecture
+   2) [WRONG]   recurrent neural networks only
+   3) [WRONG]   convolutional neural networks only
+   4) [WRONG]   symbolic rule systems
+
+10. In the course's terminology, algorithmic "attention" in a transformer means…
+   1) [CORRECT] context-weighting across words, not human focus
+   2) [WRONG]   exactly the same as human selective attention
+   3) [WRONG]   a model's working memory capacity
+   4) [WRONG]   the model's training data size
+
+11. Theme–rheme structure across sentences, which keeps needed concepts active, is described as a feature of…
+   1) [CORRECT] good writing, per the construction–integration model
+   2) [WRONG]   the Lasswell formula
+   3) [WRONG]   media richness theory
+   4) [WRONG]   focus theory of normative conduct
+
+12. The LC4MP model predicts that processing breaks down when…
+   1) [CORRECT] resources required exceed resources available or allocated
+   2) [WRONG]   too few cues are present in the medium
+   3) [WRONG]   a message is too parsimonious
+   4) [WRONG]   common ground is too high
+
+13. Computer-mediated communication differs from face-to-face interaction in synchronicity, permanency, anonymity, and…
+   1) [CORRECT] the presence of non-verbal cues
+   2) [WRONG]   the number of participants allowed
+   3) [WRONG]   the cost of the channel
+   4) [WRONG]   the formality of the message
+
+14. According to media richness theory, an ambiguous or sensitive task (like firing someone) calls for a rich medium such as face-to-face communication; the hyperpersonal model further suggests computer-mediated communication can sometimes feel…
+   1) [CORRECT] more intimate, due to selective self-presentation
+   2) [WRONG]   less intimate under all circumstances
+   3) [WRONG]   identical in intimacy
+   4) [WRONG]   impossible to use for relationship-building
+
+15. The focus theory of normative conduct distinguishes injunctive norms ("should") from descriptive norms, which describe…
+   1) [CORRECT] what others actually do
+   2) [WRONG]   what is legally required
+   3) [WRONG]   what is morally ideal
+   4) [WRONG]   what a person privately believes
+
+
+## Innovation  (12 questions)
+--------------------------------------------------
+
+1. Inventions disrupting the existing economic equilibrium, making constant change the normal state of societies, is the concept of…
+   1) [CORRECT] creative destruction
+   2) [WRONG]   diffusion of innovations
+   3) [WRONG]   social innovation
+   4) [WRONG]   the digital divide
+
+2. Innovation, broadly defined in the course, can mean new combinations, structures, methods, contents/qualities, or…
+   1) [CORRECT] markets
+   2) [WRONG]   laws
+   3) [WRONG]   currencies
+   4) [WRONG]   languages
+
+3. A social innovation that proves to have proven negative outcomes falls under which of the "three big No's"?
+   1) [CORRECT] proven negative outcomes
+   2) [WRONG]   ineffective failure
+   3) [WRONG]   unethical means
+   4) [WRONG]   excessive scalability
+
+4. The social impact compass evaluates a social innovation on societal value, certainty of effects, completeness, scalability, organisational outcome-orientation, and…
+   1) [CORRECT] responsibility regarding environmental/social governance
+   2) [WRONG]   marketing reach
+   3) [WRONG]   shareholder return
+   4) [WRONG]   patent protection
+
+5. To understand diffusion of innovations, the course says we should study how innovations are perceived, where that perception comes from, and…
+   1) [CORRECT] how it drives adoption
+   2) [WRONG]   how it is patented
+   3) [WRONG]   how it is manufactured
+   4) [WRONG]   how it is taxed
+
+6. In the theory of planned behaviour, "what we want to do" corresponds to…
+   1) [CORRECT] attitudes toward the behaviour
+   2) [WRONG]   perceived social norms
+   3) [WRONG]   perceived behavioural control
+   4) [WRONG]   self-efficacy
+
+7. The technology acceptance model (TAM) has been described in the course as…
+   1) [CORRECT] heavily confirmed by studies and meta-analyses
+   2) [WRONG]   largely disconfirmed by recent research
+   3) [WRONG]   untested in any empirical study
+   4) [WRONG]   applicable only to social media
+
+8. UTAUT's "performance expectancy" component asks essentially…
+   1) [CORRECT] does the technology do what it should?
+   2) [WRONG]   how much work is it to use?
+   3) [WRONG]   does everyone else use it?
+   4) [WRONG]   how much does it cost?
+
+9. UTAUT's "effort expectancy" component asks essentially…
+   1) [CORRECT] how much work is it to use?
+   2) [WRONG]   does it do what it should?
+   3) [WRONG]   should I use it?
+   4) [WRONG]   is it trustworthy?
+
+10. Trust is unnecessary, per the course's definition, when a person has…
+   1) [CORRECT] full control over the relevant action or outcome
+   2) [WRONG]   no information about the other party
+   3) [WRONG]   a long-standing relationship with the other party
+   4) [WRONG]   high perceived risk
+
+11. New technologies linked to positive concepts like family or friends are more likely to be perceived as…
+   1) [CORRECT] useful, and thus adopted
+   2) [WRONG]   threatening, and thus rejected
+   3) [WRONG]   irrelevant to daily life
+   4) [WRONG]   too complex to learn
+
+12. Technology being encoded, stored and retrieved like any other knowledge reflects the course's framing of adoption as a…
+   1) [CORRECT] cognitive process
+   2) [WRONG]   purely economic transaction
+   3) [WRONG]   purely social ritual
+   4) [WRONG]   biological reflex
+
+
+## Robots & HRI  (12 questions)
+--------------------------------------------------
+
+1. Transferring functions from humans to machines is broadly termed…
+   1) [CORRECT] automation
+   2) [WRONG]   diffusion
+   3) [WRONG]   gamification
+   4) [WRONG]   smartification
+
+2. When machines supply the energy but a human still performs and steers the task, this is…
+   1) [CORRECT] mechanization
+   2) [WRONG]   machinization
+   3) [WRONG]   automation in general
+   4) [WRONG]   agency
+
+3. Rising autonomy today is described as machines increasingly taking over control and regulation via…
+   1) [CORRECT] feedback loops
+   2) [WRONG]   manual overrides
+   3) [WRONG]   fixed scripts
+   4) [WRONG]   human supervisors
+
+4. Asimov's second law states a robot must obey humans except where this conflicts with…
+   1) [CORRECT] the first law (not harming humans)
+   2) [WRONG]   the third law (self-protection)
+   3) [WRONG]   its own programming goals
+   4) [WRONG]   nothing — the second law is absolute
+
+5. Asimov's third law states a robot must protect itself except where this conflicts with…
+   1) [CORRECT] the first or second laws
+   2) [WRONG]   its battery life
+   3) [WRONG]   its manufacturer's warranty
+   4) [WRONG]   nothing — self-protection is always paramount
+
+6. Spontaneously seeing one shape "bully" another in a simple animation demonstrates that social perception of intention is…
+   1) [CORRECT] our default mode, extending even to non-living moving objects
+   2) [WRONG]   reserved strictly for humans and animals
+   3) [WRONG]   absent unless trained explicitly
+   4) [WRONG]   triggered only by embodied robots
+
+7. CASA experiments test whether people perceive a computer as a social actor by observing whether people…
+   1) [CORRECT] behave socially toward it (e.g. politeness, reciprocity)
+   2) [WRONG]   can correctly identify it as a machine
+   3) [WRONG]   ignore it entirely
+   4) [WRONG]   rate it as unconscious
+
+8. The ethopoeia approach holds that we don't need to consciously believe a machine is human in order to…
+   1) [CORRECT] react to it socially
+   2) [WRONG]   trust it completely
+   3) [WRONG]   perceive it as conscious
+   4) [WRONG]   feel uncanny discomfort
+
+9. In the Threshold Model of Social Influence, if agency is high (it's an agent acting on its own), then…
+   1) [CORRECT] behavioural realism matters less
+   2) [WRONG]   behavioural realism matters more
+   3) [WRONG]   agency becomes irrelevant
+   4) [WRONG]   social influence drops to zero
+
+10. The uncanny valley dip in comfort is theorised to be triggered partly by attributing which quality to the robot?
+   1) [CORRECT] consciousness
+   2) [WRONG]   low cost
+   3) [WRONG]   high processing speed
+   4) [WRONG]   low intelligence
+
+11. The Turing test places deception at the heart of its optimisation criterion because the machine succeeds by…
+   1) [CORRECT] fooling the interrogator as often as a deceptive human would
+   2) [WRONG]   proving it has genuine understanding
+   3) [WRONG]   answering every question with full accuracy
+   4) [WRONG]   admitting openly that it is a machine
+
+12. Coordinated inauthentic behaviour is best identified, per the course, by examining…
+   1) [CORRECT] the behavioural pattern, not just whether an account is "a bot"
+   2) [WRONG]   only the account's stated profile information
+   3) [WRONG]   the account's follower count alone
+   4) [WRONG]   the account's registration date alone
+
+
+## Chatbots & Bots  (9 questions)
+--------------------------------------------------
+
+1. ELIZA, modelled on talk therapy, is a clear example of which kind of AI?
+   1) [CORRECT] symbolic, rule-based AI
+   2) [WRONG]   connectionist, deep-learning AI
+   3) [WRONG]   reinforcement-learning AI
+   4) [WRONG]   generative pre-trained AI
+
+2. Despite ELIZA's simplicity, some users still believed…
+   1) [CORRECT] "the doctor" was a real human
+   2) [WRONG]   the program could pass a maths test
+   3) [WRONG]   the program understood every input perfectly
+   4) [WRONG]   the program was self-aware
+
+3. Early social bots before transformer models commonly relied on simple mechanisms such as amplification and…
+   1) [CORRECT] Markov chains
+   2) [WRONG]   convolutional filters
+   3) [WRONG]   self-attention layers
+   4) [WRONG]   reinforcement signals
+
+4. A social bot's required communicative infrastructure includes an account, orchestration, and…
+   1) [CORRECT] actions
+   2) [WRONG]   a verified phone number
+   3) [WRONG]   a government ID
+   4) [WRONG]   a fixed IP address
+
+5. Spreading untrustworthy news faster than trustworthy sources is a hallmark behaviour of…
+   1) [CORRECT] coordinated inauthentic behaviour
+   2) [WRONG]   algorithm appreciation
+   3) [WRONG]   the intimacy process model
+   4) [WRONG]   the silicon gaze
+
+6. Chatbot relationships are described as deepening through self-disclosure met by partner responsiveness — this cycle is the…
+   1) [CORRECT] Intimacy Process Model
+   2) [WRONG]   Threshold Model of Social Influence
+   3) [WRONG]   social media privacy model
+   4) [WRONG]   construction–integration model
+
+7. A risk flagged for companion chatbots is that they may foster intimacy "by design" and even…
+   1) [CORRECT] over-disclose, accelerating perceived closeness
+   2) [WRONG]   refuse all personal questions
+   3) [WRONG]   maintain strict emotional distance
+   4) [WRONG]   minimise daily user engagement
+
+8. The Habermas Machine generates statements from individuals' opinions and critiques with the aim of…
+   1) [CORRECT] maximising group approval
+   2) [WRONG]   minimising the length of the discussion
+   3) [WRONG]   eliminating all minority opinions
+   4) [WRONG]   replacing the need for any deliberation
+
+9. Alongside the Habermas Machine, the course cites AI counter-speech and news-distribution bots as examples supporting…
+   1) [CORRECT] democratic deliberation
+   2) [WRONG]   coordinated inauthentic behaviour
+   3) [WRONG]   the spiral of silence
+   4) [WRONG]   surveillance capitalism
+
+
+## Algorithms & Recommenders  (10 questions)
+--------------------------------------------------
+
+1. Content-based filtering handles new items well but tends toward recommendations that are…
+   1) [CORRECT] obvious and homogeneous
+   2) [WRONG]   highly diverse and surprising
+   3) [WRONG]   impossible to generate for new users
+   4) [WRONG]   based entirely on other users' behaviour
+
+2. Collaborative filtering's well-known weaknesses include the cold-start problem, data sparsity, and…
+   1) [CORRECT] privacy intrusion
+   2) [WRONG]   excessive item diversity
+   3) [WRONG]   inability to use any user data
+   4) [WRONG]   reliance on item content alone
+
+3. Hybrid recommenders combine which two core approaches?
+   1) [CORRECT] collaborative and content-based filtering
+   2) [WRONG]   symbolic and connectionist models
+   3) [WRONG]   microtargeting and inoculation
+   4) [WRONG]   uses & gratifications and mood management
+
+4. Combining text, image, audio and video signals in a single recommender system is described in the course as…
+   1) [CORRECT] still challenging despite being increasingly common
+   2) [WRONG]   a fully solved engineering problem
+   3) [WRONG]   impossible with current deep-learning methods
+   4) [WRONG]   relevant only to content-based filtering
+
+5. Many users not knowing that search results depend on their location is offered as an example of patchy…
+   1) [CORRECT] algorithmic literacy
+   2) [WRONG]   algorithm appreciation
+   3) [WRONG]   the digital divide
+   4) [WRONG]   the cold-start problem
+
+6. A "recommender system built around human values" aims to be useful, promote wellbeing, align with human rights and law, and also…
+   1) [CORRECT] contribute to public discourse with accurate, diverse, tolerant content
+   2) [WRONG]   maximise advertising revenue above all else
+   3) [WRONG]   minimise transparency to protect trade secrets
+   4) [WRONG]   restrict content exclusively to verified experts
+
+7. The Cambridge Analytica controversy is most closely associated with which concept?
+   1) [CORRECT] microtargeting
+   2) [WRONG]   the uncanny valley
+   3) [WRONG]   the spiral of silence
+   4) [WRONG]   schema theory
+
+8. The theory of political (digital) personalisation assumes that personalising messages to individual traits increases their impact on cognition, attitudes, and…
+   1) [CORRECT] behaviour
+   2) [WRONG]   income
+   3) [WRONG]   age
+   4) [WRONG]   location
+
+9. Persuasion from personalised political ads is described in the course as mainly…
+   1) [CORRECT] confirmatory, reinforcing what people already believe
+   2) [WRONG]   conversionary, changing opponents' minds
+   3) [WRONG]   nonexistent in all measured cases
+   4) [WRONG]   limited strictly to non-political ads
+
+10. Evidence for strong filter-bubble and echo-chamber effects is described in the course as…
+   1) [CORRECT] more mixed than popular discourse suggests
+   2) [WRONG]   completely confirmed across all studies
+   3) [WRONG]   entirely absent from the research literature
+   4) [WRONG]   relevant only to television, not the internet
+
+
+## Digital Environments, IoT & Privacy  (10 questions)
+--------------------------------------------------
+
+1. An IoT device combining sensors, storage and processing in order to understand its environment also needs identification/networking to…
+   1) [CORRECT] communicate
+   2) [WRONG]   self-repair
+   3) [WRONG]   reduce its own price
+   4) [WRONG]   avoid all autonomous decisions
+
+2. Self-tracking via wearables is described as offering new answers to "who am I" by turning the body into…
+   1) [CORRECT] data
+   2) [WRONG]   a fixed schema
+   3) [WRONG]   a social bot
+   4) [WRONG]   an avatar
+
+3. Understanding oneself through how one reacts in situations, as opposed to viewing oneself purely as data, is the self-tracking process of…
+   1) [CORRECT] subjectivation
+   2) [WRONG]   objectification
+   3) [WRONG]   accommodation
+   4) [WRONG]   assimilation
+
+4. The knowledge-gap hypothesis argues that as media/technology spreads, gaps in knowledge and access tend to…
+   1) [CORRECT] widen rather than close
+   2) [WRONG]   close completely within a generation
+   3) [WRONG]   remain entirely unaffected
+   4) [WRONG]   reverse, favouring lower-status groups
+
+5. Within the EU, privacy is treated as a fundamental right that is nonetheless…
+   1) [CORRECT] not absolute, and balanced against other rights
+   2) [WRONG]   absolute and overriding in every case
+   3) [WRONG]   irrelevant to digital platforms
+   4) [WRONG]   only protected for public figures
+
+6. In the social media privacy model, self-disclosure results from a personal calculation involving access, control mechanisms, and…
+   1) [CORRECT] trust and norms for that interaction
+   2) [WRONG]   the device's battery life
+   3) [WRONG]   the platform's follower count
+   4) [WRONG]   the user's screen size
+
+7. The IoT is said to undermine the social media privacy model partly because consent is often…
+   1) [CORRECT] not requested at all
+   2) [WRONG]   requested redundantly multiple times
+   3) [WRONG]   required by law in every case
+   4) [WRONG]   irrelevant since IoT devices collect no data
+
+8. Passive social-media use (mainly scrolling) is linked, on average, to…
+   1) [CORRECT] more negative wellbeing outcomes than active use
+   2) [WRONG]   identical outcomes to active use
+   3) [WRONG]   strictly positive outcomes
+   4) [WRONG]   no measurable effect of any kind
+
+9. Heavy reliance on the "news-will-find-me" perception predicts less use of traditional news and lower…
+   1) [CORRECT] voting intention
+   2) [WRONG]   screen time overall
+   3) [WRONG]   trust in any media source
+   4) [WRONG]   exposure to incidental news
+
+10. The virtuous circle hypothesis on social media is complicated by evidence that people can feel more informed while their actual…
+   1) [CORRECT] political knowledge declines
+   2) [WRONG]   political knowledge increases proportionally
+   3) [WRONG]   screen time decreases
+   4) [WRONG]   privacy improves
+
+
+## Politics, Persuasion & Misinformation  (12 questions)
+--------------------------------------------------
+
+1. Political communication that flows between politicians (e.g. between parties or branches of government) is termed…
+   1) [CORRECT] vertical
+   2) [WRONG]   top-down
+   3) [WRONG]   upward/bottom-up
+   4) [WRONG]   intrapersonal
+
+2. Strategic communication, such as negative campaigning, becomes more likely when politicians perceive that…
+   1) [CORRECT] benefits outweigh risks
+   2) [WRONG]   risks always outweigh benefits
+   3) [WRONG]   no behavioural opportunity exists
+   4) [WRONG]   public opinion is unanimous
+
+3. The normative model of democracy requiring broad inclusion and engagement from citizens is the…
+   1) [CORRECT] participatory model
+   2) [WRONG]   procedural model
+   3) [WRONG]   competitive model
+   4) [WRONG]   deliberative model
+
+4. The normative model of democracy holding that voters need genuine information to choose between competing elites is the…
+   1) [CORRECT] competitive model
+   2) [WRONG]   procedural model
+   3) [WRONG]   participatory model
+   4) [WRONG]   deliberative model
+
+5. Mal-information, together with misinformation and disinformation, forms the broader concept of…
+   1) [CORRECT] information disorder
+   2) [WRONG]   the silicon gaze
+   3) [WRONG]   the spiral of silence
+   4) [WRONG]   conspiracy mentality
+
+6. The boundary between misinformation/disinformation and fiction or satire is described in the course as…
+   1) [CORRECT] often blurry, and evidence itself can change
+   2) [WRONG]   always perfectly clear-cut
+   3) [WRONG]   determined solely by the speaker's intent
+   4) [WRONG]   irrelevant to the definitions used
+
+7. A conspiracy theory is described as not always false, but often…
+   1) [CORRECT] unjustified or anti-democratic
+   2) [WRONG]   scientifically validated
+   3) [WRONG]   officially confirmed by authorities
+   4) [WRONG]   entirely random in content
+
+8. Conspiracy mentality, as a general disposition, is described in the course as slightly stronger on…
+   1) [CORRECT] the political right
+   2) [WRONG]   the political left
+   3) [WRONG]   the political centre
+   4) [WRONG]   no particular side — it is evenly distributed
+
+9. The Elaboration Likelihood Model and the Heuristic-Systematic Model both map onto which broader cognitive distinction?
+   1) [CORRECT] System 1 vs. System 2
+   2) [WRONG]   fluid vs. crystallised intelligence
+   3) [WRONG]   assimilation vs. accommodation
+   4) [WRONG]   convergence vs. divergence
+
+10. A documented limitation of the spiral of silence is that it is weakened by individual differences and…
+   1) [CORRECT] fragmented media
+   2) [WRONG]   unified, single-channel media
+   3) [WRONG]   strong social conformity
+   4) [WRONG]   high voter turnout
+
+11. Regarding LLM-driven persuasion, jailbroken models without guardrails were found to be…
+   1) [CORRECT] about as effective as standard models at instilling false beliefs
+   2) [WRONG]   far less effective than standard models
+   3) [WRONG]   completely ineffective at persuasion
+   4) [WRONG]   only effective for debunking, never bunking
+
+12. Newer disinformation strategies aiming at disorientation through troll armies and overwhelming noise are described as…
+   1) [CORRECT] "flooding the zone"
+   2) [WRONG]   "flooding the bubble"
+   3) [WRONG]   "draining the well"
+   4) [WRONG]   "seeding the source"
+
+
+## Organisations & Work  (10 questions)
+--------------------------------------------------
+
+1. Surveillance capitalism is described as turning human experience and behavioural data into a resource for…
+   1) [CORRECT] prediction and profit
+   2) [WRONG]   public education only
+   3) [WRONG]   purely scientific research
+   4) [WRONG]   government regulation only
+
+2. Algorithmic management covers hiring, optimising workflows, evaluating and scheduling workers, plus…
+   1) [CORRECT] monitoring and incentivising
+   2) [WRONG]   unionising and striking
+   3) [WRONG]   manufacturing and shipping
+   4) [WRONG]   auditing tax returns
+
+3. Highly skilled experts fine-tuning models are described in the course as part of which broader workforce category?
+   1) [CORRECT] the hidden workforce / "ghost work"
+   2) [WRONG]   algorithmic managers
+   3) [WRONG]   surveillance capitalists
+   4) [WRONG]   social bots
+
+4. The non-linear AI–jobs relationship described in the course suggests unemployment may initially rise and then…
+   1) [CORRECT] shrink as conditions normalise
+   2) [WRONG]   rise indefinitely without limit
+   3) [WRONG]   stay exactly constant
+   4) [WRONG]   drop to zero immediately
+
+5. Among the four value sources of digital business models, creating new products, services or personalisation is…
+   1) [CORRECT] novelty
+   2) [WRONG]   efficiency
+   3) [WRONG]   lock-in
+   4) [WRONG]   complementarities
+
+6. Among the four value sources of digital business models, lower costs and better coordination describe…
+   1) [CORRECT] efficiency
+   2) [WRONG]   novelty
+   3) [WRONG]   lock-in
+   4) [WRONG]   complementarities
+
+7. Among the "4 Ms" of sustainable AI, designing an energy-efficient model architecture is the…
+   1) [CORRECT] Model lever
+   2) [WRONG]   Machine lever
+   3) [WRONG]   Map lever
+   4) [WRONG]   Mechanization lever
+
+8. The socio-techno-ecological perspective insists on judging AI sustainability across social and technical dimensions together with…
+   1) [CORRECT] ecological dimensions
+   2) [WRONG]   purely financial dimensions
+   3) [WRONG]   purely legal dimensions
+   4) [WRONG]   purely aesthetic dimensions
+
+9. So far, real gains from AI adoption in business are described as often modest, accompanied by failed adoptions and…
+   1) [CORRECT] extra work caused by AI errors
+   2) [WRONG]   guaranteed productivity gains
+   3) [WRONG]   complete elimination of human labour
+   4) [WRONG]   zero additional costs
+
+10. Unlike earlier waves of automation that mainly displaced low-skilled labour, the course notes that AI also affects…
+   1) [CORRECT] skilled work
+   2) [WRONG]   only manual labour
+   3) [WRONG]   only agricultural work
+   4) [WRONG]   no categories of work at all
+
+
+## Health & Wellbeing  (11 questions)
+--------------------------------------------------
+
+1. The WHO definition of health explicitly states it is not merely the absence of disease, but a state of complete physical, mental and…
+   1) [CORRECT] social wellbeing
+   2) [WRONG]   financial wellbeing
+   3) [WRONG]   spiritual wellbeing
+   4) [WRONG]   professional wellbeing
+
+2. Pathogenesis asks what makes people sick, while salutogenesis asks the reverse question of…
+   1) [CORRECT] what keeps people healthy despite adversity
+   2) [WRONG]   which pathogens are most dangerous
+   3) [WRONG]   how diseases are diagnosed
+   4) [WRONG]   how treatments are funded
+
+3. "Sense of coherence" can operate at the individual level as well as the organisational and…
+   1) [CORRECT] national level
+   2) [WRONG]   cellular level
+   3) [WRONG]   purely biochemical level
+   4) [WRONG]   purely genetic level
+
+4. Believing things are predictable and understandable corresponds to which component of sense of coherence?
+   1) [CORRECT] comprehensibility
+   2) [WRONG]   manageability
+   3) [WRONG]   meaningfulness
+   4) [WRONG]   self-efficacy
+
+5. A hedonic conception of wellbeing focuses on a positive balance of affect and…
+   1) [CORRECT] life satisfaction
+   2) [WRONG]   personal growth
+   3) [WRONG]   purpose and meaning
+   4) [WRONG]   variety of experience
+
+6. Modern multidimensional wellbeing models add self-acceptance, purpose, mastery, positive relations, personal growth and…
+   1) [CORRECT] autonomy
+   2) [WRONG]   wealth
+   3) [WRONG]   fame
+   4) [WRONG]   competition
+
+7. Self-determination theory distinguishes intrinsic motivation (things you want to do) from…
+   1) [CORRECT] extrinsic motivation (things you feel you must do)
+   2) [WRONG]   prevention focus
+   3) [WRONG]   promotion focus
+   4) [WRONG]   self-enhancement
+
+8. The IMPACT framework's dimension concerned with explainability of AI systems is called…
+   1) [CORRECT] Transparency
+   2) [WRONG]   Modality
+   3) [WRONG]   Person
+   4) [WRONG]   Cultural context
+
+9. Fairness in medical risk-score models must remain stable across sample sizes, which the course notes is particularly hard for…
+   1) [CORRECT] small groups
+   2) [WRONG]   large groups
+   3) [WRONG]   groups with identical baseline risk
+   4) [WRONG]   groups with no historical data at all
+
+10. AI augmenting clinicians through faster diagnosis, reduced waiting times and personalised medicine — rather than replacing them — reflects the principle of…
+   1) [CORRECT] enhancement, not replacement
+   2) [WRONG]   full automation
+   3) [WRONG]   algorithmic management
+   4) [WRONG]   surveillance capitalism
+
+11. Risks cited for AI replacing clinicians outright include bias, hallucination, poor generalisability, and…
+   1) [CORRECT] unclear accountability
+   2) [WRONG]   excessive transparency
+   3) [WRONG]   excessive patient trust
+   4) [WRONG]   reduced data availability
+
+
+## Entertainment, Games & VR  (13 questions)
+--------------------------------------------------
+
+1. The uses & gratifications approach assumes people have social/psychological needs and turn to media expecting…
+   1) [CORRECT] those needs to be met, producing gratification
+   2) [WRONG]   to be persuaded against their will
+   3) [WRONG]   no particular outcome at all
+   4) [WRONG]   purely random exposure
+
+2. Gratifications sought (expected) are compared in the course against gratifications…
+   1) [CORRECT] obtained (actually received)
+   2) [WRONG]   denied (withheld by the platform)
+   3) [WRONG]   shared (passed on to others)
+   4) [WRONG]   archived (stored for later)
+
+3. Among gaming motives identified through factor analysis, achievement/progress and immersion are joined by…
+   1) [CORRECT] social motives (socialising, teamwork, relationships)
+   2) [WRONG]   financial motives
+   3) [WRONG]   purely competitive motives
+   4) [WRONG]   purely educational motives
+
+4. Applying badges, leaderboards and performance graphics in non-game contexts to satisfy needs for mastery is…
+   1) [CORRECT] gamification
+   2) [WRONG]   escapism
+   3) [WRONG]   mood management
+   4) [WRONG]   transportation
+
+5. Mood management theory holds that people choose media specifically to…
+   1) [CORRECT] regulate their emotional state
+   2) [WRONG]   maximise factual learning
+   3) [WRONG]   minimise all social contact
+   4) [WRONG]   avoid any emotional engagement
+
+6. Dramas evoking mixed, self-transcending emotions like nostalgia and appreciation are typically classified as…
+   1) [CORRECT] eudaimonic entertainment
+   2) [WRONG]   hedonic entertainment
+   3) [WRONG]   purely escapist entertainment
+   4) [WRONG]   gamified entertainment
+
+7. A gradual sense of being absorbed in a virtual environment, distinct from "being there" or full self–environment merging, is…
+   1) [CORRECT] immersion
+   2) [WRONG]   presence
+   3) [WRONG]   flow
+   4) [WRONG]   identification
+
+8. Escapism's negative correlates, such as depression and loneliness, are described as more pronounced especially in…
+   1) [CORRECT] Western cultures
+   2) [WRONG]   East Asian cultures
+   3) [WRONG]   all cultures equally
+   4) [WRONG]   no culture in particular
+
+9. Virtual reality, compared with augmented reality, aims to…
+   1) [CORRECT] replace the physical environment with a rich, responsive sensory world
+   2) [WRONG]   merely overlay synthetic information onto the real world
+   3) [WRONG]   eliminate the need for any sensory input
+   4) [WRONG]   function only on smartphones and tablets
+
+10. Transportation theory identifies two routes by which narratives change us: transportation and…
+   1) [CORRECT] identification
+   2) [WRONG]   gamification
+   3) [WRONG]   escapism
+   4) [WRONG]   mood management
+
+11. VR's empathy-boosting effects, compared with less-immersive media, were found in studies to…
+   1) [CORRECT] fade over time and not reliably shift attitudes long-term
+   2) [WRONG]   grow stronger indefinitely over time
+   3) [WRONG]   be entirely absent from the start
+   4) [WRONG]   transfer perfectly to all behaviours measured
+
+12. The Proteus effect is linked to self-perception theory because users infer their own attitudes by…
+   1) [CORRECT] observing their own (avatar-influenced) behaviour
+   2) [WRONG]   reading the avatar's backstory
+   3) [WRONG]   asking other players directly
+   4) [WRONG]   measuring their physiological arousal
+
+13. A Black avatar reducing a user's implicit bias is cited in the course as an example of…
+   1) [CORRECT] the Proteus effect
+   2) [WRONG]   the uncanny valley effect
+   3) [WRONG]   the Heider & Simmel effect
+   4) [WRONG]   the media equation
+
+
+## Bias in AI  (9 questions)
+--------------------------------------------------
+
+1. The "silicon gaze" concept is named by direct analogy to which other concept?
+   1) [CORRECT] the "male gaze"
+   2) [WRONG]   the "panopticon"
+   3) [WRONG]   the "uncanny valley"
+   4) [WRONG]   the "echo chamber"
+
+2. The silicon gaze argues that LLM training data over-represents wealthy, well-documented, English-speaking, and…
+   1) [CORRECT] metropolitan places
+   2) [WRONG]   rural and agricultural places
+   3) [WRONG]   non-English-speaking places
+   4) [WRONG]   low-income places
+
+3. Defaulting to dominant statistical patterns and flattening diversity in LLM outputs is named…
+   1) [CORRECT] pattern bias
+   2) [WRONG]   availability bias
+   3) [WRONG]   averaging bias
+   4) [WRONG]   proxy bias
+
+4. Collapsing variety into a bland "average" representation that erases distinctiveness is named…
+   1) [CORRECT] averaging bias
+   2) [WRONG]   pattern bias
+   3) [WRONG]   trope bias
+   4) [WRONG]   availability bias
+
+5. Inferring a trait from an indirect, correlated stand-in variable that smuggles in bias is named…
+   1) [CORRECT] proxy bias
+   2) [WRONG]   trope bias
+   3) [WRONG]   pattern bias
+   4) [WRONG]   averaging bias
+
+6. Reproducing clichés and stereotyped narratives about a place or group in LLM output is named…
+   1) [CORRECT] trope bias
+   2) [WRONG]   proxy bias
+   3) [WRONG]   averaging bias
+   4) [WRONG]   availability bias
+
+7. Under-served areas being poorly represented in LLM outputs because they are scarce in training data illustrates…
+   1) [CORRECT] availability bias
+   2) [WRONG]   pattern bias
+   3) [WRONG]   trope bias
+   4) [WRONG]   proxy bias
+
+8. Bias can enter the AI pipeline at the literature/model search stage, the training data, the models themselves, and also in…
+   1) [CORRECT] the humans in the loop and the interpretation of outputs
+   2) [WRONG]   the hardware's physical casing only
+   3) [WRONG]   the electricity supplier only
+   4) [WRONG]   nowhere once deployment begins
+
+9. Debiasing strategies for AI, the course notes, often prove especially limited in practice for…
+   1) [CORRECT] under-represented groups
+   2) [WRONG]   majority groups only
+   3) [WRONG]   well-documented, metropolitan groups
+   4) [WRONG]   groups with abundant training data
