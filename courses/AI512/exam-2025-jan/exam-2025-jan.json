@@ -2,7 +2,7 @@
   {
     "type": "group",
     "section": "Question 1: Ridge Regression Bias-Variance",
-    "context": "Setup: Ridge regression loss $$ L(w) = \\frac{1}{n}\\sum_{i=1}^n (y_i - w^\\top x_i)^2 + \\alpha||w||_2^2 $$\nfit on $D = \\{(x_i,y_i)\\}$, $\\alpha > 0$. Model variance is defined w.r.t. experiment repetitions.",
+    "context": "Setup: \n Ridge regression loss $$ L(w) = \\frac{1}{n}\\sum_{i=1}^n (y_i - w^\\top x_i)^2 + \\alpha||w||_2^2 $$\nfit on $D = \\{(x_i,y_i)\\}$, $\\alpha > 0$. Model variance is defined w.r.t. experiment repetitions.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -41,7 +41,7 @@
   {
     "type": "group",
     "section": "Question 2: Confusion Matrix (A/B/C, 100 samples v1)",
-    "context": "Setup: \n[image: assets/CM.png] \n Evaluate the below statements regarding this confusion matrix.",
+    "context": "Setup: \n [image: assets/CM.png] \n Evaluate the below statements regarding this confusion matrix.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -80,7 +80,7 @@
   {
     "type": "group",
     "section": "Question 3: Coin with Heads Probability 2/3, Three Tosses",
-    "context": "Setup: $C$ = number of heads in three tosses of a coin with heads probability 2/3.",
+    "context": "Setup: \n $C$ = number of heads in three tosses of a coin with heads probability 2/3.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -119,7 +119,7 @@
   {
     "type": "group",
     "section": "Question 4: Bias-Variance Curve (Model Capacity)",
-    "context": "Setup: \n[image: assets/BV-Curve.png] \n Evaluate the following statements about the figure above.",
+    "context": "Setup: \n [image: assets/BV-Curve.png] \n Evaluate the following statements about the figure above.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -158,7 +158,7 @@
   {
     "type": "group",
     "section": "Question 5: Events A and B",
-    "context": "Setup: $A$ and $B$ are events with $0 < P(A) < 1$ and $0 < P(B) < 1$.",
+    "context": "Setup: \n $A$ and $B$ are events with $0 < P(A) < 1$ and $0 < P(B) < 1$.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -197,7 +197,7 @@
   {
     "type": "group",
     "section": "Question 6: k-Means Clustering Algorithm",
-    "context": "Evaluate the following statements about the k−means clustering algorithm",
+    "context": "Setup: \n Evaluate the following statements about the k−means clustering algorithm",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -236,7 +236,7 @@
   {
     "type": "group",
     "section": "Question 7: ReLU Predictor f(x) = W2^T max(W1^T x, 0)",
-    "context": "Setup: $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\nmax applied element-wise.",
+    "context": "Setup: \n $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\nmax applied element-wise.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -275,7 +275,7 @@
   {
     "type": "group",
     "section": "Question 8: Bernoulli Data Set (n observations)",
-    "context": "Setup: $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \tilde^{iid} $Bernoulli($\\pi$).",
+    "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \tilde^{iid} $Bernoulli($\\pi$).",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -314,7 +314,7 @@
   {
     "type": "group",
     "section": "Question 9: Train Paris to Berlin (Northern/Southern Route)",
-    "context": "Setup: Train takes northern route (via Brussels) 60% of the time, southern route (via Strasbourg) 40%.\nArrives late 30% of the time on the northern route, 10% of the time on the southern route.",
+    "context": "Setup: \n Train takes northern route (via Brussels) 60% of the time, southern route (via Strasbourg) 40%.\nArrives late 30% of the time on the northern route, 10% of the time on the southern route.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -353,7 +353,7 @@
   {
     "type": "group",
     "section": "Question 10: k-Nearest Neighbor Classifier (Bias/Variance)",
-    "context": "Setup: Assume all conditions other than those specified in each statement are equal. \n $k$ denotes the number of nearest neighbors used for classification.",
+    "context": "Setup: \n Assume all conditions other than those specified in each statement are equal. \n $k$ denotes the number of nearest neighbors used for classification.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -430,7 +430,7 @@
   },
   {
     "type": "group",
-    "section": "Question 12: PyTorch nn.Sequential (Linear-ReLU-Linear-Softmax)",
+    "section": "Question 12: PyTorch nn.Sequential",
     "context": "Setup: Code:\nmodel = nn.Sequential(\n  nn.Linear(100, 500),\n  nn.ReLU(),\n  nn.Linear(500, 5),\n  nn.Softmax()\n)",
     "positiveLabel": "True",
     "negativeLabel": "False",
