@@ -236,8 +236,7 @@
   {
     "type": "group",
     "section": "Question 7: ReLU Predictor",
-    "context": "Setup: \n $$ f(x) = W_2^\\top \\max(W_1^\\top x, 0) \\space \\text{for} \\space $W_1 \\in \\mathbb{R}^{d\\times h} W_2 \\in \\mathbb{R}^{h\\times 1} $$, max applied element-wise.",
-    "positiveLabel": "True",
+    "context": "Setup: \n $$ f(x) = W_2^\\top \\max(W_1^\\top x, 0) \\text{ for } W_1 \\in \\mathbb{R}^{d\\times h},\\; W_2 \\in \\mathbb{R}^{h\\times 1} $$, max applied element-wise."    "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
