@@ -1,0 +1,982 @@
+AI507 — AI & Society — Quiz Question Bank
+==================================================
+Total questions: 93
+Total topics: 14
+
+Format per question:
+  - Question text
+  - Option 1 is ALWAYS the correct answer
+  - Each option has a short note
+==================================================
+
+## Intelligence & Cognition (12 questions)
+--------------------------------------------------
+
+1. Declaring the mind and body to be entirely separate substances is the philosophical position known as…
+   1) [CORRECT] mind-body dualism
+      → Right — mind and body treated as distinct substances.
+   2) [WRONG] empiricism
+      → That's the view that all knowledge comes from sensory experience.
+   3) [WRONG] nativism
+      → That's the view that some knowledge is innate, not learned.
+   4) [WRONG] connectionism
+      → That's a modern cognitive-architecture view, not a mind-body position.
+
+2. The view that our thoughts are created solely through stimulation of the senses is…
+   1) [CORRECT] empiricism
+      → Right — knowledge built entirely from sensory input.
+   2) [WRONG] nativism
+      → That holds we're born with some innate knowledge.
+   3) [WRONG] mind-body dualism
+      → That's about mind and body being separate substances, not where knowledge comes from.
+   4) [WRONG] behaviourism
+      → That's about stimulus-response learning, not the origin of knowledge per se.
+
+3. The view that humans are born with innate knowledge enabling language and conscious experience is…
+   1) [CORRECT] nativism
+      → Right — some knowledge or capacity is innate.
+   2) [WRONG] empiricism
+      → That holds all knowledge comes from sensory experience.
+   3) [WRONG] connectionism
+      → That's a cognitive-architecture model, not a claim about innate knowledge.
+   4) [WRONG] symbolic processing
+      → That's a model of mental computation, not a nativist claim.
+
+4. Early brain-injury case studies (a patient who could only say one syllable, and another with comprehension deficits) were used to show that…
+   1) [CORRECT] different brain regions are specialised for different functions, yet highly interconnected
+      → Right — specialised but networked function circuits.
+   2) [WRONG] the brain processes all information identically everywhere
+      → The opposite — these cases showed clear localisation of function.
+   3) [WRONG] language has no biological basis
+      → The cases pointed to biological localisation of language functions.
+   4) [WRONG] intelligence cannot be measured scientifically
+      → Unrelated to what the brain-injury cases demonstrated.
+
+5. Founding the first psychological laboratory and pioneering the experimental measurement of mental processes is credited to a 19th-century figure considered the…
+   1) [CORRECT] father of modern experimental psychology
+      → Right — founded the first psychology lab using an experimental approach.
+   2) [WRONG] father of cognitive science
+      → That credit goes to a 20th-century figure who founded a cognitive studies centre.
+   3) [WRONG] father of behaviourism
+      → Behaviourism's central figures came later and focused on conditioning.
+   4) [WRONG] father of psychoanalysis
+      → Psychoanalysis is a separate, non-experimental tradition.
+
+6. Likening the mind to a computer, with input, processing and output, became influential as a metaphor partly thanks to work in…
+   1) [CORRECT] information theory and computing in the mid-20th century
+      → Right — the 'minds as computers' framing emerged from this era.
+   2) [WRONG] 19th-century brain-injury case studies
+      → Those established functional localisation, not the computer metaphor.
+   3) [WRONG] ancient philosophy
+      → The computer metaphor is a 20th-century development.
+   4) [WRONG] behaviourist conditioning experiments
+      → Those modelled stimulus-response learning, not symbolic computation.
+
+7. A controversial 1990s book argued that IQ differences between groups were largely fixed and predicted social outcomes; this claim has since been…
+   1) [CORRECT] largely debunked, with socio-economic status and education shown to shape performance
+      → Right — the claims didn't hold up to scrutiny.
+   2) [WRONG] fully confirmed by later research
+      → The opposite happened — later research undermined the claims.
+   3) [WRONG] irrelevant to intelligence research entirely
+      → It became a well-known cautionary case in the field, not something ignored.
+   4) [WRONG] only about fluid intelligence, not g
+      → The controversy concerned general intelligence and group differences broadly.
+
+8. Average IQ scores rising over generations across many countries is known as the…
+   1) [CORRECT] Flynn effect
+      → Right — the term for rising average IQ over time.
+   2) [WRONG] bell-curve effect
+      → That refers to the controversial book and its claims, not generational IQ change.
+   3) [WRONG] g factor
+      → That's the general intelligence factor itself, not a trend over time.
+   4) [WRONG] uncanny valley effect
+      → That's an unrelated concept from human-robot interaction.
+
+9. Intelligence has a substantial genetic component, estimated at roughly…
+   1) [CORRECT] 40-80% heritability, with family members still differing
+      → Right — high heritability, but not deterministic for individuals.
+   2) [WRONG] under 10% heritability
+      → Far too low for the estimated genetic contribution to intelligence.
+   3) [WRONG] 100% heritability, fully fixed at birth
+      → Overstated — environment and education still matter.
+   4) [WRONG] 0% heritability, purely environmental
+      → The evidence points to a substantial genetic component, not none.
+
+10. The 'dream' of artificial general intelligence (AGI) is rooted conceptually in…
+   1) [CORRECT] the general intelligence ('g') factor concept
+      → Right — AGI's framing echoes a single general capability underlying many tasks.
+   2) [WRONG] the uncanny valley effect
+      → That's about perception of human-likeness in robots, unrelated to AGI's conceptual roots.
+   3) [WRONG] the spiral of silence
+      → That's a communication theory about public opinion, unrelated here.
+   4) [WRONG] the theory of planned behaviour
+      → That's about behavioural intentions, not general cognitive capability.
+
+11. Looking at a neighbour's face or thinking about something unpleasant to trigger an automatic reaction is used in lectures to illustrate…
+   1) [CORRECT] fast, automatic System I processing
+      → Right — quick, involuntary responses are the System I hallmark.
+   2) [WRONG] slow, deliberate System II processing
+      → System II is effortful and controlled, the opposite of automatic reactions.
+   3) [WRONG] classical conditioning
+      → No stimulus pairing is involved; this is about processing speed, not learned association.
+   4) [WRONG] the g factor
+      → That's about general cognitive ability, not dual-process thinking.
+
+12. Comparing apparent alignment between human and machine outputs to a deeper structural mismatch in how judgments are formed reflects the idea that…
+   1) [CORRECT] AI and human cognition can look similar on the surface while working very differently underneath
+      → Right — surface alignment can mask a different underlying process.
+   2) [WRONG] AI and humans now reason in fundamentally identical ways
+      → The framing stresses mismatch, not identical reasoning.
+   3) [WRONG] machine outputs are always less accurate than human ones
+      → Accuracy isn't the point — the structural process is.
+   4) [WRONG] this mismatch has now been fully resolved by recent models
+      → The fault lines are presented as an open issue, not resolved.
+
+## Learning & Memory (12 questions)
+--------------------------------------------------
+
+13. Long-term memory is generally split into explicit (what happened, when) and…
+   1) [CORRECT] implicit memory (how to do something)
+      → Right — explicit vs implicit (declarative vs procedural).
+   2) [WRONG] short-term memory
+      → That's a separate stage (storage duration), not a type of long-term memory.
+   3) [WRONG] working memory
+      → That's the active-manipulation system, not a long-term memory type.
+   4) [WRONG] sensory memory
+      → That's a very brief initial registration of input, not long-term storage.
+
+14. A strong, distinctive cue is more likely than a weak cue to…
+   1) [CORRECT] reliably elicit the same retrieval response most of the time
+      → Right — strong cues trigger a specific reaction reliably.
+   2) [WRONG] have no effect on retrieval at all
+      → Cues by definition help guide retrieval, weak or strong.
+   3) [WRONG] erase the original memory entirely
+      → Cues support retrieval; they don't erase memories.
+   4) [WRONG] work only in short-term memory
+      → Cue strength affects retrieval broadly, not only short-term recall.
+
+15. In learning, initial acquisition is typically fastest with constant reinforcement, but behaviour is most stable with…
+   1) [CORRECT] intermittent, sometimes-absent reinforcement
+      → Right — uncertainty about reward makes the behaviour 'stick'.
+   2) [WRONG] reinforcement on every single occurrence
+      → That speeds initial learning but doesn't make it most durable.
+   3) [WRONG] no reinforcement at all
+      → Without any reinforcement, behaviour tends to extinguish.
+   4) [WRONG] punishment only, never reward
+      → Punishment reduces behaviour; this is about what stabilises it, not removes it.
+
+16. University study advice based on memory research includes working in focused blocks (e.g., 25 minutes followed by a mandatory break), which reflects the principle that…
+   1) [CORRECT] working memory has limited capacity, so deep, undistracted work beats constant shallow multitasking
+      → Right — capacity limits motivate structured, distraction-free study blocks.
+   2) [WRONG] memory capacity is effectively unlimited if you just try harder
+      → The advice exists precisely because capacity is limited.
+   3) [WRONG] repetition alone, with no variation, is the most effective study method
+      → Plain repetition without variety is described as unattractive to the brain.
+   4) [WRONG] short-term memory and long-term memory are identical
+      → The distinction between the two is part of why structured study habits matter.
+
+17. A widely cited line about human progress argues that what makes our species capable, despite not being individually much smarter than other animals, is our capacity to…
+   1) [CORRECT] transmit accumulated knowledge across generations
+      → Right — cultural transmission of knowledge, not individual brilliance.
+   2) [WRONG] forget unimportant details quickly
+      → Forgetting isn't the cited advantage.
+   3) [WRONG] physically outcompete other species
+      → Physical competition isn't the point being made.
+   4) [WRONG] avoid all forms of cognitive offloading
+      → The point is about transmitting knowledge, not avoiding offloading.
+
+18. Word-embedding techniques such as Word2Vec rely on which learning principle to associate words?
+   1) [CORRECT] temporal contiguity (co-occurrence of words)
+      → Right — words appearing close together become associated.
+   2) [WRONG] competition among predictors
+      → That's about blocking redundant cues, not co-occurrence-based association.
+   3) [WRONG] configural learning
+      → That's about binding multiple features into one bundle, not word co-occurrence.
+   4) [WRONG] unlearning
+      → That's about a pairing fading over time, not forming new associations.
+
+19. Captchas that show increasingly blurred images are used to train models on which learning principle?
+   1) [CORRECT] generalization and similarity
+      → Right — learning to handle variations in similarity between stimuli.
+   2) [WRONG] temporal contiguity
+      → That's about co-occurrence in time, not visual similarity training.
+   3) [WRONG] extinction
+      → That's about a learned pairing fading, unrelated to Captcha training.
+   4) [WRONG] competition among predictors
+      → That's about blocking redundant cues, not generalising across blurred images.
+
+20. A large multi-experiment study (almost 2,000 participants) on internet use and memory found that looking facts up online leads people to…
+   1) [CORRECT] mistakenly believe they personally know more than they actually do
+      → Right — confusing external knowledge access with one's own memory.
+   2) [WRONG] become measurably worse at using search engines over time
+      → Search skill itself wasn't the finding; self-perceived knowledge was.
+   3) [WRONG] accurately judge their own memory abilities
+      → The opposite — people overrate their memory after searching.
+   4) [WRONG] permanently lose previously stored long-term memories
+      → The study was about self-perception, not memory deletion.
+
+21. In the EEG-based study comparing brain-only, search-engine, and LLM-assisted essay writing, heavier LLM reliance was linked with lower cognitive load and also…
+   1) [CORRECT] reduced ownership and weaker memory of the essay over time
+      → Right — lower load came with costs to ownership and recall.
+   2) [WRONG] higher ownership and stronger long-term memory
+      → Reliance reduced these, rather than boosting them.
+   3) [WRONG] identical essay quality regardless of condition
+      → Quality differed across the brain-only, search, and LLM conditions.
+   4) [WRONG] increased cognitive load compared to brain-only writing
+      → Load actually decreased with LLM use, not increased.
+
+22. Sharing tasks like remembering gift lists with others, rather than memorising everything yourself, is an everyday example of…
+   1) [CORRECT] cognitive offloading
+      → Right — distributing memory demands beyond your own brain.
+   2) [WRONG] configural learning
+      → That's about binding features into a bundle, unrelated to delegating memory tasks.
+   3) [WRONG] the magic number
+      → That's short-term memory capacity (7±2), not delegation of memory tasks.
+   4) [WRONG] extinction
+      → That's a learned pairing fading, unrelated to sharing memory tasks.
+
+23. Meta-analyses on AI-enhanced learning outcomes generally suggest a…
+   1) [CORRECT] positive but cautious effect, since many included studies are small
+      → Right — promising but to be interpreted carefully.
+   2) [WRONG] strongly negative effect across the board
+      → The overall direction found was positive, not negative.
+   3) [WRONG] effect so large that traditional study methods become obsolete
+      → The evidence is described as needing care, not as overwhelming.
+   4) [WRONG] effect identical to plain repetition-based studying
+      → AI-enhanced learning was examined as a distinct factor, not equated with repetition.
+
+24. A key practical implication of the encoding-retrieval link for exam preparation is that…
+   1) [CORRECT] preparing both the content and the format of the exam helps retrieval later
+      → Right — matching study conditions to exam conditions aids recall.
+   2) [WRONG] only the content matters; the format is irrelevant to memory
+      → The lecture material stresses that format-related cues matter too.
+   3) [WRONG] cues can only help retrieval, never hinder it
+      → Some cues (distracting music, noisy roommates) can hinder retrieval.
+   4) [WRONG] working memory capacity is irrelevant to studying effectively
+      → Working memory limits are central to the practical advice given.
+
+## Social Cognition (12 questions)
+--------------------------------------------------
+
+25. Comparing how we perceive people, animals, and objects, a key difference is that people are generally seen as…
+   1) [CORRECT] intentional causal agents who perceive us back
+      → Right — people are seen as having intentions and perceiving us in turn.
+   2) [WRONG] entities with no unobservable traits
+      → People are seen as full of unobservable traits, unlike most objects.
+   3) [WRONG] unchangeable and fixed over time
+      → People are seen as changeable, unlike many objects.
+   4) [WRONG] simple and fully knowable at a glance
+      → People are seen as complex, rarely 'fully' known.
+
+26. A founding figure of self-concept research noted in 1918 that every thought feels like 'mine' rather than 'theirs', highlighting the…
+   1) [CORRECT] sense that experience belongs to a continuous 'I'
+      → Right — the felt ownership of one's own thoughts.
+   2) [WRONG] fundamental attribution error
+      → That's about misattributing others' behaviour to traits, unrelated to thought-ownership.
+   3) [WRONG] spiral of silence
+      → That's about public opinion expression, unrelated to self-experience.
+   4) [WRONG] self-discrepancy theory
+      → That's about gaps between actual/ideal/ought selves, not the felt ownership of thought.
+
+27. Self-concept providing both stability and variability across situations is explained by combining a relational self-concept with a…
+   1) [CORRECT] working self-concept activated in the current situation
+      → Right — stability from relational ties, variability from the working self.
+   2) [WRONG] feared self
+      → That's what one hopes to avoid becoming, not the situational/stable contrast.
+   3) [WRONG] possible self
+      → That's a hoped-for future self, not the situational-activation mechanism.
+   4) [WRONG] ought self
+      → That's about perceived duties, not the stability/variability mechanism.
+
+28. A healthy self-esteem is described as central to well-being primarily because it supports…
+   1) [CORRECT] setting appropriate goals and coping with challenges
+      → Right — tied to goal-setting and coping ability.
+   2) [WRONG] never experiencing self-discrepancy of any kind
+      → Self-discrepancies are a separate, normal phenomenon, not eliminated by self-esteem.
+   3) [WRONG] complete immunity to social threats like ostracism
+      → Self-regulation can still be challenged under threats like ostracism.
+   4) [WRONG] unlimited working memory capacity
+      → Working memory capacity is a separate cognitive resource.
+
+29. Self-regulation tends to be harder under conditions of multitasking or self-control depletion because of…
+   1) [CORRECT] limited working memory capacity
+      → Right — multitasking and depletion strain the same limited resource.
+   2) [WRONG] an excess of crystallized intelligence
+      → Crystallized intelligence isn't the limiting factor here.
+   3) [WRONG] too much self-enhancement motivation
+      → Self-enhancement is a separate self-related need, not the cause of regulation difficulty.
+   4) [WRONG] a lack of fundamental attribution error
+      → That error isn't related to self-regulation difficulty.
+
+30. Believing you can plan your actions, cope with setbacks, and pursue self-regulatory goals reflects a sense of…
+   1) [CORRECT] mastery (self-efficacy)
+      → Right — the described 'mastery' sense is self-efficacy.
+   2) [WRONG] self-discrepancy
+      → That's a gap between self-states, not a sense of mastery.
+   3) [WRONG] naive realism
+      → That's the belief one sees the world objectively, unrelated to mastery.
+   4) [WRONG] self-enhancement
+      → That's the drive to feel good about oneself, distinct from competence beliefs.
+
+31. A lack of perceived political efficacy is associated with…
+   1) [CORRECT] lower intentions to vote
+      → Right — feeling unable to influence outcomes lowers voting intention.
+   2) [WRONG] higher voter turnout across the board
+      → The relationship runs the opposite direction.
+   3) [WRONG] stronger ingroup favouritism specifically
+      → Efficacy concerns voting behaviour, not ingroup bias directly.
+   4) [WRONG] increased need for cognition
+      → Need for cognition is a separate cognitive-style trait.
+
+32. Causal reasoning about other people's actions relies on basic principles such as cause preceding effect and…
+   1) [CORRECT] temporal and spatial contiguity between cause and effect
+      → Right — closeness in time and space supports causal inference.
+   2) [WRONG] the stereotype content model
+      → That's about perceiving groups on warmth/competence, a separate concept.
+   3) [WRONG] the spiral of silence
+      → That's about public opinion expression, unrelated to causal attribution principles.
+   4) [WRONG] media richness
+      → That's a communication-channel concept, unrelated to causal inference principles.
+
+33. The actor-observer effect describes the tendency to attribute one's own stumble to the situation (a slippery slope) while attributing someone else's stumble to…
+   1) [CORRECT] their personal clumsiness or stable traits
+      → Right — others' behaviour gets attributed to disposition more than our own does.
+   2) [WRONG] the same situational factors we'd cite for ourselves
+      → The actor-observer asymmetry is precisely that the explanations differ.
+   3) [WRONG] pure random chance only
+      → Random chance isn't the typical attribution made about others.
+   4) [WRONG] the observer's own mistakes
+      → The effect is about attributing the other person's behaviour, not the observer's.
+
+34. Believing 'I see the world as it is, and reasonable people should see it the same way' describes…
+   1) [CORRECT] naive realism
+      → Right — the belief that one's own perception is objective reality.
+   2) [WRONG] the false consensus effect on its own
+      → False consensus is a related bias that can follow from naive realism, but the belief itself is naive realism.
+   3) [WRONG] the fundamental attribution error
+      → That's about over-crediting traits over situations, a related but distinct bias.
+   4) [WRONG] self-discrepancy theory
+      → That concerns gaps between self-states, unrelated to perceived objectivity.
+
+35. Studies show people are generally less able to detect pain in faces belonging to…
+   1) [CORRECT] outgroup members
+      → Right — reduced pain detection for outgroup faces, more pronounced in some groups than others.
+   2) [WRONG] their own ingroup members
+      → Ingroup faces tend to receive more accurate pain detection, not less.
+   3) [WRONG] close family members specifically
+      → The effect concerns ingroup/outgroup status broadly, not family specifically.
+   4) [WRONG] robots and artificial agents
+      → The finding concerns human ingroup/outgroup perception, not robots.
+
+36. A real-world case where a sycophantic AI model was nearly launched despite testers noting it felt 'off' illustrates that…
+   1) [CORRECT] positive user evaluations in testing can mask a sycophancy problem
+      → Right — A/B test approval outweighed subtle tester concerns.
+   2) [WRONG] sycophancy is always caught immediately during offline evaluation
+      → The case shows the opposite — it was nearly missed.
+   3) [WRONG] larger language models are generally less sycophantic
+      → Larger models were found to show more sycophancy, not less.
+   4) [WRONG] sycophancy only affects small, experimental models
+      → The case involved a major, widely deployed-scale model.
+
+## Communication (13 questions)
+--------------------------------------------------
+
+37. The historical era beginning roughly 3,500 years BCE, enabling notes and plans to overcome the limits of memory, is the…
+   1) [CORRECT] manuscript era
+      → Right — writing systems overcoming time/space limits for senders who could write.
+   2) [WRONG] print era
+      → That came roughly 1450-1850, much later.
+   3) [WRONG] audio-visual era
+      → That came in the 19th-20th century, overcoming limits for senders broadcasting widely.
+   4) [WRONG] digital era
+      → That's the most recent era, overcoming dissemination and access barriers.
+
+38. The era starting around 1850 is described as overcoming time and space limitations specifically for…
+   1) [CORRECT] senders, through mass communication
+      → Right — broadcast technology let one sender reach distant audiences.
+   2) [WRONG] recipients only, through print
+      → Print (1450-1850) is described as solving limits for recipients first.
+   3) [WRONG] both equally, through digital networks
+      → The digital era (from 1990) is framed as solving dissemination/access barriers, a later step.
+   4) [WRONG] neither party, since oral speech remained dominant
+      → The whole point of this era was overcoming sender-side limits.
+
+39. Roughly what share of everyday speech acts is estimated to be formulaic (shortened, routine phrases) to save cognitive energy?
+   1) [CORRECT] around 70%
+      → Right — a substantial majority of speech is routine and shortened.
+   2) [WRONG] around 5%
+      → Far too low given how much everyday speech is formulaic.
+   3) [WRONG] nearly 100%, with almost no original phrasing ever produced
+      → Overstated — some speech is original, even if most is routine.
+   4) [WRONG] essentially 0%, since all speech is carefully composed
+      → The opposite is true; most speech is not carefully composed.
+
+40. Getting to know someone by asking about their preferences and background is a strategy primarily aimed at…
+   1) [CORRECT] reducing uncertainty and building personal common ground
+      → Right — uncertainty reduction builds the shared basis for communication.
+   2) [WRONG] increasing media richness
+      → Richness is a channel property, not a goal of getting-to-know-you talk.
+   3) [WRONG] triggering the spiral of silence
+      → That concept is about public opinion expression, unrelated here.
+   4) [WRONG] activating the SIDE model's anonymity effects
+      → SIDE concerns anonymous, deindividuated contexts, not personal disclosure.
+
+41. The limited capacity model of motivated mediated message processing (LC4MP) frames media-use as requiring resources for which three core processes?
+   1) [CORRECT] encoding, storage, and retrieval
+      → Right — the same three classic memory stages applied to media processing.
+   2) [WRONG] conceptualization, formulation, and articulation
+      → Those are speech-production stages, not the LC4MP's three processes.
+   3) [WRONG] convergence, divergence, and accommodation
+      → Those are accommodation-theory concepts, unrelated to LC4MP.
+   4) [WRONG] anonymity, visibility, and interactivity
+      → Those are platform affordances, not LC4MP's processing stages.
+
+42. The classic colour-word interference task used to illustrate selective attention is the…
+   1) [CORRECT] Stroop effect
+      → Right — naming ink colour while the word says a different colour name.
+   2) [WRONG] uncanny valley effect
+      → That concerns perceived eeriness of near-human robots, unrelated to attention.
+   3) [WRONG] spiral of silence
+      → That's about public opinion expression, unrelated to attention tasks.
+   4) [WRONG] fundamental attribution error
+      → That's a social-judgment bias, unrelated to the colour-word task.
+
+43. In models of narrative comprehension, a sentence's concepts being linked back to the concept introduced by the previous sentence reflects good…
+   1) [CORRECT] thema-rhema structure in writing
+      → Right — each new sentence connects back to what came before.
+   2) [WRONG] phonological encoding
+      → That's a speech-production stage about sound structure, not text-level coherence.
+   3) [WRONG] media richness
+      → That's a channel property, unrelated to sentence-level coherence.
+   4) [WRONG] the SIDE model
+      → That concerns anonymous group norms, unrelated to narrative comprehension.
+
+44. Computer-mediated communication is described as differing from face-to-face interaction along several dimensions, including synchronicity, permanency, and…
+   1) [CORRECT] anonymity
+      → Right — one of the named CMC dimensions.
+   2) [WRONG] fluid intelligence
+      → That's a cognitive ability concept, unrelated to CMC dimensions.
+   3) [WRONG] the g factor
+      → That's a general-intelligence concept, unrelated to CMC.
+   4) [WRONG] self-efficacy
+      → That's a capability belief, unrelated to CMC's defining dimensions.
+
+45. When communicative adaptation goes too far and comes across as patronising, this is called…
+   1) [CORRECT] overaccommodation
+      → Right — adapting so much it feels condescending.
+   2) [WRONG] underaccommodation
+      → That's adapting too little, coming across as selfish, not patronising.
+   3) [WRONG] divergence
+      → That's accentuating differences from the other person, a distinct strategy.
+   4) [WRONG] convergence
+      → That's adapting toward the other person appropriately, not excessively.
+
+46. Adapting too little to a conversation partner, which can come across as selfish, is called…
+   1) [CORRECT] underaccommodation
+      → Right — insufficient adaptation, perceived as selfish.
+   2) [WRONG] overaccommodation
+      → That's adapting too much, perceived as patronising, the opposite case.
+   3) [WRONG] convergence
+      → Convergence is the appropriate-adaptation strategy, not the deficient one.
+   4) [WRONG] the hyperpersonal model
+      → That concerns idealised self-presentation online, a different concept.
+
+47. Norms about what most other people actually do, as opposed to what one should do, are called…
+   1) [CORRECT] descriptive norms
+      → Right — norms based on observed behaviour of others.
+   2) [WRONG] injunctive norms
+      → Those concern what one should do, the approval-based norm type.
+   3) [WRONG] personal common ground
+      → That's shared knowledge between two people, not a norm type.
+   4) [WRONG] communal common ground
+      → That's culture-based shared knowledge, not a norm type.
+
+48. Norms about what one should do, based on approval or disapproval, are called…
+   1) [CORRECT] injunctive norms
+      → Right — approval-based norms about appropriate behaviour.
+   2) [WRONG] descriptive norms
+      → Those describe what others actually do, not what's approved of.
+   3) [WRONG] the hyperpersonal model
+      → That's about idealised online self-presentation, unrelated to norm types.
+   4) [WRONG] media richness theory
+      → That's a channel-property theory, unrelated to norm types.
+
+49. Speaking is estimated to take roughly how much longer than recognising a word?
+   1) [CORRECT] up to five times longer
+      → Right — production is notably slower than recognition.
+   2) [WRONG] exactly the same amount of time
+      → Production and recognition are not described as equally fast.
+   3) [WRONG] about ten times faster
+      → Speaking is slower, not faster, than word recognition.
+   4) [WRONG] twice as long, but only for non-native speakers
+      → The comparison given isn't restricted to non-native speakers.
+
+## Innovation (12 questions)
+--------------------------------------------------
+
+50. Economists describe innovations broadly as changes that can be technical, social, organisational, or…
+   1) [CORRECT] scientific
+      → Right — one of the named categories of innovation.
+   2) [WRONG] purely accidental
+      → Innovations are framed as deliberate changes, not accidents.
+   3) [WRONG] always profitable
+      → Profitability isn't a defining category of innovation type.
+   4) [WRONG] always destructive with no benefit
+      → Innovations are framed as having potential value, not pure destruction.
+
+51. According to the social-impact framing used in the lecture, social progress encompasses improvements in education, healthcare, and…
+   1) [CORRECT] human rights
+      → Right — one of the named areas of social progress.
+   2) [WRONG] stock market returns
+      → Not one of the areas named under social progress.
+   3) [WRONG] military capability
+      → Not part of the social-progress framing used.
+   4) [WRONG] entertainment revenue
+      → Not part of the social-progress framing used.
+
+52. The 'social impact compass' evaluates an intervention along dimensions such as certainty of effects and…
+   1) [CORRECT] how complete the solution is for each beneficiary
+      → Right — one of the compass's evaluative dimensions.
+   2) [WRONG] the size of the marketing budget
+      → Not one of the compass's dimensions.
+   3) [WRONG] the founder's personal background
+      → Not one of the compass's evaluative dimensions.
+   4) [WRONG] the number of patents filed
+      → Not part of the social impact compass framework.
+
+53. Some long-celebrated tech products that ultimately failed are noted in the lecture as still having…
+   1) [CORRECT] contributed substantially to what came after them
+      → Right — failures can still shape later successful innovations.
+   2) [WRONG] had zero lasting influence on the field
+      → The point made is the opposite — lasting influence despite failure.
+   3) [WRONG] been immediately copied by every competitor
+      → Not the point being illustrated by failed-innovation examples.
+   4) [WRONG] avoided all legal issues
+      → Some failed innovations are noted as being caught by law, not avoiding it.
+
+54. Diffusion of innovations requires analysing how innovations are perceived, where that perception comes from, and how it influences…
+   1) [CORRECT] acceptance or adoption
+      → Right — the third analytical step in studying diffusion.
+   2) [WRONG] the original inventor's reputation only
+      → Reputation of the inventor isn't the named analytical focus.
+   3) [WRONG] the price of raw materials
+      → Not part of the diffusion analysis framework described.
+   4) [WRONG] weather patterns
+      → Unrelated to the diffusion of innovations framework.
+
+55. The Unified Theory of Acceptance and Use of Technology adds facilitating factors such as…
+   1) [CORRECT] trust
+      → Right — a newer facilitating factor incorporated into UTAUT.
+   2) [WRONG] weather conditions
+      → Not a facilitating factor named in UTAUT.
+   3) [WRONG] screen resolution
+      → Not a facilitating factor named in UTAUT.
+   4) [WRONG] font size
+      → Not a facilitating factor named in UTAUT.
+
+56. Viewing technology adoption as a cognitive process means new technologies are more likely seen as useful when they are…
+   1) [CORRECT] similar to or compatible with already-familiar technologies or positive concepts
+      → Right — closeness to existing mental 'nodes' boosts perceived usefulness.
+   2) [WRONG] completely unlike anything the person has used before
+      → Total unfamiliarity tends to work against, not for, perceived usefulness here.
+   3) [WRONG] associated with no emotional content at all
+      → Positive associations (e.g., with family/friends) are described as helping, not neutrality.
+   4) [WRONG] impossible to compare with existing mental categories
+      → The cognitive-process view relies on comparison to existing categories, not its absence.
+
+57. In the framework for trust in AI-enabled systems, the three main themes identified in the literature include socio-ethical considerations, user characteristics, and…
+   1) [CORRECT] technical and design features
+      → Right — the third named theme.
+   2) [WRONG] weather and climate factors
+      → Not one of the three named themes.
+   3) [WRONG] historical population statistics
+      → Not part of the trust-in-AI framework described.
+   4) [WRONG] stock price movements
+      → Not part of the trust-in-AI framework described.
+
+58. Investigative journalism rarely uses AI for digging through original sources mainly because…
+   1) [CORRECT] relevant training data is often unavailable and model generalisability can be low
+      → Right — the cited limitation on AI's investigative use.
+   2) [WRONG] journalists are legally barred from using any software tools
+      → No such blanket legal restriction is described.
+   3) [WRONG] AI is faster than journalists at every single task
+      → Speed isn't the cited barrier; data availability and accuracy needs are.
+   4) [WRONG] readers strongly prefer stories with no technological assistance at all
+      → Reader preference isn't the cited reason for limited AI use here.
+
+59. A central challenge in applying AI to investigative journalism, beyond data access and quality, is…
+   1) [CORRECT] encoding what counts as 'newsworthy'
+      → Right — one of the three central challenges named.
+   2) [WRONG] choosing the right font for headlines
+      → Not one of the named challenges.
+   3) [WRONG] finding journalists willing to be interviewed
+      → Not one of the named structural challenges for AI in this context.
+   4) [WRONG] translating headlines into emoji
+      → Not a real challenge discussed in this context.
+
+60. Fact-checking verification is explicitly described as being about 'confirmation' rather than…
+   1) [CORRECT] 'falsification'
+      → Right — the explicit contrast drawn in the lecture material.
+   2) [WRONG] 'summarisation'
+      → Summarisation is a separate fact-checking sub-task, not the named contrast.
+   3) [WRONG] 'translation'
+      → Translation isn't the contrasted term here.
+   4) [WRONG] 'publication'
+      → Publication isn't the contrasted term here.
+
+61. Survey data on AI use for information suggests that across countries, roughly what share of people now use AI weekly to get information?
+   1) [CORRECT] around 24%
+      → Right — the cited weekly-use figure across countries.
+   2) [WRONG] around 90%
+      → Far higher than the cited figure.
+   3) [WRONG] under 1%
+      → Far lower than the cited figure.
+   4) [WRONG] exactly 50%
+      → Not the figure cited in the lecture material.
+
+## Robots & HRI (12 questions)
+--------------------------------------------------
+
+62. The overall transfer of functions in the production process from humans to artificial systems is called…
+   1) [CORRECT] automation
+      → Right — the umbrella term covering mechanization and machinization.
+   2) [WRONG] machinization
+      → That's one sub-type of automation, not the umbrella term.
+   3) [WRONG] mechanization
+      → That's also a sub-type, where machines just supply energy.
+   4) [WRONG] smartification
+      → That's specifically about everyday objects gaining sensors/networking, a related but distinct concept.
+
+63. A long-running debate over lethal autonomous weapons systems centres partly on a UN call to prefer…
+   1) [CORRECT] augmentation (avatar-like systems) rather than replacement (agent-like systems)
+      → Right — keeping a human role rather than fully autonomous lethal decisions.
+   2) [WRONG] full replacement of human soldiers in all roles
+      → That's the position the UN call argues against.
+   3) [WRONG] banning all robotics research entirely
+      → The debate concerns lethal autonomous weapons specifically, not all robotics.
+   4) [WRONG] mechanization over machinization
+      → That distinction is about energy vs. process control, not the weapons debate's framing.
+
+64. The two people credited with founding the first robotics company, building on one's boyhood inspiration from science fiction and the other's patented machine-control process, illustrate that modern robotics…
+   1) [CORRECT] grew out of older cultural narratives about artificial beings
+      → Right — fiction-inspired dreams led to real robotics ventures.
+   2) [WRONG] began purely as a military project with no civilian roots
+      → The story given centres on a civilian company, not a military origin.
+   3) [WRONG] was invented independently of any cultural influence
+      → The story explicitly ties the founding to fiction-driven inspiration.
+   4) [WRONG] had no connection at all to earlier robot mythology
+      → The founding narrative is explicitly tied to earlier robot fiction.
+
+65. Today, industrial robots worldwide number in the region of…
+   1) [CORRECT] 3.5 million
+      → Right — the cited figure for industrial robots globally.
+   2) [WRONG] 3.5 thousand
+      → Far too low compared to the cited figure.
+   3) [WRONG] 35 million
+      → Higher than the figure cited.
+   4) [WRONG] 350
+      → Far too low compared to the cited figure.
+
+66. Among the key trends identified for industrial robotics, alongside increasing ease of use and AI integration, is…
+   1) [CORRECT] energy efficiency, including recovery of kinetic energy
+      → Right — one of the named robotics trends.
+   2) [WRONG] a complete halt in production relocation
+      → The trend cited is relocation of production to Europe/the US, not a halt.
+   3) [WRONG] abandoning all safety standards
+      → Not one of the named trends; the opposite emphasis is implied.
+   4) [WRONG] a move away from sustainability concerns
+      → Sustainability and repairability are explicitly named as trends, not abandoned.
+
+67. A field study of retail robots approaching customers found that conversations opened most positively when the robot approached at roughly…
+   1) [CORRECT] 70 cm, once the customer was looking toward them and near a product
+      → Right — a specific spatial/attention condition led to better evaluations.
+   2) [WRONG] a fixed distance regardless of customer attention or position
+      → The finding depended on customer position and attention, not a fixed rule.
+   3) [WRONG] the maximum distance possible, to avoid any interaction
+      → The opposite — closer, well-timed approach worked better.
+   4) [WRONG] only when the robot stood still by the product and never approached
+      → That static approach was rated less positively than the situational one.
+
+68. A meta-analytic review of dozens of human-robot interaction studies found that communicating robots were generally rated…
+   1) [CORRECT] more positively than static robots
+      → Right — communication boosted ratings relative to staying static.
+   2) [WRONG] less positively than static robots
+      → The finding ran in the opposite direction.
+   3) [WRONG] identically to static robots in every study
+      → A difference between communicating and static robots was found.
+   4) [WRONG] only positively when the robot looked extremely human
+      → Human-likeness in the very-high range wasn't conclusively assessed in that review.
+
+69. A study testing reactions to a robot able to feel hunger, pain, and have consciousness (versus a purely mechanical helper) suggests that perceptions of the uncanny valley may actually be driven by attributed…
+   1) [CORRECT] consciousness, rather than appearance alone
+      → Right — perceived inner experience, not just looks, may drive the effect.
+   2) [WRONG] physical size of the robot
+      → Size wasn't the manipulated or discussed factor.
+   3) [WRONG] the robot's exact paint colour
+      → Colour isn't relevant to the manipulation described.
+   4) [WRONG] the robot's manufacturing cost
+      → Cost isn't part of the studied manipulation.
+
+70. In the laptop-buying chatbot study testing ways to reduce uncanny-valley-style eeriness, the dependent variables measured included eeriness, trust, and…
+   1) [CORRECT] intentions to use the chatbot and to buy the laptop
+      → Right — both behavioural intention measures were included.
+   2) [WRONG] the chatbot's processing speed
+      → Speed wasn't one of the measured dependent variables.
+   3) [WRONG] the participant's nationality
+      → Nationality wasn't a dependent variable in that study.
+   4) [WRONG] the price of the laptop itself
+      → Price wasn't the outcome being measured; user intentions were.
+
+71. A study of an emotionally-reporting robot found that, compared to a happy or neutral robot, the sad robot was rated as…
+   1) [CORRECT] less intelligent and less credible
+      → Right — sadness specifically lowered these ratings.
+   2) [WRONG] more intelligent and more credible
+      → The finding went the opposite direction for sadness.
+   3) [WRONG] exactly as credible as the happy robot
+      → A clear difference, not equivalence, was found.
+   4) [WRONG] more human-like but with no credibility change
+      → Credibility specifically was affected, not left unchanged.
+
+72. The myths of the Golem and Pygmalion, alongside Frankenstein, are used to illustrate that…
+   1) [CORRECT] fascination and anxiety about artificial beings long predate modern robotics
+      → Right — ancient and literary roots of the 'artificial other' theme.
+   2) [WRONG] robotics only became culturally significant after World War II
+      → The myths cited are far older than that, undercutting this claim.
+   3) [WRONG] all early robot myths portrayed artificial beings as purely benevolent
+      → Frankenstein's story is explicitly one of horror, not pure benevolence.
+   4) [WRONG] ancient cultures had no concept of artificial life at all
+      → The opposite — these myths show such concepts existed long ago.
+
+73. The threshold model of social influence states that as perceived agency decreases (moving toward an avatar rather than an agent), behavioural realism becomes…
+   1) [CORRECT] more important
+      → Right — low agency makes realism matter more, per the model.
+   2) [WRONG] completely irrelevant
+      → Realism's importance increases rather than disappearing under low agency.
+   3) [WRONG] less important
+      → That's the pattern for high agency (agent-like systems), the reverse case.
+   4) [WRONG] impossible to assess
+      → The model treats realism as assessable and influential, not unmeasurable.
+
+## Recommender Systems (10 questions)
+--------------------------------------------------
+
+74. A 19th-century mathematician's notes on Charles Babbage's Analytical Engine are widely considered the first…
+   1) [CORRECT] algorithm written for a computer
+      → Right — an early example of an algorithm, even though the machine itself was never built.
+   2) [WRONG] recommender system ever deployed
+      → Recommender systems are a much later, separate development.
+   3) [WRONG] neural network design
+      → Neural networks emerged much later in computing history.
+   4) [WRONG] functioning physical computer
+      → The Analytical Engine itself was never actually built.
+
+75. The team mainly responsible for building the first general-purpose digital computer (ENIAC) in 1945 is notable for being largely composed of…
+   1) [CORRECT] women programmers and computer scientists
+      → Right — several women did much of the foundational programming work.
+   2) [WRONG] a single inventor working alone
+      → The work is described as a team effort, not a solo endeavour.
+   3) [WRONG] military generals with no technical training
+      → The contributors were technically skilled programmers, not generals.
+   4) [WRONG] entirely anonymous, untraceable individuals
+      → Specific individuals are named and credited for this work.
+
+76. Deep learning approaches to recommendation often rely on recurrent neural networks and…
+   1) [CORRECT] auto-encoders
+      → Right — a commonly used architecture alongside RNNs in this context.
+   2) [WRONG] decision trees exclusively
+      → Decision trees aren't the named deep-learning architecture here.
+   3) [WRONG] k-means clustering exclusively
+      → Clustering isn't the named deep-learning architecture for this purpose.
+   4) [WRONG] linear regression exclusively
+      → Plain linear regression isn't the deep-learning approach described.
+
+77. In multimodal recommendation research, which modality is described as comparatively underrepresented in the literature?
+   1) [CORRECT] audio
+      → Right — audio is explicitly flagged as understudied relative to text/images.
+   2) [WRONG] text
+      → Text is one of the more heavily researched modalities.
+   3) [WRONG] images
+      → Images are also relatively well studied compared to audio.
+   4) [WRONG] video metadata tags
+      → Not the modality specifically flagged as underrepresented.
+
+78. A Danish survey found that a large majority of respondents knew Netflix recommendations aren't random, but a smaller majority knew that…
+   1) [CORRECT] Google search results depend on their location
+      → Right — fewer people were aware of this particular algorithmic fact.
+   2) [WRONG] the internet has no algorithms at all
+      → This claim contradicts what the survey was even measuring.
+   3) [WRONG] all platforms use identical recommendation methods
+      → This wasn't the comparison drawn in the survey findings.
+   4) [WRONG] recommender systems require no personal data whatsoever
+      → The opposite is generally true, and wasn't the survey's point.
+
+79. In the same Danish survey, only a minority of respondents reported reading the personal data policy or being able to explain the difference between…
+   1) [CORRECT] algorithms, machine learning, and AI
+      → Right — this conceptual distinction was the one respondents struggled with.
+   2) [WRONG] Netflix and Spotify specifically
+      → Not the conceptual distinction surveyed.
+   3) [WRONG] hardware and software in general
+      → Not the specific distinction the survey measured.
+   4) [WRONG] WiFi and Bluetooth
+      → Not the distinction the survey was measuring.
+
+80. A large cross-country survey on algorithm preferences found that the most popular single option was…
+   1) [CORRECT] content filtering
+      → Right — the largest share of respondents preferred this type.
+   2) [WRONG] fully random suggestions
+      → Random suggestions were the least popular of the major options.
+   3) [WRONG] collaborative filtering
+      → Collaborative filtering had a smaller share than content filtering.
+   4) [WRONG] no recommendations of any kind
+      → Opting out entirely was a minority preference, not the most popular choice.
+
+81. A pre-registered study testing chronological versus personalised feeds with a major platform found chronological feeds led to…
+   1) [CORRECT] less engagement
+      → Right — personalised feeds outperformed chronological ones on engagement.
+   2) [WRONG] dramatically more engagement
+      → The finding ran the opposite direction.
+   3) [WRONG] no measurable difference at all
+      → A measurable difference was found, favouring personalised feeds.
+   4) [WRONG] complete user abandonment of the platform
+      → The effect was on engagement levels, not full platform abandonment.
+
+82. The proposal to build recommender systems 'around human values' includes aligning with human rights and the law, contributing to public discourse, and being…
+   1) [CORRECT] safe
+      → Right — one of the explicitly named value criteria.
+   2) [WRONG] maximally addictive
+      → The opposite of the stated goal, which favours well-being over addictiveness.
+   3) [WRONG] focused purely on advertising revenue
+      → Revenue maximisation isn't one of the listed human-values criteria.
+   4) [WRONG] entirely free of any moderation
+      → Safety as a value implies some moderation, not its absence.
+
+83. Experimental research on trust in predictions found that people often favour algorithmic advice over human advice even when…
+   1) [CORRECT] they have learned the algorithm makes errors
+      → Right — trust persisted despite known algorithmic mistakes.
+   2) [WRONG] the algorithm has never made any errors
+      → The interesting finding specifically involves known errors, not flawless performance.
+   3) [WRONG] the human advisor is a recognised expert
+      → The comparison holds across various human-advisor conditions, not just non-experts.
+   4) [WRONG] no human alternative was offered at all
+      → The comparison specifically involves a human alternative being available.
+
+## Chatbots & Bots (10 questions)
+--------------------------------------------------
+
+84. In the classic formulation of the Turing Test, the interrogator's task in the original imitation-game setup was originally framed around identifying…
+   1) [CORRECT] which of two respondents is a woman
+      → Right — the original setup, later adapted to compare human vs machine.
+   2) [WRONG] which respondent is lying about their age
+      → Not the original framing of the imitation game.
+   3) [WRONG] which respondent has the highest IQ
+      → IQ comparison wasn't the task in the imitation game.
+   4) [WRONG] which respondent types the fastest
+      → Typing speed wasn't the criterion in the imitation game.
+
+85. ELIZA's scripts were notably based on principles drawn from…
+   1) [CORRECT] Rogerian (person-centred) talk therapy
+      → Right — the chatbot's responses mimicked this therapeutic style.
+   2) [WRONG] behaviourist conditioning drills
+      → ELIZA's design was based on conversational scripts, not conditioning procedures.
+   3) [WRONG] formal logical proof systems
+      → ELIZA used keyword matching and scripts, not formal logic.
+   4) [WRONG] statistical language modelling
+      → That approach came much later, with modern NLP, not ELIZA.
+
+86. Early market analyses of bots traded on online marketplaces found they were sold mostly on Clearnet (versus Darknet) markets, in roughly what ratio?
+   1) [CORRECT] about 9:1
+      → Right — the cited ratio favouring Clearnet markets.
+   2) [WRONG] about 1:9, mostly on Darknet
+      → The ratio favoured Clearnet, not Darknet, in the cited analysis.
+   3) [WRONG] exactly 1:1, evenly split
+      → The cited finding showed a clear skew, not an even split.
+   4) [WRONG] 100% Darknet only
+      → Clearnet dominated according to the cited analysis.
+
+87. An analysis of openly available bot source code from 2009-2019 found that most bots relied on relatively simple functions and little AI beyond…
+   1) [CORRECT] Markov chains
+      → Right — the cited level of sophistication before the GPT era.
+   2) [WRONG] full transformer architectures
+      → Transformers came later and represent more advanced capability than what was found.
+   3) [WRONG] reinforcement learning agents
+      → RL agents weren't the typical sophistication level found in this analysis.
+   4) [WRONG] large multimodal models
+      → Multimodal models are a much later, more advanced development.
+
+88. Around the time of the Brexit vote and a major US election, concerns about social bots included spreading rumours, affecting stock markets, and engaging in…
+   1) [CORRECT] astroturfing campaigns
+      → Right — one of the named concerns about social bots.
+   2) [WRONG] legitimate scientific peer review
+      → Not a concern named in relation to social bots.
+   3) [WRONG] formal diplomatic negotiations
+      → Not one of the concerns named in this context.
+   4) [WRONG] large-scale manufacturing disruption
+      → Not one of the concerns named regarding social bots.
+
+89. An analysis of coordinated link-sharing during two European elections found that untrustworthy entities shared content…
+   1) [CORRECT] faster than trustworthy entities, and were far more likely to be in coordinated networks
+      → Right — both speed and network-coordination patterns were notably skewed.
+   2) [WRONG] at exactly the same speed as trustworthy entities
+      → A speed difference was specifically found, not equivalence.
+   3) [WRONG] only through private messaging, never publicly
+      → The analysis examined public sharing patterns, not private messages.
+   4) [WRONG] less often than trustworthy entities overall
+      → The pattern found was the opposite — faster, more frequent sharing.
+
+90. Data on US election-related social media activity suggests that a very small percentage of accounts (around 3%) is responsible for a disproportionately large share of…
+   1) [CORRECT] the overall tweet volume about the election
+      → Right — a small fraction of accounts can drive a large share of related content.
+   2) [WRONG] genuine, fact-checked news reporting
+      → The 'superspreader' framing concerns volume of activity, not journalistic accuracy.
+   3) [WRONG] official government communications
+      → Official communications aren't the subject of this superspreader statistic.
+   4) [WRONG] verified celebrity endorsements
+      → Not the subject of the cited superspreader statistic.
+
+91. The spiral of silence theory proposes that people use a 'quasi-statistical organ' to detect…
+   1) [CORRECT] majority opinions around them
+      → Right — a perceptual sense for gauging where public opinion stands.
+   2) [WRONG] their own physiological stress levels
+      → Not what the 'quasi-statistical organ' metaphor refers to.
+   3) [WRONG] the accuracy of news headlines
+      → Not the function the metaphor describes.
+   4) [WRONG] upcoming weather conditions
+      → Unrelated to the spiral of silence concept.
+
+92. Agent-based modelling of opinion dynamics suggests that in highly polarised settings, a consistent minority of around 2-4% can be enough to…
+   1) [CORRECT] tip over the opinion climate in a majority of simulated discussions
+      → Right — a small but consistent minority showed outsized influence.
+   2) [WRONG] have absolutely no effect on the opinion climate
+      → The modelling specifically found a meaningful tipping effect.
+   3) [WRONG] always become the new majority instantly
+      → The effect was about tipping the climate, not an instant majority takeover.
+   4) [WRONG] only matter in non-polarised settings
+      → The effect was specifically studied in highly polarised settings.
+
+93. In the bot-based counter-speech study addressing hateful Reddit comments, the bot's replies focused on civic norms and…
+   1) [CORRECT] calling for empathy with the target of the hate
+      → Right — the second named element of the bot's reply strategy.
+   2) [WRONG] threatening legal action against the poster
+      → Legal threats weren't part of the described counter-speech strategy.
+   3) [WRONG] offering the poster a financial reward
+      → Rewards weren't part of the counter-speech approach.
+   4) [WRONG] permanently banning the poster's account
+      → Account bans weren't the bot's described action; it replied with messages instead.
+
+## Smart Things & IoT (0 questions)
+--------------------------------------------------
+
+## Social Media & Hate Speech (0 questions)
+--------------------------------------------------
+
+## AI in Politics & Misinformation (0 questions)
+--------------------------------------------------
+
+## AI, Work & Sustainability (0 questions)
+--------------------------------------------------
+
+## AI in Health & Medicine (0 questions)
+--------------------------------------------------
+
+## Entertainment & Games (0 questions)
+--------------------------------------------------
