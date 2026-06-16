@@ -4,8 +4,8 @@
     "title": "AI507 - AI & Society",
     "description": "4th semester AI",
     "tests": [
-      { "id": "mock-quiz1", "title": "Mock Quiz 1", "file": "courses/AI507/mock-quiz1.txt" },
-      { "id": "mock-quiz2", "title": "Mock Quiz 2", "file": "courses/AI507/mock-quiz2.txt" }
+      { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507/ai-mock-quiz1.txt" },
+      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507/ai-mock-quiz2.txt" }
     ]
   },
   {
