@@ -40,7 +40,7 @@
   },
   {
     "type": "group",
-    "section": "Question 2: Confusion Matrix (A/B/C, 100 samples v1)",
+    "section": "Question 2: Confusion Matrix",
     "context": "Setup: \n [image: assets/CM.png] \n Evaluate the below statements regarding this confusion matrix.",
     "positiveLabel": "True",
     "negativeLabel": "False",
@@ -118,7 +118,7 @@
   },
   {
     "type": "group",
-    "section": "Question 4: Bias-Variance Curve (Model Capacity)",
+    "section": "Question 4: Bias-Variance Curve",
     "context": "Setup: \n [image: assets/BV-Curve.png] \n Evaluate the following statements about the figure above.",
     "positiveLabel": "True",
     "negativeLabel": "False",
@@ -235,7 +235,7 @@
   },
   {
     "type": "group",
-    "section": "Question 7: ReLU Predictor f(x) = W2^T max(W1^T x, 0)",
+    "section": "Question 7: ReLU Predictor",
     "context": "Setup: \n $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\nmax applied element-wise.",
     "positiveLabel": "True",
     "negativeLabel": "False",
@@ -274,7 +274,7 @@
   },
   {
     "type": "group",
-    "section": "Question 8: Bernoulli Data Set (n observations)",
+    "section": "Question 8: Bernoulli Data Set",
     "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \\overset{\\mathrm{iid}}{\\sim} \\mathrm{Bernoulli}(\\pi)$."    "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -312,7 +312,7 @@
   },
   {
     "type": "group",
-    "section": "Question 9: Train Paris to Berlin (Northern/Southern Route)",
+    "section": "Question 9: Train Paris to Berlin",
     "context": "Setup: \n Train takes northern route (via Brussels) 60% of the time, southern route (via Strasbourg) 40%.\nArrives late 30% of the time on the northern route, 10% of the time on the southern route.",
     "positiveLabel": "True",
     "negativeLabel": "False",
@@ -351,7 +351,7 @@
   },
   {
     "type": "group",
-    "section": "Question 10: k-Nearest Neighbor Classifier (Bias/Variance)",
+    "section": "Question 10: k-Nearest Neighbor Classifier",
     "context": "Setup: \n Assume all conditions other than those specified in each statement are equal. \n $k$ denotes the number of nearest neighbors used for classification.",
     "positiveLabel": "True",
     "negativeLabel": "False",
@@ -390,7 +390,7 @@
   },
   {
     "type": "group",
-    "section": "Question 11: PyTorch Training Loop (epoch range 20, 5-dim)",
+    "section": "Question 11: PyTorch Training Loop",
     "context": "Setup: Code:\nfor epoch in range(20):\n    for inputs_batch, outputs_batch in train_dl:\n        predictions_batch = model(inputs_batch.view(-1, 5))\n        loss = ((predictions_batch - outputs_batch) ** 2).mean()\n        loss.backward()\n        optimizer.step()\n        optimizer.zero_grad()",
     "positiveLabel": "True",
     "negativeLabel": "False",
