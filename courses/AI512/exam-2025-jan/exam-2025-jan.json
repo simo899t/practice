@@ -2,7 +2,7 @@
   {
     "type": "group",
     "section": "Question 1: Ridge Regression Bias-Variance",
-    "context": "Setup: Ridge regression loss $L(w) = \\frac{1}{n}\\sum_{i=1}^n (y_i - w^\\top x_i)^2 + \\alpha||w||_2^2$\nfit on $D = \\{(x_i,y_i)\\}$, $\\alpha > 0$. Model variance is defined w.r.t. experiment repetitions.",
+    "context": "Setup: Ridge regression loss $$ L(w) = \\frac{1}{n}\\sum_{i=1}^n (y_i - w^\\top x_i)^2 + \\alpha||w||_2^2 $$\nfit on $D = \\{(x_i,y_i)\\}$, $\\alpha > 0$. Model variance is defined w.r.t. experiment repetitions.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -41,7 +41,7 @@
   {
     "type": "group",
     "section": "Question 2: Confusion Matrix (A/B/C, 100 samples v1)",
-    "context": "Confusion matrix (rows = actual, cols = predicted):\nA: 15 as A, 5 as B, 5 as C (total 25).\nB: 10 as A, 20 as B, 5 as C (total 35).\nC: 5 as A, 10 as B, 25 as C (total 40).\nColumn totals: A=30, B=35, C=35.",
+    "context": "Setup: \n[image: assets/CM.png] \n Evaluate the below statements regarding this confusion matrix.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -119,7 +119,7 @@
   {
     "type": "group",
     "section": "Question 4: Bias-Variance Curve (Model Capacity)",
-    "context": "Setup: A hand-drawn plot shows error vs. model capacity: a dashed blue curve, a solid red curve, and\na solid vertical green line marking a particular capacity value.\n[image: assets/BV-Curve.png]",
+    "context": "Setup: \n[image: assets/BV-Curve.png] \n Evaluate the following statements about the figure above.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -197,7 +197,7 @@
   {
     "type": "group",
     "section": "Question 6: k-Means Clustering Algorithm",
-    "context": "",
+    "context": "Evaluate the following statements about the k−means clustering algorithm",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -275,7 +275,7 @@
   {
     "type": "group",
     "section": "Question 8: Bernoulli Data Set (n observations)",
-    "context": "Setup: $D = \\{X_i : i=1,\\dots,n\\}$, $X_i$ iid Bernoulli($\\pi$).",
+    "context": "Setup: $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \tilde^{iid} $Bernoulli($\\pi$).",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
@@ -353,7 +353,7 @@
   {
     "type": "group",
     "section": "Question 10: k-Nearest Neighbor Classifier (Bias/Variance)",
-    "context": "Setup: Assume all conditions other than those specified in each statement are equal. $k$ denotes the\nnumber of nearest neighbors used for classification.",
+    "context": "Setup: Assume all conditions other than those specified in each statement are equal. \n $k$ denotes the number of nearest neighbors used for classification.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
