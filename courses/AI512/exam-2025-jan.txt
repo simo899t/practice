@@ -1,0 +1,338 @@
+AI512 — Introduction to Machine Learning — Exam January 2025
+==================================================
+Total questions: 12
+NOTE: Correct answers have NOT been filled in. Every statement below is
+marked [WRONG] True / [CORRECT] False as a placeholder — edit the
+[CORRECT]/[WRONG] tags per statement once you've worked out the answer.
+==================================================
+
+## Question 1: Ridge Regression Bias-Variance  (5 questions)
+--------------------------------------------------
+
+Setup: Ridge regression loss $L(w) = \frac{1}{n}\sum_{i=1}^n (y_i - w^\top x_i)^2 + \alpha||w||_2^2$
+fit on $D = \{(x_i,y_i)\}$, $\alpha > 0$. Model variance is defined w.r.t. experiment repetitions.
+
+1. Model bias increases as $n$ increases.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. Model variance increases as $\alpha$ increases.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The overfitting risk of the model reduces as $\alpha$ increases.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. Model capacity increases as $\alpha$ increases.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The underfitting risk of the model reduces as $\alpha$ decreases.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 2: Confusion Matrix (A/B/C, 100 samples v1)  (5 questions)
+--------------------------------------------------
+
+Confusion matrix (rows = actual, cols = predicted):
+A: 15 as A, 5 as B, 5 as C (total 25).
+B: 10 as A, 20 as B, 5 as C (total 35).
+C: 5 as A, 10 as B, 25 as C (total 40).
+Column totals: A=30, B=35, C=35.
+
+1. The precision for Class A is greater than the recall of Class A.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. The precision for Class B is equal to the recall of Class B.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The precision for Class C is greater than the recall of Class C.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. The recall for Class A is greater than the recall for Class B.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The accuracy of the classifier is smaller than 0.5.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 3: Coin with Heads Probability 2/3, Three Tosses  (5 questions)
+--------------------------------------------------
+
+Setup: $C$ = number of heads in three tosses of a coin with heads probability 2/3.
+
+1. $P(C=1) > P(C=3)$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. $\mathbb{E}[C] > 2$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. $\mathbb{E}[C^2] > \mathbb{E}[C]^2$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. $P(C=0) < P(C=3)$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. $\mathbb{E}[C^2] > \text{Var}[C]$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 4: Bias-Variance Curve (Model Capacity)  (5 questions)
+--------------------------------------------------
+
+Setup: A hand-drawn plot shows error vs. model capacity: a dashed blue curve, a solid red curve, and
+a solid vertical green line marking a particular capacity value.
+
+1. The solid red line shows the model prediction error on the test split.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. The dashed blue line shows the model prediction error on the training split.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The right-hand side of the solid vertical green line indicates the underfitting region.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. The optimal model capacity is marked by the green line.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. Doubling the size of the training data without changing the size of the test data would shift the vertical green line to the left.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 5: Events A and B  (5 questions)
+--------------------------------------------------
+
+Setup: $A$ and $B$ are events with $0 < P(A) < 1$ and $0 < P(B) < 1$.
+
+1. If A and B are disjoint, they cannot be independent.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. If A and B are independent, they cannot be disjoint.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. If $A \subset B$, then it is possible that A and B are independent.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. If A and B are independent, then it is possible that A and $A \cup B$ are independent.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. There exists A and B that satisfy $P(A \cup B) = 1$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 6: k-Means Clustering Algorithm  (5 questions)
+--------------------------------------------------
+
+1. The algorithm always converges to the same cluster centroids regardless of its initialization.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. The algorithm can never converge to a clustering before changing the assignment of at least one data point at least once after initialization.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The computational complexity of the algorithm is not dependent on the data dimensionality.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. The algorithm assigns each data point to a single cluster.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The algorithm cannot output spiral-shaped clusters when k > 1 and the algorithm is run until convergence starting from a random initialization.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 7: ReLU Predictor f(x) = W2^T max(W1^T x, 0)  (5 questions)
+--------------------------------------------------
+
+Setup: $f(x) = W_2^\top \max(W_1^\top x, 0)$ for $W_1 \in \mathbb{R}^{d\times h}$, $W_2 \in \mathbb{R}^{h\times 1}$,
+max applied element-wise.
+
+1. The predictor can reach zero training error only if the input-output relationship is perfectly linear, i.e. $\exists \beta \in \mathbb{R}^d$ s.t. $y_i = \beta^\top x_i$ for all training inputs/labels.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. The predictor corresponds to a neural network with a single hidden layer of size $h$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The predictor corresponds to a neural network that uses a rectified linear unit as its activation function.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. The predictor cannot map an input outside the $[0,1]$ interval no matter which values $W_1$ and $W_2$ take.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The gradient descent algorithm is guaranteed to converge to the global minimum of the loss function $(y-f(x))^2$ if the learning rate is chosen small enough.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 8: Bernoulli Data Set (n observations)  (5 questions)
+--------------------------------------------------
+
+Setup: $D = \{X_i : i=1,\dots,n\}$, $X_i$ iid Bernoulli($\pi$).
+
+1. The maximum likelihood estimate for $\pi$ is $\frac{1}{n}\sum_{i=1}^n X_i$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. $\mathbb{E}[X_i] = \mathbb{E}[X_j]$ for all $i \neq j$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. $\text{Var}[X_i] > 1$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. If $D = \{0,1,1,0,1\}$, then the likelihood of $\pi$ is $\pi^3(1-\pi)^2$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. $P(X_i=1 \cup X_j=0) > P(X_i=1) + P(X_j=0)$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 9: Train Paris to Berlin (Northern/Southern Route)  (5 questions)
+--------------------------------------------------
+
+Setup: Train takes northern route (via Brussels) 60% of the time, southern route (via Strasbourg) 40%.
+Arrives late 30% of the time on the northern route, 10% of the time on the southern route.
+
+1. Observing that the train is late increases the probability that it took the northern route.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. Observing that the train is late increases the probability that it took the southern route.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. If the train chose the northern and southern route with equal percentages, then $P(\text{northern}|\text{late}) > P(\text{southern}|\text{late})$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. If the train is observed to arrive Berlin late, then the probability that it took the northern route is smaller than the probability that it took the southern route.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The probability that the train will arrive Berlin late is greater than the probability that it will arrive Berlin late given that it took the northern route.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 10: k-Nearest Neighbor Classifier (Bias/Variance)  (5 questions)
+--------------------------------------------------
+
+Setup: Assume all conditions other than those specified in each statement are equal. $k$ denotes the
+number of nearest neighbors used for classification.
+
+1. Model bias increases if the training set size grows.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. Model variance increases if $k$ grows.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The model has higher overfitting risk if training set size shrinks.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. The underfitting risk of the model increases if $k$ grows.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The training error is guaranteed to be zero for all $k > 0$.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 11: PyTorch Training Loop (epoch range 20, 5-dim)  (5 questions)
+--------------------------------------------------
+
+Setup: Code:
+for epoch in range(20):
+    for inputs_batch, outputs_batch in train_dl:
+        predictions_batch = model(inputs_batch.view(-1, 5))
+        loss = ((predictions_batch - outputs_batch) ** 2).mean()
+        loss.backward()
+        optimizer.step()
+        optimizer.zero_grad()
+
+1. The code is usable for the training stage of a regression task.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. The input dimensionality is five.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The command optimizer.step() updates the gradients of the model parameters.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. The command loss.backward() updates the learnable parameters of the model.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The code uses each data point within the set train_dl exactly 20 times for training.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+
+## Question 12: PyTorch nn.Sequential (Linear-ReLU-Linear-Softmax)  (5 questions)
+--------------------------------------------------
+
+Setup: Code (note: interpret the first layer as nn.Linear(100, 500)):
+model = nn.Sequential(
+  nn.Linear(100, 500),
+  nn.ReLU(),
+  nn.Linear(500, 5),
+  nn.Softmax()
+)
+
+1. The code builds a neural network with a single hidden layer containing 100 neurons.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+2. The model assumes that the input data points have 100 features.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+3. The model is designed to solve a classification task with 5 classes.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+4. The model has more than 100000 parameters.?
+   1) [WRONG] True
+   2) [CORRECT] False
+
+5. The model uses the sigmoid activation function between the hidden layer and the output layer.?
+   1) [WRONG] True
+   2) [CORRECT] False

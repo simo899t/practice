@@ -12,7 +12,10 @@
     "title": "AI512 - Introduction to Machine Learning",
     "description": "2nd semester AI/CS",
     "tests": [
-      { "id": "exam-2025-fall", "title": "Exam 2025 Fall", "file": "courses/AI512/exam-2025-fall.txt" }
+      { "id": "exam-2025-fall", "title": "Exam 2025 Fall", "file": "courses/AI512/exam-2025-fall.txt" },
+      { "id": "exam-2025-jan", "title": "Exam January 2025", "file": "courses/AI512/exam-2025-jan.txt" },
+      { "id": "exam-2024-jan", "title": "Exam January 2024", "file": "courses/AI512/exam-2024-jan.txt" },
+      { "id": "exam-2024-feb-reexam", "title": "Re-exam February 2024", "file": "courses/AI512/exam-2024-feb-reexam.txt" }
     ]
   }
 ]
