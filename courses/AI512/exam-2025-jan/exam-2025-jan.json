@@ -1,0 +1,470 @@
+[
+  {
+    "type": "group",
+    "section": "Question 1: Ridge Regression Bias-Variance",
+    "context": "Setup: Ridge regression loss $L(w) = \\frac{1}{n}\\sum_{i=1}^n (y_i - w^\\top x_i)^2 + \\alpha||w||_2^2$\nfit on $D = \\{(x_i,y_i)\\}$, $\\alpha > 0$. Model variance is defined w.r.t. experiment repetitions.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "Model bias increases as $n$ increases.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Model variance increases as $\\alpha$ increases.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The overfitting risk of the model reduces as $\\alpha$ increases.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Model capacity increases as $\\alpha$ increases.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The underfitting risk of the model reduces as $\\alpha$ decreases.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 2: Confusion Matrix (A/B/C, 100 samples v1)",
+    "context": "Confusion matrix (rows = actual, cols = predicted):\nA: 15 as A, 5 as B, 5 as C (total 25).\nB: 10 as A, 20 as B, 5 as C (total 35).\nC: 5 as A, 10 as B, 25 as C (total 40).\nColumn totals: A=30, B=35, C=35.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The precision for Class A is greater than the recall of Class A.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The precision for Class B is equal to the recall of Class B.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The precision for Class C is greater than the recall of Class C.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The recall for Class A is greater than the recall for Class B.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The accuracy of the classifier is smaller than 0.5.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 3: Coin with Heads Probability 2/3, Three Tosses",
+    "context": "Setup: $C$ = number of heads in three tosses of a coin with heads probability 2/3.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$P(C=1) > P(C=3)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\mathbb{E}[C] > 2$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\mathbb{E}[C^2] > \\mathbb{E}[C]^2$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(C=0) < P(C=3)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\mathbb{E}[C^2] > \\text{Var}[C]$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 4: Bias-Variance Curve (Model Capacity)",
+    "context": "Setup: \n [image: assets/your-pic.png] \n Evaluate the following statements about the figure above.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The solid red line shows the model prediction error on the test split.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The dashed blue line shows the model prediction error on the training split.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The right-hand side of the solid vertical green line indicates the underfitting region.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The optimal model capacity is marked by the green line.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Doubling the size of the training data without changing the size of the test data would shift the vertical green line to the left.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 5: Events A and B",
+    "context": "Setup: $A$ and $B$ are events with $0 < P(A) < 1$ and $0 < P(B) < 1$.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "If A and B are disjoint, they cannot be independent.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "If A and B are independent, they cannot be disjoint.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "If $A \\subset B$, then it is possible that A and B are independent.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "If A and B are independent, then it is possible that A and $A \\cup B$ are independent.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "There exists A and B that satisfy $P(A \\cup B) = 1$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 6: k-Means Clustering Algorithm",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The algorithm always converges to the same cluster centroids regardless of its initialization.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The algorithm can never converge to a clustering before changing the assignment of at least one data point at least once after initialization.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The computational complexity of the algorithm is not dependent on the data dimensionality.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The algorithm assigns each data point to a single cluster.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The algorithm cannot output spiral-shaped clusters when k > 1 and the algorithm is run until convergence starting from a random initialization.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 7: ReLU Predictor f(x) = W2^T max(W1^T x, 0)",
+    "context": "Setup: $f(x) = W_2^\\top \\max(W_1^\\top x, 0)$ for $W_1 \\in \\mathbb{R}^{d\\times h}$, $W_2 \\in \\mathbb{R}^{h\\times 1}$,\nmax applied element-wise.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The predictor can reach zero training error only if the input-output relationship is perfectly linear, i.e. $\\exists \\beta \\in \\mathbb{R}^d$ s.t. $y_i = \\beta^\\top x_i$ for all training inputs/labels.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The predictor corresponds to a neural network with a single hidden layer of size $h$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The predictor corresponds to a neural network that uses a rectified linear unit as its activation function.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The predictor cannot map an input outside the $[0,1]$ interval no matter which values $W_1$ and $W_2$ take.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The gradient descent algorithm is guaranteed to converge to the global minimum of the loss function $(y-f(x))^2$ if the learning rate is chosen small enough.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 8: Bernoulli Data Set (n observations)",
+    "context": "Setup: $D = \\{X_i : i=1,\\dots,n\\}$, $X_i$ iid Bernoulli($\\pi$).",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The maximum likelihood estimate for $\\pi$ is $\\frac{1}{n}\\sum_{i=1}^n X_i$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\mathbb{E}[X_i] = \\mathbb{E}[X_j]$ for all $i \\neq j$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\text{Var}[X_i] > 1$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "If $D = \\{0,1,1,0,1\\}$, then the likelihood of $\\pi$ is $\\pi^3(1-\\pi)^2$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(X_i=1 \\cup X_j=0) > P(X_i=1) + P(X_j=0)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 9: Train Paris to Berlin (Northern/Southern Route)",
+    "context": "Setup: Train takes northern route (via Brussels) 60% of the time, southern route (via Strasbourg) 40%.\nArrives late 30% of the time on the northern route, 10% of the time on the southern route.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "Observing that the train is late increases the probability that it took the northern route.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Observing that the train is late increases the probability that it took the southern route.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "If the train chose the northern and southern route with equal percentages, then $P(\\text{northern}|\\text{late}) > P(\\text{southern}|\\text{late})$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "If the train is observed to arrive Berlin late, then the probability that it took the northern route is smaller than the probability that it took the southern route.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The probability that the train will arrive Berlin late is greater than the probability that it will arrive Berlin late given that it took the northern route.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 10: k-Nearest Neighbor Classifier (Bias/Variance)",
+    "context": "Setup: Assume all conditions other than those specified in each statement are equal. $k$ denotes the\nnumber of nearest neighbors used for classification.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "Model bias increases if the training set size grows.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Model variance increases if $k$ grows.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The model has higher overfitting risk if training set size shrinks.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The underfitting risk of the model increases if $k$ grows.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The training error is guaranteed to be zero for all $k > 0$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 11: PyTorch Training Loop (epoch range 20, 5-dim)",
+    "context": "Setup: Code:\nfor epoch in range(20):\n    for inputs_batch, outputs_batch in train_dl:\n        predictions_batch = model(inputs_batch.view(-1, 5))\n        loss = ((predictions_batch - outputs_batch) ** 2).mean()\n        loss.backward()\n        optimizer.step()\n        optimizer.zero_grad()",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The code is usable for the training stage of a regression task.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The input dimensionality is five.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The command optimizer.step() updates the gradients of the model parameters.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The command loss.backward() updates the learnable parameters of the model.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The code uses each data point within the set train_dl exactly 20 times for training.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 12: PyTorch nn.Sequential (Linear-ReLU-Linear-Softmax)",
+    "context": "Setup: Code (note: interpret the first layer as nn.Linear(100, 500)):\nmodel = nn.Sequential(\n  nn.Linear(100, 500),\n  nn.ReLU(),\n  nn.Linear(500, 5),\n  nn.Softmax()\n)",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The code builds a neural network with a single hidden layer containing 100 neurons.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The model assumes that the input data points have 100 features.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The model is designed to solve a classification task with 5 classes.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The model has more than 100000 parameters.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The model uses the sigmoid activation function between the hidden layer and the output layer.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  }
+]

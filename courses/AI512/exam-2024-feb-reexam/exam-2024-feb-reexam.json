@@ -1,0 +1,431 @@
+[
+  {
+    "type": "group",
+    "section": "Question 1: PyTorch Training Loop (epoch range 100, 784-dim)",
+    "context": "Setup: Code:\nfor epoch in range(100):\n    for inputs_batch, outputs_batch in train_dl:\n        predictions_batch = model(inputs_batch.view(-1, 784))\n        loss = loss_function(predictions_batch, outputs_batch)\n        loss.backward()\n        optimizer.step()\n        optimizer.zero_grad()",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The code performs gradient-descent updates 100 times.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The code will give a dimensionality mismatch error regardless of the minibatch size because \"inputs_batch.view(-1, 784)\" transforms the tensor into an invalid size.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The code implements the training stage of a supervised learning task.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Line 6 (optimizer.step()) updates the model parameters.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Line 5 (loss.backward()) computes the gradients of the loss function for the drawn minibatch.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 2: PyTorch nn.Sequential (4-layer, 10-2)",
+    "context": "Setup: Code:\nmodel = nn.Sequential(\n  nn.Linear(10, 100),\n  nn.ReLU(),\n  nn.Linear(100, 250),\n  nn.ReLU(),\n  nn.Linear(250, 125),\n  nn.ReLU(),\n  nn.Linear(125, 2)\n)",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The neural network uses the hyperbolic tangent activation function in all layers.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Line 4 should be replaced by nn.Linear(250, 100) for the source code to run without a dimensionality mismatch error.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The code will run without a dimensionality mismatch error only on minibatches of 10 observations.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The \"forward\" function of the created neural network object returns a 125-dimensional output vector.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The source code implements a neural network architecture for 10-dimensional input observations.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 3: kNN Classifier (General Properties)",
+    "context": "Setup: A kNN classifier is evaluated on a particular training/test split for a particular choice of k.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The kNN classifier's estimator variance gets smaller as the training set size gets smaller.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The kNN classifier's test accuracy is guaranteed to increase by reducing \"k\".?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The kNN classifier's prediction error on the training set may be larger than its prediction error on the test set in some data sets.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The kNN classifier's underfitting risk is mitigated by increasing training data size.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The kNN classifier's overfitting risk is mitigated by increasing \"k\".?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 4: Discrete Random Variable X",
+    "context": "Setup: $P(X=1)=0.2$, $P(X=2)=0.5$, $P(X=3)=0.3$.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "The variance of the random variable $X$ is smaller than 0.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The mean of the random variable $X$ is greater than 2.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(X < 3) = 0.7$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(X < 4) < 1$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(X \\text{ is odd}) = P(X \\text{ is even})$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 5: Two Independent Random Variables X1, X2",
+    "context": "Setup: $\\mathbb{E}[X_1]=\\mu_1$, $\\mathbb{E}[X_2]=\\mu_2$, $\\text{Var}[X_1]=\\sigma_1^2$, $\\text{Var}[X_2]=\\sigma_2^2$. $X_1, X_2$ independent.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$\\mathbb{E}[aX_1 + bX_2] = (a+b)(\\mathbb{E}[X_1] + \\mathbb{E}[X_2])$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\text{Var}[c(X_1+X_2)] = c^2\\text{Var}[X_1] + c^2\\text{Var}[X_2]$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\mathbb{E}[X_1^2 + X_2^2] = \\mu_1^2 + \\mu_2^2 + \\sigma_1^2 + \\sigma_2^2$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\text{Var}[X_1 \\cdot X_2] = \\text{Var}[X_1] \\cdot \\text{Var}[X_2]$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\text{Var}[X_2^2] = \\text{Var}[X_2]^2$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 6: Events A, B, C (x, y, z parametrized)",
+    "context": "Setup: A and C independent. B and C independent. A and B disjoint.\n$P(A \\cup B) = x$, $P(B \\cup C) = y$, $P(A \\cup B \\cup C) = z$, for $x,y,z \\in [0,1]$.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$P(B) = x + y - z$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(A) = \\frac{z-x}{1-(x+y-z)}$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "If $x = y$ then $P(A) = P(C)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$z - x - y + 1 \\geq 0$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$y > z$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 7: Fair Coin Tossed Four Times",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "Probability of at least two heads is equal to the probability of at least two tails.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The expected value of the number of heads is 1/2.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Probability of four tails is 1/16.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Probability of at least one heads is less than the probability of at least two heads.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "\"The number of heads being odd\" and \"getting two or fewer heads\" are independent events.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 8: Q-Learning Algorithm",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "Q-learning is an unsupervised learning algorithm.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Q-learning assumes that the reward of a state transition resulting from a taken action is observed.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The output of Q-learning run on an episodic environment is a function mapping a state-action pair to an estimate of the sum of discounted rewards until the end of the episode.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Q-learning assumes that the exact state transition distribution is available.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Q-learning iterations are guaranteed to converge only if the agent's actions do not affect the environment state.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 9: Confusion Matrix (A/B/C, 100 samples v3)",
+    "context": "Confusion matrix (rows = actual, cols = predicted):\nA: 20 as A, 10 as B, 10 as C (total 40).\nB: 8 as A, 30 as B, 7 as C (total 45).\nC: 3 as A, 2 as B, 10 as C (total 15).\nColumn totals: A=31, B=42, C=27.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "Precision for Class A is smaller than recall for Class A.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Precision for Class B is smaller than recall for Class B.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Precision for Class C is smaller than recall for Class C.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The random classifier that predicts each of the three classes with equal probability has an expected accuracy of 50% on this test split.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The accuracy of a classifier that always predicts Class B on this test split is higher than the expected accuracy of a random classifier predicting each of the three classes with equal probability.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 10: k-Means on 8 Points, Two Initializations",
+    "context": "Setup: $D = \\{(1,1),(2,2),(3,1),(4,4),(5,4),(5,5)\\}$, k=2, Euclidean distance, ties broken in favor of Cluster 1.\nOption 1 init: $\\mu_1=(3,3)$, $\\mu_2=(3,4)$. Option 2 init: $\\mu_1=(2,2)$, $\\mu_2=(3,1)$.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "When initialized with Option 2, the algorithm converges after the centroids are updated only once.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "When initialized with Option 1, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "When initialized with Option 1, the algorithm converges after the centroids are updated only once.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The two initialization options converge to different clustering results.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "When initialized with Option 2, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 11: Three Coins, One Unfair (Bayesian Update)",
+    "context": "Setup: Three coins, two fair, one unfair with Heads probability 3/4. $U$ = which coin is unfair,\n$P(U=1)=P(U=2)=P(U=3)=1/3$ a priori. First two coins observed Heads, third Tails: outcome HHT.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$P(U=1|HTH) < P(U=1|HHT)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(U=2|HHT) > P(U=2)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(U=1|HHT) > P(U=1)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(U=3|HHT) > P(U=3)$.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$P(U=2|HHT)$ would not change if $P(U=2)$ were equal to 2/3.?",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  }
+]

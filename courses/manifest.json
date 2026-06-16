@@ -4,9 +4,9 @@
     "title": "AI507 - AI & Society",
     "description": "4th semester AI",
     "tests": [
-      { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507/ai-mock-quiz1.txt" },
-      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507/ai-mock-quiz2.txt" },
-      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507/ai-mock-quiz3.txt" }
+      { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507/ai-mock-quiz1/ai-mock-quiz1.json" },
+      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507/ai-mock-quiz2/ai-mock-quiz2.json" },
+      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507/ai-mock-quiz3/ai-mock-quiz3.json" }
     ]
   },
   {
@@ -14,10 +14,10 @@
     "title": "AI512 - Introduction to Machine Learning",
     "description": "2nd semester AI/CS",
     "tests": [
-      { "id": "exam-2025-fall", "title": "Exam 2025 Fall", "file": "courses/AI512/exam-2025-fall.txt" },
-      { "id": "exam-2025-jan", "title": "Exam January 2025", "file": "courses/AI512/exam-2025-jan.txt" },
-      { "id": "exam-2024-jan", "title": "Exam January 2024", "file": "courses/AI512/exam-2024-jan.txt" },
-      { "id": "exam-2024-feb-reexam", "title": "Re-exam February 2024", "file": "courses/AI512/exam-2024-feb-reexam.txt" }
+      { "id": "exam-2025-fall", "title": "Exam 2025 Fall", "file": "courses/AI512/exam-2025-fall/exam-2025-fall.json" },
+      { "id": "exam-2025-jan", "title": "Exam January 2025", "file": "courses/AI512/exam-2025-jan/exam-2025-jan.json" },
+      { "id": "exam-2024-jan", "title": "Exam January 2024", "file": "courses/AI512/exam-2024-jan/exam-2024-jan.json" },
+      { "id": "exam-2024-feb-reexam", "title": "Re-exam February 2024", "file": "courses/AI512/exam-2024-feb-reexam/exam-2024-feb-reexam.json" }
     ]
   }
 ]

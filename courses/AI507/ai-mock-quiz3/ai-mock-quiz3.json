@@ -1,0 +1,4482 @@
+[
+  {
+    "type": "single",
+    "text": "Asking whether a machine could \"think\" historically traces back to the philosophical position of…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "mind–body dualism",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "behaviourism",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "nativism",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "connectionism",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The debate over whether AI \"learns everything from data\" versus \"needs built-in structure\" parallels which classic debate?",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "empiricism vs. nativism",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "symbolic vs. connectionist",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "System 1 vs. System 2",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "fluid vs. crystallised intelligence",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A school of psychology that explains behaviour via trainable associations between stimuli and responses, without looking \"inside\" the mind, is…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "behaviourism",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "connectionism",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "dualism",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "dual-process theory",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Modern deep learning, with cognition emerging from distributed networks of simple units, is best described as…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "connectionist",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "symbolic",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "behaviourist",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "nativist",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Explicit rule-manipulation by a system, \"the mind is a computer,\" characterises which cognitive architecture?",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "symbolic models",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "connectionist models",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "empiricist models",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "operant models",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The building blocks of cognition listed in the course include mental representation, stages of processing, and…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "consciousness",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "reinforcement",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "affordance",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "common ground",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The dream of artificial general intelligence (AGI) is rooted conceptually in…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "Spearman's general intelligence (\"g\")",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the Flynn effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "crystallised intelligence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "dual-process theory",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Accumulated knowledge, language and life experience describe…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "crystallised intelligence",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "fluid intelligence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "general intelligence (g)",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "working memory",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Over a person's lifespan, which intelligence component tends to decline while the other can keep growing?",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "fluid intelligence declines; crystallised can grow",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "crystallised intelligence declines; fluid can grow",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "both decline equally",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "both remain constant",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Evidence used to push back against claims that group IQ differences are fixed by genetics is the…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "Flynn effect",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Dunning–Kruger effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "actor–observer effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "mere-exposure effect",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Thinking that is slow, deliberate, effortful and capable of self-control belongs to…",
+    "context": "",
+    "section": "Intelligence & Cognition",
+    "options": [
+      {
+        "text": "System 2",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "System 1",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "fluid intelligence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "schema theory",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The stage of memory concerned with sensory processing of incoming information is…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "encoding",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "storage",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "retrieval",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "consolidation",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Strong retrieval cues reliably trigger a memory, while weak cues only sometimes do — this links retrieval directly to…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "encoding",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "storage capacity",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "extinction",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "generalisation",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Comparing schema theory in cognition to an analogous concept in machine learning, the course draws a parallel to…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "ensemble learning / mixtures of experts",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "step-wise regression",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "gradient descent",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "word embeddings",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The AI parallel drawn for \"competition among predictors,\" where a redundant new cue is blocked once a predictor exists, is…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "step-wise regression",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "word embeddings",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "ensemble learning",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reinforcement learning",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The AI parallel drawn for \"temporal contiguity\" (events linked through close succession) is…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "word embeddings learning co-occurrence",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "step-wise regression",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "mixtures of experts",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "convolutional filtering",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Re-pairing a stimulus after its association has faded restores the link…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "instantly and even stronger than before",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "only after many repeated trials",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "weaker than the original association",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "not at all — it must be relearned from scratch",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "According to Piaget, an unpleasant mismatch between new information and an existing schema is what drives…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "accommodation",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "assimilation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "generalisation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "extinction",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Activating an existing schema before new learning begins tends to…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "accelerate the learning of related new information",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "block all further learning",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "have no measurable effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "trigger extinction of the schema",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Attention being selective and limited, such that salient stimuli automatically grab it, describes…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "attentional capture",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "inattentional blindness",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the Stroop effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the magic number",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Failing to notice an otherwise obvious event because attention is focused elsewhere describes…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "inattentional blindness",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "attentional capture",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the picture-superiority effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "schema theory",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The brain actively filling in the blind spot is used in the course to argue that human vision, compared with computer vision, is…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "powerful but error-prone",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "purely passive and accurate",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "identical in mechanism to a camera",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "incapable of any construction",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Information encoded \"deeply,\" by meaning rather than surface form, tends to be…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "recalled better later",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "recalled worse later",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "recalled only under hypnosis",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "forgotten at the same rate as shallow encoding",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Multitasking and irrelevant cues hurt task performance mainly because of the limits of…",
+    "context": "",
+    "section": "Learning & Memory",
+    "options": [
+      {
+        "text": "working memory capacity",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "long-term memory capacity",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "crystallised intelligence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "self-efficacy",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Compared with perceiving inanimate objects, thinking about people activates brain regions that are…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "close to the brain's baseline \"default\" activation",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "switched off entirely",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "identical to object-perception regions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "activated only during sleep",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "People differ from objects, per the course, because people have intentions, perceive us back, are variable, and…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "need constant explanation",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "never change over time",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "lack any internal states",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "are fully predictable",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The part of self-knowledge that includes a possible self and a feared self is organised within the…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "self-schema",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "working self-concept",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "relational self-concept",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "personal self-concept",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "How we value our own qualities, central to wellbeing and self-regulation, is…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "self-esteem",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "self-efficacy",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "self-discrepancy",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "self-enhancement",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Self-discrepancy theory compares the actual self against which two other selves?",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "the ideal self and the ought self",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the possible self and the feared self",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the working self and the relational self",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the personal self and the social self",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Wellbeing rises, according to self-discrepancy theory, when…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "one's environment fits one's dominant regulatory focus",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the actual and ideal selves are always identical",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "prevention focus is eliminated entirely",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "promotion focus is suppressed",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Self-efficacy theory predicts that low political efficacy is linked to…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "lower voting intention",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "higher voting intention",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "no change in voting behaviour",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "increased self-enhancement",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "High self-efficacy is associated with a sense of mastery, planning, and…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "coping with setbacks",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "avoiding all challenges",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "high prevention focus",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reduced self-esteem",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Attribution — drawing causal inferences about others' behaviour — runs mostly through System 1, except when something is…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "unexpected or negative",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "familiar and positive",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "entirely predictable",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "irrelevant to the observer",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The actor–observer effect is described in the course as especially strong in…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "Western societies",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "collectivist societies generally",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "online-only interactions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "anonymous digital contexts",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The course notes that, regarding sycophancy — an AI failure pattern of pursuing approval through overly flattering answers — larger AI models tend to be…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "more sycophantic",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "less sycophantic",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "unaffected by scale",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "immune to evaluator quirks",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Which identity is \"salient\" at a given moment, shaping perception and behaviour, depends mainly on…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "context",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "genetics",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a person's age alone",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "working memory capacity",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Under threat or uncertainty, people tend to favour their ingroup…",
+    "context": "",
+    "section": "Social Cognition",
+    "options": [
+      {
+        "text": "more strongly than under normal conditions",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "less strongly than under normal conditions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "exactly the same as under normal conditions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "only if the outgroup is larger",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Watzlawick's axiom that meaning is assigned to verbal and non-verbal signs by both sender and receiver shows communication is…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "constructed",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "inevitable",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "episodic",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "contextual",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The axiom that interpretation always depends on multiple surrounding contexts shows communication is…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "contextual",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "constructed",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "inevitable",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "episodic",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Communication occurring many-to-many within a small group is which level?",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "group",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "interpersonal",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "public",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "mass",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "One sender reaching a large, dispersed audience via media systems is which level?",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "mass communication",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "public communication",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "group communication",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "intrapersonal communication",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Roughly what proportion of everyday speech is described in the course as formulaic, to save cognitive energy?",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "about 70%",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "about 10%",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "about 30%",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "nearly 100%",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Common ground arising from a shared individual history between two specific people is…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "personal common ground",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "communal common ground",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "an injunctive norm",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a descriptive norm",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Good communicators are described as those who estimate the other's common ground and then…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "adapt their message accordingly",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "ignore it entirely",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "always use maximally formal language",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "switch to a leaner medium",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The Gricean cooperative principle assumes comments are ideally truthful, relevant, understandable, and…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "parsimonious",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "emotionally charged",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "maximally detailed",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "anonymous",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "BERT, as an encoder-based model, and GPT, as a generator, are both built on…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "the Transformer architecture",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "recurrent neural networks only",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "convolutional neural networks only",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "symbolic rule systems",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "In the course's terminology, algorithmic \"attention\" in a transformer means…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "context-weighting across words, not human focus",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "exactly the same as human selective attention",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a model's working memory capacity",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the model's training data size",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Theme–rheme structure across sentences, which keeps needed concepts active, is described as a feature of…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "good writing, per the construction–integration model",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the Lasswell formula",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "media richness theory",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "focus theory of normative conduct",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The LC4MP model predicts that processing breaks down when…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "resources required exceed resources available or allocated",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "too few cues are present in the medium",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a message is too parsimonious",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "common ground is too high",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Computer-mediated communication differs from face-to-face interaction in synchronicity, permanency, anonymity, and…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "the presence of non-verbal cues",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the number of participants allowed",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the cost of the channel",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the formality of the message",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "According to media richness theory, an ambiguous or sensitive task (like firing someone) calls for a rich medium such as face-to-face communication; the hyperpersonal model further suggests computer-mediated communication can sometimes feel…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "more intimate, due to selective self-presentation",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "less intimate under all circumstances",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "identical in intimacy",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "impossible to use for relationship-building",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The focus theory of normative conduct distinguishes injunctive norms (\"should\") from descriptive norms, which describe…",
+    "context": "",
+    "section": "Communication",
+    "options": [
+      {
+        "text": "what others actually do",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "what is legally required",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "what is morally ideal",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "what a person privately believes",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Inventions disrupting the existing economic equilibrium, making constant change the normal state of societies, is the concept of…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "creative destruction",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "diffusion of innovations",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "social innovation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the digital divide",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Innovation, broadly defined in the course, can mean new combinations, structures, methods, contents/qualities, or…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "markets",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "laws",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "currencies",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "languages",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A social innovation that proves to have proven negative outcomes falls under which of the \"three big No's\"?",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "proven negative outcomes",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "ineffective failure",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "unethical means",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "excessive scalability",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The social impact compass evaluates a social innovation on societal value, certainty of effects, completeness, scalability, organisational outcome-orientation, and…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "responsibility regarding environmental/social governance",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "marketing reach",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "shareholder return",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "patent protection",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "To understand diffusion of innovations, the course says we should study how innovations are perceived, where that perception comes from, and…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "how it drives adoption",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "how it is patented",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "how it is manufactured",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "how it is taxed",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "In the theory of planned behaviour, \"what we want to do\" corresponds to…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "attitudes toward the behaviour",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "perceived social norms",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "perceived behavioural control",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "self-efficacy",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The technology acceptance model (TAM) has been described in the course as…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "heavily confirmed by studies and meta-analyses",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "largely disconfirmed by recent research",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "untested in any empirical study",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "applicable only to social media",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "UTAUT's \"performance expectancy\" component asks essentially…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "does the technology do what it should?",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "how much work is it to use?",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "does everyone else use it?",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "how much does it cost?",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "UTAUT's \"effort expectancy\" component asks essentially…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "how much work is it to use?",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "does it do what it should?",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "should I use it?",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "is it trustworthy?",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Trust is unnecessary, per the course's definition, when a person has…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "full control over the relevant action or outcome",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "no information about the other party",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a long-standing relationship with the other party",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "high perceived risk",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "New technologies linked to positive concepts like family or friends are more likely to be perceived as…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "useful, and thus adopted",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "threatening, and thus rejected",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "irrelevant to daily life",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "too complex to learn",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Technology being encoded, stored and retrieved like any other knowledge reflects the course's framing of adoption as a…",
+    "context": "",
+    "section": "Innovation",
+    "options": [
+      {
+        "text": "cognitive process",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "purely economic transaction",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely social ritual",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "biological reflex",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Transferring functions from humans to machines is broadly termed…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "automation",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "diffusion",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "gamification",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "smartification",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "When machines supply the energy but a human still performs and steers the task, this is…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "mechanization",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "machinization",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "automation in general",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "agency",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Rising autonomy today is described as machines increasingly taking over control and regulation via…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "feedback loops",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "manual overrides",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "fixed scripts",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "human supervisors",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Asimov's second law states a robot must obey humans except where this conflicts with…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "the first law (not harming humans)",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the third law (self-protection)",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "its own programming goals",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "nothing — the second law is absolute",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Asimov's third law states a robot must protect itself except where this conflicts with…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "the first or second laws",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "its battery life",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "its manufacturer's warranty",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "nothing — self-protection is always paramount",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Spontaneously seeing one shape \"bully\" another in a simple animation demonstrates that social perception of intention is…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "our default mode, extending even to non-living moving objects",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "reserved strictly for humans and animals",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "absent unless trained explicitly",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "triggered only by embodied robots",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "CASA experiments test whether people perceive a computer as a social actor by observing whether people…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "behave socially toward it (e.g. politeness, reciprocity)",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "can correctly identify it as a machine",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "ignore it entirely",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "rate it as unconscious",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The ethopoeia approach holds that we don't need to consciously believe a machine is human in order to…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "react to it socially",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "trust it completely",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "perceive it as conscious",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "feel uncanny discomfort",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "In the Threshold Model of Social Influence, if agency is high (it's an agent acting on its own), then…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "behavioural realism matters less",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "behavioural realism matters more",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "agency becomes irrelevant",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "social influence drops to zero",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The uncanny valley dip in comfort is theorised to be triggered partly by attributing which quality to the robot?",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "consciousness",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "low cost",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "high processing speed",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "low intelligence",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The Turing test places deception at the heart of its optimisation criterion because the machine succeeds by…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "fooling the interrogator as often as a deceptive human would",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "proving it has genuine understanding",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "answering every question with full accuracy",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "admitting openly that it is a machine",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Coordinated inauthentic behaviour is best identified, per the course, by examining…",
+    "context": "",
+    "section": "Robots & HRI",
+    "options": [
+      {
+        "text": "the behavioural pattern, not just whether an account is \"a bot\"",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "only the account's stated profile information",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the account's follower count alone",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the account's registration date alone",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "ELIZA, modelled on talk therapy, is a clear example of which kind of AI?",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "symbolic, rule-based AI",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "connectionist, deep-learning AI",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reinforcement-learning AI",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "generative pre-trained AI",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Despite ELIZA's simplicity, some users still believed…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "\"the doctor\" was a real human",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the program could pass a maths test",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the program understood every input perfectly",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the program was self-aware",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Early social bots before transformer models commonly relied on simple mechanisms such as amplification and…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "Markov chains",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "convolutional filters",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "self-attention layers",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reinforcement signals",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A social bot's required communicative infrastructure includes an account, orchestration, and…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "actions",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "a verified phone number",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a government ID",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a fixed IP address",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Spreading untrustworthy news faster than trustworthy sources is a hallmark behaviour of…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "coordinated inauthentic behaviour",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "algorithm appreciation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the intimacy process model",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the silicon gaze",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Chatbot relationships are described as deepening through self-disclosure met by partner responsiveness — this cycle is the…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "Intimacy Process Model",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Threshold Model of Social Influence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "social media privacy model",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "construction–integration model",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A risk flagged for companion chatbots is that they may foster intimacy \"by design\" and even…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "over-disclose, accelerating perceived closeness",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "refuse all personal questions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "maintain strict emotional distance",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "minimise daily user engagement",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The Habermas Machine generates statements from individuals' opinions and critiques with the aim of…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "maximising group approval",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "minimising the length of the discussion",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "eliminating all minority opinions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "replacing the need for any deliberation",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Alongside the Habermas Machine, the course cites AI counter-speech and news-distribution bots as examples supporting…",
+    "context": "",
+    "section": "Chatbots & Bots",
+    "options": [
+      {
+        "text": "democratic deliberation",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "coordinated inauthentic behaviour",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the spiral of silence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "surveillance capitalism",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Content-based filtering handles new items well but tends toward recommendations that are…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "obvious and homogeneous",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "highly diverse and surprising",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "impossible to generate for new users",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "based entirely on other users' behaviour",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Collaborative filtering's well-known weaknesses include the cold-start problem, data sparsity, and…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "privacy intrusion",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "excessive item diversity",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "inability to use any user data",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reliance on item content alone",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Hybrid recommenders combine which two core approaches?",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "collaborative and content-based filtering",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "symbolic and connectionist models",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "microtargeting and inoculation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "uses & gratifications and mood management",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Combining text, image, audio and video signals in a single recommender system is described in the course as…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "still challenging despite being increasingly common",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "a fully solved engineering problem",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "impossible with current deep-learning methods",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "relevant only to content-based filtering",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Many users not knowing that search results depend on their location is offered as an example of patchy…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "algorithmic literacy",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "algorithm appreciation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the digital divide",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the cold-start problem",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A \"recommender system built around human values\" aims to be useful, promote wellbeing, align with human rights and law, and also…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "contribute to public discourse with accurate, diverse, tolerant content",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "maximise advertising revenue above all else",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "minimise transparency to protect trade secrets",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "restrict content exclusively to verified experts",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The Cambridge Analytica controversy is most closely associated with which concept?",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "microtargeting",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the uncanny valley",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the spiral of silence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "schema theory",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The theory of political (digital) personalisation assumes that personalising messages to individual traits increases their impact on cognition, attitudes, and…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "behaviour",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "income",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "age",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "location",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Persuasion from personalised political ads is described in the course as mainly…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "confirmatory, reinforcing what people already believe",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "conversionary, changing opponents' minds",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "nonexistent in all measured cases",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "limited strictly to non-political ads",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Evidence for strong filter-bubble and echo-chamber effects is described in the course as…",
+    "context": "",
+    "section": "Algorithms & Recommenders",
+    "options": [
+      {
+        "text": "more mixed than popular discourse suggests",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "completely confirmed across all studies",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "entirely absent from the research literature",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "relevant only to television, not the internet",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "An IoT device combining sensors, storage and processing in order to understand its environment also needs identification/networking to…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "communicate",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "self-repair",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reduce its own price",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "avoid all autonomous decisions",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Self-tracking via wearables is described as offering new answers to \"who am I\" by turning the body into…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "data",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "a fixed schema",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "a social bot",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "an avatar",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Understanding oneself through how one reacts in situations, as opposed to viewing oneself purely as data, is the self-tracking process of…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "subjectivation",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "objectification",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "accommodation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "assimilation",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The knowledge-gap hypothesis argues that as media/technology spreads, gaps in knowledge and access tend to…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "widen rather than close",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "close completely within a generation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "remain entirely unaffected",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reverse, favouring lower-status groups",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Within the EU, privacy is treated as a fundamental right that is nonetheless…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "not absolute, and balanced against other rights",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "absolute and overriding in every case",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "irrelevant to digital platforms",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "only protected for public figures",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "In the social media privacy model, self-disclosure results from a personal calculation involving access, control mechanisms, and…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "trust and norms for that interaction",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the device's battery life",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the platform's follower count",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the user's screen size",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The IoT is said to undermine the social media privacy model partly because consent is often…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "not requested at all",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "requested redundantly multiple times",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "required by law in every case",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "irrelevant since IoT devices collect no data",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Passive social-media use (mainly scrolling) is linked, on average, to…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "more negative wellbeing outcomes than active use",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "identical outcomes to active use",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "strictly positive outcomes",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "no measurable effect of any kind",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Heavy reliance on the \"news-will-find-me\" perception predicts less use of traditional news and lower…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "voting intention",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "screen time overall",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "trust in any media source",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "exposure to incidental news",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The virtuous circle hypothesis on social media is complicated by evidence that people can feel more informed while their actual…",
+    "context": "",
+    "section": "Digital Environments, IoT & Privacy",
+    "options": [
+      {
+        "text": "political knowledge declines",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "political knowledge increases proportionally",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "screen time decreases",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "privacy improves",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Political communication that flows between politicians (e.g. between parties or branches of government) is termed…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "vertical",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "top-down",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "upward/bottom-up",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "intrapersonal",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Strategic communication, such as negative campaigning, becomes more likely when politicians perceive that…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "benefits outweigh risks",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "risks always outweigh benefits",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "no behavioural opportunity exists",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "public opinion is unanimous",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The normative model of democracy requiring broad inclusion and engagement from citizens is the…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "participatory model",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "procedural model",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "competitive model",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "deliberative model",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The normative model of democracy holding that voters need genuine information to choose between competing elites is the…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "competitive model",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "procedural model",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "participatory model",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "deliberative model",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Mal-information, together with misinformation and disinformation, forms the broader concept of…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "information disorder",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the silicon gaze",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the spiral of silence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "conspiracy mentality",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The boundary between misinformation/disinformation and fiction or satire is described in the course as…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "often blurry, and evidence itself can change",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "always perfectly clear-cut",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "determined solely by the speaker's intent",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "irrelevant to the definitions used",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A conspiracy theory is described as not always false, but often…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "unjustified or anti-democratic",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "scientifically validated",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "officially confirmed by authorities",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "entirely random in content",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Conspiracy mentality, as a general disposition, is described in the course as slightly stronger on…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "the political right",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the political left",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the political centre",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "no particular side — it is evenly distributed",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The Elaboration Likelihood Model and the Heuristic-Systematic Model both map onto which broader cognitive distinction?",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "System 1 vs. System 2",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "fluid vs. crystallised intelligence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "assimilation vs. accommodation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "convergence vs. divergence",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A documented limitation of the spiral of silence is that it is weakened by individual differences and…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "fragmented media",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "unified, single-channel media",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "strong social conformity",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "high voter turnout",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Regarding LLM-driven persuasion, jailbroken models without guardrails were found to be…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "about as effective as standard models at instilling false beliefs",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "far less effective than standard models",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "completely ineffective at persuasion",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "only effective for debunking, never bunking",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Newer disinformation strategies aiming at disorientation through troll armies and overwhelming noise are described as…",
+    "context": "",
+    "section": "Politics, Persuasion & Misinformation",
+    "options": [
+      {
+        "text": "\"flooding the zone\"",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "\"flooding the bubble\"",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "\"draining the well\"",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "\"seeding the source\"",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Surveillance capitalism is described as turning human experience and behavioural data into a resource for…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "prediction and profit",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "public education only",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely scientific research",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "government regulation only",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Algorithmic management covers hiring, optimising workflows, evaluating and scheduling workers, plus…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "monitoring and incentivising",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "unionising and striking",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "manufacturing and shipping",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "auditing tax returns",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Highly skilled experts fine-tuning models are described in the course as part of which broader workforce category?",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "the hidden workforce / \"ghost work\"",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "algorithmic managers",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "surveillance capitalists",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "social bots",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The non-linear AI–jobs relationship described in the course suggests unemployment may initially rise and then…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "shrink as conditions normalise",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "rise indefinitely without limit",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "stay exactly constant",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "drop to zero immediately",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Among the four value sources of digital business models, creating new products, services or personalisation is…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "novelty",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "efficiency",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "lock-in",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "complementarities",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Among the four value sources of digital business models, lower costs and better coordination describe…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "efficiency",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "novelty",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "lock-in",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "complementarities",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Among the \"4 Ms\" of sustainable AI, designing an energy-efficient model architecture is the…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "Model lever",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Machine lever",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Map lever",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Mechanization lever",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The socio-techno-ecological perspective insists on judging AI sustainability across social and technical dimensions together with…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "ecological dimensions",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "purely financial dimensions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely legal dimensions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely aesthetic dimensions",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "So far, real gains from AI adoption in business are described as often modest, accompanied by failed adoptions and…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "extra work caused by AI errors",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "guaranteed productivity gains",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "complete elimination of human labour",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "zero additional costs",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Unlike earlier waves of automation that mainly displaced low-skilled labour, the course notes that AI also affects…",
+    "context": "",
+    "section": "Organisations & Work",
+    "options": [
+      {
+        "text": "skilled work",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "only manual labour",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "only agricultural work",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "no categories of work at all",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The WHO definition of health explicitly states it is not merely the absence of disease, but a state of complete physical, mental and…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "social wellbeing",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "financial wellbeing",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "spiritual wellbeing",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "professional wellbeing",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Pathogenesis asks what makes people sick, while salutogenesis asks the reverse question of…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "what keeps people healthy despite adversity",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "which pathogens are most dangerous",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "how diseases are diagnosed",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "how treatments are funded",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "\"Sense of coherence\" can operate at the individual level as well as the organisational and…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "national level",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "cellular level",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely biochemical level",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely genetic level",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Believing things are predictable and understandable corresponds to which component of sense of coherence?",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "comprehensibility",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "manageability",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "meaningfulness",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "self-efficacy",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A hedonic conception of wellbeing focuses on a positive balance of affect and…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "life satisfaction",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "personal growth",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purpose and meaning",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "variety of experience",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Modern multidimensional wellbeing models add self-acceptance, purpose, mastery, positive relations, personal growth and…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "autonomy",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "wealth",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "fame",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "competition",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Self-determination theory distinguishes intrinsic motivation (things you want to do) from…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "extrinsic motivation (things you feel you must do)",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "prevention focus",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "promotion focus",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "self-enhancement",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The IMPACT framework's dimension concerned with explainability of AI systems is called…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "Transparency",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Modality",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Person",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Cultural context",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Fairness in medical risk-score models must remain stable across sample sizes, which the course notes is particularly hard for…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "small groups",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "large groups",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "groups with identical baseline risk",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "groups with no historical data at all",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "AI augmenting clinicians through faster diagnosis, reduced waiting times and personalised medicine — rather than replacing them — reflects the principle of…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "enhancement, not replacement",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "full automation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "algorithmic management",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "surveillance capitalism",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Risks cited for AI replacing clinicians outright include bias, hallucination, poor generalisability, and…",
+    "context": "",
+    "section": "Health & Wellbeing",
+    "options": [
+      {
+        "text": "unclear accountability",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "excessive transparency",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "excessive patient trust",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "reduced data availability",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The uses & gratifications approach assumes people have social/psychological needs and turn to media expecting…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "those needs to be met, producing gratification",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "to be persuaded against their will",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "no particular outcome at all",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely random exposure",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Gratifications sought (expected) are compared in the course against gratifications…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "obtained (actually received)",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "denied (withheld by the platform)",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "shared (passed on to others)",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "archived (stored for later)",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Among gaming motives identified through factor analysis, achievement/progress and immersion are joined by…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "social motives (socialising, teamwork, relationships)",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "financial motives",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely competitive motives",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely educational motives",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Applying badges, leaderboards and performance graphics in non-game contexts to satisfy needs for mastery is…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "gamification",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "escapism",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "mood management",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "transportation",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Mood management theory holds that people choose media specifically to…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "regulate their emotional state",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "maximise factual learning",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "minimise all social contact",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "avoid any emotional engagement",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Dramas evoking mixed, self-transcending emotions like nostalgia and appreciation are typically classified as…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "eudaimonic entertainment",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "hedonic entertainment",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "purely escapist entertainment",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "gamified entertainment",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A gradual sense of being absorbed in a virtual environment, distinct from \"being there\" or full self–environment merging, is…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "immersion",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "presence",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "flow",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "identification",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Escapism's negative correlates, such as depression and loneliness, are described as more pronounced especially in…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "Western cultures",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "East Asian cultures",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "all cultures equally",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "no culture in particular",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Virtual reality, compared with augmented reality, aims to…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "replace the physical environment with a rich, responsive sensory world",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "merely overlay synthetic information onto the real world",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "eliminate the need for any sensory input",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "function only on smartphones and tablets",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Transportation theory identifies two routes by which narratives change us: transportation and…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "identification",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "gamification",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "escapism",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "mood management",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "VR's empathy-boosting effects, compared with less-immersive media, were found in studies to…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "fade over time and not reliably shift attitudes long-term",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "grow stronger indefinitely over time",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "be entirely absent from the start",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "transfer perfectly to all behaviours measured",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The Proteus effect is linked to self-perception theory because users infer their own attitudes by…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "observing their own (avatar-influenced) behaviour",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "reading the avatar's backstory",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "asking other players directly",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "measuring their physiological arousal",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "A Black avatar reducing a user's implicit bias is cited in the course as an example of…",
+    "context": "",
+    "section": "Entertainment, Games & VR",
+    "options": [
+      {
+        "text": "the Proteus effect",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the uncanny valley effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the Heider & Simmel effect",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the media equation",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The \"silicon gaze\" concept is named by direct analogy to which other concept?",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "the \"male gaze\"",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the \"panopticon\"",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the \"uncanny valley\"",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the \"echo chamber\"",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "The silicon gaze argues that LLM training data over-represents wealthy, well-documented, English-speaking, and…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "metropolitan places",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "rural and agricultural places",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "non-English-speaking places",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "low-income places",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Defaulting to dominant statistical patterns and flattening diversity in LLM outputs is named…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "pattern bias",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "availability bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "averaging bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "proxy bias",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Collapsing variety into a bland \"average\" representation that erases distinctiveness is named…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "averaging bias",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "pattern bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "trope bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "availability bias",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Inferring a trait from an indirect, correlated stand-in variable that smuggles in bias is named…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "proxy bias",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "trope bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "pattern bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "averaging bias",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Reproducing clichés and stereotyped narratives about a place or group in LLM output is named…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "trope bias",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "proxy bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "averaging bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "availability bias",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Under-served areas being poorly represented in LLM outputs because they are scarce in training data illustrates…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "availability bias",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "pattern bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "trope bias",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "proxy bias",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Bias can enter the AI pipeline at the literature/model search stage, the training data, the models themselves, and also in…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "the humans in the loop and the interpretation of outputs",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "the hardware's physical casing only",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "the electricity supplier only",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "nowhere once deployment begins",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "text": "Debiasing strategies for AI, the course notes, often prove especially limited in practice for…",
+    "context": "",
+    "section": "Bias in AI",
+    "options": [
+      {
+        "text": "under-represented groups",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "majority groups only",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "well-documented, metropolitan groups",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "groups with abundant training data",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  }
+]

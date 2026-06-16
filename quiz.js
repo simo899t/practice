@@ -10,109 +10,18 @@ let score = 0;
 let answered = false;
 
 // ── Parser ────────────────────────────────────────────────────────────────────
+// Question files are plain JSON: an array of pre-grouped items, each either
+//   { type: 'single', text, context, section, options: [{ text, correct, note }] }
+// or
+//   { type: 'group', section, context, positiveLabel, negativeLabel,
+//     statements: [{ text, answerIsPositive, positiveNote, negativeNote }] }
+// A "group" is one question with several binary sub-statements (e.g.
+// True/False, Yes/No) — rendered as a single card with one checkbox per
+// statement (check = positiveLabel, leave unchecked = negativeLabel).
 
-function parseTxt(text) {
-  const qs = [];
-  const lines = text.split('\n');
-  let q = null;
-  let opt = null;
-  let currentContext = '';  // context lines between ## header and first numbered question
-  let currentSection = '';
-
-  const flushOpt = () => {
-    if (opt && q) q.options.push(opt);
-    opt = null;
-  };
-  const flushQ = () => {
-    flushOpt();
-    if (q && q.options.length) qs.push(q);
-    q = null;
-  };
-
-  for (let raw of lines) {
-    const line = raw.trimEnd();
-
-    // Dividers — ignore
-    if (/^={3,}/.test(line) || /^-{3,}/.test(line)) continue;
-
-    // Section header — reset context accumulator, capture section title
-    if (/^##/.test(line)) {
-      flushQ();
-      currentContext = '';
-      currentSection = line.replace(/^#+\s*/, '').replace(/\s*\(\d+\s*questions?\)\s*$/i, '').trim();
-      continue;
-    }
-
-    // Numbered question: "1. Some text…"
-    const qMatch = line.match(/^(\d+)\.\s+(.+)/);
-    if (qMatch) {
-      flushQ();
-      q = { text: qMatch[2].trim(), context: currentContext.trim(), section: currentSection, options: [] };
-      continue;
-    }
-
-    // Option line: "   1) [CORRECT] text"
-    const optMatch = line.match(/^\s+(\d+)\)\s+\[(CORRECT|WRONG)\]\s+(.+)/);
-    if (optMatch && q) {
-      flushOpt();
-      opt = { text: optMatch[3].trim(), correct: optMatch[2] === 'CORRECT', note: '' };
-      continue;
-    }
-
-    // Note line: "        -> text"
-    const noteMatch = line.match(/^\s+->\s+(.+)/);
-    if (noteMatch && opt) {
-      opt.note = noteMatch[1].trim();
-      continue;
-    }
-
-    // Context line — accumulate between section header and first question.
-    // Each source line is kept as its own line (instead of being joined with
-    // spaces into one run-on line) so tables, code listings, etc. keep their
-    // original layout.
-    if (!q && line.trim() && !/^Format|^Total|^AI[0-9]/.test(line)) {
-      currentContext += (currentContext ? '\n' : '') + line;
-    }
-  }
-
-  flushQ();
-  return qs;
-}
-
-// ── Grouping ──────────────────────────────────────────────────────────────────
-// Consecutive True/False statements that share the same section header are
-// grouped into a single "check all that are true" question.
-
-function isBinaryTF(q) {
-  return q.options.length === 2 && q.options.every(o =>
-    /^true$/i.test(o.text.trim()) || /^false$/i.test(o.text.trim())
-  );
-}
-
-function groupStatements(raw) {
-  const items = [];
-  let curGroup = null;
-
-  raw.forEach(q => {
-    if (isBinaryTF(q) && q.section) {
-      if (!curGroup || curGroup.section !== q.section) {
-        curGroup = { type: 'group', section: q.section, context: q.context, statements: [] };
-        items.push(curGroup);
-      }
-      const trueOpt = q.options.find(o => /^true$/i.test(o.text.trim()));
-      const falseOpt = q.options.find(o => /^false$/i.test(o.text.trim()));
-      curGroup.statements.push({
-        text: q.text,
-        answerIsTrue: trueOpt.correct,
-        trueNote: trueOpt.note,
-        falseNote: falseOpt.note,
-      });
-    } else {
-      items.push({ type: 'single', ...q });
-      curGroup = null;
-    }
-  });
-
+function parseQuestions(text) {
+  const items = JSON.parse(text);
+  if (!Array.isArray(items)) throw new Error('Question file must be a JSON array.');
   return items;
 }
 
@@ -306,7 +215,7 @@ function renderGroupQuestion(q) {
 
   const instr = document.createElement('p');
   instr.className = 'group-instructions';
-  instr.textContent = 'Check every statement that is TRUE, then submit:';
+  instr.textContent = `Check every statement that is ${q.positiveLabel}, then submit:`;
   card.appendChild(instr);
 
   const list = document.createElement('ul');
@@ -361,20 +270,20 @@ function gradeGroup(q) {
   items.forEach((li, i) => {
     const st = q.statements[i];
     const checkbox = li.querySelector('input[type=checkbox]');
-    const userSaysTrue = checkbox.checked;
+    const userSaysPositive = checkbox.checked;
     checkbox.disabled = true;
 
-    const correct = userSaysTrue === st.answerIsTrue;
+    const correct = userSaysPositive === st.answerIsPositive;
     li.classList.add(correct ? 'correct' : 'wrong');
 
     const verdict = document.createElement('span');
     verdict.className = 'verdict';
-    verdict.textContent = st.answerIsTrue ? ' — True' : ' — False';
+    verdict.textContent = ' — ' + (st.answerIsPositive ? q.positiveLabel : q.negativeLabel);
     li.querySelector('.statement-text').appendChild(verdict);
 
     const note = document.createElement('span');
     note.className = 'note';
-    richRender(note, st.answerIsTrue ? st.trueNote : st.falseNote);
+    richRender(note, st.answerIsPositive ? st.positiveNote : st.negativeNote);
     li.appendChild(note);
 
     if (correct) score++;
@@ -461,9 +370,8 @@ async function init() {
     const res = await fetch(file);
     if (!res.ok) throw new Error(res.statusText);
     const text = await res.text();
-    const raw = parseTxt(text);
-    if (!raw.length) throw new Error('No questions parsed.');
-    const items = groupStatements(raw);
+    const items = parseQuestions(text);
+    if (!items.length) throw new Error('No questions parsed.');
     questions = prepareQuestions(items);
     maxScore = totalPoints(items);
     document.getElementById('loading').remove();
