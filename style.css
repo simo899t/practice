@@ -153,6 +153,21 @@ header h1 {
 .question-context .katex,
 .note .katex { font-size: 0.95em; }
 
+.code-block {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: var(--text);
+  background: #f5f3ee;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1.1rem;
+  overflow-x: auto;
+  white-space: pre;
+  line-height: 1.5;
+}
+
 .inline-image {
   display: block;
   max-width: 100%;

@@ -196,7 +196,7 @@ $v_1$: 30 samples (20+, 10−). $v_2$: 30 samples (10+, 20−). $v_3$: 40 sample
 ## Question 8: PyTorch Logistic Regression  (5 questions)
 --------------------------------------------------
 
-Model: \texttt{nn.Linear(5, 1)} — 5 weights + 1 bias. Training loop: 20 epochs over \texttt{train\_dl}.
+Model: $\texttt{nn.Linear(5, 1)} — 5$ weights + 1 bias. Training loop: 20 epochs over \texttt{train\_dl}.
 
 1. The model contains exactly 6 learnable parameters.?
    1) [CORRECT] True

@@ -18,6 +18,7 @@ function parseTxt(text) {
   let opt = null;
   let currentContext = '';  // context lines between ## header and first numbered question
   let currentSection = '';
+  let inCodeBlock = false;  // true once a "Code:" marker is seen, until reset
 
   const flushOpt = () => {
     if (opt && q) q.options.push(opt);
@@ -39,6 +40,7 @@ function parseTxt(text) {
     if (/^##/.test(line)) {
       flushQ();
       currentContext = '';
+      inCodeBlock = false;
       currentSection = line.replace(/^#+\s*/, '').replace(/\s*\(\d+\s*questions?\)\s*$/i, '').trim();
       continue;
     }
@@ -48,6 +50,7 @@ function parseTxt(text) {
     if (qMatch) {
       flushQ();
       q = { text: qMatch[2].trim(), context: currentContext.trim(), section: currentSection, options: [] };
+      inCodeBlock = false;
       continue;
     }
 
@@ -66,9 +69,18 @@ function parseTxt(text) {
       continue;
     }
 
-    // Context line — accumulate between section header and first question
+    // Context line — accumulate between section header and first question.
+    // Lines from "Code:" onward keep their original indentation/newlines so
+    // code listings stay intact instead of being smashed into one line.
     if (!q && line.trim() && !/^Format|^Total|^AI[0-9]/.test(line)) {
-      currentContext += (currentContext ? ' ' : '') + line.trim();
+      if (inCodeBlock) {
+        currentContext += '\n' + raw.trimEnd();
+      } else if (/Code(\s*\([^)]*\))?:\s*$/.test(line.trim())) {
+        inCodeBlock = true;
+        currentContext += (currentContext ? ' ' : '') + line.trim();
+      } else {
+        currentContext += (currentContext ? ' ' : '') + line.trim();
+      }
     }
   }
 
@@ -165,6 +177,31 @@ function richRender(target, str) {
   }
 }
 
+// Renders question context, splitting out any "Code:" listing into its own
+// monospace box so indentation/line breaks are preserved instead of being
+// reflowed into a single line.
+function renderContext(container, context) {
+  const codeMatch = context.match(/^([\s\S]*?\bCode(?:\s*\([^)]*\))?:)\n([\s\S]+)$/);
+
+  if (!codeMatch) {
+    const ctx = document.createElement('p');
+    ctx.className = 'question-context';
+    richRender(ctx, context);
+    container.appendChild(ctx);
+    return;
+  }
+
+  const ctx = document.createElement('p');
+  ctx.className = 'question-context';
+  richRender(ctx, codeMatch[1]);
+  container.appendChild(ctx);
+
+  const pre = document.createElement('pre');
+  pre.className = 'code-block';
+  pre.textContent = codeMatch[2];
+  container.appendChild(pre);
+}
+
 // ── Math rendering ────────────────────────────────────────────────────────────
 
 function renderMath(el) {
@@ -222,12 +259,7 @@ function renderSingleQuestion(q) {
   const card = document.createElement('div');
   card.className = 'card question-card';
 
-  if (q.context) {
-    const ctx = document.createElement('p');
-    ctx.className = 'question-context';
-    richRender(ctx, q.context);
-    card.appendChild(ctx);
-  }
+  if (q.context) renderContext(card, q.context);
 
   const qText = document.createElement('p');
   qText.className = 'question-text';
@@ -279,12 +311,7 @@ function renderGroupQuestion(q) {
     card.appendChild(heading);
   }
 
-  if (q.context) {
-    const ctx = document.createElement('p');
-    ctx.className = 'question-context';
-    richRender(ctx, q.context);
-    card.appendChild(ctx);
-  }
+  if (q.context) renderContext(card, q.context);
 
   const instr = document.createElement('p');
   instr.className = 'group-instructions';
