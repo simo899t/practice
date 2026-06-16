@@ -1,0 +1,18 @@
+[
+  {
+    "id": "AI507",
+    "title": "AI507 - AI & Society",
+    "description": "4th semester AI",
+    "tests": [
+      { "id": "mock-quiz1", "title": "Mock Quiz 1", "file": "courses/AI507/mock-quiz1.txt" }
+    ]
+  },
+  {
+    "id": "AI512",
+    "title": "AI512 - Introduction to Machine Learning",
+    "description": "2nd semester AI/CS",
+    "tests": [
+      { "id": "exam-2025-fall", "title": "Exam 2025 Fall", "file": "courses/AI512/exam-2025-fall.txt" }
+    ]
+  }
+]

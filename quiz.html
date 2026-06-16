@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+    onload="window.__katexReady = true"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="back-link">← Back to courses</a>
+      <h1 id="quiz-title">Quiz</h1>
+      <div id="progress-bar-wrap"><div id="progress-bar"></div></div>
+      <p id="progress-text"></p>
+    </header>
+
+    <main id="quiz-area">
+      <div id="loading">Loading questions…</div>
+    </main>
+
+    <div id="results" class="hidden">
+      <div class="card results-card">
+        <h2>Results</h2>
+        <p id="score-text"></p>
+        <div id="score-breakdown"></div>
+        <button class="btn" id="restart-btn">Try again</button>
+        <a href="index.html" class="btn btn-secondary">Back to courses</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

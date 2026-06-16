@@ -1,0 +1,1666 @@
+AI507 — AI & Society — Quiz Question Bank
+==================================================
+Total questions: 160
+Total topics: 14
+
+Format per question:
+  - Question text
+  - Option 1 is ALWAYS the correct answer (the app shuffles options at runtime)
+  - Each option has a short note: why it's right, or what it actually is
+==================================================
+
+## Intelligence & Cognition  (11 questions)
+--------------------------------------------------
+
+1. A pigeon gets food whenever it happens to peck a lever, and pecking then increases. This is…
+   1) [CORRECT] operant conditioning
+        -> Right — a consequence (food) shapes the behaviour.
+   2) [WRONG]   classical conditioning
+        -> That's pairing two stimuli (tone→food), not learning from a consequence.
+   3) [WRONG]   configural learning
+        -> That's learning several features together as one bundle.
+   4) [WRONG]   temporal contiguity
+        -> That's association formed when two things are active close together in time.
+
+2. A tone repeatedly sounds just before food, until the tone alone triggers salivation. This is…
+   1) [CORRECT] classical conditioning
+        -> Right — a neutral stimulus paired with food comes to trigger the response.
+   2) [WRONG]   operant conditioning
+        -> That's learning driven by the consequences of a behaviour, not stimulus pairing.
+   3) [WRONG]   extinction
+        -> That's a learned link fading when the consequence stops.
+   4) [WRONG]   generalization
+        -> That's transferring a response to similar new situations.
+
+3. Describing the mind as distributed units spread across layers, rather than a manipulator of explicit symbols, is the…
+   1) [CORRECT] connectionist model
+        -> Right — mind as distributed units across layers.
+   2) [WRONG]   symbolic model
+        -> That's the 'mind as computer' view: explicit symbols manipulated by rules.
+   3) [WRONG]   behaviourist model
+        -> That explains behaviour by stimulus–response learning, ignoring inner representations.
+   4) [WRONG]   nativist model
+        -> That's the view that key knowledge is innate rather than learned.
+
+4. Doing well on one cognitive test predicts doing well on others. This shared factor is…
+   1) [CORRECT] g (general intelligence)
+        -> Right — the shared variance across cognitive tasks.
+   2) [WRONG]   fluid intelligence
+        -> That's reasoning speed on novel problems — a sub-factor, not the general one.
+   3) [WRONG]   crystallized intelligence
+        -> That's accumulated knowledge — a sub-factor, not the general one.
+   4) [WRONG]   working memory
+        -> That's short-term holding/manipulation of information, not the general factor.
+
+5. Accumulated vocabulary, facts and problem-solving experience make up which kind of intelligence?
+   1) [CORRECT] crystallized
+        -> Right — accumulated knowledge and experience.
+   2) [WRONG]   fluid
+        -> That's raw processing speed on new problems, which declines with age.
+   3) [WRONG]   general (g)
+        -> That's the overall factor across tasks, not the knowledge-specific one.
+   4) [WRONG]   emotional
+        -> 'Emotional intelligence' isn't the knowledge/experience factor described.
+
+6. The raw speed of information processing, which tends to decline with age, is…
+   1) [CORRECT] fluid intelligence
+        -> Right — processing speed, which declines with age.
+   2) [WRONG]   crystallized intelligence
+        -> That's knowledge/experience, which holds up better over time.
+   3) [WRONG]   the g factor
+        -> That's the general factor across tasks, not the speed-specific one.
+   4) [WRONG]   self-efficacy
+        -> That's a belief about your own capability, not a type of intelligence.
+
+7. Carefully working line-by-line through a tax form draws mainly on…
+   1) [CORRECT] System II — slow, effortful, deliberate
+        -> Right — the effortful mode for complex, step-by-step work.
+   2) [WRONG]   System I — fast, automatic, intuitive
+        -> That's quick, automatic processing — the opposite of effortful checking.
+   3) [WRONG]   priming — spreading activation
+        -> That's one cue making related ideas easier to access, not deliberate reasoning.
+   4) [WRONG]   crystallized intelligence
+        -> That's stored knowledge, not a mode of effortful processing.
+
+8. In the broad cognitive-science sense, 'cognition' is best captured as…
+   1) [CORRECT] all processing of input, even imagined input with no stimulus present
+        -> Right — the definition is deliberately broad.
+   2) [WRONG]   conscious reasoning, as opposed to automatic habit
+        -> Too narrow — cognition includes automatic processes too.
+   3) [WRONG]   the emotional appraisal that makes events feel significant
+        -> That describes affect/emotion, not the broad processing definition.
+   4) [WRONG]   the accurate storage and retrieval of past experience
+        -> That's just memory — one part of cognition, not the whole.
+
+9. The lecture contrasts humans as 'epistemic agents' with current LLMs framed as…
+   1) [CORRECT] 'stochastic parrots' producing plausible continuations
+        -> Right — fluent output without genuine understanding.
+   2) [WRONG]   'symbolic reasoners' applying logical rules
+        -> That describes old rule-based AI, not how LLMs are framed here.
+   3) [WRONG]   'connectionist minds' with genuine understanding
+        -> The framing is the opposite — plausible output isn't true understanding.
+   4) [WRONG]   'behaviourist learners' driven by reward
+        -> That's reinforcement-style learning, not the 'parrot' critique.
+
+10. Across a population, IQ scores are distributed…
+   1) [CORRECT] normally, with most people near the middle
+        -> Right — a bell curve centred near 100.
+   2) [WRONG]   uniformly, with every score equally common
+        -> A flat distribution doesn't match how IQ scores cluster.
+   3) [WRONG]   bimodally, clustering at two extremes
+        -> Scores don't pile up at two peaks.
+   4) [WRONG]   skewed, with most people scoring high
+        -> Most people are near the average, not bunched at the top.
+
+11. Behaviour is generally most resistant to extinction when reinforcement is…
+   1) [CORRECT] occasional and unpredictable
+        -> Right — intermittent reinforcement makes behaviour most extinction-resistant.
+   2) [WRONG]   present on every single trial
+        -> Constant reinforcement learns fast but extinguishes fast once it stops.
+   3) [WRONG]   given only on the very first trial
+        -> A single early reward rarely sustains behaviour.
+   4) [WRONG]   tied to a fixed daily clock
+        -> A clock schedule isn't what stabilises a learned response here.
+
+
+## Learning & Memory  (13 questions)
+--------------------------------------------------
+
+1. The standard model divides memory into three stages:
+   1) [CORRECT] encoding, storage, retrieval
+        -> Right — the three classic memory stages.
+   2) [WRONG]   input, processing, output
+        -> That's a generic computing flow, not the memory model's terms.
+   3) [WRONG]   perception, attention, recall
+        -> Real processes, but not the three-stage memory model.
+   4) [WRONG]   sensing, encoding, forgetting
+        -> Forgetting isn't one of the three stages; retrieval is.
+
+2. The classic 'magical number' for short-term memory capacity is about…
+   1) [CORRECT] seven items, give or take two
+        -> Right — 7±2 (often estimated closer to 4–5 today).
+   2) [WRONG]   twenty items, give or take five
+        -> Far too high for short-term capacity.
+   3) [WRONG]   around fifty items
+        -> Nowhere near short-term capacity.
+   4) [WRONG]   effectively unlimited
+        -> Short-term memory is sharply limited, not unlimited.
+
+3. A memory 'schema' is best described as…
+   1) [CORRECT] an organised structure of prior experience that guides recall
+        -> Right — we keep the gist and reconstruct details.
+   2) [WRONG]   a verbatim recording of a single event
+        -> Memory isn't a literal recording; schemas reshape recall.
+   3) [WRONG]   a temporary buffer holding a few items
+        -> That's working/short-term memory, not a schema.
+   4) [WRONG]   an automatic stimulus–response reflex
+        -> That's conditioning, not an organised knowledge structure.
+
+4. If a cue already reliably predicts an outcome, the brain often ignores a redundant new cue. This is…
+   1) [CORRECT] competition among predictors
+        -> Right — a redundant cue is blocked to save effort.
+   2) [WRONG]   configural learning
+        -> That's binding features into one bundle, not blocking a redundant cue.
+   3) [WRONG]   generalization
+        -> That's transfer to similar situations, not ignoring redundant cues.
+   4) [WRONG]   temporal contiguity
+        -> That's association from co-activation in time.
+
+5. Recognising a face as a single 'bundle' rather than learning hair and eyes separately illustrates…
+   1) [CORRECT] configural learning
+        -> Right — features stored together as a bundle.
+   2) [WRONG]   competition among predictors
+        -> That's ignoring a redundant cue, not bundling features.
+   3) [WRONG]   extinction
+        -> That's a learned link fading when reinforcement stops.
+   4) [WRONG]   temporal contiguity
+        -> That's association from things co-occurring in time.
+
+6. Two events activated close together in time become associated (the principle behind priming and Word2Vec). This is…
+   1) [CORRECT] temporal contiguity
+        -> Right — co-activated processes get linked.
+   2) [WRONG]   competition among predictors
+        -> That's blocking a redundant cue.
+   3) [WRONG]   generalization
+        -> That's transfer to similar situations.
+   4) [WRONG]   unlearning
+        -> That's weakening an existing association, not forming one.
+
+7. Applying knowledge to a new situation, more easily the more alike the two are, is…
+   1) [CORRECT] generalization
+        -> Right — transfer is easier the more similar the situations.
+   2) [WRONG]   extinction
+        -> That's a response fading when its consequence stops.
+   3) [WRONG]   configural learning
+        -> That's binding features into a bundle.
+   4) [WRONG]   encoding
+        -> That's getting information into memory in the first place.
+
+8. A cue repeatedly presented without its usual consequence gradually loses its effect. This is…
+   1) [CORRECT] extinction
+        -> Right — the link fades when the consequence stops appearing.
+   2) [WRONG]   configural learning
+        -> That's bundling features together.
+   3) [WRONG]   generalization
+        -> That's transferring a response to similar situations.
+   4) [WRONG]   encoding
+        -> That's the initial processing of input into memory.
+
+9. The brain 'filling in' the retinal blind spot is used to argue that perception is best described as…
+   1) [CORRECT] construction — the brain builds and completes the input
+        -> Right — perception organises and fills in the signal.
+   2) [WRONG]   transmission — the eye relays an exact image
+        -> The eye doesn't pass on a perfect copy; the brain constructs.
+   3) [WRONG]   selection — only colour information is kept
+        -> Perception isn't just colour filtering.
+   4) [WRONG]   reflection — the world is mirrored unchanged
+        -> Perception actively shapes input, not mirrors it.
+
+10. Viewers counting passes fail to notice a person in a gorilla suit walk through. This is…
+   1) [CORRECT] inattentional blindness
+        -> Right — an obvious event missed because attention is elsewhere.
+   2) [WRONG]   the retinal blind spot
+        -> That's a physiological gap the brain fills, not an attention failure.
+   3) [WRONG]   the Stroop effect
+        -> That's interference between word meaning and ink colour.
+   4) [WRONG]   the magic number
+        -> That's short-term memory capacity (7±2).
+
+11. Looking facts up online tends to make people…
+   1) [CORRECT] overrate their own knowledge and memory
+        -> Right — people mistake the internet's knowledge for their own.
+   2) [WRONG]   accurately gauge what they truly know
+        -> Access to search actually distorts self-assessment.
+   3) [WRONG]   underrate their own abilities
+        -> The bias runs the other way — overconfidence.
+   4) [WRONG]   forget how to search effectively
+        -> Searching doesn't degrade search skill here; it inflates self-knowledge.
+
+12. In the essay-writing study, heavier reliance on an LLM was linked with…
+   1) [CORRECT] lower ownership and weaker memory of the text
+        -> Right — less load, but less ownership, quality and recall ('cognitive debt').
+   2) [WRONG]   higher ownership and stronger recall
+        -> It's the reverse — reliance lowered ownership and recall.
+   3) [WRONG]   better grades with greater effort
+        -> Reliance reduced effort, and didn't simply raise grades.
+   4) [WRONG]   no change on any measure
+        -> There were clear differences in ownership and memory.
+
+13. Information processed 'deeply' by meaning, rather than 'superficially' by surface form, is later…
+   1) [CORRECT] recalled better
+        -> Right — meaning-based processing aids retrieval.
+   2) [WRONG]   recalled worse
+        -> Deep processing helps, not hurts, recall.
+   3) [WRONG]   recalled only with strong cues
+        -> Deep encoding makes recall easier, not cue-dependent.
+   4) [WRONG]   recalled identically
+        -> Depth of processing does change later recall.
+
+
+## Social Cognition  (14 questions)
+--------------------------------------------------
+
+1. Neuroscience suggests the brain's 'default' activity is closest to…
+   1) [CORRECT] thinking about other people
+        -> Right — social cognition seems to be the brain's default.
+   2) [WRONG]   perceiving inanimate objects
+        -> Object perception actually deactivates social-processing regions.
+   3) [WRONG]   solving mathematical problems
+        -> That's effortful, task-driven activity, not the resting default.
+   4) [WRONG]   resting with no thought at all
+        -> The 'default' isn't blank — it drifts to social thinking.
+
+2. The aspect of the self that is active in a specific situation (e.g., at work vs at home) is the…
+   1) [CORRECT] working self-concept
+        -> Right — the self active in the current situation.
+   2) [WRONG]   relational self-concept
+        -> That's the self defined through close relationships.
+   3) [WRONG]   feared self
+        -> That's what you could become but hope to avoid.
+   4) [WRONG]   ideal self
+        -> That's who you aspire to be.
+
+3. The part of the self emerging from close relationships (parents, partner, friends) is the…
+   1) [CORRECT] relational self-concept
+        -> Right — self defined through close bonds.
+   2) [WRONG]   working self-concept
+        -> That's whichever self is active right now.
+   3) [WRONG]   possible self
+        -> That's a future self you imagine becoming.
+   4) [WRONG]   ought self
+        -> That's who you feel you should be (duties).
+
+4. 'What you could become but hope to avoid' is your…
+   1) [CORRECT] feared self
+        -> Right — what you could become and want to avoid.
+   2) [WRONG]   possible self
+        -> That's what you could become and hope for.
+   3) [WRONG]   ideal self
+        -> That's who you aspire to be.
+   4) [WRONG]   ought self
+        -> That's who you feel you should be.
+
+5. A gap between the actual self and the ideal self produces which motivational focus?
+   1) [CORRECT] promotion focus (pursuing gains)
+        -> Right — actual/ideal gaps activate approach toward gains.
+   2) [WRONG]   prevention focus (avoiding losses)
+        -> That comes from actual/ought gaps, not actual/ideal.
+   3) [WRONG]   accuracy focus
+        -> That's a need to see yourself correctly, not a discrepancy focus.
+   4) [WRONG]   consistency focus
+        -> That's a need to confirm your existing self-view.
+
+6. A gap between the actual self and the ought self produces which motivational focus?
+   1) [CORRECT] prevention focus (avoiding failure)
+        -> Right — actual/ought gaps drive avoidance of failure.
+   2) [WRONG]   promotion focus (pursuing ideals)
+        -> That comes from actual/ideal gaps instead.
+   3) [WRONG]   self-enhancement focus
+        -> That's the drive to feel good about yourself.
+   4) [WRONG]   relational focus
+        -> Not a self-discrepancy outcome.
+
+7. The belief that you can perform a behaviour and that it will actually work is…
+   1) [CORRECT] self-efficacy
+        -> Right — perceived control plus the belief the behaviour is effective.
+   2) [WRONG]   self-esteem
+        -> That's overall self-worth, not a task-specific capability belief.
+   3) [WRONG]   self-enhancement
+        -> That's the motive to feel good about yourself.
+   4) [WRONG]   self-discrepancy
+        -> That's a gap between actual and ideal/ought selves.
+
+8. Recalling our successes more than our failures, and judging ourselves as less biased than others, serves the need for…
+   1) [CORRECT] self-enhancement
+        -> Right — the motive to feel good about yourself.
+   2) [WRONG]   accuracy
+        -> That's wanting a correct self-view, even if unflattering.
+   3) [WRONG]   consistency
+        -> That's wanting feedback that fits your existing self-view.
+   4) [WRONG]   continuity
+        -> That's a sense of staying the same self over time.
+
+9. Seeking situations that confirm how we already see ourselves reflects the need for…
+   1) [CORRECT] consistency
+        -> Right — favour situations that confirm your self-view.
+   2) [WRONG]   accuracy
+        -> That's wanting the truth about yourself.
+   3) [WRONG]   self-enhancement
+        -> That's wanting to feel good, not just consistent.
+   4) [WRONG]   affiliation
+        -> That's the need to belong, not self-confirmation.
+
+10. Explaining a stranger's stumble by their character rather than the icy pavement is the…
+   1) [CORRECT] fundamental attribution error
+        -> Right — over-weighting the person, under-weighting the situation.
+   2) [WRONG]   self-serving bias
+        -> That's crediting yourself for success, blaming the situation for failure.
+   3) [WRONG]   spiral of silence
+        -> That's staying quiet when you feel in the minority.
+   4) [WRONG]   stereotype content model
+        -> That's judging groups on warmth and competence.
+
+11. The Stereotype Content Model places groups on two dimensions:
+   1) [CORRECT] warmth and competence
+        -> Right — the two SCM dimensions.
+   2) [WRONG]   status and power
+        -> Related predictors, but not the two SCM axes themselves.
+   3) [WRONG]   age and gender
+        -> Demographics, not the SCM dimensions.
+   4) [WRONG]   trust and fear
+        -> Reactions that follow from warmth/competence, not the axes.
+
+12. Which is a classic condition for intergroup contact to reduce prejudice?
+   1) [CORRECT] the groups must cooperate toward shared goals
+        -> Right — required cooperation is a key condition.
+   2) [WRONG]   the groups must stay anonymous to each other
+        -> Anonymity isn't a contact condition; equal-status acquaintance is.
+   3) [WRONG]   one group must clearly outrank the other
+        -> Equal status is required — not a hierarchy.
+   4) [WRONG]   contact must be brief and one-off
+        -> Meaningful, supported contact works better than a one-off.
+
+13. Categorising yourself as a group member, which then shapes in- and out-group perception, is the core of…
+   1) [CORRECT] social identity / self-categorization theory
+        -> Right — group membership structures perception.
+   2) [WRONG]   self-discrepancy theory
+        -> That's about gaps between actual and ideal/ought selves.
+   3) [WRONG]   the media equation
+        -> That's treating media/computers as real social actors.
+   4) [WRONG]   uses and gratifications
+        -> That's why people actively choose media.
+
+14. The human tendency toward self-confirming views is echoed in AI by…
+   1) [CORRECT] sycophancy — agreeing with and flattering the user
+        -> Right — AI echoing the user's views.
+   2) [WRONG]   the uncanny valley — eeriness near human likeness
+        -> That's about near-human appearance, not agreement.
+   3) [WRONG]   the cold-start problem — too little user data
+        -> That's a recommender data issue.
+   4) [WRONG]   the spiral of silence — minorities staying quiet
+        -> That's about withholding minority opinions.
+
+
+## Communication  (17 questions)
+--------------------------------------------------
+
+1. 'One cannot not communicate' captures which property of communication?
+   1) [CORRECT] it is inevitable
+        -> Right — even silence communicates.
+   2) [WRONG]   it is episodic
+        -> That's the idea that any 'start' point is arbitrary.
+   3) [WRONG]   it is constructed
+        -> That's meaning arising from shared symbols.
+   4) [WRONG]   it is contextual
+        -> That's meaning depending on context, not the 'cannot not' point.
+
+2. Calling the start of a conversation an 'arbitrary cut' (like photographing dance) reflects that communication is…
+   1) [CORRECT] episodic
+        -> Right — boundaries on a continuous flow are arbitrary.
+   2) [WRONG]   inevitable
+        -> That's 'one cannot not communicate'.
+   3) [WRONG]   constructed
+        -> That's meaning built from shared symbols.
+   4) [WRONG]   mediated
+        -> That's communication carried through a medium.
+
+3. Meaning arising from the symbols both sender and receiver assign reflects that communication is…
+   1) [CORRECT] constructed
+        -> Right — meaning comes from symbols both parties assign.
+   2) [WRONG]   inevitable
+        -> That's the 'cannot not communicate' axiom.
+   3) [WRONG]   episodic
+        -> That's the arbitrary-boundary idea.
+   4) [WRONG]   contextual
+        -> That's meaning shifting with context.
+
+4. The classic communication formula is: who / says what / in which channel / to whom / with…
+   1) [CORRECT] what effect
+        -> Right — '…with what effect' closes the formula.
+   2) [WRONG]   what intention
+        -> Intention isn't the formula's final term; effect is.
+   3) [WRONG]   what budget
+        -> Not part of the formula.
+   4) [WRONG]   what emotion
+        -> Not part of the formula.
+
+5. A single person talking themselves through a problem is which level of communication?
+   1) [CORRECT] intrapersonal
+        -> Right — communication 'in your head'.
+   2) [WRONG]   interpersonal
+        -> That's one-to-one between people.
+   3) [WRONG]   group
+        -> That's many-to-many within a group.
+   4) [WRONG]   mass
+        -> That's one-to-many to a broad audience.
+
+6. One sender reaching a large, dispersed audience at once is…
+   1) [CORRECT] mass communication
+        -> Right — one sender to a broad, dispersed audience.
+   2) [WRONG]   interpersonal communication
+        -> That's one-to-one.
+   3) [WRONG]   intrapersonal communication
+        -> That's within one person.
+   4) [WRONG]   group communication
+        -> That's within a bounded group.
+
+7. In speech production, settling the abstract message before any words are chosen is the…
+   1) [CORRECT] conceptualization stage
+        -> Right — deciding the message before words.
+   2) [WRONG]   formulation stage
+        -> That's selecting words and grammar for the message.
+   3) [WRONG]   phonological encoding stage
+        -> That's specifying the sounds of the chosen words.
+   4) [WRONG]   articulation stage
+        -> That's moving the muscles to produce speech.
+
+8. In speech production, activating the muscles to actually produce sound is the…
+   1) [CORRECT] articulation stage
+        -> Right — activating the speech muscles.
+   2) [WRONG]   conceptualization stage
+        -> That's forming the message before words.
+   3) [WRONG]   formulation stage
+        -> That's choosing words and structure.
+   4) [WRONG]   comprehension stage
+        -> That's understanding speech, not producing it.
+
+9. In conversation, 'common ground' refers to…
+   1) [CORRECT] the shared beliefs and knowledge participants assume
+        -> Right — what makes a message understandable.
+   2) [WRONG]   the richness of the chosen medium
+        -> That's media richness, not shared knowledge.
+   3) [WRONG]   the speaker's deliberate self-presentation
+        -> That's the hyperpersonal idea.
+   4) [WRONG]   the norms of an anonymous group
+        -> That's the SIDE model's focus.
+
+10. Common ground built specifically from two people's shared history is…
+   1) [CORRECT] personal common ground
+        -> Right — built from two people's shared history.
+   2) [WRONG]   communal common ground
+        -> That's shared knowledge from common culture/group membership.
+   3) [WRONG]   an injunctive norm
+        -> That's what people approve of, not shared knowledge.
+   4) [WRONG]   a descriptive norm
+        -> That's what people actually do, not shared knowledge.
+
+11. In a transformer, 'self-attention' computes…
+   1) [CORRECT] weights for each word relative to the other words (context)
+        -> Right — context weighting.
+   2) [WRONG]   a single point of conscious focus
+        -> That's human attention (focus), not the transformer mechanism.
+   3) [WRONG]   the emotional tone of a sentence
+        -> Self-attention isn't sentiment analysis.
+   4) [WRONG]   the grammatical mood of a clause
+        -> Not what self-attention computes.
+
+12. The lecture distinguishes human attention as ___ and algorithmic attention as ___.
+   1) [CORRECT] focus ; context
+        -> Right — human attention = focus, algorithmic = context.
+   2) [WRONG]   context ; focus
+        -> Reversed — it's focus then context.
+   3) [WRONG]   memory ; perception
+        -> Not the contrast being drawn.
+   4) [WRONG]   input ; output
+        -> Not the contrast being drawn.
+
+13. Media Richness Theory ranks channels by how many cues they carry and…
+   1) [CORRECT] how quickly feedback is possible
+        -> Right — cues plus immediacy of feedback.
+   2) [WRONG]   how many people they reach
+        -> That's reach, a different dimension.
+   3) [WRONG]   how permanent the record is
+        -> That's persistence, not richness.
+   4) [WRONG]   how anonymous users stay
+        -> That's anonymity, not richness.
+
+14. The SIDE model predicts that in anonymous online groups, behaviour follows…
+   1) [CORRECT] the salient norms of that group
+        -> Right — deindividuation shifts behaviour toward group norms.
+   2) [WRONG]   the richness of the medium
+        -> That's media richness theory.
+   3) [WRONG]   each user's stable traits
+        -> SIDE says identity is less personal and more group-based here.
+   4) [WRONG]   the speaker's working memory
+        -> Unrelated to SIDE.
+
+15. Compared with face-to-face, the hyperpersonal model predicts online self-presentation is…
+   1) [CORRECT] more controlled and idealised
+        -> Right — selective, intentional self-presentation.
+   2) [WRONG]   more spontaneous and unfiltered
+        -> The opposite — online self-presentation is more managed.
+   3) [WRONG]   more anonymous but less deliberate
+        -> It's more deliberate, not less.
+   4) [WRONG]   more cue-rich but less personal
+        -> Cues are fewer but used more strategically and personally.
+
+16. Shifting your accent or vocabulary to match your conversation partner is…
+   1) [CORRECT] convergence
+        -> Right — adjusting toward the other's style.
+   2) [WRONG]   divergence
+        -> That's emphasising your own distinct style.
+   3) [WRONG]   over-accommodation
+        -> That's adjusting too much (e.g., patronising 'baby talk').
+   4) [WRONG]   under-accommodation
+        -> That's failing to adjust enough.
+
+17. Deliberately stressing your own distinct speech style to signal group identity is…
+   1) [CORRECT] divergence
+        -> Right — stressing your own style to mark identity.
+   2) [WRONG]   convergence
+        -> That's moving toward the other's style.
+   3) [WRONG]   common ground
+        -> That's shared assumed knowledge.
+   4) [WRONG]   priming
+        -> That's one cue making related ideas more accessible.
+
+
+## Innovation  (12 questions)
+--------------------------------------------------
+
+1. 'Creative destruction' describes how innovation…
+   1) [CORRECT] upsets the existing economic equilibrium
+        -> Right — innovation disrupts the status quo.
+   2) [WRONG]   locks in the existing equilibrium
+        -> The opposite — it breaks, not freezes, the equilibrium.
+   3) [WRONG]   leaves the equilibrium untouched
+        -> Innovation changes the equilibrium by definition here.
+   4) [WRONG]   restores a previously lost equilibrium
+        -> It creates new disruption, not restoration.
+
+2. Which is one of the 'three big No's' of social innovation?
+   1) [CORRECT] causing negative social outcomes
+        -> Right — one of the three 'No's'.
+   2) [WRONG]   generating a financial profit
+        -> Profit isn't one of the 'No's'.
+   3) [WRONG]   scaling to many users
+        -> Scaling isn't a 'No'.
+   4) [WRONG]   relying on new technology
+        -> Using tech isn't itself a 'No'.
+
+3. A frequent reason a social innovation has 'no impact' is that…
+   1) [CORRECT] the real user and use-case were never studied
+        -> Right — failing to study the user is a common cause.
+   2) [WRONG]   it was launched too cautiously
+        -> Caution isn't the cited reason for no impact.
+   3) [WRONG]   it relied too little on technology
+        -> Low-tech isn't the issue; misunderstanding users is.
+   4) [WRONG]   it was evaluated too thoroughly
+        -> Over-evaluation isn't the failure mode described.
+
+4. 'Diffusion of innovations' refers to how an innovation…
+   1) [CORRECT] spreads through a social system over time
+        -> Right — communication of an innovation over time.
+   2) [WRONG]   is invented and prototyped
+        -> That's the creation phase, not diffusion.
+   3) [WRONG]   is patented and licensed
+        -> That's legal/commercial protection, not spread.
+   4) [WRONG]   is withdrawn from a market
+        -> That's the opposite of diffusion.
+
+5. The Technology Acceptance Model centres on perceived usefulness and perceived…
+   1) [CORRECT] ease of use
+        -> Right — usefulness plus ease of use.
+   2) [WRONG]   cost of ownership
+        -> Not one of TAM's two core beliefs.
+   3) [WRONG]   social prestige
+        -> Not a TAM core belief.
+   4) [WRONG]   environmental impact
+        -> Not a TAM core belief.
+
+6. In the theory of planned behaviour, intentions stem from attitudes ('want'), control ('can'), and…
+   1) [CORRECT] perceived norms ('should')
+        -> Right — want / should / can.
+   2) [WRONG]   perceived cost ('afford')
+        -> Cost isn't one of the three TPB determinants.
+   3) [WRONG]   perceived risk ('fear')
+        -> Risk isn't one of the three.
+   4) [WRONG]   perceived novelty ('new')
+        -> Novelty isn't one of the three.
+
+7. In the theory of planned behaviour, 'perceived behavioural control' maps to which everyday word?
+   1) [CORRECT] can
+        -> Right — perceived behavioural control = 'can'.
+   2) [WRONG]   want
+        -> That maps to attitudes.
+   3) [WRONG]   should
+        -> That maps to perceived norms.
+   4) [WRONG]   must
+        -> Not one of the want/should/can trio.
+
+8. UTAUT frames acceptance as weighing expected performance against expected…
+   1) [CORRECT] effort
+        -> Right — performance vs effort expectancy.
+   2) [WRONG]   cost
+        -> Not the paired expectancy in UTAUT's core.
+   3) [WRONG]   risk
+        -> Not the paired expectancy here.
+   4) [WRONG]   delay
+        -> Not the paired expectancy here.
+
+9. What is a strength of AI for fact-checking?
+   1) [CORRECT] media monitoring
+        -> Right — a promising strength of LLMs here.
+   2) [WRONG]   avoiding copyright issues
+        -> The reverse — copyright is a problem, not a strength.
+   3) [WRONG]   a lack of political bias
+        -> LLMs can carry bias, so this isn't a strength.
+   4) [WRONG]   identifying the true sources of a statement
+        -> Models often misattribute sources.
+
+10. A core technical reason fact-checking resists full automation is that models tend to…
+   1) [CORRECT] hallucinate and cite the wrong sources
+        -> Right — a core reason not to fully automate.
+   2) [WRONG]   refuse to answer any questions
+        -> Models do answer; the issue is wrong/confident answers.
+   3) [WRONG]   translate every text inaccurately
+        -> Translation isn't the cited limitation.
+   4) [WRONG]   crash under heavy load
+        -> Reliability isn't the conceptual limit here.
+
+11. Which task belongs to fact-checking?
+   1) [CORRECT] gathering evidence to verify a claim
+        -> Right — verification is a core fact-checking task.
+   2) [WRONG]   maximising a post's engagement
+        -> That's an engagement goal, not fact-checking.
+   3) [WRONG]   personalising a user's news feed
+        -> That's recommendation, not fact-checking.
+   4) [WRONG]   optimising ad placement
+        -> That's advertising, not fact-checking.
+
+12. The lecture links trust in a technology partly to perceived…
+   1) [CORRECT] cognitive similarity to the user
+        -> Right — perceived similarity supports trust.
+   2) [WRONG]   physical size of the device
+        -> Size isn't the trust factor named.
+   3) [WRONG]   price of the subscription
+        -> Price isn't the trust factor named.
+   4) [WRONG]   age of the technology
+        -> Age isn't the trust factor named.
+
+
+## Robots & HRI  (12 questions)
+--------------------------------------------------
+
+1. When a machine only supplies the energy while a human still performs the task, this is…
+   1) [CORRECT] mechanization
+        -> Right — machine supplies energy, human still acts.
+   2) [WRONG]   machinization
+        -> That's the machine taking over the process itself.
+   3) [WRONG]   autonomous control
+        -> Not the term used for energy-only assistance.
+   4) [WRONG]   algorithmisation
+        -> Not the term used here.
+
+2. When a machine (partly) takes over the process itself, this is…
+   1) [CORRECT] machinization
+        -> Right — the machine (partly) performs the process.
+   2) [WRONG]   mechanization
+        -> That's energy-only assistance with the human still acting.
+   3) [WRONG]   avatar control
+        -> That's a human directly steering a digital figure.
+   4) [WRONG]   embodiment
+        -> That's giving an agent a physical/virtual body.
+
+3. A digital figure directly controlled by a human is best called an…
+   1) [CORRECT] avatar
+        -> Right — a human-controlled digital figure.
+   2) [WRONG]   agent
+        -> That acts autonomously, without human steering.
+   3) [WRONG]   embodied robot
+        -> That's a physical body, not the control distinction.
+   4) [WRONG]   interface
+        -> That's the contact surface, not the figure itself.
+
+4. A system that acts autonomously, without a human steering each action, is an…
+   1) [CORRECT] agent
+        -> Right — acts autonomously.
+   2) [WRONG]   avatar
+        -> That's human-controlled.
+   3) [WRONG]   embodiment
+        -> That's having a body, not autonomy.
+   4) [WRONG]   algorithm
+        -> Too generic — the term for an autonomous actor is 'agent'.
+
+5. People watching two triangles move and saying one 'bullies' the other shows we…
+   1) [CORRECT] attribute intentions to moving shapes
+        -> Right — we read social intent into mere motion.
+   2) [WRONG]   ignore objects that move
+        -> We do the opposite — we animate them socially.
+   3) [WRONG]   perceive motion only when trained
+        -> Social attribution is automatic, not trained.
+   4) [WRONG]   reserve intention for living things
+        -> We extend intention even to shapes.
+
+6. The 'Computers Are Social Actors' (CASA) paradigm shows that people…
+   1) [CORRECT] behave politely toward computers, as toward people
+        -> Right — social rules carry over to computers.
+   2) [WRONG]   behave more rudely toward computers than people
+        -> People apply politeness, not extra rudeness.
+   3) [WRONG]   show no social response to computers at all
+        -> CASA shows clear social responses.
+   4) [WRONG]   respond socially only to embodied robots
+        -> Even plain computers elicit social responses.
+
+7. The 'ethopoeia' approach holds that social responses to machines require…
+   1) [CORRECT] only minimal social cues
+        -> Right — minimal cues suffice for social responses.
+   2) [WRONG]   a fully human-like body
+        -> No full human likeness is needed.
+   3) [WRONG]   proof the machine is conscious
+        -> Consciousness isn't required for the effect.
+   4) [WRONG]   a long prior relationship
+        -> No prior relationship is needed.
+
+8. In the Threshold Model of Social Influence, when perceived agency is high (an agent), behavioural realism…
+   1) [CORRECT] matters less
+        -> Right — with high agency, realism matters less.
+   2) [WRONG]   matters more
+        -> It's the low-agency (avatar) case where realism matters more.
+   3) [WRONG]   becomes the only factor
+        -> Realism isn't the sole driver.
+   4) [WRONG]   reverses the effect of agency
+        -> It doesn't flip agency's role.
+
+9. The uncanny valley predicts that likability…
+   1) [CORRECT] drops near the almost-human range
+        -> Right — the eerie dip.
+   2) [WRONG]   climbs straight up with human-likeness
+        -> There's a dip, not a steady rise.
+   3) [WRONG]   peaks for clearly mechanical robots
+        -> The peak isn't at the mechanical end.
+   4) [WRONG]   stays flat across all designs
+        -> Likability varies with human-likeness.
+
+10. One experimental way to improve evaluations of an advanced robot was to show it…
+   1) [CORRECT] in a harmful situation, eliciting empathy
+        -> Right — empathy raised evaluations.
+   2) [WRONG]   performing flawless calculations
+        -> Competence displays weren't the manipulation.
+   3) [WRONG]   in a brightly lit studio
+        -> Lighting wasn't the factor.
+   4) [WRONG]   beside a much larger robot
+        -> Comparison size wasn't the factor.
+
+11. A robot that expressed sadness (vs neutral or happy) was rated as…
+   1) [CORRECT] less intelligent and less credible
+        -> Right — the sad robot was judged down.
+   2) [WRONG]   more intelligent and more credible
+        -> It was the reverse for sadness.
+   3) [WRONG]   more human but less likeable
+        -> The finding was about intelligence/credibility.
+   4) [WRONG]   equally credible across conditions
+        -> Emotions weren't perceived equally.
+
+12. Invoking old myths like the Golem and the 'three laws of robotics' mainly shows that…
+   1) [CORRECT] the idea of the artificial other is very old
+        -> Right — ancient myths to modern fiction.
+   2) [WRONG]   robots today follow three hard-coded laws
+        -> Fictional 'laws' aren't built into real robots.
+   3) [WRONG]   robots are physically unable to harm people
+        -> Not the point — and not true.
+   4) [WRONG]   robotics is purely a 21st-century field
+        -> The idea long predates modern robotics.
+
+
+## Recommender Systems  (10 questions)
+--------------------------------------------------
+
+1. A system that recommends items because 'users like you also liked them' uses…
+   1) [CORRECT] collaborative filtering
+        -> Right — 'similar users' drives the recommendation.
+   2) [WRONG]   content-based filtering
+        -> That uses item features (genre, keywords), not similar users.
+   3) [WRONG]   a hybrid approach
+        -> That combines both methods, not the pure 'similar users' case.
+   4) [WRONG]   random sampling
+        -> That's no personalisation at all.
+
+2. A system that recommends items sharing genres or keywords with what you watched uses…
+   1) [CORRECT] content-based filtering
+        -> Right — matches item features to what you watched.
+   2) [WRONG]   collaborative filtering
+        -> That uses similar users' behaviour, not item features.
+   3) [WRONG]   a chronological feed
+        -> That just orders by time.
+   4) [WRONG]   a hybrid approach
+        -> That mixes both methods.
+
+3. A recommender struggling because a brand-new user has no history faces the…
+   1) [CORRECT] cold-start problem
+        -> Right — too little data on a new user/item.
+   2) [WRONG]   over-smoothing problem
+        -> That's a graph-network issue, not recommenders.
+   3) [WRONG]   uncanny-valley problem
+        -> That's about near-human robots.
+   4) [WRONG]   spiral-of-silence problem
+        -> That's about withholding minority opinions.
+
+4. Besides cold start, a frequent criticism of collaborative filtering is that it…
+   1) [CORRECT] needs behavioural data that can intrude on privacy
+        -> Right — data-hungry and privacy-sensitive.
+   2) [WRONG]   recommends only items the user already knows
+        -> That's closer to content-based's homogeneity issue.
+   3) [WRONG]   works only for brand-new items
+        -> Collaborative filtering actually struggles with brand-new items.
+   4) [WRONG]   ignores other users entirely
+        -> It relies on other users — that's its basis.
+
+5. A typical weakness of content-based filtering is that it…
+   1) [CORRECT] recommends overly similar, predictable items
+        -> Right — homogeneous suggestions.
+   2) [WRONG]   depends heavily on other users' behaviour
+        -> That's collaborative filtering's dependency.
+   3) [WRONG]   handles new users better than new items
+        -> It's the reverse — better for new items than new users.
+   4) [WRONG]   needs no information about the items
+        -> It needs item features to work.
+
+6. Experiments on 'algorithm appreciation' found that people often…
+   1) [CORRECT] lean toward algorithmic over human advice
+        -> Right — often trusted more than human advice.
+   2) [WRONG]   reject algorithmic advice on principle
+        -> That's algorithm aversion, not appreciation.
+   3) [WRONG]   weigh both sources exactly equally
+        -> The finding shows a lean, not parity.
+   4) [WRONG]   prefer whichever advice is cheaper
+        -> Cost isn't the driver in this effect.
+
+7. 'Algorithmic literacy' is best described as…
+   1) [CORRECT] awareness of, and ability to critically evaluate, algorithms
+        -> Right — knowing and judging how they work.
+   2) [WRONG]   the skill of writing recommender code
+        -> That's programming, not literacy in this sense.
+   3) [WRONG]   trust in an algorithm's neutrality
+        -> Literacy includes critical scrutiny, not blind trust.
+   4) [WRONG]   memorising a platform's terms of service
+        -> Legal memorisation isn't algorithmic literacy.
+
+8. A recommender built 'around human values' would prioritise…
+   1) [CORRECT] supporting well-being and public discourse
+        -> Right — values beyond engagement.
+   2) [WRONG]   maximising time spent on the platform
+        -> That's the engagement-first design being critiqued.
+   3) [WRONG]   minimising the platform's serving costs
+        -> Cost-cutting isn't a human-values goal here.
+   4) [WRONG]   surfacing the most controversial posts
+        -> Controversy-chasing is the opposite of value-based design.
+
+9. When tested against personalised feeds, purely chronological feeds tended to produce…
+   1) [CORRECT] lower engagement
+        -> Right — chronological feeds drew less engagement.
+   2) [WRONG]   higher engagement
+        -> Personalised feeds, not chronological, drove more engagement.
+   3) [WRONG]   identical engagement
+        -> There was a measurable difference.
+   4) [WRONG]   no measurable activity
+        -> Users still engaged, just less.
+
+10. A standing challenge for multimodal (video) recommenders is that…
+   1) [CORRECT] each modality is processed then fused, which is hard
+        -> Right — combining modalities is the challenge.
+   2) [WRONG]   audio is the easiest, best-studied modality
+        -> Audio is actually under-studied here.
+   3) [WRONG]   text and images cannot be combined
+        -> They can be combined — that's the point of multimodal.
+   4) [WRONG]   they require no labelled data
+        -> They generally need substantial data.
+
+
+## Chatbots & Bots  (11 questions)
+--------------------------------------------------
+
+1. The Turing Test deems a machine 'intelligent' when an interrogator…
+   1) [CORRECT] is fooled by it about as often as by a deceiving human
+        -> Right — the imitation-game criterion.
+   2) [WRONG]   can list every fact the machine knows
+        -> Knowledge listing isn't the test.
+   3) [WRONG]   watches it solve a maths problem
+        -> Problem-solving display isn't the criterion.
+   4) [WRONG]   confirms it has a physical body
+        -> Embodiment isn't part of the test.
+
+2. ELIZA generated replies by…
+   1) [CORRECT] matching keywords to fixed scripts
+        -> Right — keyword spotting plus scripts.
+   2) [WRONG]   predicting the next word with a transformer
+        -> That's a modern LLM, not ELIZA.
+   3) [WRONG]   reasoning about the user's goals
+        -> ELIZA didn't model goals.
+   4) [WRONG]   retrieving facts from a database
+        -> ELIZA didn't do fact retrieval.
+
+3. ELIZA is an example of which kind of AI?
+   1) [CORRECT] symbolic, rule-based
+        -> Right — fixed rules, not learned representations.
+   2) [WRONG]   connectionist, deep-learning
+        -> That's neural nets, not ELIZA.
+   3) [WRONG]   reinforcement-learning
+        -> ELIZA didn't learn from reward.
+   4) [WRONG]   generative pre-trained
+        -> That's modern LLMs, not ELIZA.
+
+4. A 'social bot' is best defined as…
+   1) [CORRECT] a (semi-)automated agent communicating in online media
+        -> Right — the working definition.
+   2) [WRONG]   any human who simply posts a great deal
+        -> A heavy human poster isn't a bot.
+   3) [WRONG]   a robot used for factory automation
+        -> That's physical automation, not a social bot.
+   4) [WRONG]   a platform's content-moderation policy
+        -> A policy isn't an agent.
+
+5. Analyses of real social bots before the GPT era found most performed…
+   1) [CORRECT] simple amplification, like fake followers and shares
+        -> Right — mostly crude amplifiers.
+   2) [WRONG]   sophisticated human-like conversation
+        -> Most early bots weren't conversational.
+   3) [WRONG]   advanced multimodal reasoning
+        -> Far beyond what early bots did.
+   4) [WRONG]   autonomous investigative journalism
+        -> Not something bots performed.
+
+6. Most untrustworthy election content tends to come from…
+   1) [CORRECT] a small number of coordinated, hyperactive accounts
+        -> Right — a few accounts dominate.
+   2) [WRONG]   the average user, spread evenly
+        -> It's concentrated, not evenly spread.
+   3) [WRONG]   verified news organisations
+        -> Not the main source of deviant content.
+   4) [WRONG]   accounts that post very rarely
+        -> Superspreaders post a lot, not rarely.
+
+7. The spiral of silence predicts that people who feel in the minority will…
+   1) [CORRECT] stay quiet for fear of isolation
+        -> Right — perceived minorities self-silence.
+   2) [WRONG]   speak up more to win others over
+        -> The model predicts silence, not louder advocacy.
+   3) [WRONG]   seek out only like-minded media
+        -> That's selective exposure, a different idea.
+   4) [WRONG]   switch to non-political topics
+        -> Not the predicted behaviour.
+
+8. A documented limit of the spiral of silence is that…
+   1) [CORRECT] the morally convinced often speak up anyway
+        -> Right — moral conviction overrides the spiral.
+   2) [WRONG]   it applies identically to everyone
+        -> Individual differences matter; it's not uniform.
+   3) [WRONG]   it grows stronger in fragmented media
+        -> Fragmentation tends to weaken it, not strengthen it.
+   4) [WRONG]   it has never been observed
+        -> It has been observed, just with limits.
+
+9. The 'Habermas Machine' experiment showed an LLM could…
+   1) [CORRECT] write group statements people preferred to human-written ones
+        -> Right — group-approval-maximising statements.
+   2) [WRONG]   detect every bot in a network
+        -> Not what the system did.
+   3) [WRONG]   run an election from start to finish
+        -> Not its function.
+   4) [WRONG]   replace all human moderators
+        -> Not the claim.
+
+10. In one study, a bot replied to hateful comments by…
+   1) [CORRECT] reminding users of civic norms or calling for empathy
+        -> Right — norm reminders and empathy appeals.
+   2) [WRONG]   deleting the offending accounts
+        -> The bot persuaded, it didn't moderate/delete.
+   3) [WRONG]   publicly ranking the worst users
+        -> Not its approach.
+   4) [WRONG]   rewarding hateful posts with reach
+        -> The opposite of counter-speech.
+
+11. A flagged risk of companion chatbots is that they are designed for…
+   1) [CORRECT] intimacy and over-disclosure by users
+        -> Right — designed to draw out disclosure.
+   2) [WRONG]   maximal factual accuracy
+        -> Accuracy isn't the design aim flagged.
+   3) [WRONG]   minimal user engagement
+        -> Companion bots aim for more engagement, not less.
+   4) [WRONG]   strict emotional distance
+        -> They cultivate closeness, not distance.
+
+
+## Smart Things & IoT  (10 questions)
+--------------------------------------------------
+
+1. An IoT 'smart' object combines sensors, networking, and…
+   1) [CORRECT] autonomous decision-making
+        -> Right — sensors + networking + autonomy.
+   2) [WRONG]   a human operator per task
+        -> Autonomy is the point — not a human per task.
+   3) [WRONG]   purely mechanical gears
+        -> Smart objects are computational, not just mechanical.
+   4) [WRONG]   a permanent wired connection
+        -> Networking needn't be permanently wired.
+
+2. Which area was NOT presented as being 'smartified'?
+   1) [CORRECT] mandatory crisis preparation for citizens
+        -> Right — not one of the smartified domains shown.
+   2) [WRONG]   clothing
+        -> Smartified as wearables.
+   3) [WRONG]   heating
+        -> Smartified in smart homes.
+   4) [WRONG]   harvesting
+        -> Smartified in smart farming.
+
+3. What makes the privacy risks of the Internet of Things distinctive?
+   1) [CORRECT] it reaches into private spaces and often affects several people at once
+        -> Right — the distinctive IoT privacy issue.
+   2) [WRONG]   distributed denial-of-service attacks
+        -> That's a security risk, not a privacy one.
+   3) [WRONG]   none — the risks are the same as for any digital tech
+        -> The trap — IoT risks are distinctive.
+   4) [WRONG]   a general lack of awareness among users
+        -> Real, but not unique to IoT.
+
+4. Combining many mundane smart-device signals to infer something sensitive (e.g., depression) is the risk of…
+   1) [CORRECT] aggregating multiple data streams
+        -> Right — combined signals reveal sensitive facts.
+   2) [WRONG]   a single device failing
+        -> Failure isn't the privacy mechanism here.
+   3) [WRONG]   the cold-start problem
+        -> That's a recommender data issue.
+   4) [WRONG]   creative destruction
+        -> That's an innovation/economics concept.
+
+5. The Mirai botnet showed insecure smart devices could be…
+   1) [CORRECT] hijacked into a botnet for large DDoS attacks
+        -> Right — insecure devices weaponised.
+   2) [WRONG]   patched automatically over the air
+        -> Insecure devices often aren't patched — that's the problem.
+   3) [WRONG]   used only for energy savings
+        -> Mirai was about attacks, not efficiency.
+   4) [WRONG]   isolated from the internet by default
+        -> They were internet-exposed, enabling the botnet.
+
+6. AirTags became a stalking tool because they…
+   1) [CORRECT] broadcast a Bluetooth signal other devices can detect
+        -> Right — Bluetooth detectability enabled stalking.
+   2) [WRONG]   connect directly to the open internet
+        -> AirTags aren't internet-connected.
+   3) [WRONG]   store the owner's medical records
+        -> They don't store such data.
+   4) [WRONG]   contain a hidden microphone
+        -> They have no microphone.
+
+7. One privacy model says self-disclosure follows a personal weighing of access, control, and…
+   1) [CORRECT] trust and norms
+        -> Right — access, control, and trust/norms.
+   2) [WRONG]   battery and storage
+        -> Hardware specs aren't part of the model.
+   3) [WRONG]   follower count
+        -> Not a factor in the model.
+   4) [WRONG]   screen size
+        -> Not a factor in the model.
+
+8. The lecture notes children tend to be…
+   1) [CORRECT] better at interpersonal than commercial privacy
+        -> Right — they manage social privacy better than data privacy.
+   2) [WRONG]   better at commercial than interpersonal privacy
+        -> Reversed — commercial privacy is the weaker area.
+   3) [WRONG]   unable to evade any monitoring
+        -> They do develop workarounds.
+   4) [WRONG]   the main drivers of 'sharenting'
+        -> Sharenting is done by parents, not children.
+
+9. Wearable self-tracking is framed as a 'laboratory of the self' because it…
+   1) [CORRECT] offers new answers to 'who am I' through one's own data
+        -> Right — a 'laboratory of the self'.
+   2) [WRONG]   eliminates the need for any privacy
+        -> It raises privacy issues, not removes them.
+   3) [WRONG]   replaces medical diagnosis entirely
+        -> It supports, not replaces, diagnosis.
+   4) [WRONG]   works only for elite athletes
+        -> It's broadly used, not elite-only.
+
+10. A fitness tracker sending data to a phone app that then forwards it to a server is which IoT mode?
+   1) [CORRECT] device-to-gateway-to-cloud
+        -> Right — phone as gateway, then cloud.
+   2) [WRONG]   device-to-device
+        -> That's direct device links, with no gateway/cloud.
+   3) [WRONG]   device-to-cloud
+        -> That skips the intermediary gateway.
+   4) [WRONG]   back-end data sharing
+        -> That's servers sharing data, not this path.
+
+
+## Social Media & Hate Speech  (9 questions)
+--------------------------------------------------
+
+1. Overt slurs or direct threats of violence are…
+   1) [CORRECT] explicit hate speech
+        -> Right — overt slurs/threats.
+   2) [WRONG]   implicit hate speech
+        -> That's stereotyping or hate framed as a joke.
+   3) [WRONG]   a platform affordance
+        -> That's an action possibility, not a speech type.
+   4) [WRONG]   counter-speech
+        -> That's speech opposing hate.
+
+2. Negative stereotyping, or hate framed as a joke, is…
+   1) [CORRECT] implicit hate speech
+        -> Right — stereotyping or 'just joking' hate.
+   2) [WRONG]   explicit hate speech
+        -> That's overt slurs/threats.
+   3) [WRONG]   a platform feature
+        -> That's a built-in tool, not a speech type.
+   4) [WRONG]   a content modality
+        -> That's a channel (text/image), not a speech type.
+
+3. On a platform, the retweet button itself is a ___, while the visibility it enables is an ___.
+   1) [CORRECT] feature ; affordance
+        -> Right — the button is built-in; visibility is the possibility it enables.
+   2) [WRONG]   affordance ; feature
+        -> Reversed.
+   3) [WRONG]   modality ; feature
+        -> Wrong categories.
+   4) [WRONG]   norm ; modality
+        -> Wrong categories.
+
+4. Which of these is an 'affordance' rather than a 'feature'?
+   1) [CORRECT] anonymity
+        -> Right — an action possibility, not a built-in button.
+   2) [WRONG]   the like button
+        -> That's a feature.
+   3) [WRONG]   the comment box
+        -> That's a feature.
+   4) [WRONG]   the share button
+        -> That's a feature.
+
+5. Anonymity is thought to ease hate speech mainly through…
+   1) [CORRECT] the online disinhibition effect
+        -> Right — anonymity loosens restraint.
+   2) [WRONG]   media richness
+        -> That's about cue-carrying capacity.
+   3) [WRONG]   the cold-start problem
+        -> That's a recommender data issue.
+   4) [WRONG]   the uncanny valley
+        -> That's about near-human robots.
+
+6. Via sharing mechanisms, hateful content tends to gain…
+   1) [CORRECT] more visibility than non-hateful content
+        -> Right — sharing boosts hateful content.
+   2) [WRONG]   less visibility than non-hateful content
+        -> The opposite of the finding.
+   3) [WRONG]   the same visibility as any content
+        -> It tends to spread more.
+   4) [WRONG]   visibility only on alternative platforms
+        -> Not limited to fringe platforms.
+
+7. A captioned meme (image plus embedded text) is an example of…
+   1) [CORRECT] multimodal content
+        -> Right — image plus text combined.
+   2) [WRONG]   a single platform feature
+        -> A meme isn't just one feature.
+   3) [WRONG]   an affordance
+        -> That's an action possibility, not content.
+   4) [WRONG]   a recommender algorithm
+        -> Unrelated to the meme format.
+
+8. Online hate speech threatens democratic participation because…
+   1) [CORRECT] targets withdraw from public debate
+        -> Right — silencing reduces participation.
+   2) [WRONG]   it improves the quality of debate
+        -> Hate degrades, not improves, debate.
+   3) [WRONG]   it affects only offline crime
+        -> Its democratic harm is online participation.
+   4) [WRONG]   it raises platform revenue
+        -> Revenue isn't the democratic-threat mechanism.
+
+9. Because users spread across many platforms, the lecture stresses that…
+   1) [CORRECT] each platform's design creates its own opportunity structures
+        -> Right — designs differ, so do risks.
+   2) [WRONG]   all platforms now behave identically
+        -> They differ — that's the point.
+   3) [WRONG]   moderation has become impossible
+        -> Difficult, but the claim is about distinct designs.
+   4) [WRONG]   anonymity has disappeared everywhere
+        -> Anonymity persists on many platforms.
+
+
+## AI in Politics & Misinformation  (10 questions)
+--------------------------------------------------
+
+1. A cited benefit of AI in public administration is to…
+   1) [CORRECT] automate repetitive tasks, freeing staff for complex work
+        -> Right — automation of routine work.
+   2) [WRONG]   replace elected decision-making
+        -> Not the proposed role for AI.
+   3) [WRONG]   remove the need for any records
+        -> Records still matter.
+   4) [WRONG]   guarantee bias-free outcomes
+        -> AI can introduce bias, not guarantee fairness.
+
+2. Communication flowing from public opinion up to politicians is…
+   1) [CORRECT] upward
+        -> Right — public opinion up to politicians.
+   2) [WRONG]   top-down
+        -> That's government down to citizens.
+   3) [WRONG]   vertical
+        -> That's between politicians.
+   4) [WRONG]   horizontal
+        -> Not the term used for public-to-politician flow.
+
+3. The lecture defines misinformation as claims that are…
+   1) [CORRECT] contrary to the currently best available evidence
+        -> Right — at odds with best evidence.
+   2) [WRONG]   intended to deceive a specific audience
+        -> That's disinformation (intent), a subtype.
+   3) [WRONG]   already known by everyone to be false
+        -> Not part of the definition.
+   4) [WRONG]   impossible to check even in principle
+        -> Misinformation is checkable against evidence.
+
+4. Disinformation differs from misinformation by its…
+   1) [CORRECT] intent to deceive
+        -> Right — intent distinguishes disinformation.
+   2) [WRONG]   length of message
+        -> Length is irrelevant to the distinction.
+   3) [WRONG]   visual format
+        -> Format isn't the distinction.
+   4) [WRONG]   choice of platform
+        -> Platform isn't the distinction.
+
+5. A conspiracy theory explains events through…
+   1) [CORRECT] the secret, malicious acts of a powerful group
+        -> Right — secret malicious conspirators.
+   2) [WRONG]   the best available scientific evidence
+        -> That's the opposite of a conspiracy explanation.
+   3) [WRONG]   pure random coincidence
+        -> Conspiracy theories reject coincidence for hidden design.
+   4) [WRONG]   officially confirmed records
+        -> They often reject official accounts.
+
+6. In dual-process persuasion models (ELM/HSM), durable attitude change comes via the…
+   1) [CORRECT] central / systematic route
+        -> Right — effortful processing yields lasting change.
+   2) [WRONG]   peripheral / heuristic route
+        -> That gives shallow, less durable change.
+   3) [WRONG]   spiral of silence
+        -> That's about self-silencing, not persuasion routes.
+   4) [WRONG]   diffusion process
+        -> That's how innovations spread.
+
+7. Inferring profound meaning from impressive but empty phrases ('bullshit receptivity') predicts…
+   1) [CORRECT] more belief in misinformation
+        -> Right — linked to greater belief.
+   2) [WRONG]   less belief in misinformation
+        -> The relationship runs the other way.
+   3) [WRONG]   immunity to persuasion
+        -> It signals susceptibility, not immunity.
+   4) [WRONG]   a higher need for cognition
+        -> It's associated with lower need for cognition.
+
+8. 'Motivated cognition' means people prefer information that…
+   1) [CORRECT] flatters their own group or party
+        -> Right — we favour identity-confirming info.
+   2) [WRONG]   contradicts their existing beliefs
+        -> We tend to avoid disconfirming info.
+   3) [WRONG]   is the hardest to understand
+        -> Difficulty isn't the driver.
+   4) [WRONG]   comes only from opponents
+        -> We prefer allies' framing, not opponents'.
+
+9. 'Conspiracy mentality' is best described as a…
+   1) [CORRECT] general disposition to suspect conspiracies
+        -> Right — a stable, generalised tendency.
+   2) [WRONG]   one-off belief in a single rumour
+        -> That's a single belief, not the disposition.
+   3) [WRONG]   temporary mood after bad news
+        -> It's a trait, not a passing mood.
+   4) [WRONG]   skill for detecting real plots
+        -> It's a bias, not a detection skill.
+
+10. The lecture's measured conclusion on misinformation's political effects is that it…
+   1) [CORRECT] rarely shifts voting at scale but can cause misperceptions
+        -> Right — measured effects, plus repetition risk.
+   2) [WRONG]   single-handedly decides most elections
+        -> Overstated — effects on voting are limited.
+   3) [WRONG]   has no effect of any kind
+        -> It can create misperceptions.
+   4) [WRONG]   only changes offline behaviour
+        -> Its effects aren't limited to offline behaviour.
+
+
+## AI, Work & Sustainability  (10 questions)
+--------------------------------------------------
+
+1. The 'hidden workforce' behind AI mainly refers to…
+   1) [CORRECT] low-paid crowd-workers labelling data
+        -> Right — the uncredited human labour behind AI.
+   2) [WRONG]   fully self-training models
+        -> Models don't train themselves error-free.
+   3) [WRONG]   senior executives only
+        -> Not who the hidden workforce refers to.
+   4) [WRONG]   factory robots
+        -> Physical robots aren't the data-labelling workforce.
+
+2. Handing manager tasks (scheduling, evaluation, monitoring) to AI is warned to risk…
+   1) [CORRECT] surveillance, power imbalance and unclear accountability
+        -> Right — the flagged risks.
+   2) [WRONG]   excessive worker autonomy
+        -> The risk is control/surveillance, not too much autonomy.
+   3) [WRONG]   the removal of all bias
+        -> It can add bias, not remove it.
+   4) [WRONG]   total transparency for staff
+        -> Opacity is a concern, not transparency.
+
+3. As AI reshapes entry-level work, value shifts toward workers who can…
+   1) [CORRECT] monitor, evaluate and translate AI output
+        -> Right — supervising and mediating AI.
+   2) [WRONG]   avoid AI tools entirely
+        -> Avoidance isn't where value shifts.
+   3) [WRONG]   do only the tasks AI already does
+        -> Those tasks are the ones being automated.
+   4) [WRONG]   work without any statistical skills
+        -> Such skills become more valuable, not less.
+
+4. Which factor has the lowest effect on an AI model's CO₂ consumption?
+   1) [CORRECT] saying thank you to the model
+        -> Right — negligible effect (the trick option).
+   2) [WRONG]   the size of the training data
+        -> A real driver of emissions.
+   3) [WRONG]   the location and power source of the servers
+        -> A real driver of emissions.
+   4) [WRONG]   whether the model runs in the cloud
+        -> Affects efficiency and footprint.
+
+5. On AI and climate, the lecture stresses that training and running large models…
+   1) [CORRECT] can emit substantial CO₂
+        -> Right — energy-intensive to train and run.
+   2) [WRONG]   have no measurable footprint
+        -> They clearly have a footprint.
+   3) [WRONG]   always reduce net emissions
+        -> Not guaranteed — often the reverse.
+   4) [WRONG]   matter only for hardware shipping
+        -> Compute energy, not just shipping, dominates.
+
+6. Among the four 'levers' for greener AI, choosing the data-centre with the cleanest energy is the…
+   1) [CORRECT] 'Map' lever
+        -> Right — choose the cleanest-energy location.
+   2) [WRONG]   'Model' lever
+        -> That's building more efficient models.
+   3) [WRONG]   'Machine' lever
+        -> That's ML-optimised hardware.
+   4) [WRONG]   'Mechanization' lever
+        -> That's cloud/data-centre efficiency.
+
+7. Among the four 'levers' for greener AI, designing a more energy-efficient model is the…
+   1) [CORRECT] 'Model' lever
+        -> Right — design a more efficient model.
+   2) [WRONG]   'Machine' lever
+        -> That's efficient hardware/chips.
+   3) [WRONG]   'Map' lever
+        -> That's choosing a clean-energy location.
+   4) [WRONG]   'Mechanization' lever
+        -> That's data-centre/cloud efficiency.
+
+8. The lecture's realistic note on AI in business is that actual gains are so far…
+   1) [CORRECT] modest, with adoption often failing
+        -> Right — sober reality vs the hype.
+   2) [WRONG]   enormous and guaranteed for all
+        -> Overstated relative to evidence.
+   3) [WRONG]   entirely absent in every firm
+        -> Some gains exist; they're just modest.
+   4) [WRONG]   limited to manufacturing only
+        -> Not restricted to one sector.
+
+9. A review of leadership 'in the era of AI' found the key competencies are mostly…
+   1) [CORRECT] human and psycho-social, plus understanding AI
+        -> Right — mostly people skills, plus AI literacy.
+   2) [WRONG]   pure programming ability
+        -> Coding alone isn't the finding.
+   3) [WRONG]   cost-cutting techniques
+        -> Not the identified core competency.
+   4) [WRONG]   hardware engineering
+        -> Not the identified competency.
+
+10. Which is a named source of digital business value in the lecture?
+   1) [CORRECT] efficiency (lower costs, better coordination)
+        -> Right — one of the four named sources.
+   2) [WRONG]   nostalgia (reviving old products)
+        -> Not one of the four sources.
+   3) [WRONG]   secrecy (hiding the algorithm)
+        -> Not one of the four sources.
+   4) [WRONG]   scarcity (limiting supply)
+        -> Not one of the four sources.
+
+
+## AI in Health & Medicine  (14 questions)
+--------------------------------------------------
+
+1. The WHO defines health as…
+   1) [CORRECT] complete physical, mental and social well-being
+        -> Right — more than the absence of disease.
+   2) [WRONG]   the absence of any diagnosed disease
+        -> Too narrow — that's the view WHO moves beyond.
+   3) [WRONG]   maximal physical fitness
+        -> Health isn't only physical fitness.
+   4) [WRONG]   freedom from all chronic conditions
+        -> Health isn't defined purely as disease-free.
+
+2. Salutogenesis reframes the central question as…
+   1) [CORRECT] what keeps people healthy?
+        -> Right — the salutogenic question.
+   2) [WRONG]   which pathogens cause disease?
+        -> That's the pathogenic (disease-focused) question.
+   3) [WRONG]   how is each illness treated?
+        -> That's treatment, not the salutogenic focus.
+   4) [WRONG]   who is to blame for illness?
+        -> Blame isn't the salutogenic question.
+
+3. A 'sense of coherence' comprises comprehensibility, manageability, and…
+   1) [CORRECT] meaningfulness
+        -> Right — comprehensibility, manageability, meaningfulness.
+   2) [WRONG]   happiness
+        -> Not one of the three components.
+   3) [WRONG]   prosperity
+        -> Not one of the three components.
+   4) [WRONG]   conformity
+        -> Not one of the three components.
+
+4. Feeling that your environment is predictable corresponds to which part of coherence?
+   1) [CORRECT] comprehensibility
+        -> Right — the world feels predictable.
+   2) [WRONG]   manageability
+        -> That's feeling you have the resources to cope.
+   3) [WRONG]   meaningfulness
+        -> That's feeling life is worth engaging with.
+   4) [WRONG]   sociability
+        -> Not part of the coherence model.
+
+5. A 'eudaimonic' view of well-being emphasises…
+   1) [CORRECT] a meaningful life
+        -> Right — meaning/purpose.
+   2) [WRONG]   a pleasant emotional balance
+        -> That's the hedonic view.
+   3) [WRONG]   an interesting, varied life
+        -> That's the psychologically rich view.
+   4) [WRONG]   a high income
+        -> Income isn't a well-being type here.
+
+6. A 'hedonic' view of well-being emphasises…
+   1) [CORRECT] a positive balance of pleasant over unpleasant feelings
+        -> Right — the hedonic view.
+   2) [WRONG]   a deeply meaningful life
+        -> That's eudaimonic well-being.
+   3) [WRONG]   a novel and varied life
+        -> That's the psychologically rich life.
+   4) [WRONG]   a financially secure life
+        -> Not one of the well-being types.
+
+7. A 'psychologically rich' life is one that is…
+   1) [CORRECT] interesting and varied
+        -> Right — the psychologically rich life.
+   2) [WRONG]   pleasant and comfortable
+        -> That's hedonic well-being.
+   3) [WRONG]   meaningful and purposeful
+        -> That's eudaimonic well-being.
+   4) [WRONG]   stable and predictable
+        -> Not the 'rich' definition.
+
+8. Unlike good therapy, general LLMs tend to…
+   1) [CORRECT] validate the user and default to agreement
+        -> Right — sycophancy vs therapeutic challenge.
+   2) [WRONG]   confront and challenge harmful beliefs
+        -> That's good therapy — what general LLMs often don't do.
+   3) [WRONG]   refuse all emotional topics
+        -> They engage with emotional topics, often too agreeably.
+   4) [WRONG]   follow clinical guidelines exactly
+        -> General LLMs aren't bound to clinical guidelines.
+
+9. Heavy LLM use for emotional support was most associated with delusion-like experiences among…
+   1) [CORRECT] people already at higher psychosis risk
+        -> Right — risk concentrated in vulnerable users.
+   2) [WRONG]   people who used AI only for studying
+        -> Study use showed a weaker association.
+   3) [WRONG]   people who never used chatbots
+        -> Non-users aren't the at-risk group described.
+   4) [WRONG]   all users equally
+        -> The risk wasn't uniform across users.
+
+10. The depression risk-score case argued that fairness must consider not only classification accuracy but also…
+   1) [CORRECT] treatment outcomes and group baseline risks
+        -> Right — fairness beyond classification accuracy.
+   2) [WRONG]   the model's processing speed
+        -> Speed isn't a fairness criterion.
+   3) [WRONG]   the interface's visual design
+        -> Design isn't the fairness issue.
+   4) [WRONG]   the number of input features
+        -> Feature count isn't the fairness criterion.
+
+11. To protect sensitive medical data, one proposed method is to use GANs to…
+   1) [CORRECT] generate synthetic data that mimics the real set
+        -> Right — synthetic/anonymised data.
+   2) [WRONG]   publish all raw records openly
+        -> That would harm privacy, not protect it.
+   3) [WRONG]   delete the original dataset
+        -> Deletion isn't the GAN method.
+   4) [WRONG]   skip data collection entirely
+        -> You still need real data to model.
+
+12. AI for personalised medicine is promising but ethically challenging. What can help?
+   1) [CORRECT] fair data
+        -> Right — fairness/bias is the central lever.
+   2) [WRONG]   imputed data
+        -> Filling missing values doesn't address fairness itself.
+   3) [WRONG]   historical data
+        -> Historical data can carry the very biases at issue.
+   4) [WRONG]   transparent data
+        -> Transparency helps, but fairness is the key term here.
+
+13. On tasks like mammography, AI image analysis can…
+   1) [CORRECT] match or slightly exceed human readers
+        -> Right — slightly better on some tasks.
+   2) [WRONG]   never approach human accuracy
+        -> Too pessimistic — it can match/exceed.
+   3) [WRONG]   fully replace radiologists already
+        -> Not yet — challenges remain.
+   4) [WRONG]   work without any approval process
+        -> Approval/oversight is still required.
+
+14. A core unresolved challenge for AI in medicine — 'whom do you sue?' — is…
+   1) [CORRECT] accountability and responsibility
+        -> Right — who is responsible for an AI-driven decision.
+   2) [WRONG]   battery life
+        -> Not the unresolved challenge.
+   3) [WRONG]   font choice
+        -> Not the issue.
+   4) [WRONG]   marketing budget
+        -> Not the issue.
+
+
+## Entertainment & Games  (7 questions)
+--------------------------------------------------
+
+1. The Uses & Gratifications approach focuses on…
+   1) [CORRECT] why users actively choose media to meet needs
+        -> Right — the active-user focus.
+   2) [WRONG]   how media brainwash a passive audience
+        -> That's the opposite, passive-audience view.
+   3) [WRONG]   which media are objectively best
+        -> U&G isn't a quality ranking.
+   4) [WRONG]   how to regulate harmful media
+        -> Regulation isn't the U&G focus.
+
+2. A factor analysis of online-game players identified three motives:
+   1) [CORRECT] achievement, social affairs, immersion
+        -> Right — the three play motives.
+   2) [WRONG]   money, fame, power
+        -> Not the identified motives.
+   3) [WRONG]   speed, accuracy, luck
+        -> Not the identified motives.
+   4) [WRONG]   fear, anger, joy
+        -> Those are emotions, not the play motives.
+
+3. 'Gamification' means…
+   1) [CORRECT] adding game elements (badges, leaderboards) to non-game settings
+        -> Right — game features in non-game contexts.
+   2) [WRONG]   turning leisure games into paid work
+        -> That's not gamification.
+   3) [WRONG]   removing rewards to raise difficulty
+        -> Gamification adds elements, not removes them.
+   4) [WRONG]   playing games at a professional level
+        -> That's esports, not gamification.
+
+4. Game addiction is more strongly tied to which motives?
+   1) [CORRECT] escapist and social
+        -> Right — escapism and social motives.
+   2) [WRONG]   achievement and mastery
+        -> Closer to 'healthy' goal-oriented play.
+   3) [WRONG]   competitive and financial
+        -> Not the motives most tied to addiction.
+   4) [WRONG]   educational and creative
+        -> Not the addiction-linked motives.
+
+5. Players' avatars tend to embody…
+   1) [CORRECT] the ideal self ('how I'd like to be')
+        -> Right — avatars often embody the ideal self.
+   2) [WRONG]   the actual self ('how I am')
+        -> Avatars tend toward the ideal, not the actual.
+   3) [WRONG]   the feared self ('what I avoid')
+        -> Not what avatars typically represent.
+   4) [WRONG]   the relational self
+        -> Not the avatar–self link described.
+
+6. The lecture notes the games industry is…
+   1) [CORRECT] the largest entertainment sector, above film and music combined
+        -> Right — games are the biggest.
+   2) [WRONG]   a small niche compared with film
+        -> The opposite — games surpass film.
+   3) [WRONG]   shrinking year on year
+        -> It's grown, not shrunk.
+   4) [WRONG]   unrelated to AI development
+        -> Games and AI are closely linked.
+
+7. On social play, the lecture concludes that gaming…
+   1) [CORRECT] can foster real, lasting friendships
+        -> Right — games are social spaces.
+   2) [WRONG]   always isolates heavy players
+        -> Too absolute — many form connections.
+   3) [WRONG]   never leads to offline meetups
+        -> Offline meetups do happen.
+   4) [WRONG]   only benefits extroverts
+        -> Benefits aren't limited to extroverts.
+

@@ -1,0 +1,473 @@
+AI512 — Introduction to Machine Learning — Exam 2025 Fall
+==================================================
+Total questions: 65
+Total topics: 13
+
+Format per question:
+  - Question text
+  - Option 1 is ALWAYS the correct answer (the app shuffles options at runtime)
+  - Each option has a short note: why it's right, or what it actually is
+==================================================
+
+## Question 1: Bayesian Cancer Screening  (5 questions)
+--------------------------------------------------
+
+Setup: $P(\text{cancer}) = 0.01$, $P(+|\text{cancer}) = 0.90$, $P(+|\neg\text{cancer}) = 0.03$.
+So $P(+) = 0.90 \cdot 0.01 + 0.03 \cdot 0.99 = 0.009 + 0.0297 = 0.0387$ and
+$P(\text{cancer}|+) = 0.009 / 0.0387 \approx 0.233$.
+
+1. $P(\text{cancer} | +) > $ false positive rate of the test. Is this TRUE or FALSE?
+   1) [CORRECT] True
+        -> $P(\text{cancer}|+) \approx 0.233 \gg 0.03$ (the false positive rate).
+   2) [WRONG]   False
+        -> Bayes' theorem pushes the posterior well above the raw false positive rate.
+
+2. $P(\text{positive test}) < P(\text{cancer})$. Is this TRUE or FALSE?
+   1) [CORRECT] False
+        -> $P(+) = 0.0387 > P(\text{cancer}) = 0.01$; false positives inflate the positive rate.
+   2) [WRONG]   True
+        -> The positive rate includes false positives, making it larger than the cancer prevalence.
+
+3. $P(\neg\text{cancer} | -) < P(\neg\text{cancer})$. Is this TRUE or FALSE?
+   1) [CORRECT] False
+        -> $P(\neg\text{cancer}|-) \approx 0.999 > P(\neg\text{cancer}) = 0.99$; a negative test makes cancer even less likely.
+   2) [WRONG]   True
+        -> A negative result raises (not lowers) the probability of not having cancer.
+
+4. $P(\text{positive test}) < P(\text{cancer}|+)$. Is this TRUE or FALSE?
+   1) [CORRECT] True
+        -> $0.0387 < 0.233$; the marginal positive rate is much smaller than the posterior cancer probability.
+   2) [WRONG]   False
+        -> The posterior $P(\text{cancer}|+) \approx 0.233$ is indeed larger than $P(+) = 0.0387$.
+
+5. $P(\text{cancer}, +) < P(\text{cancer}|+)$. Is this TRUE or FALSE?
+   1) [CORRECT] True
+        -> $P(\text{cancer}, +) = 0.009 < P(\text{cancer}|+) \approx 0.233$; a joint probability is always $\leq$ a conditional probability here.
+   2) [WRONG]   False
+        -> The joint probability $P(A,B) \leq P(A|B)$ whenever $P(B) \leq 1$.
+
+
+## Question 2: Expectation and Variance  (5 questions)
+--------------------------------------------------
+
+1. For all joint distributions: $\mathbb{E}[X+Y] = \mathbb{E}[X] + \mathbb{E}[Y]$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> Linearity of expectation holds unconditionally, regardless of dependence.
+   2) [WRONG]   False
+        -> This is one of the most fundamental properties of expectation and requires no independence.
+
+2. For all joint distributions: $\text{Var}[X+Y] = \text{Var}[X] + \text{Var}[Y]$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> $\text{Var}[X+Y] = \text{Var}[X] + \text{Var}[Y] + 2\,\text{Cov}[X,Y]$; equality holds only when $X \perp Y$.
+   2) [WRONG]   True
+        -> The covariance term vanishes only under independence.
+
+3. For all joint distributions: $\mathbb{E}[X] = \mathbb{E}_Y[\mathbb{E}_X[X|Y]]$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> This is the law of total expectation (tower property).
+   2) [WRONG]   False
+        -> The tower property holds for all joint distributions without any independence assumption.
+
+4. For all joint distributions: $\text{Var}[X] = \mathbb{E}_Y[\text{Var}_X[X|Y]] + \text{Var}_Y[\mathbb{E}_X[X|Y]]$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> This is the law of total variance (Eve's law); it holds universally.
+   2) [WRONG]   False
+        -> Both terms are non-negative and together they always sum to the marginal variance.
+
+5. For all joint distributions: $\mathbb{E}[X \times Y] = \mathbb{E}[X] \times \mathbb{E}[Y]$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> This holds only when $X$ and $Y$ are uncorrelated; dependent variables can have $\mathbb{E}[XY] \neq \mathbb{E}[X]\mathbb{E}[Y]$.
+   2) [WRONG]   True
+        -> A counterexample: $X = Y \sim \text{Bernoulli}(0.5)$; then $\mathbb{E}[XY] = 0.5 \neq 0.25 = \mathbb{E}[X]\mathbb{E}[Y]$.
+
+
+## Question 3: Confusion Matrix  (5 questions)
+--------------------------------------------------
+
+Confusion matrix (rows = actual, cols = predicted):
+N: 70 correct, 20 as B, 10 as M (total 100).
+B: 10 as N, 60 correct, 10 as M (total 80).
+M: 0 as N, 10 as B, 10 correct (total 20).
+Column totals: N=80, B=90, M=30.
+
+1. Recall for class M is $0.50$ (50%). TRUE or FALSE?
+   1) [CORRECT] True
+        -> $\text{Recall}_M = 10/20 = 0.50$. Correct.
+   2) [WRONG]   False
+        -> TP for M is 10, actual M total is 20, giving exactly 50%.
+
+2. Precision for class B is higher than its Recall. TRUE or FALSE?
+   1) [CORRECT] False
+        -> $\text{Precision}_B = 60/90 \approx 0.667$; $\text{Recall}_B = 60/80 = 0.75$; precision is lower.
+   2) [WRONG]   True
+        -> Precision (0.667) is actually less than Recall (0.75) for class B.
+
+3. F1-score for class N is exactly $0.75$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> $P_N = 70/80 = 0.875$, $R_N = 70/100 = 0.70$; $F1 = 2 \cdot \frac{0.875 \cdot 0.70}{0.875+0.70} \approx 0.778$, not 0.75.
+   2) [WRONG]   True
+        -> The harmonic mean of 0.875 and 0.70 gives $\approx 0.778$, not 0.75.
+
+4. False alarm rate (predict M, actual N) > miss rate (predict N or B, actual M). TRUE or FALSE?
+   1) [CORRECT] False
+        -> False alarms = 10; misses = $0 + 10 = 10$. Equal, not strictly greater.
+   2) [WRONG]   True
+        -> Both counts are 10; the model is equally likely to make each error type.
+
+5. Precision for class N is higher than Precision for class B. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $P_N = 70/80 = 0.875 > P_B = 60/90 \approx 0.667$.
+   2) [WRONG]   False
+        -> N's precision (0.875) is clearly larger than B's (0.667).
+
+
+## Question 4: Maximum Likelihood Estimation  (5 questions)
+--------------------------------------------------
+
+1. The MLE for $\mu$ is the sample mean $\frac{1}{n}\sum_{i=1}^n x_i$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> Maximising the Gaussian log-likelihood over $\mu$ yields the sample mean.
+   2) [WRONG]   False
+        -> Setting $\partial \ell / \partial \mu = 0$ directly gives $\hat{\mu} = \bar{x}$.
+
+2. The MLE for variance is an unbiased estimator of the true population variance. TRUE or FALSE?
+   1) [CORRECT] False
+        -> The MLE is $\hat{\sigma}^2 = \frac{1}{n}\sum(x_i-\hat{\mu})^2$, which is biased by a factor $(n-1)/n$.
+   2) [WRONG]   True
+        -> The unbiased estimator uses $n-1$ in the denominator (Bessel's correction), not $n$.
+
+3. If the true mean $\mu$ were known, the MLE for variance would be $\frac{1}{n-1}\sum_{i=1}^n (x_i-\mu)^2$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> With $\mu$ known, the MLE is $\frac{1}{n}\sum(x_i-\mu)^2$ (no Bessel's correction needed).
+   2) [WRONG]   True
+        -> The $1/(n-1)$ correction appears only when $\mu$ is estimated; here it is known, so $1/n$ is correct.
+
+4. The log-likelihood function is a linear function of $\sigma^2$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> $\ell \propto -\frac{n}{2}\ln\sigma^2 - \frac{1}{2\sigma^2}\sum(x_i-\mu)^2$; both $\ln\sigma^2$ and $1/\sigma^2$ are nonlinear.
+   2) [WRONG]   True
+        -> The log-likelihood contains $\ln\sigma^2$ and $1/\sigma^2$ terms, which are not linear.
+
+5. The maximum of the likelihood $L$ is achieved at the same $(\mu, \sigma^2)$ as the maximum of $\log L$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $\log$ is a strictly increasing function, so $\arg\max L = \arg\max \log L$.
+   2) [WRONG]   False
+        -> Monotone transformations preserve the location of the maximum.
+
+
+## Question 5: Decision Tree Splits  (5 questions)
+--------------------------------------------------
+
+Parent: 50 positive, 50 negative (100 total).
+$v_1$: 30 samples (20+, 10−). $v_2$: 30 samples (10+, 20−). $v_3$: 40 samples (20+, 20−).
+
+1. The Gini index of the parent node is exactly $0.5$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $\text{Gini} = 1 - (0.5^2 + 0.5^2) = 0.5$.
+   2) [WRONG]   False
+        -> A perfectly balanced 50/50 split is the maximum Gini value of 0.5.
+
+2. $\text{Gini}(v_3) > \text{Gini}(v_1)$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $\text{Gini}(v_3) = 0.5$ (50/50); $\text{Gini}(v_1) = 1-(2/3)^2-(1/3)^2 = 4/9 \approx 0.444$.
+   2) [WRONG]   False
+        -> $v_3$ has a 50/50 split (Gini=0.5) while $v_1$ is more skewed (Gini≈0.444).
+
+3. $\text{Gini}(v_1) = \text{Gini}(v_2)$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> Both have a 2:1 split ratio, just mirrored: Gini = $1-(2/3)^2-(1/3)^2 = 4/9$ for both.
+   2) [WRONG]   False
+        -> The Gini index depends only on class proportions, not which class is majority.
+
+4. The Information Gain for this split is greater than $0.15$ bits. TRUE or FALSE?
+   1) [CORRECT] False
+        -> $H(\text{parent}) = 1$ bit; weighted child entropy $\approx 0.951$ bit; $IG \approx 0.049$ bits $< 0.15$.
+   2) [WRONG]   True
+        -> The gain is only about 0.049 bits; $v_3$ is maximally impure, dragging the gain down.
+
+5. The reduction in Gini index from parent to children is greater than $0.04$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> Weighted child Gini $= 0.3 \cdot \frac{4}{9} + 0.3 \cdot \frac{4}{9} + 0.4 \cdot 0.5 \approx 0.467$; reduction $= 0.5 - 0.467 = 0.033 < 0.04$.
+   2) [WRONG]   True
+        -> The Gini reduction is approximately 0.033, which is below 0.04.
+
+
+## Question 6: Naïve Bayes Classifier  (5 questions)
+--------------------------------------------------
+
+60 bought (B=1): 42 tech (C=T), 48 discount (D=1).
+40 did not buy (B=0): 12 tech, 8 discount.
+
+1. The prior probability $P(B=1) = 0.6$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> 60 buyers out of 100 users.
+   2) [WRONG]   False
+        -> 60/100 = 0.6 directly from the training frequencies.
+
+2. The Naïve Bayes assumption implies $P(C, D) = P(C) \cdot P(D)$ (marginal independence). TRUE or FALSE?
+   1) [CORRECT] False
+        -> Naïve Bayes assumes $P(C, D | B) = P(C|B)P(D|B)$ (conditional independence), which does not imply marginal independence.
+   2) [WRONG]   True
+        -> Conditional independence given the class does not imply unconditional (marginal) independence.
+
+3. For $C=F, D=0$, Naïve Bayes predicts $B=1$ (will buy). TRUE or FALSE?
+   1) [CORRECT] False
+        -> $P(B=1|\cdot) \propto 0.3 \cdot 0.2 \cdot 0.6 = 0.036$; $P(B=0|\cdot) \propto 0.7 \cdot 0.8 \cdot 0.4 = 0.224$; predicts B=0.
+   2) [WRONG]   True
+        -> The fashion + no-discount combination strongly predicts non-purchase.
+
+4. $P(D=1 | B=1) = 0.8$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> 48 out of 60 buyers had a discount: $48/60 = 0.8$.
+   2) [WRONG]   False
+        -> 48 buyers with discount divided by 60 total buyers = 0.8 exactly.
+
+5. The ratio $P(B=1|C=T,D=1) / P(B=0|C=T,D=1) = 14$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $\frac{0.7 \cdot 0.8 \cdot 0.6}{0.3 \cdot 0.2 \cdot 0.4} = \frac{0.336}{0.024} = 14$.
+   2) [WRONG]   False
+        -> Numerator: $P(C=T|B=1) \cdot P(D=1|B=1) \cdot P(B=1) = 0.336$; denominator: $0.024$; ratio = 14.
+
+
+## Question 7: Bias–Variance Trade-off  (5 questions)
+--------------------------------------------------
+
+1. As max_depth $\to \infty$, training error decreases but variance typically increases. TRUE or FALSE?
+   1) [CORRECT] True
+        -> A deeper tree memorises noise, lowering training error while increasing sensitivity to the specific dataset.
+   2) [WRONG]   False
+        -> This is the canonical overfitting behaviour: training error falls, generalisation variance rises.
+
+2. A decision tree with max_depth = 1 has higher variance and lower bias than deeper trees. TRUE or FALSE?
+   1) [CORRECT] False
+        -> A depth-1 stump is a highly constrained model: high bias, low variance.
+   2) [WRONG]   True
+        -> Simpler models (smaller depth) have more bias and less variance, not the reverse.
+
+3. Increasing the minimum number of samples required to split a node increases model bias. TRUE or FALSE?
+   1) [CORRECT] True
+        -> A higher minimum forces coarser splits, reducing model flexibility and increasing systematic underfitting (bias).
+   2) [WRONG]   False
+        -> Any regularisation that constrains the tree reduces variance but increases bias.
+
+4. The bias component of error represents the sensitivity of predictions to small fluctuations in the training set. TRUE or FALSE?
+   1) [CORRECT] False
+        -> That is the definition of variance. Bias is the systematic error from incorrect assumptions about the function being learned.
+   2) [WRONG]   True
+        -> Sensitivity to training-set fluctuations is variance, not bias.
+
+5. If a decision tree perfectly classifies every noisy training example, the test error is dominated by variance and irreducible error. TRUE or FALSE?
+   1) [CORRECT] True
+        -> Perfect training accuracy on noisy data signals overfitting; the dominant test-error terms are variance (fitting noise) and irreducible (label noise).
+   2) [WRONG]   False
+        -> Perfect training accuracy on noisy data is exactly the scenario where variance and irreducible error dominate.
+
+
+## Question 8: PyTorch Logistic Regression  (5 questions)
+--------------------------------------------------
+
+Model: \texttt{nn.Linear(5, 1)} — 5 weights + 1 bias. Training loop: 20 epochs over \texttt{train\_dl}.
+
+1. The model contains exactly 6 learnable parameters. TRUE or FALSE?
+   1) [CORRECT] True
+        -> \texttt{nn.Linear(5,1)}: weight matrix has 5 entries, bias has 1, total = 6.
+   2) [WRONG]   False
+        -> 5 input weights + 1 bias term = 6 parameters.
+
+2. The code is certain to perform exactly 20 gradient updates. TRUE or FALSE?
+   1) [CORRECT] False
+        -> The number of updates is 20 × (number of batches per epoch). If \texttt{train\_dl} has $k$ batches, there are $20k$ updates.
+   2) [WRONG]   True
+        -> The inner loop over \texttt{train\_dl} means one update per batch, not one per epoch.
+
+3. The code works for all classification problems regardless of the number of class labels. TRUE or FALSE?
+   1) [CORRECT] False
+        -> \texttt{BCEWithLogitsLoss} is binary cross-entropy; it only handles 2-class problems. Multi-class tasks require a different loss and output layer.
+   2) [WRONG]   True
+        -> Binary cross-entropy is defined only for binary targets; multi-class outputs would cause a dimension/semantic mismatch.
+
+4. \texttt{loss.backward()} computes gradients for weights but not for the bias. TRUE or FALSE?
+   1) [CORRECT] False
+        -> \texttt{backward()} computes gradients for all \texttt{requires\_grad} parameters, including the bias.
+   2) [WRONG]   True
+        -> Autograd differentiates through all learnable parameters; bias is no exception.
+
+5. The optimizer uses the stochastic version of gradient descent. TRUE or FALSE?
+   1) [CORRECT] True
+        -> \texttt{torch.optim.SGD} with mini-batches from a dataloader is stochastic (or mini-batch) gradient descent.
+   2) [WRONG]   False
+        -> Using batches from \texttt{train\_dl} means gradient estimates are noisy (stochastic), not computed over the full dataset.
+
+
+## Question 9: Gaussian Classifier Code  (5 questions)
+--------------------------------------------------
+
+Code implements a Quadratic Discriminant Analysis (QDA)-like classifier with per-class mean and covariance.
+
+1. The implementation calculates a class-specific covariance matrix for each class. TRUE or FALSE?
+   1) [CORRECT] True
+        -> \texttt{self.Sigma[k] = numpy.cov(X\_k.T)} computes a separate $D \times D$ covariance for each class $k$.
+   2) [WRONG]   False
+        -> The loop over $k$ in \texttt{learn()} clearly fits per-class covariance matrices.
+
+2. \texttt{log\_gaussian} will work correctly when $D=10$ but a class has only 5 training samples. TRUE or FALSE?
+   1) [CORRECT] False
+        -> With 5 samples in 10 dimensions, the covariance matrix is rank-deficient (singular); \texttt{numpy.linalg.inv} will fail or return garbage.
+   2) [WRONG]   True
+        -> A covariance estimated from 5 samples in 10 dimensions is rank at most 4 and cannot be inverted correctly.
+
+3. \texttt{log\_gaussian} does not return the mathematically exact log-density of a multivariate Gaussian. TRUE or FALSE?
+   1) [CORRECT] True
+        -> The constant term $-\frac{D}{2}\ln(2\pi)$ is missing, so the output is the log-density up to a constant.
+   2) [WRONG]   False
+        -> The full log-density includes $-\frac{D}{2}\ln(2\pi)$, which the code omits.
+
+4. The implementation uses gradient descent for parameter optimisation. TRUE or FALSE?
+   1) [CORRECT] False
+        -> \texttt{learn()} computes closed-form MLE estimates (sample mean and covariance). No gradient descent is involved.
+   2) [WRONG]   True
+        -> The parameters are computed analytically in one pass, not iteratively via gradient descent.
+
+5. If \texttt{learn()} used a shared covariance for all classes, the decision boundaries would be non-linear. TRUE or FALSE?
+   1) [CORRECT] False
+        -> A shared covariance (Linear Discriminant Analysis) yields linear decision boundaries. Non-linear boundaries arise from class-specific covariances (QDA).
+   2) [WRONG]   True
+        -> Shared covariance $\Rightarrow$ LDA $\Rightarrow$ linear boundaries; non-linear boundaries require per-class covariances.
+
+
+## Question 10: Empirical Risk Minimisation  (5 questions)
+--------------------------------------------------
+
+1. $R_{\text{emp}}(h)$ is an unbiased estimator of $R(h)$ for a fixed $h$, but is biased for the ERM hypothesis $\hat{h}$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> For a fixed $h$, $\mathbb{E}[R_{\text{emp}}(h)] = R(h)$. But $\hat{h}$ is selected to minimise $R_{\text{emp}}$, causing optimistic bias.
+   2) [WRONG]   False
+        -> Selection bias: choosing $\hat{h}$ to minimise training error makes $R_{\text{emp}}(\hat{h})$ a downward-biased estimate of $R(\hat{h})$.
+
+2. The generalisation gap is guaranteed to decrease at a linear rate as $n$ increases. TRUE or FALSE?
+   1) [CORRECT] False
+        -> Finite-class bounds give a gap of $O(1/\sqrt{n})$ (sub-linear), not $O(1/n)$ (linear).
+   2) [WRONG]   True
+        -> Standard PAC bounds decay as $\sqrt{1/n}$, not $1/n$.
+
+3. If $\mathcal{H} \subseteq \mathcal{H}'$, then $R_{\text{emp}}(\hat{h}') \leq R_{\text{emp}}(\hat{h})$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $\mathcal{H}'$ contains all of $\mathcal{H}$, so the ERM on $\mathcal{H}'$ can always do at least as well on training data.
+   2) [WRONG]   False
+        -> ERM on a strictly larger class can only keep or lower the empirical error; it cannot increase it.
+
+4. To ensure $R(\hat{h}) \leq R_{\text{emp}}(\hat{h}) + \epsilon$ with confidence $1-\delta$, $n$ must scale linearly with $|\mathcal{H}|$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> The required $n$ scales as $\ln|\mathcal{H}|$ (logarithmically), not linearly.
+   2) [WRONG]   True
+        -> From the finite-class bound: $n \geq \frac{1}{2\epsilon^2}(\ln|\mathcal{H}|+\ln(1/\delta))$, which is logarithmic in $|\mathcal{H}|$.
+
+5. The bound $R(\hat{h}) \leq R_{\text{emp}}(\hat{h}) + \sqrt{\frac{\ln|\mathcal{H}|+\ln(1/\delta)}{2n}}$ holds for all finite $\mathcal{H}$ but not necessarily all distributions. TRUE or FALSE?
+   1) [CORRECT] False
+        -> The bound is distribution-free; it holds for all finite $\mathcal{H}$ and for all data distributions.
+   2) [WRONG]   True
+        -> The derivation (union bound + Hoeffding) places no restriction on the distribution.
+
+
+## Question 11: No-Free-Lunch Theorem  (5 questions)
+--------------------------------------------------
+
+1. If algorithm A has smaller generalisation error than B on one dataset, A is expected to outperform B across all distributions. TRUE or FALSE?
+   1) [CORRECT] False
+        -> NFL says no algorithm is universally superior; for every distribution where A beats B, there is another where B beats A.
+   2) [WRONG]   True
+        -> This directly contradicts the No-Free-Lunch theorem.
+
+2. For any learning algorithm, there exists at least one distribution where its error cannot be reduced by enlarging the training set. TRUE or FALSE?
+   1) [CORRECT] True
+        -> NFL guarantees the existence of an adversarial distribution where any algorithm performs no better than random, regardless of sample size.
+   2) [WRONG]   False
+        -> This is precisely what the NFL theorem establishes.
+
+3. NFL implies that inductive bias is necessary for better-than-random generalisation on any specific task. TRUE or FALSE?
+   1) [CORRECT] True
+        -> Without assumptions (inductive bias) about the target distribution, no algorithm can generalise better than chance in the worst case.
+   2) [WRONG]   False
+        -> The NFL theorem is the formal argument that inductive bias is unavoidable for learning.
+
+4. The NFL theorem applies only to parametric predictors, not non-parametric models like k-NN. TRUE or FALSE?
+   1) [CORRECT] False
+        -> NFL applies to all learning algorithms regardless of whether they are parametric or non-parametric.
+   2) [WRONG]   True
+        -> The theorem makes no restriction on the class of algorithms; k-NN is covered too.
+
+5. NFL implies that for any distribution with a perfect classifier, any algorithm converges to zero generalisation error if $m \geq |\mathcal{X}|/8$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> NFL says the opposite: even when a perfect classifier exists, there are distributions where any algorithm can fail. NFL gives no convergence guarantee.
+   2) [WRONG]   True
+        -> NFL is an impossibility result, not a convergence guarantee.
+
+
+## Question 12: PAC Learning  (5 questions)
+--------------------------------------------------
+
+1. A concept is PAC learnable if a polynomial-in-$1/\epsilon$ sample size suffices to achieve error $< \epsilon$ with probability $\geq 1-\delta$, for fixed $\delta$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> This captures the PAC definition (polynomial in both $1/\epsilon$ and $1/\delta$, but fixing $\delta$ makes the $1/\epsilon$ part sufficient for this statement).
+   2) [WRONG]   False
+        -> PAC learnability requires polynomial sample complexity; this statement correctly captures the $\epsilon$-accuracy condition.
+
+2. A larger hypothesis space $\mathcal{H}$ requires fewer training samples for the same error level. TRUE or FALSE?
+   1) [CORRECT] False
+        -> Larger $|\mathcal{H}|$ increases sample complexity (more hypotheses to rule out); the bound grows as $\ln|\mathcal{H}|$.
+   2) [WRONG]   True
+        -> Sample complexity increases with $|\mathcal{H}|$, not decreases.
+
+3. Sample complexity for a finite $\mathcal{H}$ grows logarithmically in $|\mathcal{H}|$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $n \geq \frac{1}{\epsilon}\left(\ln|\mathcal{H}| + \ln\frac{1}{\delta}\right)$; the dependence on $|\mathcal{H}|$ is logarithmic.
+   2) [WRONG]   False
+        -> The union bound argument yields a $\ln|\mathcal{H}|$ term, not a linear or polynomial term.
+
+4. The confidence parameter $\delta$ is the maximum rate of incorrect label predictions at generalisation time. TRUE or FALSE?
+   1) [CORRECT] False
+        -> $\delta$ is the probability that the learning algorithm fails to find a good hypothesis (failure probability), not an error rate. $\epsilon$ is the error rate.
+   2) [WRONG]   True
+        -> $\delta$ bounds the probability of algorithm failure, while $\epsilon$ bounds the prediction error.
+
+5. The Fundamental Theorem of Statistical Learning states that $\mathcal{H}$ is PAC learnable iff its VC dimension is finite. TRUE or FALSE?
+   1) [CORRECT] True
+        -> This is the Fundamental Theorem: finiteness of VC dimension characterises PAC learnability for binary classification.
+   2) [WRONG]   False
+        -> The equivalence between finite VC dimension and PAC learnability is a central result in learning theory.
+
+
+## Question 13: VC Dimension of Axis-Aligned Boxes in $\mathbb{R}^3$  (5 questions)
+--------------------------------------------------
+
+For axis-aligned boxes in $\mathbb{R}^d$, the VC dimension is $2d$. In $\mathbb{R}^3$: $\text{VC}(\mathcal{H}) = 6$.
+
+1. There exists a set of 6 points in $\mathbb{R}^3$ that can be shattered by $\mathcal{H}$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> $\text{VC}(\mathcal{H}) = 6$ means by definition that some set of 6 points is shattered.
+   2) [WRONG]   False
+        -> The VC dimension equals the size of the largest shatterable set; 6 is achievable.
+
+2. $\text{VC}(\mathcal{H}) = 4$ in $\mathbb{R}^3$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> Each axis contributes 2 degrees of freedom (min and max); so $\text{VC} = 2 \times 3 = 6$, not 4.
+   2) [WRONG]   True
+        -> The formula is $2d$, not $d+1$; in 3D that gives 6.
+
+3. There exists a set of 4 points in $\mathbb{R}^3$ for which every labelling is achievable by some box. TRUE or FALSE?
+   1) [CORRECT] True
+        -> Since $\text{VC}(\mathcal{H}) = 6 \geq 4$, any set of 4 points from the shattered 6-point set can be shattered.
+   2) [WRONG]   False
+        -> A VC dimension of 6 guarantees that sets of size $\leq 6$ can be shattered (for the right configuration).
+
+4. For $n > 10$, the growth function satisfies $\Pi_\mathcal{H}(n) < 2^n$. TRUE or FALSE?
+   1) [CORRECT] True
+        -> By Sauer's lemma, for $n > \text{VC}(\mathcal{H}) = 6$, the growth function is strictly less than $2^n$. $10 > 6$ suffices.
+   2) [WRONG]   False
+        -> Sauer's lemma guarantees $\Pi_\mathcal{H}(n) < 2^n$ for all $n > \text{VC}(\mathcal{H})$, so certainly for $n > 10$.
+
+5. There does not exist a set of 5 points in $\mathbb{R}^3$ that can be shattered by $\mathcal{H}$. TRUE or FALSE?
+   1) [CORRECT] False
+        -> $\text{VC}(\mathcal{H}) = 6$ implies there are shatterable sets of size 5 (any 5 from the 6-point shattered set).
+   2) [WRONG]   True
+        -> The VC dimension of 6 means sets of size 5 can certainly be shattered.

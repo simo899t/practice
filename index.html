@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .course-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .course-item:last-child { border-bottom: none; }
+
+    .course-toggle {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 1.1rem 1.25rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Georgia', serif;
+      font-size: 1rem;
+      color: var(--text);
+    }
+    .course-toggle:hover { background: #f5f3ef; }
+
+    .course-toggle .arrow {
+      font-size: 0.75rem;
+      color: var(--muted);
+      transition: transform 0.2s;
+      font-family: sans-serif;
+    }
+    .course-item.open .arrow { transform: rotate(90deg); }
+
+    .course-meta {
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-left: 0.5rem;
+    }
+
+    .test-list {
+      display: none;
+      flex-direction: column;
+      border-top: 1px solid var(--border);
+    }
+    .course-item.open .test-list { display: flex; }
+
+    .test-link {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 0.92rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+    }
+    .test-link:last-child { border-bottom: none; }
+    .test-link:hover { background: #f0f4fb; }
+
+    .menu-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--surface);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Exam Practice</h1>
+      <p class="subtitle">Select a course, then choose a test</p>
+    </header>
+    <main>
+      <div class="menu-card" id="course-menu"></div>
+    </main>
+  </div>
+
+  <script>
+    async function loadCourses() {
+      const res = await fetch('courses/manifest.json');
+      const courses = await res.json();
+      const menu = document.getElementById('course-menu');
+
+      courses.forEach(course => {
+        const item = document.createElement('div');
+        item.className = 'course-item';
+
+        const btn = document.createElement('button');
+        btn.className = 'course-toggle';
+        btn.innerHTML = `
+          <span><strong>${course.title}</strong><span class="course-meta"> — ${course.description}</span></span>
+          <span class="arrow">▶</span>
+        `;
+        btn.addEventListener('click', () => item.classList.toggle('open'));
+
+        const list = document.createElement('div');
+        list.className = 'test-list';
+        course.tests.forEach(t => {
+          const a = document.createElement('a');
+          a.className = 'test-link';
+          a.href = `quiz.html?file=${encodeURIComponent(t.file)}&title=${encodeURIComponent(t.title)}`;
+          a.textContent = t.title;
+          list.appendChild(a);
+        });
+
+        item.appendChild(btn);
+        item.appendChild(list);
+        menu.appendChild(item);
+      });
+    }
+
+    loadCourses();
+  </script>
+</body>
+</html>

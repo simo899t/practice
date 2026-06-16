@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI507 · AI &amp; Society — Exam Drill</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root{
+  --canvas:#E8E8EC;
+  --card:#FFFFFF;
+  --ink:#161720;
+  --muted:#6A6B76;
+  --line:#DEDEE5;
+  --iris:#4B47E0;
+  --iris-soft:#EBEAFD;
+  --good:#147A57;
+  --good-soft:#E3F2EB;
+  --bad:#C0413A;
+  --bad-soft:#FAE9E7;
+  --radius:16px;
+  --grotesk:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;
+  --inter:'Inter',ui-sans-serif,system-ui,sans-serif;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:var(--inter);
+  color:var(--ink);
+  background-color:var(--canvas);
+  background-image:radial-gradient(var(--line) 1px, transparent 1px);
+  background-size:22px 22px;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  padding:24px 16px 64px;
+}
+
+.wrap{max-width:640px;margin:0 auto;}
+
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;gap:12px;}
+.brand{font-family:var(--grotesk);font-weight:600;letter-spacing:.06em;font-size:13px;color:var(--ink);text-transform:uppercase;display:flex;align-items:center;gap:8px;}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--iris);display:inline-block;}
+.meta{font-family:var(--grotesk);font-size:13px;color:var(--muted);display:flex;gap:14px;align-items:baseline;}
+.meta b{color:var(--ink);font-weight:600;}
+
+.track{height:5px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:22px;}
+.fill{height:100%;width:0;background:var(--iris);border-radius:99px;transition:width .35s cubic-bezier(.4,0,.2,1);}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;box-shadow:0 1px 0 rgba(22,23,32,.02),0 12px 30px -22px rgba(22,23,32,.25);}
+
+.eyebrow{font-family:var(--grotesk);text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--iris);font-weight:600;margin:0 0 10px;}
+h1{font-family:var(--grotesk);font-weight:600;font-size:27px;line-height:1.2;margin:0 0 10px;letter-spacing:-.01em;}
+.lede{color:var(--muted);font-size:15px;line-height:1.6;margin:0 0 22px;}
+
+.section-label{font-family:var(--grotesk);font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:24px 0 10px;display:flex;justify-content:space-between;align-items:center;}
+.mini-actions{display:flex;gap:14px;}
+.mini-actions button{background:none;border:none;font-family:var(--inter);font-size:12px;color:var(--iris);cursor:pointer;padding:0;font-weight:600;}
+.mini-actions button:hover{text-decoration:underline;}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{font-family:var(--inter);font-size:13px;font-weight:500;padding:8px 13px;border-radius:99px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:all .12s;display:flex;align-items:center;gap:7px;user-select:none;}
+.chip .n{font-family:var(--grotesk);font-size:11px;color:var(--muted);}
+.chip[aria-pressed="true"]{background:var(--iris);border-color:var(--iris);color:#fff;}
+.chip[aria-pressed="true"] .n{color:rgba(255,255,255,.75);}
+.chip:hover{border-color:var(--iris);}
+
+.len-row{display:flex;gap:8px;flex-wrap:wrap;}
+.len{flex:1;min-width:64px;font-family:var(--grotesk);font-weight:600;font-size:15px;padding:12px 8px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:all .12s;text-align:center;}
+.len[aria-pressed="true"]{background:var(--iris);border-color:var(--iris);color:#fff;}
+.len:hover{border-color:var(--iris);}
+.len small{display:block;font-family:var(--inter);font-weight:500;font-size:11px;color:var(--muted);margin-top:2px;}
+.len[aria-pressed="true"] small{color:rgba(255,255,255,.8);}
+
+.cta{width:100%;margin-top:26px;padding:15px;border:none;border-radius:13px;background:var(--ink);color:#fff;font-family:var(--grotesk);font-weight:600;font-size:16px;cursor:pointer;transition:transform .08s,opacity .15s;letter-spacing:.01em;}
+.cta:hover{opacity:.92;}
+.cta:active{transform:translateY(1px);}
+.cta:disabled{opacity:.4;cursor:not-allowed;}
+
+.hint{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center;line-height:1.5;}
+kbd{font-family:var(--grotesk);font-size:11px;background:var(--canvas);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--ink);}
+
+.q-topic{display:inline-block;font-family:var(--grotesk);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--iris);background:var(--iris-soft);padding:5px 11px;border-radius:99px;margin-bottom:16px;}
+.q-text{font-size:21px;line-height:1.42;font-weight:500;margin:0 0 22px;letter-spacing:-.005em;}
+
+.opts{display:flex;flex-direction:column;gap:10px;}
+.opt{display:flex;gap:13px;align-items:flex-start;text-align:left;width:100%;padding:15px 16px;border-radius:13px;border:1px solid var(--line);background:#fff;font-family:var(--inter);font-size:15.5px;line-height:1.4;color:var(--ink);cursor:pointer;transition:border-color .12s,background .12s;}
+.opt:hover:not(:disabled){border-color:var(--iris);background:#FCFCFF;}
+.opt:disabled{cursor:default;}
+.opt .key{font-family:var(--grotesk);font-weight:600;font-size:13px;flex:0 0 auto;width:24px;height:24px;border-radius:7px;background:var(--canvas);color:var(--muted);display:flex;align-items:center;justify-content:center;margin-top:-1px;transition:all .12s;}
+.opt .body{flex:1;padding-top:1px;}
+.opt.correct{border-color:var(--good);background:var(--good-soft);}
+.opt.correct .key{background:var(--good);color:#fff;}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft);}
+.opt.wrong .key{background:var(--bad);color:#fff;}
+.opt.dim{opacity:.5;}
+.opt .mark{margin-left:auto;font-family:var(--grotesk);font-weight:700;font-size:15px;flex:0 0 auto;padding-top:1px;}
+.opt.correct .mark{color:var(--good);}
+.opt.wrong .mark{color:var(--bad);}
+
+.why{margin-top:18px;border-left:3px solid var(--iris);background:var(--iris-soft);border-radius:0 12px 12px 0;padding:14px 16px;font-size:14.5px;line-height:1.55;color:var(--ink);animation:rise .25s ease;}
+.why.good{border-left-color:var(--good);background:var(--good-soft);}
+.why.bad{border-left-color:var(--bad);background:var(--bad-soft);}
+.why b{font-family:var(--grotesk);font-weight:600;}
+.why .lab{font-family:var(--grotesk);font-weight:600;}
+.why .chosen .lab{color:var(--bad);}
+.why .answer{margin-top:11px;padding-top:11px;border-top:1px dashed rgba(22,23,32,.18);}
+.why .answer .lab{color:var(--good);}
+@keyframes rise{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:22px;gap:12px;}
+.scoreline{font-family:var(--grotesk);font-size:13px;color:var(--muted);}
+.scoreline b{color:var(--ink);}
+.next{padding:12px 22px;border:none;border-radius:11px;background:var(--ink);color:#fff;font-family:var(--grotesk);font-weight:600;font-size:15px;cursor:pointer;transition:opacity .15s,transform .08s;}
+.next:hover{opacity:.92;}
+.next:active{transform:translateY(1px);}
+
+.result-score{font-family:var(--grotesk);font-weight:700;font-size:54px;line-height:1;letter-spacing:-.02em;margin:6px 0 2px;}
+.result-sub{color:var(--muted);font-size:15px;margin:0 0 4px;}
+.bd-row{display:flex;align-items:center;gap:12px;margin:9px 0;font-size:13.5px;}
+.bd-name{flex:0 0 168px;color:var(--ink);font-weight:500;}
+.bd-bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden;}
+.bd-bar i{display:block;height:100%;background:var(--iris);border-radius:99px;}
+.bd-num{flex:0 0 46px;text-align:right;font-family:var(--grotesk);font-size:12.5px;color:var(--muted);}
+
+.miss{margin-top:8px;border-top:1px solid var(--line);padding-top:16px;}
+.miss-item{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px;}
+.miss-q{font-size:14.5px;font-weight:500;line-height:1.4;margin:0 0 9px;}
+.miss-chose{font-size:13.5px;line-height:1.5;color:var(--bad);font-weight:500;margin:0 0 7px;}
+.miss-chose span{font-family:var(--grotesk);}
+.miss-a{font-size:13.5px;line-height:1.5;color:var(--good);font-weight:500;margin:0;}
+.miss-a span{font-family:var(--grotesk);}
+.miss-topic{font-family:var(--grotesk);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--iris);margin-bottom:6px;}
+
+.btn-row{display:flex;gap:10px;margin-top:22px;}
+.btn-row button{flex:1;padding:14px;border-radius:12px;font-family:var(--grotesk);font-weight:600;font-size:15px;cursor:pointer;transition:opacity .15s,transform .08s;}
+.btn-row button:active{transform:translateY(1px);}
+.btn-primary{border:none;background:var(--ink);color:#fff;}
+.btn-primary:hover{opacity:.92;}
+.btn-ghost{border:1px solid var(--line);background:#fff;color:var(--ink);}
+.btn-ghost:hover{border-color:var(--iris);}
+.btn-ghost:disabled{opacity:.4;cursor:not-allowed;}
+
+.collapse-btn{width:100%;text-align:left;background:none;border:none;cursor:pointer;font-family:var(--grotesk);font-size:13px;font-weight:600;color:var(--iris);padding:6px 0;display:flex;align-items:center;gap:6px;}
+.foot{text-align:center;font-size:11.5px;color:var(--muted);margin-top:26px;font-family:var(--grotesk);letter-spacing:.04em;}
+
+@media (max-width:480px){
+  .card{padding:22px 18px;}
+  .q-text{font-size:19px;}
+  .bd-name{flex-basis:120px;font-size:12.5px;}
+  .result-score{font-size:46px;}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand"><span class="dot"></span>AI507 · AI &amp; Society</div>
+    <div class="meta" id="meta"></div>
+  </div>
+  <div class="track"><div class="fill" id="fill"></div></div>
+  <div id="app"></div>
+  <div class="foot">Conceptual drill · every option explained · no names, no dates</div>
+</div>
+
+<script>
+/* =========================================================================
+   QUESTION BANK
+   Each option is [text, note]. o[0] is ALWAYS the correct option; options
+   are shuffled at render. The note for the correct option says why it's
+   right; the note for each distractor says what that option actually is, so
+   a wrong pick tells you which concept you confused it with.
+   ========================================================================= */
+const TOPICS = [
+  "Intelligence & Cognition","Learning & Memory","Social Cognition","Communication",
+  "Innovation","Robots & HRI","Recommender Systems","Chatbots & Bots",
+  "Smart Things & IoT","Social Media & Hate Speech","AI in Politics & Misinformation",
+  "AI, Work & Sustainability","AI in Health & Medicine","Entertainment & Games"
+];
+
+const QUESTIONS = [
+/* ===== 0 · Intelligence & Cognition ===== */
+{t:0,q:"A pigeon gets food whenever it happens to peck a lever, and pecking then increases. This is…",o:[
+ ["operant conditioning","Right — a consequence (food) shapes the behaviour."],
+ ["classical conditioning","That's pairing two stimuli (tone→food), not learning from a consequence."],
+ ["configural learning","That's learning several features together as one bundle."],
+ ["temporal contiguity","That's association formed when two things are active close together in time."]]},
+{t:0,q:"A tone repeatedly sounds just before food, until the tone alone triggers salivation. This is…",o:[
+ ["classical conditioning","Right — a neutral stimulus paired with food comes to trigger the response."],
+ ["operant conditioning","That's learning driven by the consequences of a behaviour, not stimulus pairing."],
+ ["extinction","That's a learned link fading when the consequence stops."],
+ ["generalization","That's transferring a response to similar new situations."]]},
+{t:0,q:"Describing the mind as distributed units spread across layers, rather than a manipulator of explicit symbols, is the…",o:[
+ ["connectionist model","Right — mind as distributed units across layers."],
+ ["symbolic model","That's the 'mind as computer' view: explicit symbols manipulated by rules."],
+ ["behaviourist model","That explains behaviour by stimulus–response learning, ignoring inner representations."],
+ ["nativist model","That's the view that key knowledge is innate rather than learned."]]},
+{t:0,q:"Doing well on one cognitive test predicts doing well on others. This shared factor is…",o:[
+ ["g (general intelligence)","Right — the shared variance across cognitive tasks."],
+ ["fluid intelligence","That's reasoning speed on novel problems — a sub-factor, not the general one."],
+ ["crystallized intelligence","That's accumulated knowledge — a sub-factor, not the general one."],
+ ["working memory","That's short-term holding/manipulation of information, not the general factor."]]},
+{t:0,q:"Accumulated vocabulary, facts and problem-solving experience make up which kind of intelligence?",o:[
+ ["crystallized","Right — accumulated knowledge and experience."],
+ ["fluid","That's raw processing speed on new problems, which declines with age."],
+ ["general (g)","That's the overall factor across tasks, not the knowledge-specific one."],
+ ["emotional","'Emotional intelligence' isn't the knowledge/experience factor described."]]},
+{t:0,q:"The raw speed of information processing, which tends to decline with age, is…",o:[
+ ["fluid intelligence","Right — processing speed, which declines with age."],
+ ["crystallized intelligence","That's knowledge/experience, which holds up better over time."],
+ ["the g factor","That's the general factor across tasks, not the speed-specific one."],
+ ["self-efficacy","That's a belief about your own capability, not a type of intelligence."]]},
+{t:0,q:"Carefully working line-by-line through a tax form draws mainly on…",o:[
+ ["System II — slow, effortful, deliberate","Right — the effortful mode for complex, step-by-step work."],
+ ["System I — fast, automatic, intuitive","That's quick, automatic processing — the opposite of effortful checking."],
+ ["priming — spreading activation","That's one cue making related ideas easier to access, not deliberate reasoning."],
+ ["crystallized intelligence","That's stored knowledge, not a mode of effortful processing."]]},
+{t:0,q:"In the broad cognitive-science sense, 'cognition' is best captured as…",o:[
+ ["all processing of input, even imagined input with no stimulus present","Right — the definition is deliberately broad."],
+ ["conscious reasoning, as opposed to automatic habit","Too narrow — cognition includes automatic processes too."],
+ ["the emotional appraisal that makes events feel significant","That describes affect/emotion, not the broad processing definition."],
+ ["the accurate storage and retrieval of past experience","That's just memory — one part of cognition, not the whole."]]},
+{t:0,q:"The lecture contrasts humans as 'epistemic agents' with current LLMs framed as…",o:[
+ ["'stochastic parrots' producing plausible continuations","Right — fluent output without genuine understanding."],
+ ["'symbolic reasoners' applying logical rules","That describes old rule-based AI, not how LLMs are framed here."],
+ ["'connectionist minds' with genuine understanding","The framing is the opposite — plausible output isn't true understanding."],
+ ["'behaviourist learners' driven by reward","That's reinforcement-style learning, not the 'parrot' critique."]]},
+{t:0,q:"Across a population, IQ scores are distributed…",o:[
+ ["normally, with most people near the middle","Right — a bell curve centred near 100."],
+ ["uniformly, with every score equally common","A flat distribution doesn't match how IQ scores cluster."],
+ ["bimodally, clustering at two extremes","Scores don't pile up at two peaks."],
+ ["skewed, with most people scoring high","Most people are near the average, not bunched at the top."]]},
+{t:0,q:"Behaviour is generally most resistant to extinction when reinforcement is…",o:[
+ ["occasional and unpredictable","Right — intermittent reinforcement makes behaviour most extinction-resistant."],
+ ["present on every single trial","Constant reinforcement learns fast but extinguishes fast once it stops."],
+ ["given only on the very first trial","A single early reward rarely sustains behaviour."],
+ ["tied to a fixed daily clock","A clock schedule isn't what stabilises a learned response here."]]},
+
+/* ===== 1 · Learning & Memory ===== */
+{t:1,q:"The standard model divides memory into three stages:",o:[
+ ["encoding, storage, retrieval","Right — the three classic memory stages."],
+ ["input, processing, output","That's a generic computing flow, not the memory model's terms."],
+ ["perception, attention, recall","Real processes, but not the three-stage memory model."],
+ ["sensing, encoding, forgetting","Forgetting isn't one of the three stages; retrieval is."]]},
+{t:1,q:"The classic 'magical number' for short-term memory capacity is about…",o:[
+ ["seven items, give or take two","Right — 7±2 (often estimated closer to 4–5 today)."],
+ ["twenty items, give or take five","Far too high for short-term capacity."],
+ ["around fifty items","Nowhere near short-term capacity."],
+ ["effectively unlimited","Short-term memory is sharply limited, not unlimited."]]},
+{t:1,q:"A memory 'schema' is best described as…",o:[
+ ["an organised structure of prior experience that guides recall","Right — we keep the gist and reconstruct details."],
+ ["a verbatim recording of a single event","Memory isn't a literal recording; schemas reshape recall."],
+ ["a temporary buffer holding a few items","That's working/short-term memory, not a schema."],
+ ["an automatic stimulus–response reflex","That's conditioning, not an organised knowledge structure."]]},
+{t:1,q:"If a cue already reliably predicts an outcome, the brain often ignores a redundant new cue. This is…",o:[
+ ["competition among predictors","Right — a redundant cue is blocked to save effort."],
+ ["configural learning","That's binding features into one bundle, not blocking a redundant cue."],
+ ["generalization","That's transfer to similar situations, not ignoring redundant cues."],
+ ["temporal contiguity","That's association from co-activation in time."]]},
+{t:1,q:"Recognising a face as a single 'bundle' rather than learning hair and eyes separately illustrates…",o:[
+ ["configural learning","Right — features stored together as a bundle."],
+ ["competition among predictors","That's ignoring a redundant cue, not bundling features."],
+ ["extinction","That's a learned link fading when reinforcement stops."],
+ ["temporal contiguity","That's association from things co-occurring in time."]]},
+{t:1,q:"Two events activated close together in time become associated (the principle behind priming and Word2Vec). This is…",o:[
+ ["temporal contiguity","Right — co-activated processes get linked."],
+ ["competition among predictors","That's blocking a redundant cue."],
+ ["generalization","That's transfer to similar situations."],
+ ["unlearning","That's weakening an existing association, not forming one."]]},
+{t:1,q:"Applying knowledge to a new situation, more easily the more alike the two are, is…",o:[
+ ["generalization","Right — transfer is easier the more similar the situations."],
+ ["extinction","That's a response fading when its consequence stops."],
+ ["configural learning","That's binding features into a bundle."],
+ ["encoding","That's getting information into memory in the first place."]]},
+{t:1,q:"A cue repeatedly presented without its usual consequence gradually loses its effect. This is…",o:[
+ ["extinction","Right — the link fades when the consequence stops appearing."],
+ ["configural learning","That's bundling features together."],
+ ["generalization","That's transferring a response to similar situations."],
+ ["encoding","That's the initial processing of input into memory."]]},
+{t:1,q:"The brain 'filling in' the retinal blind spot is used to argue that perception is best described as…",o:[
+ ["construction — the brain builds and completes the input","Right — perception organises and fills in the signal."],
+ ["transmission — the eye relays an exact image","The eye doesn't pass on a perfect copy; the brain constructs."],
+ ["selection — only colour information is kept","Perception isn't just colour filtering."],
+ ["reflection — the world is mirrored unchanged","Perception actively shapes input, not mirrors it."]]},
+{t:1,q:"Viewers counting passes fail to notice a person in a gorilla suit walk through. This is…",o:[
+ ["inattentional blindness","Right — an obvious event missed because attention is elsewhere."],
+ ["the retinal blind spot","That's a physiological gap the brain fills, not an attention failure."],
+ ["the Stroop effect","That's interference between word meaning and ink colour."],
+ ["the magic number","That's short-term memory capacity (7±2)."]]},
+{t:1,q:"Looking facts up online tends to make people…",o:[
+ ["overrate their own knowledge and memory","Right — people mistake the internet's knowledge for their own."],
+ ["accurately gauge what they truly know","Access to search actually distorts self-assessment."],
+ ["underrate their own abilities","The bias runs the other way — overconfidence."],
+ ["forget how to search effectively","Searching doesn't degrade search skill here; it inflates self-knowledge."]]},
+{t:1,q:"In the essay-writing study, heavier reliance on an LLM was linked with…",o:[
+ ["lower ownership and weaker memory of the text","Right — less load, but less ownership, quality and recall ('cognitive debt')."],
+ ["higher ownership and stronger recall","It's the reverse — reliance lowered ownership and recall."],
+ ["better grades with greater effort","Reliance reduced effort, and didn't simply raise grades."],
+ ["no change on any measure","There were clear differences in ownership and memory."]]},
+{t:1,q:"Information processed 'deeply' by meaning, rather than 'superficially' by surface form, is later…",o:[
+ ["recalled better","Right — meaning-based processing aids retrieval."],
+ ["recalled worse","Deep processing helps, not hurts, recall."],
+ ["recalled only with strong cues","Deep encoding makes recall easier, not cue-dependent."],
+ ["recalled identically","Depth of processing does change later recall."]]},
+
+/* ===== 2 · Social Cognition ===== */
+{t:2,q:"Neuroscience suggests the brain's 'default' activity is closest to…",o:[
+ ["thinking about other people","Right — social cognition seems to be the brain's default."],
+ ["perceiving inanimate objects","Object perception actually deactivates social-processing regions."],
+ ["solving mathematical problems","That's effortful, task-driven activity, not the resting default."],
+ ["resting with no thought at all","The 'default' isn't blank — it drifts to social thinking."]]},
+{t:2,q:"The aspect of the self that is active in a specific situation (e.g., at work vs at home) is the…",o:[
+ ["working self-concept","Right — the self active in the current situation."],
+ ["relational self-concept","That's the self defined through close relationships."],
+ ["feared self","That's what you could become but hope to avoid."],
+ ["ideal self","That's who you aspire to be."]]},
+{t:2,q:"The part of the self emerging from close relationships (parents, partner, friends) is the…",o:[
+ ["relational self-concept","Right — self defined through close bonds."],
+ ["working self-concept","That's whichever self is active right now."],
+ ["possible self","That's a future self you imagine becoming."],
+ ["ought self","That's who you feel you should be (duties)."]]},
+{t:2,q:"'What you could become but hope to avoid' is your…",o:[
+ ["feared self","Right — what you could become and want to avoid."],
+ ["possible self","That's what you could become and hope for."],
+ ["ideal self","That's who you aspire to be."],
+ ["ought self","That's who you feel you should be."]]},
+{t:2,q:"A gap between the actual self and the ideal self produces which motivational focus?",o:[
+ ["promotion focus (pursuing gains)","Right — actual/ideal gaps activate approach toward gains."],
+ ["prevention focus (avoiding losses)","That comes from actual/ought gaps, not actual/ideal."],
+ ["accuracy focus","That's a need to see yourself correctly, not a discrepancy focus."],
+ ["consistency focus","That's a need to confirm your existing self-view."]]},
+{t:2,q:"A gap between the actual self and the ought self produces which motivational focus?",o:[
+ ["prevention focus (avoiding failure)","Right — actual/ought gaps drive avoidance of failure."],
+ ["promotion focus (pursuing ideals)","That comes from actual/ideal gaps instead."],
+ ["self-enhancement focus","That's the drive to feel good about yourself."],
+ ["relational focus","Not a self-discrepancy outcome."]]},
+{t:2,q:"The belief that you can perform a behaviour and that it will actually work is…",o:[
+ ["self-efficacy","Right — perceived control plus the belief the behaviour is effective."],
+ ["self-esteem","That's overall self-worth, not a task-specific capability belief."],
+ ["self-enhancement","That's the motive to feel good about yourself."],
+ ["self-discrepancy","That's a gap between actual and ideal/ought selves."]]},
+{t:2,q:"Recalling our successes more than our failures, and judging ourselves as less biased than others, serves the need for…",o:[
+ ["self-enhancement","Right — the motive to feel good about yourself."],
+ ["accuracy","That's wanting a correct self-view, even if unflattering."],
+ ["consistency","That's wanting feedback that fits your existing self-view."],
+ ["continuity","That's a sense of staying the same self over time."]]},
+{t:2,q:"Seeking situations that confirm how we already see ourselves reflects the need for…",o:[
+ ["consistency","Right — favour situations that confirm your self-view."],
+ ["accuracy","That's wanting the truth about yourself."],
+ ["self-enhancement","That's wanting to feel good, not just consistent."],
+ ["affiliation","That's the need to belong, not self-confirmation."]]},
+{t:2,q:"Explaining a stranger's stumble by their character rather than the icy pavement is the…",o:[
+ ["fundamental attribution error","Right — over-weighting the person, under-weighting the situation."],
+ ["self-serving bias","That's crediting yourself for success, blaming the situation for failure."],
+ ["spiral of silence","That's staying quiet when you feel in the minority."],
+ ["stereotype content model","That's judging groups on warmth and competence."]]},
+{t:2,q:"The Stereotype Content Model places groups on two dimensions:",o:[
+ ["warmth and competence","Right — the two SCM dimensions."],
+ ["status and power","Related predictors, but not the two SCM axes themselves."],
+ ["age and gender","Demographics, not the SCM dimensions."],
+ ["trust and fear","Reactions that follow from warmth/competence, not the axes."]]},
+{t:2,q:"Which is a classic condition for intergroup contact to reduce prejudice?",o:[
+ ["the groups must cooperate toward shared goals","Right — required cooperation is a key condition."],
+ ["the groups must stay anonymous to each other","Anonymity isn't a contact condition; equal-status acquaintance is."],
+ ["one group must clearly outrank the other","Equal status is required — not a hierarchy."],
+ ["contact must be brief and one-off","Meaningful, supported contact works better than a one-off."]]},
+{t:2,q:"Categorising yourself as a group member, which then shapes in- and out-group perception, is the core of…",o:[
+ ["social identity / self-categorization theory","Right — group membership structures perception."],
+ ["self-discrepancy theory","That's about gaps between actual and ideal/ought selves."],
+ ["the media equation","That's treating media/computers as real social actors."],
+ ["uses and gratifications","That's why people actively choose media."]]},
+{t:2,q:"The human tendency toward self-confirming views is echoed in AI by…",o:[
+ ["sycophancy — agreeing with and flattering the user","Right — AI echoing the user's views."],
+ ["the uncanny valley — eeriness near human likeness","That's about near-human appearance, not agreement."],
+ ["the cold-start problem — too little user data","That's a recommender data issue."],
+ ["the spiral of silence — minorities staying quiet","That's about withholding minority opinions."]]},
+
+/* ===== 3 · Communication ===== */
+{t:3,q:"'One cannot not communicate' captures which property of communication?",o:[
+ ["it is inevitable","Right — even silence communicates."],
+ ["it is episodic","That's the idea that any 'start' point is arbitrary."],
+ ["it is constructed","That's meaning arising from shared symbols."],
+ ["it is contextual","That's meaning depending on context, not the 'cannot not' point."]]},
+{t:3,q:"Calling the start of a conversation an 'arbitrary cut' (like photographing dance) reflects that communication is…",o:[
+ ["episodic","Right — boundaries on a continuous flow are arbitrary."],
+ ["inevitable","That's 'one cannot not communicate'."],
+ ["constructed","That's meaning built from shared symbols."],
+ ["mediated","That's communication carried through a medium."]]},
+{t:3,q:"Meaning arising from the symbols both sender and receiver assign reflects that communication is…",o:[
+ ["constructed","Right — meaning comes from symbols both parties assign."],
+ ["inevitable","That's the 'cannot not communicate' axiom."],
+ ["episodic","That's the arbitrary-boundary idea."],
+ ["contextual","That's meaning shifting with context."]]},
+{t:3,q:"The classic communication formula is: who / says what / in which channel / to whom / with…",o:[
+ ["what effect","Right — '…with what effect' closes the formula."],
+ ["what intention","Intention isn't the formula's final term; effect is."],
+ ["what budget","Not part of the formula."],
+ ["what emotion","Not part of the formula."]]},
+{t:3,q:"A single person talking themselves through a problem is which level of communication?",o:[
+ ["intrapersonal","Right — communication 'in your head'."],
+ ["interpersonal","That's one-to-one between people."],
+ ["group","That's many-to-many within a group."],
+ ["mass","That's one-to-many to a broad audience."]]},
+{t:3,q:"One sender reaching a large, dispersed audience at once is…",o:[
+ ["mass communication","Right — one sender to a broad, dispersed audience."],
+ ["interpersonal communication","That's one-to-one."],
+ ["intrapersonal communication","That's within one person."],
+ ["group communication","That's within a bounded group."]]},
+{t:3,q:"In speech production, settling the abstract message before any words are chosen is the…",o:[
+ ["conceptualization stage","Right — deciding the message before words."],
+ ["formulation stage","That's selecting words and grammar for the message."],
+ ["phonological encoding stage","That's specifying the sounds of the chosen words."],
+ ["articulation stage","That's moving the muscles to produce speech."]]},
+{t:3,q:"In speech production, activating the muscles to actually produce sound is the…",o:[
+ ["articulation stage","Right — activating the speech muscles."],
+ ["conceptualization stage","That's forming the message before words."],
+ ["formulation stage","That's choosing words and structure."],
+ ["comprehension stage","That's understanding speech, not producing it."]]},
+{t:3,q:"In conversation, 'common ground' refers to…",o:[
+ ["the shared beliefs and knowledge participants assume","Right — what makes a message understandable."],
+ ["the richness of the chosen medium","That's media richness, not shared knowledge."],
+ ["the speaker's deliberate self-presentation","That's the hyperpersonal idea."],
+ ["the norms of an anonymous group","That's the SIDE model's focus."]]},
+{t:3,q:"Common ground built specifically from two people's shared history is…",o:[
+ ["personal common ground","Right — built from two people's shared history."],
+ ["communal common ground","That's shared knowledge from common culture/group membership."],
+ ["an injunctive norm","That's what people approve of, not shared knowledge."],
+ ["a descriptive norm","That's what people actually do, not shared knowledge."]]},
+{t:3,q:"In a transformer, 'self-attention' computes…",o:[
+ ["weights for each word relative to the other words (context)","Right — context weighting."],
+ ["a single point of conscious focus","That's human attention (focus), not the transformer mechanism."],
+ ["the emotional tone of a sentence","Self-attention isn't sentiment analysis."],
+ ["the grammatical mood of a clause","Not what self-attention computes."]]},
+{t:3,q:"The lecture distinguishes human attention as ___ and algorithmic attention as ___.",o:[
+ ["focus ; context","Right — human attention = focus, algorithmic = context."],
+ ["context ; focus","Reversed — it's focus then context."],
+ ["memory ; perception","Not the contrast being drawn."],
+ ["input ; output","Not the contrast being drawn."]]},
+{t:3,q:"Media Richness Theory ranks channels by how many cues they carry and…",o:[
+ ["how quickly feedback is possible","Right — cues plus immediacy of feedback."],
+ ["how many people they reach","That's reach, a different dimension."],
+ ["how permanent the record is","That's persistence, not richness."],
+ ["how anonymous users stay","That's anonymity, not richness."]]},
+{t:3,q:"The SIDE model predicts that in anonymous online groups, behaviour follows…",o:[
+ ["the salient norms of that group","Right — deindividuation shifts behaviour toward group norms."],
+ ["the richness of the medium","That's media richness theory."],
+ ["each user's stable traits","SIDE says identity is less personal and more group-based here."],
+ ["the speaker's working memory","Unrelated to SIDE."]]},
+{t:3,q:"Compared with face-to-face, the hyperpersonal model predicts online self-presentation is…",o:[
+ ["more controlled and idealised","Right — selective, intentional self-presentation."],
+ ["more spontaneous and unfiltered","The opposite — online self-presentation is more managed."],
+ ["more anonymous but less deliberate","It's more deliberate, not less."],
+ ["more cue-rich but less personal","Cues are fewer but used more strategically and personally."]]},
+{t:3,q:"Shifting your accent or vocabulary to match your conversation partner is…",o:[
+ ["convergence","Right — adjusting toward the other's style."],
+ ["divergence","That's emphasising your own distinct style."],
+ ["over-accommodation","That's adjusting too much (e.g., patronising 'baby talk')."],
+ ["under-accommodation","That's failing to adjust enough."]]},
+{t:3,q:"Deliberately stressing your own distinct speech style to signal group identity is…",o:[
+ ["divergence","Right — stressing your own style to mark identity."],
+ ["convergence","That's moving toward the other's style."],
+ ["common ground","That's shared assumed knowledge."],
+ ["priming","That's one cue making related ideas more accessible."]]},
+
+/* ===== 4 · Innovation ===== */
+{t:4,q:"'Creative destruction' describes how innovation…",o:[
+ ["upsets the existing economic equilibrium","Right — innovation disrupts the status quo."],
+ ["locks in the existing equilibrium","The opposite — it breaks, not freezes, the equilibrium."],
+ ["leaves the equilibrium untouched","Innovation changes the equilibrium by definition here."],
+ ["restores a previously lost equilibrium","It creates new disruption, not restoration."]]},
+{t:4,q:"Which is one of the 'three big No's' of social innovation?",o:[
+ ["causing negative social outcomes","Right — one of the three 'No's'."],
+ ["generating a financial profit","Profit isn't one of the 'No's'."],
+ ["scaling to many users","Scaling isn't a 'No'."],
+ ["relying on new technology","Using tech isn't itself a 'No'."]]},
+{t:4,q:"A frequent reason a social innovation has 'no impact' is that…",o:[
+ ["the real user and use-case were never studied","Right — failing to study the user is a common cause."],
+ ["it was launched too cautiously","Caution isn't the cited reason for no impact."],
+ ["it relied too little on technology","Low-tech isn't the issue; misunderstanding users is."],
+ ["it was evaluated too thoroughly","Over-evaluation isn't the failure mode described."]]},
+{t:4,q:"'Diffusion of innovations' refers to how an innovation…",o:[
+ ["spreads through a social system over time","Right — communication of an innovation over time."],
+ ["is invented and prototyped","That's the creation phase, not diffusion."],
+ ["is patented and licensed","That's legal/commercial protection, not spread."],
+ ["is withdrawn from a market","That's the opposite of diffusion."]]},
+{t:4,q:"The Technology Acceptance Model centres on perceived usefulness and perceived…",o:[
+ ["ease of use","Right — usefulness plus ease of use."],
+ ["cost of ownership","Not one of TAM's two core beliefs."],
+ ["social prestige","Not a TAM core belief."],
+ ["environmental impact","Not a TAM core belief."]]},
+{t:4,q:"In the theory of planned behaviour, intentions stem from attitudes ('want'), control ('can'), and…",o:[
+ ["perceived norms ('should')","Right — want / should / can."],
+ ["perceived cost ('afford')","Cost isn't one of the three TPB determinants."],
+ ["perceived risk ('fear')","Risk isn't one of the three."],
+ ["perceived novelty ('new')","Novelty isn't one of the three."]]},
+{t:4,q:"In the theory of planned behaviour, 'perceived behavioural control' maps to which everyday word?",o:[
+ ["can","Right — perceived behavioural control = 'can'."],
+ ["want","That maps to attitudes."],
+ ["should","That maps to perceived norms."],
+ ["must","Not one of the want/should/can trio."]]},
+{t:4,q:"UTAUT frames acceptance as weighing expected performance against expected…",o:[
+ ["effort","Right — performance vs effort expectancy."],
+ ["cost","Not the paired expectancy in UTAUT's core."],
+ ["risk","Not the paired expectancy here."],
+ ["delay","Not the paired expectancy here."]]},
+{t:4,q:"What is a strength of AI for fact-checking?",o:[
+ ["media monitoring","Right — a promising strength of LLMs here."],
+ ["avoiding copyright issues","The reverse — copyright is a problem, not a strength."],
+ ["a lack of political bias","LLMs can carry bias, so this isn't a strength."],
+ ["identifying the true sources of a statement","Models often misattribute sources."]]},
+{t:4,q:"A core technical reason fact-checking resists full automation is that models tend to…",o:[
+ ["hallucinate and cite the wrong sources","Right — a core reason not to fully automate."],
+ ["refuse to answer any questions","Models do answer; the issue is wrong/confident answers."],
+ ["translate every text inaccurately","Translation isn't the cited limitation."],
+ ["crash under heavy load","Reliability isn't the conceptual limit here."]]},
+{t:4,q:"Which task belongs to fact-checking?",o:[
+ ["gathering evidence to verify a claim","Right — verification is a core fact-checking task."],
+ ["maximising a post's engagement","That's an engagement goal, not fact-checking."],
+ ["personalising a user's news feed","That's recommendation, not fact-checking."],
+ ["optimising ad placement","That's advertising, not fact-checking."]]},
+{t:4,q:"The lecture links trust in a technology partly to perceived…",o:[
+ ["cognitive similarity to the user","Right — perceived similarity supports trust."],
+ ["physical size of the device","Size isn't the trust factor named."],
+ ["price of the subscription","Price isn't the trust factor named."],
+ ["age of the technology","Age isn't the trust factor named."]]},
+
+/* ===== 5 · Robots & HRI ===== */
+{t:5,q:"When a machine only supplies the energy while a human still performs the task, this is…",o:[
+ ["mechanization","Right — machine supplies energy, human still acts."],
+ ["machinization","That's the machine taking over the process itself."],
+ ["autonomous control","Not the term used for energy-only assistance."],
+ ["algorithmisation","Not the term used here."]]},
+{t:5,q:"When a machine (partly) takes over the process itself, this is…",o:[
+ ["machinization","Right — the machine (partly) performs the process."],
+ ["mechanization","That's energy-only assistance with the human still acting."],
+ ["avatar control","That's a human directly steering a digital figure."],
+ ["embodiment","That's giving an agent a physical/virtual body."]]},
+{t:5,q:"A digital figure directly controlled by a human is best called an…",o:[
+ ["avatar","Right — a human-controlled digital figure."],
+ ["agent","That acts autonomously, without human steering."],
+ ["embodied robot","That's a physical body, not the control distinction."],
+ ["interface","That's the contact surface, not the figure itself."]]},
+{t:5,q:"A system that acts autonomously, without a human steering each action, is an…",o:[
+ ["agent","Right — acts autonomously."],
+ ["avatar","That's human-controlled."],
+ ["embodiment","That's having a body, not autonomy."],
+ ["algorithm","Too generic — the term for an autonomous actor is 'agent'."]]},
+{t:5,q:"People watching two triangles move and saying one 'bullies' the other shows we…",o:[
+ ["attribute intentions to moving shapes","Right — we read social intent into mere motion."],
+ ["ignore objects that move","We do the opposite — we animate them socially."],
+ ["perceive motion only when trained","Social attribution is automatic, not trained."],
+ ["reserve intention for living things","We extend intention even to shapes."]]},
+{t:5,q:"The 'Computers Are Social Actors' (CASA) paradigm shows that people…",o:[
+ ["behave politely toward computers, as toward people","Right — social rules carry over to computers."],
+ ["behave more rudely toward computers than people","People apply politeness, not extra rudeness."],
+ ["show no social response to computers at all","CASA shows clear social responses."],
+ ["respond socially only to embodied robots","Even plain computers elicit social responses."]]},
+{t:5,q:"The 'ethopoeia' approach holds that social responses to machines require…",o:[
+ ["only minimal social cues","Right — minimal cues suffice for social responses."],
+ ["a fully human-like body","No full human likeness is needed."],
+ ["proof the machine is conscious","Consciousness isn't required for the effect."],
+ ["a long prior relationship","No prior relationship is needed."]]},
+{t:5,q:"In the Threshold Model of Social Influence, when perceived agency is high (an agent), behavioural realism…",o:[
+ ["matters less","Right — with high agency, realism matters less."],
+ ["matters more","It's the low-agency (avatar) case where realism matters more."],
+ ["becomes the only factor","Realism isn't the sole driver."],
+ ["reverses the effect of agency","It doesn't flip agency's role."]]},
+{t:5,q:"The uncanny valley predicts that likability…",o:[
+ ["drops near the almost-human range","Right — the eerie dip."],
+ ["climbs straight up with human-likeness","There's a dip, not a steady rise."],
+ ["peaks for clearly mechanical robots","The peak isn't at the mechanical end."],
+ ["stays flat across all designs","Likability varies with human-likeness."]]},
+{t:5,q:"One experimental way to improve evaluations of an advanced robot was to show it…",o:[
+ ["in a harmful situation, eliciting empathy","Right — empathy raised evaluations."],
+ ["performing flawless calculations","Competence displays weren't the manipulation."],
+ ["in a brightly lit studio","Lighting wasn't the factor."],
+ ["beside a much larger robot","Comparison size wasn't the factor."]]},
+{t:5,q:"A robot that expressed sadness (vs neutral or happy) was rated as…",o:[
+ ["less intelligent and less credible","Right — the sad robot was judged down."],
+ ["more intelligent and more credible","It was the reverse for sadness."],
+ ["more human but less likeable","The finding was about intelligence/credibility."],
+ ["equally credible across conditions","Emotions weren't perceived equally."]]},
+{t:5,q:"Invoking old myths like the Golem and the 'three laws of robotics' mainly shows that…",o:[
+ ["the idea of the artificial other is very old","Right — ancient myths to modern fiction."],
+ ["robots today follow three hard-coded laws","Fictional 'laws' aren't built into real robots."],
+ ["robots are physically unable to harm people","Not the point — and not true."],
+ ["robotics is purely a 21st-century field","The idea long predates modern robotics."]]},
+
+/* ===== 6 · Recommender Systems ===== */
+{t:6,q:"A system that recommends items because 'users like you also liked them' uses…",o:[
+ ["collaborative filtering","Right — 'similar users' drives the recommendation."],
+ ["content-based filtering","That uses item features (genre, keywords), not similar users."],
+ ["a hybrid approach","That combines both methods, not the pure 'similar users' case."],
+ ["random sampling","That's no personalisation at all."]]},
+{t:6,q:"A system that recommends items sharing genres or keywords with what you watched uses…",o:[
+ ["content-based filtering","Right — matches item features to what you watched."],
+ ["collaborative filtering","That uses similar users' behaviour, not item features."],
+ ["a chronological feed","That just orders by time."],
+ ["a hybrid approach","That mixes both methods."]]},
+{t:6,q:"A recommender struggling because a brand-new user has no history faces the…",o:[
+ ["cold-start problem","Right — too little data on a new user/item."],
+ ["over-smoothing problem","That's a graph-network issue, not recommenders."],
+ ["uncanny-valley problem","That's about near-human robots."],
+ ["spiral-of-silence problem","That's about withholding minority opinions."]]},
+{t:6,q:"Besides cold start, a frequent criticism of collaborative filtering is that it…",o:[
+ ["needs behavioural data that can intrude on privacy","Right — data-hungry and privacy-sensitive."],
+ ["recommends only items the user already knows","That's closer to content-based's homogeneity issue."],
+ ["works only for brand-new items","Collaborative filtering actually struggles with brand-new items."],
+ ["ignores other users entirely","It relies on other users — that's its basis."]]},
+{t:6,q:"A typical weakness of content-based filtering is that it…",o:[
+ ["recommends overly similar, predictable items","Right — homogeneous suggestions."],
+ ["depends heavily on other users' behaviour","That's collaborative filtering's dependency."],
+ ["handles new users better than new items","It's the reverse — better for new items than new users."],
+ ["needs no information about the items","It needs item features to work."]]},
+{t:6,q:"Experiments on 'algorithm appreciation' found that people often…",o:[
+ ["lean toward algorithmic over human advice","Right — often trusted more than human advice."],
+ ["reject algorithmic advice on principle","That's algorithm aversion, not appreciation."],
+ ["weigh both sources exactly equally","The finding shows a lean, not parity."],
+ ["prefer whichever advice is cheaper","Cost isn't the driver in this effect."]]},
+{t:6,q:"'Algorithmic literacy' is best described as…",o:[
+ ["awareness of, and ability to critically evaluate, algorithms","Right — knowing and judging how they work."],
+ ["the skill of writing recommender code","That's programming, not literacy in this sense."],
+ ["trust in an algorithm's neutrality","Literacy includes critical scrutiny, not blind trust."],
+ ["memorising a platform's terms of service","Legal memorisation isn't algorithmic literacy."]]},
+{t:6,q:"A recommender built 'around human values' would prioritise…",o:[
+ ["supporting well-being and public discourse","Right — values beyond engagement."],
+ ["maximising time spent on the platform","That's the engagement-first design being critiqued."],
+ ["minimising the platform's serving costs","Cost-cutting isn't a human-values goal here."],
+ ["surfacing the most controversial posts","Controversy-chasing is the opposite of value-based design."]]},
+{t:6,q:"When tested against personalised feeds, purely chronological feeds tended to produce…",o:[
+ ["lower engagement","Right — chronological feeds drew less engagement."],
+ ["higher engagement","Personalised feeds, not chronological, drove more engagement."],
+ ["identical engagement","There was a measurable difference."],
+ ["no measurable activity","Users still engaged, just less."]]},
+{t:6,q:"A standing challenge for multimodal (video) recommenders is that…",o:[
+ ["each modality is processed then fused, which is hard","Right — combining modalities is the challenge."],
+ ["audio is the easiest, best-studied modality","Audio is actually under-studied here."],
+ ["text and images cannot be combined","They can be combined — that's the point of multimodal."],
+ ["they require no labelled data","They generally need substantial data."]]},
+
+/* ===== 7 · Chatbots & Bots ===== */
+{t:7,q:"The Turing Test deems a machine 'intelligent' when an interrogator…",o:[
+ ["is fooled by it about as often as by a deceiving human","Right — the imitation-game criterion."],
+ ["can list every fact the machine knows","Knowledge listing isn't the test."],
+ ["watches it solve a maths problem","Problem-solving display isn't the criterion."],
+ ["confirms it has a physical body","Embodiment isn't part of the test."]]},
+{t:7,q:"ELIZA generated replies by…",o:[
+ ["matching keywords to fixed scripts","Right — keyword spotting plus scripts."],
+ ["predicting the next word with a transformer","That's a modern LLM, not ELIZA."],
+ ["reasoning about the user's goals","ELIZA didn't model goals."],
+ ["retrieving facts from a database","ELIZA didn't do fact retrieval."]]},
+{t:7,q:"ELIZA is an example of which kind of AI?",o:[
+ ["symbolic, rule-based","Right — fixed rules, not learned representations."],
+ ["connectionist, deep-learning","That's neural nets, not ELIZA."],
+ ["reinforcement-learning","ELIZA didn't learn from reward."],
+ ["generative pre-trained","That's modern LLMs, not ELIZA."]]},
+{t:7,q:"A 'social bot' is best defined as…",o:[
+ ["a (semi-)automated agent communicating in online media","Right — the working definition."],
+ ["any human who simply posts a great deal","A heavy human poster isn't a bot."],
+ ["a robot used for factory automation","That's physical automation, not a social bot."],
+ ["a platform's content-moderation policy","A policy isn't an agent."]]},
+{t:7,q:"Analyses of real social bots before the GPT era found most performed…",o:[
+ ["simple amplification, like fake followers and shares","Right — mostly crude amplifiers."],
+ ["sophisticated human-like conversation","Most early bots weren't conversational."],
+ ["advanced multimodal reasoning","Far beyond what early bots did."],
+ ["autonomous investigative journalism","Not something bots performed."]]},
+{t:7,q:"Most untrustworthy election content tends to come from…",o:[
+ ["a small number of coordinated, hyperactive accounts","Right — a few accounts dominate."],
+ ["the average user, spread evenly","It's concentrated, not evenly spread."],
+ ["verified news organisations","Not the main source of deviant content."],
+ ["accounts that post very rarely","Superspreaders post a lot, not rarely."]]},
+{t:7,q:"The spiral of silence predicts that people who feel in the minority will…",o:[
+ ["stay quiet for fear of isolation","Right — perceived minorities self-silence."],
+ ["speak up more to win others over","The model predicts silence, not louder advocacy."],
+ ["seek out only like-minded media","That's selective exposure, a different idea."],
+ ["switch to non-political topics","Not the predicted behaviour."]]},
+{t:7,q:"A documented limit of the spiral of silence is that…",o:[
+ ["the morally convinced often speak up anyway","Right — moral conviction overrides the spiral."],
+ ["it applies identically to everyone","Individual differences matter; it's not uniform."],
+ ["it grows stronger in fragmented media","Fragmentation tends to weaken it, not strengthen it."],
+ ["it has never been observed","It has been observed, just with limits."]]},
+{t:7,q:"The 'Habermas Machine' experiment showed an LLM could…",o:[
+ ["write group statements people preferred to human-written ones","Right — group-approval-maximising statements."],
+ ["detect every bot in a network","Not what the system did."],
+ ["run an election from start to finish","Not its function."],
+ ["replace all human moderators","Not the claim."]]},
+{t:7,q:"In one study, a bot replied to hateful comments by…",o:[
+ ["reminding users of civic norms or calling for empathy","Right — norm reminders and empathy appeals."],
+ ["deleting the offending accounts","The bot persuaded, it didn't moderate/delete."],
+ ["publicly ranking the worst users","Not its approach."],
+ ["rewarding hateful posts with reach","The opposite of counter-speech."]]},
+{t:7,q:"A flagged risk of companion chatbots is that they are designed for…",o:[
+ ["intimacy and over-disclosure by users","Right — designed to draw out disclosure."],
+ ["maximal factual accuracy","Accuracy isn't the design aim flagged."],
+ ["minimal user engagement","Companion bots aim for more engagement, not less."],
+ ["strict emotional distance","They cultivate closeness, not distance."]]},
+
+/* ===== 8 · Smart Things & IoT ===== */
+{t:8,q:"An IoT 'smart' object combines sensors, networking, and…",o:[
+ ["autonomous decision-making","Right — sensors + networking + autonomy."],
+ ["a human operator per task","Autonomy is the point — not a human per task."],
+ ["purely mechanical gears","Smart objects are computational, not just mechanical."],
+ ["a permanent wired connection","Networking needn't be permanently wired."]]},
+{t:8,q:"Which area was NOT presented as being 'smartified'?",o:[
+ ["mandatory crisis preparation for citizens","Right — not one of the smartified domains shown."],
+ ["clothing","Smartified as wearables."],
+ ["heating","Smartified in smart homes."],
+ ["harvesting","Smartified in smart farming."]]},
+{t:8,q:"What makes the privacy risks of the Internet of Things distinctive?",o:[
+ ["it reaches into private spaces and often affects several people at once","Right — the distinctive IoT privacy issue."],
+ ["distributed denial-of-service attacks","That's a security risk, not a privacy one."],
+ ["none — the risks are the same as for any digital tech","The trap — IoT risks are distinctive."],
+ ["a general lack of awareness among users","Real, but not unique to IoT."]]},
+{t:8,q:"Combining many mundane smart-device signals to infer something sensitive (e.g., depression) is the risk of…",o:[
+ ["aggregating multiple data streams","Right — combined signals reveal sensitive facts."],
+ ["a single device failing","Failure isn't the privacy mechanism here."],
+ ["the cold-start problem","That's a recommender data issue."],
+ ["creative destruction","That's an innovation/economics concept."]]},
+{t:8,q:"The Mirai botnet showed insecure smart devices could be…",o:[
+ ["hijacked into a botnet for large DDoS attacks","Right — insecure devices weaponised."],
+ ["patched automatically over the air","Insecure devices often aren't patched — that's the problem."],
+ ["used only for energy savings","Mirai was about attacks, not efficiency."],
+ ["isolated from the internet by default","They were internet-exposed, enabling the botnet."]]},
+{t:8,q:"AirTags became a stalking tool because they…",o:[
+ ["broadcast a Bluetooth signal other devices can detect","Right — Bluetooth detectability enabled stalking."],
+ ["connect directly to the open internet","AirTags aren't internet-connected."],
+ ["store the owner's medical records","They don't store such data."],
+ ["contain a hidden microphone","They have no microphone."]]},
+{t:8,q:"One privacy model says self-disclosure follows a personal weighing of access, control, and…",o:[
+ ["trust and norms","Right — access, control, and trust/norms."],
+ ["battery and storage","Hardware specs aren't part of the model."],
+ ["follower count","Not a factor in the model."],
+ ["screen size","Not a factor in the model."]]},
+{t:8,q:"The lecture notes children tend to be…",o:[
+ ["better at interpersonal than commercial privacy","Right — they manage social privacy better than data privacy."],
+ ["better at commercial than interpersonal privacy","Reversed — commercial privacy is the weaker area."],
+ ["unable to evade any monitoring","They do develop workarounds."],
+ ["the main drivers of 'sharenting'","Sharenting is done by parents, not children."]]},
+{t:8,q:"Wearable self-tracking is framed as a 'laboratory of the self' because it…",o:[
+ ["offers new answers to 'who am I' through one's own data","Right — a 'laboratory of the self'."],
+ ["eliminates the need for any privacy","It raises privacy issues, not removes them."],
+ ["replaces medical diagnosis entirely","It supports, not replaces, diagnosis."],
+ ["works only for elite athletes","It's broadly used, not elite-only."]]},
+{t:8,q:"A fitness tracker sending data to a phone app that then forwards it to a server is which IoT mode?",o:[
+ ["device-to-gateway-to-cloud","Right — phone as gateway, then cloud."],
+ ["device-to-device","That's direct device links, with no gateway/cloud."],
+ ["device-to-cloud","That skips the intermediary gateway."],
+ ["back-end data sharing","That's servers sharing data, not this path."]]},
+
+/* ===== 9 · Social Media & Hate Speech ===== */
+{t:9,q:"Overt slurs or direct threats of violence are…",o:[
+ ["explicit hate speech","Right — overt slurs/threats."],
+ ["implicit hate speech","That's stereotyping or hate framed as a joke."],
+ ["a platform affordance","That's an action possibility, not a speech type."],
+ ["counter-speech","That's speech opposing hate."]]},
+{t:9,q:"Negative stereotyping, or hate framed as a joke, is…",o:[
+ ["implicit hate speech","Right — stereotyping or 'just joking' hate."],
+ ["explicit hate speech","That's overt slurs/threats."],
+ ["a platform feature","That's a built-in tool, not a speech type."],
+ ["a content modality","That's a channel (text/image), not a speech type."]]},
+{t:9,q:"On a platform, the retweet button itself is a ___, while the visibility it enables is an ___.",o:[
+ ["feature ; affordance","Right — the button is built-in; visibility is the possibility it enables."],
+ ["affordance ; feature","Reversed."],
+ ["modality ; feature","Wrong categories."],
+ ["norm ; modality","Wrong categories."]]},
+{t:9,q:"Which of these is an 'affordance' rather than a 'feature'?",o:[
+ ["anonymity","Right — an action possibility, not a built-in button."],
+ ["the like button","That's a feature."],
+ ["the comment box","That's a feature."],
+ ["the share button","That's a feature."]]},
+{t:9,q:"Anonymity is thought to ease hate speech mainly through…",o:[
+ ["the online disinhibition effect","Right — anonymity loosens restraint."],
+ ["media richness","That's about cue-carrying capacity."],
+ ["the cold-start problem","That's a recommender data issue."],
+ ["the uncanny valley","That's about near-human robots."]]},
+{t:9,q:"Via sharing mechanisms, hateful content tends to gain…",o:[
+ ["more visibility than non-hateful content","Right — sharing boosts hateful content."],
+ ["less visibility than non-hateful content","The opposite of the finding."],
+ ["the same visibility as any content","It tends to spread more."],
+ ["visibility only on alternative platforms","Not limited to fringe platforms."]]},
+{t:9,q:"A captioned meme (image plus embedded text) is an example of…",o:[
+ ["multimodal content","Right — image plus text combined."],
+ ["a single platform feature","A meme isn't just one feature."],
+ ["an affordance","That's an action possibility, not content."],
+ ["a recommender algorithm","Unrelated to the meme format."]]},
+{t:9,q:"Online hate speech threatens democratic participation because…",o:[
+ ["targets withdraw from public debate","Right — silencing reduces participation."],
+ ["it improves the quality of debate","Hate degrades, not improves, debate."],
+ ["it affects only offline crime","Its democratic harm is online participation."],
+ ["it raises platform revenue","Revenue isn't the democratic-threat mechanism."]]},
+{t:9,q:"Because users spread across many platforms, the lecture stresses that…",o:[
+ ["each platform's design creates its own opportunity structures","Right — designs differ, so do risks."],
+ ["all platforms now behave identically","They differ — that's the point."],
+ ["moderation has become impossible","Difficult, but the claim is about distinct designs."],
+ ["anonymity has disappeared everywhere","Anonymity persists on many platforms."]]},
+
+/* ===== 10 · AI in Politics & Misinformation ===== */
+{t:10,q:"A cited benefit of AI in public administration is to…",o:[
+ ["automate repetitive tasks, freeing staff for complex work","Right — automation of routine work."],
+ ["replace elected decision-making","Not the proposed role for AI."],
+ ["remove the need for any records","Records still matter."],
+ ["guarantee bias-free outcomes","AI can introduce bias, not guarantee fairness."]]},
+{t:10,q:"Communication flowing from public opinion up to politicians is…",o:[
+ ["upward","Right — public opinion up to politicians."],
+ ["top-down","That's government down to citizens."],
+ ["vertical","That's between politicians."],
+ ["horizontal","Not the term used for public-to-politician flow."]]},
+{t:10,q:"The lecture defines misinformation as claims that are…",o:[
+ ["contrary to the currently best available evidence","Right — at odds with best evidence."],
+ ["intended to deceive a specific audience","That's disinformation (intent), a subtype."],
+ ["already known by everyone to be false","Not part of the definition."],
+ ["impossible to check even in principle","Misinformation is checkable against evidence."]]},
+{t:10,q:"Disinformation differs from misinformation by its…",o:[
+ ["intent to deceive","Right — intent distinguishes disinformation."],
+ ["length of message","Length is irrelevant to the distinction."],
+ ["visual format","Format isn't the distinction."],
+ ["choice of platform","Platform isn't the distinction."]]},
+{t:10,q:"A conspiracy theory explains events through…",o:[
+ ["the secret, malicious acts of a powerful group","Right — secret malicious conspirators."],
+ ["the best available scientific evidence","That's the opposite of a conspiracy explanation."],
+ ["pure random coincidence","Conspiracy theories reject coincidence for hidden design."],
+ ["officially confirmed records","They often reject official accounts."]]},
+{t:10,q:"In dual-process persuasion models (ELM/HSM), durable attitude change comes via the…",o:[
+ ["central / systematic route","Right — effortful processing yields lasting change."],
+ ["peripheral / heuristic route","That gives shallow, less durable change."],
+ ["spiral of silence","That's about self-silencing, not persuasion routes."],
+ ["diffusion process","That's how innovations spread."]]},
+{t:10,q:"Inferring profound meaning from impressive but empty phrases ('bullshit receptivity') predicts…",o:[
+ ["more belief in misinformation","Right — linked to greater belief."],
+ ["less belief in misinformation","The relationship runs the other way."],
+ ["immunity to persuasion","It signals susceptibility, not immunity."],
+ ["a higher need for cognition","It's associated with lower need for cognition."]]},
+{t:10,q:"'Motivated cognition' means people prefer information that…",o:[
+ ["flatters their own group or party","Right — we favour identity-confirming info."],
+ ["contradicts their existing beliefs","We tend to avoid disconfirming info."],
+ ["is the hardest to understand","Difficulty isn't the driver."],
+ ["comes only from opponents","We prefer allies' framing, not opponents'."]]},
+{t:10,q:"'Conspiracy mentality' is best described as a…",o:[
+ ["general disposition to suspect conspiracies","Right — a stable, generalised tendency."],
+ ["one-off belief in a single rumour","That's a single belief, not the disposition."],
+ ["temporary mood after bad news","It's a trait, not a passing mood."],
+ ["skill for detecting real plots","It's a bias, not a detection skill."]]},
+{t:10,q:"The lecture's measured conclusion on misinformation's political effects is that it…",o:[
+ ["rarely shifts voting at scale but can cause misperceptions","Right — measured effects, plus repetition risk."],
+ ["single-handedly decides most elections","Overstated — effects on voting are limited."],
+ ["has no effect of any kind","It can create misperceptions."],
+ ["only changes offline behaviour","Its effects aren't limited to offline behaviour."]]},
+
+/* ===== 11 · AI, Work & Sustainability ===== */
+{t:11,q:"The 'hidden workforce' behind AI mainly refers to…",o:[
+ ["low-paid crowd-workers labelling data","Right — the uncredited human labour behind AI."],
+ ["fully self-training models","Models don't train themselves error-free."],
+ ["senior executives only","Not who the hidden workforce refers to."],
+ ["factory robots","Physical robots aren't the data-labelling workforce."]]},
+{t:11,q:"Handing manager tasks (scheduling, evaluation, monitoring) to AI is warned to risk…",o:[
+ ["surveillance, power imbalance and unclear accountability","Right — the flagged risks."],
+ ["excessive worker autonomy","The risk is control/surveillance, not too much autonomy."],
+ ["the removal of all bias","It can add bias, not remove it."],
+ ["total transparency for staff","Opacity is a concern, not transparency."]]},
+{t:11,q:"As AI reshapes entry-level work, value shifts toward workers who can…",o:[
+ ["monitor, evaluate and translate AI output","Right — supervising and mediating AI."],
+ ["avoid AI tools entirely","Avoidance isn't where value shifts."],
+ ["do only the tasks AI already does","Those tasks are the ones being automated."],
+ ["work without any statistical skills","Such skills become more valuable, not less."]]},
+{t:11,q:"Which factor has the lowest effect on an AI model's CO₂ consumption?",o:[
+ ["saying thank you to the model","Right — negligible effect (the trick option)."],
+ ["the size of the training data","A real driver of emissions."],
+ ["the location and power source of the servers","A real driver of emissions."],
+ ["whether the model runs in the cloud","Affects efficiency and footprint."]]},
+{t:11,q:"On AI and climate, the lecture stresses that training and running large models…",o:[
+ ["can emit substantial CO₂","Right — energy-intensive to train and run."],
+ ["have no measurable footprint","They clearly have a footprint."],
+ ["always reduce net emissions","Not guaranteed — often the reverse."],
+ ["matter only for hardware shipping","Compute energy, not just shipping, dominates."]]},
+{t:11,q:"Among the four 'levers' for greener AI, choosing the data-centre with the cleanest energy is the…",o:[
+ ["'Map' lever","Right — choose the cleanest-energy location."],
+ ["'Model' lever","That's building more efficient models."],
+ ["'Machine' lever","That's ML-optimised hardware."],
+ ["'Mechanization' lever","That's cloud/data-centre efficiency."]]},
+{t:11,q:"Among the four 'levers' for greener AI, designing a more energy-efficient model is the…",o:[
+ ["'Model' lever","Right — design a more efficient model."],
+ ["'Machine' lever","That's efficient hardware/chips."],
+ ["'Map' lever","That's choosing a clean-energy location."],
+ ["'Mechanization' lever","That's data-centre/cloud efficiency."]]},
+{t:11,q:"The lecture's realistic note on AI in business is that actual gains are so far…",o:[
+ ["modest, with adoption often failing","Right — sober reality vs the hype."],
+ ["enormous and guaranteed for all","Overstated relative to evidence."],
+ ["entirely absent in every firm","Some gains exist; they're just modest."],
+ ["limited to manufacturing only","Not restricted to one sector."]]},
+{t:11,q:"A review of leadership 'in the era of AI' found the key competencies are mostly…",o:[
+ ["human and psycho-social, plus understanding AI","Right — mostly people skills, plus AI literacy."],
+ ["pure programming ability","Coding alone isn't the finding."],
+ ["cost-cutting techniques","Not the identified core competency."],
+ ["hardware engineering","Not the identified competency."]]},
+{t:11,q:"Which is a named source of digital business value in the lecture?",o:[
+ ["efficiency (lower costs, better coordination)","Right — one of the four named sources."],
+ ["nostalgia (reviving old products)","Not one of the four sources."],
+ ["secrecy (hiding the algorithm)","Not one of the four sources."],
+ ["scarcity (limiting supply)","Not one of the four sources."]]},
+
+/* ===== 12 · AI in Health & Medicine ===== */
+{t:12,q:"The WHO defines health as…",o:[
+ ["complete physical, mental and social well-being","Right — more than the absence of disease."],
+ ["the absence of any diagnosed disease","Too narrow — that's the view WHO moves beyond."],
+ ["maximal physical fitness","Health isn't only physical fitness."],
+ ["freedom from all chronic conditions","Health isn't defined purely as disease-free."]]},
+{t:12,q:"Salutogenesis reframes the central question as…",o:[
+ ["what keeps people healthy?","Right — the salutogenic question."],
+ ["which pathogens cause disease?","That's the pathogenic (disease-focused) question."],
+ ["how is each illness treated?","That's treatment, not the salutogenic focus."],
+ ["who is to blame for illness?","Blame isn't the salutogenic question."]]},
+{t:12,q:"A 'sense of coherence' comprises comprehensibility, manageability, and…",o:[
+ ["meaningfulness","Right — comprehensibility, manageability, meaningfulness."],
+ ["happiness","Not one of the three components."],
+ ["prosperity","Not one of the three components."],
+ ["conformity","Not one of the three components."]]},
+{t:12,q:"Feeling that your environment is predictable corresponds to which part of coherence?",o:[
+ ["comprehensibility","Right — the world feels predictable."],
+ ["manageability","That's feeling you have the resources to cope."],
+ ["meaningfulness","That's feeling life is worth engaging with."],
+ ["sociability","Not part of the coherence model."]]},
+{t:12,q:"A 'eudaimonic' view of well-being emphasises…",o:[
+ ["a meaningful life","Right — meaning/purpose."],
+ ["a pleasant emotional balance","That's the hedonic view."],
+ ["an interesting, varied life","That's the psychologically rich view."],
+ ["a high income","Income isn't a well-being type here."]]},
+{t:12,q:"A 'hedonic' view of well-being emphasises…",o:[
+ ["a positive balance of pleasant over unpleasant feelings","Right — the hedonic view."],
+ ["a deeply meaningful life","That's eudaimonic well-being."],
+ ["a novel and varied life","That's the psychologically rich life."],
+ ["a financially secure life","Not one of the well-being types."]]},
+{t:12,q:"A 'psychologically rich' life is one that is…",o:[
+ ["interesting and varied","Right — the psychologically rich life."],
+ ["pleasant and comfortable","That's hedonic well-being."],
+ ["meaningful and purposeful","That's eudaimonic well-being."],
+ ["stable and predictable","Not the 'rich' definition."]]},
+{t:12,q:"Unlike good therapy, general LLMs tend to…",o:[
+ ["validate the user and default to agreement","Right — sycophancy vs therapeutic challenge."],
+ ["confront and challenge harmful beliefs","That's good therapy — what general LLMs often don't do."],
+ ["refuse all emotional topics","They engage with emotional topics, often too agreeably."],
+ ["follow clinical guidelines exactly","General LLMs aren't bound to clinical guidelines."]]},
+{t:12,q:"Heavy LLM use for emotional support was most associated with delusion-like experiences among…",o:[
+ ["people already at higher psychosis risk","Right — risk concentrated in vulnerable users."],
+ ["people who used AI only for studying","Study use showed a weaker association."],
+ ["people who never used chatbots","Non-users aren't the at-risk group described."],
+ ["all users equally","The risk wasn't uniform across users."]]},
+{t:12,q:"The depression risk-score case argued that fairness must consider not only classification accuracy but also…",o:[
+ ["treatment outcomes and group baseline risks","Right — fairness beyond classification accuracy."],
+ ["the model's processing speed","Speed isn't a fairness criterion."],
+ ["the interface's visual design","Design isn't the fairness issue."],
+ ["the number of input features","Feature count isn't the fairness criterion."]]},
+{t:12,q:"To protect sensitive medical data, one proposed method is to use GANs to…",o:[
+ ["generate synthetic data that mimics the real set","Right — synthetic/anonymised data."],
+ ["publish all raw records openly","That would harm privacy, not protect it."],
+ ["delete the original dataset","Deletion isn't the GAN method."],
+ ["skip data collection entirely","You still need real data to model."]]},
+{t:12,q:"AI for personalised medicine is promising but ethically challenging. What can help?",o:[
+ ["fair data","Right — fairness/bias is the central lever."],
+ ["imputed data","Filling missing values doesn't address fairness itself."],
+ ["historical data","Historical data can carry the very biases at issue."],
+ ["transparent data","Transparency helps, but fairness is the key term here."]]},
+{t:12,q:"On tasks like mammography, AI image analysis can…",o:[
+ ["match or slightly exceed human readers","Right — slightly better on some tasks."],
+ ["never approach human accuracy","Too pessimistic — it can match/exceed."],
+ ["fully replace radiologists already","Not yet — challenges remain."],
+ ["work without any approval process","Approval/oversight is still required."]]},
+{t:12,q:"A core unresolved challenge for AI in medicine — 'whom do you sue?' — is…",o:[
+ ["accountability and responsibility","Right — who is responsible for an AI-driven decision."],
+ ["battery life","Not the unresolved challenge."],
+ ["font choice","Not the issue."],
+ ["marketing budget","Not the issue."]]},
+
+/* ===== 13 · Entertainment & Games ===== */
+{t:13,q:"The Uses & Gratifications approach focuses on…",o:[
+ ["why users actively choose media to meet needs","Right — the active-user focus."],
+ ["how media brainwash a passive audience","That's the opposite, passive-audience view."],
+ ["which media are objectively best","U&G isn't a quality ranking."],
+ ["how to regulate harmful media","Regulation isn't the U&G focus."]]},
+{t:13,q:"A factor analysis of online-game players identified three motives:",o:[
+ ["achievement, social affairs, immersion","Right — the three play motives."],
+ ["money, fame, power","Not the identified motives."],
+ ["speed, accuracy, luck","Not the identified motives."],
+ ["fear, anger, joy","Those are emotions, not the play motives."]]},
+{t:13,q:"'Gamification' means…",o:[
+ ["adding game elements (badges, leaderboards) to non-game settings","Right — game features in non-game contexts."],
+ ["turning leisure games into paid work","That's not gamification."],
+ ["removing rewards to raise difficulty","Gamification adds elements, not removes them."],
+ ["playing games at a professional level","That's esports, not gamification."]]},
+{t:13,q:"Game addiction is more strongly tied to which motives?",o:[
+ ["escapist and social","Right — escapism and social motives."],
+ ["achievement and mastery","Closer to 'healthy' goal-oriented play."],
+ ["competitive and financial","Not the motives most tied to addiction."],
+ ["educational and creative","Not the addiction-linked motives."]]},
+{t:13,q:"Players' avatars tend to embody…",o:[
+ ["the ideal self ('how I'd like to be')","Right — avatars often embody the ideal self."],
+ ["the actual self ('how I am')","Avatars tend toward the ideal, not the actual."],
+ ["the feared self ('what I avoid')","Not what avatars typically represent."],
+ ["the relational self","Not the avatar–self link described."]]},
+{t:13,q:"The lecture notes the games industry is…",o:[
+ ["the largest entertainment sector, above film and music combined","Right — games are the biggest."],
+ ["a small niche compared with film","The opposite — games surpass film."],
+ ["shrinking year on year","It's grown, not shrunk."],
+ ["unrelated to AI development","Games and AI are closely linked."]]},
+{t:13,q:"On social play, the lecture concludes that gaming…",o:[
+ ["can foster real, lasting friendships","Right — games are social spaces."],
+ ["always isolates heavy players","Too absolute — many form connections."],
+ ["never leads to offline meetups","Offline meetups do happen."],
+ ["only benefits extroverts","Benefits aren't limited to extroverts."]]}
+];
+
+/* =========================================================================
+   APP LOGIC
+   ========================================================================= */
+const app = document.getElementById('app');
+const fill = document.getElementById('fill');
+const meta = document.getElementById('meta');
+
+let selectedTopics = TOPICS.map((_,i)=>i);
+let chosenLen = null;
+let quiz = [];
+let idx = 0, score = 0, answered = false;
+let missed = [];
+
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function countFor(topics){return QUESTIONS.filter(q=>topics.includes(q.t)).length;}
+function buildQuiz(pool){
+  return pool.map(q=>{
+    const opts=q.o.map((pair,i)=>({text:pair[0],note:pair[1],correct:i===0}));
+    return {topic:q.t,q:q.q,opts:shuffle(opts)};
+  });
+}
+
+function renderStart(){
+  meta.innerHTML=''; fill.style.width='0%';
+  const counts=TOPICS.map((_,i)=>QUESTIONS.filter(q=>q.t===i).length);
+  const chips=TOPICS.map((name,i)=>{
+    const on=selectedTopics.includes(i);
+    return `<button class="chip" data-topic="${i}" aria-pressed="${on}">${name}<span class="n">${counts[i]}</span></button>`;
+  }).join('');
+
+  app.innerHTML=`
+  <div class="card">
+    <p class="eyebrow">Exam drill · ${QUESTIONS.length} questions</p>
+    <h1>Quiz yourself on AI &amp; Society</h1>
+    <p class="lede">Conceptual multiple-choice across all 14 sessions — no memorising names or dates. The four answers are deliberately parallel, so you have to know the concept. Pick wrong and you'll see what your option actually was, alongside the right one.</p>
+
+    <div class="section-label"><span>Topics</span>
+      <span class="mini-actions"><button id="selAll">Select all</button><button id="clrAll">Clear</button></span>
+    </div>
+    <div class="chips" id="chips">${chips}</div>
+
+    <div class="section-label"><span>How many questions?</span></div>
+    <div class="len-row" id="lens"></div>
+
+    <button class="cta" id="start">Start drill</button>
+    <p class="hint">Tip: on a keyboard use <kbd>1</kbd>–<kbd>4</kbd> to answer and <kbd>Enter</kbd> for next.</p>
+  </div>`;
+
+  renderLens();
+  document.getElementById('chips').addEventListener('click',e=>{
+    const b=e.target.closest('.chip'); if(!b)return;
+    const t=+b.dataset.topic;
+    if(selectedTopics.includes(t)) selectedTopics=selectedTopics.filter(x=>x!==t);
+    else selectedTopics.push(t);
+    b.setAttribute('aria-pressed',selectedTopics.includes(t));
+    chosenLen=null; renderLens(); updateStartState();
+  });
+  document.getElementById('selAll').onclick=()=>{selectedTopics=TOPICS.map((_,i)=>i);renderStart();};
+  document.getElementById('clrAll').onclick=()=>{selectedTopics=[];renderStart();};
+  document.getElementById('start').onclick=begin;
+  updateStartState();
+}
+
+function renderLens(){
+  const lens=document.getElementById('lens'); if(!lens)return;
+  const total=countFor(selectedTopics);
+  const opts=[10,25,50].filter(n=>n<total);
+  let html=opts.map(n=>`<button class="len" data-len="${n}" aria-pressed="${chosenLen===n}">${n}<small>questions</small></button>`).join('');
+  html+=`<button class="len" data-len="all" aria-pressed="${chosenLen==='all'||chosenLen===null}">All ${total}<small>everything selected</small></button>`;
+  lens.innerHTML=html;
+  if(chosenLen===null) chosenLen='all';
+  lens.querySelectorAll('.len').forEach(b=>b.onclick=()=>{
+    chosenLen=b.dataset.len==='all'?'all':+b.dataset.len;
+    lens.querySelectorAll('.len').forEach(x=>x.setAttribute('aria-pressed',false));
+    b.setAttribute('aria-pressed',true);
+  });
+}
+
+function updateStartState(){
+  const s=document.getElementById('start'); if(!s)return;
+  const total=countFor(selectedTopics);
+  s.disabled=total===0;
+  s.textContent=total===0?'Pick at least one topic':`Start drill · ${chosenLen==='all'?total:Math.min(chosenLen,total)} questions`;
+}
+
+function begin(){
+  let pool=shuffle(QUESTIONS.filter(q=>selectedTopics.includes(q.t)));
+  const n=chosenLen==='all'?pool.length:Math.min(chosenLen,pool.length);
+  quiz=buildQuiz(pool.slice(0,n));
+  idx=0;score=0;missed=[];answered=false;
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const item=quiz[idx];
+  answered=false;
+  meta.innerHTML=`<span><b>${idx+1}</b> / ${quiz.length}</span><span>Score <b>${score}</b></span>`;
+  fill.style.width=((idx)/quiz.length*100)+'%';
+  const opts=item.opts.map((o,i)=>`
+    <button class="opt" data-i="${i}">
+      <span class="key">${i+1}</span>
+      <span class="body">${o.text}</span>
+    </button>`).join('');
+  app.innerHTML=`
+  <div class="card">
+    <span class="q-topic">${TOPICS[item.topic]}</span>
+    <p class="q-text">${item.q}</p>
+    <div class="opts" id="opts">${opts}</div>
+    <div id="after"></div>
+  </div>`;
+  document.getElementById('opts').addEventListener('click',e=>{
+    const b=e.target.closest('.opt'); if(!b||answered)return;
+    answer(+b.dataset.i);
+  });
+}
+
+function answer(i){
+  if(answered)return; answered=true;
+  const item=quiz[idx];
+  const buttons=[...document.querySelectorAll('.opt')];
+  const correctIdx=item.opts.findIndex(o=>o.correct);
+  const chosen=item.opts[i];
+  const correctOpt=item.opts[correctIdx];
+  const isCorrect=chosen.correct;
+  if(isCorrect)score++;
+  else missed.push({q:item.q,topic:item.topic,chosenText:chosen.text,chosenNote:chosen.note,correctText:correctOpt.text,correctNote:correctOpt.note});
+  buttons.forEach((b,bi)=>{
+    b.disabled=true;
+    if(item.opts[bi].correct){b.classList.add('correct');b.insertAdjacentHTML('beforeend','<span class="mark">✓</span>');}
+    else if(bi===i){b.classList.add('wrong');b.insertAdjacentHTML('beforeend','<span class="mark">✕</span>');}
+    else b.classList.add('dim');
+  });
+  meta.innerHTML=`<span><b>${idx+1}</b> / ${quiz.length}</span><span>Score <b>${score}</b></span>`;
+  const last=idx===quiz.length-1;
+  let whyHtml;
+  if(isCorrect){
+    whyHtml=`<div class="why good"><span class="lab">Correct.</span> ${correctOpt.note}</div>`;
+  } else {
+    whyHtml=`<div class="why bad">
+      <div class="chosen"><span class="lab">You chose — ${chosen.text}:</span> ${chosen.note}</div>
+      <div class="answer"><span class="lab">Correct — ${correctOpt.text}:</span> ${correctOpt.note}</div>
+    </div>`;
+  }
+  document.getElementById('after').innerHTML=`
+    ${whyHtml}
+    <div class="nav">
+      <span class="scoreline">${isCorrect?'Nice — ':''}<b>${score}</b>/${idx+1} so far</span>
+      <button class="next" id="next">${last?'See results →':'Next →'}</button>
+    </div>`;
+  document.getElementById('next').onclick=advance;
+}
+
+function advance(){if(idx<quiz.length-1){idx++;renderQuestion();}else renderResults();}
+
+function renderResults(){
+  meta.innerHTML=''; fill.style.width='100%';
+  const pct=Math.round(score/quiz.length*100);
+  const byTopic={};
+  quiz.forEach(q=>{byTopic[q.topic]=byTopic[q.topic]||{c:0,t:0};byTopic[q.topic].t++;});
+  const missedByTopic={};
+  missed.forEach(m=>missedByTopic[m.topic]=(missedByTopic[m.topic]||0)+1);
+  Object.keys(byTopic).forEach(k=>{byTopic[k].c=byTopic[k].t-(missedByTopic[k]||0);});
+  const bd=Object.keys(byTopic).sort((a,b)=>a-b).map(k=>{
+    const {c,t}=byTopic[k];const p=Math.round(c/t*100);
+    return `<div class="bd-row"><span class="bd-name">${TOPICS[k]}</span><span class="bd-bar"><i style="width:${p}%"></i></span><span class="bd-num">${c}/${t}</span></div>`;
+  }).join('');
+  let verdict;
+  if(pct>=90)verdict="Exam-ready. You could teach this back.";
+  else if(pct>=75)verdict="Strong. A couple of weak spots to tidy up.";
+  else if(pct>=55)verdict="Solid base — review the misses below and run it again.";
+  else verdict="Good first pass. The explanations below are where the points are.";
+  const missList=missed.length?missed.map(m=>`
+    <div class="miss-item">
+      <div class="miss-topic">${TOPICS[m.topic]}</div>
+      <p class="miss-q">${m.q}</p>
+      <p class="miss-chose"><span>You chose: </span>${m.chosenText} — ${m.chosenNote}</p>
+      <p class="miss-a"><span>Answer: </span>${m.correctText} — ${m.correctNote}</p>
+    </div>`).join(''):`<p class="lede" style="margin:0;">Clean sweep — nothing missed. 🎯</p>`;
+  app.innerHTML=`
+  <div class="card">
+    <p class="eyebrow">Results</p>
+    <div class="result-score">${pct}%</div>
+    <p class="result-sub">${score} of ${quiz.length} correct — ${verdict}</p>
+    <div class="section-label"><span>By topic</span></div>
+    ${bd}
+    <div class="section-label" style="margin-top:22px;"><span>Review ${missed.length?('· '+missed.length+' missed'):''}</span></div>
+    <div class="miss" id="missWrap" style="border-top:none;padding-top:0;">
+      ${missed.length>3?`<button class="collapse-btn" id="toggleMiss">▸ Show ${missed.length} missed questions</button><div id="missList" style="display:none;">${missList}</div>`:`<div>${missList}</div>`}
+    </div>
+    <div class="btn-row">
+      <button class="btn-ghost" id="retry" ${missed.length?'':'disabled'}>Retry missed (${missed.length})</button>
+      <button class="btn-primary" id="again">New drill</button>
+    </div>
+  </div>`;
+  const tg=document.getElementById('toggleMiss');
+  if(tg){tg.onclick=()=>{const l=document.getElementById('missList');const open=l.style.display!=='none';l.style.display=open?'none':'block';tg.textContent=(open?'▸ Show ':'▾ Hide ')+missed.length+' missed questions';};}
+  document.getElementById('again').onclick=renderStart;
+  const r=document.getElementById('retry');
+  if(missed.length) r.onclick=retryMissed;
+}
+
+function retryMissed(){
+  const texts=new Set(missed.map(m=>m.q));
+  quiz=buildQuiz(shuffle(QUESTIONS.filter(q=>texts.has(q.q))));
+  idx=0;score=0;missed=[];answered=false;
+  renderQuestion();
+}
+
+document.addEventListener('keydown',e=>{
+  const opts=[...document.querySelectorAll('.opt')];
+  if(opts.length && !answered){
+    if(e.key>='1'&&e.key<='4'){const i=+e.key-1;if(opts[i]){e.preventDefault();answer(i);}}
+    const u=e.key.toUpperCase();
+    if(['A','B','C','D'].includes(u)){const i=u.charCodeAt(0)-65;if(opts[i]){e.preventDefault();answer(i);}}
+  }
+  if(e.key==='Enter'||e.key===' '){
+    const next=document.getElementById('next');
+    if(next){e.preventDefault();next.click();return;}
+    const start=document.getElementById('start');
+    if(start && !start.disabled && document.activeElement.tagName!=='BUTTON'){e.preventDefault();begin();}
+  }
+});
+
+renderStart();
+</script>
+</body>
+</html>
