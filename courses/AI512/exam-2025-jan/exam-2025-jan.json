@@ -275,7 +275,8 @@
   {
     "type": "group",
     "section": "Question 8: Bernoulli Data Set",
-    "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \\overset{\\mathrm{iid}}{\\sim} \\mathrm{Bernoulli}(\\pi)$."    "positiveLabel": "True",
+    "context": "Setup: \n $D = \\{X_i : i=1,\\dots,n\\}$, $X_i \\overset{\\mathrm{iid}}{\\sim} \\mathrm{Bernoulli}(\\pi)$.",    
+    "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
