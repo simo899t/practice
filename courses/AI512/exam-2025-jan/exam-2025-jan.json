@@ -431,7 +431,7 @@
   {
     "type": "group",
     "section": "Question 12: PyTorch nn.Sequential (Linear-ReLU-Linear-Softmax)",
-    "context": "Setup: Code (note: interpret the first layer as nn.Linear(100, 500)):\nmodel = nn.Sequential(\n  nn.Linear(100, 500),\n  nn.ReLU(),\n  nn.Linear(500, 5),\n  nn.Softmax()\n)",
+    "context": "Setup: Code:\nmodel = nn.Sequential(\n  nn.Linear(100, 500),\n  nn.ReLU(),\n  nn.Linear(500, 5),\n  nn.Softmax()\n)",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
