@@ -30,7 +30,7 @@
     "tests": [
       { "id": "exam2026", "title": "Exam 2026", "file": "courses/AI503_CALC/exam2026-jan/exam2026.json" },
       { "id": "reexam2026", "title": "ReExam 2026", "file": "courses/AI503_CALC/reexam2026-mar/reexam2026.json" },
-      { "id": "sample_exam1", "title": "Sample Exam 1", "file": "courses/AI503_CALC/sample-exam1/sample-exam2026.json" }
+      { "id": "sample_exam1", "title": "Sample Exam 1", "file": "courses/AI503_CALC/sample-exam1/sample-exam1.json" }
     ]
   },
   {
