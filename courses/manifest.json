@@ -28,13 +28,14 @@
     "title": "AI503 - Calculus",
     "description": "AI",
     "tests": [
-      { "id": "exam2026",     "title": "Exam 2026",     "file": "courses/AI503_CALC/exam2026-jan/exam2026.json" }
+      { "id": "exam2026",     "title": "Exam 2026",     "file": "courses/AI503_CALC/exam2026-jan/exam2026.json" },
+      { "id": "reexam2026",   "title": "ReExam 2026",   "file": "courses/AI503_CALC/reexam2026-mar/reexam2026.json" }
     ]
   },
   {
     "id": "AI512",
     "title": "AI512 - Introduction to Machine Learning",
-    "description": "AI/CS",
+
     "tests": [
       { "id": "exam-2025-fall",       "title": "Exam 2025 Fall",        "file": "courses/AI512_ML/exam-2025-fall/exam-2025-fall.json" },
       { "id": "exam-2025-jan",        "title": "Exam January 2025",     "file": "courses/AI512_ML/exam-2025-jan/exam-2025-jan.json" },
