@@ -2,7 +2,7 @@
   {
     "type": "open",
     "section": "Question 1: Domain, Range, and Level Sets",
-    "context": "Let $$ f : \\mathbb{R}^3 \\to \\mathbb{R} $$ be defined by $f(x, y, z) = x^2 + y^2 + z^2$.",
+    "context": "Let $ f : \\mathbb{R}^3 \\to \\mathbb{R} $ be defined by $f(x, y, z) = x^2 + y^2 + z^2$.",
     "text": "(a) Determine the domain and range of $f$.\n\n(b) Describe geometrically the level set formed by $f(x, y, z) = 100$.",
     "answer": ""
   },
@@ -66,7 +66,7 @@
     "type": "open",
     "section": "Question 10: True or False",
     "context": "",
-    "text": "Decide whether the following statements are true or false. Justify each answer.\n\n(a) If a function is differentiable, it must be continuous.\n\n(b) $\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx = \\int_0^1\\int_0^y f(x,y)\\,dx\\,dy$\n\n(c) If $\\displaystyle\\iint_R f\\,dA = 0$, then $f$ is zero at all points in $R$.\n\n(d) If $f$ and $g$ are two functions continuous on a region $R$, then\n$$\\int_R f \\cdot g\\, dA = \\int_R f\\, dA \\cdot \\int_R g\\, dA$$\n\n(e) A local maximum of $f$ can only occur at the critical points.",
+    "text": "Decide whether the following statements are true or false. Justify each answer.\n\n(a) If a function is differentiable, it must be continuous.\n\n(b) $\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx = \\int_0^1\\int_0^y f(x,y)\\,dx\\,dy$\n\n(c) If $\\displaystyle\\iint_R f\\,dA = 0$, then $f$ is zero at all points in $R$.\n\n(d) If $f$ and $g$ are two functions continuous on a region $R$, then\n$\\int_R f \\cdot g\\, dA = \\int_R f\\, dA \\cdot \\int_R g\\, dA$\n\n(e) A local maximum of $f$ can only occur at the critical points.",
     "answer": ""
   }
 ]

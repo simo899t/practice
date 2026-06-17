@@ -307,7 +307,7 @@ function renderOpenQuestion(q) {
     answerBox.className = 'open-correct-answer';
     const label = document.createElement('p');
     label.className = 'open-correct-label';
-    label.textContent = 'Model answer:';
+    label.textContent = 'Answer:';
     answerBox.appendChild(label);
     const answerText = document.createElement('p');
     richRender(answerText, q.answer);
