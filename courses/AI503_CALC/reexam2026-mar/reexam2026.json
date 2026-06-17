@@ -2,7 +2,7 @@
   {
     "type": "group",
     "section": "Question 1: $f'(x)$ ",
-    "context": "Use the following figure about $f'(x)$ to answer teh question \n [image: ddxf.png]",
+    "context": "Use the following figure about $f'(x)$ to answer teh question \n [image: assets/ddxf.png]",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
