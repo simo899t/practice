@@ -1,23 +1,63 @@
 [
   {
-    "id": "AI507",
-    "title": "AI507 - AI & Society",
-    "description": "4th semester AI",
+    "id": "DM507_DM578_DS814",
+    "title": "DM507, DM578, DS814 - Algorithms and Data Structures",
+    "description": "AI/CS",
     "tests": [
-      { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507/ai-mock-quiz1/ai-mock-quiz1.json" },
-      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507/ai-mock-quiz2/ai-mock-quiz2.json" },
-      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507/ai-mock-quiz3/ai-mock-quiz3.json" }
+      
+    ]
+  },
+  {
+    "id": "DM573",
+    "title": "DM573 - Introduction to Computer Science",
+    "description": "AI/CS",
+    "tests": [
+      
+    ]
+  },
+  {
+    "id": "AI501_DS843",
+    "title": "AI501, DS843 - Introduction to Artificial Intelligence",
+    "description": "AI/CS",
+    "tests": [
+      
+    ]
+  },
+  {
+    "id": "AI503",
+    "title": "AI503 - Calculus",
+    "description": "AI",
+    "tests": [
+      
     ]
   },
   {
     "id": "AI512",
     "title": "AI512 - Introduction to Machine Learning",
-    "description": "2nd semester AI/CS",
+    "description": "AI/CS",
     "tests": [
       { "id": "exam-2025-fall", "title": "Exam 2025 Fall", "file": "courses/AI512/exam-2025-fall/exam-2025-fall.json" },
       { "id": "exam-2025-jan", "title": "Exam January 2025", "file": "courses/AI512/exam-2025-jan/exam-2025-jan.json" },
       { "id": "exam-2024-jan", "title": "Exam January 2024", "file": "courses/AI512/exam-2024-jan/exam-2024-jan.json" },
       { "id": "exam-2024-feb-reexam", "title": "Re-exam February 2024", "file": "courses/AI512/exam-2024-feb-reexam/exam-2024-feb-reexam.json" }
+    ]
+  },
+  {
+    "id": "AI504",
+    "title": "AI504 - Knowledge Representation",
+    "description": "AI",
+    "tests": [
+      
+    ]
+  },
+  {
+    "id": "AI507",
+    "title": "AI507 - AI & Society",
+    "description": "AI",
+    "tests": [
+      { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507/ai-mock-quiz1/ai-mock-quiz1.json" },
+      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507/ai-mock-quiz2/ai-mock-quiz2.json" },
+      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507/ai-mock-quiz3/ai-mock-quiz3.json" }
     ]
   }
 ]

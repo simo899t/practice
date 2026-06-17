@@ -392,7 +392,7 @@
   {
     "type": "group",
     "section": "Question 11: Bernoulli Data Set",
-    "context": "Setup: $X_1, X_2, X_3, X_4$ iid Bernoulli($\\pi$). Observed data: $D = \\{X_1=1, X_2=0, X_3=1, X_4=1\\}$.",
+    "context": "Setup: $X_1, X_2, X_3, X_4$ iid Bernoulli($\\pi$). \n Observed data: $D = \\{X_1=1, X_2=0, X_3=1, X_4=1\\}$.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [

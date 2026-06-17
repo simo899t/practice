@@ -1,0 +1,45 @@
+[
+  {
+    "type": "group",
+    "section": "Question 1: $f'(x)$ ",
+    "context": "Use the following figure about $f'(x)$ to answer teh question \n [image: ddxf.png]",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "3",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+
+  }
+]
+

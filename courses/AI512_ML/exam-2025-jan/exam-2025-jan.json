@@ -7,31 +7,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Model bias increases as $n$ increases.?",
+        "text": "Model bias increases as $n$ increases.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Model variance increases as $\\alpha$ increases.?",
+        "text": "Model variance increases as $\\alpha$ increases.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The overfitting risk of the model reduces as $\\alpha$ increases.?",
+        "text": "The overfitting risk of the model reduces as $\\alpha$ increases.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Model capacity increases as $\\alpha$ increases.?",
+        "text": "Model capacity increases as $\\alpha$ increases.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The underfitting risk of the model reduces as $\\alpha$ decreases.?",
+        "text": "The underfitting risk of the model reduces as $\\alpha$ decreases.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -46,31 +46,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The precision for Class A is greater than the recall of Class A.?",
+        "text": "The precision for Class A is greater than the recall of Class A.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The precision for Class B is equal to the recall of Class B.?",
+        "text": "The precision for Class B is equal to the recall of Class B.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The precision for Class C is greater than the recall of Class C.?",
+        "text": "The precision for Class C is greater than the recall of Class C.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The recall for Class A is greater than the recall for Class B.?",
+        "text": "The recall for Class A is greater than the recall for Class B.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The accuracy of the classifier is smaller than 0.5.?",
+        "text": "The accuracy of the classifier is smaller than 0.5.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -97,19 +97,19 @@
         "negativeNote": ""
       },
       {
-        "text": "$\\mathbb{E}[C^2] > \\mathbb{E}[C]^2$.?",
+        "text": "$\\mathbb{E}[C^2] > \\mathbb{E}[C]^2$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(C=0) < P(C=3)$.?",
+        "text": "$P(C=0) < P(C=3)$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\mathbb{E}[C^2] > \\text{Var}[C]$.?",
+        "text": "$\\mathbb{E}[C^2] > \\text{Var}[C]$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -124,31 +124,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The solid red line shows the model prediction error on the test split.?",
+        "text": "The solid red line shows the model prediction error on the test split.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The dashed blue line shows the model prediction error on the training split.?",
+        "text": "The dashed blue line shows the model prediction error on the training split.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The right-hand side of the solid vertical green line indicates the underfitting region.?",
+        "text": "The right-hand side of the solid vertical green line indicates the underfitting region.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The optimal model capacity is marked by the green line.?",
+        "text": "The optimal model capacity is marked by the green line.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Doubling the size of the training data without changing the size of the test data would shift the vertical green line to the left.?",
+        "text": "Doubling the size of the training data without changing the size of the test data would shift the vertical green line to the left.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -163,31 +163,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "If A and B are disjoint, they cannot be independent.?",
+        "text": "If A and B are disjoint, they cannot be independent.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If A and B are independent, they cannot be disjoint.?",
+        "text": "If A and B are independent, they cannot be disjoint.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If $A \\subset B$, then it is possible that A and B are independent.?",
+        "text": "If $A \\subset B$, then it is possible that A and B are independent.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If A and B are independent, then it is possible that A and $A \\cup B$ are independent.?",
+        "text": "If A and B are independent, then it is possible that A and $A \\cup B$ are independent.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "There exists A and B that satisfy $P(A \\cup B) = 1$.?",
+        "text": "There exists A and B that satisfy $P(A \\cup B) = 1$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -202,31 +202,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The algorithm always converges to the same cluster centroids regardless of its initialization.?",
+        "text": "The algorithm always converges to the same cluster centroids regardless of its initialization.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The algorithm can never converge to a clustering before changing the assignment of at least one data point at least once after initialization.?",
+        "text": "The algorithm can never converge to a clustering before changing the assignment of at least one data point at least once after initialization.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The computational complexity of the algorithm is not dependent on the data dimensionality.?",
+        "text": "The computational complexity of the algorithm is not dependent on the data dimensionality.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The algorithm assigns each data point to a single cluster.?",
+        "text": "The algorithm assigns each data point to a single cluster.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The algorithm cannot output spiral-shaped clusters when k > 1 and the algorithm is run until convergence starting from a random initialization.?",
+        "text": "The algorithm cannot output spiral-shaped clusters when k > 1 and the algorithm is run until convergence starting from a random initialization.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -241,13 +241,13 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The predictor can reach zero training error only if the input-output relationship is perfectly linear, i.e. $\\exists \\beta \\in \\mathbb{R}^d$ s.t. $y_i = \\beta^\\top x_i$ for all training inputs/labels.?",
+        "text": "The predictor can reach zero training error only if the input-output relationship is perfectly linear, i.e. $\\exists \\beta \\in \\mathbb{R}^d$ s.t. $y_i = \\beta^\\top x_i$ for all training inputs/labels.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The predictor corresponds to a neural network with a single hidden layer of size $h$.?",
+        "text": "The predictor corresponds to a neural network with a single hidden layer of size $h$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -259,13 +259,13 @@
         "negativeNote": ""
       },
       {
-        "text": "The predictor cannot map an input outside the $[0,1]$ interval no matter which values $W_1$ and $W_2$ take.?",
+        "text": "The predictor cannot map an input outside the $[0,1]$ interval no matter which values $W_1$ and $W_2$ take.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The gradient descent algorithm is guaranteed to converge to the global minimum of the loss function $(y-f(x))^2$ if the learning rate is chosen small enough.?",
+        "text": "The gradient descent algorithm is guaranteed to converge to the global minimum of the loss function $(y-f(x))^2$ if the learning rate is chosen small enough.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -280,31 +280,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The maximum likelihood estimate for $\\pi$ is $\\frac{1}{n}\\sum_{i=1}^n X_i$.?",
+        "text": "The maximum likelihood estimate for $\\pi$ is $\\frac{1}{n}\\sum_{i=1}^n X_i$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\mathbb{E}[X_i] = \\mathbb{E}[X_j]$ for all $i \\neq j$.?",
+        "text": "$\\mathbb{E}[X_i] = \\mathbb{E}[X_j]$ for all $i \\neq j$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Var}[X_i] > 1$.?",
+        "text": "$\\text{Var}[X_i] > 1$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If $D = \\{0,1,1,0,1\\}$, then the likelihood of $\\pi$ is $\\pi^3(1-\\pi)^2$.?",
+        "text": "If $D = \\{0,1,1,0,1\\}$, then the likelihood of $\\pi$ is $\\pi^3(1-\\pi)^2$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(X_i=1 \\cup X_j=0) > P(X_i=1) + P(X_j=0)$.?",
+        "text": "$P(X_i=1 \\cup X_j=0) > P(X_i=1) + P(X_j=0)$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -319,31 +319,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Observing that the train is late increases the probability that it took the northern route.?",
+        "text": "Observing that the train is late increases the probability that it took the northern route.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Observing that the train is late increases the probability that it took the southern route.?",
+        "text": "Observing that the train is late increases the probability that it took the southern route.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If the train chose the northern and southern route with equal percentages, then $P(\\text{northern}|\\text{late}) > P(\\text{southern}|\\text{late})$.?",
+        "text": "If the train chose the northern and southern route with equal percentages, then $P(\\text{northern}|\\text{late}) > P(\\text{southern}|\\text{late})$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If the train is observed to arrive Berlin late, then the probability that it took the northern route is smaller than the probability that it took the southern route.?",
+        "text": "If the train is observed to arrive Berlin late, then the probability that it took the northern route is smaller than the probability that it took the southern route.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The probability that the train will arrive Berlin late is greater than the probability that it will arrive Berlin late given that it took the northern route.?",
+        "text": "The probability that the train will arrive Berlin late is greater than the probability that it will arrive Berlin late given that it took the northern route.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -358,31 +358,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Model bias increases if the training set size grows.?",
+        "text": "Model bias increases if the training set size grows.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Model variance increases if $k$ grows.?",
+        "text": "Model variance increases if $k$ grows.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The model has higher overfitting risk if training set size shrinks.?",
+        "text": "The model has higher overfitting risk if training set size shrinks.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The underfitting risk of the model increases if $k$ grows.?",
+        "text": "The underfitting risk of the model increases if $k$ grows.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The training error is guaranteed to be zero for all $k > 0$.?",
+        "text": "The training error is guaranteed to be zero for all $k > 0$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -397,31 +397,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The code is usable for the training stage of a regression task.?",
+        "text": "The code is usable for the training stage of a regression task.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The input dimensionality is five.?",
+        "text": "The input dimensionality is five.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The command optimizer.step() updates the gradients of the model parameters.?",
+        "text": "The command optimizer.step() updates the gradients of the model parameters.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The command loss.backward() updates the learnable parameters of the model.?",
+        "text": "The command loss.backward() updates the learnable parameters of the model.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code uses each data point within the set train_dl exactly 20 times for training.?",
+        "text": "The code uses each data point within the set train_dl exactly 20 times for training.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -436,31 +436,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The code builds a neural network with a single hidden layer containing 100 neurons.?",
+        "text": "The code builds a neural network with a single hidden layer containing 100 neurons.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The model assumes that the input data points have 100 features.?",
+        "text": "The model assumes that the input data points have 100 features.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The model is designed to solve a classification task with 5 classes.?",
+        "text": "The model is designed to solve a classification task with 5 classes.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The model has more than 100000 parameters.?",
+        "text": "The model has more than 100000 parameters.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The model uses the sigmoid activation function between the hidden layer and the output layer.?",
+        "text": "The model uses the sigmoid activation function between the hidden layer and the output layer.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
