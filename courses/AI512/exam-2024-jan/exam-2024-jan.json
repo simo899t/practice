@@ -2,36 +2,36 @@
   {
     "type": "group",
     "section": "Question 1: ROC Curves",
-    "context": "Setup: Five binary classifiers have ROC curves as described (Classifier 1 dotted green near top-left,\nClassifier 2 dashed red close to Classifier 1, Classifier 3 the diagonal, Classifier 4 a dashed purple arc\nbelow the diagonal, Classifier 5 a dotted yellow curve near bottom-right, i.e. worse than random).\nDefinitions: outperform = more favorable ROC curve; random classifier = max-entropy predictions;\nnegating the predictions = flipping all predicted labels; perfect classifier = 100% accuracy.",
+    "context": "Setup: Five binary classifiers have ROC curves as given in the figure below.\n[image: assets/ROC.png]\nDefinitions: outperform = more favorable ROC curve; random classifier = max-entropy predictions;\nnegating the predictions = flipping all predicted labels; perfect classifier = 100% accuracy.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Classifier 2 outperforms a random classifier.?",
+        "text": "Classifier 2 outperforms a random classifier.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The area under the ROC curve of a perfect classifier depends on the ratio of the positive and negative labels in the data set used to draw the ROC curve.?",
+        "text": "The area under the ROC curve of a perfect classifier depends on the ratio of the positive and negative labels in the data set used to draw the ROC curve.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Classifier 5 outperforms Classifier 4 if the predictions of both classifiers are negated.?",
+        "text": "Classifier 5 outperforms Classifier 4 if the predictions of both classifiers are negated.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "A random classifier outperforms Classifier 4 if the predictions of both classifiers are negated.?",
+        "text": "A random classifier outperforms Classifier 4 if the predictions of both classifiers are negated.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Classifier 1 outperforms Classifier 2 if the predictions of both classifiers are negated.?",
+        "text": "Classifier 1 outperforms Classifier 2 if the predictions of both classifiers are negated.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -41,36 +41,36 @@
   {
     "type": "group",
     "section": "Question 2: Neural Network Exact Representation",
-    "context": "Setup: A network maps scalar input $x$ to a hidden layer $(z_1,\\dots,z_K)$ with $z_j = w_j x + b_j$,\napplies a step activation $h_j = 1$ if $z_j > 0$ else $0$, then linearly combines $(h_1,\\dots,h_K)$\ninto a scalar output $y$. Can this network exactly represent each function type below?",
+    "context": "Setup: A network maps scalar input $x$ to a hidden layer $(z_1,\\dots,z_K)$ with $z_j = w_j x + b_j$,\napplies a step activation $h_j = 1$ if $z_j > 0$ else $0$, then linearly combines $(h_1,\\dots,h_K)$\ninto a scalar output $y$. Can this network exactly represent each function type below",
     "positiveLabel": "Yes",
     "negativeLabel": "No",
     "statements": [
       {
-        "text": "Polynomials of degree one: $y = ax + b$.?",
+        "text": "Polynomials of degree one: $y = ax + b$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Polynomials of degree two: $y = ax^2 + bx + c$.?",
+        "text": "Polynomials of degree two: $y = ax^2 + bx + c$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Piecewise constant functions with constants $c_1,\\dots,c_K$ and thresholds $a_1,\\dots,a_K$.?",
+        "text": "Piecewise constant functions: $y = \\begin{cases} c_1, & \\text{if } x < a_1 \\\\ c_2, & \\text{if } a_1 \\leq x < a_2 \\\\ \\vdots \\\\ c_K, & \\text{if } x \\geq a_K \\end{cases}$ for constants $c_1, \\dots, c_K$ and thresholds $a_1, \\dots, a_K$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Hinge loss: $y = \\max(1-x, 0)$.?",
+        "text": "Hinge loss: $y = \\max(1-x, 0)$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The logistic sigmoid function: $y = \\frac{1}{1+e^{-x}}$.?",
+        "text": "The logistic sigmoid function: $y = \\frac{1}{1+e^{-x}}$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -80,36 +80,36 @@
   {
     "type": "group",
     "section": "Question 3: kNN Variance Reduction",
-    "context": "Setup: A kNN classifier is evaluated on a particular training/test split for a particular choice of k.\nWhich actions are GUARANTEED to reduce the classifier's variance?",
+    "context": "Setup: A kNN classifier is evaluated on a particular training/test split for a particular choice of k.\nWhich actions are GUARANTEED to reduce the classifier's variance",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Allocating a larger portion of the data set for training.?",
+        "text": "Allocating a larger portion of the data set for training.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Building a majority voting ensemble of three kNN classifiers.?",
+        "text": "Building a majority voting ensemble of three kNN classifiers.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Increasing k.?",
+        "text": "Increasing k.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Normalizing the input features.?",
+        "text": "Normalizing the input features.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Enlarging the test split by collecting new data.?",
+        "text": "Enlarging the test split by collecting new data.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -124,31 +124,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Two different initializations of k-means always converge to the same partitioning if the cluster count k is greater than two.?",
+        "text": "Two different initializations of k-means always converge to the same partitioning if the cluster count k is greater than two.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "k-means always finds an optimal partitioning after a finite number of iterations according to an objective optimality criterion.?",
+        "text": "k-means always finds an optimal partitioning after a finite number of iterations according to an objective optimality criterion.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For a fixed input dimensionality, the memory k-means requires per iteration is smaller than the memory the EM algorithm requires per iteration.?",
+        "text": "For a fixed input dimensionality, the size of the memory k-means requires during the computation of one iteration is smaller than the memory the Expectation Maximization (EM) algorithm requires during the computation of one iteration.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "k-means always converges to a partitioning after a finite number of iterations.?",
+        "text": "k-means always converges to a partitioning after a finite number of iterations.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For fixed input dimensionality and hardware, k-means requires less computation time per iteration than the EM algorithm.?",
+        "text": "For a fixed input dimensionality and fixed hardware configuration, the computation time k-means requires for completing one iteration is less than the computation time the Expectation Maximization (EM) algorithm requires for completing one iteration.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -163,31 +163,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The code implements the K-fold cross-validation stage of a supervised learning task.?",
+        "text": "The code implements the K-fold cross-validation stage of a supervised learning task.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Line 5 (loss.backward()) updates the model parameters.?",
+        "text": "Line 5 updates the model parameters.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code implements the training stage of a supervised learning task.?",
+        "text": "The code implements the training stage of a supervised learning task.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code performs iterative optimization using stochastic gradient descent.?",
+        "text": "The code performs iterative optimization using stochastic gradient descent.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Line 7 (optimizer.zero_grad()) computes the gradients of the loss function for the drawn minibatch.?",
+        "text": "Line 7 computes the gradients of the loss function for the drawn minibatch.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -202,31 +202,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The neural network has more than 50000 parameters.?",
+        "text": "The neural network has more than 50000 parameters.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The neural network has three hidden layers.?",
+        "text": "The neural network has three hidden layers.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code will run without a dimensionality mismatch error only for 100-dimensional input observations.?",
+        "text": "The code will run without a dimensionality mismatch error only for 100-dimensional input observations.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code will run without a dimensionality mismatch error only on minibatches of 100 observations.?",
+        "text": "The code will run without a dimensionality mismatch error only on minibatches of 100 observations.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Line 6 should be replaced by nn.Linear(125, 250) for the code to run without a dimensionality mismatch error.?",
+        "text": "Line 6 should be replaced by nn.Linear(125, 250) for the code to run without a dimensionality mismatch error.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -236,36 +236,36 @@
   {
     "type": "group",
     "section": "Question 7: Training/Generalization Error Curves",
-    "context": "Setup: A hand-drawn plot shows three curves (Curve 1 red, Curve 2 green, Curve 3 blue) of error vs.\nhidden-layer width for a two-layer fully-connected network, with marked widths M1 < M2 < M3 < M4.\nTwo of the curves represent training/generalization error; the third is meaningless and discarded.",
+    "context": "Setup: Two of the three curves shown below depict how the training and generalization error of a neural network with two fully connected layers changes as hidden layers get wider according to the assumptions of the statistical learning theory. The remaining curve does not have a meaning and needs to be discarded.\n[image: assets/ERR.png]",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Curve 3 (blue) depicts the training error.?",
+        "text": "Curve 3 (blue) depicts the training error.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Choosing the hidden layer width smaller than M3 causes underfitting.?",
+        "text": "Choosing the hidden layer width smaller than M3 causes underfitting.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The model with optimal generalization performance is M2.?",
+        "text": "The model with optimal generalization performance is M2.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Model M4 underfits more than model M1.?",
+        "text": "Model M4 underfits more than model M1.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Curve 2 (green) depicts the generalization error.?",
+        "text": "Curve 2 (green) depicts the generalization error.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -280,31 +280,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Observing an even number of heads and observing exactly two heads are equally probable events.?",
+        "text": "Observing an even number of heads and observing exactly two heads are equally probable events.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Observing an odd number of heads and observing less than two heads are independent events.?",
+        "text": "Observing an odd number of heads and observing less than two heads are independent events.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The probability of three heads is 1/8.?",
+        "text": "The probability of three heads is 1/8.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The probability of observing exactly one heads is 3/8.?",
+        "text": "The probability of observing exactly one heads is 3/8.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Given that you have observed at least one heads, the probability that you observe at least two heads is smaller than 1/2.?",
+        "text": "Given that you have observed at least one heads, the probability that you observe at least two heads is smaller than 1/2.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -319,31 +319,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$\\mathbb{E}[A + cB] = \\alpha + c\\gamma$.?",
+        "text": "$\\mathbb{E}[A + cB] = \\alpha + c\\gamma$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\mathbb{E}[A^2] = \\alpha^2 + \\beta$.?",
+        "text": "$\\mathbb{E}[A^2] = \\alpha^2 + \\beta$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Var}(cA) = c\\beta$ for a positive constant $c$.?",
+        "text": "$\\text{Var}(cA) = c\\beta$ for a positive constant $c$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Cov}(A, B)$ cannot be inferred from the information given in the question text.?",
+        "text": "$\\text{Cov}(A, B)$ cannot be inferred from the information given in the question text.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Var}(AB) \\geq \\beta\\phi$.?",
+        "text": "$\\text{Var}(AB) \\geq \\beta\\phi$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -353,36 +353,36 @@
   {
     "type": "group",
     "section": "Question 10: Confusion Matrix (A/B/C, 100 samples v2)",
-    "context": "Confusion matrix (rows = actual, cols = predicted):\nA: 15 as A, 2 as B, 3 as C (total 20).\nB: 7 as A, 15 as B, 8 as C (total 30).\nC: 2 as A, 3 as B, 45 as C (total 50).\nColumn totals: A=24, B=20, C=56.",
+    "context": "Consider the confusion matrix below obtained from a classifier evaluated on the test split of a data set comprising data points with discrete labels that can take three possible values: A, B, C. Each of these values correspond to a class.\n[image: assets/CM.png]",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The accuracy of a classifier that always predicts Class C is higher than the expected accuracy of a random classifier that predicts each class with equal probability.?",
+        "text": "The accuracy of a classifier that always predicts Class C is higher than the expected accuracy of a random classifier that predicts each class with equal probability.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The precision for Class B is 0.75.?",
+        "text": "The precision for Class B is 0.75.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The precision for Class A is greater than the recall for Class A.?",
+        "text": "The precision for Class A is greater than the recall for Class A.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "A random classifier that predicts each of the three classes with equal probability has an expected accuracy of 50% on this test split.?",
+        "text": "A random classifier that predicts each of the three classes with equal probability has an expected accuracy of 50% on this test split.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The false positive rate for Class B is smaller than the precision for Class B.?",
+        "text": "False positive rate for the Class B is smaller than the precision",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -397,31 +397,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Performing Bayesian inference on $\\pi$ w.r.t. $D$ using prior $\\text{Beta}(\\pi|\\alpha,\\beta)$ yields posterior $\\text{Beta}(\\pi|\\alpha+3, \\beta+1)$.?",
+        "text": "Performing Bayesian inference on $\\pi$ with respect to data set $D$ using a prior distribution $\\text{Beta}(\\pi|\\alpha, \\beta)$ yields the posterior distribution $\\text{Beta}(\\pi|\\alpha + 3, \\beta + 1)$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The maximum likelihood estimate for $\\pi$ is 0.75.?",
+        "text": "The maximum likelihood estimate for $\\pi$ is 0.75.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The MLE for $\\pi$ cannot be guaranteed to converge to the true $\\pi$ as the size of $D$ grows, without making additional model assumptions.?",
+        "text": "The maximum likelihood estimate for $\\pi$ cannot be guaranteed to converge to the true $\\pi$ as the size of the data set $D$ grows without making additional assumptions about the model.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If $\\pi = 0.3$ then $P(X_1+X_2+X_3+X_4 < 3) \\geq 0.67$.?",
+        "text": "If $\\pi = 0.3$ then $P(X_1+X_2+X_3+X_4 < 3) \\geq 0.67$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(X_1=A, X_2=B|\\pi) = P(X_1=A|\\pi)P(X_2=B|\\pi)$ for any binary pair of values A, B.?",
+        "text": "$P(X_1=A, X_2=B|\\pi) = P(X_1=A|\\pi)P(X_2=B|\\pi)$ for any binary pair of values A, B.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -436,31 +436,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$X_2$ and $X_4$ do not have to be independent if $X_1$ is observed.?",
+        "text": "$X_2$ and $X_4$ do not have to be independent if $X_1$ is observed.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$X_1$ and $X_3$ have to be independent if $X_2$ is observed.?",
+        "text": "$X_1$ and $X_3$ have to be independent if $X_2$ is observed.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$X_1$ and $X_4$ have to be independent if $X_3$ is observed.?",
+        "text": "$X_1$ and $X_4$ have to be independent if $X_3$ is observed.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$X_2$ and $X_3$ have to be independent random variables.?",
+        "text": "$X_2$ and $X_3$ have to be independent random variables.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$X_3$ and $X_4$ have to be independent if $X_2$ is observed.?",
+        "text": "$X_3$ and $X_4$ have to be independent if $X_2$ is observed.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -475,31 +475,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$P(C) = P(B)$.?",
+        "text": "$P(C) = P(B)$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(A) < P(B)$.?",
+        "text": "$P(A) < P(B)$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(A \\cap C) = \\emptyset$.?",
+        "text": "$P(A \\cap C) = \\emptyset$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(A) + P(B) > P(A \\cup B)$.?",
+        "text": "$P(A) + P(B) > P(A \\cup B)$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(B) = 1/2$.?",
+        "text": "$P(B) = 1/2$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""

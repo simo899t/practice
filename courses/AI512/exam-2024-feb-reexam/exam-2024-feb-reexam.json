@@ -7,31 +7,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The code performs gradient-descent updates 100 times?",
+        "text": "The code performs gradient-descent updates 100 times",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code will give a dimensionality mismatch error regardless of the minibatch size because the \"inputs_batch\" tensor is transformed into an invalid size by the \"view(-1, 784)\" operation?",
+        "text": "The code will give a dimensionality mismatch error regardless of the minibatch size because the \"inputs_batch\" tensor is transformed into an invalid size by the \"view(-1, 784)\" operation",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code implements the training stage of a supervised learning task?",
+        "text": "The code implements the training stage of a supervised learning task",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Line 6 updates the model parameters?",
+        "text": "Line 6 updates the model parameters",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Line 5 computes the gradients of the loss function for the drawn minibatch?",
+        "text": "Line 5 computes the gradients of the loss function for the drawn minibatch",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -46,31 +46,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The neural network uses the hyperbolic tangent activation function in all layers?",
+        "text": "The neural network uses the hyperbolic tangent activation function in all layers",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Line 4 should be replaced by nn.Linear(250, 100) for the source code to run without a dimensionality mismatch error?",
+        "text": "Line 4 should be replaced by nn.Linear(250, 100) for the source code to run without a dimensionality mismatch error",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code will run without a dimensionality mismatch error only on minibatches of 10 observations?",
+        "text": "The code will run without a dimensionality mismatch error only on minibatches of 10 observations",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The \"forward\" function of the created neural network object returns a 125-dimensional output vector?",
+        "text": "The \"forward\" function of the created neural network object returns a 125-dimensional output vector",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The source code implements a neural network architecture for 10-dimensional input observations?",
+        "text": "The source code implements a neural network architecture for 10-dimensional input observations",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -85,31 +85,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The kNN classifier's estimator variance gets smaller as the training set size gets smaller?",
+        "text": "The kNN classifier's estimator variance gets smaller as the training set size gets smaller",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The kNN classifier's test accuracy is guaranteed to increase by reducing $k$?",
+        "text": "The kNN classifier's test accuracy is guaranteed to increase by reducing $k$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The kNN classifier's prediction error on the training set may be larger than its prediction error on the test set in some data sets?",
+        "text": "The kNN classifier's prediction error on the training set may be larger than its prediction error on the test set in some data sets",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The kNN classifier's underfitting risk is mitigated by increasing training data size?",
+        "text": "The kNN classifier's underfitting risk is mitigated by increasing training data size",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The kNN classifier's overfitting risk is mitigated by increasing $k$?",
+        "text": "The kNN classifier's overfitting risk is mitigated by increasing $k$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -124,31 +124,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The variance of the random variable $X$ is smaller than 0?",
+        "text": "The variance of the random variable $X$ is smaller than 0",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The mean of the random variable $X$ is greater than 2?",
+        "text": "The mean of the random variable $X$ is greater than 2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(X < 3) = 0.7$?",
+        "text": "$P(X < 3) = 0.7$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(X < 4) < 1$?",
+        "text": "$P(X < 4) < 1$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(X \\text{ is odd}) = P(X \\text{ is even})?",
+        "text": "$P(X \\text{ is odd}) = P(X \\text{ is even})",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -163,31 +163,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$\\mathbb{E}[aX_1 + bX_2] = (a+b)(\\mathbb{E}[X_1] + \\mathbb{E}[X_2])$.?",
+        "text": "$\\mathbb{E}[aX_1 + bX_2] = (a+b)(\\mathbb{E}[X_1] + \\mathbb{E}[X_2])$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Var}[c(X_1+X_2)] = c^2\\text{Var}[X_1] + c^2\\text{Var}[X_2]$.?",
+        "text": "$\\text{Var}[c(X_1+X_2)] = c^2\\text{Var}[X_1] + c^2\\text{Var}[X_2]$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\mathbb{E}[X_1^2 + X_2^2] = \\mu_1^2 + \\mu_2^2 + \\sigma_1^2 + \\sigma_2^2$.?",
+        "text": "$\\mathbb{E}[X_1^2 + X_2^2] = \\mu_1^2 + \\mu_2^2 + \\sigma_1^2 + \\sigma_2^2$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Var}[X_1 \\cdot X_2] = \\text{Var}[X_1] \\cdot \\text{Var}[X_2]$.?",
+        "text": "$\\text{Var}[X_1 \\cdot X_2] = \\text{Var}[X_1] \\cdot \\text{Var}[X_2]$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Var}[X_2^2] = \\text{Var}[X_2]^2$.?",
+        "text": "$\\text{Var}[X_2^2] = \\text{Var}[X_2]^2$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -202,31 +202,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$P(B) = x + y - z$?",
+        "text": "$P(B) = x + y - z$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(A) = \\frac{z-x}{1-(x+y-z)}$?",
+        "text": "$P(A) = \\frac{z-x}{1-(x+y-z)}$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If $x = y$ then $P(A) = P(C)$?",
+        "text": "If $x = y$ then $P(A) = P(C)$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$z - x - y + 1 \\geq 0$?",
+        "text": "$z - x - y + 1 \\geq 0$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$y > z$?",
+        "text": "$y > z$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -241,31 +241,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Probability of at least two heads is equal to the probability of at least two tails?",
+        "text": "Probability of at least two heads is equal to the probability of at least two tails",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The expected value of the number of heads is 1/2?",
+        "text": "The expected value of the number of heads is 1/2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Probability of four tails is 1/16?",
+        "text": "Probability of four tails is 1/16",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Probability of at least one heads is less than the probability of at least two heads?",
+        "text": "Probability of at least one heads is less than the probability of at least two heads",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "\"The number of heads being odd\" and \"getting two or fewer heads\" are independent events?",
+        "text": "\"The number of heads being odd\" and \"getting two or fewer heads\" are independent events",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -280,31 +280,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Q-learning is an unsupervised learning algorithm?",
+        "text": "Q-learning is an unsupervised learning algorithm",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Q-learning assumes that the reward of a state transition resulting from a taken action is observed?",
+        "text": "Q-learning assumes that the reward of a state transition resulting from a taken action is observed",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The output of Q-learning run on an episodic environment is a function mapping a state-action pair to an estimate of the sum of discounted rewards until the end of the episode?",
+        "text": "The output of Q-learning run on an episodic environment is a function mapping a state-action pair to an estimate of the sum of discounted rewards until the end of the episode",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Q-learning assumes that the exact state transition distribution is available?",
+        "text": "Q-learning assumes that the exact state transition distribution is available",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Q-learning iterations are guaranteed to converge only if the agent's actions do not affect the environment state?",
+        "text": "Q-learning iterations are guaranteed to converge only if the agent's actions do not affect the environment state",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -313,37 +313,37 @@
   },
   {
     "type": "group",
-    "section": "Question 9: Confusion Matrix (A/B/C, 100 samples v3)",
+    "section": "Question 9: Confusion Matrix",
     "context": "Setup: \n Consider the confusion matrix below obtained from a classifier evaluated on the test split of a data set comprising data points with discrete labels that can take three possible values: A, B, C. Each of these values correspond to a class. \n [image: assets/CM.png] \n Evaluate the below statements regarding this confusion matrix.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Precision for Class A is smaller than recall for Class A.?",
+        "text": "Precision for Class A is smaller than recall for Class A.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Precision for Class B is smaller than recall for Class B.?",
+        "text": "Precision for Class B is smaller than recall for Class B.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Precision for Class C is smaller than recall for Class C.?",
+        "text": "Precision for Class C is smaller than recall for Class C.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The random classifier that predicts each of the three classes with equal probability has an expected accuracy of 50% on this test split.?",
+        "text": "The random classifier that predicts each of the three classes with equal probability has an expected accuracy of 50% on this test split.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The accuracy of a classifier that always predicts Class B on this test split is higher than the expected accuracy of a random classifier predicting each of the three classes with equal probability.?",
+        "text": "The accuracy of a classifier that always predicts Class B on this test split is higher than the expected accuracy of a random classifier predicting each of the three classes with equal probability.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -352,37 +352,37 @@
   },
   {
     "type": "group",
-    "section": "Question 10: k-Means on 8 Points",
+    "section": "Question 10: k-Means",
     "context": "Setup: $D = \\{(1,1),(2,2),(3,1),(4,4),(5,4),(5,5)\\}$, \n k=2, Euclidean distance, ties broken in favor of Cluster 1.\nOption 1 init: $\\mu_1=(3,3)$, $\\mu_2=(3,4)$. Option 2 init: $\\mu_1=(2,2)$, $\\mu_2=(3,1)$.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "When initialized with Option 2, the algorithm converges after the centroids are updated only once?",
+        "text": "When initialized with Option 2, the algorithm converges after the centroids are updated only once",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "When initialized with Option 1, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2?",
+        "text": "When initialized with Option 1, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "When initializated with Option 1, the algorithm converges after the centroids are updated only once?",
+        "text": "When initializated with Option 1, the algorithm converges after the centroids are updated only once",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The two initialization options converge to different clustering results?",
+        "text": "The two initialization options converge to different clustering results",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "When initialized with Option 2, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2?",
+        "text": "When initialized with Option 2, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -397,31 +397,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$P(U=1|HTH) < P(U=1|HHT)$?",
+        "text": "$P(U=1|HTH) < P(U=1|HHT)$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(U=2|HHT) > P(U=2)$?",
+        "text": "$P(U=2|HHT) > P(U=2)$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(U=1|HHT) > P(U=1)$?",
+        "text": "$P(U=1|HHT) > P(U=1)$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(U=3|HHT) > P(U=3)$?",
+        "text": "$P(U=3|HHT) > P(U=3)$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(U=2|HHT)$ would not change if $P(U=2)$ were equal to 2/3?",
+        "text": "$P(U=2|HHT)$ would not change if $P(U=2)$ were equal to 2/3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""

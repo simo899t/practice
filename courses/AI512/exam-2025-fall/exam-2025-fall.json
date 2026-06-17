@@ -2,36 +2,36 @@
   {
     "type": "group",
     "section": "Question 1: Bayesian Cancer Screening",
-    "context": "Setup: $P(\\text{cancer}) = 0.01$, $P(+|\\text{cancer}) = 0.90$, $P(+|\\neg\\text{cancer}) = 0.03$.\nSo $P(+) = 0.90 \\cdot 0.01 + 0.03 \\cdot 0.99 = 0.009 + 0.0297 = 0.0387$ and\n$P(\\text{cancer}|+) = 0.009 / 0.0387 \\approx 0.233$.",
+    "context": "Setup: You are given a population where 1/100 of the population is expected to have cancer. The population is diagnosed by a cancer screening test with a binary outcome. The test is expected to give a negative result in 10% of the cases where the patients actually have cancer. The same test is expected to give a positive result in 3% of the cases where the patients actually do not have cancer. Evaluate the following statements regarding this population and the described cancer test.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$P(\\text{cancer} | +) > $ false positive rate of the test.?",
+        "text": "The probability that a patient with a positive test outcome has cancer is greater than the false positive rate of the test.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(\\text{positive test}) < P(\\text{cancer})$.?",
+        "text": "The probability that a patient will have a positive test outcome is smaller than the probability that a patient will have cancer.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(\\neg\\text{cancer} | -) < P(\\neg\\text{cancer})$.?",
+        "text": "The probability that a patient with a negative test outcome does not have cancer is smaller than the probability of the absence of cancer in the whole population.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(\\text{positive test}) < P(\\text{cancer}|+)$.?",
+        "text": "The probability that a patient will be positively tested is smaller than the cancer probability for a patient with a positive test outcome.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(\\text{cancer}, +) < P(\\text{cancer}|+)$.?",
+        "text": "The joint probability of a patient having cancer and a positive test outcome is smaller than the probability of a patient having cancer conditioned on a positive test outcome.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -41,36 +41,36 @@
   {
     "type": "group",
     "section": "Question 2: Expectation and Variance",
-    "context": "",
+    "context": "Setup: Evaluate the correctness of the following statements regarding two discrete random variables $X$ and $Y$ for all possible joint distributions $P(X, Y)$.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "For all joint distributions: $\\mathbb{E}[X+Y] = \\mathbb{E}[X] + \\mathbb{E}[Y]$.?",
+        "text": "$\\mathbb{E}[X + Y] = \\mathbb{E}[X] + \\mathbb{E}[Y]$",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For all joint distributions: $\\text{Var}[X+Y] = \\text{Var}[X] + \\text{Var}[Y]$.?",
+        "text": "$\\text{Var}[X + Y] = \\text{Var}[X] + \\text{Var}[Y]$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For all joint distributions: $\\mathbb{E}[X] = \\mathbb{E}_Y[\\mathbb{E}_X[X|Y]]$.?",
+        "text": "$\\mathbb{E}[X] = \\mathbb{E}_Y[\\mathbb{E}_X[X|Y]]$",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For all joint distributions: $\\text{Var}[X] = \\mathbb{E}_Y[\\text{Var}_X[X|Y]] + \\text{Var}_Y[\\mathbb{E}_X[X|Y]]$.?",
+        "text": "$\\text{Var}[X] = \\mathbb{E}_Y[\\text{Var}_X[X|Y]] + \\text{Var}_Y[\\mathbb{E}_X[X|Y]]$",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For all joint distributions: $\\mathbb{E}[X \\times Y] = \\mathbb{E}[X] \\times \\mathbb{E}[Y]$.?",
+        "text": "$\\mathbb{E}[X \\times Y] = \\mathbb{E}[X] \\times \\mathbb{E}[Y]$",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -80,36 +80,36 @@
   {
     "type": "group",
     "section": "Question 3: Confusion Matrix",
-    "context": "Confusion matrix (rows = actual, cols = predicted):\nN: 70 correct, 20 as B, 10 as M (total 100).\nB: 10 as N, 60 correct, 10 as M (total 80).\nM: 0 as N, 10 as B, 10 correct (total 20).\nColumn totals: N=80, B=90, M=30.",
+    "context": "Consider the confusion matrix below obtained from a classifier evaluated on medical scans with three possible labels: $N$ (Normal), $B$ (Benign), and $M$ (Malignant). Each of these values corresponds to a class, representing the behavior of a tissue with a suspicion of cancer.\n[image: assets/CM.png]",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Recall for class M is $0.50$ (50%).?",
+        "text": "The Recall for the Malignant class (M) is 0.50 (or 50%).",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Precision for class B is higher than its Recall.?",
+        "text": "The Precision for the Benign class (B) is higher than its Recall.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "F1-score for class N is exactly $0.75$.?",
+        "text": "The F1-score for the Normal class (N) is exactly 0.75 (or 75%).",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "False alarm rate (predict M, actual N) > miss rate (predict N or B, actual M).?",
+        "text": "The model is more likely to provide a false alarm (predicting M when actual is N) than it is to miss a malignant case (predicting either N or B when the actual label is M).",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Precision for class N is higher than Precision for class B.?",
+        "text": "The Precision for Class N is higher than the Precision for Class B.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -119,36 +119,36 @@
   {
     "type": "group",
     "section": "Question 4: Maximum Likelihood Estimation",
-    "context": "",
+    "context": "Setup: Consider a set of $n$ independent and identically distributed (i.i.d.) samples $x_1, x_2, \\ldots, x_n$ drawn from a Normal distribution where both the mean $\\mu$ and the variance $\\sigma^2$ are unknown. Evaluate the below statements regarding the Maximum Likelihood Estimation (MLE) for this case.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The MLE for $\\mu$ is the sample mean $\\frac{1}{n}\\sum_{i=1}^n x_i$.?",
+        "text": "The MLE for $\\mu$ is the sample mean $\\frac{1}{n}\\sum_{i=1}^n x_i$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The MLE for variance is an unbiased estimator of the true population variance.?",
+        "text": "The MLE for the variance is an unbiased estimator of the true population variance.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If the true mean $\\mu$ were known, the MLE for variance would be $\\frac{1}{n-1}\\sum_{i=1}^n (x_i-\\mu)^2$.?",
+        "text": "If the true mean $\\mu$ were known beforehand, the MLE for the variance would be $\\frac{1}{n-1}\\sum_{i=1}^n (x_i - \\mu)^2$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The log-likelihood function is a linear function of $\\sigma^2$.?",
+        "text": "The log-likelihood function is a linear function of the parameter $\\sigma^2$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The maximum of the likelihood $L$ is achieved at the same $(\\mu, \\sigma^2)$ as the maximum of $\\log L$.?",
+        "text": "The maximum value of the likelihood function is achieved at the same pair of $(\\mu, \\sigma^2)$ values as the maximum of the log-likelihood function.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -158,36 +158,36 @@
   {
     "type": "group",
     "section": "Question 5: Decision Tree Splits",
-    "context": "Parent: 50 positive, 50 negative (100 total).\n$v_1$: 30 samples (20+, 10−). $v_2$: 30 samples (10+, 20−). $v_3$: 40 samples (20+, 20−).",
+    "context": "Setup: Consider a dataset with 100 samples and two classes (50 Positive, 50 Negative). We are evaluating a potential split on a categorical attribute $A$ that has three possible values: $\\{v_1, v_2, v_3\\}$. The split results in the following distribution:\n$A = v_1$: 30 samples (20 positive, 10 negative)\n$A = v_2$: 30 samples (10 positive, 20 negative)\n$A = v_3$: 40 samples (20 positive, 20 negative)",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The Gini index of the parent node is exactly $0.5$.?",
+        "text": "The Gini index of the parent node is exactly 0.5.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Gini}(v_3) > \\text{Gini}(v_1)$.?",
+        "text": "The Gini index of the child node for $A = v_3$ is higher than the Gini index of the child node for $A = v_1$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{Gini}(v_1) = \\text{Gini}(v_2)$.?",
+        "text": "The Gini index of the child node for $A = v_1$ is equal to the Gini index of the child node for $A = v_2$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The Information Gain for this split is greater than $0.15$ bits.?",
+        "text": "The Information Gain for this split is greater than 0.15 bits.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The reduction in Gini index from parent to children is greater than $0.04$.?",
+        "text": "The reduction in Gini index from the parent to the children for this split is greater than 0.04.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -197,36 +197,36 @@
   {
     "type": "group",
     "section": "Question 6: Naive Bayes Classifier",
-    "context": "60 bought (B=1): 42 tech (C=T), 48 discount (D=1).\n40 did not buy (B=0): 12 tech, 8 discount.",
+    "context": "Setup: Consider a Naive Bayes classifier built to predict if a user will buy a certain product ($B = 1$) or not ($B = 0$). The users are characterized by two binary features: Interest category $C \\in \\{T, F\\}$ (where $T$ stands for Tech and $F$ for Fashion) and Discount $D \\in \\{1, 0\\}$ (where 1 means a user has a discount and 0 that the user does not). The training data for 100 users shows:\n60 users bought the product and 40 users did not.\nOf the 60 users who bought the product, 42 are in interest category $T$ and 48 have a discount.\nOf the 40 users who did not buy the product, 12 are in interest category $T$ and 8 have a discount.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The prior probability $P(B=1) = 0.6$.?",
+        "text": "Based on the training data, the prior probability of class $B = 1$ is $P(B = 1) = 0.6$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The Naïve Bayes assumption implies $P(C, D) = P(C) \\cdot P(D)$ (marginal independence).?",
+        "text": "The Naive Bayes assumption implies that the features $C$ and $D$ are marginally independent. In formal terms, it implies $P(C, D) = P(C)P(D)$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For $C=F, D=0$, Naïve Bayes predicts $B=1$ (will buy).?",
+        "text": "The Naive Bayes model will predict that a user from the fashion category ($C = F$) and without a discount ($D = 0$) will buy the product ($B = 1$).",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$P(D=1 | B=1) = 0.8$.?",
+        "text": "The classifier calculates a conditional probability of 0.8 for a user having a discount given they bought the product, denoted as $P(D = 1|B = 1) = 0.8$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The ratio $P(B=1|C=T,D=1) / P(B=0|C=T,D=1) = 14$.?",
+        "text": "The ratio of the posterior probabilities $P(B = 1|C = T, D = 1)/P(B = 0|C = T, D = 1)$ is 14, assuming the prior probabilities are derived directly from the training set frequencies.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -235,37 +235,37 @@
   },
   {
     "type": "group",
-    "section": "Question 7: Bias–Variance Trade-off",
-    "context": "",
+    "section": "Question 7: Bias-Variance Trade-off",
+    "context": "Setup: Consider a decision tree classifier trained on a fixed dataset. We are investigating the effects of varying the hyperparameter \\texttt{max\\_depth} (the maximum distance from the root to any leaf) which terminates the splitting process when the maximum depth is reached. Assume the tree is grown using standard recursive partitioning and that the labels are noisy. Evaluate the below statements regarding the bias-variance trade-off for this model.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "As max_depth $\\to \\infty$, training error decreases but variance typically increases.?",
+        "text": "As the \\texttt{max\\_depth} increases toward infinity, the training error generally decreases, but the variance component of the total error typically increases.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "A decision tree with max_depth = 1 has higher variance and lower bias than deeper trees.?",
+        "text": "A decision tree with a \\texttt{max\\_depth} of 1 is a higher-variance and lower-bias model compared to decision trees with larger \\texttt{max\\_depth}.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Increasing the minimum number of samples required to split a node increases model bias.?",
+        "text": "Increasing the minimum number of samples required to split a node increases model bias.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The bias component of error represents the sensitivity of predictions to small fluctuations in the training set.?",
+        "text": "The bias component of the error in a decision tree represents the sensitivity of the model's predictions to small fluctuations in the specific training set used.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If a decision tree perfectly classifies every noisy training example, the test error is dominated by variance and irreducible error.?",
+        "text": "If a decision tree perfectly classifies every instance in a noisy training set, the total expected error on unseen data is dominated by the variance and the irreducible error (e.g. label noise).",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -275,36 +275,36 @@
   {
     "type": "group",
     "section": "Question 8: PyTorch Logistic Regression",
-    "context": "Model: $\\texttt{nn.Linear(5, 1)} — 5$ weights + 1 bias. Training loop: 20 epochs over $\\texttt{train\\_dl}$.",
+    "context": "Setup: Code:\nimport torch\nimport torch.nn as nn\n\nclass LogisticRegression(nn.Module):\n    def __init__(self, input_dim):\n        super(LogisticRegression, self).__init__()\n        self.linear = nn.Linear(input_dim, 1)\n\n    def forward(self, x):\n        return self.linear(x)\n\nmodel = LogisticRegression(input_dim=5)\ncriterion = nn.BCEWithLogitsLoss()\noptimizer = torch.optim.SGD(model.parameters(), lr=0.01)\n\nfor epoch in range(20):\n    for x_batch, y_batch in train_dl:\n        logits = model(x_batch.view(-1, 5))\n        loss = criterion(logits, y_batch.view(-1, 1))\n\n        loss.backward()\n        optimizer.step()\n        optimizer.zero_grad()\n\nRemark: The BCEWithLogitsLoss function implements the binary cross entropy loss.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The model contains exactly 6 learnable parameters.?",
+        "text": "The \\texttt{model} instance contains exactly six learnable parameters.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code is certain to perform exactly 20 gradient updates.?",
+        "text": "It is certain that the code will perform exactly 20 gradient updates.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The code works for all classification problems regardless of the number of class labels.?",
+        "text": "The presented version of the code works without a runtime error for all classification problems regardless of the number of possible class labels as long as the class labels can be predicted from the inputs by a linear mapping.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "\\texttt{loss.backward()} computes gradients for weights but not for the bias.?",
+        "text": "The \\texttt{loss.backward()} call calculates the gradients for the weights but not for the bias term.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The optimizer uses the stochastic version of gradient descent.?",
+        "text": "The loss function is optimized with respect to the model parameters using the stochastic version of the gradient descent algorithm.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -314,36 +314,36 @@
   {
     "type": "group",
     "section": "Question 9: Gaussian Classifier Code",
-    "context": "Code implements a Quadratic Discriminant Analysis (QDA)-like classifier with per-class mean and covariance.",
+    "context": "Setup: Consider the following Python implementation:\nCode:\ndef learn(self, X, y):\n    self.class_prob = numpy.zeros(self.K)\n    for k in range(self.K):\n        self.class_prob[k] = numpy.sum(y == k) / y.shape[0]\n        X_k = X[y == k]\n        self.mu[k] = numpy.mean(X_k, axis=0)\n        self.Sigma[k] = numpy.cov(X_k.T)\n\ndef log_gaussian(self, X, mu, Sigma):\n    N, D = X.shape\n    log_prob = numpy.zeros(N)\n    for i in range(N):\n        diff = X[i] - mu\n        log_prob[i] = -0.5 * numpy.log(numpy.linalg.det(Sigma)) - 0.5 * diff.T @ numpy.linalg.inv(Sigma) @ diff\n    return log_prob\n\ndef predict(self, X):\n    N = X.shape[0]\n    log_posterior = numpy.zeros((N, self.K))\n    for k in range(self.K):\n        log_posterior[:, k] = self.log_gaussian(X, self.mu[k], self.Sigma[k])\n    log_posterior += numpy.log(self.class_prob)\n    return numpy.argmax(log_posterior, axis=1)",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "The implementation calculates a class-specific covariance matrix for each class.?",
+        "text": "The implementation calculates a class-specific covariance matrix for each class at an intermediate stage of its computation.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\texttt{log\\_gaussian}$ will work correctly when $D=10$ but a class has only 5 training samples.?",
+        "text": "The \\texttt{log\\_gaussian} function as implemented will correctly compute the logarithm of the probability density for a group of samples where the number of features is 10 but a specific class only has 5 training samples.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\texttt{log\\_gaussian}$ does not return the mathematically exact log-density of a multivariate Gaussian.?",
+        "text": "The \\texttt{log\\_gaussian} function as implemented does not return the mathematically exact value of the log-density of a multivariate normal distribution.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The implementation uses gradient descent for parameter optimisation.?",
+        "text": "This implementation performs iterative parameter optimization using the gradient descent algorithm.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If $\\texttt{learn()}$ used a shared covariance for all classes, the decision boundaries would be non-linear.?",
+        "text": "If the \\texttt{learn} function were modified to use a shared covariance matrix for all classes, the decision boundaries would be non-linear.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -353,36 +353,36 @@
   {
     "type": "group",
     "section": "Question 10: Empirical Risk Minimisation",
-    "context": "",
+    "context": "Setup: Consider a learning algorithm that finds a hypothesis $h \\in \\mathcal{H}$ by minimizing the empirical error $R_{\\text{emp}}(h)$ on a training set $S$ of size $n$, where samples are drawn i.i.d. from a distribution $\\mathcal{D}$. Let $R(h)$ be the generalization error. Let $\\hat{h}$ be the hypothesis chosen by the empirical risk minimization algorithm on $S$. Evaluate the following statements.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "$R_{\\text{emp}}(h)$ is an unbiased estimator of $R(h)$ for a fixed $h$, but is biased for the ERM hypothesis $\\hat{h}$.?",
+        "text": "The empirical error $R_{\\text{emp}}(h)$ is an unbiased estimator of the generalization error $R(h)$ for a fixed hypothesis $h$, but it is generally a biased estimator for the hypothesis $\\hat{h}$ chosen by the empirical risk minimization algorithm.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The generalisation gap is guaranteed to decrease at a linear rate as $n$ increases.?",
+        "text": "The generalization gap, defined as $|R(h) - R_{\\text{emp}}(h)|$ for some hypothesis $h \\in \\mathcal{H}$, is guaranteed to decrease at a linear rate as the number of training samples $n$ increases, regardless of the complexity of a fixed hypothesis space $\\mathcal{H}$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "If $\\mathcal{H} \\subseteq \\mathcal{H}'$, then $R_{\\text{emp}}(\\hat{h}') \\leq R_{\\text{emp}}(\\hat{h})$.?",
+        "text": "For a fixed training set $S$, if we expand the hypothesis space such that $\\mathcal{H} \\subseteq \\mathcal{H}'$, then it is guaranteed that $R_{\\text{emp}}(\\hat{h}') \\leq R_{\\text{emp}}(\\hat{h})$ where $\\hat{h}'$ is the hypothesis chosen from $\\mathcal{H}'$ by empirical risk minimization.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "To ensure $R(\\hat{h}) \\leq R_{\\text{emp}}(\\hat{h}) + \\epsilon$ with confidence $1-\\delta$, $n$ must scale linearly with $|\\mathcal{H}|$.?",
+        "text": "To ensure that $R(\\hat{h}) \\leq R_{\\text{emp}}(\\hat{h}) + \\epsilon$ with confidence $1 - \\delta$ for a fixed $\\epsilon$ and $\\delta$, the required number of samples $n$ must scale linearly with the size of the hypothesis space $|\\mathcal{H}|$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The bound $R(\\hat{h}) \\leq R_{\\text{emp}}(\\hat{h}) + \\sqrt{\\frac{\\ln|\\mathcal{H}|+\\ln(1/\\delta)}{2n}}$ holds for all finite $\\mathcal{H}$ but not necessarily all distributions.?",
+        "text": "The inequality $R(\\hat{h}) \\leq R_{\\text{emp}}(\\hat{h}) + \\sqrt{\\frac{\\ln|\\mathcal{H}|+\\ln(1/\\delta)}{2n}}$, where $n$ is the data set size, holds with probability at least $1 - \\delta$ for all finite hypothesis spaces $\\mathcal{H}$ but not necessarily for all data distributions.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -392,37 +392,37 @@
   {
     "type": "group",
     "section": "Question 11: No-Free-Lunch Theorem",
-    "context": "",
-    "positiveLabel": "False",
-    "negativeLabel": "True",
+    "context": "Setup: Consider the version of the No-Free-Lunch (NFL) theorem given below:\n\nLet $A$ be any learning algorithm for the task of binary classification with respect to the 0/1 loss over a domain $\\mathcal{X}$ and $m < |\\mathcal{X}|/2$ be a positive integer representing a training set size. Then, there exists a distribution $D$ over $\\mathcal{X} \\times \\{0, 1\\}$ such that:\n1. There exists a function $f : \\mathcal{X} \\to \\{0, 1\\}$ with zero generalization error.\n2. With probability of at least $1/7$ over the choice of $S \\sim D^m$, we have that the generalization error of algorithm $A$ on data set $S$ is at least $1/8$.\n\nEvaluate the following statements regarding this theorem.",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
     "statements": [
       {
-        "text": "If algorithm A has smaller generalisation error than B on one dataset, A is expected to outperform B across all distributions.?",
-        "answerIsPositive": true,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "For any learning algorithm, there exists at least one distribution where its error cannot be reduced by enlarging the training set.?",
+        "text": "If Algorithm A is shown to have smaller generalization error than Algorithm B on a specific dataset, it is expected that its generalization error will be smaller than Algorithm B across all possible data distributions.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "NFL implies that inductive bias is necessary for better-than-random generalisation on any specific task.?",
+        "text": "For any learning algorithm, there exists at least one data distribution for which the algorithm will not have a generalization error smaller than a quantity that cannot be reduced by enlarging the training set size.",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The theorem demonstrates that inductive bias is a necessary requirement for a learning algorithm to achieve better-than-random generalization on a specific task.",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "The NFL theorem only applies to parametric predictors. It does not explain the behavior of non-parametric models such as the k-nearest-neighbors classifier.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The NFL theorem applies only to parametric predictors, not non-parametric models like k-NN.?",
-        "answerIsPositive": true,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "NFL implies that for any distribution with a perfect classifier, any algorithm converges to zero generalisation error if $m \\geq |\\mathcal{X}|/8$.?",
-        "answerIsPositive": true,
+        "text": "NFL implies that for any distribution where a perfect classifier exists, any learning algorithm is guaranteed to converge to zero generalization error as long as the training set size $m$ is large enough to cover at least 1/8th of the domain $\\mathcal{X}$.",
+        "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       }
@@ -431,36 +431,36 @@
   {
     "type": "group",
     "section": "Question 12: PAC Learning",
-    "context": "",
+    "context": "Setup: Evaluate the following statements about the Probably Approximately Correct (PAC) learning framework.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "A concept is PAC learnable if a polynomial-in-$1/\\epsilon$ sample size suffices to achieve error $< \\epsilon$ with probability $\\geq 1-\\delta$, for fixed $\\delta$.?",
+        "text": "In the PAC framework, a concept is learnable if there exists an algorithm that can find a hypothesis with error less than $\\epsilon$ with probability at least $1 - \\delta$, using a number of samples that grows at a polynomial rate in $1/\\epsilon$ for a fixed $\\delta$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "A larger hypothesis space $\\mathcal{H}$ requires fewer training samples for the same error level.?",
+        "text": "A larger hypothesis space $\\mathcal{H}$ requires fewer training samples to reach the same $\\epsilon$ error for fixed probability $1 - \\delta$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Sample complexity for a finite $\\mathcal{H}$ grows logarithmically in $|\\mathcal{H}|$.?",
+        "text": "The sample complexity for a finite hypothesis space $\\mathcal{H}$ grows at a logarithmic rate in the number of hypotheses available in the hypothesis class ($|\\mathcal{H}|$).",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The confidence parameter $\\delta$ is the maximum rate of incorrect label predictions at generalisation time.?",
+        "text": "The confidence parameter $\\delta$ refers to the maximum rate of incorrect label predictions expected to take place at the generalization time.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "The Fundamental Theorem of Statistical Learning states that $\\mathcal{H}$ is PAC learnable iff its VC dimension is finite.?",
+        "text": "The Fundamental Theorem of Statistical Learning states that a hypothesis class $\\mathcal{H}$ is PAC learnable if and only if its Vapnik-Chervonenkis (VC) dimension is finite.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
@@ -470,36 +470,36 @@
   {
     "type": "group",
     "section": "Question 13: VC Dimension of Axis-Aligned Boxes in $\\mathbb{R}^3$",
-    "context": "For axis-aligned boxes in $\\mathbb{R}^d$, the VC dimension is $2d$. In $\\mathbb{R}^3$: $\\text{VC}(\\mathcal{H}) = 6$.",
+    "context": "Setup: Consider a hypothesis space $\\mathcal{H}$ consisting of all possible axis-aligned boxes (rectangular parallelepipeds) in the three-dimensional space of real numbers $\\mathbb{R}^3$. A point is classified as $+1$ if it falls inside the box and $-1$ otherwise. Evaluate the following statements regarding the VC dimension $\\text{VC}(\\mathcal{H})$ and the shattering of point sets in this space.",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "There exists a set of 6 points in $\\mathbb{R}^3$ that can be shattered by $\\mathcal{H}$.?",
+        "text": "There exists a set of 6 points in $\\mathbb{R}^3$ that can be shattered by $\\mathcal{H}$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "$\\text{VC}(\\mathcal{H}) = 4$ in $\\mathbb{R}^3$.?",
+        "text": "The VC dimension of $\\mathcal{H}$ in $\\mathbb{R}^3$ is 4, matching the dimension of the input space plus one.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "There exists a set of 4 points in $\\mathbb{R}^3$ for which every labelling is achievable by some box.?",
+        "text": "There exists at least one set of four points in $\\mathbb{R}^3$ for which every possible labeling can be realized by some axis-aligned box in $\\mathcal{H}$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "For $n > 10$, the growth function satisfies $\\Pi_\\mathcal{H}(n) < 2^n$.?",
+        "text": "For $n > 10$ where $n$ is the number of points in $\\mathbb{R}^3$, the growth function's output value is strictly less than $2^n$.",
         "answerIsPositive": true,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "There does not exist a set of 5 points in $\\mathbb{R}^3$ that can be shattered by $\\mathcal{H}$.?",
+        "text": "There does not exist a set of 5 points in $\\mathbb{R}^3$ that can be shattered by $\\mathcal{H}$.",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
