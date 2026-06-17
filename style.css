@@ -319,16 +319,16 @@ header h1 {
 /* Open-answer questions */
 .open-answer {
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   margin: 0.75rem 0;
-  padding: 0.65rem 0.75rem;
+  padding: 0.75rem 1rem;
   font-family: inherit;
   font-size: 0.95rem;
   border: 1px solid var(--border);
-  border-radius: 6px;
-  background: var(--bg);
+  border-radius: var(--radius);
+  background: var(--surface);
   color: var(--text);
-  resize: vertical;
+  resize: none;
   box-sizing: border-box;
 }
 .open-answer:disabled { opacity: 0.6; }
