@@ -316,4 +316,33 @@ header h1 {
 .results-card h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
 #score-text { font-size: 1.1rem; color: var(--muted); font-style: italic; }
 
+/* Open-answer questions */
+.open-answer {
+  width: 100%;
+  min-height: 120px;
+  margin: 0.75rem 0;
+  padding: 0.65rem 0.75rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  resize: vertical;
+  box-sizing: border-box;
+}
+.open-answer:disabled { opacity: 0.6; }
+.open-correct-answer {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  background: #f0f7f0;
+  border-left: 3px solid #4caf50;
+  border-radius: 4px;
+}
+.open-correct-label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #2e7d32;
+}
+
 .hidden { display: none !important; }

@@ -1,431 +1,72 @@
 [
   {
-    "type": "group",
-    "section": "Question 1: PyTorch Training Loop ",
-    "context": "Setup: Code:\nfor epoch in range(100):\n    for inputs_batch, outputs_batch in train_dl:\n        predictions_batch = model(inputs_batch.view(-1, 784))\n        loss = loss_function(predictions_batch, outputs_batch)\n        loss.backward()\n        optimizer.step()\n        optimizer.zero_grad()",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "The code performs gradient-descent updates 100 times",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The code will give a dimensionality mismatch error regardless of the minibatch size because the \"inputs_batch\" tensor is transformed into an invalid size by the \"view(-1, 784)\" operation",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The code implements the training stage of a supervised learning task",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Line 6 updates the model parameters",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Line 5 computes the gradients of the loss function for the drawn minibatch",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 1: Domain, Range, and Level Sets",
+    "context": "Let $$ f : \\mathbb{R}^3 \\to \\mathbb{R} $$ be defined by $f(x, y, z) = x^2 + y^2 + z^2$.",
+    "text": "(a) Determine the domain and range of $f$.\n\n(b) Describe geometrically the level set formed by $f(x, y, z) = 100$.",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 2: PyTorch nn.Sequential",
-    "context": "Setup: Code:\nmodel = nn.Sequential(\n  nn.Linear(10, 100),\n  nn.ReLU(),\n  nn.Linear(100, 250),\n  nn.ReLU(),\n  nn.Linear(250, 125),\n  nn.ReLU(),\n  nn.Linear(125, 2)\n)",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "The neural network uses the hyperbolic tangent activation function in all layers",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Line 4 should be replaced by nn.Linear(250, 100) for the source code to run without a dimensionality mismatch error",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The code will run without a dimensionality mismatch error only on minibatches of 10 observations",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The \"forward\" function of the created neural network object returns a 125-dimensional output vector",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The source code implements a neural network architecture for 10-dimensional input observations",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 2: Limits and Continuity",
+    "context": "",
+    "text": "(a) Compute the following limit or show that the limit does not exist:\n$$\\lim_{(x,y)\\to(0,0)} \\frac{x + y^2}{2x + y}$$\n\n(b) Is the following function continuous along $y = 0$?\n$$f(x, y) = \\begin{cases} 1 - x & y \\geq 0 \\\\ -2 & y < 0 \\end{cases}$$",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 3: kNN Classifier",
-    "context": "Setup: You are given a k-Nearest-Neighbor (kNN) classifier evaluated on a particular training and test split of a particular data set for a particular choice of k. Evaluate the following statements related to this classifier.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "The kNN classifier's estimator variance gets smaller as the training set size gets smaller",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The kNN classifier's test accuracy is guaranteed to increase by reducing $k$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The kNN classifier's prediction error on the training set may be larger than its prediction error on the test set in some data sets",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The kNN classifier's underfitting risk is mitigated by increasing training data size",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The kNN classifier's overfitting risk is mitigated by increasing $k$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 3: Tangent Plane",
+    "context": "Let $$ g(x, y, z) = x^2 - 2xy^2 + az - a.$$",
+    "text": "(a) Find an equation of the tangent plane to $g$ at the point $(1, 1, 1)$.\n\n(b) For which value of $a$ does the tangent plane pass through the origin?",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 4: Discrete Random Variable $X$",
-    "context": "Setup: $P(X=1)=0.2, \\quad P(X=2)=0.5, \\quad P(X=3)=0.3$.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "The variance of the random variable $X$ is smaller than 0",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The mean of the random variable $X$ is greater than 2",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(X < 3) = 0.7$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(X < 4) < 1$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(X \\text{ is odd}) = P(X \\text{ is even})",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 4: Contour Diagram",
+    "context": "Below is a contour diagram of $f(x, y)$. In each of the following cases, list the marked points in the diagram (there may be none or more than one) at which \n [image: assets/CONT.png]\n\nHint: what kind of function $f(x,y)$ would produce a contour plot like the one shown? Compute its $f_x$, $f_y$, $f_{xx}$ and $f_{yy}$.",
+    "text": "In each of the following cases, list the marked points in the diagram (there may be none or more than one) at which:\n\n(a) $f_x < 0$\n(b) $f_y > 0$\n(c) $f_{xx} > 0$\n(d) $f_{yy} < 0$",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 5: Two Independent Random Variables",
-    "context": "Setup: \n $\\mathbb{E}[X_1]=\\mu_1$, $\\mathbb{E}[X_2]=\\mu_2$, $\\text{Var}[X_1]=\\sigma_1^2$, $\\text{Var}[X_2]=\\sigma_2^2$. $X_1, X_2$ are independent.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "$\\mathbb{E}[aX_1 + bX_2] = (a+b)(\\mathbb{E}[X_1] + \\mathbb{E}[X_2])$.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$\\text{Var}[c(X_1+X_2)] = c^2\\text{Var}[X_1] + c^2\\text{Var}[X_2]$.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$\\mathbb{E}[X_1^2 + X_2^2] = \\mu_1^2 + \\mu_2^2 + \\sigma_1^2 + \\sigma_2^2$.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$\\text{Var}[X_1 \\cdot X_2] = \\text{Var}[X_1] \\cdot \\text{Var}[X_2]$.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$\\text{Var}[X_2^2] = \\text{Var}[X_2]^2$.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 5: Fundamental Theorem of Calculus",
+    "context": "Let $F(x) = \\int_0^x \\cos(\\pi t)\\, dt$.",
+    "text": "(a) Evaluate $F(1)$.\n\n(b) For what values of $x$ is $F(x)$ positive? negative?",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 6: Events $A$, $B$ and $C$",
-    "context": "Setup: A and C independent. B and C independent. A and B disjoint.\n$P(A \\cup B) = x$, $P(B \\cup C) = y$, $P(A \\cup B \\cup C) = z$, for $x,y,z \\in [0,1]$.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "$P(B) = x + y - z$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(A) = \\frac{z-x}{1-(x+y-z)}$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "If $x = y$ then $P(A) = P(C)$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$z - x - y + 1 \\geq 0$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$y > z$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 6: Gradient and Directional Derivatives",
+    "context": "Let $T(x, y) = e^{-(x^2 + y^2)}$ represent the heat at the point $(x, y)$.",
+    "text": "(a) In which direction should a heat-seeking bug move from the point $(-1, 1)$ to increase its temperature fastest?\n\n(b) Find the directional derivative of $T$ at the point $P = (-1, 1)$ in the direction of $(1, 1)$.\n\n(c) Does $T$ have a maximum or a minimum? At where? Hint: You don't need to compute second-order derivatives. Consider that $\\exp$ is monotone increasing and how that affects the extrema of $T$.",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 7: Fair Coin Tossed Four Times",
-    "context": "A fair coin is tossed four times. The event that one side of the coin shows upwards when the coin is at rest is denoted as \"heads\" and the other side as \"tails\". The coin tosses are independent and identically distributed events. In other words, the outcomes of the previous tosses do not have any effect on the outcome of the next one. Evaluate the following statements regarding this coin toss experiment.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "Probability of at least two heads is equal to the probability of at least two tails",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The expected value of the number of heads is 1/2",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Probability of four tails is 1/16",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Probability of at least one heads is less than the probability of at least two heads",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "\"The number of heads being odd\" and \"getting two or fewer heads\" are independent events",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 7: Differentiability of $f(x,y) = |xy|$",
+    "context": "Consider the function $f(x, y) = |xy|$.",
+    "text": "(a) Is $f$ differentiable at $(1, 0)$? Explain.\n\n(b) Is $f$ differentiable at $(0, 0)$? Explain.",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 8: Q-Learning Algorithm",
-    "context": "Evaluate the following statements about the Q-learning algorithm.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "Q-learning is an unsupervised learning algorithm",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Q-learning assumes that the reward of a state transition resulting from a taken action is observed",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The output of Q-learning run on an episodic environment is a function mapping a state-action pair to an estimate of the sum of discounted rewards until the end of the episode",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Q-learning assumes that the exact state transition distribution is available",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Q-learning iterations are guaranteed to converge only if the agent's actions do not affect the environment state",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 8: Double Integral in Polar Coordinates",
+    "context": "[image: assets/FIG.png]",
+    "text": "Use polar coordinates to evaluate $\\displaystyle\\iint_R \\sqrt{x^2 + y^2}\\, dA$.",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 9: Confusion Matrix",
-    "context": "Setup: \n Consider the confusion matrix below obtained from a classifier evaluated on the test split of a data set comprising data points with discrete labels that can take three possible values: A, B, C. Each of these values correspond to a class. \n [image: assets/CM.png] \n Evaluate the below statements regarding this confusion matrix.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "Precision for Class A is smaller than recall for Class A.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Precision for Class B is smaller than recall for Class B.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Precision for Class C is smaller than recall for Class C.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The random classifier that predicts each of the three classes with equal probability has an expected accuracy of 50% on this test split.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The accuracy of a classifier that always predicts Class B on this test split is higher than the expected accuracy of a random classifier predicting each of the three classes with equal probability.",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 9: Triple Integral in Cylindrical Coordinates",
+    "context": "Let $W = \\{(x, y, z) \\mid 1 \\leq x^2 + y^2 \\leq 4,\\ 0 \\leq z \\leq 4\\}$.",
+    "text": "Evaluate the following integral by using cylindrical or spherical coordinates:\n$$\\iiint_W \\frac{z}{(x^2 + y^2)^{3/2}}\\, dV$$",
+    "answer": ""
   },
   {
-    "type": "group",
-    "section": "Question 10: k-Means",
-    "context": "Setup: $D = \\{(1,1),(2,2),(3,1),(4,4),(5,4),(5,5)\\}$, \n k=2, Euclidean distance, ties broken in favor of Cluster 1.\nOption 1 init: $\\mu_1=(3,3)$, $\\mu_2=(3,4)$. Option 2 init: $\\mu_1=(2,2)$, $\\mu_2=(3,1)$.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "When initialized with Option 2, the algorithm converges after the centroids are updated only once",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "When initialized with Option 1, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "When initializated with Option 1, the algorithm converges after the centroids are updated only once",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "The two initialization options converge to different clustering results",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "When initialized with Option 2, the points (1,1),(2,2),(3,1) are assigned to Cluster 1 and (4,4),(5,4),(5,5) to Cluster 2",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "section": "Question 11: Coins",
-    "context": "Setup: Three coins. Two are fair, one is unfair with Heads probability 3/4. \n $U$ = which coin is unfair,\n$P(U=1)=P(U=2)=P(U=3)=1/3$ a priori. \n First two coins observed Heads, third Tails: outcome HHT.",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "$P(U=1|HTH) < P(U=1|HHT)$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(U=2|HHT) > P(U=2)$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(U=1|HHT) > P(U=1)$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(U=3|HHT) > P(U=3)$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$P(U=2|HHT)$ would not change if $P(U=2)$ were equal to 2/3",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
+    "type": "open",
+    "section": "Question 10: True or False",
+    "context": "",
+    "text": "Decide whether the following statements are true or false. Justify each answer.\n\n(a) If a function is differentiable, it must be continuous.\n\n(b) $\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx = \\int_0^1\\int_0^y f(x,y)\\,dx\\,dy$\n\n(c) If $\\displaystyle\\iint_R f\\,dA = 0$, then $f$ is zero at all points in $R$.\n\n(d) If $f$ and $g$ are two functions continuous on a region $R$, then\n$$\\int_R f \\cdot g\\, dA = \\int_R f\\, dA \\cdot \\int_R g\\, dA$$\n\n(e) A local maximum of $f$ can only occur at the critical points.",
+    "answer": ""
   }
 ]

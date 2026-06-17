@@ -29,6 +29,8 @@ function totalPoints(items) {
   return items.reduce((sum, it) => sum + (it.type === 'group' ? it.statements.length : 1), 0);
 }
 
+function isOpenType(it) { return it.type === 'open'; }
+
 // ── Shuffle helpers ───────────────────────────────────────────────────────────
 
 function shuffle(arr) {
@@ -40,10 +42,11 @@ function shuffle(arr) {
 }
 
 function prepareQuestions(items) {
-  return shuffle(items.map(it => it.type === 'group'
-    ? { ...it, statements: shuffle([...it.statements]) }
-    : { ...it, options: shuffle([...it.options]) }
-  ));
+  return shuffle(items.map(it => {
+    if (it.type === 'group') return { ...it, statements: shuffle([...it.statements]) };
+    if (it.type === 'open')  return { ...it };
+    return { ...it, options: shuffle([...it.options]) };
+  }));
 }
 
 // ── Rich text (inline images) ────────────────────────────────────────────────
@@ -147,6 +150,7 @@ function updateProgress() {
 function renderQuestion() {
   const q = questions[current];
   if (q.type === 'group') renderGroupQuestion(q);
+  else if (q.type === 'open') renderOpenQuestion(q);
   else renderSingleQuestion(q);
 }
 
@@ -253,6 +257,63 @@ function renderGroupQuestion(q) {
   const nextBtn = document.createElement('button');
   nextBtn.className = 'btn btn-next hidden';
   nextBtn.id = 'next-btn';
+  nextBtn.textContent = current + 1 < questions.length ? 'Next question' : 'See results';
+  nextBtn.addEventListener('click', advance);
+  card.appendChild(nextBtn);
+
+  area.appendChild(card);
+  renderMathWhenReady(card);
+  updateProgress();
+}
+
+function renderOpenQuestion(q) {
+  answered = false;
+
+  const area = document.getElementById('quiz-area');
+  area.innerHTML = '';
+
+  const card = document.createElement('div');
+  card.className = 'card question-card';
+
+  if (q.context) renderContext(card, q.context);
+
+  const qText = document.createElement('p');
+  qText.className = 'question-text';
+  richRender(qText, q.text);
+  card.appendChild(qText);
+
+  const textarea = document.createElement('textarea');
+  textarea.className = 'open-answer';
+  textarea.placeholder = 'Write your answer here…';
+  card.appendChild(textarea);
+
+  const submitBtn = document.createElement('button');
+  submitBtn.className = 'btn';
+  submitBtn.textContent = 'Submit answer';
+  submitBtn.addEventListener('click', () => {
+    if (answered) return;
+    answered = true;
+    textarea.disabled = true;
+    submitBtn.classList.add('hidden');
+
+    const answerBox = document.createElement('div');
+    answerBox.className = 'open-correct-answer';
+    const label = document.createElement('p');
+    label.className = 'open-correct-label';
+    label.textContent = 'Model answer:';
+    answerBox.appendChild(label);
+    const answerText = document.createElement('p');
+    richRender(answerText, q.answer);
+    answerBox.appendChild(answerText);
+    card.insertBefore(answerBox, nextBtn);
+
+    renderMath(card);
+    nextBtn.classList.remove('hidden');
+  });
+  card.appendChild(submitBtn);
+
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'btn btn-next hidden';
   nextBtn.textContent = current + 1 < questions.length ? 'Next question' : 'See results';
   nextBtn.addEventListener('click', advance);
   card.appendChild(nextBtn);
