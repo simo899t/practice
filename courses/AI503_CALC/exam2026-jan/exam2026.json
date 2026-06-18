@@ -1,72 +1,79 @@
 [
   {
     "type": "open",
-    "section": "Question 1: Domain, Range, and Level Sets",
+    "section": "Question 1",
     "context": "Let $ f : \\mathbb{R}^3 \\to \\mathbb{R} $ be defined by $f(x, y, z) = x^2 + y^2 + z^2$.",
     "text": "(a) Determine the domain and range of $f$.\n\n(b) Describe geometrically the level set formed by $f(x, y, z) = 100$.",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 2: Limits and Continuity",
+    "section": "Question 2",
     "context": "",
     "text": "(a) Compute the following limit or show that the limit does not exist:\n$$\\lim_{(x,y)\\to(0,0)} \\frac{x + y^2}{2x + y}$$\n\n(b) Is the following function continuous along $y = 0$?\n$$f(x, y) = \\begin{cases} 1 - x & y \\geq 0 \\\\ -2 & y < 0 \\end{cases}$$",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 3: Tangent Plane",
-    "context": "Let $$ g(x, y, z) = x^2 - 2xy^2 + az - a.$$",
+    "section": "Question 3",
+    "context": "Let $g(x, y, z) = x^2 - 2xy^2 + az - a$.",
     "text": "(a) Find an equation of the tangent plane to $g$ at the point $(1, 1, 1)$.\n\n(b) For which value of $a$ does the tangent plane pass through the origin?",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 4: Contour Diagram",
-    "context": "Below is a contour diagram of $f(x, y)$. In each of the following cases, list the marked points in the diagram (there may be none or more than one) at which \n [image: assets/CONT.png]\n\nHint: what kind of function $f(x,y)$ would produce a contour plot like the one shown? Compute its $f_x$, $f_y$, $f_{xx}$ and $f_{yy}$.",
+    "section": "Question 4",
+    "context": "Below is a contour diagram of $f(x, y)$.\n [image: assets/CONT.png]\n\nHint: what kind of function $f(x,y)$ would produce a contour plot like the one shown? Compute its $f_x$, $f_y$, $f_{xx}$ and $f_{yy}$.",
     "text": "In each of the following cases, list the marked points in the diagram (there may be none or more than one) at which:\n\n(a) $f_x < 0$\n(b) $f_y > 0$\n(c) $f_{xx} > 0$\n(d) $f_{yy} < 0$",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 5: Fundamental Theorem of Calculus",
+    "section": "Question 5",
     "context": "Let $F(x) = \\int_0^x \\cos(\\pi t)\\, dt$.",
     "text": "(a) Evaluate $F(1)$.\n\n(b) For what values of $x$ is $F(x)$ positive? negative?",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 6: Gradient and Directional Derivatives",
-    "context": "Let $T(x, y) = e^{-(x^2 + y^2)}$ represent the heat at the point $(x, y)$.",
+    "section": "Question 6",
+    "context": "Let $$ T(x, y) = e^{-(x^2 + y^2)$$ represent the heat at the point $(x, y)$.",
     "text": "(a) In which direction should a heat-seeking bug move from the point $(-1, 1)$ to increase its temperature fastest?\n\n(b) Find the directional derivative of $T$ at the point $P = (-1, 1)$ in the direction of $(1, 1)$.\n\n(c) Does $T$ have a maximum or a minimum? At where? Hint: You don't need to compute second-order derivatives. Consider that $\\exp$ is monotone increasing and how that affects the extrema of $T$.",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 7: Differentiability of $f(x,y) = |xy|$",
+    "section": "Question 7",
     "context": "Consider the function $f(x, y) = |xy|$.",
     "text": "(a) Is $f$ differentiable at $(1, 0)$? Explain.\n\n(b) Is $f$ differentiable at $(0, 0)$? Explain.",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 8: Double Integral in Polar Coordinates",
+    "section": "Question 8",
     "context": "[image: assets/FIG.png]",
     "text": "Use polar coordinates to evaluate $\\displaystyle\\iint_R \\sqrt{x^2 + y^2}\\, dA$.",
     "answer": ""
   },
   {
     "type": "open",
-    "section": "Question 9: Triple Integral in Cylindrical Coordinates",
+    "section": "Question 9",
     "context": "Let $W = \\{(x, y, z) \\mid 1 \\leq x^2 + y^2 \\leq 4,\\ 0 \\leq z \\leq 4\\}$.",
     "text": "Evaluate the following integral by using cylindrical or spherical coordinates:\n$$\\iiint_W \\frac{z}{(x^2 + y^2)^{3/2}}\\, dV$$",
     "answer": ""
   },
   {
-    "type": "open",
+    "type": "group",
     "section": "Question 10: True or False",
     "context": "",
-    "text": "Decide whether the following statements are true or false. Justify each answer.\n\n(a) If a function is differentiable, it must be continuous.\n\n(b) $\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx = \\int_0^1\\int_0^y f(x,y)\\,dx\\,dy$\n\n(c) If $\\displaystyle\\iint_R f\\,dA = 0$, then $f$ is zero at all points in $R$.\n\n(d) If $f$ and $g$ are two functions continuous on a region $R$, then\n$\\int_R f \\cdot g\\, dA = \\int_R f\\, dA \\cdot \\int_R g\\, dA$\n\n(e) A local maximum of $f$ can only occur at the critical points.",
-    "answer": ""
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      { "text": "If a function is differentiable, it must be continuous.", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
+      { "text": "$\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx = \\int_0^1\\int_0^y f(x,y)\\,dx\\,dy$", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
+      { "text": "If $\\displaystyle\\iint_R f\\,dA = 0$, then $f$ is zero at all points in $R$.", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
+      { "text": "If $f$ and $g$ are two functions continuous on a region $R$, then $\\int_R f \\cdot g\\, dA = \\int_R f\\, dA \\cdot \\int_R g\\, dA$", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
+      { "text": "A local maximum of $f$ can only occur at the critical points.", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" }
+    ]
   }
 ]

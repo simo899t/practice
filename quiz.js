@@ -61,23 +61,27 @@ function resolveAsset(p) {
 
 // Appends text + <img> nodes for any [image: path] tokens found in str.
 function richRender(target, str) {
-  let lastIndex = 0;
-  let m;
-  IMAGE_TOKEN.lastIndex = 0;
-  while ((m = IMAGE_TOKEN.exec(str))) {
-    if (m.index > lastIndex) {
-      target.appendChild(document.createTextNode(str.slice(lastIndex, m.index)));
+  const lines = str.split('\n');
+  lines.forEach((line, li) => {
+    if (li > 0) target.appendChild(document.createElement('br'));
+    let lastIndex = 0;
+    let m;
+    IMAGE_TOKEN.lastIndex = 0;
+    while ((m = IMAGE_TOKEN.exec(line))) {
+      if (m.index > lastIndex) {
+        target.appendChild(document.createTextNode(line.slice(lastIndex, m.index)));
+      }
+      const img = document.createElement('img');
+      img.src = resolveAsset(m[1].trim());
+      img.className = 'inline-image';
+      img.alt = '';
+      target.appendChild(img);
+      lastIndex = IMAGE_TOKEN.lastIndex;
     }
-    const img = document.createElement('img');
-    img.src = resolveAsset(m[1].trim());
-    img.className = 'inline-image';
-    img.alt = '';
-    target.appendChild(img);
-    lastIndex = IMAGE_TOKEN.lastIndex;
-  }
-  if (lastIndex < str.length) {
-    target.appendChild(document.createTextNode(str.slice(lastIndex)));
-  }
+    if (lastIndex < line.length) {
+      target.appendChild(document.createTextNode(line.slice(lastIndex)));
+    }
+  });
 }
 
 // Renders question context, splitting out any "Code:" listing into its own

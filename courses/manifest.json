@@ -1,13 +1,5 @@
 [
   {
-    "id": "DM507_DM578_DS814",
-    "title": "DM507, DM578, DS814 - Algorithms and Data Structures",
-    "description": "AI/CS",
-    "tests": [
-      
-    ]
-  },
-  {
     "id": "DM573",
     "title": "DM573 - Introduction to Computer Science",
     "description": "AI/CS",
@@ -21,6 +13,22 @@
     "description": "AI/CS",
     "tests": [
       
+    ]
+  },
+  {
+    "id": "DM549_DS820",
+    "title": "DM549, DS820 - Discrete Mathematics",
+    "description": "AI/CS",
+    "tests": [
+      
+    ]
+  },
+  {
+    "id": "DM507",
+    "title": "DM507, DM578, DS814 - Algorithms and Data Structures",
+    "description": "AI/CS",
+    "tests": [
+      { "id": "exam2025",     "title": "Exam 2025",     "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/test_template/exam2025.json" }
     ]
   },
   {

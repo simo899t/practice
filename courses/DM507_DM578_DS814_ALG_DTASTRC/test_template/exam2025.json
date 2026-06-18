@@ -1,0 +1,534 @@
+[
+  {
+    "type": "group",
+    "section": "Question 1: ",
+    "context": "Which of the answers below are true for the following recursion equation $$T(n) = 2 \\cdot T(n/4) +n^2 $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2 \\space log \\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^3)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Cannot be solved using the Master Theorem from Cormen et al., 4th edition",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 2: ",
+    "context": "Which of the answers below are true for the following recursion equation $$T(n) = 4 \\cdot T(n/2) +n^2 $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 3: ",
+    "context": "Which of the answers below are true for the following recursion equation $$T(n) = 4 \\cdot T(n/3) +n $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 4: ",
+    "context": "Which of the answers below are true for the following recursion equation $$T(n) = T(n/4) +1 $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 5: ",
+    "context": "Which of the answers below are true (one or more)",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$3n^3$ is $\\mathcal{O}(4n^3)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$4n$ is $\\mathcal{O}(n/3)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\sqrt{n}$ is $\\mathcal{O}(log \\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^2/2 + n^3/3$ is $\\mathcal{O}(2n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n \\space log \\space n$ is $\\mathcal{O}(n^2/(log \\space n)^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^{10}$ is $\\mathcal{O}(10^n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$log_4$ is $\\mathcal{O}(log_3 \\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 6: ",
+    "context": "Which of the answers below are true (one or more)",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$2^n$ is $\\Omega(n^4)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^3$ is $o(n^6/2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^2$ is $\\omega (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^2/2 + n^3/3$ is $\\mathcal{O}(2n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n \\space log \\space n$ is $\\mathcal{O}(n^2/(log \\space n)^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^{10}$ is $\\mathcal{O}(10^n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$log_4$ is $\\mathcal{O}(log_3 \\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1: ",
+    "context": "WHich of the answers below are true for the following recursion equation $$T(n) = 2 \\cdot T(n/4) +n^2 $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1: ",
+    "context": "WHich of the answers below are true for the following recursion equation $$T(n) = 2 \\cdot T(n/4) +n^2 $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1: ",
+    "context": "WHich of the answers below are true for the following recursion equation $$T(n) = 2 \\cdot T(n/4) +n^2 $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1: ",
+    "context": "WHich of the answers below are true for the following recursion equation $$T(n) = 2 \\cdot T(n/4) +n^2 $$",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$T(n) = \\Theta (1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_4\\space 3})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n \\space log\\space n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^{log_3\\space 4})$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$T(n) = \\Theta (n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  }
+
+
+
+]
+
