@@ -167,6 +167,13 @@ function renderSingleQuestion(q) {
   const card = document.createElement('div');
   card.className = 'card question-card';
 
+  if (q.section) {
+    const heading = document.createElement('p');
+    heading.className = 'group-title';
+    heading.textContent = q.section;
+    card.appendChild(heading);
+  }
+
   if (q.context) renderContext(card, q.context);
 
   const qText = document.createElement('p');

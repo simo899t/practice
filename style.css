@@ -147,7 +147,8 @@ header h1 {
 }
 .question-text .katex,
 .question-context .katex,
-.statement-text .katex { color: var(--text); font-size: 1.05em; }
+.statement-text .katex,
+.opt-text .katex { color: var(--text); font-size: 1.05em; }
 .note .katex { font-size: 0.95em; }
 
 .code-block {
@@ -179,7 +180,7 @@ header h1 {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--accent);
+  color: var(--muted);
   margin-bottom: 0.5rem;
 }
 
@@ -224,10 +225,12 @@ header h1 {
 .statement.correct {
   border-color: var(--correct);
   background: var(--correct-bg);
+  color: var(--correct);
 }
 .statement.wrong {
   border-color: var(--wrong);
   background: var(--wrong-bg);
+  color: var(--wrong);
 }
 
 .statement .verdict {
@@ -280,8 +283,10 @@ header h1 {
   color: var(--muted);
   font-family: 'Georgia', serif;
 }
-.option.correct .note { color: var(--correct); opacity: 0.8; }
-.option.wrong .note   { color: var(--wrong);   opacity: 0.8; }
+.option.correct .note,
+.statement.correct .note { color: var(--correct); opacity: 0.8; }
+.option.wrong .note,
+.statement.wrong .note   { color: var(--wrong);   opacity: 0.8; }
 
 /* Buttons */
 .btn {
@@ -330,14 +335,14 @@ header h1 {
 .open-correct-answer {
   margin: 0.75rem 0;
   padding: 0.75rem 1rem;
-  background: #f0f7f0;
-  border-left: 3px solid #4caf50;
-  border-radius: 4px;
+  background: var(--correct-bg);
+  border-left: 3px solid var(--correct);
+  border-radius: var(--radius);
+  color: var(--correct);
 }
 .open-correct-label {
   font-weight: 600;
   margin-bottom: 0.3rem;
-  color: #2e7d32;
 }
 
 .hidden { display: none !important; }

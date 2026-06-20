@@ -1,0 +1,1418 @@
+[
+  {
+    "type": "single",
+    "section": "Question 1: ",
+    "context": "",
+    "text": "Which of the following answers is correct for the recurrence? $$T(n) = 2 \\cdot T(n/4) + n^2$$",
+    "options": [
+      {
+        "text": "$T(n) = \\Theta(1)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_4 3})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_3 4})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2 \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Cannot be solved using the Master Theorem from Cormen et al., 4th edition",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 2: ",
+    "context": "",
+    "text": "Which of the following answers is correct for the recurrence? $$T(n) = 4 \\cdot T(n/2) + n^2$$",
+    "options": [
+      {
+        "text": "$T(n) = \\Theta(1)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_4 3})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_3 4})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2 \\log n)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Cannot be solved using the Master Theorem from Cormen et al., 4th edition",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 3: ",
+    "context": "",
+    "text": "Which of the following answers is correct for the recurrence? $$T(n) = 4 \\cdot T(n/3) + n$$",
+    "options": [
+      {
+        "text": "$T(n) = \\Theta(1)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_4 3})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_3 4})$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2 \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Cannot be solved using the Master Theorem from Cormen et al., 4th edition",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 4: ",
+    "context": "",
+    "text": "Which of the following answers is correct for the recurrence? $$T(n) = T(n/4) + 1$$",
+    "options": [
+      {
+        "text": "$T(n) = \\Theta(1)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(\\log n)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_4 3})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^{\\log_3 4})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^2 \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$T(n) = \\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Cannot be solved using the Master Theorem from Cormen et al., 4th edition",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 5: ",
+    "context": "Which of the following statements are true? [One or more correct answers.]",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$3n^4$ is $\\mathcal{O}(4n^3)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$4n$ is $\\mathcal{O}(n/3)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\sqrt{n}$ is $\\mathcal{O}(\\log n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^2/2 + n^3/3$ is $\\mathcal{O}(2n)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n \\log n$ is $\\mathcal{O}(n^2/(\\log n)^2)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^{10}$ is $\\mathcal{O}(10^n)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\log_4 n$ is $\\mathcal{O}(\\log_3 n)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 6: ",
+    "context": "Which of the following statements are true? [One or more correct answers.]",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "$2^n$ is $\\Omega(n^4)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^3$ is $o(n^6/2)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^2$ is $\\omega(n^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n^3/(\\log n)^3$ is $\\Theta(n^2/(\\log n)^2)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\log n$ is $\\Omega(1)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$2$ is $o(1)$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$n - 100$ is $\\Theta(n + 100)$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 7: ",
+    "context": "Build a min-heap by executing BUILD-MIN-HEAP$(A, 8)$ on the following array $A$: [image: assets/ARR1.png]",
+    "text": "At which position in $A$ is the key 5 located afterwards?",
+    "options": [
+      {
+        "text": "1",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "3",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "4",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "5",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "6",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "7",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "8",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 8: ",
+    "context": "An array $A$ \n [image: assets/ARR2.png] \n contains the following six keys in some order: $\\{5, 6, 7, 8, 9, 10\\}$.\n\nIt is given that $A$ is a min-heap. State all positions in $A$ that can hold the key 9. [One or more correct answers.]",
+    "positiveLabel": "Correct",
+    "negativeLabel": "Incorrect",
+    "statements": [
+      {
+        "text": "Position 1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Position 2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Position 3",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Position 4",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Position 5",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Position 6",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 9: ",
+    "context": "For a function $h_1(x)$: \n $\\begin{aligned}h_1 (44) &= 2 \\\\ h_1 (55) &= 5 \\\\ h_1 (66) &= 1 \\\\ h_1 (77) &= 2 \\\\ h_1 (88) &= 5 \\\\ h_1 (99) &= 6\\end{aligned}$  \nWe consider a hash table $H$ of length seven using linear probing with $h_1(x)$ as the auxiliary hash function. Starting from an empty table, the keys $\\{44, 55, 66, 77, 88, 99\\}$ were inserted in some order. The result is: [image: assets/ARR3]\n\nWhich keys could have been inserted last (i.e. could have been last in the insertion order)? [One or more correct answers.]",
+    "positiveLabel": "Correct",
+    "negativeLabel": "Incorrect",
+    "statements": [
+      {
+        "text": "44",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "55",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "66",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "77",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "88",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "99",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 10: ",
+    "context": "We consider a hash table $H$ of length seven using double hashing with auxiliary hash functions $h_1(x)$ and $h_2(x)$. The table currently looks like: [image: assets/ARR4.png] \n\nThen key 99 is inserted, after which the table looks like: [image: assets/ARR5.png]\n\nIf $h_2(99) = 2$, which of the following values of $h_1(99)$ are possible? [One or more correct answers.]",
+    "positiveLabel": "Correct",
+    "negativeLabel": "Incorrect",
+    "statements": [
+      {
+        "text": "$h_1(99) = 0$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$h_1(99) = 1$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$h_1(99) = 2$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$h_1(99) = 3$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$h_1(99) = 4$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$h_1(99) = 5$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$h_1(99) = 6$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 11: ",
+    "context": "Execute PARTITION$(A, 1, 9)$ on the following array: [image: assets/ARR6.png]",
+    "text": "Which of the following shows the state of $A$ afterwards?",
+    "options": [
+      {
+        "text": "[image: assets/ARR6a.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/ARR6b.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/ARR6c.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/ARR6d.png]",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/ARR6e.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/ARR6f.png]",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 12: ",
+    "context": "An array $A$ of length nine contains the numbers $\\{1, 2, 3, 4, 5, 6, 7, 8, 9\\}$ in some order. After executing PARTITION$(A, 1, 9)$, $A$ looks like: [image: assets/ARR7.png]\n\nWhich of the following numbers could have been the pivot element in PARTITION, i.e. could have been at the last position in $A$ at the start of the algorithm? [One or more correct answers.]",
+    "positiveLabel": "Correct",
+    "negativeLabel": "Incorrect",
+    "statements": [
+      {
+        "text": "1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "3",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "4",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "6",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "7",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "8",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "9",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 13: ",
+    "context": "A file contains the following characters with the given frequencies: [image: assets/HUFF1.png]",
+    "text": "Build a Huffman tree on this input. How many bits are in the codeword for q?",
+    "options": [
+      {
+        "text": "1",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "3",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "4",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "5",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "6",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 14: ",
+    "context": "We still consider a Huffman tree for a file with the following frequencies: [image: assets/HUFF2.png]",
+    "text": "There are $150 + 100 + 25 + 125 + 200 + 50 + 75 = 725$ characters in the file. How many bits do these 725 characters occupy in total when encoded with Huffman codes?",
+    "options": [
+      {
+        "text": "1800",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "1825",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "1900",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "1925",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2000",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2075",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2100",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 15: ",
+    "context": "Execute breadth-first search BFS$(G, a)$ on the graph $G$ below starting at node $a$: [image: assets/GRAPH.png]\n\nFor BFS the execution depends on the ordering of each node's adjacency list. Assume that each node's adjacency list is sorted in alphabetical order by the neighbours' names.",
+    "text": "Which node is the *last* to be assigned $d$-value 3?",
+    "options": [
+      {
+        "text": "$e$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$f$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$g$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$h$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$i$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$j$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 16: ",
+    "context": "Execute depth-first search DFS-VISIT$(G, a)$ on the directed graph $G$ below starting at node $a$. Read the next question before executing the algorithm: [image: assets/GRAPH.png]\n\nFor DFS the execution depends on the ordering of each node's adjacency list. Assume that each node's adjacency list is sorted in alphabetical order by the neighbours' names.",
+    "text": "Which node is the last to be discovered (i.e. has the highest discovery time)?",
+    "options": [
+      {
+        "text": "$b$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$c$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$d$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$e$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$f$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$g$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$h$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$i$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$j$",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 17: ",
+    "context": "We still consider depth-first search DFS-VISIT$(G, a)$ on the directed graph $G$ starting at node $a$ (see previous question): [image: assets/GRAPH.png]",
+    "text": "How many cross edges are found in the graph during this search?",
+    "options": [
+      {
+        "text": "0",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "1",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "3",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "4",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "5",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "6",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 18: ",
+    "context": "Which of the following lists give a topological sorting of the graph below? [image: assets/TOPGRAPH.png] [One or more correct answers.]",
+    "positiveLabel": "Correct",
+    "negativeLabel": "Incorrect",
+    "statements": [
+      {
+        "text": "$c, j, e, h, i, f, b$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$c, e, h, i, f, b, j$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$b, c, e, f, h, i, j$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$j, e, h, i, f, b, c$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$c, j, e, h, f, i, b$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$c, j, e, h, i, b, f$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 19: ",
+    "context": "Below is an array of eleven integers with values between 0 and 5 (inclusive): [image: assets/countingSortArr]\n\nWe sort the numbers by executing COUNTING-SORT$(A, 11, 5)$. The algorithm uses an array $C$ with six slots (indexed 0 to 5), each holding an integer counter.",
+    "text": "What is the sum of these six integers in $C$ at the end of the algorithm?",
+    "options": [
+      {
+        "text": "0",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "5",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "11",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "18",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "23",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "32",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "34",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 20: ",
+    "context": "We want to use $\\text{RADIX-SORT}(A, 4)$ to sort six integers in ascending order in array $A$. [Notation from Cormen et al., 4th edition: $\\text{RADIX-SORT}(A, 6, 4)$.]\n\n [image assets/radixSort.png]",
+    "text": "What is the content of $A$ after executing *two* of the four iterations in $\\text{RADIX-SORT}(A, 4)$?",
+    "options": [
+      {
+        "text": "[image assets/rad1.png]",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "[image assets/rad2.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image assets/rad3.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image assets/rad4.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image assets/rad5.png]",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 21: ",
+    "context": "Use Kruskal's algorithm to find a minimum spanning tree (MST) for the following graph. Also read the next question before executing the algorithm: [image: assets/kruskals.png]",
+    "text": "Which edge is the last to be added to the MST?",
+    "options": [
+      {
+        "text": "$(a, b)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$(i, j)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(h, j)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(e, h)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(h, i)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(e, j)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 22: ",
+    "context": "We still consider Kruskal's algorithm on the following graph (see previous question): [image: assets/kruskals.png]\n\nWe look at the first point in the algorithm where an examined edge is NOT added to the MST. How many connected components does the graph $(V, A)$ have at that point? [Here $V$ is the set of nodes in graph $G$, and $A$ is the set of edges added to the MST so far.]",
+    "text": "How many connected components does $(V, A)$ have at that point?",
+    "options": [
+      {
+        "text": "1",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "3",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "4",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "5",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "6",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 23: ",
+    "context": "Which of these algorithms can be used to find shortest paths on the following graph? [image: assets/SHORTGRAPH.png] [One or more correct answers.]",
+    "positiveLabel": "Correct",
+    "negativeLabel": "Incorrect",
+    "statements": [
+      {
+        "text": "Dijkstra",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Bellman-Ford",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "DAG-Shortest-Paths",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Kruskal",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Breadth-First-Search",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Depth-First-Search",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Floyd-Warshall",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "Prim",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 24: ",
+    "context": "Which of the following subsets of nodes will make the tree a valid red-black tree, if exactly this subset of nodes is colored red (and the rest black)? [image: assets/RBTREE1.png] [One or more correct answers.]",
+    "positiveLabel": "Correct",
+    "negativeLabel": "Incorrect",
+    "statements": [
+      {
+        "text": "$2, 7$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$1, 2, 4, 7, 8$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$2, 5, 7$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$2, 3, 6, 7, 9$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "$2, 3, 7, 8$",
+        "answerIsPositive": true,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 25: ",
+    "context": "Insert key 10 into the following red-black tree (double circles indicate red nodes): [image: assets/insert.png]",
+    "text": "Which of the following shows the tree after the insertion?",
+    "options": [
+      {
+        "text": "[image: assets/insert1.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/insert.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/insert3.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/insert4.png]",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 26: ",
+    "context": "We consider the tree-based data structure for disjoint-sets (also called disjoint-set forest). Both heuristics union-by-rank and path compression are used. Method names refer to pseudo-code in Cormen et al., 4th edition.\n\nStarting from an empty structure, the following sequence of operations is performed:\n\n$\\text{MAKE-SET}(a)$\n$\\text{MAKE-SET}(b)$\n$\\text{MAKE-SET}(c)$\n$\\text{MAKE-SET}(d)$\n$\\text{MAKE-SET}(e)$\n$\\text{MAKE-SET}(f)$\n$\\text{UNION}(f, e)$\n$\\text{UNION}(b, f)$\n$\\text{UNION}(d, a)$\n$\\text{UNION}(f, d)$\n$\\text{UNION}(b, c)$\n$\\text{FIND-SET}(a)$",
+    "text": "Which of the following figures shows the data structure after this sequence?",
+    "options": [
+      {
+        "text": "[image: assets/DSJSET1.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/DSJSET2.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/DSJSET3.png]",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "[image: assets/DSJSET4.png]",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 27: ",
+    "context": "For the following algorithm, what is the asymptotic running time in $\\Theta$-notation as a function of $n$?\n\nCode: ALGORITME1(n)\n  s = 0\n  while s < n\n    s = s + 3",
+    "text": "What is the asymptotic running time in $\\Theta$-notation as a function of $n$?",
+    "options": [
+      {
+        "text": "$\\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(\\sqrt{n})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^2)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 28: ",
+    "context": "For the following algorithm, what is the asymptotic running time in $\\Theta$-notation as a function of $n$?\n\nCode: ALGORITME2(n)\n  s = 0\n  i = 0\n  while i < n/2\n    for j = i to i + n/2\n      s = s + 1\n    i = i + 1",
+    "text": "What is the asymptotic running time in $\\Theta$-notation as a function of $n$?",
+    "options": [
+      {
+        "text": "$\\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(\\sqrt{n})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^2)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 29: ",
+    "context": "For the following algorithm, what is the asymptotic running time in $\\Theta$-notation as a function of $n$?\n\nCode: ALGORITME3(n)\n  i = 1\n  while i <= n\n    j = 1\n    while j <= n\n      j = j * 2\n    i = i + 2",
+    "text": "What is the asymptotic running time in $\\Theta$-notation as a function of $n$?",
+    "options": [
+      {
+        "text": "$\\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(\\sqrt{n})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^2)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 30: ",
+    "context": "For the following algorithm, what is the asymptotic running time in $\\Theta$-notation as a function of $n$?\n\nCode: ALGORITME4(n)\n  i = 1\n  j = n\n  while i <= j\n    i = i * 2\n    j = j / 2",
+    "text": "What is the asymptotic running time in $\\Theta$-notation as a function of $n$?",
+    "options": [
+      {
+        "text": "$\\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(\\sqrt{n})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^2)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 31: ",
+    "context": "In this question we want to find the number $B(n)$ of binary trees with $n$ nodes. For example $B(3) = 5$, since there are five binary trees with three nodes.\n\nBased on a case analysis of the sizes of the root's two subtrees, one can show the following recurrence for $B(n)$:\n\n$$B(n) = \\begin{cases} 1 & \\text{if } n = 0 \\\\ \\sum_{i=0}^{n-1} B(i) \\cdot B(n - i - 1) & \\text{if } n > 0 \\end{cases}$$\n\nIf $B(n)$ is found via dynamic programming based on this recurrence, what running time is achieved?",
+    "text": "If $B(n)$ is found via dynamic programming based on this recurrence, what running time is achieved?",
+    "options": [
+      {
+        "text": "$\\Theta(1)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^2)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 32: ",
+    "context": "We still consider finding the number $B(n)$ of binary trees with $n$ nodes using the following recurrence:\n\n$$B(n) = \\begin{cases} 1 & \\text{if } n = 0 \\\\ \\sum_{i=0}^{n-1} B(i) \\cdot B(n - i - 1) & \\text{if } n > 0 \\end{cases}$$\n\nIf $B(n)$ is found via dynamic programming based on this recurrence, what is the minimum space usage that can be achieved?",
+    "text": "If $B(n)$ is found via dynamic programming based on this recurrence, what is the minimum space usage that can be achieved?",
+    "options": [
+      {
+        "text": "$\\Theta(1)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(\\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n \\log n)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^2)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\Theta(n^3)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  }
+]

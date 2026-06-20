@@ -1,0 +1,982 @@
+[
+  {
+    "type": "single",
+    "section": "Question 1",
+    "context": "",
+    "text": "What does research on behaviorism teach us about human learning?",
+    "options": [
+      {
+        "text": "Repeatedly pairing a neutral stimulus with a reward can lead to a positive response to the neutral stimulus (\"conditioning\") over time",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Between stimulus and response, there is a space. In that space is our power to choose our response.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Stimuli only lead to responses after a careful elaborated system II processing.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Sanctions and rewards are not enough to train complex behaviours through reinforcement.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 2",
+    "context": "",
+    "text": "Which human cognitive process have recent LLM models started to mimick (since GPT 3/ DeepSeek)?",
+    "options": [
+      {
+        "text": "Classical conditioning.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "System II thinking (\"elaboration\").",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Intelligence G-factor.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Working memory (\"extraction\").",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 3",
+    "context": "",
+    "text": "What are the stages of human memory processing?",
+    "options": [
+      {
+        "text": "Enconding, excitation, attribution.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Decyphering, storage, attribution.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Appraisal, excitation, retrieval.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Encoding, storage, retrieval.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 4",
+    "context": "",
+    "text": "Which of the following statements best reflects the current state of evidence around AI and learning?",
+    "options": [
+      {
+        "text": "People that google information can distinguish between \"knowing something\" and \"having looked up\" something.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "AI-enhanced learning always leads to worse learning outcomes.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Getting a direct answer from an AI-chatbot for your question is the optimal way of ensuring durable learning experiences.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "People who Googled information perceive themselves as smarter than those who did not look up the content.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 5",
+    "context": "",
+    "text": "What does the neurological \"blind spot\" tell us about human perception?",
+    "options": [
+      {
+        "text": "Every person brings individual biases.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Visual perception is partially constructed in the human brain.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Certain neurological areas cannot be analysed in medical examinations.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Computer vision is generally superior to human vision.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 6",
+    "context": "",
+    "text": "How often do humans engage in social cognition (thinking about themselves or other people)?",
+    "options": [
+      {
+        "text": "Most of the time. Social cognition is likely the \"default\" or \"baseline\" setting of our brain",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Sometimes we communicative with someone.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Rarely, only in the context of direct interactions with others.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Only when we see/hear or otherwise perceive someone.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 7",
+    "context": "",
+    "text": "Which of the following is part of our self-concept?",
+    "options": [
+      {
+        "text": "A constantly changing self concept that does not include stable concepts.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "An independent self concept that is unaffected by our environment.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "A primary self concept that is formed in our childhood and then never changes.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "A working self concept that varies across situations.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 8",
+    "context": "",
+    "text": "Which biases can affect primarily LLMs?",
+    "options": [
+      {
+        "text": "Fundamental attribution errors",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Pattern and averaging biases",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Illusory correlations",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Status quo biases",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 9",
+    "context": "",
+    "text": "Communication is…",
+    "options": [
+      {
+        "text": "Inevitable: one cannot *not* communicate",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Universal: interpretations are the same across contexts.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Clear-cut: the start of a communication episode is easy to determine.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Emotional: emotions arise from all signs and symbols.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 10",
+    "context": "",
+    "text": "What does the \"Limited Capacity Model of Motivated Mediated Message Processing\" (LC4M) postulate?",
+    "options": [
+      {
+        "text": "Consuming media requires cognitive ressources for encoding, storage, and retrieval.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Consuming media requires only cognitive ressources for the retrieval of information.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Consuming media requires only cognitive ressources for the selection of information to encode.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Consuming media does not require cognitive ressources.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 11",
+    "context": "",
+    "text": "What is a social innovation?",
+    "options": [
+      {
+        "text": "New forms of digital social interactions.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "A new market for a social network.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "A new organisational structure.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Something that contributes to the advancement of society (e.g., in terms of overall wellbeing).",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 12",
+    "context": "",
+    "text": "What determines if an innovation diffuses through a social network?",
+    "options": [
+      {
+        "text": "Whether it is a new method.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Wether it is max distinct from everything that came before.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "How (positively or negatively) people perceive the innovation.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Whether it breaks the most existing regulations.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 13",
+    "context": "",
+    "text": "Which of the following is not a problem/ risk when using current AI models for journalistic fact-checking?",
+    "options": [
+      {
+        "text": "Loss of trust among the audience.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Identifying claims.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Source attribution errors.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Copyright issues.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 14",
+    "context": "",
+    "text": "What does the distinction between avatars and agents mean for autonomous warfare?",
+    "options": [
+      {
+        "text": "The amount of human targeting: agents act autonomously, avatars are controlled. Thus the UN rejects agent-based weapon systems that target specific humans.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The amount of human communication ability: agents are more capable of human communication than avatars. Thus, the UN recommends only agent-based weapon systems.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The amount of bias: agents are less biased than avatars. Thus the UN, recommends only agent-based weapon systems.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The amount of human control: agents act autonomously, avatars are controlled. Thus, the UN rejects agent-based weapon systems.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 15",
+    "context": "",
+    "text": "What does the media equation predict for humans' response to AI-chatbots such as Claude?",
+    "options": [
+      {
+        "text": "Chatbots will  shift the vast majority of media jobs to AI-enhanced jobs.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "They will treat them like other social actors.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "They will treat them like other news sources.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Audiences will replace other media sources through such chatbots.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 16",
+    "context": "",
+    "text": "What is the \"uncanny valley\" effect?",
+    "options": [
+      {
+        "text": "An ethical dilema in autonomous warfare.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "An impactful study with human-like robots was conducted in Silicon Valley.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The economic success of tech companies based in Silicon Valley vs. other places.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "A description of the non-linear relationship between the human-likeness of artificial others and how much humans like these artificial others.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 17",
+    "context": "",
+    "text": "What is a current frontier when it comes to improving recommender systems?",
+    "options": [
+      {
+        "text": "Multi-modal recommendation.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Integrating deep-learning.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Collaborative filtering algorithms.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Text-based recommendation.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 18",
+    "context": "",
+    "text": "How can algorithms \"for societal good\" look like?",
+    "options": [
+      {
+        "text": "They recommed content that is more attention-grabbing.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "They promote collective well-being and align with human-rights.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "They prevent the exposure to content that you disagree with.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "They decrease the need for autonomously picking content.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 19",
+    "context": "",
+    "text": "What do psychologists describe as \"motivated cognition\"?",
+    "options": [
+      {
+        "text": "The cognitive process of elaboration is needed to motivate behavior.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "When we are motivated, our cognitive processes works faster, such that our overall intelligence varies across situations.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "We need to be highly motivated to engage in cognitive processes so that System I thinking occurs only when we are highly motivated.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The motivation to be accurate or confirm prior beliefs influences how we process information, such that we prefer information that confirms our prior beliefs.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 20",
+    "context": "",
+    "text": "What is \"micro-targeting\"?",
+    "options": [
+      {
+        "text": "Aggregating small micro-groups to larger clusters in digital content analysis.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Neural-link devices that use EEG patterns to enable  hand-free micro-level device control.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Algorithms that target micro-dynamics to shape the toxicity of online discourses.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Forming small (micro) groups based on digital data and sending them personalized messages.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 21",
+    "context": "",
+    "text": "What does the \"Spiral of Silence\" theory postulate?",
+    "options": [
+      {
+        "text": "The effect of moderation removing hateful comments on the reduced participation of other users.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "People's tendency to be more likely to voice their opinion when they think that they hold a majority opinion, and to stay silent when they feel they are in the minority.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "LLMs' tendency to misrepresent minority dialects, with models building on previous models showing an ever larger \"silencing\" effect.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The observation that once digital discourses have amassed enough hateful comments, most participants become silent",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 22",
+    "context": "",
+    "text": "Which of the following plays a central role in the formation of intimate relationships between humans and chatbots?",
+    "options": [
+      {
+        "text": "Depressions.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Negative social relations with parents.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Self and partner disclosure.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Insecurity.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 23",
+    "context": "",
+    "text": "Which of the following are the classic components of the Internet of Things (IOT)?",
+    "options": [
+      {
+        "text": "Sensors, automation, algorithms, and deep learning.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Automation and algorithms.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Sensors, automation, and algorithms.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Sensors and automation.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 24",
+    "context": "",
+    "text": "What would the \"Social Media Privacy Model\" predict for self-disclosure when smart wearables such as Meta's RayBan glasses are becomming for common in private spaces?",
+    "options": [
+      {
+        "text": "People give up and just share everything without caring.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "People don't interact anymore with people wearing smart glasses.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "People increasingly trust social media companies to handle their data well.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "People adapt their level of self-disclosure.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 25",
+    "context": "",
+    "text": "What defines social media?",
+    "options": [
+      {
+        "text": "Digitally networked technologies that enable information sharing and real-time interaction with others.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Digitally networked technologies that enable information sharing and interacting with others.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Digitally networked technologies.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Digitally networked technologies that enable information sharing.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 26",
+    "context": "",
+    "text": "Which of the following describes the relationship between social media use and posting behavior in Denmark?",
+    "options": [
+      {
+        "text": "There are more than ten times as many Danes who use social media as there are Danes who share political opinions on social media.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "There are more than four times as many Danes who use social media as there are Danes who share political opinions on social media.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "There are as many Danes who use social media as there are Danes who share political opinions on social media.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "There are more than twice as many Danes who use social media as there are Danes who share political opinions on social media.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 27",
+    "context": "",
+    "text": "What are typical barriers to AI adaption in public administration?",
+    "options": [
+      {
+        "text": "Lack of relevant products targeted towards public administration.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Lack of tasks within public administration that could be automated.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Leadership mismanagement.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Organizational culture (not change-oriented) and environmental context (e.g., political pressure).",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 28",
+    "context": "Which of the following statements about misinformation is itself a misinformation (aka false).",
+    "text": "Which of the following statements about misinformation is itself a misinformation (aka false)?",
+    "options": [
+      {
+        "text": "More than half of the danish Tweets around COVID-19 masks were misinformation.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "More than half of Danish children report prior exposure to misinformation.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "More than half of Danes are concerned about misinformation.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "More than half of the misinformation about different events typically comes from fewer than 10% of the accounts, i.e., so-called superspreaders.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 29",
+    "context": "",
+    "text": "How often do you need to test the performance/ risk of a mathematical model using generative AI in the finance sector?",
+    "options": [
+      {
+        "text": "During development, before application, and continuous monitoring.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "During development.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "During development and before application.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Continous monitoring.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 30",
+    "context": "",
+    "text": "Which of the following  job-types is currently most affected by AI?",
+    "options": [
+      {
+        "text": "Software developers (entry level).",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Risk and business analysts.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Digital communication professionals.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Coordinators.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 31",
+    "context": "",
+    "text": "Which of the following statements best reflects the current similarity of AI responses to human delusion versus clinical principles in working with delusional patients?",
+    "options": [
+      {
+        "text": "Young adults with a high risk for delusions are less likely to use AI chatbots than their peers without such a risk profile.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "AI chatbots implement clinical principles for working with delusions.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "There are several aspects where LLMs do violate clinical principles for responding to delusion.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "AI chatbots endorse delusions and violence in most of the conversations with delusional patients.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 32",
+    "context": "",
+    "text": "Based on the currently available evidence: which of the following statements is correct?",
+    "options": [
+      {
+        "text": "AI is worse than humans in providing psychotherapy.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "AI is worse than humans in judging mamography images.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "AI is worse than humans in making triage decisions in an emergency room.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "AI is worse than humans in detecting depression from physiological data.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 33",
+    "context": "",
+    "text": "How does the \"Uses & Gratifications\" approach conceptualize media use?",
+    "options": [
+      {
+        "text": "As two processes: hedonic (fun, pleasure) and eudaimonic (aka \"meaningful\") entertainment sought through media use.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "As active or passive media use patterns.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "As a process that includes the gratifications users hope for, their assessment of whether a medium can give them these gratifications, and an evaluation of the gratifications actually obtained.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "As a cognitive process in which media use momentarily expands the boundaries of the self.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 34",
+    "context": "",
+    "text": "Imagine your neighbor is concerned because her son is constantly in front of his PlayStation: When do you think her concerns are justified?",
+    "options": [
+      {
+        "text": "When he plays for wining competitions.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "When he plays to escape his offline problems.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "When he plays to get entertained.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "When he plays to meet with friends.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 35",
+    "context": "",
+    "text": "Based on the current state of evidence: Which of the following statements is false?",
+    "options": [
+      {
+        "text": "Playing a queer avatar in VR decreases your in-game performance in shooters.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Playing a homeless avatar in VR motivates signing a petition agains homelessness.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Playing a Jamacanian avatar in VR can increase your drumming skills.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Playing a Black avatar in VR reduces sterotypes among White Americans.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  }
+]

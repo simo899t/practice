@@ -28,7 +28,7 @@
     "title": "DM507, DM578, DS814 - Algorithms and Data Structures",
     "description": "AI/CS",
     "tests": [
-      { "id": "exam2025",     "title": "Exam 2025",     "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/test_template/exam2025.json" }
+      { "id": "exam2025",     "title": "Exam 2025",     "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/exam2025/exam2025.json" }
     ]
   },
   {
@@ -67,7 +67,8 @@
     "tests": [
       { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507_AI_SOC/ai-mock-quiz1/ai-mock-quiz1.json" },
       { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507_AI_SOC/ai-mock-quiz2/ai-mock-quiz2.json" },
-      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507_AI_SOC/ai-mock-quiz3/ai-mock-quiz3.json" }
+      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507_AI_SOC/ai-mock-quiz3/ai-mock-quiz3.json" },
+      { "id": "exam2026", "title": "Exam 2026", "file": "courses/AI507_AI_SOC/exam2026/exam2026.json" }
     ]
   }
 ]
