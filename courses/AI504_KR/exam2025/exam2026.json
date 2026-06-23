@@ -1,0 +1,394 @@
+[
+  {
+    "type": "single",
+    "section": "MCQ Question 1",
+    "context": "",
+    "text": "Which of the following first-order sentences correctly translates the English phrase \"the product of any two negative numbers is positive?\"",
+    "options": [
+      {
+        "text": "$(\\forall x)(\\forall y)((x < 0 \\lor y < 0) \\to 0 < x \\cdot y)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall x)(\\forall y)((x < 0 \\land y < 0) \\to 0 < x \\cdot y)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall x)(\\forall y)(x \\cdot y < 0 \\to (x < 0 \\lor y < 0))$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall x)(\\exists y)((x < 0 \\land y < 0) \\to 0 < x \\cdot y)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 2",
+    "context": "Which of the following first-order sentences correctly translates the $\\mathcal{A}(\\mathcal{RC})$-sentence All (fear all mammals) squirrels? (Rendered more naturally into English: \"all who fear all mammals are squirrels.\") In the first-order signature fear$(a, b)$ means \"$a$ fears $b$,\" squirrel$(a)$ means \"$a$ is a squirrel,\" and mammal$(a)$ means \"$a$ is a mammal.\"",
+    "text": "",
+    "options": [
+      {
+        "text": "$(\\forall y)((\\forall x)(\\text{mammal}(x) \\to (\\text{fear}(y, x)) \\to \\text{squirrel}(y))$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall x)(\\forall y)(\\text{mammal}(x) \\to (\\text{fear}(y, x) \\to \\text{squirrel}(y)))$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(\\exists x)(\\forall y)((\\text{mammal}(x) \\land \\text{fear}(y, x)) \\to \\text{squirrel}(y))$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall y)((\\forall x)(\\text{mammal}(x) \\to \\text{fear}(x, y)) \\to \\text{squirrel}(y))$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 3",
+    "context": "A relation $R$ is transitive in case $(\\forall x)(\\forall y)(\\forall z)(((x, y) \\in R \\land (y, z) \\in R) \\to (x, z) \\in R)$. Which one of the following first-order sentences is *not* also a correct definition of transitivity?",
+    "text": "",
+    "options": [
+      {
+        "text": "$(\\forall y)(\\forall z)(\\forall x)(((x, y) \\in R \\land (y, z) \\in R) \\to (x, z) \\in R)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall x)(\\forall z)(\\exists y)(((x, y) \\in R \\land (y, z) \\in R) \\to (x, z) \\in R)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall x)(\\forall y)(\\forall z)((x, y) \\in R \\to ((y, z) \\in R \\to (x, z) \\in R))$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(\\forall x)(\\forall y)(\\exists z)(((x, y) \\in R \\land (y, z) \\in R) \\to (x, z) \\in R)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 4",
+    "context": "Which of the following functions $f : \\mathbb{R} \\to \\mathbb{R}$ satisfies the first-order sentence $(\\exists y)(\\forall x)(f(x) < y)$? (Here the quantifiers range over real numbers.)",
+    "text": "",
+    "options": [
+      {
+        "text": "$f(x) = -x$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$f(x) = 1$ (the constant-1 function)",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$f(x) = x$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$f(x) = x^2$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 5",
+    "context": "Work over the propositional-logic signature $\\{p, q, r\\}$. How many models of $(p \\leftrightarrow q) \\land (q \\leftrightarrow r) \\land (r \\leftrightarrow p)$ are there?",
+    "text": "",
+    "options": [
+      {
+        "text": "1",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "2",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "3",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "4",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 6",
+    "context": "Suppose $\\varphi$ and $\\psi$ are satisfiable propositional sentences. Which of the following sentences also must be satisfiable?",
+    "text": "",
+    "options": [
+      {
+        "text": "$\\varphi \\land \\psi$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\varphi \\lor \\psi$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\varphi \\leftrightarrow \\psi$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\varphi \\to \\neg\\psi$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 7",
+    "context": "Which of the following statements is *not* equivalent to \"$\\varphi$ is a tautology?\" (Work in propositional logic.)",
+    "text": "",
+    "options": [
+      {
+        "text": "$\\varnothing \\models \\varphi$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\{\\varphi\\} \\models \\mathsf{T}$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\{\\neg\\varphi\\} \\models \\mathsf{F}$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\{\\mathsf{T}\\} \\models \\varphi$",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 8",
+    "context": "Which of the following sentences of propositional logic over the signature $\\{p\\}$ is a tautology?",
+    "text": "",
+    "options": [
+      {
+        "text": "$p$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$(p \\to p) \\to p$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$((p \\to p) \\to p) \\to p$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$(((p \\to p) \\to p) \\to p) \\to p$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 9",
+    "context": "Work over the signature $\\{1, 2, 3, \\ldots\\}$ in the logic $\\mathcal{A}$. Let $\\Gamma$ be the set of sentences $\\{\\text{All } 1\\, 2, \\text{All } 2\\, 3, \\text{All } 3\\, 4, \\ldots\\}$. Which of the following sentences does $\\Gamma$ entail?",
+    "text": "",
+    "options": [
+      {
+        "text": "All 3 1",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "All 300 1000",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "All 300 100",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "All 23 22",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 10",
+    "context": "Work over the $\\mathcal{A}(\\mathcal{RC})$-signature with a single noun $p$ and a single verb $r$. Consider models where the domain is $\\mathbb{R}$ (the real line) and $(x, y) \\in [\\![r]\\!]$ iff $|x - y| < 1$, i.e., the distance between $x$ and $y$ is less than 1.\n\nFor which interpretations of $[\\![p]\\!]$ does $[\\![r \\text{ all } p]\\!]$ consist of a *single point*? Note that $(a, b)$ is the open interval with endpoints $a$ and $b$, i.e., $\\{x \\in \\mathbb{R} : a < x < b\\}$.",
+    "text": "",
+    "options": [
+      {
+        "text": "$[\\![p]\\!] = (0, \\frac{1}{4})$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$[\\![p]\\!] = (0, \\frac{1}{2})$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$[\\![p]\\!] = (0, 1)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$[\\![p]\\!] = (0, 2)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 11",
+    "context": "Work over the $\\mathcal{A}$-signature $\\{1, 2\\}$. (There are only four sentences in this signature!) Suppose $\\varphi$ and $\\psi$ are two sentences such that $\\{\\varphi\\} \\models \\psi$ but $\\{\\psi\\} \\not\\models \\varphi$. What can we conclude?",
+    "text": "",
+    "options": [
+      {
+        "text": "$\\varphi \\in \\{\\text{All } 1\\, 2, \\text{All } 2\\, 1\\}$ and $\\psi \\in \\{\\text{All } 1\\, 1, \\text{All } 2\\, 2\\}$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\psi \\in \\{\\text{All } 1\\, 2, \\text{All } 2\\, 1\\}$ and $\\varphi \\in \\{\\text{All } 1\\, 1, \\text{All } 2\\, 2\\}$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Both $\\varphi, \\psi \\in \\{\\text{All } 1\\, 2, \\text{All } 2\\, 1\\}$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Both $\\varphi, \\psi \\in \\{\\text{All } 1\\, 1, \\text{All } 2\\, 2\\}$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "MCQ Question 12",
+    "context": "Work in a general logic. Suppose there is a sentence $\\varphi$ and two models $\\mathcal{M}$ and $\\mathcal{N}$ which disagree on $\\varphi$ (i.e., one satisfies it and one falsifies it), and suppose there is a sentence $\\psi$ such that $\\{\\psi\\} \\models \\varphi$. Which of the following situations is *impossible*?",
+    "text": "",
+    "options": [
+      {
+        "text": "$\\mathcal{M}$ falsifies $\\psi$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\mathcal{N}$ satisfies $\\psi$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Both $\\mathcal{M}$ and $\\mathcal{N}$ satisfy $\\psi$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\mathcal{M}$ and $\\mathcal{N}$ disagree on $\\psi$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "open",
+    "section": "Open Question 1",
+    "context": "Consider the following list of five sentences.\n\n(a) Sentences (e) and (b) disagree.\n(b) Sentences (a) and (c) disagree.\n(c) Sentences (b) and (d) disagree.\n(d) Sentences (c) and (e) disagree.\n(e) Sentences (d) and (a) disagree.\n\nA *solution* is an assignment of a boolean value to each of the five sentences such that conditions (a)-(e) are satisfied. That is to say, if the boolean value assigned to a particular sentence is *true*, the two adjacent sentences should *disagree*, i.e., have different truth values. If the boolean value assigned to a particular sentences is *false*, then the two adjacent sentences should *agree*, i.e., have the same truth value.",
+    "text": "How many solutions are there, and what are they?\n\n(*Hint.* This of course can be rephrased a question asking which models satisfy a particular sentence of propositional logic. Formalizing it as such may—or may not—be useful.)",
+    "answer": ""
+  },
+  {
+    "type": "open",
+    "section": "Open Question 2",
+    "context": "Work in the logic $\\mathcal{A}(\\mathcal{RC})$ and over the signature with two nouns, c and d, and one verb r.\n\nLet $\\mathcal{M}$ be any model in this signature satisfying the following two properties:\n- The denotation of any term that ends in d is nonempty, i.e., $[\\![\\text{d}]\\!]$, $[\\![\\text{r all d}]\\!]$, $[\\![\\text{r all (r all d)}]\\!]$, ... are all nonempty subsets of $M$.\n- $[\\![\\text{r}]\\!]$ is a transitive relation, i.e., for any $x, y, z \\in M$, if $(x, y) \\in [\\![\\text{r}]\\!]$ and $(y, z) \\in [\\![\\text{r}]\\!]$ then $(x, z) \\in [\\![\\text{r}]\\!]$.",
+    "text": "(a) Suppose that $\\mathcal{M} \\models$ All c (r all (r all d)). Prove that $\\mathcal{M} \\models$ All c (r all d).\n\n*Hint.* $\\mathcal{M} \\models$ All c (r all d) means $(\\forall x \\in [\\![\\text{c}]\\!])(\\forall y \\in [\\![\\text{d}]\\!])(x, y) \\in [\\![\\text{r}]\\!]$. So fix $x \\in [\\![\\text{c}]\\!]$ and $y \\in [\\![\\text{d}]\\!]$; now your goal is to prove $(x, y) \\in [\\![\\text{r}]\\!]$.\n\n(b) Construct a model $\\mathcal{N}$ in the same signature that does *not* satisfy these properties, such that $\\mathcal{N} \\models$ All c (r all (r all d)) but $\\mathcal{N} \\not\\models$ All c (r all d).\n\n(*Hint.* There are tiny models which work. List the elements of the domain and the denotations of c, d, r. From these derive the denotations of r all d and r all (r all d).)",
+    "answer": ""
+  },
+  {
+    "type": "open",
+    "section": "Open Question 3",
+    "context": "Work in the logic $\\mathcal{A}(\\mathcal{RC})$ and over the signature with two nouns, c and d, and one verb r.\n\nIt is *not* true that $\\{\\text{All c (r all d)}\\} \\vdash$ All (r all c) d. For example, we could observe that $\\{\\text{All c (r all d)}\\} \\not\\models$ All (r all c) d (there are very simple counter-models), then use soundness.\n\nThe point of this exercise is to establish $\\{\\text{All c (r all d)}\\} \\not\\vdash$ All (r all c) d using *entirely proof-theoretic methods*, and avoid discussion of models entirely.",
+    "text": "Your task is therefore to define a property of formulas such that:\n- All (r all c) d *has* this property,\n- All c (r all d) does *not have* this property,\n- *no* sentence of the form \"All $x$ $x$\" has this property, and\n- if $\\Gamma \\vdash \\varphi$ and $\\varphi$ has this property, then at least one sentence in $\\Gamma$ has this property. (This will use induction on proof trees in $\\mathcal{A}(\\mathcal{RC})$, it is your choice whether to work with the rule DOWN or ANTI.)\n\nDefine such a property of formulas and prove each of these four bullet points. There are *really simple* properties that will work!",
+    "answer": ""
+  },
+  {
+    "type": "open",
+    "section": "Open Question 4",
+    "context": "Work in the logic $\\mathcal{A}$ and the signature 1,2,3. Suppose $\\varphi$ is a formula such that\n- $\\{\\text{All } 1\\, 2, \\text{All } 2\\, 3\\} \\models \\varphi$ and\n- $\\{\\text{All } 3\\, 2, \\text{All } 2\\, 1\\} \\models \\varphi$.",
+    "text": "What are the possible choices for $\\varphi$? Answer, making sure to thoroughly justify why the sentences you gave are the only ones which work.",
+    "answer": ""
+  },
+  {
+    "type": "open",
+    "section": "Open Question 5",
+    "context": "Work in the logic $\\mathcal{A}$, over any signature. We say a model $\\mathcal{M}$ in the signature $P$ is *fluffy* in case $[\\![p]\\!]$ is nonempty for every noun $p \\in P$. Define $\\Gamma \\models^f \\varphi$ in case every fluffy model satisfying $\\Gamma$ must also satisfy $\\varphi$.\n\nNow it's certainly true that if $\\Gamma \\models \\varphi$ then $\\Gamma \\models^f \\varphi$ as well. (This has nothing to do with fluffiness, it's just a general fact that entailment over a restricted class of models is a more permissive relation.) But for this question you must prove the converse, that is, assuming that $\\Gamma \\models^f \\varphi$, prove that $\\Gamma \\models \\varphi$.",
+    "text": "(Note that unlike examples we saw in class and the practice problems where the converse relation was *false*, here the converse relation is *true*. Your hint is, given an arbitrary model, can you make it fluffy without changing the sentences it satisfies or falsifies?)",
+    "answer": ""
+  },
+  {
+    "type": "open",
+    "section": "Open Question 6",
+    "context": "Work in a general logical system with a notion of model and proof that has both soundness and completeness. Let $\\mathcal{M}_\\Gamma$ be the canonical model of a set of sentences $\\Gamma$. This means that $\\Gamma \\vdash \\varphi \\iff \\mathcal{M}_\\Gamma \\models \\varphi$. Is it also true that $\\Gamma \\models \\varphi \\iff \\mathcal{M}_\\Gamma \\models \\varphi$? There are two parts to this question:",
+    "text": "(a) If $\\Gamma \\models \\varphi$, must $\\mathcal{M}_\\Gamma \\models \\varphi$? Either prove or give a counterexample.\n\n(b) If $\\mathcal{M}_\\Gamma \\models \\varphi$, must $\\Gamma \\models \\varphi$? Either prove or give a counterexample.\n\nAgain, we can work entirely on the level of a general logic as outlined in the first page of this exam. Remember you can assume this logic has soundness and completeness.",
+    "answer": ""
+  },
+  {
+    "type": "open",
+    "section": "Open Question 7",
+    "context": "We define the *purely implicational* sentences of propositional logic as follows:\n- Any single sentence letter is purely implicational. (For the purposes of this question, we forbid the boolean constants T, F.)\n- If $\\varphi$ and $\\psi$ are purely implicational sentences, so is $\\varphi \\to \\psi$.\n\nIntuitively speaking, it's just those sentences of propositional logic which do not have boolean constants and do not use any other boolean operator.\n\nNow we define the *reversal* function on purely implicational sentences by recursion as follows:\n- $p^R = p$, where $p$ is a single sentence letter, and\n- $(\\varphi \\to \\psi)^R = \\psi^R \\to \\varphi^R$.\n\nSo, for example, $((p \\to r) \\to (p \\to q))^R = (q \\to p) \\to (r \\to p)$.",
+    "text": "My question is, for any purely implicational sentence $\\varphi$, **if $\\varphi$ is a tautology, must $\\varphi^R$ also be a tautology?** Either prove (for any such $\\varphi$, if $\\varphi$ is a tautology then so is $\\varphi^R$) or give a counterexample (a particular sentence $\\varphi$ such that $\\varphi$ is a tautology but $\\varphi^R$ is not).",
+    "answer": ""
+  },
+  {
+    "type": "open",
+    "section": "Open Question 8",
+    "context": "",
+    "text": "Express the relation $\\min(a, b) < \\max(c, d)$ by a first-order formula in the variables $a, b, c, d$ that only uses the relation $<$. Explain carefully why your answer is correct.\n\n(*Hint.* For example, $x < \\min(y, z) \\iff (x < y) \\land (x < z)$. In other words, a number is less than the minimum of two numbers iff it's less than *both* of them.)",
+    "answer": ""
+  }
+]

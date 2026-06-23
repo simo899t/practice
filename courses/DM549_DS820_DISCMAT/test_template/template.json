@@ -2,96 +2,36 @@
   {
     "type": "group",
     "section": "Question 1",
-    "context": "Which type of environment are most suitable for AND-OR trees?",
+    "context": "Let $p$, $q$, and $r$ be propositions. Which of the following statements are true?",
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "Unknown environments",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Nondeterministic environments",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Online environments",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Non-observable environments",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "section": "Question 2",
-    "context": "What is a key characteristic of 'general AI' as discussed in Chapter 28 Philosophy, Ethics, and Safety of AI?",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "Limited to predefined functions",
+        "text": "4",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "Capable of performing any intellectual task that a human can do",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Dependent on specific programming",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Specialized in narrow tasks",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "section": "Question 3",
-    "context": "Which algorithm extends the minimax approach to handle games involving elements of chance?",
-    "positiveLabel": "True",
-    "negativeLabel": "False",
-    "statements": [
-      {
-        "text": "Expectiminimax algorithm",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "$A^\\*$",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "Monte Carlo Tree Search",
-        "answerIsPositive": false,
-        "positiveNote": "",
-        "negativeNote": ""
-      },
-      {
-        "text": "",
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -106,25 +46,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -139,25 +85,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -172,25 +124,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -205,25 +163,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -238,25 +202,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -271,25 +241,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -304,25 +280,31 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
@@ -337,25 +319,226 @@
     "negativeLabel": "False",
     "statements": [
       {
-        "text": "",
+        "text": "1",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "2",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "3",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
       },
       {
-        "text": "",
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "3",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "3",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "3",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "3",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "section": "Question 1",
+    "context": "",
+    "positiveLabel": "True",
+    "negativeLabel": "False",
+    "statements": [
+      {
+        "text": "1",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "2",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "3",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "4",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": ""
+      },
+      {
+        "text": "5",
         "answerIsPositive": false,
         "positiveNote": "",
         "negativeNote": ""
