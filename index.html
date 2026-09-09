@@ -6,77 +6,106 @@
   <title>Exam Practice</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .course-item {
-      border-bottom: 1px solid var(--border);
-    }
-    .course-item:last-child { border-bottom: none; }
+    .container { max-width: 940px; }
 
-    .course-toggle {
-      width: 100%;
-      background: none;
-      border: none;
-      text-align: left;
-      padding: 1.1rem 1.25rem;
-      cursor: pointer;
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1rem;
+    }
+
+    .course-box {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: 'Georgia', serif;
-      font-size: 1rem;
-      color: var(--text);
-    }
-    .course-toggle:hover { background: var(--surface-2); }
-
-    .course-toggle .arrow {
-      font-size: 0.75rem;
-      color: var(--muted);
-      transition: transform 0.2s;
-      font-family: sans-serif;
-    }
-    .course-item.open .arrow { transform: rotate(90deg); }
-
-    .course-meta {
-      font-style: italic;
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-left: 0.5rem;
-    }
-
-    .test-list {
-      display: none;
       flex-direction: column;
-      border-top: 1px solid var(--border);
-    }
-    .course-item.open .test-list { display: flex; }
-
-    .test-link {
-      display: block;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.92rem;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-    }
-    .test-link:last-child { border-bottom: none; }
-    .test-link:hover { background: var(--surface-2); }
-
-    .menu-card {
+      gap: 0.75rem;
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      overflow: hidden;
-      background: var(--surface);
+      padding: 1.15rem 1.2rem 1.25rem;
+      transition: border-color 0.15s, transform 0.15s;
     }
+    .course-box:not(.empty):hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .course-box-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .course-code {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .course-tag {
+      flex-shrink: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.12rem 0.55rem;
+    }
+
+    .course-box-title {
+      font-size: 1.02rem;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .course-tests {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.15rem;
+    }
+
+    .course-test {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 0.88rem;
+      color: var(--text);
+      transition: border-color 0.12s, background 0.12s, transform 0.12s;
+    }
+    .course-test:hover {
+      border-color: var(--accent);
+      background: var(--surface-2);
+      transform: translateX(2px);
+    }
+    .course-test .go { color: var(--accent); font-size: 0.9rem; }
+
+    .course-empty {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .course-box.empty { opacity: 0.5; }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Exam Practice</h1>
-      <p class="subtitle">Select a course, then choose a test</p>
+      <p class="subtitle">Pick a course, then choose a test</p>
     </header>
     <main>
-      <div class="menu-card" id="course-menu"></div>
+      <div class="course-grid" id="course-menu"></div>
     </main>
   </div>
 
@@ -87,30 +116,45 @@
       const menu = document.getElementById('course-menu');
 
       courses.forEach(course => {
-        const item = document.createElement('div');
-        item.className = 'course-item';
+        const tests = course.tests || [];
+        const box = document.createElement('div');
+        box.className = 'course-box' + (tests.length ? '' : ' empty');
 
-        const btn = document.createElement('button');
-        btn.className = 'course-toggle';
-        btn.innerHTML = `
-          <span><strong>${course.title}</strong><span class="course-meta"> — ${course.description}</span></span>
-          <span class="arrow">▶</span>
-        `;
-        btn.addEventListener('click', () => item.classList.toggle('open'));
+        const dash = course.title.indexOf(' - ');
+        const code = dash === -1 ? '' : course.title.slice(0, dash);
+        const name = dash === -1 ? course.title : course.title.slice(dash + 3);
 
-        const list = document.createElement('div');
-        list.className = 'test-list';
-        course.tests.forEach(t => {
-          const a = document.createElement('a');
-          a.className = 'test-link';
-          a.href = `quiz.html?file=${encodeURIComponent(t.file)}&title=${encodeURIComponent(t.title)}`;
-          a.textContent = t.title;
-          list.appendChild(a);
-        });
+        const head = document.createElement('div');
+        head.className = 'course-box-head';
+        head.innerHTML =
+          `<span class="course-code">${code || course.id || ''}</span>` +
+          (course.description ? `<span class="course-tag">${course.description}</span>` : '');
+        box.appendChild(head);
 
-        item.appendChild(btn);
-        item.appendChild(list);
-        menu.appendChild(item);
+        const title = document.createElement('div');
+        title.className = 'course-box-title';
+        title.textContent = name;
+        box.appendChild(title);
+
+        if (tests.length) {
+          const list = document.createElement('div');
+          list.className = 'course-tests';
+          tests.forEach(t => {
+            const a = document.createElement('a');
+            a.className = 'course-test';
+            a.href = `quiz.html?file=${encodeURIComponent(t.file)}&title=${encodeURIComponent(t.title)}`;
+            a.innerHTML = `<span>${t.title}</span><span class="go">&rarr;</span>`;
+            list.appendChild(a);
+          });
+          box.appendChild(list);
+        } else {
+          const empty = document.createElement('div');
+          empty.className = 'course-empty';
+          empty.textContent = 'No tests yet';
+          box.appendChild(empty);
+        }
+
+        menu.appendChild(box);
       });
     }
 
