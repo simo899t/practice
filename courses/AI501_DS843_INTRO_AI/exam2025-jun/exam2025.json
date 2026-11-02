@@ -1,0 +1,842 @@
+[
+  {
+    "type": "single",
+    "section": "Question 1",
+    "context": "",
+    "text": "Which type of environment are most suitable for AND–OR trees?",
+    "options": [
+      {
+        "text": "Unknown environments",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Nondeterministic environments",
+        "correct": true,
+        "note": "AND–OR search trees (AIMA §4.3) are built for nondeterministic actions: OR nodes are the agent's choices, AND nodes are the outcomes a plan must cover."
+      },
+      {
+        "text": "Online environments",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Non-observable environments",
+        "correct": false,
+        "note": "A sensorless (non-observable) problem is solved by ordinary search over belief states; with no percepts there is nothing to branch on, so no AND nodes are needed."
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 2",
+    "context": "",
+    "text": "What is a key characteristic of 'general AI' as discussed in Chapter 28 Philosophy, Ethics, and Safety of AI?",
+    "options": [
+      {
+        "text": "Limited to predefined functions",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Capable of performing any intellectual task that a human can do",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Dependent on specific programming",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Specialized in narrow tasks",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 3",
+    "context": "",
+    "text": "Which algorithm extends the minimax approach to handle games involving elements of chance?",
+    "options": [
+      {
+        "text": "Expectiminimax algorithm",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$A^*$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Monte Carlo Tree Search",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Alpha-beta pruning",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 4",
+    "context": "",
+    "text": "What does the soundness property ensure in propositional logic?",
+    "options": [
+      {
+        "text": "If a sentence can be derived using inference rules, then it must be true in all models.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Any two logically equivalent sentences must have the same truth value.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Every logical system has at least one model.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "If a sentence is true in all models, then it can be derived using inference rules.",
+        "correct": false,
+        "note": "That is completeness, the converse of soundness."
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 5",
+    "context": "",
+    "text": "In First-Order Logic, what does the expression $\\forall x\\,(P(x) \\lor Q(x))$ mean precisely?",
+    "options": [
+      {
+        "text": "For all $x$, $P(x)$ and $Q(x)$ are both true.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "There exists an $x$ for which either $P(x)$ or $Q(x)$ is true.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "For all $x$, either $P(x)$ is true or $Q(x)$ is true (or both).",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "There exists an $x$ for which $P(x)$ and $Q(x)$ are both true.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 6",
+    "context": "",
+    "text": "For a self-driving car, which of the following is considered a sensor?",
+    "options": [
+      {
+        "text": "Speedometer.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Steering wheel.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Engine.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Brake pedal.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 7",
+    "context": "",
+    "text": "What is the primary difference between informed and uninformed search strategies?",
+    "options": [
+      {
+        "text": "Uninformed strategies guarantee optimal solutions.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Uninformed strategies require less memory.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Informed strategies use heuristics to guide the search.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Informed strategies explore all possible nodes.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 8",
+    "context": "",
+    "text": "For which type of games is the minimax algorithm particularly well-suited?",
+    "options": [
+      {
+        "text": "Two-player, zero-sum, turn-based games with perfect information",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Single-player puzzle games",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Real-time strategy games",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Multiplayer games with hidden information",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 9",
+    "context": "",
+    "text": "What does the existential quantifier ($\\exists$) signify in First-Order Logic?",
+    "options": [
+      {
+        "text": "That a statement is true for all possible instances.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "That a statement is true and false simultaneously.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "That there exists at least one instance for which the statement is true.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "That a statement is false for all instances.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 10",
+    "context": "",
+    "text": "Which of the following is a key feature of the Planning Domain Definition Language (PDDL)?",
+    "options": [
+      {
+        "text": "It is limited to representing only stochastic planning problems.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "It is designed to standardize the representation of planning problems across different planners.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "It does not support the definition of action preconditions and effects.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "It is primarily used for representing neural network configurations.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 11",
+    "context": "",
+    "text": "Which of the following statements is true?",
+    "options": [
+      {
+        "text": "Every contradiction is satisfiable.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "No tautology is satisfiable.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Every satisfiable statement is a tautology.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Every tautology is satisfiable.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 12",
+    "context": "",
+    "text": "Which of the following represents the logical AND operation?",
+    "options": [
+      {
+        "text": "$\\land$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$\\lnot$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\lor$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\to$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 13",
+    "context": "",
+    "text": "What is the primary goal of the Turing Test in the context of AI?",
+    "options": [
+      {
+        "text": "To evaluate a machine's ability to exhibit intelligent behavior indistinguishable from a human",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "To assess a machine's ability to solve mathematical problems",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "To measure a machine's processing speed",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "To determine a machine's capacity for learning",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 14",
+    "context": "",
+    "text": "Which of the following environments is both deterministic and fully observable?",
+    "options": [
+      {
+        "text": "Self-driving car navigation",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Stock market",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Poker game",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Chess game",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 15",
+    "context": "",
+    "text": "The \"Disability Argument\" in artificial intelligence fundamentally challenges the notion that:",
+    "options": [
+      {
+        "text": "AI systems will inevitably surpass human intelligence.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Machine learning can improve without explicit programming.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "AI can fully replicate uniquely human traits such as creativity and emotions.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Machines can simulate human cognitive processes effectively.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 16",
+    "context": "",
+    "text": "Which of the following best describes the sum rule (addition rule) in probability theory?",
+    "options": [
+      {
+        "text": "It calculates the probability of the intersection of two events.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "It determines the probability of the union of two events.",
+        "correct": true,
+        "note": "The addition rule: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$, the same formula Question 22 asks for."
+      },
+      {
+        "text": "It finds the probability of two independent events occurring together.",
+        "correct": false,
+        "note": "That is the product rule for independent events, $P(A \\cap B) = P(A)\\,P(B)$."
+      },
+      {
+        "text": "It computes the probability of the complement of an event.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 17",
+    "context": "",
+    "text": "Which of the following environments is considered entirely episodic?",
+    "options": [
+      {
+        "text": "Teaching a class",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Stock market trading",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Image classification tasks",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Autonomous driving",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 18",
+    "context": "",
+    "text": "What would be an appropriate performance measure for an AI designed to play a strategy game?",
+    "options": [
+      {
+        "text": "The speed at which the AI makes decisions.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The win/loss ratio over multiple games.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "The complexity of the algorithms used.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The graphical quality of the game interface.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 19",
+    "context": "",
+    "text": "Which of the following is a limitation of the standard minimax algorithm?",
+    "options": [
+      {
+        "text": "It is inefficient for games with large search trees due to exhaustive exploration.",
+        "correct": true,
+        "note": "Minimax explores the whole game tree depth-first, $O(b^m)$ time, which is impractical for real games; hence alpha–beta pruning and depth cut-offs."
+      },
+      {
+        "text": "It is only applicable to games with imperfect information.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "All of the other answers",
+        "correct": false,
+        "note": "Minimax assumes perfect information, so the second option is false, and with it this one."
+      },
+      {
+        "text": "It can not easily be adapted to handle games with more than two players.",
+        "correct": false,
+        "note": "Extending minimax to more players is straightforward: each node holds a vector of utilities, one per player (AIMA §5.2)."
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 20",
+    "context": "",
+    "text": "What is the difference between syntax and semantics?",
+    "options": [
+      {
+        "text": "Semantics focuses on sentence formation rules, and syntax determines truth values.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Syntax defines the structure and formation rules of sentences, while semantics assigns meaning by defining the truth of sentences in a given world.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Syntax and semantics both define the meaning of logical connectives.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Syntax determines the truth of a sentence in a world, while semantics describes how sentences are formed.",
+        "correct": false,
+        "note": "This swaps the two: syntax is about well-formed sentences, semantics about their truth in each possible world."
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 21",
+    "context": "",
+    "text": "In a Constraint Satisfaction Problem (CSP), what does a 'variable' represent?",
+    "options": [
+      {
+        "text": "A constraint that must be satisfied",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "A function defining relationships between elements",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "A possible value that can be assigned",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "An element that can take on different values",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 22",
+    "context": "",
+    "text": "Which of the following formulas represents the sum rule for two events, $A$ and $B$?",
+    "options": [
+      {
+        "text": "$P(A \\cap B) = P(A) \\times P(B \\mid A)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$P(A \\cup B) = P(A) \\times P(B)$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "$P(A \\cap B) = P(A) + P(B)$",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 23",
+    "context": "",
+    "text": "What does the 'least-constraining value' heuristic aim to achieve in CSPs?",
+    "options": [
+      {
+        "text": "Selects the value that rules out the most choices for neighboring variables",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Selects the value that rules out the fewest choices for neighboring variables",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "Selects the value that is least frequently used",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Selects the value that is most frequently used",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 24",
+    "context": "",
+    "text": "What characterizes a stochastic environment?",
+    "options": [
+      {
+        "text": "The environment has elements of randomness and unpredictability",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "The environment does not change over time",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The next state of the environment is determined by the current state and the agent's action",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "The environment is completely predictable",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 25",
+    "context": "",
+    "text": "Which of the following is NOT a characteristic of a rational agent?",
+    "options": [
+      {
+        "text": "Makes decisions based on percept history",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Acts to achieve the best expected outcome",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Operates autonomously",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "Always mimics human behavior",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 26",
+    "context": "",
+    "text": "What distinguishes 'classical planning' from other forms of planning in AI?",
+    "options": [
+      {
+        "text": "It assumes a fully observable, deterministic, finite, static, and discrete environment.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "It incorporates learning mechanisms to adapt plans over time.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "It focuses on real-time dynamic planning scenarios.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "It deals exclusively with stochastic and partially observable environments.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 27",
+    "context": "",
+    "text": "In the PEAS description of an agent, what does 'Actuators' refer to?",
+    "options": [
+      {
+        "text": "They process sensory information.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "They execute actions that allow the agent to interact with the environment.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "They measure the performance of the agent.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "They define the environment for the agent.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 28",
+    "context": "",
+    "text": "What is the main advantage of using 'heuristic search' in planning algorithms?",
+    "options": [
+      {
+        "text": "It eliminates the need for defining action preconditions and effects.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "It guarantees finding the optimal plan in all scenarios.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "It possibly reduces the search space by providing estimates of the cost to reach the goal, leading to more efficient planning.",
+        "correct": true,
+        "note": ""
+      },
+      {
+        "text": "It allows for planning in non-deterministic environments without any modifications.",
+        "correct": false,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 29",
+    "context": "",
+    "text": "How would you represent the statement \"There exists a person who is a student and is studying Computer Science\" in First-Order Logic?",
+    "options": [
+      {
+        "text": "$\\forall x\\,(\\text{Person}(x) \\land \\text{Student}(x) \\land \\text{Studies}(x, \\text{ComputerScience}))$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\exists x\\,(\\text{Person}(x) \\lor \\text{Student}(x) \\lor \\text{Studies}(x, \\text{ComputerScience}))$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\forall x\\,(\\text{Person}(x) \\to \\text{Student}(x) \\to \\text{Studies}(x, \\text{ComputerScience}))$",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "$\\exists x\\,(\\text{Person}(x) \\land \\text{Student}(x) \\land \\text{Studies}(x, \\text{ComputerScience}))$",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  },
+  {
+    "type": "single",
+    "section": "Question 30",
+    "context": "",
+    "text": "In hierarchical planning, what is the purpose of 'task decomposition'?",
+    "options": [
+      {
+        "text": "To eliminate unnecessary tasks from the plan.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "To sequence tasks in chronological order.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "To assign tasks to different agents in a multi-agent system.",
+        "correct": false,
+        "note": ""
+      },
+      {
+        "text": "To break down complex tasks into simpler, more manageable subtasks.",
+        "correct": true,
+        "note": ""
+      }
+    ]
+  }
+]

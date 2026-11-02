@@ -9,13 +9,47 @@
     "id": "AI501_DS843",
     "title": "AI501, DS843 - Introduction to Artificial Intelligence",
     "description": "AI/CS",
-    "tests": []
+    "tests": [
+      {
+        "id": "exam2025-jun",
+        "title": "Exam June 2025 (Part I)",
+        "file": "courses/AI501_DS843_INTRO_AI/exam2025-jun/exam2025.json",
+        "questions": 30,
+        "points": 30,
+        "formats": [
+          "single"
+        ],
+        "sources": [
+          {
+            "name": "IntroAI",
+            "file": "courses/AI501_DS843_INTRO_AI/exam2025-jun/IntroAI.pdf"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "DM549_DS820",
     "title": "DM549, DS820 - Discrete Mathematics",
     "description": "AI/CS",
-    "tests": []
+    "tests": [
+      {
+        "id": "exam2025-jan",
+        "title": "Exam January 2025",
+        "file": "courses/DM549_DS820_DISCMAT/exam2025-jan/exam2025.json",
+        "questions": 15,
+        "points": 96,
+        "formats": [
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "DM549Exam2025",
+            "file": "courses/DM549_DS820_DISCMAT/exam2025-jan/DM549Exam2025.pdf"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "DM507",
