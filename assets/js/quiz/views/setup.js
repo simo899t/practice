@@ -1,7 +1,7 @@
-/** Pre-run screen: what this paper holds, and how much of it to attempt. */
+/** Pre-run cover sheet: what this paper holds, and how much of it to attempt. */
 
 import { el, icon, ICONS } from '../../core/dom.js';
-import { plural } from '../../core/format.js';
+import { courseParts, plural } from '../../core/format.js';
 import { FORMATS } from '../model.js';
 
 const LENGTH_CHOICES = [10, 25, 50];
@@ -9,32 +9,26 @@ const LENGTH_CHOICES = [10, 25, 50];
 export function renderSetup({ title, course, summary, best, skipped, onStart }) {
   const options = { limit: null, shuffle: true };
 
+  const { codes, name } = courseParts(course);
+
   const card = el('section', { class: 'card setup fade-up' }, [
-    el('div', { class: 'eyebrow', text: course || 'Exam practice' }),
+    el('p', { class: 'eyebrow', text: codes || 'Exam practice' }),
     el('h1', { text: title }),
+    name ? el('p', { class: 'setup-course', text: name }) : null,
     el('p', {
+      class: 'setup-lede',
       text: 'Instant feedback after every question. Your best score is kept in this browser.',
     }),
   ]);
 
-  card.append(
-    el('div', { class: 'format-pills' },
-      summary.formats.map((format) =>
-        el('span', { class: 'pill', text: FORMATS[format].label })
-      )
-    )
-  );
+  const formats = summary.formats.map((format) => FORMATS[format].label).join(', ');
 
   card.append(
-    el('div', { class: 'facts' }, [
-      fact(summary.count, summary.count === 1 ? 'question' : 'questions'),
-      fact(summary.points, 'points'),
-      best
-        ? el('div', {}, [
-            el('b', { text: `${best.best}%` }),
-            el('span', { text: `best of ${plural(best.attempts, 'try', 'tries')}` }),
-          ])
-        : null,
+    el('dl', { class: 'facts' }, [
+      fact(summary.count === 1 ? 'Question' : 'Questions', summary.count),
+      fact('Points', summary.points),
+      fact(summary.formats.length === 1 ? 'Format' : 'Formats', formats, { text: true }),
+      best ? fact(`Best of ${plural(best.attempts, 'try', 'tries')}`, `${best.best}%`) : null,
     ])
   );
 
@@ -46,7 +40,7 @@ export function renderSetup({ title, course, summary, best, skipped, onStart }) 
   );
 
   if (lengths.length > 1) {
-    const group = el('div', { class: 'segmented' });
+    const group = el('div', { class: 'segmented', role: 'group', 'aria-label': 'Length' });
     const buttons = lengths.map(({ label, value }) =>
       el('button', {
         type: 'button',
@@ -64,12 +58,10 @@ export function renderSetup({ title, course, summary, best, skipped, onStart }) 
     );
     group.append(...buttons);
 
-    card.append(
-      row('Length', 'How many questions to draw from this paper.', group)
-    );
+    card.append(row('Length', 'How many questions to draw from this test.', group));
   }
 
-  const shuffle = el('input', { type: 'checkbox', checked: true });
+  const shuffle = el('input', { type: 'checkbox', checked: true, 'aria-label': 'Shuffle' });
   shuffle.addEventListener('change', () => {
     options.shuffle = shuffle.checked;
   });
@@ -88,7 +80,7 @@ export function renderSetup({ title, course, summary, best, skipped, onStart }) 
         class: 'btn btn-lg',
         type: 'button',
         on: { click: () => onStart({ ...options }) },
-      }, ['Start practising', icon(ICONS.arrowRight, { size: 16 })]),
+      }, ['Start practising', icon(ICONS.arrowRight, { size: 18 })]),
       el('a', { class: 'btn btn-ghost btn-lg', href: 'index.html', text: 'All courses' }),
     ])
   );
@@ -96,8 +88,7 @@ export function renderSetup({ title, course, summary, best, skipped, onStart }) 
   if (skipped) {
     card.append(
       el('p', {
-        class: 'muted',
-        style: 'margin-top:1rem;font-size:var(--step--1)',
+        class: 'setup-note',
         text: `${plural(skipped, 'entry', 'entries')} in this file could not be read and ${
           skipped === 1 ? 'was' : 'were'
         } skipped.`,
@@ -108,8 +99,11 @@ export function renderSetup({ title, course, summary, best, skipped, onStart }) 
   return card;
 }
 
-function fact(value, label) {
-  return el('div', {}, [el('b', { text: String(value) }), el('span', { text: label })]);
+function fact(label, value, { text = false } = {}) {
+  return el('div', {}, [
+    el('dt', { text: label }),
+    el('dd', { class: text ? 'is-text' : '', text: String(value) }),
+  ]);
 }
 
 function row(label, description, control) {

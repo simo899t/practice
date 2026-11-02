@@ -1,6 +1,6 @@
 /** Written-answer view: write, reveal the model answer, then self-grade. */
 
-import { el } from '../../core/dom.js';
+import { el, icon, ICONS } from '../../core/dom.js';
 import { richNode } from '../../content/richtext.js';
 import { renderMath } from '../../content/math.js';
 import { gradeOpen } from '../session.js';
@@ -31,9 +31,8 @@ export function renderOpen({ question, index, total, isLast, resolve, onAnswer, 
   const nextButton = el('button', {
     class: 'btn hidden',
     type: 'button',
-    text: nextLabel(isLast),
     on: { click: onNext },
-  });
+  }, [nextLabel(isLast), icon(ICONS.arrowRight, { size: 15 })]);
   footer.node.append(nextButton);
 
   function reveal() {

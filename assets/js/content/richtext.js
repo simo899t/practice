@@ -42,7 +42,7 @@ function imageNode(path, resolve) {
   const img = el('img', {
     class: 'inline-image',
     src: resolve ? resolve(path) : path.trim(),
-    alt: 'Figure from the exam paper',
+    alt: 'Figure from the test',
     loading: 'lazy',
   });
 

@@ -4,14 +4,16 @@ import { el, icon, ICONS } from '../../core/dom.js';
 import { renderContext, richNode } from '../../content/richtext.js';
 import { FORMATS } from '../model.js';
 
-/** Eyebrow line: position in the run, format, and the paper's own section label. */
-export function questionHead(question, index, total) {
+/**
+ * Sheet header: the paper's own label for the question (falling back to its
+ * position in this run) and the answer format. The run counter lives in the
+ * top bar, so the two numbers never compete.
+ */
+export function questionHead(question, index) {
+  const label = question.section.trim() || `Question ${index + 1}`;
   return el('div', { class: 'qhead' }, [
-    el('span', { class: 'eyebrow', text: `Question ${index + 1} / ${total}` }),
-    el('span', { class: 'pill pill-accent', text: FORMATS[question.format].short }),
-    question.section.trim()
-      ? el('span', { class: 'pill', text: question.section.trim() })
-      : null,
+    el('span', { class: 'qlabel', text: label }),
+    el('span', { class: 'qformat', text: FORMATS[question.format].label }),
   ]);
 }
 
@@ -54,14 +56,21 @@ export function cardFooter({ hint = '', label, onClick, hidden = false }) {
   };
 }
 
-export function keyHint(keys, trailing) {
-  const node = el('span');
+/** "<kbd>A</kbd>–<kbd>D</kbd> to answer" */
+export function keyHint(keys, trailing, separator = ' ') {
+  const node = el('span', { class: 'keys' });
   keys.forEach((key, i) => {
-    if (i > 0) node.append(' ');
+    if (i > 0) node.append(separator);
     node.append(el('kbd', { class: 'key-hint', text: key }));
   });
-  node.append(' ' + trailing);
+  node.append(` ${trailing}`);
   return node;
+}
+
+/** Small round status mark used once an answer has been graded. */
+export function statusIcon(kind) {
+  const path = kind === 'good' ? ICONS.check : kind === 'bad' ? ICONS.x : ICONS.minus;
+  return icon(path, { size: 16, stroke: 2.4 });
 }
 
 /** The note explaining the right answer, when the author wrote one. */

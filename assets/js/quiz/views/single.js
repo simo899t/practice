@@ -5,7 +5,7 @@ import { renderRich } from '../../content/richtext.js';
 import { renderMath } from '../../content/math.js';
 import { optionKey } from '../../core/format.js';
 import { gradeSingle } from '../session.js';
-import { cardFooter, keyHint, nextLabel, noteNode, questionBody, questionHead } from './parts.js';
+import { cardFooter, keyHint, nextLabel, noteNode, questionBody, questionHead, statusIcon } from './parts.js';
 
 export function renderSingle({ question, index, total, isLast, resolve, onAnswer, onNext }) {
   const card = el('article', { class: 'card qcard' });
@@ -39,7 +39,7 @@ export function renderSingle({ question, index, total, isLast, resolve, onAnswer
     onClick: onNext,
     hidden: true,
   });
-  footer.setHint(keyHint(['1', '…', optionKey(question.options.length - 1)], 'to answer'));
+  footer.setHint(keyHint(['A', optionKey(question.options.length - 1)], 'or click to answer', '–'));
   card.append(footer.node);
 
   function choose(selected) {
@@ -52,9 +52,15 @@ export function renderSingle({ question, index, total, isLast, resolve, onAnswer
       const option = question.options[i];
       button.disabled = true;
 
-      if (option.correct) button.classList.add('is-correct');
-      else if (i === selected) button.classList.add('is-wrong');
-      else button.classList.add('is-muted');
+      if (option.correct) {
+        button.classList.add('is-correct');
+        button.append(el('span', { class: 'status' }, [statusIcon('good')]));
+      } else if (i === selected) {
+        button.classList.add('is-wrong');
+        button.append(el('span', { class: 'status' }, [statusIcon('bad')]));
+      } else {
+        button.classList.add('is-muted');
+      }
 
       if (option.correct || i === selected) {
         const note = noteNode(option.note, resolve);
@@ -64,8 +70,8 @@ export function renderSingle({ question, index, total, isLast, resolve, onAnswer
 
     footer.setHint(
       grade.earned
-        ? el('span', { class: 'pill pill-good', text: 'Correct' })
-        : el('span', { class: 'pill pill-bad', text: 'Not quite' })
+        ? el('span', { class: 'verdict is-good' }, [statusIcon('good'), 'Correct'])
+        : el('span', { class: 'verdict is-bad' }, [statusIcon('bad'), 'Not quite'])
     );
     footer.button.classList.remove('hidden');
     footer.button.focus({ preventScroll: true });

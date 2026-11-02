@@ -2,7 +2,7 @@
 
 import { byId, el, icon, ICONS } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
-import { percent } from '../core/format.js';
+import { courseParts, percent } from '../core/format.js';
 import { recordAttempt, scoreFor } from '../core/storage.js';
 import { assetResolver } from '../content/richtext.js';
 import { normalizeExam, summarize } from './model.js';
@@ -44,7 +44,10 @@ mountThemeToggle(byId('bar-actions'));
 
 document.title = `${examTitle} · Exam Drill`;
 barTitle.textContent = examTitle;
-barSub.textContent = courseTitle;
+{
+  const { codes, name } = courseParts(courseTitle);
+  barSub.textContent = [codes, name].filter(Boolean).join(' — ');
+}
 
 /* ── Screens ───────────────────────────────────────────────────────────── */
 
@@ -153,7 +156,7 @@ document.addEventListener('keydown', (event) => {
 
 async function init() {
   if (!examFile) {
-    showMessage('No exam selected', 'Pick a paper from the course list to get started.');
+    showMessage('No exam selected', 'Pick a test from the course list to get started.');
     app.append(el('div', { class: 'state' }, [
       el('a', { class: 'btn', href: 'index.html' }, [
         icon(ICONS.arrowLeft, { size: 15 }),
@@ -163,7 +166,7 @@ async function init() {
     return;
   }
 
-  showMessage('Loading the paper', examTitle, { spinner: true });
+  showMessage('Loading the test', examTitle, { spinner: true });
   resolve = assetResolver(examFile);
 
   try {
@@ -174,7 +177,7 @@ async function init() {
     questions = parsed;
     showSetup(skipped);
   } catch (error) {
-    showMessage('Could not load this paper', String(error.message ?? error));
+    showMessage('Could not load this test', String(error.message ?? error));
   }
 }
 

@@ -29,13 +29,28 @@ export function splitTitle(title) {
   return { code: title.slice(0, at), name: title.slice(at + 3) };
 }
 
-/** "AI/CS" -> ["AI", "CS"] */
-export function parseTags(description) {
-  if (!description) return [];
-  return description
-    .split('/')
+/** "AI501, DS843 - Intro to AI" -> { codes: "AI501 · DS843", name: "Intro to AI" } */
+export function courseParts(title) {
+  const { code, name } = splitTitle(String(title ?? ''));
+  const codes = code
+    .split(',')
     .map((part) => part.trim())
+    .filter(Boolean)
+    .join(' · ');
+  return { codes, name };
+}
+
+/**
+ * The subject prefixes of a course's codes, used as filter tags:
+ * "AI501, DS843 - Intro to AI" -> ["AI", "DS"], "DM507 - Algorithms" -> ["DM"].
+ */
+export function codePrefixes(title) {
+  const { codes } = courseParts(title);
+  const prefixes = codes
+    .split(' · ')
+    .map((code) => (code.match(/^[A-Za-z]+(?=\d)/)?.[0] ?? '').toUpperCase())
     .filter(Boolean);
+  return [...new Set(prefixes)];
 }
 
 /**

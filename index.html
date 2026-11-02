@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark light">
-  <meta name="description" content="Practice past exams for IMADA courses — multiple choice, true/false and written-answer papers with instant feedback.">
-  <title>Exam Drill — practice past papers</title>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Practice past exams for IMADA courses — multiple choice, true/false and written-answer tests with instant feedback.">
+  <title>Exam Drill — practice past tests</title>
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -25,40 +29,48 @@
 </head>
 <body>
   <header class="appbar">
-    <a class="brand" href="index.html">
-      <span class="brand-mark" aria-hidden="true">ED</span>
-      Exam Drill
-      <span class="brand-sub">IMADA</span>
-    </a>
-    <span class="spacer"></span>
-    <div id="bar-actions"></div>
+    <div class="appbar-inner">
+      <a class="brand" href="index.html" aria-label="Exam Drill, home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17.5 19 7"/></svg>
+        </span>
+        <span class="brand-name">Exam Drill</span>
+        <span class="brand-sub">IMADA</span>
+      </a>
+      <span class="spacer"></span>
+      <div id="bar-actions"></div>
+    </div>
   </header>
 
   <main class="wrap page">
     <section class="hero">
-      <h1>Past papers, <em>drilled properly</em>.</h1>
-      <p>
-        Every transcribed exam in one place — multiple choice, true/false blocks and
-        written answers, each marked the moment you answer.
-      </p>
-      <div class="stats" id="stats"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Past tests from IMADA courses</p>
+        <h1>Past tests, <span class="mark">drilled properly</span>.</h1>
+        <p class="lede">
+          Every transcribed exam in one place — multiple choice, true/false blocks and
+          written answers, each marked the moment you answer.
+        </p>
+      </div>
+      <div class="stats" id="stats" aria-label="Archive size"></div>
     </section>
 
     <div class="toolbar">
       <label class="field">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
              stroke-linecap="round" aria-hidden="true">
           <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.3-4.3"/>
         </svg>
-        <input id="search" type="search" placeholder="Search courses and papers"
-               autocomplete="off" aria-label="Search courses and papers">
+        <input id="search" type="search" placeholder="Search courses and tests"
+               autocomplete="off" aria-label="Search courses and tests">
         <kbd>/</kbd>
       </label>
-      <div class="filters" id="filters" role="group" aria-label="Filter by programme"></div>
+      <div class="segmented filters" id="filters" role="group" aria-label="Filter by course code"></div>
     </div>
 
-    <div class="course-grid" id="course-grid">
-      <div class="state" style="grid-column:1/-1">
+    <div class="course-list" id="course-grid">
+      <div class="state">
         <div class="spinner"></div>
         <p>Loading courses…</p>
       </div>
@@ -67,7 +79,8 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      Exam Drill · a static study tool. Scores stay in this browser.
+      <span>Exam Drill · a static study tool for IMADA courses.</span>
+      <span>Scores stay in this browser.</span>
     </div>
   </footer>
 

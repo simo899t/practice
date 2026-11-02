@@ -2,8 +2,8 @@
 
 import { byId, el } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
-import { parseTags } from '../core/format.js';
-import { courseCard } from './course-card.js';
+import { codePrefixes } from '../core/format.js';
+import { archiveMatches, courseCard } from './course-card.js';
 
 const MANIFEST = 'courses/manifest.json';
 
@@ -21,13 +21,13 @@ mountThemeToggle(byId('bar-actions'));
 /* ── Filtering ─────────────────────────────────────────────────────────── */
 
 function matches(course) {
-  if (activeTag !== 'all' && !parseTags(course.description).includes(activeTag)) return false;
+  if (activeTag !== 'all' && !codePrefixes(course.title).includes(activeTag)) return false;
   if (!query) return true;
 
   const haystack = [course.title, course.id, ...(course.tests ?? []).map((t) => t.title)]
     .join(' ')
     .toLowerCase();
-  return haystack.includes(query);
+  return haystack.includes(query) || (course.archive ?? []).some((item) => archiveMatches(item, query));
 }
 
 /** Courses with papers first; manifest order is kept inside each group. */
@@ -41,7 +41,7 @@ function render() {
 
   if (!visible.length) {
     grid.append(
-      el('div', { class: 'state', style: 'grid-column:1/-1' }, [
+      el('div', { class: 'state' }, [
         el('h2', { text: 'Nothing matches' }),
         el('p', { text: 'Try a different course code, title or filter.' }),
       ])
@@ -50,9 +50,9 @@ function render() {
   }
 
   visible.forEach((course, i) => {
-    const card = courseCard(course);
+    const card = courseCard(course, { query });
     card.classList.add('fade-up');
-    card.style.animationDelay = `${Math.min(i, 8) * 35}ms`;
+    card.style.animationDelay = `${Math.min(i, 8) * 30}ms`;
     grid.append(card);
   });
 }
@@ -61,7 +61,7 @@ function render() {
 
 function renderStats() {
   const withExams = courses.filter((course) => (course.tests ?? []).length);
-  const papers = withExams.reduce((sum, course) => sum + course.tests.length, 0);
+  const tests = withExams.reduce((sum, course) => sum + course.tests.length, 0);
   const questions = withExams.reduce(
     (sum, course) => sum + course.tests.reduce((n, exam) => n + (exam.questions ?? 0), 0),
     0
@@ -75,21 +75,21 @@ function renderStats() {
 
   statsBar.replaceChildren(
     stat(courses.length, 'courses'),
-    stat(papers, 'papers'),
+    stat(tests, 'tests'),
     stat(questions, 'questions')
   );
 }
 
 function renderFilters() {
-  const tags = [...new Set(courses.flatMap((course) => parseTags(course.description)))].sort();
-  const options = [{ id: 'all', label: 'All courses' }].concat(
+  const tags = [...new Set(courses.flatMap((course) => codePrefixes(course.title)))].sort();
+  const options = [{ id: 'all', label: 'All' }].concat(
     tags.map((tag) => ({ id: tag, label: tag }))
   );
 
   const buttons = options.map((option) =>
     el('button', {
-      class: 'chip',
       type: 'button',
+      title: option.id === 'all' ? 'All courses' : `Courses with a ${option.label} code`,
       text: option.label,
       'aria-pressed': String(option.id === activeTag),
       on: {
@@ -141,7 +141,7 @@ async function init() {
     render();
   } catch (error) {
     grid.replaceChildren(
-      el('div', { class: 'state', style: 'grid-column:1/-1' }, [
+      el('div', { class: 'state' }, [
         el('h2', { text: 'Could not load the course list' }),
         el('p', { text: String(error.message ?? error) }),
         el('p', {

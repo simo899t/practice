@@ -69,11 +69,36 @@
     "positiveLabel": "True",
     "negativeLabel": "False",
     "statements": [
-      { "text": "If a function is differentiable, it must be continuous.", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
-      { "text": "$\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx = \\int_0^1\\int_0^y f(x,y)\\,dx\\,dy$", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
-      { "text": "If $\\displaystyle\\iint_R f\\,dA = 0$, then $f$ is zero at all points in $R$.", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
-      { "text": "If $f$ and $g$ are two functions continuous on a region $R$, then $\\int_R f \\cdot g\\, dA = \\int_R f\\, dA \\cdot \\int_R g\\, dA$", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" },
-      { "text": "A local maximum of $f$ can only occur at the critical points.", "answerIsPositive": false, "positiveNote": "", "negativeNote": "" }
+      {
+        "text": "If a function is differentiable, it must be continuous.",
+        "answerIsPositive": true,
+        "positiveNote": "Differentiability at a point forces continuity there; the converse fails (e.g. $|x|$ at $0$).",
+        "negativeNote": ""
+      },
+      {
+        "text": "$\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx = \\int_0^1\\int_0^y f(x,y)\\,dx\\,dy$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": "Swapping the order changes the limits: the region $0 \\le y \\le x \\le 1$ is $\\int_0^1\\int_y^1 f\\,dx\\,dy$, not $\\int_0^1\\int_0^y$."
+      },
+      {
+        "text": "If $\\displaystyle\\iint_R f\\,dA = 0$, then $f$ is zero at all points in $R$.",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": "Positive and negative parts can cancel: $f(x, y) = x$ over the square $-1 \\le x \\le 1$, $0 \\le y \\le 1$ integrates to $0$."
+      },
+      {
+        "text": "If $f$ and $g$ are two functions continuous on a region $R$, then $\\int_R f \\cdot g\\, dA = \\int_R f\\, dA \\cdot \\int_R g\\, dA$",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": "Integrals do not multiply like this: with $f = g = 1$ on a region of area $2$, the left side is $2$ but the right side is $4$."
+      },
+      {
+        "text": "A local maximum of $f$ can only occur at the critical points.",
+        "answerIsPositive": false,
+        "positiveNote": "",
+        "negativeNote": "Away from the boundary, a local maximum can only be at a critical point (where $\\nabla f = \\mathbf{0}$ or is undefined); but on a closed region it can also sit on the boundary, where neither need hold."
+      }
     ]
   }
 ]
