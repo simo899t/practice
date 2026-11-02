@@ -3,32 +3,42 @@
     "id": "DM573",
     "title": "DM573 - Introduction to Computer Science",
     "description": "AI/CS",
-    "tests": [
-      
-    ]
+    "tests": []
   },
   {
     "id": "AI501_DS843",
     "title": "AI501, DS843 - Introduction to Artificial Intelligence",
     "description": "AI/CS",
-    "tests": [
-      
-    ]
+    "tests": []
   },
   {
     "id": "DM549_DS820",
     "title": "DM549, DS820 - Discrete Mathematics",
     "description": "AI/CS",
-    "tests": [
-      
-    ]
+    "tests": []
   },
   {
     "id": "DM507",
     "title": "DM507, DM578, DS814 - Algorithms and Data Structures",
     "description": "AI/CS",
     "tests": [
-      { "id": "exam2025",     "title": "Exam 2025",     "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/exam2025/exam2025.json" }
+      {
+        "id": "exam2025",
+        "title": "Exam 2025",
+        "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/exam2025/exam2025.json",
+        "questions": 32,
+        "points": 84,
+        "formats": [
+          "single",
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "algdtastruct",
+            "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/exam2025/algdtastruct.pdf"
+          }
+        ]
+      }
     ]
   },
   {
@@ -36,9 +46,55 @@
     "title": "AI503 - Calculus",
     "description": "AI",
     "tests": [
-      { "id": "exam2026",     "title": "Exam 2026",     "file": "courses/AI503_CALC/exam2026-jan/exam2026.json" },
-      { "id": "reexam2026",   "title": "ReExam 2026",   "file": "courses/AI503_CALC/reexam2026-mar/reexam2026.json" },
-      { "id": "sample_exam1", "title": "Sample Exam 1", "file": "courses/AI503_CALC/sample_exam1/sample-exam1.json" }
+      {
+        "id": "exam2026",
+        "title": "Exam 2026",
+        "file": "courses/AI503_CALC/exam2026-jan/exam2026.json",
+        "questions": 10,
+        "points": 14,
+        "formats": [
+          "group",
+          "open"
+        ],
+        "sources": [
+          {
+            "name": "AI503_Exam_January_2026",
+            "file": "courses/AI503_CALC/exam2026-jan/AI503_Exam_January_2026.pdf"
+          }
+        ]
+      },
+      {
+        "id": "reexam2026",
+        "title": "ReExam 2026",
+        "file": "courses/AI503_CALC/reexam2026-mar/reexam2026.json",
+        "questions": 1,
+        "points": 5,
+        "formats": [
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "AI503_reexam_March_2026",
+            "file": "courses/AI503_CALC/reexam2026-mar/AI503_reexam_March_2026.pdf"
+          }
+        ]
+      },
+      {
+        "id": "sample_exam1",
+        "title": "Sample Exam 1",
+        "file": "courses/AI503_CALC/sample_exam1/sample-exam1.json",
+        "questions": 11,
+        "points": 55,
+        "formats": [
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "sample_exam",
+            "file": "courses/AI503_CALC/sample_exam1/sample_exam.pdf"
+          }
+        ]
+      }
     ]
   },
   {
@@ -46,10 +102,70 @@
     "title": "AI512 - Introduction to Machine Learning",
     "description": "AI/CS",
     "tests": [
-      { "id": "exam-2025-fall",       "title": "Exam 2025 Fall",        "file": "courses/AI512_ML/exam-2025-fall/exam-2025-fall.json" },
-      { "id": "exam-2025-jan",        "title": "Exam January 2025",     "file": "courses/AI512_ML/exam-2025-jan/exam-2025-jan.json" },
-      { "id": "exam-2024-jan",        "title": "Exam January 2024",     "file": "courses/AI512_ML/exam-2024-jan/exam-2024-jan.json" },
-      { "id": "exam-2024-feb-reexam", "title": "Re-exam February 2024", "file": "courses/AI512_ML/exam-2024-feb-reexam/exam-2024-feb-reexam.json" }
+      {
+        "id": "exam-2025-fall",
+        "title": "Exam 2025 Fall",
+        "file": "courses/AI512_ML/exam-2025-fall/exam-2025-fall.json",
+        "questions": 13,
+        "points": 65,
+        "formats": [
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "2025_Fall_AI512_Exam",
+            "file": "courses/AI512_ML/exam-2025-fall/2025_Fall_AI512_Exam.pdf"
+          }
+        ]
+      },
+      {
+        "id": "exam-2025-jan",
+        "title": "Exam January 2025",
+        "file": "courses/AI512_ML/exam-2025-jan/exam-2025-jan.json",
+        "questions": 12,
+        "points": 60,
+        "formats": [
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "jan-2025-exam-answers",
+            "file": "courses/AI512_ML/exam-2025-jan/jan-2025-exam-answers.pdf"
+          }
+        ]
+      },
+      {
+        "id": "exam-2024-jan",
+        "title": "Exam January 2024",
+        "file": "courses/AI512_ML/exam-2024-jan/exam-2024-jan.json",
+        "questions": 13,
+        "points": 65,
+        "formats": [
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "ai512-exam",
+            "file": "courses/AI512_ML/exam-2024-jan/ai512-exam.pdf"
+          }
+        ]
+      },
+      {
+        "id": "exam-2024-feb-reexam",
+        "title": "Re-exam February 2024",
+        "file": "courses/AI512_ML/exam-2024-feb-reexam/exam-2024-feb-reexam.json",
+        "questions": 11,
+        "points": 55,
+        "formats": [
+          "group"
+        ],
+        "sources": [
+          {
+            "name": "ai512-reexam",
+            "file": "courses/AI512_ML/exam-2024-feb-reexam/ai512-reexam.pdf"
+          }
+        ]
+      }
     ]
   },
   {
@@ -57,7 +173,27 @@
     "title": "AI504 - Knowledge Representation",
     "description": "AI",
     "tests": [
-      { "id": "exam-2026", "title": "Exam 2026", "file": "courses/AI504_KR/exam2025/exam2026.json" }
+      {
+        "id": "exam-2026",
+        "title": "Exam 2026",
+        "file": "courses/AI504_KR/exam2025/exam2026.json",
+        "questions": 20,
+        "points": 20,
+        "formats": [
+          "single",
+          "open"
+        ],
+        "sources": [
+          {
+            "name": "AI504-Exam-June-2026 (1)",
+            "file": "courses/AI504_KR/exam2025/AI504-Exam-June-2026 (1).pdf"
+          },
+          {
+            "name": "final-answers",
+            "file": "courses/AI504_KR/exam2025/final-answers.pdf"
+          }
+        ]
+      }
     ]
   },
   {
@@ -65,10 +201,50 @@
     "title": "AI507 - AI & Society",
     "description": "AI",
     "tests": [
-      { "id": "ai-mock-quiz1", "title": "Mock Quiz 1 by AI", "file": "courses/AI507_AI_SOC/ai-mock-quiz1/ai-mock-quiz1.json" },
-      { "id": "ai-mock-quiz2", "title": "Mock Quiz 2 by AI", "file": "courses/AI507_AI_SOC/ai-mock-quiz2/ai-mock-quiz2.json" },
-      { "id": "ai-mock-quiz3", "title": "Mock Quiz 3 by AI", "file": "courses/AI507_AI_SOC/ai-mock-quiz3/ai-mock-quiz3.json" },
-      { "id": "exam2026", "title": "Exam 2026", "file": "courses/AI507_AI_SOC/exam2026/exam2026.json" }
+      {
+        "id": "ai-mock-quiz1",
+        "title": "Mock Quiz 1 by AI",
+        "file": "courses/AI507_AI_SOC/ai-mock-quiz1/ai-mock-quiz1.json",
+        "questions": 160,
+        "points": 160,
+        "formats": [
+          "single"
+        ],
+        "sources": []
+      },
+      {
+        "id": "ai-mock-quiz2",
+        "title": "Mock Quiz 2 by AI",
+        "file": "courses/AI507_AI_SOC/ai-mock-quiz2/ai-mock-quiz2.json",
+        "questions": 160,
+        "points": 160,
+        "formats": [
+          "single"
+        ],
+        "sources": []
+      },
+      {
+        "id": "ai-mock-quiz3",
+        "title": "Mock Quiz 3 by AI",
+        "file": "courses/AI507_AI_SOC/ai-mock-quiz3/ai-mock-quiz3.json",
+        "questions": 160,
+        "points": 160,
+        "formats": [
+          "single"
+        ],
+        "sources": []
+      },
+      {
+        "id": "exam2026",
+        "title": "Exam 2026",
+        "file": "courses/AI507_AI_SOC/exam2026/exam2026.json",
+        "questions": 35,
+        "points": 35,
+        "formats": [
+          "single"
+        ],
+        "sources": []
+      }
     ]
   }
 ]

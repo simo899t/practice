@@ -429,7 +429,7 @@
   {
     "type": "group",
     "section": "Question 9: ",
-    "context": "For a function $h_1(x)$: \n $\\begin{aligned}h_1 (44) &= 2 \\\\ h_1 (55) &= 5 \\\\ h_1 (66) &= 1 \\\\ h_1 (77) &= 2 \\\\ h_1 (88) &= 5 \\\\ h_1 (99) &= 6\\end{aligned}$  \nWe consider a hash table $H$ of length seven using linear probing with $h_1(x)$ as the auxiliary hash function. Starting from an empty table, the keys $\\{44, 55, 66, 77, 88, 99\\}$ were inserted in some order. The result is: [image: assets/ARR3]\n\nWhich keys could have been inserted last (i.e. could have been last in the insertion order)? [One or more correct answers.]",
+    "context": "For a function $h_1(x)$: \n $\\begin{aligned}h_1 (44) &= 2 \\\\ h_1 (55) &= 5 \\\\ h_1 (66) &= 1 \\\\ h_1 (77) &= 2 \\\\ h_1 (88) &= 5 \\\\ h_1 (99) &= 6\\end{aligned}$  \nWe consider a hash table $H$ of length seven using linear probing with $h_1(x)$ as the auxiliary hash function. Starting from an empty table, the keys $\\{44, 55, 66, 77, 88, 99\\}$ were inserted in some order. The result is: [image: assets/ARR3.png]\n\nWhich keys could have been inserted last (i.e. could have been last in the insertion order)? [One or more correct answers.]",
     "positiveLabel": "Correct",
     "negativeLabel": "Incorrect",
     "statements": [
@@ -886,7 +886,7 @@
   {
     "type": "single",
     "section": "Question 19: ",
-    "context": "Below is an array of eleven integers with values between 0 and 5 (inclusive): [image: assets/countingSortArr]\n\nWe sort the numbers by executing COUNTING-SORT$(A, 11, 5)$. The algorithm uses an array $C$ with six slots (indexed 0 to 5), each holding an integer counter.",
+    "context": "Below is an array of eleven integers with values between 0 and 5 (inclusive): [image: assets/countingSortArr.png]\n\nWe sort the numbers by executing COUNTING-SORT$(A, 11, 5)$. The algorithm uses an array $C$ with six slots (indexed 0 to 5), each holding an integer counter.",
     "text": "What is the sum of these six integers in $C$ at the end of the algorithm?",
     "options": [
       {

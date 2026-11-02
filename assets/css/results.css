@@ -1,0 +1,105 @@
+/* Results screen: score ring, section breakdown, missed-question review. */
+
+.score-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  margin-bottom: 1rem;
+}
+
+.ring { flex: none; width: 124px; height: 124px; }
+.ring circle { fill: none; stroke-width: 10; stroke-linecap: round; }
+.ring .track { stroke: var(--surface-3); }
+.ring .value {
+  stroke: var(--accent);
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 0.9s var(--ease);
+}
+.ring text {
+  fill: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1.55rem;
+  font-weight: 650;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+.score-copy { flex: 1 1 14rem; min-width: 0; }
+.score-copy h1 { font-size: var(--step-3); margin-bottom: 0.3rem; }
+.score-copy p { color: var(--text-muted); }
+
+.score-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.panel {
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  margin-bottom: 1rem;
+}
+.panel > h2 {
+  font-size: var(--step-1);
+  margin-bottom: 1rem;
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.breakdown-row .top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+.breakdown-row .name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: var(--step-0);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breakdown-row .num {
+  flex: none;
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.review-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.review-item {
+  padding: 0.85rem 1rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--bad);
+  border-radius: var(--radius);
+}
+.review-item .q {
+  font-size: var(--step-0);
+  margin-bottom: 0.3rem;
+  white-space: pre-wrap;
+}
+.review-item .a {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+.review-item .a b { color: var(--good); font-weight: 560; }
+
+.results-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}

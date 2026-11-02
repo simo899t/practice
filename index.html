@@ -2,163 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exam Practice</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .container { max-width: 940px; }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Practice past exams for IMADA courses — multiple choice, true/false and written-answer papers with instant feedback.">
+  <title>Exam Drill — practice past papers</title>
 
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-      gap: 1rem;
-    }
-
-    .course-box {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.15rem 1.2rem 1.25rem;
-      transition: border-color 0.15s, transform 0.15s;
-    }
-    .course-box:not(.empty):hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .course-box-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-    }
-    .course-code {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      color: var(--muted);
-      text-transform: uppercase;
-    }
-    .course-tag {
-      flex-shrink: 0;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 0.12rem 0.55rem;
-    }
-
-    .course-box-title {
-      font-size: 1.02rem;
-      line-height: 1.35;
-      color: var(--text);
-    }
-
-    .course-tests {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-top: 0.15rem;
-    }
-
-    .course-test {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      padding: 0.5rem 0.75rem;
-      text-decoration: none;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.88rem;
-      color: var(--text);
-      transition: border-color 0.12s, background 0.12s, transform 0.12s;
-    }
-    .course-test:hover {
-      border-color: var(--accent);
-      background: var(--surface-2);
-      transform: translateX(2px);
-    }
-    .course-test .go { color: var(--accent); font-size: 0.9rem; }
-
-    .course-empty {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.82rem;
-      color: var(--muted);
-      font-style: italic;
-    }
-    .course-box.empty { opacity: 0.5; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Exam Practice</h1>
-      <p class="subtitle">Pick a course, then choose a test</p>
-    </header>
-    <main>
-      <div class="course-grid" id="course-menu"></div>
-    </main>
-  </div>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/home.css">
 
   <script>
-    async function loadCourses() {
-      const res = await fetch('courses/manifest.json');
-      const courses = await res.json();
-      const menu = document.getElementById('course-menu');
-
-      courses.forEach(course => {
-        const tests = course.tests || [];
-        const box = document.createElement('div');
-        box.className = 'course-box' + (tests.length ? '' : ' empty');
-
-        const dash = course.title.indexOf(' - ');
-        const code = dash === -1 ? '' : course.title.slice(0, dash);
-        const name = dash === -1 ? course.title : course.title.slice(dash + 3);
-
-        const head = document.createElement('div');
-        head.className = 'course-box-head';
-        head.innerHTML =
-          `<span class="course-code">${code || course.id || ''}</span>` +
-          (course.description ? `<span class="course-tag">${course.description}</span>` : '');
-        box.appendChild(head);
-
-        const title = document.createElement('div');
-        title.className = 'course-box-title';
-        title.textContent = name;
-        box.appendChild(title);
-
-        if (tests.length) {
-          const list = document.createElement('div');
-          list.className = 'course-tests';
-          tests.forEach(t => {
-            const a = document.createElement('a');
-            a.className = 'course-test';
-            a.href = `quiz.html?file=${encodeURIComponent(t.file)}&title=${encodeURIComponent(t.title)}`;
-            a.innerHTML = `<span>${t.title}</span><span class="go">&rarr;</span>`;
-            list.appendChild(a);
-          });
-          box.appendChild(list);
-        } else {
-          const empty = document.createElement('div');
-          empty.className = 'course-empty';
-          empty.textContent = 'No tests yet';
-          box.appendChild(empty);
-        }
-
-        menu.appendChild(box);
-      });
-    }
-
-    loadCourses();
+    // Apply the saved theme before first paint to avoid a flash of the wrong palette.
+    try {
+      const saved = localStorage.getItem('exam-drill:theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (_) {}
   </script>
+</head>
+<body>
+  <header class="appbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">ED</span>
+      Exam Drill
+      <span class="brand-sub">IMADA</span>
+    </a>
+    <span class="spacer"></span>
+    <div id="bar-actions"></div>
+  </header>
+
+  <main class="wrap page">
+    <section class="hero">
+      <h1>Past papers, <em>drilled properly</em>.</h1>
+      <p>
+        Every transcribed exam in one place — multiple choice, true/false blocks and
+        written answers, each marked the moment you answer.
+      </p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <div class="toolbar">
+      <label class="field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+             stroke-linecap="round" aria-hidden="true">
+          <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.3-4.3"/>
+        </svg>
+        <input id="search" type="search" placeholder="Search courses and papers"
+               autocomplete="off" aria-label="Search courses and papers">
+        <kbd>/</kbd>
+      </label>
+      <div class="filters" id="filters" role="group" aria-label="Filter by programme"></div>
+    </div>
+
+    <div class="course-grid" id="course-grid">
+      <div class="state" style="grid-column:1/-1">
+        <div class="spinner"></div>
+        <p>Loading courses…</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      Exam Drill · a static study tool. Scores stay in this browser.
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/home/main.js"></script>
 </body>
 </html>
