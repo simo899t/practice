@@ -317,3 +317,93 @@ kbd,
   animation: spin 0.7s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Subjects (AI, DM, DS…): colour comes from the course code ────────── */
+
+:root {
+  --subject: var(--ink-2);
+  --subject-soft: var(--surface-3);
+}
+.subject-AI { --subject: var(--ai); --subject-soft: var(--ai-soft); }
+.subject-DM { --subject: var(--dm); --subject-soft: var(--dm-soft); }
+.subject-DS { --subject: var(--ds); --subject-soft: var(--ds-soft); }
+
+.tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.08rem 0.45rem;
+  border-radius: 4px;
+  background: var(--subject-soft);
+  color: var(--subject);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1.55;
+}
+
+.segmented button[class*="subject-"][aria-pressed="true"] {
+  background: var(--subject);
+  color: var(--surface);
+}
+
+/* ── File links (original PDFs) ────────────────────────────────────────── */
+
+.file-chip {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.22rem 0.6rem 0.22rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-full);
+  background: var(--surface);
+  color: var(--ink-2);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color var(--fast), border-color var(--fast), background var(--fast);
+}
+.file-chip:hover {
+  color: var(--ink);
+  border-color: var(--line-strong);
+  background: var(--surface-3);
+}
+
+/* ── Figures (stats rows) ──────────────────────────────────────────────── */
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.25rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 4rem;
+}
+.stat b {
+  font-family: var(--font-serif);
+  font-size: var(--step-4);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.stat span {
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}

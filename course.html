@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f5f2ea">
+  <meta name="description" content="The past tests and archived material for one IMADA course.">
+  <title>Course · Exam Drill</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css?v=485db0cbac">
+  <link rel="stylesheet" href="assets/css/base.css?v=e1aa7b1fb9">
+  <link rel="stylesheet" href="assets/css/components.css?v=09973921ff">
+  <link rel="stylesheet" href="assets/css/course.css?v=c218cccd3d">
+
+  <script>
+    try {
+      if (localStorage.getItem('exam-drill:theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (_) {}
+  </script>
+  <!-- Filled in by tools/stamp-assets.mjs: every module URL carries its content hash. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "./assets/js/content/math.js": "./assets/js/content/math.js?v=cb3a386528",
+      "./assets/js/content/richtext.js": "./assets/js/content/richtext.js?v=c11b0887fe",
+      "./assets/js/core/catalog.js": "./assets/js/core/catalog.js?v=88ee0b2314",
+      "./assets/js/core/dom.js": "./assets/js/core/dom.js?v=c6be81d452",
+      "./assets/js/core/format.js": "./assets/js/core/format.js?v=91d24e89c7",
+      "./assets/js/core/storage.js": "./assets/js/core/storage.js?v=564d95b01b",
+      "./assets/js/core/theme.js": "./assets/js/core/theme.js?v=b9d2830b5f",
+      "./assets/js/course/main.js": "./assets/js/course/main.js?v=decec2e81c",
+      "./assets/js/home/course-tile.js": "./assets/js/home/course-tile.js?v=ccc43d945e",
+      "./assets/js/home/main.js": "./assets/js/home/main.js?v=f5fa5339fc",
+      "./assets/js/quiz/main.js": "./assets/js/quiz/main.js?v=18dfab8cd1",
+      "./assets/js/quiz/model.js": "./assets/js/quiz/model.js?v=dcfb89e8a3",
+      "./assets/js/quiz/session.js": "./assets/js/quiz/session.js?v=39c1b1fa7a",
+      "./assets/js/quiz/views/group.js": "./assets/js/quiz/views/group.js?v=c9a1f63fee",
+      "./assets/js/quiz/views/open.js": "./assets/js/quiz/views/open.js?v=3d0a3097e1",
+      "./assets/js/quiz/views/parts.js": "./assets/js/quiz/views/parts.js?v=977c6fcf79",
+      "./assets/js/quiz/views/results.js": "./assets/js/quiz/views/results.js?v=136446b35f",
+      "./assets/js/quiz/views/setup.js": "./assets/js/quiz/views/setup.js?v=fe01649d49",
+      "./assets/js/quiz/views/single.js": "./assets/js/quiz/views/single.js?v=4df66ab764"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="appbar">
+    <div class="appbar-inner">
+      <a class="brand" href="index.html" aria-label="Exam Drill, all courses">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17.5 19 7"/></svg>
+        </span>
+        <span class="brand-name">Exam Drill</span>
+        <span class="brand-sub">IMADA</span>
+      </a>
+      <span class="spacer"></span>
+      <div id="bar-actions"></div>
+    </div>
+  </header>
+
+  <main class="wrap page" id="app">
+    <div class="state">
+      <div class="spinner"></div>
+      <p>Loading…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Exam Drill · a static study tool for IMADA courses.</span>
+      <span>Scores stay in this browser.</span>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/course/main.js?v=decec2e81c"></script>
+</body>
+</html>

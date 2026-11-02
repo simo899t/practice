@@ -1,11 +1,17 @@
-/** Course browser: load the manifest, filter it, render the grid. */
+/** Home page: every course as a tile, grouped by subject, with search and a subject filter. */
 
 import { byId, el } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
-import { codePrefixes } from '../core/format.js';
-import { archiveMatches, courseCard } from './course-card.js';
-
-const MANIFEST = 'courses/manifest.json';
+import { plural } from '../core/format.js';
+import { allScores } from '../core/storage.js';
+import {
+  courseStats,
+  groupBySubject,
+  loadCatalog,
+  subjectName,
+  subjectsOf,
+} from '../core/catalog.js';
+import { courseTile } from './course-tile.js';
 
 const grid = byId('course-grid');
 const search = byId('search');
@@ -13,90 +19,104 @@ const filters = byId('filters');
 const statsBar = byId('stats');
 
 let courses = [];
-let activeTag = 'all';
+let activeSubject = 'all';
 let query = '';
 
 mountThemeToggle(byId('bar-actions'));
 
 /* ── Filtering ─────────────────────────────────────────────────────────── */
 
-function matches(course) {
-  if (activeTag !== 'all' && !codePrefixes(course.title).includes(activeTag)) return false;
+function matchesQuery(course) {
   if (!query) return true;
-
-  const haystack = [course.title, course.id, ...(course.tests ?? []).map((t) => t.title)]
+  const haystack = [
+    course.title,
+    course.id,
+    ...(course.tests ?? []).map((test) => test.title),
+    ...(course.archive ?? []).map((item) => `${item.title} ${item.kind ?? ''} ${item.year ?? ''}`),
+  ]
     .join(' ')
     .toLowerCase();
-  return haystack.includes(query) || (course.archive ?? []).some((item) => archiveMatches(item, query));
-}
-
-/** Courses with papers first; manifest order is kept inside each group. */
-function byReadiness(a, b) {
-  return Number((b.tests ?? []).length > 0) - Number((a.tests ?? []).length > 0);
+  return haystack.includes(query);
 }
 
 function render() {
-  const visible = courses.filter(matches).sort(byReadiness);
+  const scores = allScores();
+  const groups = groupBySubject(courses.filter(matchesQuery), activeSubject);
   grid.replaceChildren();
 
-  if (!visible.length) {
+  if (!groups.length) {
     grid.append(
       el('div', { class: 'state' }, [
         el('h2', { text: 'Nothing matches' }),
-        el('p', { text: 'Try a different course code, title or filter.' }),
+        el('p', { text: 'Try a different course code, name or test.' }),
       ])
     );
     return;
   }
 
-  visible.forEach((course, i) => {
-    const card = courseCard(course, { query });
-    card.classList.add('fade-up');
-    card.style.animationDelay = `${Math.min(i, 8) * 30}ms`;
-    grid.append(card);
+  groups.forEach(({ subject, courses: list }, g) => {
+    const section = el('section', { class: `subject-section subject-${subject}` }, [
+      el('header', { class: 'subject-head' }, [
+        el('span', { class: 'subject-mark', text: subject }),
+        el('h2', { class: 'subject-name', text: subjectName(subject) }),
+        el('span', { class: 'subject-count', text: plural(list.length, 'course') }),
+      ]),
+    ]);
+
+    const tiles = el('div', { class: 'tile-grid' });
+    list.forEach((course, i) => {
+      const tile = courseTile(course, scores);
+      tile.classList.add('fade-up');
+      tile.style.animationDelay = `${Math.min(g * 3 + i, 10) * 30}ms`;
+      tiles.append(tile);
+    });
+
+    section.append(tiles);
+    grid.append(section);
   });
 }
 
 /* ── Chrome ────────────────────────────────────────────────────────────── */
 
 function renderStats() {
-  const withExams = courses.filter((course) => (course.tests ?? []).length);
-  const tests = withExams.reduce((sum, course) => sum + course.tests.length, 0);
-  const questions = withExams.reduce(
-    (sum, course) => sum + course.tests.reduce((n, exam) => n + (exam.questions ?? 0), 0),
-    0
+  const totals = courses.map(courseStats).reduce(
+    (sum, stats) => ({ tests: sum.tests + stats.tests, questions: sum.questions + stats.questions }),
+    { tests: 0, questions: 0 }
   );
 
   const stat = (value, label) =>
-    el('div', { class: 'stat' }, [
-      el('b', { text: String(value) }),
-      el('span', { text: label }),
-    ]);
+    el('div', { class: 'stat' }, [el('b', { text: String(value) }), el('span', { text: label })]);
 
   statsBar.replaceChildren(
     stat(courses.length, 'courses'),
-    stat(tests, 'tests'),
-    stat(questions, 'questions')
+    stat(totals.tests, 'tests'),
+    stat(totals.questions, 'questions')
   );
 }
 
 function renderFilters() {
-  const tags = [...new Set(courses.flatMap((course) => codePrefixes(course.title)))].sort();
+  const subjects = groupBySubject(courses).map((group) => group.subject);
+  // Subjects that only appear as a second code (DS) still get a filter.
+  for (const course of courses) {
+    for (const subject of subjectsOf(course)) if (!subjects.includes(subject)) subjects.push(subject);
+  }
+
   const options = [{ id: 'all', label: 'All' }].concat(
-    tags.map((tag) => ({ id: tag, label: tag }))
+    subjects.map((subject) => ({ id: subject, label: subject }))
   );
 
   const buttons = options.map((option) =>
     el('button', {
       type: 'button',
-      title: option.id === 'all' ? 'All courses' : `Courses with a ${option.label} code`,
+      class: option.id === 'all' ? '' : `subject-${option.id}`,
       text: option.label,
-      'aria-pressed': String(option.id === activeTag),
+      title: option.id === 'all' ? 'All courses' : `${subjectName(option.id)} (${option.id} codes)`,
+      'aria-pressed': String(option.id === activeSubject),
       on: {
         click: () => {
-          activeTag = option.id;
+          activeSubject = option.id;
           buttons.forEach((button, i) =>
-            button.setAttribute('aria-pressed', String(options[i].id === activeTag))
+            button.setAttribute('aria-pressed', String(options[i].id === activeSubject))
           );
           render();
         },
@@ -129,13 +149,7 @@ document.addEventListener('keydown', (event) => {
 
 async function init() {
   try {
-    const response = await fetch(MANIFEST);
-    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-
-    const data = await response.json();
-    if (!Array.isArray(data)) throw new Error('manifest.json must be a JSON array.');
-
-    courses = data;
+    courses = await loadCatalog();
     renderStats();
     renderFilters();
     render();

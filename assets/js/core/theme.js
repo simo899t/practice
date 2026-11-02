@@ -1,28 +1,19 @@
-/** Theme switching: system by default, overridable, remembered per browser. */
+/** Theme switching: light by default, dark on request, remembered per browser. */
 
 import { el, icon, ICONS } from './dom.js';
 import { readString, writeString } from './storage.js';
 
 const KEY = 'theme';
-const ORDER = ['system', 'light', 'dark'];
 
 export function currentTheme() {
-  const saved = readString(KEY, 'system');
-  return ORDER.includes(saved) ? saved : 'system';
+  return readString(KEY, 'light') === 'dark' ? 'dark' : 'light';
 }
 
 export function applyTheme(theme) {
-  const root = document.documentElement;
-  if (theme === 'system') root.removeAttribute('data-theme');
-  else root.setAttribute('data-theme', theme);
+  document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
 }
 
-function resolved(theme) {
-  if (theme !== 'system') return theme;
-  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-}
-
-/** Renders a cycling theme button into `mount`. */
+/** Renders a light/dark toggle into `mount`. */
 export function mountThemeToggle(mount) {
   let theme = currentTheme();
   applyTheme(theme);
@@ -30,25 +21,21 @@ export function mountThemeToggle(mount) {
   const button = el('button', {
     class: 'icon-btn',
     type: 'button',
-    title: 'Switch theme',
-    'aria-label': 'Switch theme',
+    title: 'Switch between light and dark',
+    'aria-label': 'Switch between light and dark',
   });
 
   const paint = () => {
-    button.replaceChildren(icon(resolved(theme) === 'light' ? ICONS.sun : ICONS.moon));
-    button.dataset.theme = theme;
+    button.replaceChildren(icon(theme === 'dark' ? ICONS.moon : ICONS.sun));
+    button.setAttribute('aria-pressed', String(theme === 'dark'));
   };
 
   button.addEventListener('click', () => {
-    theme = ORDER[(ORDER.indexOf(theme) + 1) % ORDER.length];
+    theme = theme === 'dark' ? 'light' : 'dark';
     writeString(KEY, theme);
     applyTheme(theme);
     paint();
   });
-
-  window
-    .matchMedia('(prefers-color-scheme: light)')
-    .addEventListener('change', () => theme === 'system' && paint());
 
   paint();
   mount.append(button);
