@@ -6,7 +6,7 @@ import { FORMATS } from '../model.js';
 
 const LENGTH_CHOICES = [10, 25, 50];
 
-export function renderSetup({ title, course, summary, best, skipped, onStart }) {
+export function renderSetup({ title, course, summary, best, skipped, back, onStart }) {
   const options = { limit: null, shuffle: true };
 
   const { codes, name } = courseParts(course);
@@ -81,7 +81,7 @@ export function renderSetup({ title, course, summary, best, skipped, onStart }) 
         type: 'button',
         on: { click: () => onStart({ ...options }) },
       }, ['Start practising', icon(ICONS.arrowRight, { size: 18 })]),
-      el('a', { class: 'btn btn-ghost btn-lg', href: 'index.html', text: 'All courses' }),
+      el('a', { class: 'btn btn-ghost btn-lg', href: back?.href ?? 'index.html', text: back?.label ?? 'All courses' }),
     ])
   );
 

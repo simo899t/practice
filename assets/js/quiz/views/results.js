@@ -16,7 +16,7 @@ const VERDICTS = [
   { min: 0, title: 'Worth another pass', line: 'Read the notes under each miss, then retry just those.' },
 ];
 
-export function renderResults({ session, score, best, onRestart, onRetryMissed }) {
+export function renderResults({ session, score, best, back, onRestart, onRetryMissed }) {
   const pct = percent(score.earned, score.possible);
   const verdict = VERDICTS.find((entry) => pct >= entry.min);
   const elapsed = (session.finishedAt ?? Date.now()) - session.startedAt;
@@ -45,7 +45,7 @@ export function renderResults({ session, score, best, onRestart, onRetryMissed }
         text: 'Restart this test',
         on: { click: onRestart },
       }),
-      el('a', { class: 'btn btn-ghost', href: 'index.html', text: 'All courses' }),
+      el('a', { class: 'btn btn-ghost', href: back?.href ?? 'index.html', text: back?.label ?? 'All courses' }),
     ])
   );
 

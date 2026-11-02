@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f5f2ea">
   <meta name="description" content="Practice past exams for IMADA courses — multiple choice, true/false and written-answer tests with instant feedback.">
   <title>Exam Drill — practice past tests</title>
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/tokens.css">
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=485db0cbac">
+  <link rel="stylesheet" href="assets/css/base.css?v=e1aa7b1fb9">
+  <link rel="stylesheet" href="assets/css/components.css?v=09973921ff">
+  <link rel="stylesheet" href="assets/css/home.css?v=b4f671ee16">
 
   <script>
     // Apply the saved theme before first paint to avoid a flash of the wrong palette.
     try {
-      const saved = localStorage.getItem('exam-drill:theme');
-      if (saved === 'light' || saved === 'dark') {
-        document.documentElement.setAttribute('data-theme', saved);
+      if (localStorage.getItem('exam-drill:theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
       }
     } catch (_) {}
+  </script>
+  <!-- Filled in by tools/stamp-assets.mjs: every module URL carries its content hash. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "./assets/js/content/math.js": "./assets/js/content/math.js?v=cb3a386528",
+      "./assets/js/content/richtext.js": "./assets/js/content/richtext.js?v=c11b0887fe",
+      "./assets/js/core/catalog.js": "./assets/js/core/catalog.js?v=88ee0b2314",
+      "./assets/js/core/dom.js": "./assets/js/core/dom.js?v=c6be81d452",
+      "./assets/js/core/format.js": "./assets/js/core/format.js?v=91d24e89c7",
+      "./assets/js/core/storage.js": "./assets/js/core/storage.js?v=564d95b01b",
+      "./assets/js/core/theme.js": "./assets/js/core/theme.js?v=b9d2830b5f",
+      "./assets/js/course/main.js": "./assets/js/course/main.js?v=decec2e81c",
+      "./assets/js/home/course-tile.js": "./assets/js/home/course-tile.js?v=ccc43d945e",
+      "./assets/js/home/main.js": "./assets/js/home/main.js?v=f5fa5339fc",
+      "./assets/js/quiz/main.js": "./assets/js/quiz/main.js?v=18dfab8cd1",
+      "./assets/js/quiz/model.js": "./assets/js/quiz/model.js?v=dcfb89e8a3",
+      "./assets/js/quiz/session.js": "./assets/js/quiz/session.js?v=39c1b1fa7a",
+      "./assets/js/quiz/views/group.js": "./assets/js/quiz/views/group.js?v=c9a1f63fee",
+      "./assets/js/quiz/views/open.js": "./assets/js/quiz/views/open.js?v=3d0a3097e1",
+      "./assets/js/quiz/views/parts.js": "./assets/js/quiz/views/parts.js?v=977c6fcf79",
+      "./assets/js/quiz/views/results.js": "./assets/js/quiz/views/results.js?v=136446b35f",
+      "./assets/js/quiz/views/setup.js": "./assets/js/quiz/views/setup.js?v=fe01649d49",
+      "./assets/js/quiz/views/single.js": "./assets/js/quiz/views/single.js?v=4df66ab764"
+    }
+  }
   </script>
 </head>
 <body>
@@ -49,8 +73,8 @@
         <p class="eyebrow">Past tests from IMADA courses</p>
         <h1>Past tests, <span class="mark">drilled properly</span>.</h1>
         <p class="lede">
-          Every transcribed exam in one place — multiple choice, true/false blocks and
-          written answers, each marked the moment you answer.
+          Pick a course, then a test. Multiple choice, true/false blocks and written
+          answers, each marked the moment you answer.
         </p>
       </div>
       <div class="stats" id="stats" aria-label="Archive size"></div>
@@ -66,10 +90,10 @@
                autocomplete="off" aria-label="Search courses and tests">
         <kbd>/</kbd>
       </label>
-      <div class="segmented filters" id="filters" role="group" aria-label="Filter by course code"></div>
+      <div class="segmented filters" id="filters" role="group" aria-label="Filter by subject"></div>
     </div>
 
-    <div class="course-list" id="course-grid">
+    <div class="catalog" id="course-grid">
       <div class="state">
         <div class="spinner"></div>
         <p>Loading courses…</p>
@@ -84,6 +108,6 @@
     </div>
   </footer>
 
-  <script type="module" src="assets/js/home/main.js"></script>
+  <script type="module" src="assets/js/home/main.js?v=f5fa5339fc"></script>
 </body>
 </html>

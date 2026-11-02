@@ -8,10 +8,17 @@ no backend, and scores stay in the browser.
 
 ```bash
 npm run serve        # python3 -m http.server 8080 → http://localhost:8080
-npm test             # node --test: data model, sessions, and every test in the manifest
+npm test             # node --test: data model, sessions, every test in the manifest, asset stamps
+npm run sync         # refresh courses/manifest.json (+ --add for new tests and archive files)
+npm run stamp        # re-stamp asset versions after editing CSS or JS (sync does this too)
 ```
 
 The pages fetch JSON, so open them through a server rather than as files.
+
+Three pages: `index.html` lists the courses as tiles grouped by subject,
+`course.html?id=<course id>` shows one course's tests and archive, and
+`quiz.html` runs a test. Subjects and their coloured tags come from the
+course codes (`AI501, DS843` → AI and DS).
 
 ## Layout
 
@@ -72,6 +79,14 @@ Notes or Document) and a year guessed from its name, e.g.
 Project · 2023”. Fix anything in `manifest.json`; your edits are kept. On the
 site the archive sits folded under each course's tests and is included in
 search.
+
+## Caching
+
+GitHub Pages lets browsers keep files for ten minutes, so every stylesheet and
+script URL carries a hash of its contents (`?v=…`), and an import map does the
+same for the modules the pages import. `npm run stamp` (or `npm run sync`)
+updates them; `npm test` fails if one is stale. Course and test JSON is always
+fetched fresh.
 
 ## Fonts
 

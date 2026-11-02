@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f5f2ea">
   <meta name="description" content="Work through a past test with instant marking.">
   <title>Exam Drill</title>
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/tokens.css">
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/quiz.css">
-  <link rel="stylesheet" href="assets/css/results.css">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=485db0cbac">
+  <link rel="stylesheet" href="assets/css/base.css?v=e1aa7b1fb9">
+  <link rel="stylesheet" href="assets/css/components.css?v=09973921ff">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=ed724340d9">
+  <link rel="stylesheet" href="assets/css/results.css?v=5c6045baa6">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
@@ -24,17 +23,42 @@
 
   <script>
     try {
-      const saved = localStorage.getItem('exam-drill:theme');
-      if (saved === 'light' || saved === 'dark') {
-        document.documentElement.setAttribute('data-theme', saved);
+      if (localStorage.getItem('exam-drill:theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
       }
     } catch (_) {}
+  </script>
+  <!-- Filled in by tools/stamp-assets.mjs: every module URL carries its content hash. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "./assets/js/content/math.js": "./assets/js/content/math.js?v=cb3a386528",
+      "./assets/js/content/richtext.js": "./assets/js/content/richtext.js?v=c11b0887fe",
+      "./assets/js/core/catalog.js": "./assets/js/core/catalog.js?v=88ee0b2314",
+      "./assets/js/core/dom.js": "./assets/js/core/dom.js?v=c6be81d452",
+      "./assets/js/core/format.js": "./assets/js/core/format.js?v=91d24e89c7",
+      "./assets/js/core/storage.js": "./assets/js/core/storage.js?v=564d95b01b",
+      "./assets/js/core/theme.js": "./assets/js/core/theme.js?v=b9d2830b5f",
+      "./assets/js/course/main.js": "./assets/js/course/main.js?v=decec2e81c",
+      "./assets/js/home/course-tile.js": "./assets/js/home/course-tile.js?v=ccc43d945e",
+      "./assets/js/home/main.js": "./assets/js/home/main.js?v=f5fa5339fc",
+      "./assets/js/quiz/main.js": "./assets/js/quiz/main.js?v=18dfab8cd1",
+      "./assets/js/quiz/model.js": "./assets/js/quiz/model.js?v=dcfb89e8a3",
+      "./assets/js/quiz/session.js": "./assets/js/quiz/session.js?v=39c1b1fa7a",
+      "./assets/js/quiz/views/group.js": "./assets/js/quiz/views/group.js?v=c9a1f63fee",
+      "./assets/js/quiz/views/open.js": "./assets/js/quiz/views/open.js?v=3d0a3097e1",
+      "./assets/js/quiz/views/parts.js": "./assets/js/quiz/views/parts.js?v=977c6fcf79",
+      "./assets/js/quiz/views/results.js": "./assets/js/quiz/views/results.js?v=136446b35f",
+      "./assets/js/quiz/views/setup.js": "./assets/js/quiz/views/setup.js?v=fe01649d49",
+      "./assets/js/quiz/views/single.js": "./assets/js/quiz/views/single.js?v=4df66ab764"
+    }
+  }
   </script>
 </head>
 <body>
   <header class="appbar quizbar">
     <div class="appbar-inner">
-      <a class="icon-btn" href="index.html" title="Back to courses" aria-label="Back to courses">
+      <a class="icon-btn" id="back-link" href="index.html" title="Back to courses" aria-label="Back to courses">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M19 12H5M11 18l-6-6 6-6"/>
@@ -60,6 +84,6 @@
     </div>
   </main>
 
-  <script type="module" src="assets/js/quiz/main.js"></script>
+  <script type="module" src="assets/js/quiz/main.js?v=18dfab8cd1"></script>
 </body>
 </html>

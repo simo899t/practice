@@ -1,6 +1,6 @@
 /* Design tokens: type, colour, spacing, motion.
    A light "exam paper" palette by default; the dark "night desk" palette
-   applies by system preference or when chosen with the theme switch. */
+   applies only when chosen with the theme switch. */
 
 /* ── Fonts (self-hosted, SIL OFL — see assets/fonts) ───────────────────── */
 
@@ -73,6 +73,14 @@
 
   --mark: #f6dc7a;
 
+  /* Subject colours, like the tabs in a ring binder */
+  --ai: #2f47b8;
+  --ai-soft: #e7eaf8;
+  --dm: #1d6b55;
+  --dm-soft: #e0eee8;
+  --ds: #a5521f;
+  --ds-soft: #f6e6da;
+
   --shadow-sm: 0 1px 2px rgba(40, 33, 20, 0.06);
   --shadow-sheet: 0 1px 0 rgba(40, 33, 20, 0.04), 0 18px 40px -26px rgba(40, 33, 20, 0.28);
 
@@ -139,43 +147,13 @@
 
   --mark: rgba(240, 196, 76, 0.32);
 
+  --ai: #a7b3ff;
+  --ai-soft: rgba(167, 179, 255, 0.13);
+  --dm: #82d2b6;
+  --dm-soft: rgba(130, 210, 182, 0.12);
+  --ds: #f0a77a;
+  --ds-soft: rgba(240, 167, 122, 0.13);
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-sheet: 0 1px 0 rgba(0, 0, 0, 0.3), 0 22px 48px -28px rgba(0, 0, 0, 0.8);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-
-    --bg: #141311;
-    --surface: #1c1a17;
-    --surface-2: #211f1b;
-    --surface-3: #2a2722;
-    --line: #312e28;
-    --line-strong: #47423a;
-
-    --ink: #eeeae1;
-    --ink-2: #c4beb2;
-    --ink-3: #8f897d;
-    --on-ink: #161512;
-
-    --accent: #9eacff;
-    --accent-hover: #b8c2ff;
-    --accent-soft: rgba(158, 172, 255, 0.12);
-    --accent-ring: rgba(158, 172, 255, 0.35);
-
-    --good: #74d19c;
-    --good-soft: rgba(116, 209, 156, 0.1);
-    --good-line: rgba(116, 209, 156, 0.4);
-    --bad: #ff9283;
-    --bad-soft: rgba(255, 146, 131, 0.1);
-    --bad-line: rgba(255, 146, 131, 0.4);
-    --warn: #f0b85a;
-    --warn-line: rgba(240, 184, 90, 0.5);
-
-    --mark: rgba(240, 196, 76, 0.32);
-
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-sheet: 0 1px 0 rgba(0, 0, 0, 0.3), 0 22px 48px -28px rgba(0, 0, 0, 0.8);
-  }
 }

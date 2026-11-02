@@ -17,6 +17,7 @@ import { join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeExam, summarize } from '../assets/js/quiz/model.js';
 import { describeArchiveFile } from './archive-names.mjs';
+import { stampPages } from './stamp-assets.mjs';
 
 const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const COURSES = join(ROOT, 'courses');
@@ -187,6 +188,9 @@ function main() {
     `✓  ${updated.length} courses · ${tests} tests · ${questions} questions` +
       (archived ? ` · ${archived} archived files` : '')
   );
+
+  const stamped = stampPages();
+  if (stamped.length) console.log(`✓  stamped asset versions in ${stamped.join(', ')}`);
 }
 
 main();

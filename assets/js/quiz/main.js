@@ -28,6 +28,15 @@ const params = new URLSearchParams(location.search);
 const examFile = params.get('file');
 const examTitle = params.get('title') || 'Practice exam';
 const courseTitle = params.get('course') || '';
+const courseId = params.get('courseId');
+
+// Where "back" goes: the course page when the link came from one, else the course list.
+const back = courseId
+  ? { href: `course.html?${new URLSearchParams({ id: courseId })}`, label: 'Back to the course' }
+  : { href: 'index.html', label: 'All courses' };
+byId('back-link').href = back.href;
+byId('back-link').title = back.label;
+byId('back-link').setAttribute('aria-label', back.label);
 
 const app = byId('app');
 const counter = byId('counter');
@@ -80,6 +89,7 @@ function showSetup(skipped) {
       summary: summarize(questions),
       best: scoreFor(examFile),
       skipped,
+      back,
       onStart: (options) => start(questions, options),
     })
   );
@@ -135,6 +145,7 @@ function finish() {
       session,
       score,
       best,
+      back,
       onRestart: () => showSetup(0),
       onRetryMissed: () => start(missedQuestions(session), { limit: null, shuffle: true }),
     })
@@ -158,9 +169,9 @@ async function init() {
   if (!examFile) {
     showMessage('No exam selected', 'Pick a test from the course list to get started.');
     app.append(el('div', { class: 'state' }, [
-      el('a', { class: 'btn', href: 'index.html' }, [
+      el('a', { class: 'btn', href: back.href }, [
         icon(ICONS.arrowLeft, { size: 15 }),
-        'Browse courses',
+        back.label,
       ]),
     ]));
     return;
@@ -170,7 +181,7 @@ async function init() {
   resolve = assetResolver(examFile);
 
   try {
-    const response = await fetch(examFile);
+    const response = await fetch(examFile, { cache: 'no-cache' });
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
 
     const { questions: parsed, skipped } = normalizeExam(await response.json());

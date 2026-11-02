@@ -1,4 +1,4 @@
-/* Course browser (index.html). */
+/* Course catalogue (index.html): hero, search, subject sections of course tiles. */
 
 /* ── Hero ──────────────────────────────────────────────────────────────── */
 
@@ -6,55 +6,29 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
-  gap: 2rem 3rem;
-  padding-block: clamp(1.5rem, 5vw, 3.5rem) clamp(2rem, 5vw, 3rem);
+  gap: 1.5rem 3rem;
+  padding-block: clamp(1.25rem, 4vw, 2.75rem) clamp(1.5rem, 4vw, 2.25rem);
 }
 
-.hero .eyebrow { margin-bottom: 1rem; }
+.hero .eyebrow { margin-bottom: 0.85rem; }
 
 .hero h1 {
-  max-width: 13em;
-  font-size: var(--step-5);
+  max-width: 14em;
+  font-size: clamp(2.3rem, 1.5rem + 3vw, 3.6rem);
   font-weight: 520;
-  line-height: 1.02;
-  letter-spacing: -0.028em;
+  line-height: 1.04;
+  letter-spacing: -0.026em;
 }
 
 .lede {
   max-width: 34rem;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   color: var(--ink-2);
   font-size: var(--step-1);
   line-height: 1.6;
 }
 
-.stats {
-  display: flex;
-  gap: 2rem;
-  padding-bottom: 0.35rem;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  min-width: 4.5rem;
-}
-.stat b {
-  font-family: var(--font-serif);
-  font-size: var(--step-4);
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  font-variant-numeric: lining-nums tabular-nums;
-}
-.stat span {
-  font-size: var(--step--2);
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-}
+.hero .stats { padding-bottom: 0.3rem; }
 
 /* ── Toolbar ───────────────────────────────────────────────────────────── */
 
@@ -69,7 +43,7 @@
   padding-block: 0.85rem;
   margin-inline: calc(var(--gutter) * -1);
   padding-inline: var(--gutter);
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -79,239 +53,141 @@
   max-width: 30rem;
 }
 
-/* ── Course list ───────────────────────────────────────────────────────── */
+/* ── Subject sections ──────────────────────────────────────────────────── */
 
-.course-list {
-  margin-top: 0.75rem;
-  border-bottom: 1px solid var(--line);
-}
+.subject-section { margin-top: 2rem; }
 
-.course {
-  display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  gap: 1rem 2.5rem;
-  padding-block: 1.75rem;
-  border-top: 1px solid var(--line);
-}
-
-.course-info { min-width: 0; padding-top: 0.2rem; }
-
-.course-body {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.course-code {
-  font-size: var(--step--2);
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-variant-numeric: tabular-nums;
-}
-
-.course-name {
-  margin-top: 0.35rem;
-  font-size: var(--step-3);
-  font-weight: 520;
-  line-height: 1.12;
-}
-
-.course-meta {
-  margin-top: 0.55rem;
-  font-size: var(--step--1);
-  color: var(--ink-3);
-  font-variant-numeric: tabular-nums;
-}
-
-/* Papers */
-
-.exams {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.exam {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.6rem 1rem;
-  padding: 0.85rem 1rem 0.85rem 1.1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--surface);
-  transition: border-color var(--fast), box-shadow var(--fast), transform var(--fast);
-}
-.exam:hover {
-  border-color: var(--line-strong);
-  box-shadow: var(--shadow-sheet);
-  transform: translateY(-1px);
-}
-
-.exam-main {
-  flex: 1 1 13rem;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-/* The title link covers the whole card; the PDF links are lifted above it. */
-.exam-link {
-  font-weight: 600;
-  line-height: 1.35;
-  text-decoration: none;
-}
-.exam-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius);
-}
-.exam-link:focus-visible { outline: none; }
-.exam-link:focus-visible::after {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.exam-sub {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.25rem 0.5rem;
-  font-size: var(--step--1);
-  color: var(--ink-3);
-  font-variant-numeric: tabular-nums;
-}
-
-.exam-side {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex: none;
-  margin-left: auto;
-  color: var(--ink-3);
-}
-.exam-side > svg {
-  margin-left: 0.25rem;
-  transition: transform var(--fast), color var(--fast);
-}
-.exam:hover .exam-side > svg { color: var(--ink); transform: translateX(3px); }
-
-.exam-pdf {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.2rem 0.6rem 0.2rem 0.5rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-full);
-  background: var(--surface);
-  color: var(--ink-2);
-  font-size: var(--step--2);
-  font-weight: 650;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color var(--fast), border-color var(--fast), background var(--fast);
-}
-.exam-pdf:hover {
-  color: var(--ink);
-  border-color: var(--line-strong);
-  background: var(--surface-3);
-}
-
-/* Courses without papers yet */
-
-.course.is-empty .course-name,
-.course.is-empty .course-code { color: var(--ink-3); }
-
-.course-empty {
-  padding: 0.95rem 1.1rem;
-  border: 1px dashed var(--line-strong);
-  border-radius: var(--radius);
-  color: var(--ink-3);
-  font-size: var(--step--1);
-}
-
-/* Archive: older exams, project descriptions — secondary, folded away */
-
-.archive summary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.3rem 0.55rem 0.3rem 0.35rem;
-  margin-left: -0.35rem;
-  border-radius: var(--radius-sm);
-  color: var(--ink-2);
-  font-size: var(--step--1);
-  font-weight: 600;
-  list-style: none;
-  cursor: pointer;
-  user-select: none;
-  transition: color var(--fast), background var(--fast);
-}
-.archive summary::-webkit-details-marker { display: none; }
-.archive summary:hover { color: var(--ink); background: var(--surface-3); }
-.archive summary svg { color: var(--ink-3); transition: transform var(--fast); }
-.archive[open] summary svg { transform: rotate(90deg); }
-
-.archive-count {
-  color: var(--ink-3);
-  font-weight: 500;
-}
-.archive-count::before { content: "·"; margin-right: 0.45rem; }
-
-.archive-body {
-  margin-top: 0.4rem;
-  padding-left: 1.05rem;
-  border-left: 1px solid var(--line);
-}
-
-.archive-note {
-  margin-bottom: 0.35rem;
-  color: var(--ink-3);
-  font-size: var(--step--1);
-}
-
-.archive-list { list-style: none; }
-
-.archive-item {
+.subject-head {
   display: flex;
   align-items: baseline;
-  gap: 0.25rem 0.6rem;
-  padding: 0.45rem 0.55rem;
-  margin-left: -0.55rem;
-  border-radius: var(--radius-sm);
-  color: var(--ink-2);
-  font-size: var(--step--1);
-  text-decoration: none;
-  transition: color var(--fast), background var(--fast);
-}
-.archive-item:hover { color: var(--ink); background: var(--surface-3); }
-.archive-item svg { flex: none; align-self: center; color: var(--ink-3); }
-
-.archive-title {
-  flex: 1 1 auto;
-  min-width: 0;
-  font-weight: 550;
+  gap: 0.75rem;
+  padding-bottom: 0.65rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 2px solid var(--subject);
 }
 
-.archive-meta {
-  flex: none;
-  color: var(--ink-3);
-  font-size: var(--step--2);
+.subject-mark {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  line-height: 1;
+  color: var(--subject);
+}
+
+.subject-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.subject-count {
+  margin-left: auto;
+  color: var(--ink-3);
+  font-size: var(--step--1);
+}
+
+/* ── Course tiles ──────────────────────────────────────────────────────── */
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18.5rem), 1fr));
+  gap: 1rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  min-height: 11.5rem;
+  padding: 1.1rem 1.25rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--subject);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  color: inherit;
+  text-decoration: none;
+  transition: transform var(--fast), box-shadow var(--fast), border-color var(--fast);
+}
+a.tile:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sheet);
+  border-color: var(--line-strong);
+  border-top-color: var(--subject);
+}
+
+.tile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.tile-codes {
+  color: var(--ink-2);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.05em;
   font-variant-numeric: tabular-nums;
 }
+
+.tile-name {
+  margin: 0.65rem 0 0.6rem;
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 520;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+/* What is inside, at a glance: up to two lines of test titles */
+.tile-tests {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 1.1rem;
+  color: var(--ink-3);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+
+.tile-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+  color: var(--ink-3);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+.tile-progress .meter { flex: 1 1 auto; height: 5px; }
+.tile-progress .meter > span { background: var(--subject); }
+
+.tile-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-3);
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+}
+.tile-foot svg { flex: none; transition: transform var(--fast), color var(--fast); }
+a.tile:hover .tile-foot svg { color: var(--subject); transform: translateX(3px); }
+
+.tile.is-empty {
+  background: transparent;
+  border: 1px dashed var(--line-strong);
+  box-shadow: none;
+  color: var(--ink-3);
+}
+.tile.is-empty .tile-name,
+.tile.is-empty .tile-codes { color: var(--ink-3); }
+.tile.is-empty .tile-foot { border-top-style: dashed; }
 
 /* ── Small screens ─────────────────────────────────────────────────────── */
 
@@ -320,17 +196,10 @@
     grid-template-columns: 1fr;
     align-items: start;
   }
-  .stats { gap: 1.75rem; }
-
-  .course {
-    grid-template-columns: 1fr;
-    padding-block: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
   .toolbar .field { flex-basis: 100%; max-width: none; }
-  .exam { padding: 0.8rem 0.85rem 0.8rem 0.95rem; }
-  .archive-item { flex-wrap: wrap; }
-  .archive-meta { flex-basis: 100%; padding-left: 1.6rem; }
+  .tile { min-height: 0; }
+  .subject-name { font-size: 1.15rem; }
 }
