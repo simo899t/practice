@@ -42,7 +42,7 @@ export function renderResults({ session, score, best, onRestart, onRetryMissed }
       el('button', {
         class: 'btn btn-ghost',
         type: 'button',
-        text: 'Restart this paper',
+        text: 'Restart this test',
         on: { click: onRestart },
       }),
       el('a', { class: 'btn btn-ghost', href: 'index.html', text: 'All courses' }),

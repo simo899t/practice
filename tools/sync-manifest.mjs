@@ -3,7 +3,7 @@
  * Refreshes courses/manifest.json from what is actually on disk.
  *
  *   node tools/sync-manifest.mjs          # update counts, warn about new files
- *   node tools/sync-manifest.mjs --add    # also add newly found papers and archive files
+ *   node tools/sync-manifest.mjs --add    # also add newly found tests and archive files
  *
  * Titles, ids, descriptions and ordering written by hand are preserved; the
  * script only maintains the derived fields (questions, points, formats), the
@@ -177,14 +177,14 @@ function main() {
 
   writeFileSync(MANIFEST, `${JSON.stringify(updated, null, 2)}\n`);
 
-  const papers = updated.reduce((sum, course) => sum + course.tests.length, 0);
+  const tests = updated.reduce((sum, course) => sum + course.tests.length, 0);
   const questions = updated.reduce(
     (sum, course) => sum + course.tests.reduce((n, test) => n + (test.questions ?? 0), 0),
     0
   );
   const archived = updated.reduce((sum, course) => sum + (course.archive ?? []).length, 0);
   console.log(
-    `✓  ${updated.length} courses · ${papers} papers · ${questions} questions` +
+    `✓  ${updated.length} courses · ${tests} tests · ${questions} questions` +
       (archived ? ` · ${archived} archived files` : '')
   );
 }

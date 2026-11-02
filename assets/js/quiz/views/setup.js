@@ -58,7 +58,7 @@ export function renderSetup({ title, course, summary, best, skipped, onStart }) 
     );
     group.append(...buttons);
 
-    card.append(row('Length', 'How many questions to draw from this paper.', group));
+    card.append(row('Length', 'How many questions to draw from this test.', group));
   }
 
   const shuffle = el('input', { type: 'checkbox', checked: true, 'aria-label': 'Shuffle' });

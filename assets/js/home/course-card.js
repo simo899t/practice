@@ -1,5 +1,5 @@
 /**
- * One course in the index: code and name on the left; its papers on the right,
+ * One course in the index: code and name on the left; its tests on the right,
  * with the course archive (older exams, project descriptions…) folded away
  * underneath them.
  */
@@ -79,7 +79,7 @@ function sourceLinks(exam) {
       target: '_blank',
       rel: 'noopener',
       title: `${source.name} (PDF)`,
-      'aria-label': `Open the original paper: ${source.name}`,
+      'aria-label': `Open the original PDF: ${source.name}`,
     }, [icon(ICONS.file, { size: 15 }), el('span', { text: sourceLabel(source, sources.length) })])
   );
 }
@@ -152,15 +152,15 @@ export function courseCard(course, { query = '' } = {}) {
   const card = el('article', { class: 'course' + (empty ? ' is-empty' : '') }, [info, body]);
 
   if (!exams.length) {
-    body.append(el('p', { class: 'course-empty', text: 'No papers transcribed yet.' }));
+    body.append(el('p', { class: 'course-empty', text: 'No tests transcribed yet.' }));
   } else {
     const questions = exams.reduce((sum, exam) => sum + (exam.questions ?? 0), 0);
     info.append(
       el('p', {
         class: 'course-meta',
         text: questions
-          ? `${plural(exams.length, 'paper')} · ${plural(questions, 'question')}`
-          : plural(exams.length, 'paper'),
+          ? `${plural(exams.length, 'test')} · ${plural(questions, 'question')}`
+          : plural(exams.length, 'test'),
       })
     );
     body.append(el('ul', { class: 'exams' }, exams.map((exam) => examRow(course, exam))));

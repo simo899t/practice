@@ -1,6 +1,6 @@
 # Exam Drill
 
-Practise past exam papers from IMADA courses — multiple choice, true/false
+Practise past exams from IMADA courses — multiple choice, true/false
 blocks and written answers, marked as you go. A static site: no build step,
 no backend, and scores stay in the browser.
 
@@ -8,7 +8,7 @@ no backend, and scores stay in the browser.
 
 ```bash
 npm run serve        # python3 -m http.server 8080 → http://localhost:8080
-npm test             # node --test: data model, sessions, and every paper in the manifest
+npm test             # node --test: data model, sessions, and every test in the manifest
 ```
 
 The pages fetch JSON, so open them through a server rather than as files.
@@ -17,11 +17,11 @@ The pages fetch JSON, so open them through a server rather than as files.
 
 ```
 courses/
-  manifest.json                 course list, papers and archive (see sync below)
-  test_template/template.json   starting point for a new paper
+  manifest.json                 course list, tests and archive (see sync below)
+  test_template/template.json   starting point for a new test
   <COURSE_FOLDER>/
-    <paper>/                    one transcribed paper
-      <paper>.json              the questions
+    <test>/                     one transcribed test
+      <test>.json               the questions
       <original>.pdf            linked from the course list
       assets/                   figures used by the questions
     archive/                    older exams, project descriptions, other files
@@ -32,7 +32,7 @@ tools/sync-manifest.mjs         keeps manifest.json in step with the folders
 A course folder belongs to the manifest course whose `id` it starts with
 (`AI512_ML` → `AI512`).
 
-## Adding a paper
+## Adding a test
 
 1. Copy `courses/test_template/` into the course folder, rename it
    (e.g. `exam2025-jan/`) and put the original PDF next to the JSON.
@@ -70,7 +70,7 @@ Each file gets a title, a kind (Exam, Project, Assignment, Solutions, Slides,
 Notes or Document) and a year guessed from its name, e.g.
 `ai512-project-description-2023.pdf` → “AI512 Project Description 2023 ·
 Project · 2023”. Fix anything in `manifest.json`; your edits are kept. On the
-site the archive sits folded under each course's papers and is included in
+site the archive sits folded under each course's tests and is included in
 search.
 
 ## Fonts

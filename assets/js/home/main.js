@@ -61,7 +61,7 @@ function render() {
 
 function renderStats() {
   const withExams = courses.filter((course) => (course.tests ?? []).length);
-  const papers = withExams.reduce((sum, course) => sum + course.tests.length, 0);
+  const tests = withExams.reduce((sum, course) => sum + course.tests.length, 0);
   const questions = withExams.reduce(
     (sum, course) => sum + course.tests.reduce((n, exam) => n + (exam.questions ?? 0), 0),
     0
@@ -75,7 +75,7 @@ function renderStats() {
 
   statsBar.replaceChildren(
     stat(courses.length, 'courses'),
-    stat(papers, 'papers'),
+    stat(tests, 'tests'),
     stat(questions, 'questions')
   );
 }
