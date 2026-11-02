@@ -2,7 +2,7 @@
 
 import { byId, el } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
-import { parseTags } from '../core/format.js';
+import { codePrefixes } from '../core/format.js';
 import { archiveMatches, courseCard } from './course-card.js';
 
 const MANIFEST = 'courses/manifest.json';
@@ -21,7 +21,7 @@ mountThemeToggle(byId('bar-actions'));
 /* ── Filtering ─────────────────────────────────────────────────────────── */
 
 function matches(course) {
-  if (activeTag !== 'all' && !parseTags(course.description).includes(activeTag)) return false;
+  if (activeTag !== 'all' && !codePrefixes(course.title).includes(activeTag)) return false;
   if (!query) return true;
 
   const haystack = [course.title, course.id, ...(course.tests ?? []).map((t) => t.title)]
@@ -81,7 +81,7 @@ function renderStats() {
 }
 
 function renderFilters() {
-  const tags = [...new Set(courses.flatMap((course) => parseTags(course.description)))].sort();
+  const tags = [...new Set(courses.flatMap((course) => codePrefixes(course.title)))].sort();
   const options = [{ id: 'all', label: 'All' }].concat(
     tags.map((tag) => ({ id: tag, label: tag }))
   );
@@ -89,7 +89,7 @@ function renderFilters() {
   const buttons = options.map((option) =>
     el('button', {
       type: 'button',
-      title: option.id === 'all' ? 'All courses' : `Courses in the ${option.label} programme`,
+      title: option.id === 'all' ? 'All courses' : `Courses with a ${option.label} code`,
       text: option.label,
       'aria-pressed': String(option.id === activeTag),
       on: {

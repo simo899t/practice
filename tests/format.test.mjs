@@ -2,10 +2,10 @@ import { strict as assert } from 'node:assert';
 import { test } from 'node:test';
 
 import {
+  codePrefixes,
   courseParts,
   duration,
   optionKey,
-  parseTags,
   percent,
   plural,
   splitTitle,
@@ -43,11 +43,13 @@ test('splitTitle separates the course code from the name', () => {
   assert.deepEqual(splitTitle('Calculus'), { code: '', name: 'Calculus' });
 });
 
-test('parseTags splits a slash-separated description', () => {
-  assert.deepEqual(parseTags('AI/CS'), ['AI', 'CS']);
-  assert.deepEqual(parseTags('AI'), ['AI']);
-  assert.deepEqual(parseTags(''), []);
-  assert.deepEqual(parseTags(undefined), []);
+test('codePrefixes turns course codes into subject tags', () => {
+  assert.deepEqual(codePrefixes('AI803 - Something'), ['AI']);
+  assert.deepEqual(codePrefixes('DM500 - Something'), ['DM']);
+  assert.deepEqual(codePrefixes('AI501, DS843 - Introduction to Artificial Intelligence'), ['AI', 'DS']);
+  assert.deepEqual(codePrefixes('DM507, DM578, DS814 - Algorithms and Data Structures'), ['DM', 'DS']);
+  assert.deepEqual(codePrefixes('Exam practice'), []);
+  assert.deepEqual(codePrefixes(undefined), []);
 });
 
 test('truncate cuts on a word boundary and only when needed', () => {

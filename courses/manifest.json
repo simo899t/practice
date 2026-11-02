@@ -2,13 +2,11 @@
   {
     "id": "DM573",
     "title": "DM573 - Introduction to Computer Science",
-    "description": "AI/CS",
     "tests": []
   },
   {
     "id": "AI501_DS843",
     "title": "AI501, DS843 - Introduction to Artificial Intelligence",
-    "description": "AI/CS",
     "tests": [
       {
         "id": "exam2025-jun",
@@ -31,7 +29,6 @@
   {
     "id": "DM549_DS820",
     "title": "DM549, DS820 - Discrete Mathematics",
-    "description": "AI/CS",
     "tests": [
       {
         "id": "exam2025-jan",
@@ -54,7 +51,6 @@
   {
     "id": "DM507",
     "title": "DM507, DM578, DS814 - Algorithms and Data Structures",
-    "description": "AI/CS",
     "tests": [
       {
         "id": "exam2025",
@@ -78,7 +74,6 @@
   {
     "id": "AI503",
     "title": "AI503 - Calculus",
-    "description": "AI",
     "tests": [
       {
         "id": "exam2026",
@@ -135,7 +130,6 @@
   {
     "id": "AI512",
     "title": "AI512 - Introduction to Machine Learning",
-    "description": "AI/CS",
     "tests": [
       {
         "id": "exam-2025-fall",
@@ -206,7 +200,6 @@
   {
     "id": "AI504",
     "title": "AI504 - Knowledge Representation",
-    "description": "AI",
     "tests": [
       {
         "id": "exam-2026",
@@ -234,7 +227,6 @@
   {
     "id": "AI507",
     "title": "AI507 - AI & Society",
-    "description": "AI",
     "tests": [
       {
         "id": "ai-mock-quiz1",

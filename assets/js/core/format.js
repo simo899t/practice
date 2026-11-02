@@ -40,13 +40,17 @@ export function courseParts(title) {
   return { codes, name };
 }
 
-/** "AI/CS" -> ["AI", "CS"] */
-export function parseTags(description) {
-  if (!description) return [];
-  return description
-    .split('/')
-    .map((part) => part.trim())
+/**
+ * The subject prefixes of a course's codes, used as filter tags:
+ * "AI501, DS843 - Intro to AI" -> ["AI", "DS"], "DM507 - Algorithms" -> ["DM"].
+ */
+export function codePrefixes(title) {
+  const { codes } = courseParts(title);
+  const prefixes = codes
+    .split(' · ')
+    .map((code) => (code.match(/^[A-Za-z]+(?=\d)/)?.[0] ?? '').toUpperCase())
     .filter(Boolean);
+  return [...new Set(prefixes)];
 }
 
 /**
