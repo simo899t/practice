@@ -41,7 +41,7 @@ function render() {
 
   if (!visible.length) {
     grid.append(
-      el('div', { class: 'state', style: 'grid-column:1/-1' }, [
+      el('div', { class: 'state' }, [
         el('h2', { text: 'Nothing matches' }),
         el('p', { text: 'Try a different course code, title or filter.' }),
       ])
@@ -52,7 +52,7 @@ function render() {
   visible.forEach((course, i) => {
     const card = courseCard(course);
     card.classList.add('fade-up');
-    card.style.animationDelay = `${Math.min(i, 8) * 35}ms`;
+    card.style.animationDelay = `${Math.min(i, 8) * 30}ms`;
     grid.append(card);
   });
 }
@@ -82,14 +82,14 @@ function renderStats() {
 
 function renderFilters() {
   const tags = [...new Set(courses.flatMap((course) => parseTags(course.description)))].sort();
-  const options = [{ id: 'all', label: 'All courses' }].concat(
+  const options = [{ id: 'all', label: 'All' }].concat(
     tags.map((tag) => ({ id: tag, label: tag }))
   );
 
   const buttons = options.map((option) =>
     el('button', {
-      class: 'chip',
       type: 'button',
+      title: option.id === 'all' ? 'All courses' : `Courses in the ${option.label} programme`,
       text: option.label,
       'aria-pressed': String(option.id === activeTag),
       on: {
@@ -141,7 +141,7 @@ async function init() {
     render();
   } catch (error) {
     grid.replaceChildren(
-      el('div', { class: 'state', style: 'grid-column:1/-1' }, [
+      el('div', { class: 'state' }, [
         el('h2', { text: 'Could not load the course list' }),
         el('p', { text: String(error.message ?? error) }),
         el('p', {

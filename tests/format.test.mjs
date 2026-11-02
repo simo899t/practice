@@ -2,6 +2,7 @@ import { strict as assert } from 'node:assert';
 import { test } from 'node:test';
 
 import {
+  courseParts,
   duration,
   optionKey,
   parseTags,
@@ -53,4 +54,15 @@ test('truncate cuts on a word boundary and only when needed', () => {
   assert.equal(truncate('short', 20), 'short');
   assert.equal(truncate('one two three four five', 12), 'one two…');
   assert.ok(truncate('x'.repeat(40), 10).length <= 11);
+});
+
+test('courseParts turns a manifest title into display parts', () => {
+  assert.deepEqual(courseParts('AI501, DS843 - Introduction to Artificial Intelligence'), {
+    codes: 'AI501 · DS843',
+    name: 'Introduction to Artificial Intelligence',
+  });
+  assert.deepEqual(courseParts('AI503 - Calculus'), { codes: 'AI503', name: 'Calculus' });
+  assert.deepEqual(courseParts('Exam practice'), { codes: '', name: 'Exam practice' });
+  assert.deepEqual(courseParts(''), { codes: '', name: '' });
+  assert.deepEqual(courseParts(null), { codes: '', name: '' });
 });

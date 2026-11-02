@@ -1,7 +1,7 @@
-/** One course card: code, tags, and the list of papers inside it. */
+/** One course in the index: code and name on the left, its papers on the right. */
 
 import { el, icon, ICONS } from '../core/dom.js';
-import { parseTags, plural, splitTitle } from '../core/format.js';
+import { courseParts, plural } from '../core/format.js';
 import { scoreFor } from '../core/storage.js';
 import { FORMATS } from '../quiz/model.js';
 
@@ -19,42 +19,56 @@ function examMeta(exam) {
   if (exam.questions) bits.push(el('span', { text: plural(exam.questions, 'question') }));
 
   (exam.formats ?? []).forEach((format) => {
-    const label = FORMATS[format]?.short;
+    const label = FORMATS[format]?.label;
     if (!label) return;
-    bits.push(el('span', { class: 'dot' }), el('span', { text: label }));
+    bits.push(el('span', { class: 'dot', 'aria-hidden': 'true' }), el('span', { text: label }));
   });
 
   return bits;
 }
 
-function examRow(course, exam) {
+function bestScore(exam) {
   const best = scoreFor(exam.file);
+  if (!best) return null;
+
+  const tone = best.best >= 70 ? ' pill-good' : best.best < 50 ? ' pill-bad' : '';
+  return el('span', {
+    class: 'pill' + tone,
+    text: `Best ${best.best}%`,
+    title: `Best of ${plural(best.attempts, 'attempt')}`,
+  });
+}
+
+/**
+ * The title link stretches over the whole card (see .exam-link::after), and
+ * the PDF links sit above it — so the card is one big target without nesting
+ * links inside links.
+ */
+function examRow(course, exam) {
   const meta = examMeta(exam);
 
-  return el('li', { class: 'exam-row' }, [
-    el('a', { class: 'exam', href: examHref(course, exam) }, [
-      el('span', { class: 'exam-main' }, [
-        el('span', { class: 'exam-name', text: exam.title }),
-        meta.length ? el('span', { class: 'exam-sub' }, meta) : null,
-      ]),
-      el('span', { class: 'exam-side' }, [
-        best
-          ? el('span', {
-              class: best.best >= 70 ? 'pill pill-good' : 'pill',
-              text: `${best.best}%`,
-              title: `Best of ${plural(best.attempts, 'attempt')}`,
-            })
-          : null,
-        icon(ICONS.arrowRight, { size: 14 }),
-      ]),
+  return el('li', { class: 'exam' }, [
+    el('div', { class: 'exam-main' }, [
+      el('a', { class: 'exam-link', href: examHref(course, exam), text: exam.title }),
+      meta.length ? el('span', { class: 'exam-sub' }, meta) : null,
     ]),
-    // Sibling links, not nested ones: the original PDFs sit beside the row.
-    ...sourceLinks(exam),
+    el('div', { class: 'exam-side' }, [
+      bestScore(exam),
+      ...sourceLinks(exam),
+      icon(ICONS.arrowRight, { size: 17 }),
+    ]),
   ]);
 }
 
+/** "final-answers" reads better as "Answers" when a paper ships with its key. */
+function sourceLabel(source, count) {
+  if (count > 1 && /answer|solution|key/i.test(source.name)) return 'Answers';
+  return 'PDF';
+}
+
 function sourceLinks(exam) {
-  return (exam.sources ?? []).map((source) =>
+  const sources = exam.sources ?? [];
+  return sources.map((source) =>
     el('a', {
       class: 'exam-pdf',
       href: source.file,
@@ -62,38 +76,32 @@ function sourceLinks(exam) {
       rel: 'noopener',
       title: `${source.name} (PDF)`,
       'aria-label': `Open the original paper: ${source.name}`,
-    }, [icon(ICONS.file, { size: 14 })])
+    }, [icon(ICONS.file, { size: 15 }), el('span', { text: sourceLabel(source, sources.length) })])
   );
 }
 
 export function courseCard(course) {
   const exams = course.tests ?? [];
-  const { code, name } = splitTitle(course.title);
-  const tags = parseTags(course.description);
+  const { codes, name } = courseParts(course.title);
 
-  const card = el('article', {
-    class: 'course' + (exams.length ? '' : ' is-empty'),
-  }, [
-    el('div', { class: 'course-top' }, [
-      el('span', { class: 'course-code', text: code || course.id || '' }),
-      tags.length
-        ? el('div', { class: 'tags' }, tags.map((tag) => el('span', { class: 'pill', text: tag })))
-        : null,
-    ]),
+  const info = el('div', { class: 'course-info' }, [
+    el('p', { class: 'course-code', text: codes || course.id || '' }),
     el('h2', { class: 'course-name', text: name }),
   ]);
 
+  const card = el('article', { class: 'course' + (exams.length ? '' : ' is-empty') }, [info]);
+
   if (!exams.length) {
-    card.append(el('p', { class: 'course-empty', text: 'No papers transcribed yet' }));
+    card.append(el('p', { class: 'course-empty', text: 'No papers transcribed yet.' }));
     return card;
   }
 
   const questions = exams.reduce((sum, exam) => sum + (exam.questions ?? 0), 0);
-  card.append(
+  info.append(
     el('p', {
       class: 'course-meta',
       text: questions
-        ? `${plural(exams.length, 'paper')} · ${questions} questions`
+        ? `${plural(exams.length, 'paper')} · ${plural(questions, 'question')}`
         : plural(exams.length, 'paper'),
     })
   );

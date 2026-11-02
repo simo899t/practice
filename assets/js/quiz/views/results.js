@@ -56,11 +56,12 @@ function scoreCard({ pct, score, verdict, elapsed, best }) {
   return el('section', { class: 'card score-card' }, [
     ring(pct),
     el('div', { class: 'score-copy' }, [
+      el('p', { class: 'eyebrow', text: 'Your result' }),
       el('h1', { text: verdict.title }),
       el('p', { text: verdict.line }),
       el('div', { class: 'score-tags' }, [
         el('span', {
-          class: 'pill pill-accent',
+          class: 'pill',
           text: `${score.earned} / ${score.possible} points`,
         }),
         el('span', { class: 'pill', text: duration(elapsed) }),

@@ -2,7 +2,7 @@
 
 import { byId, el, icon, ICONS } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
-import { percent } from '../core/format.js';
+import { courseParts, percent } from '../core/format.js';
 import { recordAttempt, scoreFor } from '../core/storage.js';
 import { assetResolver } from '../content/richtext.js';
 import { normalizeExam, summarize } from './model.js';
@@ -44,7 +44,10 @@ mountThemeToggle(byId('bar-actions'));
 
 document.title = `${examTitle} · Exam Drill`;
 barTitle.textContent = examTitle;
-barSub.textContent = courseTitle;
+{
+  const { codes, name } = courseParts(courseTitle);
+  barSub.textContent = [codes, name].filter(Boolean).join(' — ');
+}
 
 /* ── Screens ───────────────────────────────────────────────────────────── */
 

@@ -1,11 +1,10 @@
 /** True/false view: one shared setup, several binary statements, graded together. */
 
-import { el } from '../../core/dom.js';
+import { el, icon, ICONS } from '../../core/dom.js';
 import { renderRich } from '../../content/richtext.js';
 import { renderMath } from '../../content/math.js';
-import { plural } from '../../core/format.js';
 import { gradeGroup } from '../session.js';
-import { cardFooter, nextLabel, noteNode, questionBody, questionHead } from './parts.js';
+import { cardFooter, keyHint, nextLabel, noteNode, questionBody, questionHead, statusIcon } from './parts.js';
 
 export function renderGroup({ question, index, total, isLast, resolve, onAnswer, onNext }) {
   const card = el('article', { class: 'card qcard' });
@@ -46,7 +45,10 @@ export function renderGroup({ question, index, total, isLast, resolve, onAnswer,
       on: { click: () => set(i, false) },
     });
 
-    const row = el('li', { class: 'statement' }, [
+    // A statement with its own displayed maths or several lines (a proof, say)
+    // needs the full width; its buttons move underneath it.
+    const wide = statement.text.includes('$$') || statement.text.includes('\n');
+    const row = el('li', { class: 'statement' + (wide ? ' is-wide' : '') }, [
       body,
       el('div', { class: 'segmented' }, [positive, negative]),
     ]);
@@ -63,17 +65,16 @@ export function renderGroup({ question, index, total, isLast, resolve, onAnswer,
   const nextButton = el('button', {
     class: 'btn hidden',
     type: 'button',
-    text: nextLabel(isLast),
     on: { click: onNext },
-  });
+  }, [nextLabel(isLast), icon(ICONS.arrowRight, { size: 15 })]);
   footer.node.append(nextButton);
 
   function paintProgress() {
     const done = answers.filter((answer) => answer !== null).length;
     progress.replaceChildren(
       el('span', {
-        class: done === count ? 'pill pill-accent' : 'pill',
-        text: `${done} / ${count} answered`,
+        class: done === count ? 'pill pill-good' : 'pill',
+        text: `${done} of ${count} answered`,
       })
     );
   }
@@ -106,23 +107,31 @@ export function renderGroup({ question, index, total, isLast, resolve, onAnswer,
         result.expected ? statement.positiveNote : statement.negativeNote,
         resolve
       );
+      const expected = result.expected ? question.positiveLabel : question.negativeLabel;
 
-      body.append(
-        el('div', { class: 'answer-line' }, [
-          el('span', {
-            class: 'pill ' + (result.correct ? 'pill-good' : 'pill-bad'),
-            text: result.expected ? question.positiveLabel : question.negativeLabel,
-          }),
-          note,
-        ])
-      );
+      let verdict;
+      if (result.correct) {
+        verdict = el('span', { class: 'verdict is-good' }, [statusIcon('good'), 'Correct']);
+      } else if (result.given === null) {
+        verdict = el('span', { class: 'verdict is-warn' }, [
+          statusIcon('none'),
+          `Not answered — the answer is ${expected}`,
+        ]);
+      } else {
+        verdict = el('span', { class: 'verdict is-bad' }, [
+          statusIcon('bad'),
+          `Incorrect — the answer is ${expected}`,
+        ]);
+      }
+
+      body.append(el('div', { class: 'answer-line' }, [verdict, note]));
     });
 
     footer.button.classList.add('hidden');
     footer.setHint(
       el('span', {
-        class: 'pill ' + (grade.earned === grade.possible ? 'pill-good' : 'pill-bad'),
-        text: `${grade.earned} / ${grade.possible} correct`,
+        class: 'verdict ' + (grade.earned === grade.possible ? 'is-good' : 'is-bad'),
+        text: `${grade.earned} of ${grade.possible} correct`,
       })
     );
     nextButton.classList.remove('hidden');
@@ -139,7 +148,7 @@ export function renderGroup({ question, index, total, isLast, resolve, onAnswer,
     else submit();
   }
 
-  footer.setHint(plural(count, 'statement'));
+  footer.setHint(keyHint(['Enter'], 'to check your answers'));
   paintProgress();
   renderMath(card);
   return { node: card, onKey };
