@@ -1,4 +1,8 @@
-/** One course in the index: code and name on the left, its papers on the right. */
+/**
+ * One course in the index: code and name on the left; its papers on the right,
+ * with the course archive (older exams, project descriptions…) folded away
+ * underneath them.
+ */
 
 import { el, icon, ICONS } from '../core/dom.js';
 import { courseParts, plural } from '../core/format.js';
@@ -80,8 +84,62 @@ function sourceLinks(exam) {
   );
 }
 
-export function courseCard(course) {
+/* ── Archive ───────────────────────────────────────────────────────────── */
+
+const extensionOf = (file) => (String(file).match(/\.([a-z0-9]+)$/i)?.[1] ?? '').toUpperCase();
+
+function archiveItem(item) {
+  const meta = [item.kind, item.year, extensionOf(item.file)].filter(Boolean).join(' · ');
+
+  return el('li', {}, [
+    el('a', {
+      class: 'archive-item',
+      href: item.file,
+      target: '_blank',
+      rel: 'noopener',
+    }, [
+      icon(ICONS.file, { size: 15 }),
+      el('span', { class: 'archive-title', text: item.title }),
+      meta ? el('span', { class: 'archive-meta', text: meta }) : null,
+    ]),
+  ]);
+}
+
+/** Matches the home page search, so a hit inside the archive unfolds it. */
+export function archiveMatches(item, query) {
+  return `${item.title} ${item.kind ?? ''} ${item.year ?? ''}`.toLowerCase().includes(query);
+}
+
+function archiveBlock(course, query) {
+  const items = course.archive ?? [];
+  if (!items.length) return null;
+
+  const details = el('details', { class: 'archive' });
+  // Fold it away unless it is all the course has, or the search found something in it.
+  details.open = !(course.tests ?? []).length || Boolean(query && items.some((item) => archiveMatches(item, query)));
+
+  details.append(
+    el('summary', {}, [
+      icon(ICONS.chevron, { size: 15, stroke: 2 }),
+      el('span', { class: 'archive-label', text: 'Archive' }),
+      el('span', { class: 'archive-count', text: plural(items.length, 'file') }),
+    ]),
+    el('div', { class: 'archive-body' }, [
+      el('p', {
+        class: 'archive-note',
+        text: 'Older exams, project descriptions and other material. They open as files, not as quizzes.',
+      }),
+      el('ul', { class: 'archive-list' }, items.map(archiveItem)),
+    ])
+  );
+  return details;
+}
+
+/* ── Course ────────────────────────────────────────────────────────────── */
+
+export function courseCard(course, { query = '' } = {}) {
   const exams = course.tests ?? [];
+  const archive = archiveBlock(course, query);
   const { codes, name } = courseParts(course.title);
 
   const info = el('div', { class: 'course-info' }, [
@@ -89,23 +147,25 @@ export function courseCard(course) {
     el('h2', { class: 'course-name', text: name }),
   ]);
 
-  const card = el('article', { class: 'course' + (exams.length ? '' : ' is-empty') }, [info]);
+  const body = el('div', { class: 'course-body' });
+  const empty = !exams.length && !archive;
+  const card = el('article', { class: 'course' + (empty ? ' is-empty' : '') }, [info, body]);
 
   if (!exams.length) {
-    card.append(el('p', { class: 'course-empty', text: 'No papers transcribed yet.' }));
-    return card;
+    body.append(el('p', { class: 'course-empty', text: 'No papers transcribed yet.' }));
+  } else {
+    const questions = exams.reduce((sum, exam) => sum + (exam.questions ?? 0), 0);
+    info.append(
+      el('p', {
+        class: 'course-meta',
+        text: questions
+          ? `${plural(exams.length, 'paper')} · ${plural(questions, 'question')}`
+          : plural(exams.length, 'paper'),
+      })
+    );
+    body.append(el('ul', { class: 'exams' }, exams.map((exam) => examRow(course, exam))));
   }
 
-  const questions = exams.reduce((sum, exam) => sum + (exam.questions ?? 0), 0);
-  info.append(
-    el('p', {
-      class: 'course-meta',
-      text: questions
-        ? `${plural(exams.length, 'paper')} · ${plural(questions, 'question')}`
-        : plural(exams.length, 'paper'),
-    })
-  );
-
-  card.append(el('ul', { class: 'exams' }, exams.map((exam) => examRow(course, exam))));
+  if (archive) body.append(archive);
   return card;
 }

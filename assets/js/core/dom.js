@@ -59,6 +59,7 @@ export const ICONS = {
   check: 'M20 6 9 17l-5-5',
   x: 'M18 6 6 18M6 6l12 12',
   minus: 'M5 12h14',
+  chevron: 'm9 6 6 6-6 6',
 };
 
 export function clear(node) {

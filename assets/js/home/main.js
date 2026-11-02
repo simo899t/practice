@@ -3,7 +3,7 @@
 import { byId, el } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
 import { parseTags } from '../core/format.js';
-import { courseCard } from './course-card.js';
+import { archiveMatches, courseCard } from './course-card.js';
 
 const MANIFEST = 'courses/manifest.json';
 
@@ -27,7 +27,7 @@ function matches(course) {
   const haystack = [course.title, course.id, ...(course.tests ?? []).map((t) => t.title)]
     .join(' ')
     .toLowerCase();
-  return haystack.includes(query);
+  return haystack.includes(query) || (course.archive ?? []).some((item) => archiveMatches(item, query));
 }
 
 /** Courses with papers first; manifest order is kept inside each group. */
@@ -50,7 +50,7 @@ function render() {
   }
 
   visible.forEach((course, i) => {
-    const card = courseCard(course);
+    const card = courseCard(course, { query });
     card.classList.add('fade-up');
     card.style.animationDelay = `${Math.min(i, 8) * 30}ms`;
     grid.append(card);

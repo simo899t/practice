@@ -2,23 +2,27 @@
 /**
  * Refreshes courses/manifest.json from what is actually on disk.
  *
- *   node tools/sync-manifest.mjs          # update counts, warn about new papers
- *   node tools/sync-manifest.mjs --add    # also add newly found papers
+ *   node tools/sync-manifest.mjs          # update counts, warn about new files
+ *   node tools/sync-manifest.mjs --add    # also add newly found papers and archive files
  *
  * Titles, ids, descriptions and ordering written by hand are preserved; the
- * script only maintains the derived fields (questions, points, formats) and the
- * links to the original PDFs sitting next to each exam file.
+ * script only maintains the derived fields (questions, points, formats), the
+ * links to the original PDFs sitting next to each exam file, and the list of
+ * files in each course's archive/ folder (older exams, project descriptions
+ * and other material that is linked rather than drilled).
  */
 
-import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeExam, summarize } from '../assets/js/quiz/model.js';
+import { describeArchiveFile } from './archive-names.mjs';
 
 const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const COURSES = join(ROOT, 'courses');
 const MANIFEST = join(COURSES, 'manifest.json');
-const SKIP_DIRS = new Set(['assets', 'test_template']);
+const ARCHIVE_DIR = 'archive';
+const SKIP_DIRS = new Set(['assets', 'test_template', ARCHIVE_DIR]);
 
 const dirsIn = (path) =>
   readdirSync(path, { withFileTypes: true })
@@ -75,6 +79,54 @@ function scan() {
   return found;
 }
 
+/** Every file in a courses/<course>/archive/ folder. */
+function scanArchives() {
+  const found = [];
+
+  for (const courseDir of dirsIn(COURSES)) {
+    const dir = join(COURSES, courseDir, ARCHIVE_DIR);
+    if (!existsSync(dir) || !statSync(dir).isDirectory()) continue;
+
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      if (!entry.isFile() || entry.name.startsWith('.')) continue;
+      found.push({ courseDir, name: entry.name, file: relative(ROOT, join(dir, entry.name)) });
+    }
+  }
+
+  return found.sort((a, b) => a.file.localeCompare(b.file));
+}
+
+/** Keeps hand-written archive entries, adds newly found files when asked to. */
+function syncArchives(courses, addNew) {
+  const listed = new Set();
+
+  for (const course of courses) {
+    for (const item of course.archive ?? []) {
+      listed.add(item.file);
+      if (!existsSync(join(ROOT, item.file))) {
+        console.warn(`!  ${course.id}: archive entry "${item.title}" points at a missing file (${item.file})`);
+      }
+    }
+  }
+
+  for (const item of scanArchives()) {
+    if (listed.has(item.file)) continue;
+
+    const course = courses.find((entry) => item.courseDir.startsWith(entry.id));
+    if (!course) {
+      console.warn(`!  no course in the manifest matches ${item.courseDir}/${ARCHIVE_DIR}`);
+      continue;
+    }
+    if (!addNew) {
+      console.warn(`+  ${item.file} is not listed yet (run with --add)`);
+      continue;
+    }
+
+    course.archive = [...(course.archive ?? []), { ...describeArchiveFile(item.name), file: item.file }];
+    console.log(`+  added ${item.file} to the ${course.id} archive`);
+  }
+}
+
 const titleCase = (slug) =>
   slug
     .replace(/[-_]+/g, ' ')
@@ -121,6 +173,8 @@ function main() {
     console.log(`+  added ${label} to ${course.id}`);
   }
 
+  syncArchives(updated, addNew);
+
   writeFileSync(MANIFEST, `${JSON.stringify(updated, null, 2)}\n`);
 
   const papers = updated.reduce((sum, course) => sum + course.tests.length, 0);
@@ -128,7 +182,11 @@ function main() {
     (sum, course) => sum + course.tests.reduce((n, test) => n + (test.questions ?? 0), 0),
     0
   );
-  console.log(`✓  ${updated.length} courses · ${papers} papers · ${questions} questions`);
+  const archived = updated.reduce((sum, course) => sum + (course.archive ?? []).length, 0);
+  console.log(
+    `✓  ${updated.length} courses · ${papers} papers · ${questions} questions` +
+      (archived ? ` · ${archived} archived files` : '')
+  );
 }
 
 main();
