@@ -8,7 +8,7 @@ import { gradeSingle } from '../session.js';
 import { cardFooter, keyHint, nextLabel, noteNode, questionBody, questionHead, statusIcon } from './parts.js';
 
 export function renderSingle({ question, index, total, isLast, resolve, onAnswer, onNext }) {
-  const card = el('article', { class: 'card qcard' });
+  const card = el('article', { class: 'qcard' });
   card.append(questionHead(question, index, total));
   questionBody(card, question, resolve);
 

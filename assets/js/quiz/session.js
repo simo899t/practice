@@ -74,6 +74,11 @@ export function advance(session, now = Date.now()) {
   return { ...session, index: session.index + 1 };
 }
 
+/** Finishes the run early; whatever is still unanswered is scored as missed. */
+export function submitSession(session, now = Date.now()) {
+  return { ...session, finishedAt: now };
+}
+
 /* ── Grading ───────────────────────────────────────────────────────────── */
 
 export function gradeSingle(question, selectedIndex) {

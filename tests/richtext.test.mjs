@@ -1,41 +1,42 @@
 import { strict as assert } from 'node:assert';
 import { test } from 'node:test';
 
-import { assetResolver, plainText, splitCode } from '../assets/js/content/richtext.js';
+import { assetResolver, closesFence, fenceStart, plainText, splitBlocks } from '../assets/js/content/richtext.js';
 
-test('resolves asset paths relative to the exam file', () => {
-  const resolve = assetResolver('courses/AI503_CALC/exam2026-jan/exam2026.json');
-  assert.equal(
-    resolve('assets/FIG.png'),
-    'courses/AI503_CALC/exam2026-jan/assets/FIG.png'
-  );
+test('resolves asset paths relative to the test file', () => {
+  const resolve = assetResolver('courses/AI503_CALC/exam2026-jan/exam2026.md');
+  assert.equal(resolve('assets/FIG.png'), 'courses/AI503_CALC/exam2026-jan/assets/FIG.png');
+  assert.equal(resolve('./assets/FIG.png'), 'courses/AI503_CALC/exam2026-jan/assets/FIG.png');
 });
 
-test('leaves absolute and remote paths untouched', () => {
-  const resolve = assetResolver('courses/x/y.json');
+test('leaves absolute, remote and in-memory paths untouched', () => {
+  const resolve = assetResolver('courses/x/y.md');
   assert.equal(resolve('https://example.com/a.png'), 'https://example.com/a.png');
   assert.equal(resolve('/a.png'), '/a.png');
+  assert.equal(resolve('blob:http://localhost/1234'), 'blob:http://localhost/1234');
 });
 
-test('splits a trailing code listing out of the prose', () => {
-  const { prose, code } = splitCode('Setup: Code:\nfor i in x:\n    print(i)');
-  assert.equal(prose, 'Setup: Code:');
-  assert.equal(code, 'for i in x:\n    print(i)');
+test('splits prose from fenced code listings, in order', () => {
+  assert.deepEqual(splitBlocks('Before:\n```python\nfor i in x:\n    print(i)\n```\nAfter.'), [
+    { prose: 'Before:' },
+    { code: 'for i in x:\n    print(i)' },
+    { prose: 'After.' },
+  ]);
+  assert.deepEqual(splitBlocks('~~~\n```\n~~~'), [{ code: '```' }]);
+  assert.deepEqual(splitBlocks('Open:\n```\nruns to the end'), [{ prose: 'Open:' }, { code: 'runs to the end' }]);
+  assert.deepEqual(splitBlocks('No listing.'), [{ prose: 'No listing.' }]);
 });
 
-test('splits a listing that starts on the same line as the label', () => {
-  const { prose, code } = splitCode('What is the running time?\n\nCode: ALG(n)\n  s = 0');
-  assert.equal(prose, 'What is the running time?\n\nCode:');
-  assert.equal(code, 'ALG(n)\n  s = 0');
+test('a fence closes only with the same character, at least as long', () => {
+  assert.equal(fenceStart('````js'), '````');
+  assert.equal(fenceStart('text ```'), null);
+  assert.equal(closesFence('```', '````'), false);
+  assert.equal(closesFence('`````', '````'), true);
+  assert.equal(closesFence('~~~', '```'), false);
 });
 
-test('leaves prose without a listing alone', () => {
-  const { prose, code } = splitCode('No listing here.');
-  assert.equal(prose, 'No listing here.');
-  assert.equal(code, null);
-});
-
-test('plainText drops image tokens and collapses whitespace', () => {
-  assert.equal(plainText('See [image: assets/a.png]\nthe  figure'), 'See the figure');
+test('plainText drops figures, listings and markup', () => {
+  assert.equal(plainText('See ![graph](assets/a.png)\nthe  **figure**'), 'See the figure');
+  assert.equal(plainText('Run:\n```\nls -la\n```'), 'Run:');
   assert.equal(plainText(undefined), '');
 });

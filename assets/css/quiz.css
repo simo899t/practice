@@ -8,18 +8,17 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 .quizbar .title b {
-  font-family: var(--font-serif);
-  font-size: 1.12rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .quizbar .title span {
-  font-size: var(--step--2);
+  font-size: 0.8125rem;
   color: var(--ink-3);
   white-space: nowrap;
   overflow: hidden;
@@ -29,13 +28,10 @@
 
 .quizbar .counter {
   flex: none;
-  padding: 0.2rem 0.7rem;
-  border-radius: var(--radius-full);
-  background: var(--surface-3);
   color: var(--ink-2);
-  font-size: var(--step--1);
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
 }
 .quizbar .counter:empty { display: none; }
 
@@ -48,61 +44,50 @@
 
 /* ── Cover sheet (setup) ───────────────────────────────────────────────── */
 
-.setup { padding: clamp(1.5rem, 5.5vw, 3rem); }
-
-.setup .eyebrow { color: var(--accent); }
-
 .setup h1 {
-  margin-top: 0.6rem;
-  font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.25rem);
-  font-weight: 520;
-  line-height: 1.05;
-  letter-spacing: -0.024em;
+  margin-top: 0.35rem;
+  font-size: var(--step-4);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 
 .setup-course {
   margin-top: 0.4rem;
-  font-family: var(--font-serif);
-  font-size: var(--step-2);
-  font-style: italic;
   color: var(--ink-2);
+  font-size: var(--step-1);
 }
 
 .setup-lede {
   max-width: 34rem;
-  margin-top: 1.1rem;
+  margin-top: 1rem;
   color: var(--ink-3);
 }
 
 .facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-  gap: 1.25rem 1.5rem;
-  margin: 2rem 0 0.5rem;
-  padding: 1.35rem 0;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
   border-block: 1px solid var(--line);
 }
 .facts dt {
-  font-size: var(--step--2);
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  font-size: 0.8125rem;
   color: var(--ink-3);
 }
 .facts dd {
-  margin-top: 0.35rem;
-  font-family: var(--font-serif);
-  font-size: var(--step-4);
-  font-weight: 500;
-  line-height: 1;
-  font-variant-numeric: lining-nums tabular-nums;
+  margin-top: 0.1rem;
+  font-size: var(--step-2);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
 }
 .facts dd.is-text {
-  font-family: var(--font-sans);
-  font-size: var(--step-0);
-  font-weight: 600;
-  line-height: 1.35;
   padding-top: 0.2rem;
+  font-size: var(--step-0);
+  line-height: 1.35;
+  letter-spacing: 0;
 }
 
 .option-row {
@@ -110,7 +95,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem 1.5rem;
-  padding: 1.1rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--line);
 }
 .option-row .label { flex: 1 1 14rem; }
@@ -138,34 +123,27 @@
 
 /* ── Question sheet ────────────────────────────────────────────────────── */
 
-.qcard {
-  padding: clamp(1.25rem, 5vw, 2.5rem);
-  animation: fade-up 0.3s var(--ease) both;
-}
+.qcard { animation: fade-in 0.18s var(--ease) both; }
 
 .qhead {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 0.5rem 1rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.95rem;
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--ink);
 }
 
 .qlabel {
   min-width: 0;
-  font-size: var(--step--1);
+  font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--ink-2);
 }
 
 .qformat {
   flex: none;
-  font-size: var(--step--2);
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  font-size: 0.8125rem;
   color: var(--ink-3);
 }
 
@@ -183,7 +161,7 @@
 .qcontext {
   margin-bottom: 1.25rem;
   padding-left: 1rem;
-  border-left: 3px solid var(--line);
+  border-left: 2px solid var(--line-strong);
   color: var(--ink-2);
   line-height: 1.65;
   white-space: pre-wrap;
@@ -202,19 +180,7 @@
   color: var(--ink);
 }
 
-.codeblock {
-  margin-bottom: 1.25rem;
-  padding: 0.95rem 1.1rem;
-  overflow-x: auto;
-  background: var(--surface-2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  color: var(--ink);
-  font-family: var(--font-mono);
-  font-size: 0.84rem;
-  line-height: 1.6;
-  white-space: pre;
-}
+.qcard .codeblock { margin: 0.75rem 0; }
 
 .inline-image {
   display: block;
@@ -250,40 +216,37 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .option {
   display: flex;
   align-items: flex-start;
-  gap: 0.9rem;
+  gap: 0.85rem;
   width: 100%;
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 0.9rem;
   text-align: left;
   background: var(--surface);
   border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   cursor: pointer;
   transition: border-color var(--fast), background var(--fast), opacity var(--fast);
 }
-.option:hover:not(:disabled) {
-  border-color: var(--ink-3);
-  background: var(--surface-2);
-}
+.option:hover:not(:disabled) { border-color: var(--ink); }
 .option:disabled { cursor: default; }
 
+/* The letter sits in an answer bubble that fills in once marked */
 .option .key {
   display: grid;
   place-items: center;
   flex: none;
-  width: 28px;
-  height: 28px;
-  margin-top: -2px;
-  border: 1px solid var(--line-strong);
+  width: 26px;
+  height: 26px;
+  margin-top: -1px;
+  border: 1.5px solid var(--line-strong);
   border-radius: 50%;
-  background: var(--surface);
   color: var(--ink-2);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 650;
   transition: border-color var(--fast), color var(--fast), background var(--fast);
 }
@@ -314,7 +277,7 @@
 .option.is-correct .key {
   border-color: var(--good);
   background: var(--good);
-  color: var(--surface);
+  color: var(--bg);
 }
 .option.is-correct .status { color: var(--good); }
 
@@ -325,7 +288,7 @@
 .option.is-wrong .key {
   border-color: var(--bad);
   background: var(--bad);
-  color: var(--surface);
+  color: var(--bg);
 }
 .option.is-wrong .status { color: var(--bad); }
 
@@ -347,7 +310,7 @@
 .statement-list {
   list-style: none;
   border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   background: var(--surface);
   overflow: hidden;
 }
@@ -357,7 +320,7 @@
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
-  padding: 1rem 1rem 1rem 1.15rem;
+  padding: 0.9rem 0.9rem 0.9rem 1.1rem;
   transition: background var(--fast);
 }
 .statement + .statement { border-top: 1px solid var(--line); }
@@ -370,7 +333,7 @@
 
 .statement .segmented {
   flex: none;
-  margin-block: -0.3rem;
+  margin-block: -0.25rem;
 }
 
 .statement.is-wide {
@@ -414,7 +377,7 @@
   align-items: center;
   gap: 0.35rem;
   font-size: var(--step--1);
-  font-weight: 650;
+  font-weight: 600;
 }
 .verdict svg { flex: none; }
 .verdict.is-good { color: var(--good); }
@@ -426,35 +389,38 @@
 .open-answer {
   display: block;
   width: 100%;
-  min-height: 10rem;
-  padding: 0.95rem 1.1rem;
-  background: var(--surface-2);
+  min-height: 9rem;
+  padding: 0.85rem 1rem;
+  background: var(--surface);
   border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   line-height: 1.6;
   resize: vertical;
   outline: none;
-  transition: border-color var(--fast), box-shadow var(--fast), background var(--fast);
+  transition: border-color var(--fast), box-shadow var(--fast);
 }
 .open-answer::placeholder { color: var(--ink-3); }
 .open-answer:focus {
-  background: var(--surface);
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-ring);
 }
-.open-answer:disabled { opacity: 0.7; resize: none; }
+.open-answer:disabled {
+  background: var(--surface-2);
+  color: var(--ink-2);
+  resize: none;
+}
 
 .model-answer {
-  margin-top: 1.1rem;
-  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+  padding: 0.9rem 1.1rem;
   background: var(--good-soft);
-  border-left: 3px solid var(--good);
+  border-left: 2px solid var(--good);
   border-radius: 0 var(--radius) var(--radius) 0;
   line-height: 1.65;
   white-space: pre-wrap;
 }
 .model-answer .eyebrow {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
   color: var(--good);
 }
 
@@ -463,7 +429,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 0.6rem;
-  margin-top: 1.1rem;
+  margin-top: 1rem;
   color: var(--ink-2);
   font-size: var(--step--1);
   font-weight: 600;
@@ -477,7 +443,7 @@
   align-items: center;
   gap: 0.75rem;
   margin-top: 1.75rem;
-  padding-top: 1.25rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--line);
 }
 
@@ -521,7 +487,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 0.75rem;
-    padding: 0.95rem 0.95rem 1rem 1.05rem;
+    padding: 0.9rem 0.9rem 0.95rem 1.05rem;
   }
   .statement .segmented {
     align-self: flex-start;

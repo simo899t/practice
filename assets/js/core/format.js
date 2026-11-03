@@ -29,14 +29,14 @@ export function splitTitle(title) {
   return { code: title.slice(0, at), name: title.slice(at + 3) };
 }
 
-/** "AI501, DS843 - Intro to AI" -> { codes: "AI501 · DS843", name: "Intro to AI" } */
+/** "AI501, DS843 - Intro to AI" -> { codes: "AI501, DS843", name: "Intro to AI" } */
 export function courseParts(title) {
   const { code, name } = splitTitle(String(title ?? ''));
   const codes = code
     .split(',')
     .map((part) => part.trim())
     .filter(Boolean)
-    .join(' · ');
+    .join(', ');
   return { codes, name };
 }
 
@@ -47,7 +47,7 @@ export function courseParts(title) {
 export function codePrefixes(title) {
   const { codes } = courseParts(title);
   const prefixes = codes
-    .split(' · ')
+    .split(', ')
     .map((code) => (code.match(/^[A-Za-z]+(?=\d)/)?.[0] ?? '').toUpperCase())
     .filter(Boolean);
   return [...new Set(prefixes)];

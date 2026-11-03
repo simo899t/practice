@@ -1,4 +1,4 @@
-/** Home page: every course as a tile, grouped by subject, with search and a subject filter. */
+/** Home page: every course as a row, with search and a subject filter. */
 
 import { byId, el } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
@@ -8,6 +8,7 @@ import {
   courseStats,
   groupBySubject,
   loadCatalog,
+  openableFirst,
   subjectName,
   subjectsOf,
 } from '../core/catalog.js';
@@ -41,10 +42,15 @@ function matchesQuery(course) {
 
 function render() {
   const scores = allScores();
-  const groups = groupBySubject(courses.filter(matchesQuery), activeSubject);
+  const matches = courses.filter(matchesQuery);
+  // One plain list in manifest order; only a subject filter narrows and labels it.
+  const [group] =
+    activeSubject === 'all'
+      ? [{ subject: null, courses: openableFirst(matches) }]
+      : groupBySubject(matches, activeSubject);
   grid.replaceChildren();
 
-  if (!groups.length) {
+  if (!group?.courses.length) {
     grid.append(
       el('div', { class: 'state' }, [
         el('h2', { text: 'Nothing matches' }),
@@ -54,26 +60,17 @@ function render() {
     return;
   }
 
-  groups.forEach(({ subject, courses: list }, g) => {
-    const section = el('section', { class: `subject-section subject-${subject}` }, [
+  const { subject, courses: list } = group;
+  grid.append(
+    el('section', { class: subject ? `subject-section subject-${subject}` : 'subject-section' }, [
       el('header', { class: 'subject-head' }, [
-        el('span', { class: 'subject-mark', text: subject }),
-        el('h2', { class: 'subject-name', text: subjectName(subject) }),
+        subject ? el('span', { class: 'subject-mark', text: subject }) : null,
+        el('h2', { class: 'subject-name', text: subject ? subjectName(subject) : 'All courses' }),
         el('span', { class: 'subject-count', text: plural(list.length, 'course') }),
       ]),
-    ]);
-
-    const tiles = el('div', { class: 'tile-grid' });
-    list.forEach((course, i) => {
-      const tile = courseTile(course, scores);
-      tile.classList.add('fade-up');
-      tile.style.animationDelay = `${Math.min(g * 3 + i, 10) * 30}ms`;
-      tiles.append(tile);
-    });
-
-    section.append(tiles);
-    grid.append(section);
-  });
+      el('div', { class: 'tile-grid' }, list.map((course) => courseTile(course, scores))),
+    ])
+  );
 }
 
 /* ── Chrome ────────────────────────────────────────────────────────────── */

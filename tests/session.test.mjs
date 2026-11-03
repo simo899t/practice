@@ -1,7 +1,7 @@
 import { strict as assert } from 'node:assert';
 import { test } from 'node:test';
 
-import { normalizeExam } from '../assets/js/quiz/model.js';
+import { parseTest } from '../assets/js/quiz/markdown.js';
 import {
   advance,
   answeredCount,
@@ -16,6 +16,7 @@ import {
   respond,
   scoreSession,
   shuffled,
+  submitSession,
 } from '../assets/js/quiz/session.js';
 
 /** Deterministic rng so shuffles are reproducible in tests. */
@@ -27,32 +28,25 @@ function seeded(seed = 1) {
   };
 }
 
-const exam = [
-  {
-    type: 'single',
-    section: 'A',
-    text: 'Pick b',
-    options: [
-      { text: 'a', correct: false },
-      { text: 'b', correct: true },
-      { text: 'c', correct: false },
-    ],
-  },
-  {
-    type: 'group',
-    section: 'B',
-    positiveLabel: 'True',
-    negativeLabel: 'False',
-    statements: [
-      { text: 's1', answerIsPositive: true },
-      { text: 's2', answerIsPositive: false },
-      { text: 's3', answerIsPositive: true },
-    ],
-  },
-  { type: 'open', section: 'A', text: 'Explain', answer: 'Because.' },
-];
+const { questions } = parseTest(`
+## A
+Pick b
 
-const questions = normalizeExam(exam).questions;
+- [ ] a
+- [x] b
+- [ ] c
+
+## B
+- [true] s1
+- [false] s2
+- [true] s3
+
+## A
+Explain
+
+### Answer
+Because.
+`);
 
 /* ── Shuffling ─────────────────────────────────────────────────────────── */
 
@@ -140,6 +134,19 @@ test('advancing past the last question finishes the run', () => {
   assert.ok(isLastQuestion(session));
   session = advance(session, 1234);
   assert.equal(session.finishedAt, 1234);
+});
+
+test('submitting early finishes the run and scores the rest as missed', () => {
+  let session = createSession({ questions });
+  session = respond(session, gradeSingle(questions[0], 1));
+  session = submitSession(session, 99);
+
+  assert.equal(session.finishedAt, 99);
+  assert.equal(session.index, 0);
+  const score = scoreSession(session);
+  assert.equal(score.earned, 1);
+  assert.equal(score.possible, 5);
+  assert.deepEqual(score.missed.map((m) => m.question.id), [questions[1].id, questions[2].id]);
 });
 
 /* ── Scoring ───────────────────────────────────────────────────────────── */

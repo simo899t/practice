@@ -117,7 +117,7 @@ function renderCourse(course) {
   const progress = courseProgress(course, scores);
   const subject = subjectsOf(course)[0] ?? 'Other';
 
-  document.title = `${name} · Exam Drill`;
+  document.title = `${name} · practice`;
 
   const head = el('header', { class: `course-head subject-${subject}` }, [
     el('nav', { class: 'crumbs', 'aria-label': 'Breadcrumb' }, [
@@ -135,7 +135,7 @@ function renderCourse(course) {
     ]),
   ]);
 
-  const page = el('div', { class: 'course-page fade-up' }, [head]);
+  const page = el('div', { class: 'course-page fade-in' }, [head]);
 
   const tests = course.tests ?? [];
   const testsSection = el('section', { class: 'course-section' }, [

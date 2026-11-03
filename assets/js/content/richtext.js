@@ -1,26 +1,80 @@
 /**
- * Question text is plain text with a few authoring conveniences:
- *   `$x^2$` / `$$…$$`        — maths, left intact for KaTeX to typeset
- *   `[image: assets/foo.png]` — an inline figure, resolved against the exam file
- *   `*emphasis*`, `**strong**` — light markdown, applied outside maths only
- *   `Code:` followed by a listing — rendered as a monospace block
- * Everything else becomes a text node, so nothing in the data can inject HTML.
+ * Text in a test file is Markdown-flavoured plain text:
+ *   `$x^2$` / `$$…$$`            — maths, left intact for KaTeX to typeset
+ *   `![alt](assets/figure.png)`  — a figure, resolved against the test file
+ *   `*emphasis*`, `**strong**`   — applied outside maths only
+ *   ``` fenced blocks ```        — code listings, kept exactly as written
+ * Line breaks are kept as written. Everything else becomes a text node, so
+ * nothing in a test file can inject HTML.
  */
 
 import { el } from '../core/dom.js';
 
 const MATH_SPAN = /\$\$[\s\S]*?\$\$|\$[^$\n]*\$/g;
-const IMAGE_TOKEN = /\[image:\s*([^\]]+)\]/g;
+export const IMAGE = /!\[([^\]]*)\]\(\s*([^)\s]+)\s*\)/g;
 const EMPHASIS = /\*\*([^*\n]+)\*\*|\*([^*\n]+)\*/g;
-const CODE_SPLIT = /^([\s\S]*?\bCode(?:\s*\([^)]*\))?:)[ \t]*\n?([\s\S]+)$/;
+const FENCE = /^ {0,3}(`{3,}|~{3,})/;
 
-/** Resolves an asset path relative to the exam JSON file it came from. */
-export function assetResolver(examFile) {
-  const baseDir = examFile.slice(0, examFile.lastIndexOf('/') + 1);
+/** The marker when `line` opens a fenced code block (``` or ~~~), else null. */
+export function fenceStart(line) {
+  return line.match(FENCE)?.[1] ?? null;
+}
+
+/** Whether `line` closes the block opened by `marker`. */
+export function closesFence(line, marker) {
+  const close = line.match(/^ {0,3}(`{3,}|~{3,})\s*$/)?.[1];
+  return Boolean(close) && close[0] === marker[0] && close.length >= marker.length;
+}
+
+/**
+ * Splits text into prose and code listings, in order. An unclosed fence runs
+ * to the end, as in Markdown.
+ * @returns {Array<{prose: string} | {code: string}>}
+ */
+export function splitBlocks(text) {
+  const blocks = [];
+  let prose = [];
+  let code = null;
+
+  const flush = () => {
+    const kept = prose.join('\n').replace(/^\n+|\n+$/g, '');
+    if (kept.trim()) blocks.push({ prose: kept });
+    prose = [];
+  };
+
+  for (const line of String(text ?? '').split('\n')) {
+    if (code) {
+      if (closesFence(line, code.marker)) {
+        blocks.push({ code: code.lines.join('\n') });
+        code = null;
+      } else {
+        code.lines.push(line);
+      }
+      continue;
+    }
+
+    const marker = fenceStart(line);
+    if (marker) {
+      flush();
+      code = { marker, lines: [] };
+    } else {
+      prose.push(line);
+    }
+  }
+
+  if (code) blocks.push({ code: code.lines.join('\n') });
+  flush();
+  return blocks;
+}
+
+/** Resolves an asset path relative to the test file it came from. */
+export function assetResolver(testFile) {
+  const baseDir = testFile.slice(0, testFile.lastIndexOf('/') + 1);
   return (path) => {
     const trimmed = path.trim();
-    if (/^(https?:)?\/\//.test(trimmed) || trimmed.startsWith('/')) return trimmed;
-    return baseDir + trimmed;
+    // https:, blob:, data:, //host and /root paths are already complete
+    if (/^(?:[a-z]+:|\/)/i.test(trimmed)) return trimmed;
+    return baseDir + trimmed.replace(/^\.\//, '');
   };
 }
 
@@ -38,11 +92,11 @@ function eachSegment(input, pattern, { onMatch, onText }) {
   if (cursor < input.length) onText(input.slice(cursor));
 }
 
-function imageNode(path, resolve) {
+function imageNode(alt, path, resolve) {
   const img = el('img', {
     class: 'inline-image',
     src: resolve ? resolve(path) : path.trim(),
-    alt: 'Figure from the test',
+    alt: alt.trim() || 'Figure from the test',
     loading: 'lazy',
   });
 
@@ -64,24 +118,28 @@ function renderEmphasis(target, text) {
 }
 
 function renderProse(target, text, resolve) {
-  eachSegment(text, IMAGE_TOKEN, {
-    onMatch: (match) => target.append(imageNode(match[1], resolve)),
+  eachSegment(text, IMAGE, {
+    onMatch: (match) => target.append(imageNode(match[1], match[2], resolve)),
     onText: (plain) => renderEmphasis(target, plain),
   });
 }
 
-/** Appends `text` to `target`, expanding maths, images, emphasis and newlines. */
-export function renderRich(target, text, resolve) {
-  const lines = String(text ?? '').split('\n');
-
-  lines.forEach((line, index) => {
+function renderLines(target, text, resolve) {
+  text.split('\n').forEach((line, index) => {
     if (index > 0) target.append(el('br'));
     eachSegment(line, MATH_SPAN, {
       onMatch: (match) => target.append(match[0]), // left verbatim for KaTeX
       onText: (plain) => renderProse(target, plain, resolve),
     });
   });
+}
 
+/** Appends `text` to `target`: prose with maths, figures, emphasis and line breaks, then any listings. */
+export function renderRich(target, text, resolve) {
+  for (const block of splitBlocks(text)) {
+    if ('code' in block) target.append(el('pre', { class: 'codeblock', text: block.code }));
+    else renderLines(target, block.prose, resolve);
+  }
   return target;
 }
 
@@ -90,34 +148,13 @@ export function richNode(tag, className, text, resolve) {
   return renderRich(el(tag, { class: className }), text, resolve);
 }
 
-/**
- * Splits a context string into prose and an optional trailing code listing, so
- * indentation survives instead of being reflowed by the prose styles.
- * @returns {{prose: string, code: string|null}}
- */
-export function splitCode(context) {
-  const text = String(context ?? '');
-  const match = text.match(CODE_SPLIT);
-  if (!match) return { prose: text, code: null };
-  return { prose: match[1], code: match[2] };
-}
-
-/**
- * Renders a context block (prose + optional code) into `target`.
- * `className` lets a paper that keeps the whole question in `context` present
- * it as the prompt rather than as muted supporting text.
- */
-export function renderContext(target, context, resolve, className = 'qcontext') {
-  const { prose, code } = splitCode(context);
-  if (prose.trim()) target.append(richNode('div', className, prose, resolve));
-  if (code !== null) target.append(el('pre', { class: 'codeblock', text: code }));
-  return target;
-}
-
-/** Strips markup and newlines — for compact summaries and review lists. */
+/** Strips markup, listings and newlines — for compact summaries and review lists. */
 export function plainText(text) {
-  return String(text ?? '')
-    .replace(IMAGE_TOKEN, ' ')
+  return splitBlocks(text)
+    .filter((block) => 'prose' in block)
+    .map((block) => block.prose)
+    .join(' ')
+    .replace(IMAGE, ' ')
     .replace(EMPHASIS, (_, strong, emphasis) => strong ?? emphasis)
     .replace(/\s+/g, ' ')
     .trim();

@@ -42,11 +42,17 @@ function subjectRank(subject) {
   return at === -1 ? order.length : at;
 }
 
+const hasContent = (course) => (course.tests ?? []).length + (course.archive ?? []).length > 0;
+
+/** Courses with something to open come first; manifest order is kept otherwise. */
+export function openableFirst(courses) {
+  return [...courses].sort((a, b) => Number(hasContent(b)) - Number(hasContent(a)));
+}
+
 /**
- * Groups courses for the home page. With no filter each course sits under its
- * first code's subject; with a filter there is one group holding every course
- * that carries that subject (so DS shows the cross-listed AI and DM courses).
- * Courses with something to open come first; manifest order is kept otherwise.
+ * Groups courses by subject. With no filter each course sits under its first
+ * code's subject; with a filter there is one group holding every course that
+ * carries that subject (so DS shows the cross-listed AI and DM courses).
  * @returns {Array<{subject: string, courses: Array}>}
  */
 export function groupBySubject(courses, filter = 'all') {
@@ -61,14 +67,9 @@ export function groupBySubject(courses, filter = 'all') {
     }
   }
 
-  const hasContent = (course) => (course.tests ?? []).length + (course.archive ?? []).length > 0;
-
   return [...groups.entries()]
     .sort(([a], [b]) => subjectRank(a) - subjectRank(b) || a.localeCompare(b))
-    .map(([subject, list]) => ({
-      subject,
-      courses: [...list].sort((a, b) => Number(hasContent(b)) - Number(hasContent(a))),
-    }));
+    .map(([subject, list]) => ({ subject, courses: openableFirst(list) }));
 }
 
 export function courseStats(course) {
@@ -113,7 +114,7 @@ export function testHref(course, test) {
   })}`;
 }
 
-/** Display name and codes for headings: { codes: "AI501 · DS843", name: "…" }. */
+/** Display name and codes for headings: { codes: "AI501, DS843", name: "…" }. */
 export function courseLabel(course) {
   const { codes, name } = courseParts(course.title);
   return { codes: codes || course.id || '', name: name || course.id || '' };

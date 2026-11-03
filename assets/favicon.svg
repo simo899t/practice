@@ -1,6 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#1b1915"/>
-  <path d="M15 46h34" stroke="#f6dc7a" stroke-width="7" stroke-linecap="round" opacity=".9"/>
-  <path d="M17 31.5 27 41.5 47 20" fill="none" stroke="#fffdf8" stroke-width="7"
-        stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <!-- The header mark: four answer bubbles, one filled in. Light on dark tab bars. -->
+  <style>
+    g { stroke: #141414; }
+    .on { fill: #141414; }
+    @media (prefers-color-scheme: dark) {
+      g { stroke: #ececea; }
+      .on { fill: #ececea; }
+    }
+  </style>
+  <g fill="none" stroke-width="1.5">
+    <circle cx="5" cy="5" r="3.25"/>
+    <circle class="on" cx="15" cy="5" r="3.25"/>
+    <circle cx="5" cy="15" r="3.25"/>
+    <circle cx="15" cy="15" r="3.25"/>
+  </g>
 </svg>

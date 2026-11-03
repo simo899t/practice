@@ -6,6 +6,7 @@ import {
   courseProgress,
   courseStats,
   groupBySubject,
+  openableFirst,
   subjectsOf,
   testHref,
 } from '../assets/js/core/catalog.js';
@@ -35,6 +36,13 @@ test('without a filter courses are grouped by their first code, AI before DM', (
   assert.deepEqual(groups[0].courses.map((c) => c.id), ['AI501_DS843', 'AI503']);
   // courses with something to open come before empty ones
   assert.deepEqual(groups[1].courses.map((c) => c.id), ['DM507', 'DM573']);
+});
+
+test('the unfiltered list keeps manifest order, with empty courses last', () => {
+  assert.deepEqual(
+    openableFirst([DM573, AI501, DM507, AI503]).map((c) => c.id),
+    ['AI501_DS843', 'DM507', 'AI503', 'DM573']
+  );
 });
 
 test('a subject filter collects every course carrying that code', () => {

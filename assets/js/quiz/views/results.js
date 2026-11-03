@@ -21,7 +21,7 @@ export function renderResults({ session, score, best, back, onRestart, onRetryMi
   const verdict = VERDICTS.find((entry) => pct >= entry.min);
   const elapsed = (session.finishedAt ?? Date.now()) - session.startedAt;
 
-  const view = el('section', { class: 'fade-up' });
+  const view = el('section', { class: 'fade-in' });
   view.append(scoreCard({ pct, score, verdict, elapsed, best }));
 
   // Papers that label every question separately gain nothing from a breakdown.
@@ -53,7 +53,7 @@ export function renderResults({ session, score, best, back, onRestart, onRetryMi
 }
 
 function scoreCard({ pct, score, verdict, elapsed, best }) {
-  return el('section', { class: 'card score-card' }, [
+  return el('section', { class: 'score-card' }, [
     ring(pct),
     el('div', { class: 'score-copy' }, [
       el('p', { class: 'eyebrow', text: 'Your result' }),
@@ -120,7 +120,7 @@ function ring(pct) {
 }
 
 function breakdownPanel(bySection) {
-  const panel = el('section', { class: 'card panel' }, [
+  const panel = el('section', { class: 'panel' }, [
     el('h2', { text: 'By section' }),
   ]);
 
@@ -153,7 +153,7 @@ function breakdownPanel(bySection) {
 }
 
 function reviewPanel(missed) {
-  const panel = el('section', { class: 'card panel' }, [
+  const panel = el('section', { class: 'panel' }, [
     el('h2', { text: `Worth another look (${missed.length})` }),
   ]);
 

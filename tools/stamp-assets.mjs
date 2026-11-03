@@ -7,6 +7,8 @@
  *   node tools/stamp-assets.mjs        # rewrite the pages in place
  *
  * - <link href="assets/css/x.css"> and <script src="assets/js/…"> get ?v=<hash>.
+ * - So does <link rel="icon" href="assets/favicon.svg">: browsers keep icons
+ *   even longer than other files.
  * - The page's <script type="importmap"> maps every module under assets/js to
  *   its stamped URL, which covers the modules the entry scripts import.
  *
@@ -19,7 +21,7 @@ import { join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
-export const PAGES = ['index.html', 'course.html', 'quiz.html'];
+export const PAGES = ['index.html', 'course.html', 'quiz.html', 'submit.html'];
 
 function walk(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -28,10 +30,14 @@ function walk(dir) {
   });
 }
 
-/** Map of "assets/…/file.ext" -> short content hash, for every CSS and JS file. */
+/** Map of "assets/…/file.ext" -> short content hash, for every CSS and JS file and the favicon. */
 export function assetVersions(root = ROOT) {
-  const files = [...walk(join(root, 'assets', 'css')), ...walk(join(root, 'assets', 'js'))]
-    .filter((path) => /\.(css|js)$/.test(path))
+  const files = [
+    ...walk(join(root, 'assets', 'css')),
+    ...walk(join(root, 'assets', 'js')),
+    join(root, 'assets', 'favicon.svg'),
+  ]
+    .filter((path) => /\.(css|js|svg)$/.test(path))
     .sort();
 
   return new Map(
@@ -51,11 +57,11 @@ function importMap(versions) {
   return `<script type="importmap">\n  ${json}\n  </script>`;
 }
 
-/** Returns `html` with every local CSS/JS reference and the import map stamped. */
+/** Returns `html` with every local CSS/JS reference, the favicon and the import map stamped. */
 export function stampHtml(html, versions) {
   return html
     .replace(
-      /\b(href|src)="(assets\/(?:css|js)\/[^"?]+\.(?:css|js))(?:\?v=[^"]*)?"/g,
+      /\b(href|src)="(assets\/(?:(?:css|js)\/[^"?]+\.(?:css|js)|favicon\.svg))(?:\?v=[^"]*)?"/g,
       (match, attr, path) => (versions.has(path) ? `${attr}="${path}?v=${versions.get(path)}"` : match)
     )
     .replace(/<script type="importmap">[\s\S]*?<\/script>/, importMap(versions));

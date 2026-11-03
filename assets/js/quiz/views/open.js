@@ -7,7 +7,7 @@ import { gradeOpen } from '../session.js';
 import { cardFooter, nextLabel, questionBody, questionHead } from './parts.js';
 
 export function renderOpen({ question, index, total, isLast, resolve, onAnswer, onNext }) {
-  const card = el('article', { class: 'card qcard' });
+  const card = el('article', { class: 'qcard' });
   card.append(questionHead(question, index, total));
   questionBody(card, question, resolve);
 

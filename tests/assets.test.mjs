@@ -30,8 +30,10 @@ test('stampHtml versions links, scripts and the import map', () => {
     ['assets/css/a.css', '111'],
     ['assets/js/x/main.js', '222'],
     ['assets/js/core/dom.js', '333'],
+    ['assets/favicon.svg', '444'],
   ]);
   const html = [
+    '<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">',
     '<link rel="stylesheet" href="assets/css/a.css?v=old">',
     '<script type="importmap">{}</script>',
     '<script type="module" src="assets/js/x/main.js"></script>',
@@ -39,6 +41,7 @@ test('stampHtml versions links, scripts and the import map', () => {
   ].join('\n');
 
   const out = stampHtml(html, sample);
+  assert.match(out, /href="assets\/favicon\.svg\?v=444"/);
   assert.match(out, /href="assets\/css\/a\.css\?v=111"/);
   assert.match(out, /src="assets\/js\/x\/main\.js\?v=222"/);
   assert.match(out, /"\.\/assets\/js\/core\/dom\.js": "\.\/assets\/js\/core\/dom\.js\?v=333"/);

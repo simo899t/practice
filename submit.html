@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Write a test in Markdown, check it, and send it in on GitHub or by email.">
+  <title>Add a test · practice</title>
+
+  <link rel="icon" href="assets/favicon.svg?v=1125501e56" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css?v=7b37c3fd6e">
+  <link rel="stylesheet" href="assets/css/base.css?v=973972fd35">
+  <link rel="stylesheet" href="assets/css/components.css?v=dc83c10af3">
+  <link rel="stylesheet" href="assets/css/submit.css?v=f29e0f681e">
+
+  <script>
+    try {
+      if (localStorage.getItem('exam-drill:theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (_) {}
+  </script>
+  <!-- Filled in by tools/stamp-assets.mjs: every module URL carries its content hash. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "./assets/js/content/math.js": "./assets/js/content/math.js?v=cb3a386528",
+      "./assets/js/content/richtext.js": "./assets/js/content/richtext.js?v=2335494e1e",
+      "./assets/js/core/catalog.js": "./assets/js/core/catalog.js?v=fbf01bb6d4",
+      "./assets/js/core/dom.js": "./assets/js/core/dom.js?v=c6be81d452",
+      "./assets/js/core/drafts.js": "./assets/js/core/drafts.js?v=f74e94afcd",
+      "./assets/js/core/format.js": "./assets/js/core/format.js?v=0a1869fee9",
+      "./assets/js/core/storage.js": "./assets/js/core/storage.js?v=564d95b01b",
+      "./assets/js/core/theme.js": "./assets/js/core/theme.js?v=b9d2830b5f",
+      "./assets/js/course/main.js": "./assets/js/course/main.js?v=28b6240a07",
+      "./assets/js/home/course-tile.js": "./assets/js/home/course-tile.js?v=0c5279c564",
+      "./assets/js/home/main.js": "./assets/js/home/main.js?v=2256688e42",
+      "./assets/js/quiz/main.js": "./assets/js/quiz/main.js?v=e669b3683a",
+      "./assets/js/quiz/markdown.js": "./assets/js/quiz/markdown.js?v=f9d2dad640",
+      "./assets/js/quiz/model.js": "./assets/js/quiz/model.js?v=e51ddb25a0",
+      "./assets/js/quiz/session.js": "./assets/js/quiz/session.js?v=e126537888",
+      "./assets/js/quiz/views/group.js": "./assets/js/quiz/views/group.js?v=f3f2cf8444",
+      "./assets/js/quiz/views/open.js": "./assets/js/quiz/views/open.js?v=fc96237376",
+      "./assets/js/quiz/views/parts.js": "./assets/js/quiz/views/parts.js?v=91357d1459",
+      "./assets/js/quiz/views/results.js": "./assets/js/quiz/views/results.js?v=d265f7be22",
+      "./assets/js/quiz/views/setup.js": "./assets/js/quiz/views/setup.js?v=17a10bad67",
+      "./assets/js/quiz/views/single.js": "./assets/js/quiz/views/single.js?v=cead5b0101",
+      "./assets/js/submit/examples.js": "./assets/js/submit/examples.js?v=1d7d2b54b2",
+      "./assets/js/submit/main.js": "./assets/js/submit/main.js?v=40ee9ff288",
+      "./assets/js/submit/submission.js": "./assets/js/submit/submission.js?v=b7b7095670",
+      "./assets/js/submit/zip.js": "./assets/js/submit/zip.js?v=7268cd509e"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="appbar">
+    <div class="appbar-inner">
+      <a class="brand" href="index.html" aria-label="practice, all courses">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="5" cy="5" r="3.25"/><circle cx="15" cy="5" r="3.25" fill="currentColor"/>
+            <circle cx="5" cy="15" r="3.25"/><circle cx="15" cy="15" r="3.25"/>
+          </svg>
+        </span>
+        <span class="brand-name">practice</span>
+      </a>
+      <span class="spacer"></span>
+      <div id="bar-actions"></div>
+    </div>
+  </header>
+
+  <main class="wrap wrap-narrow page">
+    <header class="doc-head">
+      <h1>Add a test</h1>
+      <p>A test is a Markdown file with a <code>##</code> heading for each question. Start from an example, check your test below, then send it in.</p>
+    </header>
+
+    <section class="doc-section" aria-labelledby="types-title">
+      <h2 class="section-title" id="types-title">Question types</h2>
+      <div class="segmented example-tabs" id="example-tabs" role="group" aria-label="Question type"></div>
+      <p class="example-about" id="example-about"></p>
+      <pre class="codeblock example-code" id="example-code"></pre>
+      <div class="example-actions">
+        <button class="btn btn-ghost btn-sm" id="example-copy" type="button">Copy</button>
+        <a class="btn btn-ghost btn-sm" id="example-try" href="quiz.html">Try it</a>
+      </div>
+
+      <p class="tips-title">In any text:</p>
+      <ul class="tips">
+        <li><code>$x^2$</code> or <code>$$…$$</code> for maths, each formula on one line</li>
+        <li><code>![](assets/figure.png)</code> for a figure from the test's <code>assets</code> folder</li>
+        <li><code>*italic*</code> and <code>**bold**</code></li>
+        <li>a code listing between two lines of <code>```</code></li>
+        <li><code># Title</code> on the first line names the test</li>
+      </ul>
+      <p class="template">
+        Or start from the <a href="courses/test_template/test.md" download="test.md">template with all three types</a>.
+      </p>
+    </section>
+
+    <section class="doc-section" aria-labelledby="check-title">
+      <h2 class="section-title" id="check-title">Check your test</h2>
+
+      <div class="form-grid">
+        <label class="form-field">
+          <span>Course</span>
+          <select class="control" id="course"><option value="">Loading courses…</option></select>
+        </label>
+        <label class="form-field hidden" id="course-code-field">
+          <span>Course code</span>
+          <input class="control" id="course-code" placeholder="DM579" autocomplete="off">
+        </label>
+        <label class="form-field">
+          <span>Test title</span>
+          <input class="control" id="test-title" placeholder="Exam June 2025" autocomplete="off">
+        </label>
+      </div>
+
+      <label class="form-field">
+        <span>Test</span>
+        <textarea class="control source" id="source" spellcheck="false"
+                  placeholder="Paste your test here, or open its folder below."></textarea>
+      </label>
+      <div class="load-row">
+        <label class="btn btn-ghost btn-sm file-button">
+          Open a folder
+          <input type="file" id="pick-folder" webkitdirectory>
+        </label>
+        <label class="btn btn-ghost btn-sm file-button">
+          Open a file
+          <input type="file" id="pick-file" accept=".md,.markdown,.txt,text/markdown,text/plain">
+        </label>
+        <span class="load-hint">A folder brings its figures along. You can also drop it on the box.</span>
+      </div>
+      <p class="figures" id="figures"></p>
+
+      <div class="check is-idle" id="check" role="status" aria-live="polite"></div>
+      <div class="submit-actions">
+        <button class="btn btn-ghost" id="try" type="button" disabled>Try it</button>
+        <span class="missing" id="missing"></span>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="send-title">
+      <h2 class="section-title" id="send-title">Send it in</h2>
+      <div class="routes">
+        <div class="route">
+          <h3>With a GitHub account</h3>
+          <p>Your test becomes a pull request, and is added to the site once it has been looked over.</p>
+          <a class="btn" id="submit" target="_blank" rel="noopener" aria-disabled="true">Submit on GitHub</a>
+          <p class="route-note" id="submit-note"></p>
+        </div>
+        <div class="route">
+          <h3>Without one</h3>
+          <p>Email the test as a .zip, or just the exam as a PDF if you would rather not write it up.</p>
+          <div class="route-actions">
+            <button class="btn btn-ghost" id="download" type="button" disabled>Download .zip</button>
+            <a class="btn btn-ghost" id="mail" href="mailto:simon@cogito.dk">Email it</a>
+          </div>
+          <p class="route-note">Your mail app opens with the details filled in. Attach the file before sending.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Exam Practice by Simon Holm</span>
+      <span>Scores stay in this browser.</span>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/submit/main.js?v=40ee9ff288"></script>
+</body>
+</html>

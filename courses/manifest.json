@@ -11,7 +11,7 @@
       {
         "id": "exam2025-jun",
         "title": "Exam June 2025 (Part I)",
-        "file": "courses/AI501_DS843_INTRO_AI/exam2025-jun/exam2025.json",
+        "file": "courses/AI501_DS843_INTRO_AI/exam2025-jun/exam2025.md",
         "questions": 30,
         "points": 30,
         "formats": [
@@ -33,7 +33,7 @@
       {
         "id": "exam2025-jan",
         "title": "Exam January 2025",
-        "file": "courses/DM549_DS820_DISCMAT/exam2025-jan/exam2025.json",
+        "file": "courses/DM549_DS820_DISCMAT/exam2025-jan/exam2025.md",
         "questions": 15,
         "points": 96,
         "formats": [
@@ -55,7 +55,7 @@
       {
         "id": "exam2025",
         "title": "Exam 2025",
-        "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/exam2025/exam2025.json",
+        "file": "courses/DM507_DM578_DS814_ALG_DTASTRC/exam2025/exam2025.md",
         "questions": 32,
         "points": 84,
         "formats": [
@@ -78,7 +78,7 @@
       {
         "id": "exam2026",
         "title": "Exam 2026",
-        "file": "courses/AI503_CALC/exam2026-jan/exam2026.json",
+        "file": "courses/AI503_CALC/exam2026-jan/exam2026.md",
         "questions": 10,
         "points": 14,
         "formats": [
@@ -95,7 +95,7 @@
       {
         "id": "reexam2026",
         "title": "ReExam 2026",
-        "file": "courses/AI503_CALC/reexam2026-mar/reexam2026.json",
+        "file": "courses/AI503_CALC/reexam2026-mar/reexam2026.md",
         "questions": 10,
         "points": 14,
         "formats": [
@@ -112,7 +112,7 @@
       {
         "id": "sample_exam1",
         "title": "Sample Exam 1",
-        "file": "courses/AI503_CALC/sample_exam1/sample-exam1.json",
+        "file": "courses/AI503_CALC/sample_exam1/sample-exam1.md",
         "questions": 11,
         "points": 55,
         "formats": [
@@ -134,7 +134,7 @@
       {
         "id": "exam-2025-fall",
         "title": "Exam 2025 Fall",
-        "file": "courses/AI512_ML/exam-2025-fall/exam-2025-fall.json",
+        "file": "courses/AI512_ML/exam-2025-fall/exam-2025-fall.md",
         "questions": 13,
         "points": 65,
         "formats": [
@@ -150,7 +150,7 @@
       {
         "id": "exam-2025-jan",
         "title": "Exam January 2025",
-        "file": "courses/AI512_ML/exam-2025-jan/exam-2025-jan.json",
+        "file": "courses/AI512_ML/exam-2025-jan/exam-2025-jan.md",
         "questions": 12,
         "points": 60,
         "formats": [
@@ -166,7 +166,7 @@
       {
         "id": "exam-2024-jan",
         "title": "Exam January 2024",
-        "file": "courses/AI512_ML/exam-2024-jan/exam-2024-jan.json",
+        "file": "courses/AI512_ML/exam-2024-jan/exam-2024-jan.md",
         "questions": 13,
         "points": 65,
         "formats": [
@@ -182,7 +182,7 @@
       {
         "id": "exam-2024-feb-reexam",
         "title": "Re-exam February 2024",
-        "file": "courses/AI512_ML/exam-2024-feb-reexam/exam-2024-feb-reexam.json",
+        "file": "courses/AI512_ML/exam-2024-feb-reexam/exam-2024-feb-reexam.md",
         "questions": 11,
         "points": 55,
         "formats": [
@@ -204,7 +204,7 @@
       {
         "id": "exam-2026",
         "title": "Exam 2026",
-        "file": "courses/AI504_KR/exam2025/exam2026.json",
+        "file": "courses/AI504_KR/exam2025/exam2026.md",
         "questions": 20,
         "points": 20,
         "formats": [
@@ -231,7 +231,7 @@
       {
         "id": "ai-mock-quiz1",
         "title": "Mock Quiz 1 by AI",
-        "file": "courses/AI507_AI_SOC/ai-mock-quiz1/ai-mock-quiz1.json",
+        "file": "courses/AI507_AI_SOC/ai-mock-quiz1/ai-mock-quiz1.md",
         "questions": 160,
         "points": 160,
         "formats": [
@@ -242,7 +242,7 @@
       {
         "id": "ai-mock-quiz2",
         "title": "Mock Quiz 2 by AI",
-        "file": "courses/AI507_AI_SOC/ai-mock-quiz2/ai-mock-quiz2.json",
+        "file": "courses/AI507_AI_SOC/ai-mock-quiz2/ai-mock-quiz2.md",
         "questions": 160,
         "points": 160,
         "formats": [
@@ -253,7 +253,7 @@
       {
         "id": "ai-mock-quiz3",
         "title": "Mock Quiz 3 by AI",
-        "file": "courses/AI507_AI_SOC/ai-mock-quiz3/ai-mock-quiz3.json",
+        "file": "courses/AI507_AI_SOC/ai-mock-quiz3/ai-mock-quiz3.md",
         "questions": 160,
         "points": 160,
         "formats": [
@@ -264,7 +264,7 @@
       {
         "id": "exam2026",
         "title": "Exam 2026",
-        "file": "courses/AI507_AI_SOC/exam2026/exam2026.json",
+        "file": "courses/AI507_AI_SOC/exam2026/exam2026.md",
         "questions": 35,
         "points": 35,
         "formats": [

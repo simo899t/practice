@@ -7,7 +7,7 @@ import { gradeGroup } from '../session.js';
 import { cardFooter, keyHint, nextLabel, noteNode, questionBody, questionHead, statusIcon } from './parts.js';
 
 export function renderGroup({ question, index, total, isLast, resolve, onAnswer, onNext }) {
-  const card = el('article', { class: 'card qcard' });
+  const card = el('article', { class: 'qcard' });
   card.append(questionHead(question, index, total));
   questionBody(card, question, resolve);
 
@@ -103,10 +103,7 @@ export function renderGroup({ question, index, total, isLast, resolve, onAnswer,
       if (result.given === null) row.classList.add('is-unanswered');
       row.classList.add(result.correct ? 'is-correct' : 'is-wrong');
 
-      const note = noteNode(
-        result.expected ? statement.positiveNote : statement.negativeNote,
-        resolve
-      );
+      const note = noteNode(statement.note, resolve);
       const expected = result.expected ? question.positiveLabel : question.negativeLabel;
 
       let verdict;
@@ -148,8 +145,14 @@ export function renderGroup({ question, index, total, isLast, resolve, onAnswer,
     else submit();
   }
 
+  /** Statements marked but not yet checked, graded for "Submit test". */
+  function pendingGrade() {
+    if (answered || answers.every((answer) => answer === null)) return null;
+    return gradeGroup(question, answers);
+  }
+
   footer.setHint(keyHint(['Enter'], 'to check your answers'));
   paintProgress();
   renderMath(card);
-  return { node: card, onKey };
+  return { node: card, onKey, pendingGrade };
 }

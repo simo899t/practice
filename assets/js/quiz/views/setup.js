@@ -11,7 +11,7 @@ export function renderSetup({ title, course, summary, best, skipped, back, onSta
 
   const { codes, name } = courseParts(course);
 
-  const card = el('section', { class: 'card setup fade-up' }, [
+  const card = el('section', { class: 'setup fade-in' }, [
     el('p', { class: 'eyebrow', text: codes || 'Exam practice' }),
     el('h1', { text: title }),
     name ? el('p', { class: 'setup-course', text: name }) : null,
@@ -89,9 +89,9 @@ export function renderSetup({ title, course, summary, best, skipped, back, onSta
     card.append(
       el('p', {
         class: 'setup-note',
-        text: `${plural(skipped, 'entry', 'entries')} in this file could not be read and ${
+        text: `${plural(skipped, 'question')} in this test could not be read and ${
           skipped === 1 ? 'was' : 'were'
-        } skipped.`,
+        } left out.`,
       })
     );
   }

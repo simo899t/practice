@@ -60,7 +60,7 @@ test('truncate cuts on a word boundary and only when needed', () => {
 
 test('courseParts turns a manifest title into display parts', () => {
   assert.deepEqual(courseParts('AI501, DS843 - Introduction to Artificial Intelligence'), {
-    codes: 'AI501 · DS843',
+    codes: 'AI501, DS843',
     name: 'Introduction to Artificial Intelligence',
   });
   assert.deepEqual(courseParts('AI503 - Calculus'), { codes: 'AI503', name: 'Calculus' });

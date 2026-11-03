@@ -7,15 +7,17 @@
  *
  * Titles, ids, descriptions and ordering written by hand are preserved; the
  * script only maintains the derived fields (questions, points, formats), the
- * links to the original PDFs sitting next to each exam file, and the list of
+ * links to the original PDFs sitting next to each test file, and the list of
  * files in each course's archive/ folder (older exams, project descriptions
- * and other material that is linked rather than drilled).
+ * and other material that is linked rather than drilled). A new test takes
+ * its title from the `# Title` line of its Markdown file.
  */
 
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normalizeExam, summarize } from '../assets/js/quiz/model.js';
+import { parseTest } from '../assets/js/quiz/markdown.js';
+import { summarize } from '../assets/js/quiz/model.js';
 import { describeArchiveFile } from './archive-names.mjs';
 import { stampPages } from './stamp-assets.mjs';
 
@@ -37,16 +39,19 @@ const filesIn = (path, extension) =>
     .map((entry) => entry.name)
     .sort();
 
-/** Reads one exam folder into the fields the manifest caches. */
+/** Reads one test folder into the fields the manifest caches. */
 function describeExam(examDir) {
-  const jsonFiles = filesIn(examDir, '.json');
-  if (!jsonFiles.length) return null;
+  const testFiles = filesIn(examDir, '.md');
+  if (!testFiles.length) return null;
 
-  const examFile = join(examDir, jsonFiles[0]);
-  const { questions } = normalizeExam(JSON.parse(readFileSync(examFile, 'utf8')));
+  const examFile = join(examDir, testFiles[0]);
+  const { title, questions, issues } = parseTest(readFileSync(examFile, 'utf8'));
+  for (const issue of issues) console.warn(`!  ${relative(ROOT, examFile)}:${issue.line} ${issue.message}`);
+  if (!questions.length) throw new Error('no usable questions');
   const summary = summarize(questions);
 
   return {
+    title,
     file: relative(ROOT, examFile),
     questions: summary.count,
     points: summary.points,
@@ -149,7 +154,8 @@ function main() {
         return test;
       }
       linked.add(test.file);
-      const { courseDir, examDir, ...fields } = match;
+      // Hand-written titles stay; the file's own # title only names new tests.
+      const { courseDir, examDir, title, ...fields } = match;
       return { ...test, ...fields };
     }),
   }));
@@ -169,8 +175,8 @@ function main() {
       continue;
     }
 
-    const { courseDir, examDir, ...fields } = orphan;
-    course.tests.push({ id: examDir, title: titleCase(examDir), ...fields });
+    const { courseDir, examDir, title, ...fields } = orphan;
+    course.tests.push({ id: examDir, title: title || titleCase(examDir), ...fields });
     console.log(`+  added ${label} to ${course.id}`);
   }
 

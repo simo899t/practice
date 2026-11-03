@@ -1,13 +1,16 @@
-/** Quiz page controller: load an exam file, run it, show the result. */
+/** Quiz page controller: load a test file, run it, show the result. */
 
 import { byId, el, icon, ICONS } from '../core/dom.js';
 import { mountThemeToggle } from '../core/theme.js';
 import { courseParts, percent } from '../core/format.js';
 import { recordAttempt, scoreFor } from '../core/storage.js';
+import { loadDraft } from '../core/drafts.js';
 import { assetResolver } from '../content/richtext.js';
-import { normalizeExam, summarize } from './model.js';
+import { parseTest } from './markdown.js';
+import { summarize } from './model.js';
 import {
   advance,
+  answeredCount,
   buildRun,
   createSession,
   currentQuestion,
@@ -15,6 +18,7 @@ import {
   missedQuestions,
   respond,
   scoreSession,
+  submitSession,
 } from './session.js';
 import { renderSingle } from './views/single.js';
 import { renderGroup } from './views/group.js';
@@ -26,14 +30,19 @@ const VIEWS = { single: renderSingle, group: renderGroup, open: renderOpen };
 
 const params = new URLSearchParams(location.search);
 const examFile = params.get('file');
+// A draft is a test being written on the Add a test page, kept in this browser.
+const isDraft = params.has('draft');
 const examTitle = params.get('title') || 'Practice exam';
 const courseTitle = params.get('course') || '';
 const courseId = params.get('courseId');
 
-// Where "back" goes: the course page when the link came from one, else the course list.
-const back = courseId
-  ? { href: `course.html?${new URLSearchParams({ id: courseId })}`, label: 'Back to the course' }
-  : { href: 'index.html', label: 'All courses' };
+// Where "back" goes: the page the test was opened from, else the course list.
+const back =
+  params.get('back') === 'submit'
+    ? { href: 'submit.html', label: 'Back to Add a test' }
+    : courseId
+      ? { href: `course.html?${new URLSearchParams({ id: courseId })}`, label: 'Back to the course' }
+      : { href: 'index.html', label: 'All courses' };
 byId('back-link').href = back.href;
 byId('back-link').title = back.label;
 byId('back-link').setAttribute('aria-label', back.label);
@@ -43,6 +52,7 @@ const counter = byId('counter');
 const progressBar = byId('progress');
 const barTitle = byId('bar-title');
 const barSub = byId('bar-sub');
+const submitButton = byId('submit-test');
 
 let questions = [];
 let resolve = (path) => path;
@@ -51,7 +61,7 @@ let activeView = null;
 
 mountThemeToggle(byId('bar-actions'));
 
-document.title = `${examTitle} · Exam Drill`;
+document.title = `${examTitle} · practice`;
 barTitle.textContent = examTitle;
 {
   const { codes, name } = courseParts(courseTitle);
@@ -82,6 +92,7 @@ function showMessage(title, detail, { spinner = false } = {}) {
 
 function showSetup(skipped) {
   setProgress(0, 0);
+  submitButton.classList.add('hidden');
   show(
     renderSetup({
       title: examTitle,
@@ -130,11 +141,32 @@ function renderCurrent() {
 
   show(activeView.node);
   setProgress(session.index, session.questions.length);
+  submitButton.classList.remove('hidden');
   activeView.focus?.();
 }
 
+/**
+ * Ends the run from the top bar. Statements already marked on the current
+ * question are kept; everything unanswered counts as missed.
+ */
+function submitTest() {
+  if (!session || session.finishedAt) return;
+
+  const pending = activeView?.pendingGrade?.();
+  const settled = pending ? respond(session, pending) : session;
+  const total = settled.questions.length;
+  const left = total - answeredCount(settled);
+  if (left && !confirm(`Submit the test now? Unanswered questions (${left} of ${total}) count as missed.`)) return;
+
+  session = submitSession(settled);
+  finish();
+}
+
+submitButton.addEventListener('click', submitTest);
+
 function finish() {
   activeView = null;
+  submitButton.classList.add('hidden');
   const score = scoreSession(session);
   setProgress(session.questions.length, session.questions.length);
 
@@ -158,6 +190,8 @@ document.addEventListener('keydown', (event) => {
   if (!activeView || event.altKey) return;
   // Text fields keep their own keys; the open view handles its textarea itself.
   if (event.target instanceof HTMLInputElement) return;
+  // Enter and Space on a top-bar control (Submit test, theme) belong to that control.
+  if ((event.key === 'Enter' || event.key === ' ') && event.target.closest?.('.appbar')) return;
   if ((event.metaKey || event.ctrlKey) && event.key !== 'Enter') return;
 
   activeView.onKey?.(event);
@@ -165,8 +199,28 @@ document.addEventListener('keydown', (event) => {
 
 /* ── Bootstrap ─────────────────────────────────────────────────────────── */
 
+/**
+ * The test's Markdown: from its file, or for a draft from this browser, whose
+ * figures are served from memory instead of from the test's folder.
+ */
+async function loadSource() {
+  if (isDraft) {
+    const draft = await loadDraft();
+    if (!draft?.text?.trim()) throw new Error('There is no test being written in this browser.');
+
+    const urls = new Map(draft.files.map(({ path, blob }) => [path, URL.createObjectURL(blob)]));
+    resolve = (path) => urls.get(path.trim().replace(/^\.\//, '')) ?? path;
+    return draft.text;
+  }
+
+  const response = await fetch(examFile, { cache: 'no-cache' });
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+  resolve = assetResolver(examFile);
+  return response.text();
+}
+
 async function init() {
-  if (!examFile) {
+  if (!examFile && !isDraft) {
     showMessage('No exam selected', 'Pick a test from the course list to get started.');
     app.append(el('div', { class: 'state' }, [
       el('a', { class: 'btn', href: back.href }, [
@@ -178,13 +232,10 @@ async function init() {
   }
 
   showMessage('Loading the test', examTitle, { spinner: true });
-  resolve = assetResolver(examFile);
 
   try {
-    const response = await fetch(examFile, { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-
-    const { questions: parsed, skipped } = normalizeExam(await response.json());
+    const { questions: parsed, skipped, issues } = parseTest(await loadSource());
+    if (!parsed.length) throw new Error(issues[0]?.message ?? 'There are no questions in this test.');
     questions = parsed;
     showSetup(skipped);
   } catch (error) {

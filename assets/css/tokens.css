@@ -1,26 +1,9 @@
 /* Design tokens: type, colour, spacing, motion.
-   A light "exam paper" palette by default; the dark "night desk" palette
-   applies only when chosen with the theme switch. */
+   A neutral light palette by default; the dark palette applies only when
+   chosen with the theme switch. Colour is kept for meaning: subjects,
+   right and wrong, focus. */
 
 /* ── Fonts (self-hosted, SIL OFL — see assets/fonts) ───────────────────── */
-
-@font-face {
-  font-family: "Newsreader Variable";
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url("../fonts/newsreader.woff2") format("woff2-variations"),
-       url("../fonts/newsreader.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Newsreader Variable";
-  font-style: italic;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url("../fonts/newsreader-italic.woff2") format("woff2-variations"),
-       url("../fonts/newsreader-italic.woff2") format("woff2");
-}
 
 @font-face {
   font-family: "Instrument Sans Variable";
@@ -40,55 +23,77 @@
        url("../fonts/instrument-sans-italic.woff2") format("woff2");
 }
 
-/* ── Light: paper and ink ──────────────────────────────────────────────── */
+/* Question text only: it sits next to KaTeX maths, which is set in a serif. */
+@font-face {
+  font-family: "Newsreader Variable";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/newsreader.woff2") format("woff2-variations"),
+       url("../fonts/newsreader.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newsreader Variable";
+  font-style: italic;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/newsreader-italic.woff2") format("woff2-variations"),
+       url("../fonts/newsreader-italic.woff2") format("woff2");
+}
+
+/* Course codes, keys and code listings. */
+@font-face {
+  font-family: "JetBrains Mono Variable";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono.woff2") format("woff2-variations"),
+       url("../fonts/jetbrains-mono.woff2") format("woff2");
+}
+
+/* ── Light ─────────────────────────────────────────────────────────────── */
 
 :root {
   color-scheme: light;
 
-  --bg: #f5f2ea;
-  --surface: #fffdf8;
-  --surface-2: #faf7f0;
-  --surface-3: #f0ebe0;
-  --line: #e5dfd2;
-  --line-strong: #d2cab9;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f6f6f4;
+  --surface-3: #eeeeeb;
+  --line: #e6e6e2;
+  --line-strong: #d2d2cd;
 
-  --ink: #1b1915;
-  --ink-2: #4b463d;
-  --ink-3: #7a7468;
-  --on-ink: #fffdf8;
+  --ink: #141414;
+  --ink-2: #4a4a46;
+  --ink-3: #6e6d68;
+  --on-ink: #ffffff;
 
-  --accent: #2b44c4;
-  --accent-hover: #2236a3;
-  --accent-soft: rgba(43, 68, 196, 0.08);
-  --accent-ring: rgba(43, 68, 196, 0.3);
+  --accent: #1f56d6;
+  --accent-ring: rgba(31, 86, 214, 0.28);
 
-  --good: #1b7547;
-  --good-soft: #e8f2ea;
-  --good-line: #9fcbb0;
-  --bad: #b3342b;
-  --bad-soft: #f8e9e5;
-  --bad-line: #e2aaa2;
-  --warn: #9a5f08;
-  --warn-line: #ddb878;
+  --good: #18794a;
+  --good-soft: #e9f5ee;
+  --good-line: #a6d4ba;
+  --bad: #c1352b;
+  --bad-soft: #fcedeb;
+  --bad-line: #eeb4ae;
+  --warn: #975a00;
 
-  --mark: #f6dc7a;
+  /* Subjects, from the course code prefix */
+  --ai: #2a4fc4;
+  --ai-soft: #ebeffc;
+  --dm: #0b6e62;
+  --dm-soft: #e3f2ef;
+  --ds: #b24d0e;
+  --ds-soft: #fbede3;
 
-  /* Subject colours, like the tabs in a ring binder */
-  --ai: #2f47b8;
-  --ai-soft: #e7eaf8;
-  --dm: #1d6b55;
-  --dm-soft: #e0eee8;
-  --ds: #a5521f;
-  --ds-soft: #f6e6da;
-
-  --shadow-sm: 0 1px 2px rgba(40, 33, 20, 0.06);
-  --shadow-sheet: 0 1px 0 rgba(40, 33, 20, 0.04), 0 18px 40px -26px rgba(40, 33, 20, 0.28);
-
-  --font-serif: "Newsreader Variable", "Iowan Old Style", "Palatino Linotype",
-    Palatino, Georgia, serif;
   --font-sans: "Instrument Sans Variable", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --font-serif: "Newsreader Variable", "Iowan Old Style", "Palatino Linotype",
+    Palatino, Georgia, serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SF Mono", Menlo, Consolas,
+    monospace;
 
   --step--2: 0.75rem;
   --step--1: 0.875rem;
@@ -96,64 +101,55 @@
   --step-1: 1.125rem;
   --step-2: 1.375rem;
   --step-3: 1.75rem;
-  --step-4: clamp(2rem, 1.45rem + 2.2vw, 2.75rem);
-  --step-5: clamp(2.5rem, 1.6rem + 3.6vw, 4.25rem);
+  --step-4: clamp(1.9rem, 1.45rem + 1.8vw, 2.5rem);
 
-  --radius-sm: 6px;
-  --radius: 10px;
-  --radius-lg: 14px;
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 8px;
   --radius-full: 999px;
 
   --wrap: 1080px;
-  --wrap-narrow: 760px;
+  --wrap-narrow: 720px;
   --gutter: clamp(1rem, 4vw, 2rem);
-  --bar-h: 60px;
+  --bar-h: 56px;
 
-  --ease: cubic-bezier(0.22, 0.68, 0.32, 1);
-  --fast: 0.15s var(--ease);
-  --slow: 0.4s var(--ease);
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --fast: 0.12s var(--ease);
+  --slow: 0.35s var(--ease);
 }
 
-/* ── Dark: the same paper at night ─────────────────────────────────────── */
+/* ── Dark ──────────────────────────────────────────────────────────────── */
 
 :root[data-theme="dark"] {
   color-scheme: dark;
 
-  --bg: #141311;
-  --surface: #1c1a17;
-  --surface-2: #211f1b;
-  --surface-3: #2a2722;
-  --line: #312e28;
-  --line-strong: #47423a;
+  --bg: #111111;
+  --surface: #161616;
+  --surface-2: #1b1b1b;
+  --surface-3: #252525;
+  --line: #272727;
+  --line-strong: #3a3a38;
 
-  --ink: #eeeae1;
-  --ink-2: #c4beb2;
-  --ink-3: #8f897d;
-  --on-ink: #161512;
+  --ink: #ececea;
+  --ink-2: #b4b3ae;
+  --ink-3: #8c8b86;
+  --on-ink: #111111;
 
-  --accent: #9eacff;
-  --accent-hover: #b8c2ff;
-  --accent-soft: rgba(158, 172, 255, 0.12);
-  --accent-ring: rgba(158, 172, 255, 0.35);
+  --accent: #7ea6ff;
+  --accent-ring: rgba(126, 166, 255, 0.35);
 
-  --good: #74d19c;
-  --good-soft: rgba(116, 209, 156, 0.1);
-  --good-line: rgba(116, 209, 156, 0.4);
-  --bad: #ff9283;
-  --bad-soft: rgba(255, 146, 131, 0.1);
-  --bad-line: rgba(255, 146, 131, 0.4);
-  --warn: #f0b85a;
-  --warn-line: rgba(240, 184, 90, 0.5);
+  --good: #6dd39b;
+  --good-soft: rgba(109, 211, 155, 0.1);
+  --good-line: rgba(109, 211, 155, 0.38);
+  --bad: #ff8e83;
+  --bad-soft: rgba(255, 142, 131, 0.1);
+  --bad-line: rgba(255, 142, 131, 0.38);
+  --warn: #f0b65a;
 
-  --mark: rgba(240, 196, 76, 0.32);
-
-  --ai: #a7b3ff;
-  --ai-soft: rgba(167, 179, 255, 0.13);
-  --dm: #82d2b6;
-  --dm-soft: rgba(130, 210, 182, 0.12);
-  --ds: #f0a77a;
-  --ds-soft: rgba(240, 167, 122, 0.13);
-
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-sheet: 0 1px 0 rgba(0, 0, 0, 0.3), 0 22px 48px -28px rgba(0, 0, 0, 0.8);
+  --ai: #93a8ff;
+  --ai-soft: rgba(147, 168, 255, 0.14);
+  --dm: #5cc8b6;
+  --dm-soft: rgba(92, 200, 182, 0.13);
+  --ds: #f0a06a;
+  --ds-soft: rgba(240, 160, 106, 0.14);
 }

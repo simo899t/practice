@@ -1,12 +1,8 @@
-/* Course page (course.html): header, test cards, archive. */
+/* Course page (course.html): header, the course's tests, archive. */
 
 /* ── Header ────────────────────────────────────────────────────────────── */
 
-.course-head {
-  padding-block: clamp(0.75rem, 3vw, 1.75rem) 1.75rem;
-  margin-bottom: 2.25rem;
-  border-bottom: 1px solid var(--line);
-}
+.course-head { margin-bottom: 2.75rem; }
 
 .crumbs {
   display: flex;
@@ -19,135 +15,114 @@
   color: var(--ink-2);
   text-decoration: none;
 }
-.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+.crumbs a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
+/* Codes with the subject tags under them, as in the course list */
 .course-id {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.6rem;
-  margin-top: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  margin-top: 1.75rem;
 }
 
 .course-codes {
   color: var(--subject);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .course-title {
-  max-width: 18em;
-  margin-top: 0.5rem;
-  font-size: clamp(2.2rem, 1.5rem + 2.8vw, 3.4rem);
-  font-weight: 520;
-  line-height: 1.05;
-  letter-spacing: -0.024em;
+  max-width: 22em;
+  margin-top: 0.6rem;
+  font-size: var(--step-4);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 
-.course-head .stats { margin-top: 1.6rem; }
+.course-head .stats { margin-top: 1rem; }
 
 /* ── Sections ──────────────────────────────────────────────────────────── */
 
 .course-section + .course-section { margin-top: 3rem; }
 
-.section-title {
-  display: flex;
-  align-items: baseline;
-  gap: 0.6rem;
-  margin-bottom: 1rem;
-  font-size: 1.55rem;
-}
-
-.section-count {
-  font-family: var(--font-sans);
-  font-size: var(--step--1);
-  font-weight: 600;
-  color: var(--ink-3);
-}
-
-/* ── Test cards ────────────────────────────────────────────────────────── */
-
-.test-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-  gap: 1rem;
-}
+/* ── Tests: one row each ───────────────────────────────────────────────── */
 
 .test-card {
+  --tint: transparent;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 1.15rem 1.25rem 1rem;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--fast), box-shadow var(--fast), border-color var(--fast);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15rem auto;
+  grid-template-areas:
+    "title score foot"
+    "meta  score foot";
+  align-items: center;
+  column-gap: 1.5rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--tint);
+  box-shadow: -0.75rem 0 0 var(--tint), 0.75rem 0 0 var(--tint);
+  transition: background var(--fast), box-shadow var(--fast);
 }
-.test-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--line-strong);
-  box-shadow: var(--shadow-sheet);
-}
+.test-card:hover { --tint: var(--surface-2); }
 
 .test-title {
-  font-size: 1.35rem;
-  font-weight: 540;
-  line-height: 1.2;
+  grid-area: title;
+  font-size: 1.0625rem;
+  line-height: 1.35;
 }
 
-/* The title link covers the whole card; the PDF links are lifted above it. */
+/* The title link covers the whole row; the PDF links are lifted above it. */
 .test-link { text-decoration: none; }
 .test-link::after {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 10px;
 }
 .test-link:focus-visible { outline: none; }
 .test-link:focus-visible::after {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 .test-meta {
+  grid-area: meta;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.25rem 0.5rem;
-  margin: 0.45rem 0 1rem;
+  margin-top: 0.1rem;
   color: var(--ink-3);
   font-size: var(--step--1);
   font-variant-numeric: tabular-nums;
-}
-
-.test-foot {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.6rem;
-  margin-top: auto;
-  padding-top: 0.85rem;
-  border-top: 1px solid var(--line);
 }
 
 .test-score {
+  grid-area: score;
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  min-height: 1.4rem;
-  margin-bottom: 1rem;
   color: var(--ink-3);
   font-size: var(--step--1);
   font-variant-numeric: tabular-nums;
 }
-.test-score .meter { flex: 0 0 4.5rem; height: 5px; }
-.test-score b { color: var(--ink); font-weight: 650; }
+.test-score .meter { flex: 0 0 3.5rem; }
+.test-score b { color: var(--ink); font-weight: 600; }
 .test-score.is-good b { color: var(--good); }
 .test-score.is-bad b { color: var(--bad); }
+
+.test-foot {
+  grid-area: foot;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 .test-files {
   display: flex;
@@ -158,21 +133,25 @@
 .test-start {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.85rem;
-  border-radius: var(--radius-full);
-  background: var(--ink);
-  color: var(--on-ink);
+  gap: 0.3rem;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  color: var(--ink);
   font-size: var(--step--1);
   font-weight: 600;
+  line-height: 1.3;
+  transition: background var(--fast), border-color var(--fast), color var(--fast);
 }
-.test-start svg { transition: transform var(--fast); }
-.test-card:hover .test-start svg { transform: translateX(2px); }
+.test-card:hover .test-start {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+}
 
 .course-empty {
-  padding: 0.95rem 1.1rem;
-  border: 1px dashed var(--line-strong);
-  border-radius: 10px;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid var(--line);
   color: var(--ink-3);
   font-size: var(--step--1);
 }
@@ -180,51 +159,57 @@
 /* ── Archive: older exams, project descriptions — secondary ────────────── */
 
 .archive-note {
-  margin: -0.5rem 0 0.9rem;
+  margin-top: 0.75rem;
   color: var(--ink-3);
   font-size: var(--step--1);
 }
 
 .archive-list {
   list-style: none;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--surface);
-  overflow: hidden;
+  margin-top: 0.4rem;
 }
-.archive-list li + li { border-top: 1px solid var(--line); }
+.archive-list li { border-bottom: 1px solid var(--line); }
 
 .archive-item {
+  --tint: transparent;
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  padding: 0.7rem 1rem;
-  color: var(--ink-2);
-  font-size: var(--step--1);
+  gap: 0.65rem;
+  padding: 0.65rem 0;
+  background: var(--tint);
+  box-shadow: -0.75rem 0 0 var(--tint), 0.75rem 0 0 var(--tint);
+  color: var(--ink);
+  font-size: 0.9375rem;
   text-decoration: none;
-  transition: background var(--fast), color var(--fast);
+  transition: background var(--fast), box-shadow var(--fast);
 }
-.archive-item:hover { background: var(--surface-2); color: var(--ink); }
+.archive-item:hover { --tint: var(--surface-2); }
 .archive-item svg { flex: none; color: var(--ink-3); }
 
 .archive-title {
   flex: 1 1 auto;
   min-width: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .archive-meta {
   flex: none;
   color: var(--ink-3);
-  font-size: 0.7rem;
-  font-weight: 650;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 0.8125rem;
 }
 
 /* ── Small screens ─────────────────────────────────────────────────────── */
 
+@media (max-width: 760px) {
+  .test-card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "title" "meta" "score" "foot";
+    row-gap: 0.35rem;
+  }
+  .test-foot { justify-content: space-between; margin-top: 0.2rem; }
+}
+
 @media (max-width: 480px) {
-  .archive-item { flex-wrap: wrap; }
+  .archive-item { flex-wrap: wrap; row-gap: 0.1rem; }
   .archive-meta { flex-basis: 100%; padding-left: 1.6rem; }
 }

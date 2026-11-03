@@ -1,7 +1,7 @@
 /** Shared chrome used by every question view. */
 
 import { el, icon, ICONS } from '../../core/dom.js';
-import { renderContext, richNode } from '../../content/richtext.js';
+import { richNode } from '../../content/richtext.js';
 import { FORMATS } from '../model.js';
 
 /**
@@ -12,24 +12,15 @@ import { FORMATS } from '../model.js';
 export function questionHead(question, index) {
   const label = question.section.trim() || `Question ${index + 1}`;
   return el('div', { class: 'qhead' }, [
-    el('span', { class: 'qlabel', text: label }),
+    el('h1', { class: 'qlabel', text: label }),
     el('span', { class: 'qformat', text: FORMATS[question.format].label }),
   ]);
 }
 
-/**
- * Context prose, code listing and prompt, in reading order. Some papers keep
- * the whole question in `context` and leave `text` empty — there the context
- * is the question, so it is set as the prompt instead of as muted preamble.
- */
+/** The setup (the "> " lines of the test file), then the question itself. */
 export function questionBody(card, question, resolve) {
-  const prompt = question.text.trim();
-
-  if (question.context.trim()) {
-    renderContext(card, question.context, resolve, prompt ? 'qcontext' : 'qtext');
-  }
-  if (prompt) card.append(richNode('h1', 'qtext', question.text, resolve));
-
+  if (question.context.trim()) card.append(richNode('div', 'qcontext', question.context, resolve));
+  if (question.text.trim()) card.append(richNode('div', 'qtext', question.text, resolve));
   return card;
 }
 

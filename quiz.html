@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#f5f2ea">
+  <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Work through a past test with instant marking.">
-  <title>Exam Drill</title>
+  <title>practice</title>
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="assets/favicon.svg?v=1125501e56" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/tokens.css?v=485db0cbac">
-  <link rel="stylesheet" href="assets/css/base.css?v=e1aa7b1fb9">
-  <link rel="stylesheet" href="assets/css/components.css?v=09973921ff">
-  <link rel="stylesheet" href="assets/css/quiz.css?v=ed724340d9">
-  <link rel="stylesheet" href="assets/css/results.css?v=5c6045baa6">
+  <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css?v=7b37c3fd6e">
+  <link rel="stylesheet" href="assets/css/base.css?v=973972fd35">
+  <link rel="stylesheet" href="assets/css/components.css?v=dc83c10af3">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=1ebddf4f0a">
+  <link rel="stylesheet" href="assets/css/results.css?v=19f82f48af">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
@@ -33,24 +33,30 @@
   {
     "imports": {
       "./assets/js/content/math.js": "./assets/js/content/math.js?v=cb3a386528",
-      "./assets/js/content/richtext.js": "./assets/js/content/richtext.js?v=c11b0887fe",
-      "./assets/js/core/catalog.js": "./assets/js/core/catalog.js?v=88ee0b2314",
+      "./assets/js/content/richtext.js": "./assets/js/content/richtext.js?v=2335494e1e",
+      "./assets/js/core/catalog.js": "./assets/js/core/catalog.js?v=fbf01bb6d4",
       "./assets/js/core/dom.js": "./assets/js/core/dom.js?v=c6be81d452",
-      "./assets/js/core/format.js": "./assets/js/core/format.js?v=91d24e89c7",
+      "./assets/js/core/drafts.js": "./assets/js/core/drafts.js?v=f74e94afcd",
+      "./assets/js/core/format.js": "./assets/js/core/format.js?v=0a1869fee9",
       "./assets/js/core/storage.js": "./assets/js/core/storage.js?v=564d95b01b",
       "./assets/js/core/theme.js": "./assets/js/core/theme.js?v=b9d2830b5f",
-      "./assets/js/course/main.js": "./assets/js/course/main.js?v=decec2e81c",
-      "./assets/js/home/course-tile.js": "./assets/js/home/course-tile.js?v=ccc43d945e",
-      "./assets/js/home/main.js": "./assets/js/home/main.js?v=f5fa5339fc",
-      "./assets/js/quiz/main.js": "./assets/js/quiz/main.js?v=18dfab8cd1",
-      "./assets/js/quiz/model.js": "./assets/js/quiz/model.js?v=dcfb89e8a3",
-      "./assets/js/quiz/session.js": "./assets/js/quiz/session.js?v=39c1b1fa7a",
-      "./assets/js/quiz/views/group.js": "./assets/js/quiz/views/group.js?v=c9a1f63fee",
-      "./assets/js/quiz/views/open.js": "./assets/js/quiz/views/open.js?v=3d0a3097e1",
-      "./assets/js/quiz/views/parts.js": "./assets/js/quiz/views/parts.js?v=977c6fcf79",
-      "./assets/js/quiz/views/results.js": "./assets/js/quiz/views/results.js?v=136446b35f",
-      "./assets/js/quiz/views/setup.js": "./assets/js/quiz/views/setup.js?v=fe01649d49",
-      "./assets/js/quiz/views/single.js": "./assets/js/quiz/views/single.js?v=4df66ab764"
+      "./assets/js/course/main.js": "./assets/js/course/main.js?v=28b6240a07",
+      "./assets/js/home/course-tile.js": "./assets/js/home/course-tile.js?v=0c5279c564",
+      "./assets/js/home/main.js": "./assets/js/home/main.js?v=2256688e42",
+      "./assets/js/quiz/main.js": "./assets/js/quiz/main.js?v=e669b3683a",
+      "./assets/js/quiz/markdown.js": "./assets/js/quiz/markdown.js?v=f9d2dad640",
+      "./assets/js/quiz/model.js": "./assets/js/quiz/model.js?v=e51ddb25a0",
+      "./assets/js/quiz/session.js": "./assets/js/quiz/session.js?v=e126537888",
+      "./assets/js/quiz/views/group.js": "./assets/js/quiz/views/group.js?v=f3f2cf8444",
+      "./assets/js/quiz/views/open.js": "./assets/js/quiz/views/open.js?v=fc96237376",
+      "./assets/js/quiz/views/parts.js": "./assets/js/quiz/views/parts.js?v=91357d1459",
+      "./assets/js/quiz/views/results.js": "./assets/js/quiz/views/results.js?v=d265f7be22",
+      "./assets/js/quiz/views/setup.js": "./assets/js/quiz/views/setup.js?v=17a10bad67",
+      "./assets/js/quiz/views/single.js": "./assets/js/quiz/views/single.js?v=cead5b0101",
+      "./assets/js/submit/examples.js": "./assets/js/submit/examples.js?v=1d7d2b54b2",
+      "./assets/js/submit/main.js": "./assets/js/submit/main.js?v=40ee9ff288",
+      "./assets/js/submit/submission.js": "./assets/js/submit/submission.js?v=b7b7095670",
+      "./assets/js/submit/zip.js": "./assets/js/submit/zip.js?v=7268cd509e"
     }
   }
   </script>
@@ -66,12 +72,13 @@
       </a>
 
       <span class="title">
-        <b id="bar-title">Exam Drill</b>
+        <b id="bar-title">practice</b>
         <span id="bar-sub"></span>
       </span>
 
       <span class="spacer"></span>
       <span class="counter" id="counter"></span>
+      <button class="btn btn-ghost btn-sm hidden" id="submit-test" type="button">Submit test</button>
       <div id="bar-actions"></div>
     </div>
     <div class="progress" aria-hidden="true"><span id="progress"></span></div>
@@ -84,6 +91,6 @@
     </div>
   </main>
 
-  <script type="module" src="assets/js/quiz/main.js?v=18dfab8cd1"></script>
+  <script type="module" src="assets/js/quiz/main.js?v=e669b3683a"></script>
 </body>
 </html>
